@@ -1,0 +1,10 @@
+/Game/
+/Eschalon_CN/
+/fonts/
+/Release/
+/Dispatch/
+/build_release/
+/__pycache__/
+runtime_*.jsonl
+*.pyc
+*.spec

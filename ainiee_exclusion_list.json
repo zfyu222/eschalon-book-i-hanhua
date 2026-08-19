@@ -1,0 +1,27 @@
+[
+  {
+    "markers": "",
+    "info": "对话流程机器标记：整段禁止翻译",
+    "regex": "\\[(?:END|BACK|LOCKED|EXIT)\\]"
+  },
+  {
+    "markers": "",
+    "info": "Eschalon 行内颜色/强调/动态占位前缀：仅保护符号，后面的文字仍需翻译",
+    "regex": "[*&#^$]"
+  },
+  {
+    "markers": "",
+    "info": "Eschalon 游戏内换行控制符",
+    "regex": "\\|\\|"
+  },
+  {
+    "markers": "",
+    "info": "CSV 字段内的字面转义序列",
+    "regex": "\\\\[nrt]"
+  },
+  {
+    "markers": "",
+    "info": "纯内部命令记录：整行保持原样",
+    "regex": "^(?:quest|remove_item|init_trade|screen_[A-Za-z_]*|map_[A-Za-z_]*|updatezones|areacheck|toggle_port)\\b.*$"
+  }
+]
