@@ -284,3 +284,16 @@ fonts/cn_DS_Celtic_1.ttf     # 替换 DS_Celtic 字体
 - 已知问题：少量独立界面仍可能显示英文；超长中文可能出现不理想换行；Frida 运行组件可能被部分安全软件误报；其他商店或不同可执行文件版本尚未验证。
 - ZIP SHA-256：`AD325BBE465325E20BFBB29C015E55E4C94EDD04E88571EA02F48AB476F988A5`
 - 百度网盘：`/Hanhua/EschalonBook/Eschalon Book I_子非鱼汉化1.0.zip`
+
+### v1.1（2026-09-18）
+
+- 补丁：`Dispatch/Eschalon Book I_子非鱼汉化1.1.zip`
+- 标题：`《Eschalon Book I》子非鱼AI汉化补丁 v1.1`
+- 支持版本：Steam Windows 32 位本地版本；已验证 `eschalon_book_1.exe` SHA-256 为 `8F25C5FF8FC869E3C3B02C9E6F960C6A082CFCC097289A5247F237656C3031A8`。
+- 载荷：修复后的独立启动器 `EschalonBook_Chinese_Launcher.exe`；不包含游戏本体。
+- 修复：启动器不再直接从 Steam/Program Files 目录注入。它会把玩家自己的 EXE 临时复制到 `%LOCALAPPDATA%\EschalonBookChineseRuntime` 后启动，游戏退出后自动清理，从而避开 `VirtualAllocEx returned 0x00000005` 导致的无法启动问题。
+- 验证：修复版已在真实 Steam 游戏目录安装测试，能够启动游戏、加载三套中文字体、2934 条离线译文和 3413 条显示映射；退出后临时 EXE 自动删除。
+- 已知问题：少量罕见文本仍可能显示英文；部分长中文在窄界面中可能换行；运行时注入组件可能被安全软件误报；其他商店或不同 EXE 版本尚未验证。
+- ZIP SHA-256：`8C6082D1F0FB02C56306B6D5EDCD6DE6995C694546A42B848C31D78DB9841257`
+- GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.1`
+- 百度网盘：`/Hanhua/EschalonBook/Eschalon Book I_子非鱼汉化1.1.zip`

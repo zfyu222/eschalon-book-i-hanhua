@@ -7,6 +7,7 @@ String passed to brl.max2d.TImageFont.Draw (VA 0x477B47).
 """
 import csv
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -345,6 +346,10 @@ def main():
         print(f"Offline corpus active: {offline_entries} translated entries")
     if override_entries:
         print(f"Runtime fragment overrides active: {override_entries}")
+    copied_exe = None
+    if getattr(sys, "frozen", False) or os.environ.get("ESCHALON_COPY_EXE") == "1":
+        copied_exe = core.prepare_injectable_executable()
+        print(f"Prepared local runtime copy: {copied_exe}")
     pi = core.launch_suspended()
     print(f"Game PID: {pi.dwProcessId}")
     session = None
@@ -376,6 +381,7 @@ def main():
                 pass
         core.k32.CloseHandle(pi.hThread)
         core.k32.CloseHandle(pi.hProcess)
+        core.cleanup_injectable_executable(copied_exe)
     return 0
 
 

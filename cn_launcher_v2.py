@@ -2,6 +2,7 @@
 import csv
 import ctypes
 import os
+import shutil
 import struct
 import sys
 from ctypes import wintypes
@@ -11,12 +12,18 @@ ROOT = Path(__file__).resolve().parent
 # In the project workspace, launch the isolated test copy.  A PyInstaller
 # release is placed directly in the player's game directory, so resolve the
 # original game executable beside the frozen launcher instead.
+_runtime_override = os.environ.get("ESCHALON_RUNTIME")
 RUNTIME = (
-    Path(sys.executable).resolve().parent
-    if getattr(sys, "frozen", False)
-    else ROOT / "Eschalon_CN"
+    Path(_runtime_override).resolve()
+    if _runtime_override
+    else (
+        Path(sys.executable).resolve().parent
+        if getattr(sys, "frozen", False)
+        else ROOT / "Eschalon_CN"
+    )
 )
 EXE = RUNTIME / "eschalon_book_1.exe"
+LAUNCH_EXE = EXE
 ORIGINAL_CSV = ROOT / "translated_strings.csv"
 TRANSLATED_CSV = ROOT / "translated_strings_translated.csv"
 FONT_FILES = [
@@ -116,11 +123,46 @@ def load_mapping():
 
 def launch_suspended():
     si = STARTUPINFO(cb=ctypes.sizeof(STARTUPINFO)); pi = PROCESS_INFORMATION()
-    command = ctypes.create_unicode_buffer(f'"{EXE}"')
+    command = ctypes.create_unicode_buffer(f'"{LAUNCH_EXE}"')
     if not k32.CreateProcessW(None, command, None, None, False, CREATE_SUSPENDED,
                               None, str(RUNTIME), ctypes.byref(si), ctypes.byref(pi)):
         win_error("CreateProcessW")
     return pi
+
+
+def prepare_injectable_executable():
+    """Copy the user's EXE outside Program Files for display-hook injection.
+
+    Some Windows/Steam installations deny Frida's remote allocation after the
+    executable starts inside Program Files.  The copied executable is still the
+    player's own file and runs with the real game directory as its working
+    directory, so all data, music, saves, and Steam app metadata remain there.
+    """
+    global LAUNCH_EXE
+    local_app_data = os.environ.get("LOCALAPPDATA")
+    if not local_app_data:
+        raise RuntimeError("LOCALAPPDATA is unavailable")
+    runtime_dir = Path(local_app_data) / "EschalonBookChineseRuntime"
+    runtime_dir.mkdir(parents=True, exist_ok=True)
+    copied_exe = runtime_dir / EXE.name
+    shutil.copy2(EXE, copied_exe)
+    LAUNCH_EXE = copied_exe
+    return copied_exe
+
+
+def cleanup_injectable_executable(copied_exe):
+    global LAUNCH_EXE
+    LAUNCH_EXE = EXE
+    if copied_exe is None:
+        return
+    try:
+        copied_exe.unlink(missing_ok=True)
+        copied_exe.parent.rmdir()
+    except OSError:
+        # A crash or security scanner may briefly retain the file. It contains
+        # only a byte-for-byte copy of the user's own executable and is safely
+        # overwritten on the next launch.
+        pass
 
 
 def patch_fonts(process):
