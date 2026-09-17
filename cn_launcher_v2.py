@@ -136,7 +136,9 @@ def prepare_injectable_executable():
     Some Windows/Steam installations deny Frida's remote allocation after the
     executable starts inside Program Files.  The copied executable is still the
     player's own file and runs with the real game directory as its working
-    directory, so all data, music, saves, and Steam app metadata remain there.
+    directory, so all data, music, and saves remain there.  Steam's DRM stub
+    also needs the app identity when the image path is outside the library;
+    otherwise it stops at "Application load error 5:0000065434".
     """
     global LAUNCH_EXE
     local_app_data = os.environ.get("LOCALAPPDATA")
@@ -146,6 +148,8 @@ def prepare_injectable_executable():
     runtime_dir.mkdir(parents=True, exist_ok=True)
     copied_exe = runtime_dir / EXE.name
     shutil.copy2(EXE, copied_exe)
+    os.environ["SteamAppId"] = "25600"
+    os.environ["SteamGameId"] = "25600"
     LAUNCH_EXE = copied_exe
     return copied_exe
 

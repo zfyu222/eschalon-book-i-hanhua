@@ -292,8 +292,21 @@ fonts/cn_DS_Celtic_1.ttf     # 替换 DS_Celtic 字体
 - 支持版本：Steam Windows 32 位本地版本；已验证 `eschalon_book_1.exe` SHA-256 为 `8F25C5FF8FC869E3C3B02C9E6F960C6A082CFCC097289A5247F237656C3031A8`。
 - 载荷：修复后的独立启动器 `EschalonBook_Chinese_Launcher.exe`；不包含游戏本体。
 - 修复：启动器不再直接从 Steam/Program Files 目录注入。它会把玩家自己的 EXE 临时复制到 `%LOCALAPPDATA%\EschalonBookChineseRuntime` 后启动，游戏退出后自动清理，从而避开 `VirtualAllocEx returned 0x00000005` 导致的无法启动问题。
-- 验证：修复版已在真实 Steam 游戏目录安装测试，能够启动游戏、加载三套中文字体、2934 条离线译文和 3413 条显示映射；退出后临时 EXE 自动删除。
-- 已知问题：少量罕见文本仍可能显示英文；部分长中文在窄界面中可能换行；运行时注入组件可能被安全软件误报；其他商店或不同 EXE 版本尚未验证。
+- 验证：启动器能够创建临时进程、加载三套中文字体、2934 条离线译文和 3413 条显示映射，但发布后复测发现 Steam DRM 弹出 `Application load error 5:0000065434`，因此 v1.1 已由 v1.2 取代。
+- 已知问题：v1.1 不可用；临时 EXE 未携带 Steam App ID，无法进入游戏主界面。
 - ZIP SHA-256：`8C6082D1F0FB02C56306B6D5EDCD6DE6995C694546A42B848C31D78DB9841257`
 - GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.1`
 - 百度网盘：`/Hanhua/EschalonBook/Eschalon Book I_子非鱼汉化1.1.zip`
+
+### v1.2（2026-09-18）
+
+- 补丁：`Dispatch/Eschalon Book I_子非鱼汉化1.2.zip`
+- 标题：`《Eschalon Book I》子非鱼AI汉化补丁 v1.2`
+- 支持版本：Steam Windows 32 位本地版本；已验证 `eschalon_book_1.exe` SHA-256 为 `8F25C5FF8FC869E3C3B02C9E6F960C6A082CFCC097289A5247F237656C3031A8`。
+- 载荷：独立启动器 `EschalonBook_Chinese_Launcher.exe`；译表、字体、Python 与 Frida 运行组件均已嵌入，不包含游戏本体。
+- 修复：临时运行副本启动前自动设置 `SteamAppId=25600` 与 `SteamGameId=25600`，满足 Steam DRM 的应用身份校验。
+- 验证：在真实 Steam 游戏目录使用冻结版启动器复测，游戏窗口正常创建且不再显示 `Steam Error`；显示 Hook 完成加载，进程保持响应。
+- 已知问题：少量罕见文本仍可能显示英文；部分长中文在窄界面中可能换行；运行时注入组件可能被安全软件误报；其他商店或不同 EXE 版本尚未验证。
+- ZIP SHA-256：`7126F50D42FD25478D04A81BB8FFB0D248F1AC5B1EA8384D89A7D095FD6F20AE`
+- GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.2`
+- 百度网盘：`/Hanhua/EschalonBook/Eschalon Book I_子非鱼汉化1.2.zip`
