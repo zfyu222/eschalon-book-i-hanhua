@@ -318,3 +318,16 @@ fonts/cn_DS_Celtic_1.ttf     # 替换 DS_Celtic 字体
 - 最终确认真正差异是 `steam_appid.txt`，而不是 Program Files 本身：在原 Steam 游戏目录写入 App ID `25600` 后，可以直接挂起启动原 EXE，Frida 注入、字体加载和显示 Hook 全部成功。
 - 新启动器不再默认复制游戏 EXE，而是确保游戏根目录存在 `steam_appid.txt`，始终从包含完整资源的原目录启动。
 - 冻结版实测：进程路径保持为 Steam 原目录，窗口进入 `Launch Menu`，未出现 Steam Error 或 `gfx.pak missing`；临时运行目录未被使用。
+
+### v1.3（2026-09-19）
+
+- 补丁：`Dispatch/Eschalon Book I_子非鱼汉化1.3.zip`
+- 标题：`《Eschalon Book I》子非鱼AI汉化补丁 v1.3`
+- 支持版本：Steam Windows 32 位本地版本；已验证 `eschalon_book_1.exe` SHA-256 为 `8F25C5FF8FC869E3C3B02C9E6F960C6A082CFCC097289A5247F237656C3031A8`。
+- 载荷：`EschalonBook_Chinese_Launcher.exe` 与 `steam_appid.txt`；不包含游戏本体或原始游戏资源。
+- 安装：将两个载荷文件放到 `eschalon_book_1.exe`、`gfx.pak` 所在的游戏根目录，覆盖旧启动器后从汉化启动器进入游戏。
+- 验证：冻结版从真实 Steam 游戏目录直接启动原 EXE，成功进入 `Eschalon: Book I` 启动菜单；三套中文字体、2934 条离线译文和 3413 条显示映射加载完成，运行时已有中文替换命中；未出现 Steam Error 或 `gfx.pak missing`。
+- 已知问题：少量罕见文本仍可能显示英文；部分长中文在窄界面中可能换行；运行时注入组件可能被安全软件误报；其他商店或不同 EXE 版本尚未验证。
+- ZIP SHA-256：`CD249FAF8B1A4007C50F7E33E8FB2364C5B79BC97FA9853EFACAFFBD3F653E97`
+- GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.3`
+- 百度网盘：`/Hanhua/EschalonBook/Eschalon Book I_子非鱼汉化1.3.zip`
