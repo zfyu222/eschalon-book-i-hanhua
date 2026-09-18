@@ -305,8 +305,16 @@ fonts/cn_DS_Celtic_1.ttf     # 替换 DS_Celtic 字体
 - 支持版本：Steam Windows 32 位本地版本；已验证 `eschalon_book_1.exe` SHA-256 为 `8F25C5FF8FC869E3C3B02C9E6F960C6A082CFCC097289A5247F237656C3031A8`。
 - 载荷：独立启动器 `EschalonBook_Chinese_Launcher.exe`；译表、字体、Python 与 Frida 运行组件均已嵌入，不包含游戏本体。
 - 修复：临时运行副本启动前自动设置 `SteamAppId=25600` 与 `SteamGameId=25600`，满足 Steam DRM 的应用身份校验。
-- 验证：在真实 Steam 游戏目录使用冻结版启动器复测，游戏窗口正常创建且不再显示 `Steam Error`；显示 Hook 完成加载，进程保持响应。
-- 已知问题：少量罕见文本仍可能显示英文；部分长中文在窄界面中可能换行；运行时注入组件可能被安全软件误报；其他商店或不同 EXE 版本尚未验证。
+- 验证：启动器解决了 Steam 应用身份错误，但发布后进一步复测发现临时副本按 EXE 目录查找资源，会报 `ERROR: gfx.pak missing.`；因此 v1.2 不应继续分发。
+- 已知问题：v1.2 不可用；仅复制游戏 EXE 到 `%LOCALAPPDATA%` 会丢失同目录资源。
 - ZIP SHA-256：`7126F50D42FD25478D04A81BB8FFB0D248F1AC5B1EA8384D89A7D095FD6F20AE`
 - GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.2`
 - 百度网盘：`/Hanhua/EschalonBook/Eschalon Book I_子非鱼汉化1.2.zip`
+
+## 2026-09-19 发布启动根因修复
+
+- 开发脚本实际从完整的 `Eschalon_CN/` 副本启动，该目录同时包含 `gfx.pak`、`data/config/music/sound` 和 `steam_appid.txt`。
+- v1.1/v1.2 为绕开误判的目录权限问题，只把游戏 EXE 复制到 `%LOCALAPPDATA%`；这先后触发 Steam 应用身份错误和 `gfx.pak missing`。
+- 最终确认真正差异是 `steam_appid.txt`，而不是 Program Files 本身：在原 Steam 游戏目录写入 App ID `25600` 后，可以直接挂起启动原 EXE，Frida 注入、字体加载和显示 Hook 全部成功。
+- 新启动器不再默认复制游戏 EXE，而是确保游戏根目录存在 `steam_appid.txt`，始终从包含完整资源的原目录启动。
+- 冻结版实测：进程路径保持为 Steam 原目录，窗口进入 `Launch Menu`，未出现 Steam Error 或 `gfx.pak missing`；临时运行目录未被使用。

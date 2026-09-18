@@ -130,6 +130,18 @@ def launch_suspended():
     return pi
 
 
+def ensure_steam_identity():
+    """Make direct suspended startup behave like the proven dev runtime."""
+    app_id = "25600"
+    app_id_file = RUNTIME / "steam_appid.txt"
+    if not app_id_file.exists() or app_id_file.read_text(
+            encoding="ascii", errors="ignore").strip() != app_id:
+        app_id_file.write_text(app_id + "\n", encoding="ascii")
+    os.environ["SteamAppId"] = app_id
+    os.environ["SteamGameId"] = app_id
+    return app_id_file
+
+
 def prepare_injectable_executable():
     """Copy the user's EXE outside Program Files for display-hook injection.
 

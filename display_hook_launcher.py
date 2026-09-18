@@ -346,8 +346,10 @@ def main():
         print(f"Offline corpus active: {offline_entries} translated entries")
     if override_entries:
         print(f"Runtime fragment overrides active: {override_entries}")
+    app_id_file = core.ensure_steam_identity()
+    print(f"Steam identity ready: {app_id_file}")
     copied_exe = None
-    if getattr(sys, "frozen", False) or os.environ.get("ESCHALON_COPY_EXE") == "1":
+    if os.environ.get("ESCHALON_COPY_EXE") == "1":
         copied_exe = core.prepare_injectable_executable()
         print(f"Prepared local runtime copy: {copied_exe}")
     pi = core.launch_suspended()
