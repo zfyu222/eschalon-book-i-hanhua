@@ -330,4 +330,4 @@ fonts/cn_DS_Celtic_1.ttf     # 替换 DS_Celtic 字体
 - 已知问题：少量罕见文本仍可能显示英文；部分长中文在窄界面中可能换行；运行时注入组件可能被安全软件误报；其他商店或不同 EXE 版本尚未验证。
 - ZIP SHA-256：`CD249FAF8B1A4007C50F7E33E8FB2364C5B79BC97FA9853EFACAFFBD3F653E97`
 - GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.3`
-- 百度网盘：`/Hanhua/EschalonBook/Eschalon Book I_子非鱼汉化1.3.zip`
+- 百度网盘：待更新 `BAIDU_NETDISK_ACCESS_TOKEN` 后同步到 `/Hanhua/EschalonBook/Eschalon Book I_子非鱼汉化1.3.zip`（当前接口返回鉴权失败 `errno=-6`）。
