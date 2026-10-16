@@ -8,3 +8,4 @@
 runtime_*.jsonl
 *.pyc
 *.spec
+/Analysis/font_coverage/backup/

@@ -173,6 +173,14 @@ fonts/cn_DS_Celtic_1.ttf     # 替换 DS_Celtic 字体
 
 ## 已知问题
 
+### 2026-10-16 中文缺字修复
+
+- 根因：早期 `cn_subset.ttf` 未随完整译文更新，三套运行字体均缺少当前译文需要的 407 个汉字，包括“浸、崩、湿、昨、邻、豁”。译表中的字完整，但字体没有对应字形。
+- 修复：新增 `rebuild_runtime_fonts.py`，从两份运行译表汇总字符，用系统黑体重建子集及三套匹配游戏内部名称的字体。当前 2520 个受支持字符全部覆盖，汉字缺字为 0；旧基础 CSV 的控制字节及少数装饰符号单独列入报告。
+- 检查报告：`Analysis/font_coverage/coverage.json`。本轮仅修字体，不润色译文。
+- 交付：`Release/EschalonBook_Chinese_Launcher.exe` 已安装至 `Game/EschalonBook_Chinese_Launcher.exe`；SHA-256 `CEAD418D42E2BD0D966FFC8AD31187CF138B029DFF43C21BEF9581BDF45E84C7`。旧启动器备份在被忽略的 `Analysis/font_coverage/backup/`。
+- 验证边界：字库覆盖检查通过；原截图所在段落的实机显示待复测，不以进程启动或 Hook 加载代替该场景验证。
+
 1. **数据来源不明**: 修改了 EXE 的 `.data` 段和内存中的字符串，但游戏仍显示英文。游戏可能从其他地方（如 `data/*.ent` 文件、运行时生成的数据结构）读取显示文本。
 
 2. **`.ent` 文件格式未知**: `data/` 目录下的 `.ent` 文件是二进制格式，包含实体定义和对话数据。可能需要逆向分析游戏如何解析这些文件。
