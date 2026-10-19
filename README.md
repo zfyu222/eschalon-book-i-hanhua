@@ -363,4 +363,4 @@ fonts/cn_DS_Celtic_1.ttf     # 替换 DS_Celtic 字体
 - 已知问题：少量独立界面仍可能显示英文；超长中文在窄界面中换行可能不理想；运行时注入组件可能被安全软件误报；仅验证 Steam 32 位版本。
 - ZIP SHA-256：`3613124E580DA19CD5E55CBA936BB9F43F54587CC40230805265266DB1772FB2`
 - GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.4`
-- 百度网盘：`/Hanhua/EschalonBook/Eschalon Book I_子非鱼汉化1.4.zip`（待上传确认）
+- 百度网盘：`/Hanhua/EschalonBook/Eschalon Book I_子非鱼汉化1.4.zip`（上传失败：`ensure_directory` 与 `upload_file` 均返回鉴权错误 `errno=-6`，需更新 `BAIDU_NETDISK_ACCESS_TOKEN` 后补传；旧版目录扫描未发现可删除的历史补丁）。
