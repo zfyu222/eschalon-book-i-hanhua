@@ -302,7 +302,6 @@ fonts/cn_DS_Celtic_1.ttf     # 替换 DS_Celtic 字体
 - 验证：独立发布版成功启动游戏，加载三套中文字体、2934 条离线译文和 3413 条显示映射，启动菜单中文正常；开发版已验证物品、容器、消息日志、长段落和确认弹窗。
 - 已知问题：少量独立界面仍可能显示英文；超长中文可能出现不理想换行；Frida 运行组件可能被部分安全软件误报；其他商店或不同可执行文件版本尚未验证。
 - ZIP SHA-256：`AD325BBE465325E20BFBB29C015E55E4C94EDD04E88571EA02F48AB476F988A5`
-- 百度网盘：`/Hanhua/EschalonBook/Eschalon Book I_子非鱼汉化1.0.zip`
 
 ### v1.1（2026-09-18）
 
@@ -315,7 +314,6 @@ fonts/cn_DS_Celtic_1.ttf     # 替换 DS_Celtic 字体
 - 已知问题：v1.1 不可用；临时 EXE 未携带 Steam App ID，无法进入游戏主界面。
 - ZIP SHA-256：`8C6082D1F0FB02C56306B6D5EDCD6DE6995C694546A42B848C31D78DB9841257`
 - GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.1`
-- 百度网盘：`/Hanhua/EschalonBook/Eschalon Book I_子非鱼汉化1.1.zip`
 
 ### v1.2（2026-09-18）
 
@@ -328,7 +326,6 @@ fonts/cn_DS_Celtic_1.ttf     # 替换 DS_Celtic 字体
 - 已知问题：v1.2 不可用；仅复制游戏 EXE 到 `%LOCALAPPDATA%` 会丢失同目录资源。
 - ZIP SHA-256：`7126F50D42FD25478D04A81BB8FFB0D248F1AC5B1EA8384D89A7D095FD6F20AE`
 - GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.2`
-- 百度网盘：`/Hanhua/EschalonBook/Eschalon Book I_子非鱼汉化1.2.zip`
 
 ## 2026-09-19 发布启动根因修复
 
@@ -349,7 +346,6 @@ fonts/cn_DS_Celtic_1.ttf     # 替换 DS_Celtic 字体
 - 已知问题：少量罕见文本仍可能显示英文；部分长中文在窄界面中可能换行；运行时注入组件可能被安全软件误报；其他商店或不同 EXE 版本尚未验证。
 - ZIP SHA-256：`CD249FAF8B1A4007C50F7E33E8FB2364C5B79BC97FA9853EFACAFFBD3F653E97`
 - GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.3`
-- 百度网盘：待更新 `BAIDU_NETDISK_ACCESS_TOKEN` 后同步到 `/Hanhua/EschalonBook/Eschalon Book I_子非鱼汉化1.3.zip`（当前接口返回鉴权失败 `errno=-6`）。
 
 ### v1.4（2026-10-20）
 
@@ -361,6 +357,5 @@ fonts/cn_DS_Celtic_1.ttf     # 替换 DS_Celtic 字体
 - 验证：发布版启动冒烟测试通过（启动器与游戏进程存活，窗口正常进入 `Eschalon: Book I`）；开发版实机确认开场叙事弹窗、消息日志、物品、容器、技能说明与确认弹窗显示中文。ZIP 已解压复核，载荷 SHA-256 与 `SHA256SUMS.txt` 一致，说明书含 UTF-8 BOM 与完整更新日志。
 - 安装：`EschalonBook_Chinese_Launcher.exe` 与 `steam_appid.txt` 放入游戏根目录；v1.4 已安装到 `Game/`（Steam 目录），旧启动器备份于 `Analysis/release_backup/EschalonBook_Chinese_Launcher.v1.3.exe`。
 - 已知问题：少量独立界面仍可能显示英文；超长中文在窄界面中换行可能不理想；运行时注入组件可能被安全软件误报；仅验证 Steam 32 位版本。
-- ZIP SHA-256：`3613124E580DA19CD5E55CBA936BB9F43F54587CC40230805265266DB1772FB2`
+- ZIP SHA-256：`BF17C1E24EBB8A7273EE9117B903D42B844B98495E377E29276F0303369C9EBE`
 - GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.4`
-- 百度网盘：`/Hanhua/EschalonBook/Eschalon Book I_子非鱼汉化1.4.zip`（上传失败：`ensure_directory` 与 `upload_file` 均返回鉴权错误 `errno=-6`，需更新 `BAIDU_NETDISK_ACCESS_TOKEN` 后补传；旧版目录扫描未发现可删除的历史补丁）。
