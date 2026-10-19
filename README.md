@@ -350,3 +350,17 @@ fonts/cn_DS_Celtic_1.ttf     # 替换 DS_Celtic 字体
 - ZIP SHA-256：`CD249FAF8B1A4007C50F7E33E8FB2364C5B79BC97FA9853EFACAFFBD3F653E97`
 - GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.3`
 - 百度网盘：待更新 `BAIDU_NETDISK_ACCESS_TOKEN` 后同步到 `/Hanhua/EschalonBook/Eschalon Book I_子非鱼汉化1.3.zip`（当前接口返回鉴权失败 `errno=-6`）。
+
+### v1.4（2026-10-20）
+
+- 补丁：`Dispatch/Eschalon Book I_子非鱼汉化1.4.zip`
+- 标题：`《Eschalon Book I》子非鱼AI汉化补丁 v1.4`
+- 支持版本：Steam Windows 32 位本地版本；已验证 `eschalon_book_1.exe` SHA-256 为 `8F25C5FF8FC869E3C3B02C9E6F960C6A082CFCC097289A5247F237656C3031A8`。
+- 载荷：`EschalonBook_Chinese_Launcher.exe` 与 `steam_appid.txt`；不包含游戏本体或原始游戏资源。
+- 修复：开场叙事弹窗正文未汉化。叙事 Hook 从被 `panel=0` 分支绕过的 `0x4C6C82` 移到 `FUN_004c69ad` 所有面板分支的汇合点 `0x4C6C53`，并加入段落级匹配与空白归一化兜底。
+- 验证：发布版启动冒烟测试通过（启动器与游戏进程存活，窗口正常进入 `Eschalon: Book I`）；开发版实机确认开场叙事弹窗、消息日志、物品、容器、技能说明与确认弹窗显示中文。ZIP 已解压复核，载荷 SHA-256 与 `SHA256SUMS.txt` 一致，说明书含 UTF-8 BOM 与完整更新日志。
+- 安装：`EschalonBook_Chinese_Launcher.exe` 与 `steam_appid.txt` 放入游戏根目录；v1.4 已安装到 `Game/`（Steam 目录），旧启动器备份于 `Analysis/release_backup/EschalonBook_Chinese_Launcher.v1.3.exe`。
+- 已知问题：少量独立界面仍可能显示英文；超长中文在窄界面中换行可能不理想；运行时注入组件可能被安全软件误报；仅验证 Steam 32 位版本。
+- ZIP SHA-256：`3613124E580DA19CD5E55CBA936BB9F43F54587CC40230805265266DB1772FB2`
+- GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.4`
+- 百度网盘：`/Hanhua/EschalonBook/Eschalon Book I_子非鱼汉化1.4.zip`（待上传确认）
