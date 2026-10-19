@@ -271,6 +271,7 @@ fonts/cn_DS_Celtic_1.ttf     # 替换 DS_Celtic 字体
 ## 版本记录补充
 
 - 2026-07-26: 完成 3048 条统一译文的专项校验与显示层回填。修复字面 `\\n`、样式前缀和两条可见漏译；安全启动器加载 2505 条新译文替换，启动期运行验证通过。
+- 2026-10-20: 修复开场叙事弹窗未汉化。叙事 Hook 改到 `FUN_004c69ad` 所有面板分支的汇合点 `0x4C6C53`，并增加段级匹配与空白归一化；开发版实机验证正文显示中文。
 
 ## 2026-07-26 弹窗文本回填补充
 
@@ -278,6 +279,16 @@ fonts/cn_DS_Celtic_1.ttf     # 替换 DS_Celtic 字体
 - 此类界面使用独立的逐词排版器 `sub_4C4982`（VA `0x4C4982`），与消息日志的 `sub_4BDEB8` 不同。
 - `display_hook_launcher.py` 已在 `sub_4C4982` 入口替换完整正文参数，再由游戏原生逻辑处理 `^`、`&` 样式标记和中文换行。
 - 该 Hook 是同类弹窗的通用入口，不需要为每个场景收集或添加运行时碎片。
+
+## 2026-10-20 开场叙事弹窗修复
+
+- 现象：新游戏开场叙事弹窗正文仍为英文，底部消息日志和「确定」按钮已是中文。
+- 提取与翻译无误：该文本来自 EXE 内 `incbin/narrative.txt` 资源（注册块 `0x4907B5`，载荷 `0x54DC90–0x55273C`），在 `eschalonbook_text.csv` 第 2963 行，译文完整。
+- 证据：`runtime_untranslated.jsonl` 记录到正文以逐行碎片进入绘制层；`runtime_narrative_calls.jsonl` 记录 `FUN_004c69ad` 的实际调用参数为 `id:0:0`（type=0、panel=0）。
+- 根因：`FUN_004c69ad` 在 `param_3 == 0` 时于 `0x4C6C56` 直接跳转 `0x4C74B3`，绕过旧 Hook 点 `0x4C6C82`，正文随后由原生逻辑拆行，逐行绘制时无法再整段匹配。
+- 修复：`display_hook_launcher.py` 的叙事 Hook 改到 `0x4C6C53`。这是所有面板分支的汇合点，此时 `[ebp-0x24]` 仍是完整正文，且 600 字符面板选择已计算完毕，替换不会改变窗口样式。匹配逻辑额外加入段级映射（按 `*` 拆分）与空白归一化兜底。
+- 验证：开发版实机复现，开场弹窗正文显示中文；控制台输出 `Translated paragraph`，日志无该段未匹配记录。
+- 分析工具：REA 6.4.0 + Ghidra 12.1.4（`Tools/REA/rea.ps1`），反编译证据存于 `Analysis/rea_dec_narrative.c`、`Analysis/rea_dec_popup.c`、`Analysis/rea_xref_*.json`。
 
 ## 对外发布
 

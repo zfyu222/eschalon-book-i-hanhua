@@ -21,10 +21,12 @@ DRAW_TEXT_VA = 0x477B47
 MESSAGE_PREWRAP_VA = 0x4BDEB8
 POPUP_PREWRAP_VA = 0x4C4982
 SKILL_PARAGRAPH_VA = 0x4D950F
+NARRATIVE_PREWRAP_VA = 0x4C6C53  # branch merge point in FUN_004c69ad, before wrapping
 BLITZ_STRING_TYPE = 0x4F1CB0
 UNTRANSLATED_LOG = Path(__file__).resolve().parent / "runtime_untranslated.jsonl"
 CALLSTACK_LOG = Path(__file__).resolve().parent / "runtime_callstacks.jsonl"
 PARAGRAPH_LOG = Path(__file__).resolve().parent / "runtime_paragraphs.jsonl"
+NARRATIVE_CALL_LOG = Path(__file__).resolve().parent / "runtime_narrative_calls.jsonl"
 OFFLINE_SOURCE = Path(__file__).resolve().parent / "eschalonbook_text.csv"
 OFFLINE_TRANSLATED = Path(__file__).resolve().parent / "eschalonbook_text_translated.csv"
 RUNTIME_OVERRIDES = Path(__file__).resolve().parent / "runtime_fragment_overrides.json"
@@ -33,6 +35,29 @@ RUNTIME_OVERRIDES = Path(__file__).resolve().parent / "runtime_fragment_override
 def _read_first_column(path):
     with path.open("r", encoding="utf-8-sig", newline="") as stream:
         return [row[0] for row in csv.reader(stream) if row]
+
+
+def _add_paragraph_variants(mapping, source, target):
+    """Add per-paragraph keys for bodies the engine splits before display.
+
+    Narrative entries separate paragraphs with '*'.  Some display paths hand
+    the wrapper a single paragraph instead of the complete body, so map every
+    matching paragraph pair as well.  Existing whole-body keys always win.
+    """
+    if "*" not in source or "*" not in target:
+        return 0
+    source_parts = [part.strip() for part in source.split("*")]
+    target_parts = [part.strip() for part in target.split("*")]
+    if len(source_parts) != len(target_parts):
+        return 0
+    added = 0
+    for part_source, part_target in zip(source_parts, target_parts):
+        if len(part_source) < 8 or not part_target or part_source == part_target:
+            continue
+        if part_source not in mapping:
+            mapping[part_source] = part_target
+            added += 1
+    return added
 
 
 def load_offline_mapping():
@@ -63,6 +88,7 @@ def load_offline_mapping():
                 # each object at runtime.
                 if runtime_source.lower().startswith(("a ", "an ", "the ")):
                     mapping["You see " + runtime_source] = "你看见" + runtime_target
+                _add_paragraph_variants(mapping, runtime_source, runtime_target)
                 offline_entries += 1
 
     if OFFLINE_SOURCE.exists() and OFFLINE_TRANSLATED.exists():
@@ -89,6 +115,41 @@ def build_hook_script(mapping):
 'use strict';
 
 const translations = {mapping_json};
+const normalizedIndex = new Map();
+for (const key of Object.keys(translations)) {{
+    const compact = key.replace(/\\s+/g, ' ').trim();
+    if (compact.length >= 2 && !normalizedIndex.has(compact)) normalizedIndex.set(compact, key);
+}}
+
+function lookupTranslation(source) {{
+    let target = translations[source];
+    if (target === undefined) target = translations[source.trim()];
+    if (target === undefined) {{
+        const key = normalizedIndex.get(source.replace(/\\s+/g, ' ').trim());
+        if (key !== undefined) target = translations[key];
+    }}
+    return target;
+}}
+
+// A narrative body can reach the wrapper either as the complete text or as
+// one paragraph after the engine split it at '*'. Try the whole body first,
+// then translate every paragraph and reassemble them in display order.
+function lookupParagraph(source) {{
+    const direct = lookupTranslation(source);
+    if (direct !== undefined) return direct;
+    const parts = source.split('*');
+    if (parts.length < 2) return undefined;
+    const translated = [];
+    let hits = 0;
+    for (const part of parts) {{
+        const key = part.trim();
+        const value = key.length >= 8 ? lookupTranslation(key) : undefined;
+        if (value === undefined) translated.push(key);
+        else {{ translated.push(value); hits++; }}
+    }}
+    return hits ? translated.join('\\n') : undefined;
+}}
+
 const phrases = Object.keys(translations)
     // Never inject dictionary-scale translations into a longer English
     // sentence. The game word-wraps descriptions at draw time; replacing
@@ -164,6 +225,48 @@ function makeChineseBreakable(text) {{
     return text.replace(/[\\u3400-\\u9fff]{{7,}}/g, run =>
         run.match(/.{{1,6}}/g).join(' '));
 }}
+
+// Ghidra: FUN_004c69ad (0x4C69AD) builds the full narrative body, splits it
+// into '|' command and prose parts, and then picks the parchment panel.
+// At 0x4c6c53 every panel branch has converged: [ebp-0x24] still holds the
+// complete prose String and the earlier 600-character panel decision has
+// already been evaluated into eax. Replacing the slot here therefore cannot
+// change which panel the native code selects.
+let lastNarrativeEntry = '';
+Interceptor.attach(ptr('0x4C69AD'), {{
+    onEnter(args) {{
+        try {{
+            const signature = args[0].toInt32() + ':' + args[1].toInt32() + ':' + args[2].toInt32();
+            if (signature !== lastNarrativeEntry) {{
+                lastNarrativeEntry = signature;
+                send({{kind: 'narrative_entry', signature}});
+            }}
+        }} catch (error) {{}}
+    }}
+}});
+
+Interceptor.attach(ptr('0x{NARRATIVE_PREWRAP_VA:08X}'), {{
+    onEnter() {{
+        try {{
+            const slot = this.context.ebp.sub(0x24);
+            const source = readBlitzString(slot.readPointer());
+            if (source === null || source.length < 2) return;
+            if (/[\\u3400-\\u9fff]/.test(source)) return;
+            let target = lookupParagraph(source);
+            if (target === undefined) {{
+                send({{kind: 'paragraph', source}});
+                return;
+            }}
+            if (target === source) return;
+            target = makeChineseBreakable(target);
+            slot.writePointer(makeBlitzString(target));
+            send({{kind: 'narrative_hit', source: source.slice(0, 100),
+                  target: target.slice(0, 100)}});
+        }} catch (error) {{
+            send({{kind: 'hook_error', message: 'narrative: ' + String(error)}});
+        }}
+    }}
+}});
 
 // The game funnels message-log prose through this routine while it is still
 // one complete BlitzMax String.  The routine then wraps it into 545-pixel
@@ -300,6 +403,11 @@ def on_message(message, _data):
     kind = payload.get("kind")
     if kind == "ready":
         print(f"Display hook ready: {payload.get('entries')} translations")
+    elif kind == "narrative_entry":
+        signature = payload.get("signature", "")
+        print(f"Narrative call (id:type:panel) = {signature}")
+        with NARRATIVE_CALL_LOG.open("a", encoding="utf-8") as stream:
+            stream.write(json.dumps({"call": signature}, ensure_ascii=False) + "\n")
     elif kind == "hit":
         print(f"Translated on screen: {payload.get('source')!r} -> {payload.get('target')!r}")
     elif kind == "prewrap_hit":
@@ -326,7 +434,7 @@ def on_message(message, _data):
         source = payload.get("source", "")
         with PARAGRAPH_LOG.open("a", encoding="utf-8") as stream:
             stream.write(json.dumps({"text": source}, ensure_ascii=False) + "\n")
-    elif kind == "paragraph_hit":
+    elif kind in {"paragraph_hit", "narrative_hit"}:
         print(f"Translated paragraph: {payload.get('source')!r} -> {payload.get('target')!r}")
 
 
@@ -341,6 +449,7 @@ def main():
     UNTRANSLATED_LOG.write_text("", encoding="utf-8")
     CALLSTACK_LOG.write_text("", encoding="utf-8")
     PARAGRAPH_LOG.write_text("", encoding="utf-8")
+    NARRATIVE_CALL_LOG.write_text("", encoding="utf-8")
     print(f"Loaded {len(mapping)} translations")
     if OFFLINE_SOURCE.exists():
         print(f"Offline corpus active: {offline_entries} translated entries")
