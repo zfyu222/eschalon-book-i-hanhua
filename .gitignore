@@ -8,4 +8,11 @@
 runtime_*.jsonl
 *.pyc
 *.spec
+*.bak
+*.bak2
+*.bak3
 /Analysis/font_coverage/backup/
+/Analysis/pak_extract/
+/Analysis/live_out.txt
+/Analysis/live_err.txt
+/Analysis/shot_*.png

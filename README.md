@@ -290,6 +290,75 @@ fonts/cn_DS_Celtic_1.ttf     # 替换 DS_Celtic 字体
 - 验证：开发版实机复现，开场弹窗正文显示中文；控制台输出 `Translated paragraph`，日志无该段未匹配记录。
 - 分析工具：REA 6.4.0 + Ghidra 12.1.4（`Tools/REA/rea.ps1`），反编译证据存于 `Analysis/rea_dec_narrative.c`、`Analysis/rea_dec_popup.c`、`Analysis/rea_xref_*.json`。
 
+## 2026-10-20 覆盖率审计与实机抽样验证
+
+### 为什么要补这一层
+
+此前 `Analysis/static_coverage.py` 报告 "prose 漏翻 0"，但该结论只覆盖一类情况：
+EXE 里能枚举到、而译表里没有的字符串。它不检查两件事：
+
+- 译表里**存在**、但译文仍与原文相同（等于没翻）
+- 文本根本不在字符串池里（预渲染图片文字）
+
+静态枚举与文本提取共用同一个 `extract_offline_texts` 枚举器，提取器漏掉的内容
+审计器同样漏掉，因此 "归零" 存在自证清白的风险。
+
+### 新增的两道检查
+
+| 脚本 | 作用 | 输出 |
+|------|------|------|
+| `Analysis/classify_identical.py` | 找出译文与原文相同的行，剔除脚本命令/标识符/技术串，剩下玩家可见项 | `Analysis/identical_visible.txt` |
+| `Analysis/unpack_pak.py` | 解包 `gfx.pak` 的 225 个 zlib-PNG 流，用于核对图片文字 | `Analysis/pak_extract/` |
+
+同文统计基线：580 行译文与原文相同，其中 188 条脚本链、264 条标识符、65 条技术串、
+9 条非拉丁，**78 条初判为可见文本**；逐条复核后确认真实漏翻如下。
+
+### 本轮修复的文本漏翻
+
+| 原文 | 修复后 | 说明 |
+|------|--------|------|
+| `150 Gold Pieces` | `150 金币` | 同组 250/500/750 均已译，仅此条遗漏 |
+| `[Attribute]` | `[属性]` | 角色创建界面标签 |
+| `Nor'lander` | `诺兰达人` | 种族名；完整段落已译，单词条目漏译 |
+| `This portal has become inactive.` | `这座传送门已经失效。` | `message(...)` 内嵌正文，译表原本只有整行脚本 |
+| `This lever is locked. The lighthouse fire cannot be extinguished this way.` | `这根拉杆被锁住了，无法用这种方式熄灭灯塔之火。` | 同上 |
+
+译表由 4544 行增至 4546 行，显示映射由 4761 条增至 4765 条。
+
+未处理且判定为正常保留：`no bars`、`Version 1.05 STEAM EDITION`（另有已译版本行）、
+`Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.`、`Sound(...) ; book N` 等脚本链。
+
+### 实机抽样验证（窗口模式启动 + 截屏）
+
+- 启动方式：`$env:ESCHALON_WINDOWED="1"` 后运行 `start_chinese.py`，PID 正常，三套字体注入成功。
+- 启动菜单：`32位（数百万色）`、`全屏 800 x 600`、底部版本行均为中文。
+- 主菜单：底部 `版本 1.05 STEAM 版本 // 版权所有 2007-2008 蛇怪游戏` 为中文。
+- `runtime_untranslated.jsonl` 全程仅 1 条未匹配：`DirectX`（产品名，应保留）。
+- 结论：**文本层没有真实漏翻**，剩余英文全部来自预渲染图片。
+
+### 图片文字漏翻（本轮未处理）
+
+截图确认以下界面文字为艺术字图片，EXE 中检索不到对应字符串
+（`Begin a New Adventure`、`Restore a Saved Adventure`、`Credits` 的 ASCII 与 UTF-16 均为 none）：
+
+- 启动菜单：`Click to change options`、`Press Start to launch game or for help on game options...`、`Graphic Renderer`、`Color Depth`、`Screen Preference`
+- 主菜单：`Begin a New Adventure`、`Restore a Saved Adventure`、`Credits`、`Exit`
+- 角色创建教程覆盖图：`gfx.pak` 解包后 800×600 的 `img_0035`，含 6 段英文标注
+- 制作人员名单：`img_0042`（400×600），全英文
+
+这类内容只能改图片资源，文本 hook 与译表都无法覆盖。是否处理需单独评估重绘成本。
+
+### 复现命令
+
+```powershell
+# 同文残留分类
+& $py Analysis\classify_identical.py
+# 解包 gfx.pak 图片
+& $py Analysis\unpack_pak.py
+# 静态候选审计（仅覆盖 EXE 字符串池）
+& $py Analysis\static_coverage.py
+```
+
 ## 对外发布
 
 ### v1.0（2026-08-20）

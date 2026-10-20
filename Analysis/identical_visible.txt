@@ -1,0 +1,75 @@
+510	init_trade(porter)
+594	Gatekeeper: "Thank you. You may enter the city.
+860	message ("You have threatened the Giant's Tribal Leader!) ; commit_crime
+892	message (Gramuk stands there with his hand extended. He is initially unaware of your intentions...) ; npc_disp_change 87 2
+992	quest 54 2 ; drop_item (150 Gold Pieces) ; kill_quest 47
+1002	quest 57 2 ; cond_special 9
+1150	Version 1.05 STEAM EDITION
+1254	no bars
+1541	narrative 76
+1780	quest 23 9
+1782	quest 52 9
+1784	quest 59 9
+2284	message(This portal has become inactive.)
+2299	message(This lever is locked. The lighthouse fire cannot be extinguished this way.)
+2465	AT m
+2467	SK m
+2468	HP m
+2469	MANA m
+2471	DMG m
+2472	AR m
+2473	RES m
+2476	Sound(SFX_Stats_Open) ; book 14
+2477	Sound(SFX_Stats_Open) ; book 29
+2478	Sound(SFX_Stats_Open) ; book 35
+2479	Sound(SFX_Stats_Open) ; book 43
+2482	Sound(SFX_Stats_Open) ; book 41
+2483	Sound(SFX_Stats_Open) ; book 30
+2484	Sound(SFX_Stats_Open) ; book 17 ; learn_book 36
+2491	Sound(SFX_Stats_Open) ; book 24 ; learn_book 40
+2493	sound (SFX_Quaff) ; cure_poison 4 ; to_flask
+2495	Sound(SFX_Stats_Open) ; book 20 ; learn_book 38
+2496	Sound(SFX_Stats_Open) ; book 19 ; learn_book 41
+2501	Sound(SFX_Stats_Open) ; book 26 ; learn_book 44
+2502	Sound(SFX_Stats_Open) ; book 23 ; learn_book 42
+2504	Sound(SFX_Stats_Open) ; book 34
+2505	Sound(SFX_Stats_Open) ; book 42
+2507	sound (SFX_Quaff) ; effect (Invisible) 2 ; to_flask
+2508	sound (SFX_Quaff) ; effect (Invisible) 4 ; to_flask
+2509	sound (SFX_Quaff) ; effect (Invisible) 6 ; to_flask
+2510	Sound(SFX_Stats_Open) ; book 27 ; learn_book 33
+2511	Sound(SFX_Stats_Open) ; book 10
+2512	Sound(SFX_Stats_Open) ; book 16 ; learn_book 35
+2513	sound (SFX_Quaff) ; effect (Leatherskin) 2 ; to_flask
+2514	sound (SFX_Quaff) ; effect (Leatherskin) 4 ; to_flask
+2515	sound (SFX_Quaff) ; effect (Leatherskin) 6 ; to_flask
+2516	Sound(SFX_Stats_Open) ; book 36
+2517	Sound(SFX_Stats_Open) ; book 25 ; learn_book 34
+2518	Sound(SFX_Stats_Open) ; book 21 ; learn_book 43
+2523	Sound(SFX_Stats_Open) ; book 22 ; learn_book 39
+2524	Sound(SFX_Stats_Open) ; book 37
+2525	Sound(SFX_Stats_Open) ; book 2
+2526	Sound(SFX_Stats_Open) ; book 48
+2528	sound (SFX_Quaff) ; effect (Cat's Eyes) 2 ; to_flask
+2529	sound (SFX_Quaff) ; cure_disease 6 ; to_flask
+2530	sound (SFX_Quaff) ; cure_disease 3 ; to_flask
+2541	sound (SFX_Quaff) ; cond_special 12 ; kill_quest 25 ; to_flask
+2543	Sound(SFX_Stats_Open) ; book 46
+2545	Sound(SFX_Stats_Open) ; book 3
+2546	Sound(SFX_Stats_Open) ; book 13
+2547	Sound(SFX_Stats_Open) ; book 4
+2548	Sound(SFX_Stats_Open) ; book 6
+2549	Sound(SFX_Stats_Open) ; book 5
+2550	Sound(SFX_Stats_Open) ; book 28 ; learn_book 31
+2551	Sound(SFX_Stats_Open) ; book 40
+2552	Sound(SFX_Stats_Open) ; book 38
+2553	Sound(SFX_Stats_Open) ; book 18 ; learn_book 32
+2554	Sound(SFX_Stats_Open) ; book 1
+2555	Sound(SFX_Stats_Open) ; book 44
+2556	Sound(SFX_Stats_Open) ; book 15 ; learn_book 37
+2557	Sound(SFX_Stats_Open) ; book 33 ; learn_book 30
+2558	Sound(SFX_Stats_Open) ; book 39
+2559	Sound(SFX_Stats_Open) ; book 9
+3139	unlocked_with(Crypt Key)
+3437	disease 1
+4528	Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.

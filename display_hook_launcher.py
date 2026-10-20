@@ -8,6 +8,7 @@ String passed to brl.max2d.TImageFont.Draw (VA 0x477B47).
 import csv
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -30,6 +31,47 @@ NARRATIVE_CALL_LOG = Path(__file__).resolve().parent / "runtime_narrative_calls.
 OFFLINE_SOURCE = Path(__file__).resolve().parent / "eschalonbook_text.csv"
 OFFLINE_TRANSLATED = Path(__file__).resolve().parent / "eschalonbook_text_translated.csv"
 RUNTIME_OVERRIDES = Path(__file__).resolve().parent / "runtime_fragment_overrides.json"
+SCREEN_CFG = Path.home() / "Documents" / "Eschalon Book 1 Saved Games" / "eschalon.cfg"
+
+
+def ensure_fullscreen():
+    """Make the development launcher start the game full-screen.
+
+    The engine ignores window resize requests for its 800x600 render target, so
+    the only way to get a usable debug view is the game's own screen mode.
+    Set ESCHALON_WINDOWED=1 to keep the player's windowed preference.
+    """
+    if os.environ.get("ESCHALON_WINDOWED") == "1":
+        return "windowed (ESCHALON_WINDOWED=1)"
+    if not SCREEN_CFG.exists():
+        return "screen config missing; leaving game default"
+    lines = [
+        line.rstrip("\r")
+        for line in SCREEN_CFG.read_text(encoding="ascii", errors="ignore").splitlines()
+    ]
+    changes = []
+    for index, line in enumerate(lines):
+        if index + 1 >= len(lines):
+            continue
+        value = lines[index + 1].strip()
+        if line.startswith("; Screen Mode"):
+            if value != "1":
+                lines[index + 1] = "1"
+                changes.append("screen mode")
+        elif line.startswith("; Color Depth"):
+            # The game writes 0 while windowed; an invalid depth makes the
+            # full-screen switch fail and silently falls back to a window.
+            if value not in {"16", "32"}:
+                lines[index + 1] = "32"
+                changes.append("color depth")
+        elif line.startswith("; Screen Refresh"):
+            if not value.isdigit() or int(value) <= 0:
+                lines[index + 1] = "60"
+                changes.append("refresh rate")
+    if not changes:
+        return "already full-screen"
+    SCREEN_CFG.write_text("\r\n".join(lines) + "\r\n", encoding="ascii", newline="")
+    return "adjusted: " + ", ".join(changes)
 
 
 def _read_first_column(path):
@@ -58,6 +100,69 @@ def _add_paragraph_variants(mapping, source, target):
             mapping[part_source] = part_target
             added += 1
     return added
+
+
+_TAIL_NOISE = re.compile(r'["\'\)\]]\s?[A-Za-z0-9<>]$')
+_NAME_SLOT = re.compile(r'(?:^|[\s"“”\'\(\[:;,.!?])\$(?=$|[\s"“”\'\)\]:;,.!?])')
+
+
+def _add_tail_alias(mapping, source, target):
+    """Drop branch-id letters the extractor appended after closing quotes.
+
+    Script records such as ``"...for me?"D`` carry a one-letter branch id that
+    the game itself never displays, so the runtime string lacks it.  Register
+    the cleaned variant as an alias while keeping the original key.
+    """
+    if len(source) < 4 or not _TAIL_NOISE.search(source):
+        return 0
+    alias = source[:-1].rstrip()
+    if not alias or alias in mapping:
+        return 0
+    clean_target = target
+    if clean_target.endswith(source[-1]):
+        clean_target = clean_target[:-1].rstrip()
+    mapping[alias] = clean_target
+    return 1
+
+
+def _build_name_patterns(mapping):
+    """Entries with a player-name slot cannot match after the name is filled in.
+
+    Only the common case is handled: one trailing ``$`` slot followed by at
+    most a short suffix.  The runtime name is recovered from the prefix and
+    suffix boundaries instead of a regex, so embedded line breaks stay safe.
+    """
+    patterns = []
+    for source, target in mapping.items():
+        if source.count("$") != 1 or target.count("$") != 1:
+            continue
+        if not _NAME_SLOT.search(source):
+            continue
+        prefix, suffix = source.split("$", 1)
+        target_prefix, target_suffix = target.split("$", 1)
+        if len(prefix) < 8 or len(suffix) > 8:
+            continue
+        patterns.append(
+            {
+                "prefix": prefix,
+                "suffix": suffix,
+                "target": target_prefix + "\u0001" + target_suffix,
+            }
+        )
+        # Dialogue panels render one wrapped line at a time; the name slot is
+        # usually on the final sentence. Register that sentence as its own
+        # pattern so the wrapped line can be recovered on its own.
+        tail_prefix = re.split(r"\n|(?<=[.!?])\s+", prefix)[-1]
+        tail_target = re.split(r"\n|。", target_prefix)[-1]
+        if len(tail_prefix) >= 10 and tail_target and tail_prefix != prefix:
+            patterns.append(
+                {
+                    "prefix": tail_prefix,
+                    "suffix": suffix,
+                    "target": tail_target + "\u0001" + target_suffix,
+                }
+            )
+    return patterns
 
 
 def load_offline_mapping():
@@ -89,6 +194,7 @@ def load_offline_mapping():
                 if runtime_source.lower().startswith(("a ", "an ", "the ")):
                     mapping["You see " + runtime_source] = "你看见" + runtime_target
                 _add_paragraph_variants(mapping, runtime_source, runtime_target)
+                _add_tail_alias(mapping, runtime_source, runtime_target)
                 offline_entries += 1
 
     if OFFLINE_SOURCE.exists() and OFFLINE_TRANSLATED.exists():
@@ -109,25 +215,193 @@ def load_offline_mapping():
     return mapping, offline_entries, override_entries
 
 
+def _build_prefix_index(mapping):
+    """Index long paragraphs by their first two words.
+
+    Dialogue panels receive one wrapped line at a time, so the full paragraph
+    never reaches a hook.  Keying paragraphs by their opening words lets the
+    runtime recognise the first line of a paragraph and split the translation
+    proportionally across the following lines.
+    """
+    index = {}
+    for source in mapping:
+        if len(source) < 40 or "\ufffd" in source:
+            continue
+        words = source.split()[:2]
+        if len(words) < 2:
+            continue
+        token = " ".join(words)
+        if len(token) < 6:
+            continue
+        index.setdefault(token, []).append(source)
+    return index
+
+
+def _build_word_index(mapping):
+    """Index paragraphs by a few distinctive words.
+
+    Dialogue and option text is wrapped into ~50-character fragments before it
+    reaches the drawing call, so a fragment never equals a stored key and often
+    starts mid-sentence. Looking a fragment up by its rarest words lets the
+    runtime find the owning paragraph and slice the translation from there.
+    """
+    index = {}
+    for source in mapping:
+        if len(source) < 40 or "\ufffd" in source:
+            continue
+        compact = re.sub(r"\s+", " ", source).strip()
+        words = {word.lower() for word in re.findall(r"[A-Za-z][A-Za-z']{5,}", compact)}
+        if not words:
+            continue
+        for word in sorted(words, key=len, reverse=True)[:8]:
+            index.setdefault(word, []).append(source)
+    return {word: items for word, items in index.items() if len(items) <= 40}
+
+
 def build_hook_script(mapping):
     mapping_json = json.dumps(mapping, ensure_ascii=False, separators=(",", ":"))
+    name_patterns_json = json.dumps(
+        _build_name_patterns(mapping), ensure_ascii=False, separators=(",", ":")
+    )
+    prefix_index_json = json.dumps(
+        _build_prefix_index(mapping), ensure_ascii=False, separators=(",", ":")
+    )
+    word_index_json = json.dumps(
+        _build_word_index(mapping), ensure_ascii=False, separators=(",", ":")
+    )
     return f"""
 'use strict';
 
 const translations = {mapping_json};
+const namePatterns = {name_patterns_json};
+const prefixIndex = {prefix_index_json};
+const wordIndex = {word_index_json};
+let dialogParagraph = null;
+
+// Dialogue panels hand the drawing call one wrapped line at a time, so the text
+// never equals a stored paragraph. Recognise the owning paragraph, then return
+// the proportional Chinese slice for that line. The engine also rewrites the
+// ASCII apostrophe to control byte 0x19 and doubles spaces, so all comparisons
+// run on this folded form.
+function normalizeText(value) {{
+    return value
+        .replace(/[\\u0019\\u2018\\u2019]/g, "'")
+        .replace(/[\\u001c\\u001d\\u201c\\u201d]/g, '"')
+        .replace(/[\\u0000-\\u0008\\u000b\\u000c\\u000e-\\u0018\\u001a-\\u001f]/g, '')
+        .replace(/\\s+/g, ' ')
+        .trim();
+}}
+
+function stripRecordQuotes(value) {{
+    return value
+        .replace(/^[\\s"'\\[]+/, '')
+        .replace(/[\\s"'\\]]+$/, '')
+        .trim();
+}}
+
+function paragraphSlice(paragraph, position, length) {{
+    const total = paragraph.normText.length;
+    const target = paragraph.translated;
+    if (!total || !target.length) return undefined;
+    const start = Math.round(position / total * target.length);
+    const end = Math.round((position + length) / total * target.length);
+    const slice = target.slice(start, Math.max(end, start + 1))
+        .replace(/[\\r\\n*]+/g, ' ').trim();
+    if (!slice.length) return undefined;
+    paragraph.consumed = position + length;
+    return slice;
+}}
+
+function findParagraphByFragment(line) {{
+    const words = (line.match(/[A-Za-z][A-Za-z']{{5,}}/g) || []).map(word => word.toLowerCase());
+    if (!words.length) return undefined;
+    words.sort((a, b) => b.length - a.length);
+    for (const word of words.slice(0, 5)) {{
+        const list = wordIndex[word];
+        if (list === undefined) continue;
+        for (const source of list) {{
+            const target = translations[source];
+            if (target === undefined) continue;
+            const normSource = normalizeText(source);
+            const position = normSource.indexOf(line);
+            if (position < 0) continue;
+            const paragraph = {{normText: normSource, translated: target, consumed: 0}};
+            const slice = paragraphSlice(paragraph, position, line.length);
+            if (slice === undefined) continue;
+            dialogParagraph = paragraph;
+            return slice;
+        }}
+    }}
+    return undefined;
+}}
+
+function translateDialogLine(text) {{
+    const line = normalizeText(text);
+    if (line.length < 3) return undefined;
+    if (dialogParagraph !== null) {{
+        const window = Math.max(0, dialogParagraph.consumed - 80);
+        const position = dialogParagraph.normText.indexOf(line, window);
+        if (position >= 0) return paragraphSlice(dialogParagraph, position, line.length);
+        // The trailing quote of the final line is part of the record, not the
+        // stored paragraph, so retry the same line without record punctuation.
+        const bareTail = stripRecordQuotes(line);
+        if (bareTail.length >= 3 && bareTail !== line) {{
+            const tailPosition = dialogParagraph.normText.indexOf(bareTail, window);
+            if (tailPosition >= 0) {{
+                return paragraphSlice(dialogParagraph, tailPosition, bareTail.length);
+            }}
+        }}
+        dialogParagraph = null;
+    }}
+    const bare = stripRecordQuotes(line);
+    if (bare.length >= 6) {{
+        const slice = findParagraphByFragment(bare);
+        if (slice !== undefined) return slice;
+    }}
+    const words = line.split(' ').slice(0, 2).join(' ');
+    const candidates = prefixIndex[words];
+    if (candidates === undefined) return undefined;
+    for (const source of candidates) {{
+        const normSource = normalizeText(source);
+        if (!normSource.startsWith(line)) continue;
+        const target = translations[source];
+        if (target === undefined) continue;
+        const paragraph = {{normText: normSource, translated: target, consumed: 0}};
+        const slice = paragraphSlice(paragraph, 0, line.length);
+        if (slice === undefined) continue;
+        dialogParagraph = paragraph;
+        return slice;
+    }}
+    return undefined;
+}}
 const normalizedIndex = new Map();
 for (const key of Object.keys(translations)) {{
-    const compact = key.replace(/\\s+/g, ' ').trim();
+    const compact = normalizeText(key);
     if (compact.length >= 2 && !normalizedIndex.has(compact)) normalizedIndex.set(compact, key);
+}}
+
+// The engine substitutes the player's name into '$' slots before display, so
+// these entries can never match a stored key. Recover the name from the fixed
+// prefix and suffix boundaries and substitute it into the translation.
+function applyNamePattern(source) {{
+    for (const item of namePatterns) {{
+        if (source.length <= item.prefix.length + item.suffix.length) continue;
+        if (!source.startsWith(item.prefix) || !source.endsWith(item.suffix)) continue;
+        const name = source.slice(item.prefix.length, source.length - item.suffix.length);
+        if (!name || name.length > 32) continue;
+        return item.target.split('\\u0001').join(name);
+    }}
+    return undefined;
 }}
 
 function lookupTranslation(source) {{
     let target = translations[source];
     if (target === undefined) target = translations[source.trim()];
     if (target === undefined) {{
-        const key = normalizedIndex.get(source.replace(/\\s+/g, ' ').trim());
+        const key = normalizedIndex.get(normalizeText(source));
         if (key !== undefined) target = translations[key];
     }}
+    if (target === undefined) target = applyNamePattern(source);
     return target;
 }}
 
@@ -226,6 +500,27 @@ function makeChineseBreakable(text) {{
         run.match(/.{{1,6}}/g).join(' '));
 }}
 
+// Combat and service messages are assembled at runtime from names, verbs and
+// numbers, so they never match a whole-sentence dictionary entry. Normalise
+// the recurring English fragments after the dictionary lookups.
+function applyCombatPatterns(text) {{
+    let out = text;
+    out = out.replace(/\\b(\\d+)\\s+points?\\s+of\\s+damage\\b/gi, '$1 点伤害');
+    out = out.replace(/\\bpoints?\\s+of\\s+damage\\b/gi, '点伤害');
+    out = out.replace(/\\bsuffers\\b/gi, '承受');
+    out = out.replace(/\\battacks\\b/gi, '攻击');
+    out = out.replace(/\\bmisses\\b/gi, '未命中');
+    out = out.replace(/\\bhits\\b/gi, '命中');
+    out = out.replace(/\\bfor\\s+(\\d+)\\s+damage\\b/gi, '造成 $1 点伤害');
+    out = out.replace(/\\byou\\s+gain\\s+(\\d+)\\s+experience\\b/gi, '获得 $1 点经验');
+    out = out.replace(/\\bgains?\\s+(\\d+)\\s+experience\\b/gi, '获得 $1 点经验');
+    out = out.replace(/\\bTown Guard\\b/g, '城镇守卫');
+    if (out !== text && /[\\u3400-\\u9fff]/.test(out) && /\\.\\s*$/.test(out)) {{
+        out = out.replace(/\\.\\s*$/, '。');
+    }}
+    return out === text ? undefined : out;
+}}
+
 // Ghidra: FUN_004c69ad (0x4C69AD) builds the full narrative body, splits it
 // into '|' command and prose parts, and then picks the parchment panel.
 // At 0x4c6c53 every panel branch has converged: [ebp-0x24] still holds the
@@ -280,6 +575,9 @@ Interceptor.attach(ptr('0x{MESSAGE_PREWRAP_VA:08X}'), {{
             let target = translations[source];
             if (target === undefined) target = translations[source.trim()];
             if (target === undefined) target = replaceVisiblePhrases(source);
+            const baseText = target === undefined ? source : target;
+            const patched = applyCombatPatterns(baseText);
+            if (patched !== undefined) target = patched;
             if (target === undefined || target === source) return;
             target = makeChineseBreakable(target);
             args[0] = makeBlitzString(target);
@@ -303,6 +601,9 @@ Interceptor.attach(ptr('0x{POPUP_PREWRAP_VA:08X}'), {{
             let target = translations[source];
             if (target === undefined) target = translations[source.trim()];
             if (target === undefined) target = replaceVisiblePhrases(source);
+            const baseText = target === undefined ? source : target;
+            const patched = applyCombatPatterns(baseText);
+            if (patched !== undefined) target = patched;
             if (target === undefined || target === source) return;
             target = makeChineseBreakable(target);
             args[0] = makeBlitzString(target);
@@ -356,7 +657,21 @@ Interceptor.attach(ptr('0x{DRAW_TEXT_VA:08X}'), {{
                 if (unsafeStandaloneWords.has(source.trim().toLowerCase())) {{
                     target = undefined;
                 }}
-                if (target === undefined) target = replaceVisiblePhrases(source);
+                if (target === undefined) target = lookupTranslation(source);
+                if (unsafeStandaloneWords.has(source.trim().toLowerCase())) {{
+                    target = undefined;
+                }}
+                if (target === undefined && source.length >= 12 && source.indexOf(' ') > 0) {{
+                    target = translateDialogLine(source);
+                }}
+                // Phrase substitution only suits short labels; on wrapped prose it
+                // would translate a fragment and leave the rest in English.
+                if (target === undefined && source.length <= 120) {{
+                    target = replaceVisiblePhrases(source);
+                }}
+                const baseText = target === undefined ? source : target;
+                const patched = applyCombatPatterns(baseText);
+                if (patched !== undefined) target = patched;
                 resolved.set(source, target === undefined ? null : target);
             }}
             if (target === null) target = undefined;
@@ -365,10 +680,10 @@ Interceptor.attach(ptr('0x{DRAW_TEXT_VA:08X}'), {{
                 if (unmatched.size <= 2000) {{
                     send({{kind: 'unmatched', source}});
                 }}
-                // Long descriptions are rendered one English word at a time.
-                // Record a few distinct native call paths so IDA can identify
-                // the game's word-wrap routine above brl.max2d.DrawText.
-                if (source.length <= 32 && stackSignatures.size < 24) {{
+                // Dialogue bodies and other panels are wrapped before drawing.
+                // Record distinct native call paths for multi-word fragments so
+                // the panel formatter can be identified from the call stack.
+                if (source.length > 32 && source.indexOf(' ') > 0 && stackSignatures.size < 40) {{
                     const stack = Thread.backtrace(this.context, Backtracer.ACCURATE)
                         .slice(0, 16)
                         .map(address => address.sub(moduleBase).toString());
@@ -403,6 +718,14 @@ def on_message(message, _data):
     kind = payload.get("kind")
     if kind == "ready":
         print(f"Display hook ready: {payload.get('entries')} translations")
+    elif kind == "dialog_entry":
+        print(f"Dialog render entry: object=0x{payload.get('pointer', 0):08x}")
+    elif kind == "dialog_candidate":
+        print(f"Dialog candidate +0x{payload.get('offset', 0):x} (depth {payload.get('depth')}): "
+              f"{payload.get('source', '')}")
+    elif kind == "dialog_hit":
+        print(f"Dialog text replaced at +0x{payload.get('offset', 0):x}: "
+              f"{payload.get('source', '')}")
     elif kind == "narrative_entry":
         signature = payload.get("signature", "")
         print(f"Narrative call (id:type:panel) = {signature}")
@@ -455,6 +778,7 @@ def main():
         print(f"Offline corpus active: {offline_entries} translated entries")
     if override_entries:
         print(f"Runtime fragment overrides active: {override_entries}")
+    print(f"Screen mode: {ensure_fullscreen()}")
     app_id_file = core.ensure_steam_identity()
     print(f"Steam identity ready: {app_id_file}")
     copied_exe = None
