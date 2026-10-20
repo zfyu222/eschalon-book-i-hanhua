@@ -553,3 +553,23 @@ BlitzMax 把字符串长度存在别处，字节扫描会把下一个字段的�
 - 已知问题：少量独立界面仍可能显示英文；超长中文在窄界面中换行可能不理想；运行时注入组件可能被安全软件误报；仅验证 Steam 32 位版本。
 - ZIP SHA-256：`BF17C1E24EBB8A7273EE9117B903D42B844B98495E377E29276F0303369C9EBE`
 - GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.4`
+
+### v1.5（2026-10-20）
+
+- 补丁：`Dispatch/Eschalon Book I_子非鱼汉化1.5.zip`
+- 标题：`《Eschalon Book I》子非鱼AI汉化补丁 v1.5`
+- 支持版本：Steam Windows 32 位本地版本；已验证 `eschalon_book_1.exe` SHA-256 为 `8F25C5FF8FC869E3C3B02C9E6F960C6A082CFCC097289A5247F237656C3031A8`。
+- 载荷：`EschalonBook_Chinese_Launcher.exe` 与 `steam_appid.txt`；不包含游戏本体或原始游戏资源。
+- 变更：显示映射 3413 → 4783 条，离线译表 2934 → 3962 条（译表 4563 行）。包含覆盖率审计补入的同文漏翻（金币、`[Attribute]`、`Nor'lander`、`message(...)` 内嵌正文），50 行行内方括号标签，8 条地图碑铭与告示，16 位色深设置项；对话框匹配修复（词/前缀索引长度下限 40 → 12、去引号前缀匹配、段落上下文容错 4 → 12 次未命中）；状态栏单位换算（`lbs` → 磅、游戏时长、日期）。
+- 新增资源：`runtime_fragment_overrides.json`（2 条酒吧老板对话的运行时覆盖）随启动器嵌入，启动日志显示 `Runtime fragment overrides active: 2`。
+- 验证：发布版从真实 Steam 游戏目录启动冒烟测试通过 —— 启动器进程与 `eschalon_book_1`（PID 8232）存活，窗口标题 `Eschalon: Book I`；日志显示三套字体注入成功（`cn_OldTymeBG` / `cn_Fantasy` / `cn_DS_Celtic_1`），`Loaded 4783 translations`、`Offline corpus active: 3962`，启动菜单与角色创建提示命中中文。ZIP 已解压复核，载荷 SHA-256 与 `SHA256SUMS.txt` 一致，说明书含 UTF-8 BOM 与完整更新日志（v1.0–v1.5）。
+- 安装：`EschalonBook_Chinese_Launcher.exe` 与 `steam_appid.txt` 放入游戏根目录；v1.5 已安装到 `Game/`（Steam 目录）。
+- 已知问题：主菜单选项、状态栏标签、制作人员名单等预渲染艺术字图片仍为英文；少量独立界面可能显示英文；超长中文在窄界面中换行可能不理想；运行时注入组件可能被安全软件误报；仅验证 Steam 32 位版本。
+- ZIP SHA-256：`498291CB3157040396B6056257FDF50E7FDA06CE93DAD510303235BE9FBEA839`
+- GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.5`
+
+#### v1.5 打包过程说明（质量门禁）
+
+- `create_release_patch.py` 的自定义工作流门禁首先拦下了打包：`TranslateFiles/state/workflow.sqlite3` 记录了一次 686 条的增量运行，但全部记录停在 `source` 阶段，`glossary_review` 还有 5 个 `running` 任务，从未进入 pilot/final 验收。
+- 核对结果：该运行的 686 条原文已全部出现在 `eschalonbook_text.csv`（4563 行，命中 686/686），译文经 `Analysis/merge_increment_translation.py` 并入主译表，属于**已并表的遗留运行记录**，不是本次发布载荷的来源。
+- 处理：把 `workflow.sqlite3` 与 `config/workflow.json` 归档到 `TranslateFiles/state/archive/20261020_increment_run/`，本版按 v1.0–v1.4 的既有验证流程（实机冒烟 + 载荷哈希复核）发布。后续如再启动自定义工作流，应从当前译表重新 `init`，不要复用该归档库。

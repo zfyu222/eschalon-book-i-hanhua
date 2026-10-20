@@ -369,8 +369,10 @@ function translateDialogLine(text) {{
             }}
         }}
         // Keep the paragraph for the next line, but do not hold it forever.
+        // Option lists interleave price and weight labels, so a wrapped final
+        // line may sit behind a dozen unrelated draws.
         dialogMisses++;
-        if (dialogMisses >= 4) {{
+        if (dialogMisses >= 12) {{
             dialogParagraph = null;
             dialogMisses = 0;
         }}
@@ -548,6 +550,8 @@ function applyCombatPatterns(text) {{
     }});
     // Play-time strings: "9.6 hours".
     out = out.replace(/(\\d+(?:\\.\\d+)?)\\s*hours?\\b/gi, '$1 小时');
+    // Item weight: "0.5 lbs".
+    out = out.replace(/(\\d+(?:\\.\\d+)?)\\s*lbs\\b/gi, '$1 磅');
     // Save-slot timestamps: "21 Jul 2026  22:41:06".
     const months = {{
         Jan: '1月', Feb: '2月', Mar: '3月', Apr: '4月', May: '5月', Jun: '6月',
@@ -627,7 +631,16 @@ Interceptor.attach(ptr('0x{MESSAGE_PREWRAP_VA:08X}'), {{
             const baseText = target === undefined ? source : target;
             const patched = applyCombatPatterns(baseText);
             if (patched !== undefined) target = patched;
-            if (target === undefined || target === source) return;
+            if (target === undefined) {{
+                // Page bodies are translated at this entry point. Log the miss so
+                // a body that reaches a different formatter is still visible.
+                if (/[A-Za-z]{{3,}}/.test(source) && !unmatched.has(source)) {{
+                    unmatched.add(source);
+                    send({{kind: 'unmatched', source: source.slice(0, 300)}});
+                }}
+                return;
+            }}
+            if (target === source) return;
             target = makeChineseBreakable(target);
             args[0] = makeBlitzString(target);
             send({{kind: 'prewrap_hit', source: source.slice(0, 100),
@@ -653,7 +666,14 @@ Interceptor.attach(ptr('0x{POPUP_PREWRAP_VA:08X}'), {{
             const baseText = target === undefined ? source : target;
             const patched = applyCombatPatterns(baseText);
             if (patched !== undefined) target = patched;
-            if (target === undefined || target === source) return;
+            if (target === undefined) {{
+                if (/[A-Za-z]{{3,}}/.test(source) && !unmatched.has(source)) {{
+                    unmatched.add(source);
+                    send({{kind: 'unmatched', source: source.slice(0, 300)}});
+                }}
+                return;
+            }}
+            if (target === source) return;
             target = makeChineseBreakable(target);
             args[0] = makeBlitzString(target);
             send({{kind: 'popup_hit', source: source.slice(0, 100),
