@@ -1,0 +1,8 @@
+BACK	rows=[455, 474, 485, 516, 565]
+END	rows=[456, 475, 486, 489, 505]
+EXIT	rows=[842]
+Give 75 gold	rows=[800]
+Give Divine Ore to Gunther	rows=[646]
+Give Purest Water to Oolaseph	rows=[791]
+Give ceramic crucible	rows=[640]
+LOCKED	rows=[1747, 1752, 1753, 1754, 1755]

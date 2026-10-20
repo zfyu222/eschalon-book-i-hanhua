@@ -1,0 +1,447 @@
+!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^
+!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
+!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`a
+!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+!&,024679FRVWY
+%d %b %Yib
+'s maximum Hit Points have increased by i
+*48?GO[ehoz
+, extra="
+, mods=
+: data=
+ATMOS_Fog.png
+An error has occured. Please uninstall the game, then reinstall it using the original Setup file or CD.
+AppOpenFile
+AppSuspend
+AppTerminate
+Attempt to access field or method of Null object
+Attempt to call abstract method
+Attempt to call uninitialized function pointer
+Attempt to index array element beyond array length
+Attempt to read beyond end of data
+Automap_Window.png
+BBDX7Device Window Class
+BRL.Bank.TBank
+BRL.Graphics.TGraphics
+BRL.LinkedList.TList
+BRL.Pixmap.TPixmapb
+BasiliskGames.png
+BasiliskLogo.png
+Big_Text_Window.png
+BuildMipMaps: lock failed
+Buttons.png
+ChEd_Help.png
+ChEd_Skill_Plq.png
+ChEd_Top.png
+CompassTiles.png
+Create DX7 surface Failedf
+CreateRenderSurface _width=
+CreateSoundBuffer
+CreateSurface OK
+CreateSurface failed:
+Created DirectSound buffer
+D3D7Max2D Create System Surface Failedf
+D3DXAssembleShader
+DD3D7ImageFrame Lock failed
+DDERR_WRONGMODE
+DataStreams can not be both readable and writeable
+DeathText1.png
+DeathText2.png
+DeathText3.png
+DeathText4.png
+DeathText5.png
+Deleted OpenAL buffer
+Destroy surface=
+Direct3DCreate9
+DirectDrawCreate
+DirectDrawCreateEx
+DirectDrawEnumerateA
+DirectSoundCreate
+Duplicated DirectSound buffer
+ERROR 102: couldn't initialize cache directory.$$$
+EXCLUSIVEMODEALREADYSET
+Elemental skill of [i
+Error code:
+Error reading from stream
+Error writing to stream
+Error: No entity file found!$
+Eschalon.png
+Failed to generate OpenAL source
+Fire_Phase.png
+FreeAudio DirectSound
+FreeAudio Multimedia
+GLW_Dice.png
+GadgetAction
+GadgetClose
+GadgetDone
+GadgetLostFocus
+GadgetMenu
+GadgetOpen
+GadgetPaint
+GadgetSelect
+GadgetShape
+Generated OpenAL buffer
+Generated OpenAL source
+Generic Hardware
+Generic Software
+Greater Protection$
+Internal socket errorbbb
+Intro_Foreground.png
+Intro_Midground.png
+Inventory_Window.png
+JournalHeader.png
+Launch Menu
+Level iii
+LevelUp.png
+List index out of range
+Lock SoundBuffer
+Malformed line terminator
+MenuAction
+Menu_Bar.png
+MouseEnter
+MouseLeave
+MouseWheel
+NOEXCLUSIVEMODE
+NPC_Ports.pngi$$$i
+Note_Sheet.png
+OL_Boots.png
+OL_CJerk.png
+OL_CLegs.png
+OL_Cloak.png
+OL_LHauberk.png
+OL_LJerk.png
+OL_PLegs.png
+OL_TPlate.png
+OpenAL Default
+Option_Menu.png
+OptionsText.pngdi
+PD_Male.png
+PRIMARYSURFACEALREADYEXISTS
+Player_Marker.png
+Pointer_Reticle.png
+Port_Frame.png
+Presents.png
+ProcessExit
+Q&'FJL(GKHI)
+RLSETQP\DXMKZFHJW
+Release dd7=
+Released DirectSound buffer
+Retrieve the Giant Chieftain
+SFX_Amuleti
+SFX_Narration$
+SURFACELOST
+Script Error!$
+Size invalidated
+Spell_Levels.png
+Spell_Tablet.png
+Stats_Scroll_Buttons.png
+Stats_Window.png
+Stream is not readable
+Stream is not seekable
+Stream is not writeablebbbb
+StreamAvail
+Target was not charmed, but it appears they may be effected if the spell were cast at a higher level.i
+TinyNums.png
+Too many DataTypes
+Too many hook ids
+Torch_Flame3.png
+Trade_Menu.png
+Tumbler_Anim.pngii
+Tumbler_Frame.png
+UNSUPPORTEDMODE
+Unable to calculate tex size
+Unable to read object
+Unable to write object
+Unimplemented sample format conversion
+Unknown Event, id=
+Unlock SoundBuffer
+Unrecognized DataType:
+WM_KILLFOCUS
+WM_SETFOCUS
+Warning_Frame.png
+Warning_Paralyzed.png
+Water_Phase.png
+Weapon, Thrown$
+WindowAccept
+WindowActivate
+WindowClose
+WindowMove
+WindowSize
+Windows 2000
+Windows 95
+Windows 98
+Windows ME
+Windows NT
+Windows Vista
+Windows XP
+XEbcdg*^_V]
+You are currently holding an item. It will be lost forever if you do not return it to inventory before saving!$$$
+You are cursed!!i
+You have offered to locate and bring 10 giant larvae to Hesham, an alchemist working in the Crypt at Eversleep Cemetery in the North Parish region.$
+You were able to avoid the splash of acid!i
+You've crushed i
+Your inventory is too heavy...you cannot move!i
+ZXVTRPOKGEDCA@?><:863210.-,+
+[NZYa5B@7-89:2;<=DC34+.6/1A,?0>SPRe\O
+_Destroying
+_`abcdefghijklmnopqrstuvwxyz{|}~
+_clipper.Release_=
+_primSurf.Release_=i
+_renderSurf.Release_=
+`abcdefghijklmn
+alBuffer3f
+alBuffer3i
+alBufferData
+alBufferfv
+alBufferiv
+alDeleteBuffers
+alDeleteSources
+alDistanceModel
+alDopplerFactor
+alDopplerVelocity
+alGenBuffers
+alGenSources
+alGetBoolean
+alGetBooleanv
+alGetBuffer3f
+alGetBuffer3i
+alGetBufferf
+alGetBufferfv
+alGetBufferi
+alGetBufferiv
+alGetDouble
+alGetDoublev
+alGetEnumValue
+alGetError
+alGetFloat
+alGetFloatv
+alGetInteger
+alGetIntegerv
+alGetListener3f
+alGetListener3i
+alGetListenerf
+alGetListenerfv
+alGetListeneri
+alGetListeneriv
+alGetProcAddress
+alGetSource3f
+alGetSource3i
+alGetSourcef
+alGetSourcefv
+alGetSourcei
+alGetSourceiv
+alGetString
+alIsBuffer
+alIsEnabled
+alIsExtensionPresent
+alIsSource
+alListener3f
+alListener3i
+alListenerf
+alListenerfv
+alListeneri
+alListeneriv
+alSource3f
+alSource3i
+alSourcePause
+alSourcePausev
+alSourcePlay
+alSourcePlayv
+alSourceQueueBuffers
+alSourceRewind
+alSourceRewindv
+alSourceStop
+alSourceStopv
+alSourceUnqueueBuffers
+alSourcefv
+alSourceiv
+alSpeedOfSound
+alcCaptureCloseDevice
+alcCaptureOpenDevice
+alcCaptureSamples
+alcCaptureStart
+alcCaptureStop
+alcCloseDevice
+alcCreateContext
+alcDestroyContext
+alcGetContextsDevice
+alcGetCurrentContext
+alcGetEnumValue
+alcGetError
+alcGetIntegerv
+alcGetProcAddress
+alcGetString
+alcIsExtensionPresent
+alcMakeContextCurrent
+alcOpenDevice
+alcProcessContext
+alcSuspendContext
+arrow0000.png
+arrow0001.png
+arrow0002.png
+arrow0003.png
+arrow0004.png
+arrow0005.png
+arrow0006.png
+arrow0007.png
+arrow10.png
+arrow11.png
+arrow12.png
+arrow13.png
+arrow9.png
+atmos_desert.wav
+bar_colors.png
+basiliskdiamonds.png
+blitzfont.bin
+brl.max2d.TImage
+bubble.png
+busy: Valid=
+combcorn.png
+container_chest.png
+container_rock.png
+copyright - 2000 - Daniel Steven SmithDS_Celtic-1RegularFontMonger:DS_Celtic 1DS_Celtic 1DSCeltic1
+credits.png
+cursor.png
+demonotice.pngd
+device does not support clipplanes
+endsky.png
+endtext1.png
+endtext_good1.png
+endtext_good2.png
+eschalon.png
+failed (
+figure.png
+fx_blast.png
+fx_divine.png
+fx_element.png
+fx_element_smoke.png
+fx_entangle.png
+fx_gib.png
+fx_snowflake.png
+fx_woodgib.png
+gembar.png
+gfx_blue_star.png
+gfx_green_star.png
+gfx_item_flare.png
+gfx_red_star.png
+gfx_white_star.png
+gldrawtextfont.bin
+hijklmnopqrs~
+hourglass.png
+iiiii$$i$iiii
+incbin/51.tre
+incbin/52.tre
+incbin/53.tre
+incbin/54.tre
+incbin/55.tre
+incbin/56.tre
+incbin/57.tre
+incbin/58.tre
+incbin/59.tre
+incbin/61.tre
+incbin/62.tre
+incbin/63.tre
+incbin/64.tre
+incbin/65.tre
+incbin/66.tre
+incbin/67.tre
+incbin/68.tre
+incbin/69.tre
+incbin/70.tre
+incbin/71.tre
+incbin/72.tre
+incbin/73.tre
+incbin/74.tre
+incbin/75.tre
+incbin/76.tre
+incbin/77.tre
+incbin/79.tre
+incbin/80.tre
+incbin/81.tre
+incbin/82.tre
+incbin/83.tre
+incbin/85.tre
+incbin/86.tre
+incbin/87.tre
+incbin/88.tre
+incbin/89.tre
+incbin/90.tre
+incbin/91.tre
+incbin/92.tre
+incbin/93.tre
+incbin/94.tre
+incbin/95.tre
+incbin/96.tre
+incbin/books.txt
+incbin/celtic.ttf
+incbin/entities.csv
+incbin/f1.ttf
+incbin/kelt.ttf
+incbin/master_item_sheet.csv
+incbin/narrative.txt
+iso_mousemap.png
+iso_tileset_base.png
+iso_tileset_base_decals.png
+iso_tileset_obj_a.png
+iso_tileset_obj_b.png
+iso_tileset_obj_c.png
+iso_tileset_obj_decals.png
+iso_trees.png
+items_mastersheet.png
+jikmlnoqprsutvw
+keyboard_shortcuts.png
+littleendian
+loading_plaque.png
+magitemglow.png
+mainmenu.png
+menu_backdrop.png
+menu_firefly.png
+menu_foreground.png
+msg_window.png
+msgfloat.png
+music/battle_loop.wavi$iii
+ol_bludge.png
+ol_bow.png
+ol_cleave.png
+ol_coif.png
+ol_dagger.png
+ol_helm.png
+ol_lantern.png
+ol_lantern_off.png
+ol_mace.png
+ol_shield.png
+ol_shield2.png
+ol_spear.png
+ol_staff.png
+ol_sword.png
+ol_torch.png
+ol_wizhat.png
+phasedial.png
+pixelpoint.png
+player.png
+proj_arrow.png
+proj_dart.png
+proj_demon.png
+proj_fireball.png
+proj_frost.png
+proj_mag1.png
+proj_mag2.png
+proj_poison.png
+proj_slime.png
+proj_spear.png
+resources/incbin/master_item_sheet.csv$
+resources/packedgraphics/linux_launch.png
+response_marker.png$
+reticle.png
+s skull from Camp Thorndike and return it to Omar in the Giant's Village. Omar will trade you a Goblin key for the skull.
+saveload.png
+slider_knob.png
+sound/launch.wav$
+sunmoon.png
+tABCDEFGHIJKLMNOPQRSTUVWXYZ
+tabcdefghijklmnopqrstuvwxyz
+tangletree.png
+thankyou_text.png
+twilightbackdrop2.png
+yFantasyBold1.000;Alts;FantasyFantasyBoldVersion 1.000Fantasy
+}{ywuqmhfdb`\ZXPL+'%#

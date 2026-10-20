@@ -359,6 +359,64 @@ EXE 里能枚举到、而译表里没有的字符串。它不检查两件事：
 & $py Analysis\static_coverage.py
 ```
 
+## 2026-10-20 文本覆盖缺口排查（第二轮）
+
+### 为什么要再查一遍
+
+第一轮只比对 EXE 的 **ASCII** 字符串池，且审计正则要求候选以 `.!?` 结尾。
+BlitzMax 把字符串长度存在别处，字节扫描会把下一个字段的字符粘在句尾
+（`"...for me?"E`），这类候选被正则直接丢弃；UTF-16 字符串表则完全没扫过。
+地图文件、职业定义文件也从未纳入。
+
+### 新增的文本源与结果
+
+| 来源 | 候选 | 未覆盖 | 结论 |
+|------|------|--------|------|
+| EXE UTF-16 字符串表 | 1667 | 447 | 仅 `16-bit (Thousands of colors)` 是玩家可见，其余为 DirectX/OpenAL/BlitzMax 调试输出 |
+| EXE ASCII 池 | 3804 | 2597 | 剥掉尾部残留字节后，仅 `I can do this.` 一句缺失；其余为物品表/书单 CSV 行、格式串、资源路径 |
+| `data/*.ent` | 24 | 0 | 实体定义，文本已在译表 |
+| `data/fighter` 等职业文件 | 3 | 0 | — |
+| `data/*.map` | 850 | 291 → 8 | 291 是脚本行粒度噪声，句子级提取后仅 8 条真实缺失 |
+| `help.html` | 402 | 402 | 全部未译，属游戏帮助文档，见下方待决项 |
+
+### 本轮修复清单
+
+译表 4546 → 4555 行，显示映射 4765 → 4775 条。
+
+1. **行内方括号标签 50 行**：`[BACK]`→`[返回]`、`[END]`→`[结束]`、
+   `[EXIT]`→`[离开]`、`[LOCKED]`→`[锁定]`，以及 4 条 `[Give ...]` 动作标签
+   （复用已有独立条目译法，如 `[交出陶瓷坩埚]`）。独立成行的方括号条目此前已译，
+   漏的是嵌在对话行内的同一标签。
+2. **地图文本 8 条**：蛛形生物室告示、Edward/Rachel/Lars 三块墓碑铭文、
+   "让时钟停摆"墓志诗、画在墙上的假门、一块字迹模糊的古墓碑。
+3. **设置项** `16-bit (Thousands of colors)` → `16位（数千色）`，
+   与已译的 32-bit 条目对齐。此前只有切到 16 位色深才暴露。
+4. **对话选项** `I can do this.` → `我能做到。`
+
+### 已确认无缺口的部分
+
+- `Yes`/`No` 已译为「是」「否」，水井拉绳询问 `There is a rope going down the well. Pull it up?` 已译。
+- 井绳脚本的 8 个 `message(...)` 分支正文、Eeru 引路叙述均已译。
+- 物品名（`Mithril Alloy Chain Boots`、`Divine Ore Great Sword`、`Recurved Composite Great Bow` 等）、
+  书名（`A History of Thaermore`、`The Alchemist's Cookbook I–III` 等）均按名称列单独译好，
+  物品表 CSV 行本身不需要翻。
+- 带尾随分支字节的对话（`"And it was stolen?"q`、`"A talking tree wants to help me?..."_`）
+  其干净文本均已在译表。
+
+### 待决项
+
+`help.html`（402 条）是游戏目录下的帮助文档，由系统浏览器打开，不经游戏引擎绘制。
+翻译它不影响游戏内显示，但玩家查阅时会看到英文。是否处理需单独确认。
+
+### 复现命令
+
+```powershell
+& $py Analysis\audit_uncovered.py       # 多源覆盖审计
+& $py Analysis\extract_map_text.py      # 地图句子级提取
+& $py Analysis\check_map_remaining.py   # 地图剩余核对
+& $py Analysis\check_ascii_residue.py   # ASCII 尾部残留剥离复核
+```
+
 ## 对外发布
 
 ### v1.0（2026-08-20）

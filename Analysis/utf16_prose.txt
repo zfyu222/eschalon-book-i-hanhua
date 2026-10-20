@@ -1,0 +1,51 @@
+%d %b %Yib
+'s maximum Hit Points have increased by i
+16-bit (Thousands of colors)
+An error has occured. Please uninstall the game, then reinstall it using the original Setup file or CD.
+Attempt to access field or method of Null object
+Attempt to call abstract method
+Attempt to call uninitialized function pointer
+Attempt to index array element beyond array length
+Attempt to read beyond end of data
+BBDX7Device Window Class
+BuildMipMaps: lock failed
+Create DX7 surface Failedf
+Created DirectSound buffer
+D3D7Max2D Create System Surface Failedf
+DD3D7ImageFrame Lock failed
+DataStreams can not be both readable and writeable
+Deleted OpenAL buffer
+Duplicated DirectSound buffer
+ERROR 102: couldn't initialize cache directory.$$$
+Elemental skill of [i
+Error reading from stream
+Error writing to stream
+Error: No entity file found!$
+Failed to generate OpenAL source
+Generated OpenAL buffer
+Generated OpenAL source
+Internal socket errorbbb
+List index out of range
+Malformed line terminator
+Released DirectSound buffer
+Retrieve the Giant Chieftain
+Stream is not readable
+Stream is not seekable
+Stream is not writeablebbbb
+Target was not charmed, but it appears they may be effected if the spell were cast at a higher level.i
+Too many DataTypes
+Too many hook ids
+Unable to calculate tex size
+Unable to read object
+Unable to write object
+Unimplemented sample format conversion
+Unknown Event, id=
+You are currently holding an item. It will be lost forever if you do not return it to inventory before saving!$$$
+You are cursed!!i
+You have offered to locate and bring 10 giant larvae to Hesham, an alchemist working in the Crypt at Eversleep Cemetery in the North Parish region.$
+You were able to avoid the splash of acid!i
+You've crushed i
+Your inventory is too heavy...you cannot move!i
+copyright - 2000 - Daniel Steven SmithDS_Celtic-1RegularFontMonger:DS_Celtic 1DS_Celtic 1DSCeltic1
+device does not support clipplanes
+s skull from Camp Thorndike and return it to Omar in the Giant's Village. Omar will trade you a Goblin key for the skull.

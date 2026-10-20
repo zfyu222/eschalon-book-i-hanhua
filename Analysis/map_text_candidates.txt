@@ -1,0 +1,91 @@
+A corpse rises from the coffin!
+A gate moves...
+A gate opens...
+A passkey in your possession fits in the lever's slot allowing you to unlock it.
+A skeleton rises from the coffin!
+A spirit rises from the coffin!
+Abygale: You are not allowed in there! Please leave!
+Agh! The Goblins have been using this well as a toilet!
+Ah! Very refreshing!
+Arachnid chamber: enter with caution! Please do not harm the specimens; take only the magickal components that you need for your studies.
+As you near the rock wall, a section crumbles apart! It appears this was only a poorly made false wall.
+Edward - Loving father, helpful friend; neither helped him in the end.
+Far away you can hear the faint sound of a gate moving...
+Far off you hear the fainest sound of a gate moving...
+It appears someone has been making wishes by throwing coins down the well!
+It appears someone has dug up a coffin and dragged it into this house. All that's left of the body inside is fragments of bone and clothing.
+Lars; man about town, now under ground.
+Nothing happens...
+Rachel - Beauty now bones; hollow and alone.
+Secret wall!
+Stop the clocks from ticking; make the sun disappear; happiness for me is ending; because you're gone my dear.
+Suddenly you hear a war horn and four giants charge into the battle!
+The Gate Key in your inventory fits the keyhole. Upon inserting it, the gate crashes downward into the ground!
+The barrel was full of Fungal Slime, and a small pouch of gold!
+The blast knocks out the northwest wall to this room!
+The blast opens a pathway through the rocks!
+The casket was filled with Fanged Salamanders, gnawing away at what was left of the bones!
+The door opens into a tiny closet containing a chest.
+The gate rises and the lever becomes locked in place.
+The ground gives way and you fall into darkness!
+The portcullis behind you opens...
+The pressure plate triggers the portculis!
+The sound of steel grinding on stone can be heard far off in the darkness.
+The wall on the northeast side of the room moves!
+The water has a oily film floating on it. You decide to not drink it.
+The water smells putrid.
+The water tastes exceptionally fresh here!
+There is something sticking out of the cracks in a nearby rock!
+This door seems to be as solid as the brick walls surrounding it; in fact, upon closer inspection, the door appears to have been painted upon the wall! There is no visible keyhole, though it appears this "door" may move under some other mechanical force.
+This storage room is filled with rusted shovels and picks hanging on the walls.
+This switch feels broken. It just moves loosely back and forth.
+This switch is jammed and will not budge.
+This switch offers no resistance as if it is broken and no longer attached to any mechanism.
+To prevent injury, the massive gate has been locked in place. A key or separate switch is needed to release it.
+Triggering the switch causes the gate to slide down into the walkway.
+Upon stepping on this pressure plate, a section of wall to the southwest opens up!
+Very odd...this well is completely dry. The bucket is filled with dry leaves.
+When you examine the rocks, several crash to the floor.
+You hear the faint sound of a gate moving somewhere...
+You hear the faint sound of a steel gate moving...
+You notice a leather pouch stuffed into the shelves of bones!
+You notice something nearby on the wall. It appears to be a hidden area behind a brick!
+You notice something stuffed into the shelves of bones!
+You only find a moldy bucket filled with smelly water.
+You take a drink of the refreshing water.
+You've been ambushed!
+You've disturbed a nest of Bloodsippers!
+an old grave marker; the name is barely legible.
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; message (The water smells putrid.) ; disease 6
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; message (The water tastes exceptionally fresh here!) ; restore 4 ; heal 4 0
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; message(Agh! The Goblins have been using this well as a toilet!) ; disease 0
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; message(Ah! Very refreshing!) ; Heal 1 0
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; message(It appears someone has been making wishes by throwing coins down the well!) ; add_gold 14 ; destroy_script
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; message(The water has a oily film floating on it. You decide to not drink it.)
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; message(Very odd...this well is completely dry. The bucket is filled with dry leaves.)
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; message(You only find a moldy bucket filled with smelly water.)
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; message(You take a drink of the refreshing water.)
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; sound (MO2_MOVE) ; message(You've disturbed a nest of Bloodsippers!) ; drop_ent 2 14291 ; drop_ent 2 14691 ; drop_ent 2 14790 ; destroy_script
+gfx (Flare) 8056 3 ; narrative 32 ; destroy_script
+map (shadowmirk_l1) ; port_to 11663
+message (A corpse rises from the coffin!) ; drop_ent 6 18080 ; destroy_script
+message (A skeleton rises from the coffin!) ; drop_ent 18 9572 ; destroy_script
+message (A spirit rises from the coffin!) ; drop_ent 20 6938 ; destroy_script
+message (Secret wall!)
+message (The barrel was full of Fungal Slime, and a small pouch of gold!) ; drop_ent 5 1051 ; drop_ent 5 950 ; drop_ent 5 1050 ; drop_ent 5 1349 ; drop_ent 5 1450 ; drop_ent 5 1650 ; drop_ent 5 1750 ; drop_ent 5 1651 ; destroy_script
+message (The casket was filled with Fanged Salamanders, gnawing away at what was left of the bones!) ; drop_ent 1 10179 ; drop_ent 1 10480 ; drop_ent 1 10580 ; destroy_script
+message (The door opens into a tiny closet containing a chest.)
+message (This storage room is filled with rusted shovels and picks hanging on the walls.)
+message (This switch is jammed and will not budge.)
+message (To prevent injury, the massive gate has been locked in place. A key or separate switch is needed to release it.)
+message("The ground gives way and you fall into darkness!") ; map_port sinkhole ; move_player 9950 ; trauma 10
+message(Abygale: You are not allowed in there! Please leave!)
+message(It appears someone has dug up a coffin and dragged it into this house. All that's left of the body inside is fragments of bone and clothing.)
+narrative 19 ; toggle_switch ; toggle_obj 12619 ; sound (water_rush) ; quest 6 9
+narrative 33 ; drop_ent 2 17966 ; drop_ent 2 19260 ; drop_ent 2 18255 ; destroy_script
+sound (mo2_move) ; sound (stone_collapse) ; message (When you examine the rocks, several crash to the floor.) ; drop_ent 2 14722 ; drop_ent 2 14118 ; drop_ent 2 14020 ; drop_ent 2 14222 ; drop_ent 2 15519 ; drop_ent 2 15721 ; drop_ent 2 14718 ; drop_ent 2 14019 ; destroy_script
+sound (sfx_bell) ; condition (Upon pulling the switch, a bell rings and Eeru promptly greets you at the false door to the room. "Are you ready to leave? I would be happy to escort you back to the common area if you are.") (Yes) (No) ; move_player 9658
+sound (sfx_energize) ; map_port 32 ; port_to 9422
+sound (sfx_energize) ; map_port 41 ; port_to 2043
+sound (sfx_energize) ; map_port bs ; port_to 10154
+sound(sfx_energize) ; map_port goblin_cit_l2 ; port_to 1974

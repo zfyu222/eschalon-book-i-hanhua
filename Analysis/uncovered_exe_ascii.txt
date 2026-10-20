@@ -1,0 +1,2597 @@
+!!Y-,KS#KQZ
+!!Y-,KS#KQZX
+!!Y-,KS#KQZX8
+!!Y-,KTX E
+!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`a
+!:CCHCHNH88888828888
+!B?{R.$!Hu
+!_?1F_?Xj_?f
+!b?<2b?TCb?eTb?qeb?wvb?w
+" )9jO
+":A" !5nd:1&.n
+"A deal is a deal, even among us unscrupulous." He places the coin bag in your hand. "Now leave. We never had this conversation."0
+"A talking tree wants to help me? How do you know of me?"_
+"Aaron",92,50,8,15,0,0,36,61,1,2,70,8,20,12,75,0.75,5,0,20,0,0,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",2,"SFX_MAN_DIE"
+"Abygale",54,50,8,15,0,0,2,62,1,2,25,3,4,4,10,0.55,5,0,20,0,50,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_FEM_ATTACK","SFX_FEM_HURT","*",2,"SFX_FEM_DIE"
+"An offer?"Y
+"And it was stolen?"q
+"Anything else?"
+"Are you okay?"
+"Authorization?"
+"Barrea Mercenary",21,12,8,15,26,26,-1,21,0,1,90,26,25,14,165,1,6,0,0,0,25,0,"ACTION_MELEE",60,0,0,"*","NPC_Step","merc_att","SFX_MAN_HURT","*",1,"SFX_MAN_DIE"
+"Bloodsipper",2,2,8,15,0,0,-1,2,0,1,17,8,7,4,25,1,5,0,0,0,10,0,"ACTION_MELEE",60,0,1,"MO2_IDLE","MO2_MOVE","MO2_ATTACK","*","*",4,"MO2_DIE"
+"Can I ask you another question?" [BACK]
+"Can you tell me a bit about Shadowmirk?"E
+"Can you tell me about this 'Grimmhold' place?")
+"Chancellor Malcolm",89,50,1,2,0,0,33,71,1,2,4,2,1,1,1000,1,5,0,0,0,0,0,,,,,"*","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",2,"SFX_MAN_DIE"
+"Chancellor Malcolm",90,50,1,2,0,0,34,71,1,2,4,2,1,1,1000,1,5,0,0,0,0,0,,,,,"*","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",2,"SFX_MAN_DIE"
+"Do you have any work that needs done? I'm always looking to put a bit more gold in my pocket."/
+"Eeru",63,50,8,15,0,0,16,65,1,2,50,14,14,7,450,0.5,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",2,"SFX_MAN_DIE"
+"Eh, thanks." [BACK]
+"Eleanor",55,50,1,2,0,0,4,55,1,2,1,3,4,4,5,0.55,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_FEM_ATTACK","SFX_FEM_HURT","*",2,"SFX_FEM_DIE"
+"Er, war?"
+"Erik",64,50,8,15,0,0,13,53,1,2,45,7,20,10,50,0.55,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",2,"SFX_MAN_DIE"
+"Erubor",83,50,8,15,0,0,22,69,1,1,80,2,3,1,50,0.5,5,3,30,40,60,20,"ACTION_CAST",250,1,0,"*","NPC_Step","sfx_cast_elem","SFX_MAN_HURT","*",8,"SFX_MAN_DIE"
+"Erubor, I've come here to tell you that Shadowmirk is in danger."F
+"Erudor, I have the Crux of Ages."'
+"Farwick",53,50,8,15,0,0,1,53,1,1,50,7,20,10,35,0.55,5,0,20,0,0,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",2,"SFX_MAN_DIE"
+"Foozgrumph."
+"Gamfari",71,50,8,15,0,0,20,64,1,2,20,4,6,3,10,0.5,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",4,"SFX_MAN_DIE"
+"Garrett",56,50,1,2,0,0,6,50,1,2,1,2,1,1,5,0.5,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",2,"SFX_MAN_DIE"
+"Gatekeeper",62,50,8,15,0,26,12,60,1,2,45,10,10,8,250,0.75,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",1,"SFX_MAN_DIE"
+"Give me one reason why I should not destroy you and then I will determine your fate, goblin." [Intimidate]
+"Go now. Giants will know when you move on Goblin Citadel. Giants will be by your side, friend."2
+"Go on then."
+"Goblins?"0
+"Goodbye." [END]
+"Gramuk",87,8,8,15,0,0,32,70,1,2,45,15,3,1,100,0.75,4,0,40,70,95,80,"ACTION_CAST",300,1,0,"MO9_IDLE","MO9_MOVE","MO9_ATTACK","*","*",1,"MO9_DIE"
+"Gruzz",61,50,8,15,0,0,10,9,1,2,16,8,8,7,20,1,4,0,5,0,0,0,"ACTION_MELEE",60,1,0,"MO9_IDLE","MO9_MOVE","MO9_ATTACK","*","*",2,"MO9_DIE"
+"Gunther",66,50,8,15,0,0,23,53,1,1,85,8,20,12,75,0.75,5,0,20,0,0,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",2,"SFX_MAN_DIE"
+"Here is my key." [Show him the Amulet Passkey 26]f
+"Hesham",96,50,8,15,0,0,39,65,1,2,60,10,4,10,50,0.55,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",2,"SFX_MAN_DIE"
+"How about you teach me what you know of Cartography?"-
+"I am $. I have been sent here by Erubor of Shadowmirk to retrieve a Goblin key. Do you know of what I speak?"F
+"I am going to use the key to enter the Goblin Citadel and destroy Gramuk. The Goblin scourge must end!">
+"I am listening."X
+"I can do this.":
+"I can pay you a small fee for your service if you were to bring this acorn back.":
+"I cannot do what you ask of me." [Leave him and allow death to happen naturally.]
+"I don't play games like this. You will tell me what I need to know or I will force it out of you." [Threaten]G
+"I found a dead man with this ring in his possession. I'm sorry." [Give wedding ring to Mary.]O
+"I have brought back the acorn you wanted." [Give Burley Acorn to Vekkar]
+"I have brought back your Divine Ore." [Give Divine Ore to Gunther]$
+"I have found a note that is evidence of a plot to kill you." [Give William the Mercenary's Note]f
+"I have killed Lilith. Here is her amulet. [Give him the Amulet Passkey 15]s
+"I have killed the Hive Queen. Here is her stinger."7
+"I have returned with your Chieftain's skull." [give Giant Skull to Omar]
+"I have this key." [Show him the Amulet Passkey 15]f
+"I have with me a ceramic crucible that Erik of Bordertown asked me to bring you." [Give ceramic crucible]{
+"I need access to the inner chamber immediately. I have permission from Leurik."<
+"I need to retrieve something that belongs to me."|
+"I paid a lot of money for that little bit of Ore. If you find it, I'll pay you the full value of what it's worth to have it back.">
+"I really must be going now." [END]
+"I think I found the locket. Is this it?" [Give Krista the Brass Locket]
+"I think I have a formula about finished, but I need a special enzyme that will enhance the scattering property of the combusting fuel. Unfortunately, I just discovered that the enzyme I am looking for is only present in certain insect larvae. I don't have time to gather thousands of larvae needed to extract the few drops of enzyme. I guess I'll have to find an alternate ingredient, but that means the fuel is not going to be nearly as potent. "A
+"I think found your sextant. Is this it?" [Show Antique Sextant to Garrett]=
+"I was hoping the Bethel would have some work for me."#
+"I'd like to ask you something else." [BACK]
+"I'd like to check out the quality of your crypt before committing to anything. An eternity is a very long time to have to lie in an unsatisfactory tomb. May I have a key to unlock the crypt so I may take a peek inside?"E
+"I'm glad to know where I am at, but it doesn't explain how I got here!"*
+"I'm going to open this water gate and take back Grimmhold myself. Goblins be damned!"*
+"I'm looking for some work. Got anything?"$
+"I'm sorry for intruding. Pardon me." [End]$
+"IC_AMULET","Ankh",0.1,0,2,118,220,0,0,0,0,0,0,0,10,0,0,0,1,0,0,
+"IC_AMULET","Compass",0.1,0,3,239,200,0,0,0,0,0,"SKILL_CARTOGRAPHY",2,0,0,0,0,0,0,0,
+"IC_BELT","Heavy Plated Belt",3,"SKILL_ARMOR_HEAVY",2,59,175,0,0,3,0,0,0,0,0,0,0,0,0,0,0,
+"IC_BELT","Leather Belt",1,"SKILL_ARMOR_LIGHT",1,58,10,0,0,1,0,0,0,0,0,0,0,0,0,0,0,
+"IC_BELT","Strongman's Belt",1,"SKILL_ARMOR_LIGHT",3,58,350,0,0,1,1,2,0,4,0,0,0,0,0,0,0,
+"IC_BELT","Studded Leather Belt",1,"SKILL_ARMOR_LIGHT",2,58,50,0,0,2,0,0,0,0,0,0,0,0,0,0,0,
+"IC_BELT","Warlord's Plated Belt",4,"SKILL_ARMOR_HEAVY",3,59,1000,0,0,2,4,2,0,0,0,0,0,0,1,0,0,
+"IC_BOOTS","Adamantine Plate Boots",5,"SKILL_ARMOR_HEAVY",4,99,990,0,0,5,0,0,0,0,0,0,0,0,0,0,0,
+"IC_BOOTS","Chainmail Boots",3,"SKILL_ARMOR_HEAVY",1,97,110,0,0,2,0,0,0,0,0,0,0,0,0,0,0,
+"IC_BOOTS","Healer's Sandals",1,"SKILL_ARMOR_LIGHT",2,95,300,0,0,1,0,0,"SKILL_ARCANE_DIVINATION",2,0,0,0,0,0,0,0,
+"IC_BOOTS","Iron Plated Boots",5,"SKILL_ARMOR_HEAVY",2,98,200,0,0,3,0,0,0,0,0,0,0,0,0,0,0,
+"IC_BOOTS","Iron Spiked Boots",5,"SKILL_ARMOR_HEAVY",3,98,320,0,0,3,0,0,"SKILL_UNARMED_COMBAT",2,0,0,0,0,0,0,0,
+"IC_BOOTS","Leather Boots",2,"SKILL_ARMOR_LIGHT",1,96,25,0,0,1,0,0,0,0,0,0,0,0,0,0,0,
+"IC_BOOTS","Leather Sandals",1,"SKILL_ARMOR_LIGHT",1,95,10,0,0,1,0,0,0,0,0,0,0,0,0,0,0,
+"IC_BOOTS","Mithril Alloy Chain Boots",2,"SKILL_ARMOR_HEAVY",3,97,800,0,0,4,0,0,0,0,0,0,0,0,0,0,0,
+"IC_BOOTS","Scout's Sandals",1,"SKILL_ARMOR_LIGHT",2,95,200,0,0,1,0,0,"SKILL_CARTOGRAPHY",2,0,0,0,0,0,0,0,
+"IC_BOOTS","Steel Plated Boots",5,"SKILL_ARMOR_HEAVY",3,98,300,0,0,4,0,0,0,0,0,0,0,0,0,0,0,
+"IC_BOOTS","Studded Leather Boots",2,"SKILL_ARMOR_LIGHT",2,96,160,0,0,2,0,0,"SKILL_UNARMED_COMBAT",2,0,0,0,0,0,0,0,
+"IC_CLOAK","Cloak of the Shadow",1,"SKILL_ARMOR_LIGHT",2,51,800,0,0,2,0,0,"SKILL_HIDE_SHADOWS",3,0,0,0,0,0,0,0,
+"IC_CLOAK","Heavy Cloak",3,"SKILL_ARMOR_HEAVY",2,51,100,0,0,2,0,0,0,0,0,0,0,0,0,0,0,
+"IC_CLOAK","Light Cloak",1,"SKILL_ARMOR_LIGHT",1,52,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_CLOAK","Mithril-woven Cloak",1,"SKILL_ARMOR_HEAVY",3,52,450,0,0,3,0,0,0,0,0,0,0,0,0,0,0,
+"IC_CLOAK","Priest's Cloak",1,"SKILL_ARMOR_LIGHT",3,52,980,0,0,1,6,2,"SKILL_ARCANE_DIVINATION",3,0,0,0,0,0,0,0,
+"IC_CLOAK","Quality Cloak",1,"SKILL_ARMOR_LIGHT",1,52,13,0,0,1,0,0,0,0,0,0,0,0,0,0,0,
+"IC_CLOAK","Survivalist's Cloak",1,"SKILL_ARMOR_LIGHT",2,51,475,0,0,2,0,0,"SKILL_SURVIVAL",5,0,0,0,0,0,0,0,
+"IC_GAUNTS","Adamantine Plate Gauntlets",3,"SKILL_ARMOR_HEAVY",4,72,1400,0,0,5,0,0,0,0,0,0,0,0,0,0,0,
+"IC_GAUNTS","Iron Bracers",2,"SKILL_ARMOR_HEAVY",2,75,180,0,0,2,0,0,0,0,0,0,0,0,0,0,0,
+"IC_GAUNTS","Iron Ring Mail Gauntlets",2,"SKILL_ARMOR_HEAVY",2,71,385,0,0,2,0,0,0,0,0,0,0,0,0,0,0,
+"IC_GAUNTS","Ranger Lord's Mithril Bracers",2,"SKILL_ARMOR_LIGHT",4,76,1500,0,0,3,0,0,"SKILL_WEAPON_BOW",4,0,0,5,0,0,0,0,
+"IC_GEM","Crux of Ages",3,0,9,213,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_GOLD","150 Gold Pieces",0,0,9,198,150,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_GOLD","250 Gold Pieces",0,0,9,198,250,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_GOLD","40 Gold Pieces",0,0,9,197,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_GOLD","500 Gold Pieces",0,0,9,199,500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_GOLD","750 Gold Pieces",0,0,9,199,750,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_GOLD","80 Gold Pieces",0,0,9,198,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_GOLD","Pouch of Gold",0,0,9,115,300,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_HELM","Adamantine Great Helm",5,"SKILL_ARMOR_HEAVY",4,68,2500,0,0,5,0,0,0,0,0,0,0,0,0,0,0,
+"IC_HELM","Chainmail Coif",2,"SKILL_ARMOR_HEAVY",1,65,95,0,0,2,0,0,0,0,0,0,0,0,0,0,0,
+"IC_HELM","Conqueror's Full Helm",6,"SKILL_ARMOR_HEAVY",4,67,1800,0,0,3,0,0,"SKILL_WEAPON_BLUDGEONING",2,0,0,0,0,0,0,0,
+"IC_HELM","Grand Helm",5,"SKILL_ARMOR_HEAVY",3,62,1000,0,0,4,0,0,0,0,0,0,0,0,0,0,0,
+"IC_HELM","Grand Master Wizard's Hat",1,"SKILL_ARMOR_LIGHT",4,69,1200,0,0,2,7,2,"SKILL_ARCANE_ELEMENTAL",3,0,0,0,0,0,0,0,
+"IC_HELM","Hardened Leather Half-Helm",1,"SKILL_ARMOR_LIGHT",1,66,30,0,0,1,0,0,0,0,0,0,0,0,0,0,0,
+"IC_HELM","Iron Half-Helm",3,"SKILL_ARMOR_HEAVY",2,63,220,0,0,3,0,0,0,0,0,0,0,0,0,0,0,
+"IC_HELM","Iron Skullcap",3,"SKILL_ARMOR_HEAVY",1,60,70,0,0,2,0,0,0,0,0,0,0,0,0,0,0,
+"IC_HELM","Leather Skullcap",1,"SKILL_ARMOR_LIGHT",1,61,10,0,0,1,0,0,0,0,0,0,0,0,0,0,0,
+"IC_HELM","Master Wizard's Hat",1,"SKILL_ARMOR_LIGHT",3,69,450,0,0,1,7,3,0,0,0,0,0,0,0,0,0,
+"IC_HELM","Steel Chainmail Coif",2,"SKILL_ARMOR_LIGHT",2,65,250,0,0,3,0,0,0,0,0,0,0,0,0,0,0,
+"IC_HELM","Thinking Cap",1,"SKILL_ARMOR_LIGHT",2,61,420,0,0,1,5,2,0,0,0,0,0,0,0,0,0,
+"IC_HELM","Wizard's Hat",1,"SKILL_ARMOR_LIGHT",1,69,5,0,0,1,0,0,0,0,0,0,0,0,0,0,0,
+"IC_LEGS","Adamantine Greaves",9,"SKILL_ARMOR_HEAVY",4,56,1400,0,0,6,0,0,0,0,0,0,0,0,0,0,0,
+"IC_LEGS","Chainmail Leggings",5,"SKILL_ARMOR_HEAVY",2,56,310,0,0,3,0,0,0,0,0,0,0,0,0,0,0,
+"IC_LEGS","Commoner's Pants",1,0,1,53,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_LEGS","Diamond Studded Leggings",4,"SKILL_ARMOR_LIGHT",4,56,1200,0,0,5,0,0,0,0,0,0,0,0,0,0,0,
+"IC_LEGS","Hide Leggings",3,"SKILL_ARMOR_LIGHT",1,55,32,0,0,1,0,0,0,0,0,0,0,0,0,0,0,
+"IC_LEGS","Leather Leggings",4,"SKILL_ARMOR_LIGHT",1,54,40,0,0,1,0,0,0,0,0,0,0,0,0,0,0,
+"IC_LEGS","Mithril Chainmail Leggings",7,"SKILL_ARMOR_HEAVY",3,56,1000,0,0,4,0,0,0,0,0,0,0,0,0,0,0,
+"IC_LEGS","Mithril Studded Leggings",3,"SKILL_ARMOR_LIGHT",3,55,800,0,0,4,0,0,0,0,0,0,0,0,0,0,0,
+"IC_LEGS","Ringmail Leggings",6,"SKILL_ARMOR_HEAVY",1,56,85,0,0,2,0,0,0,0,0,0,0,0,0,0,0,
+"IC_LEGS","Splint Mail Leggings",7,"SKILL_ARMOR_HEAVY",2,77,280,0,0,3,0,0,0,0,0,0,0,0,0,0,0,
+"IC_LEGS","Steel Plate Greaves",10,"SKILL_ARMOR_HEAVY",3,77,850,0,0,5,0,0,0,0,0,0,0,0,0,0,0,
+"IC_LEGS","Studded Leather Leggings",4,"SKILL_ARMOR_LIGHT",2,55,180,0,0,2,0,0,0,0,0,0,0,0,0,0,0,
+"IC_LEGS","Tattered Breeches",1,0,1,53,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_MISC","Antique Sextant",2,0,9,214,350,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_MISC","Bar of Copper",18,0,2,232,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_MISC","Bar of Iron",22,0,3,233,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_MISC","Bar of Mithril",15,0,9,186,375,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_MISC","Chronometer",12,0,3,119,320,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Time"
+"IC_MISC","Femur",0.5,0,1,131,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_MISC","Salt",0.1,0,1,115,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_MISC","Silverware",0.1,0,2,208,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_MISC","Skull",0.4,0,1,114,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_MISC","Spices",0.1,0,2,115,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_NOTE","A History of Thaermore",4,0,9,187,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 35"
+"IC_NOTE","A World of Wonder",2,0,1,188,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 43"
+"IC_NOTE","Benny and the Dragon",1,0,1,193,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 41"
+"IC_NOTE","Bones to Splinters",2,0,2,193,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 17 ; learn_book 36"
+"IC_NOTE","Buying and Selling",2,0,1,188,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 24 ; learn_book 40"
+"IC_NOTE","Elements of Magick",2,0,3,188,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 20 ; learn_book 38"
+"IC_NOTE","Embrace the Night",2,0,3,187,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 19 ; learn_book 41"
+"IC_NOTE","Heavy Armor Field Guide",2,0,3,194,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 26 ; learn_book 44"
+"IC_NOTE","Hidden Dangers and Treasures",2,0,2,187,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 23 ; learn_book 42"
+"IC_NOTE","Imbuing Your Equipment",2,0,2,194,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 34"
+"IC_NOTE","Keyholes and Tumblers",2,0,2,188,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 16 ; learn_book 35"
+"IC_NOTE","Light Armor Field Guide",2,0,2,193,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 25 ; learn_book 34"
+"IC_NOTE","Magicka Divine",2,0,3,193,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 21 ; learn_book 43"
+"IC_NOTE","Mapping Your World",2,0,2,194,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 22 ; learn_book 39"
+"IC_NOTE","Of Men and Giants",2,0,1,194,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 2"
+"IC_NOTE","The Alchemist's Cookbook I",2,0,1,193,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 4"
+"IC_NOTE","The Alchemist's Cookbook II",2,0,2,188,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 6"
+"IC_NOTE","The Alchemist's Cookbook III",2,0,3,194,75,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 5"
+"IC_NOTE","The Art of Brewing",2,0,1,194,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 28 ; learn_book 31"
+"IC_NOTE","The Crimson Sky",1,0,1,187,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 40"
+"IC_NOTE","The Goblins of Thaermore",2,0,1,187,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 38"
+"IC_NOTE","The Greatest Ranger",2,0,3,194,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 18 ; learn_book 32"
+"IC_NOTE","The Holy Tasslar",3,0,1,188,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 1"
+"IC_NOTE","The Jewel of Thaermore",2,0,2,187,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 44"
+"IC_NOTE","The Legendary Swordsman",2,0,2,187,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 15 ; learn_book 37"
+"IC_NOTE","The Lumberjack",2,0,2,187,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 33 ; learn_book 30"
+"IC_NOTE","The Orakur Are Watching",1,0,2,194,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sound(SFX_Stats_Open) ; book 39"
+"IC_QUEST","Ceramic Crucible",70,0,9,191,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_QUEST","Giant Skull",9,0,9,207,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_QUIVER","Arrow",0.1,0,1,20,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_RANDOM","Empty",0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_RANDOM","Random",0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_REACTANT","Acid",0.1,0,1,181,25,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_REACTANT","Bromine",0.1,0,2,171,40,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_REACTANT","Charcoal",0.1,0,1,151,35,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_REACTANT","Mercury",0.1,0,2,161,35,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_REACTANT","Oil",0.1,0,1,210,10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_REACTANT","Sulfur",0.1,0,1,141,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_REAGENT","Ambergris",0.1,0,2,160,25,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_REAGENT","Ash",0.1,0,1,142,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_REAGENT","Belladonna",0.1,0,2,162,42,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_REAGENT","Ectoplasm",0.1,0,4,170,100,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_SHIELD","Adamantine Great Shield",10,"SKILL_ARMOR_SHIELDS",4,94,1750,0,0,5,0,0,0,0,0,0,0,0,0,0,0,
+"IC_SHIELD","Bronze Buckler",5,"SKILL_ARMOR_SHIELDS",2,91,60,0,0,2,0,0,0,0,0,0,0,0,0,0,0,
+"IC_SHIELD","Cracked Shield",3,"SKILL_ARMOR_SHIELDS",1,93,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_SHIELD","Lantern",5,0,2,178,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_SHIELD","Large Steel Shield",6,"SKILL_ARMOR_SHIELDS",3,92,315,0,0,3,0,0,0,0,0,0,0,0,0,0,0,
+"IC_SHIELD","Small Steel Shield",3,"SKILL_ARMOR_SHIELDS",2,90,200,0,0,2,0,0,0,0,0,0,0,0,0,0,0,
+"IC_SHIELD","Tower Shield",8,"SKILL_ARMOR_SHIELDS",3,92,450,0,0,4,0,0,0,0,0,0,0,0,0,0,0,
+"IC_SHIELD","Wooden Buckler",3,"SKILL_ARMOR_SHIELDS",1,93,10,0,0,1,0,0,0,0,0,0,0,0,0,0,0,
+"IC_TORCH","Torch",0.2,0,1,110,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_TORSO","Adamantine Chest Plate",11,"SKILL_ARMOR_HEAVY",9,89,2000,0,0,9,0,0,0,0,0,0,0,0,0,0,0,
+"IC_TORSO","Adamantine Studded Jerkin",4,"SKILL_ARMOR_LIGHT",4,87,950,0,0,6,0,0,0,0,0,0,0,0,0,0,0,
+"IC_TORSO","Chainmail Hauberk",4,"SKILL_ARMOR_HEAVY",2,85,230,0,0,4,0,0,0,0,0,0,0,0,0,0,0,
+"IC_TORSO","Chainmail Jerkin",3,"SKILL_ARMOR_HEAVY",2,84,150,0,0,3,0,0,0,0,0,0,0,0,0,0,0,
+"IC_TORSO","Diamond Studded Jerkin",3,"SKILL_ARMOR_LIGHT",3,86,800,0,0,5,0,0,0,0,0,0,0,0,0,0,0,
+"IC_TORSO","Hard Leather Banded Armor",5,"SKILL_ARMOR_HEAVY",1,78,150,0,0,3,0,0,0,0,0,0,0,0,0,0,0,
+"IC_TORSO","Iron Plate Armor",12,"SKILL_ARMOR_HEAVY",2,64,500,0,0,7,0,0,0,0,0,0,0,0,0,0,0,
+"IC_TORSO","Leather Hauberk",2,"SKILL_ARMOR_LIGHT",1,81,35,0,0,2,0,0,0,0,0,0,0,0,0,0,0,
+"IC_TORSO","Rusted Iron Plate Armor",12,"SKILL_ARMOR_HEAVY",1,64,250,0,0,4,0,0,0,0,0,0,0,0,0,0,0,
+"IC_TORSO","Steel Plate Armor",12,"SKILL_ARMOR_HEAVY",3,88,1000,0,0,8,0,0,0,0,0,0,0,0,0,0,0,
+"IC_TORSO","Steel Ring Mail Jerkin",8,"SKILL_ARMOR_HEAVY",2,79,375,0,0,5,0,0,0,0,0,0,0,0,0,0,0,
+"IC_TORSO","Steel Scaled Armor",9,"SKILL_ARMOR_HEAVY",2,79,400,0,0,6,0,0,0,0,0,0,0,0,0,0,0,
+"IC_TORSO","Studded Leather Hauberk",3,"SKILL_ARMOR_LIGHT",2,83,85,0,0,3,0,0,0,0,0,0,0,0,0,0,0,
+"IC_TORSO","Studded Leather Jerkin",2,"SKILL_ARMOR_LIGHT",1,82,50,0,0,2,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Adamantine Great Axe",8,"SKILL_WEAPON_CLEAVING",3,37,1200,0,7,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Adamantine Great Sword",10,"SKILL_WEAPON_SWORD",4,45,2000,0,10,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Adamantine War Hammer",8,"SKILL_WEAPON_BLUDGEONING",4,14,1800,0,8,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Birch Quarterstaff",2,"SKILL_WEAPON_BLUDGEONING",1,4,5,0,1,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Birch Short Bow",2,"SKILL_WEAPON_BOW",1,22,50,0,1,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Composite Great Bow",7,"SKILL_WEAPON_BOW",3,25,1200,0,7,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Composite Longbow",5,"SKILL_WEAPON_BOW",3,24,550,0,5,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Copper Hammer",3,"SKILL_WEAPON_BLUDGEONING",1,10,20,0,2,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Diamond-edge Claymore",9,"SKILL_WEAPON_SWORD",4,44,1650,0,9,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Diamond-edge Great Axe",8,"SKILL_WEAPON_CLEAVING",4,37,1750,0,8,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Divine Ore Great Sword",12,"SKILL_WEAPON_SWORD",9,47,2700,0,11,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Executioner",6,"SKILL_WEAPON_CLEAVING",9,35,2500,0,9,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Flanged Mace",4,"SKILL_WEAPON_BLUDGEONING",2,16,280,0,4,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Harpoon",5,"SKILL_WEAPON_THROWN",3,28,15,1,6,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Hive Queen Stinger",1,"SKILL_WEAPON_SHORT_BLADE",9,212,0,0,2,0,0,0,0,0,0,0,0,0,0,0,3,
+"IC_WEAPON","Iron Falcata",3,"SKILL_WEAPON_SWORD",1,43,135,0,3,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Iron Gladius",3,"SKILL_WEAPON_SWORD",1,41,35,0,2,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Iron Hand Axe",2,"SKILL_WEAPON_CLEAVING",1,31,22,0,2,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Iron Kama",2,"SKILL_WEAPON_CLEAVING",1,34,22,0,2,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Iron Long Sword",4,"SKILL_WEAPON_SWORD",1,42,160,0,3,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Iron Mace",3,"SKILL_WEAPON_BLUDGEONING",1,15,38,0,2,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Iron Morning Star",4,"SKILL_WEAPON_BLUDGEONING",2,8,95,0,3,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Iron Short Sword",3,"SKILL_WEAPON_SWORD",1,40,30,0,2,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Iron Spear",2,"SKILL_WEAPON_THROWN",1,28,5,1,3,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Iron Warhammer",5,"SKILL_WEAPON_BLUDGEONING",2,11,80,0,3,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Jewel-crusted Morning star",6,"SKILL_WEAPON_BLUDGEONING",3,18,500,0,6,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Machete",2,"SKILL_WEAPON_CLEAVING",1,32,30,0,2,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Mahogany Quarterstaff",3,"SKILL_WEAPON_BLUDGEONING",2,5,75,0,3,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Mithril Battle Axe",4,"SKILL_WEAPON_CLEAVING",3,33,440,0,5,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Mithril Dagger",1,"SKILL_WEAPON_SHORT_BLADE",3,3,310,0,4,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Mithril Double Battle Axe",4,"SKILL_WEAPON_CLEAVING",3,36,800,0,6,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Mithril Long Sword",5,"SKILL_WEAPON_SWORD",3,46,675,0,6,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Penetrators",0.2,"SKILL_WEAPON_THROWN",3,7,10,1,4,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Recurved Composite Great Bow",7,"SKILL_WEAPON_BOW",9,25,1800,0,8,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Recurved Longbow",4,"SKILL_WEAPON_BOW",3,25,750,0,6,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Recurved Short Bow",2,"SKILL_WEAPON_BOW",2,23,350,0,3,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Skullsplitter",8,"SKILL_WEAPON_BLUDGEONING",9,19,2500,0,9,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Spiked Mace",5,"SKILL_WEAPON_BLUDGEONING",2,17,240,0,4,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Steel Battle Axe",3,"SKILL_WEAPON_CLEAVING",2,33,300,0,4,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Steel Double Battle Axe",4,"SKILL_WEAPON_CLEAVING",2,36,385,0,5,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Steel Kama",2,"SKILL_WEAPON_CLEAVING",2,34,220,0,3,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Steel War Maul",10,"SKILL_WEAPON_BLUDGEONING",3,13,765,0,7,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Steel Warhammer",7,"SKILL_WEAPON_BLUDGEONING",2,12,410,0,5,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Stiletto",0.8,"SKILL_WEAPON_SHORT_BLADE",2,2,100,0,3,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Stone Hand Axe",2,"SKILL_WEAPON_CLEAVING",1,30,3,0,1,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Stone",0.2,"SKILL_WEAPON_THROWN",1,49,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Wooden Cudgel",2,"SKILL_WEAPON_BLUDGEONING",1,6,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Yew Longbow",5,"SKILL_WEAPON_BOW",2,24,450,0,4,0,0,0,0,0,0,0,0,0,0,0,0,
+"IC_WEAPON","Yew Short Bow",2,"SKILL_WEAPON_BOW",1,22,160,0,2,0,0,0,0,0,0,0,0,0,0,0,0,
+"ITEM CATEGORY","DESCRIPTION","LBS","SKILL REQUIRED","RARE","ICON","$$","COMB","DAM","AR","ATTR","AT m","SKILL","SK m","HP m","MANA m","2H m","DMG m","AR m","RES m","Effect","Script (called when USED)"
+"Is there anything I could do for you?",
+"Is this something you would be able to look into?"@
+"Jonathon",75,50,8,15,0,0,31,52,1,1,36,2,0,0,35,0.5,5,0,0,0,30,40,"ACTION_CAST",200,1,0,"*","NPC_Step","Cast_Div","SFX_MAN_HURT","*",5,"SFX_MAN_DIE"
+"Krista",70,50,8,15,0,0,19,57,1,2,70,7,15,10,40,0.75,5,0,40,40,50,20,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_FEM_ATTACK","SFX_FEM_HURT","*",2,"SFX_FEM_DIE"
+"Larrus",72,50,1,2,0,0,21,66,1,2,1,1,4,4,5,0.55,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"*","*","*","SFX_MAN_HURT","*",2,"SFX_MAN_DIE"
+"Leurik",67,50,8,15,0,0,15,65,1,1,22,4,5,3,10,0.5,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",4,"SFX_MAN_DIE"
+"Lilith",59,50,8,15,0,0,9,54,1,1,130,25,25,14,200,0.75,5,0,40,40,50,20,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_FEM_ATTACK","SFX_FEM_HURT","*",2,"SFX_FEM_DIE"
+"Maddock",51,50,8,15,0,0,0,51,1,1,15,2,3,1,10,0.5,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"NPC_Cough","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",4,"SFX_MAN_DIE"
+"Mary",73,50,8,15,0,0,14,63,1,2,2,1,4,4,10,0.55,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_FEM_ATTACK","SFX_FEM_HURT","*",2,"SFX_FEM_DIE"
+"Michael",52,50,8,15,0,0,3,52,1,1,36,2,0,0,35,0.5,5,0,0,0,30,40,"ACTION_CAST",200,1,0,"*","NPC_Step","Cast_Div","SFX_MAN_HURT","*",5,"SFX_MAN_DIE"
+"Much appreciated!" [END]
+"My name is $."U
+"Name","ID","Spec","Dirs","Frame","Xoff","Yoff","Port","Gfx","Align","Move","HP","AR","2H","Dam","XP","Spd","Rate","Abil","Res E","Res T","Res M","Res D","Attack Action","Rng","Door","Fly","Snd Idle","Snd Move","Attack Yelp","Snd Hurt","Snd Weapon","Snd Hit/Miss","Snd Death"
+"No I didn't take anything! I only looked in the vault!"c
+"No pay? No way."
+"No way! I risked my life for your damn sextant and you should train me for free." [Keep sextant]
+"No way. I risked my life to bring you this damn letter. You owe me a lot more than 10 gold..." [Threaten]
+"No way."
+"No, I am not."
+"No, I don't think *you* have any idea who *I* am!" [Intimidate]
+"No, I haven't"
+"Noximander",4,1,8,15,26,0,-1,4,0,1,35,11,10,7,45,0.5,5,1,0,100,5,0,"ACTION_MELEE",60,0,0,"MO4_IDLE","MO1_MOVE","MO4_ATTACK","*","*",4,"MO1_DIE"
+"Of what task do you speak?"=
+"Oh, and here is a bit of gold for your reward.":
+"Omar",86,7,8,15,26,26,28,8,1,2,140,30,25,18,400,0.35,7,0,30,20,20,30,"ACTION_MELEE",60,0,0,"MO8_IDLE","MO8_MOVE","MO8_ATTACK","*","*",2,"MO8_DIE"
+"Oolaseph",77,50,1,2,0,0,24,54,1,2,1,3,4,4,25,0.55,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_FEM_ATTACK","SFX_FEM_HURT","*",2,"SFX_FEM_DIE"
+"Orakur?"[
+"Oswell",58,50,1,2,0,0,7,58,1,2,1,1,1,1,5,0.55,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"NPC_Cough","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",2,"SFX_MAN_DIE"
+"Paul",69,50,8,15,0,0,18,51,1,2,15,2,3,1,10,0.5,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"NPC_Cough","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",4,"SFX_MAN_DIE"
+"Penelope",93,50,8,15,0,0,8,62,1,2,2,1,4,4,10,0.55,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_FEM_ATTACK","SFX_FEM_HURT","*",2,"SFX_FEM_DIE"
+"Perfect! The enzyme has lowered the vicosity of the oils. This will burn splendidly!" He pours about half the liquid into a seperate flask and turns back to you. "Here, take this for your efforts. Be very careful with it because it is extremely volatile. I'm sure you'll be able to come up with some creative use for it."B
+"Perhaps this is what you are looking for?" [Show him the Strange Amulet]Q
+"Perhaps. Could you tell me more about Eversleep Cemetery?"v
+"Perhaps. Tell me more."h
+"Phillip",85,50,8,15,0,0,27,65,1,2,15,2,3,1,10,0.5,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",2,"SFX_MAN_DIE"
+"Poltergeist",20,5,8,15,0,0,-1,20,0,1,60,16,19,12,190,0.75,5,3,100,100,20,100,"ACTION_MELEE",60,1,1,"mo20_idle","*","mo20_attack","mo20_hurt","*",10,"mo20_die"
+"Porter",57,50,8,15,0,0,5,56,1,1,32,2,5,3,20,0.55,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",2,"SFX_MAN_DIE"
+"Raptor",3,3,8,15,52,26,-1,3,0,1,95,22,24,14,110,1,6,0,0,0,50,0,"ACTION_MELEE",60,0,0,"MO3_IDLE","MO3_MOVE","MO3_ATTACK","*","*",4,"MO3_DIE"
+"Siam",94,50,8,15,0,0,37,65,1,1,80,2,3,1,50,0.5,5,3,30,40,60,20,"ACTION_CAST",250,1,0,"*","NPC_Step","sfx_cast_elem","SFX_MAN_HURT","*",8,"SFX_MAN_DIE"
+"Skeleton",18,9,8,15,0,0,-1,18,0,1,50,17,18,10,90,0.75,5,0,0,100,40,100,"ACTION_MELEE",60,1,0,"mo18_idle","mo18_move","mo18_attack","*","*",1,"mo18_die"
+"Sonya",91,50,8,15,0,0,35,59,1,1,160,30,28,14,200,0.75,5,0,40,40,50,20,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_FEM_ATTACK","SFX_FEM_HURT","*",2,"SFX_FEM_DIE"
+"Sounds like a good time to me! I'll do it."<
+"Stay safe!"-
+"Taurax",22,8,8,15,26,26,-1,22,0,1,140,29,28,16,185,0.75,5,0,30,20,50,60,"ACTION_MELEE",60,0,0,"mo22_idle","MO3_MOVE","mo22_attack","mo22_hurt",,1,"mo22_die"
+"Thaermore?"
+"Thank you very much. I wish I had time to chat a bit, but I must be going." [END]
+"Thank you!"
+"Thank you."
+"Thank you." [BACK]
+"Thank you." [END]
+"Thanks." [BACK]
+"Thanks." [END]
+"That's a deal." [Give sextant to Garrett]
+"Thug",14,12,8,15,0,0,-1,14,0,1,40,13,13,7,50,0.75,5,0,0,0,25,0,"ACTION_MELEE",60,0,0,"*","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",1,"SFX_MAN_DIE"
+"Traveling by boat is much faster than walking, really. I was making a good living just making short runs between here and Aridell, but even that has become too dangerous. All I can do now is wait for peace to return so that I can get back to work."-
+"Vault Master",68,50,8,15,0,0,17,9,1,2,5,8,8,7,15,1,4,0,5,0,0,0,"ACTION_MELEE",60,1,0,"MO9_IDLE","MO9_MOVE","MO9_ATTACK","*","*",1,"MO9_DIE"
+"Vekkar",74,50,1,2,0,0,11,67,1,2,1,2,1,1,5,0.5,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",2,"SFX_MAN_DIE"
+"Very well."
+"Vidar the Knife",79,12,8,15,0,0,25,14,0,1,50,10,9,7,175,1,6,0,0,0,0,0,"ACTION_MELEE",60,0,0,"*","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",1,"SFX_MAN_DIE"
+"Wait. That's your response? Something must be done about this immediately!" 9
+"Walter",80,50,8,15,0,0,26,68,1,1,15,2,3,1,10,0.5,5,0,0,0,0,0,"ACTION_CAST",220,1,0,"*","NPC_Step","sfx_cast_elem","SFX_MAN_HURT","*",7,"SFX_MAN_DIE"
+"What are these Orakur?"'
+"What are these Orakur?"M
+"What can you tell me about Blackwater?"D
+"What do you mean?"L
+"What happened to Elderhollow?"i
+"What has happened to the Magick Guild?"i
+"What has happened to this land?"P
+"What is Darkford?"{
+"What is this war regarding?"I
+"What of the Crux of Ages? What are they saying about it?"'
+"What's with the sulking man over at the table?"u
+"Where am I, exactly?"m
+"Where did you find this?"=
+"Who or what are these Orakur?"v
+"William",95,50,8,15,0,0,38,51,1,2,60,10,4,10,50,0.55,5,0,0,0,0,0,"ACTION_MELEE",60,1,0,"*","NPC_Step","SFX_MAN_ATTACK","SFX_MAN_HURT","*",2,"SFX_MAN_DIE"
+"Yes I am."
+"Yes, I'd like to see what you have for sale."F
+"Yes. I am."
+"You are welcome."
+"You seem to be making the best of your situation here."n
+$ HM\NkmRVB
+$(,`QmlQ^74)
+$, *If you are reading this then you have made it safely to Aridell and found Maddock. I could not risk leaving this document with you due to the sensitivity of the information I am about to disclose. I was unsure how long you'd be unconscious and I couldn't risk having this document end up in the wrong hands. Maddock is a simple man who has lived in this village most of his life and I knew he'd be a trustworthy caretaker of this parcel I left for you. Use the gold to buy supplies for yourself- whatever you need to secure your safety and well being. I wish I could have left you more, but it was all I had. *I'm sure you are wondering who I am. My identity will be revealed in time, but for now you should simply trust me. Whether you decide to or not is your choice. *Now, about yourself: you are part of something very big- an event that has affected this entire region. For your safety you were placed into hiding and your memory was erased with a special serum. The name you think you remember, $, was imprinted in your mind. I will not reveal your true name here because of the danger it would bring you, so you should continue to live by the name $. It would be wise for you to not draw attention to yourself by asking too many questions about your past. *Your true identity can be revealed to you but only if you are willing to accept the risk that accompanies it. You must decide for yourself whether to seek the truth or simply become "$" and settle into this new life. If you choose the path of truth it will be a hard and dangerous journey. *And so, if the truth is what you seek, you need to start by retrieving an amulet that belongs to you. Before your memory was taken, you requested that I secure a special amulet for you. I did so by slipping it into the coffin of a recently deceased aristocrat named "Adler Keldam". He is interred in a vault at Eversleep Cemetery in the North Parish region. I knew his casket would be a secure place to hide your amulet; the problem now is retrieving it. The door to the crypt is locked tight. Smashing the door down or picking the lock might be an option, but it may be easiest to just get the key. The cemetery director, Leurik, lives a bit north of Aridell and he has the key. I am confident that you could figure out a way to get it from him. *Once you retrieve your amulet from the crypt, take it to a woman named Lilith who lives in Tangletree Forest. Look for her house in the "heart of the woods". She will tell you what she knows of this amulet and set you on the right path. *Finally, you must use this time to rebuild your strength, stamina and knowledge. You were once very proficient in many skills, which the serum has caused you to forget. Only through experience and practice will you be able to reacquire these Skills you have lost. It is the only way you'll be safe. *:E: |quest 2 1|
+$, *Well done! If you are reading this then you have completed a difficult series of tasks designed to ensure your safety. Although enough time has passed for you to have firmly solidified your new identity, the danger surrounding your previous identity is not completely eliminated. Still, it should be a bit safer now to fill you in on some of the mystery surrounding your past. *First, you undoubtedly see the large gemstone in the box along with this note. Yes, this is the legendary "Crux of Ages" that I'm sure you have heard about. Take it with you and keep it close. It will protect you, but if you show it to anyone it will certainly lead to your death. *Now for how this came into your possession: you found it while scavenging a goblin battlefield looking for valuables. I cannot describe the details of the actual discovery to you now because if it were to trigger memories of the event, your life would be in certain danger. Let me explain: *A powerful Goblin Shaman named Gramuk is using a technique called "Temporal Linking" to locate the person who recovered the Crux. You see, every action you do is etched in your mind as a memory, forever linked to a lifetime of previously accumulated memories. Thus, the event of you finding the Crux was linked to all the memories associated with your prior identity. Scryers who perform Temporal Linking can use these linked memories to identify and locate people by focusing in on specific events. Erasing your identity and all associated memories means Gramuk is unable to connect the event of recovering the gemstone back to you. Even after taking possession of the Crux now, the lack of chronological memories linking you to the gem means it will be many weeks before Gramuk will be able to scry enough information to locate you. *So have you figured out who I am yet? Certainly you must have speculated by now that I am you. Yes, you set this all up to protect yourself- you wrote these notes and devised this scheme to destroy your memory and build a new identity. *Now this is where things get complicated and I will do my best to help you understand what is happening. First, you were not alone when you found the Crux: your brother was with you and shared in the recovery and concealment of the gemstone. He had planned to erase his memory along with you, but he was located and captured by the Goblins before he was able to complete the task. The only chance you had of helping him was to follow through with the plan and erase your own memory first. Now that you've accomplished this, you must locate and help your brother. The Goblins will keep him alive as long as they believe they can extract information from him, but the torture he must be enduring is unthinkable. Days ago, just before you erased your memory, you heard from a Ranger passing through Tanglewood that he may have been taken to the abandoned city Vela, which is now a goblin outpost. *There are many more questions surrounding this war, such as the Chancellor believing that the Orakur have stolen the gem even though evidence strongly points to the Goblins. This evidence, along with the Chancellor's incongruous war plan to abandon security across Thaermore, substantiates the theory that Gramuk is somehow influencing the Chancellor. While you may believe none of this information concerns you, it does, because eventually the Crux will be tracked back to you; eventually your brother will be killed when he is of no more use to the Goblins; and eventually all of Thaermore will fall to the spreading Goblin insurgence. Like it or not, you have become a significant factor in this war. *If you fled now, I wouldn't blame you. You could toss the gem into a river, leave your brother whom you have no memories of to his fate and start a new life somewhere else. However, I know you are stronger person than that. Please, locate and help your brother. He is the only family you have. |quest 21 1|
+$, *You don't know who I am, but I know who you are. I'm sure you are very confused right now, but you must gather yourself quickly. I've hidden a few basic supplies for you- they are out back near the well. Hopefully you'll remember the secret spot. You need to find a man named Maddock in the village of Aridell, which is just a short walk northeast of here. He'll know who you are and he has been instructed to give you a small package upon your arrival. Be very careful- this land has been befouled and is not safe. If you wish to live, I suggest you stay on the main roads and paths- do not wander! *:E: *The name "Maddock" means nothing to you, nor does the initial "E". With nothing else to go on, perhaps finding this person named Maddock will be your best chance to make sense of this confusion. |quest 1 1|
+% GAVJjoRXC
+%!FontType
+%!PS-Adobe-3.0 Resource-CIDFont
+%!PS-AdobeFont
+%!PS-TrueTypeFont
+%&o3"u9-*XL
+%ADOBeginFontDict
+%B F had
+%F hadRX#e
+%F hadSX#/#
+%F jadRX#
+%s:%u: failed assertion `%s'
+%|?qG|?lh|?
+&#HH-,E#F#a
+&#HH-,E#F`
+&A?Z@A?!ZA?
+&Ht|QL2@DW
+&e09??jT6.\8?99_O
+&vV4`(>l[t
+&|AU`F L
+'7Missing IHDR before sBIT
+'7Missing IHDR before sRGB
+'d9d%ee.7.7
+($):TPakFile
+($):TPakItem
+($):TRuntimeException
+($):TVolSpace
+($):TVolume
+($):brl.audiosample.TAudioSample
+($):brl.bank.TBank
+($):brl.pixmap.TPixmap
+($):brl.stream.TStream
+($,$):TOpenALAudioDriver
+($,$):TPakFileManager
+($,i):TDirectSoundAudioDriver
+($,i):TFreeAudioAudioDriver
+($,i):TItem
+($,i):TSocketStream
+($,i):TSpell
+($,i):brl.audio.TSound
+($,i):brl.max2d.TImage
+($,i,i):TCStream
+($,i,i):TFreeTypeFont
+($,i,i):brl.max2d.TImageFont
+($,i,i,i,i,i):brl.max2d.TImage
+():TAudioSample
+():TBankDataType
+():TChannel
+():TD3D7Graphics
+():TD3D7GraphicsDriver
+():TDataType
+():TDirectSoundChannel
+():TFreeAudioChannel
+():TGLGraphicsDriver
+():TGraphicsDriver
+():TImageDataType
+():TImageFont
+():TListDataType
+():TListEnum
+():TMapEnumerator
+():TMax2DDriver
+():TMax2DGraphics
+():TNodeEnumerator
+():TOpenALChannel
+():TPixmap
+():TSocket
+():TWinVolume
+():brl.audiosample.TAudioSample
+():brl.bank.TBank
+():brl.data.TDataType
+():brl.graphics.TGraphicsDriver
+():brl.linkedlist.TList
+():brl.pixmap.TPixmap
+():brl.socket.TSocket
+():brl.stream.TStream
+():pub.directx.IDirect3D7
+():pub.directx.IDirect3DDevice7
+():pub.directx.IDirectDraw7
+():pub.directx.IDirectDrawSurface7
+()[]:Object
+()[]:TGraphicsMode
+()[]:brl.graphics.TGraphicsMode
+(*b,i):TBank
+(*b,i,i,i):TAudioSample
+(*b,i,i,i):TRamStream
+(*b,i,i,i,i):TPixmap
+(:Object):Object
+(:Object):TBank
+(:Object):TLink
+(:Object):TNode
+(:Object)i
+(:Object,$,$,i,i):TBankStream
+(:Object,$,$,i,i):TDataStream
+(:Object,$,$,i,i):TRamStream
+(:Object,$,$,i,i):TSocketStream
+(:Object,$,$,i,i):TStream
+(:Object,$,$,i,i):brl.stream.TStream
+(:Object,:Object)i
+(:Object,:TLink):TLink
+(:Object,:brl.stream.TStream)i
+(:Object,i):TSound
+(:Object,i,i):TFont
+(:Object,i,i):TFreeTypeFont
+(:Object,i,i):TImageFont
+(:Object,i,i,i,i):TImage
+(:Object,i,i,i,i,i,i,i,i):TImage
+(:TChannel):TChannel
+(:TD3D7Graphics)i
+(:TD3D7ImageFrame)i
+(:TD3D7ImageFrame,f,f,f,f,f,f)i
+(:TD3D7Max2DDriver,i,i,i):TD3D7ImageFrame
+(:TDirectSoundSound)i
+(:TEntity)i
+(:TEntity,i,$)i
+(:TGraphics)i
+(:TNode):TNode
+(:TNode,:TNode)i
+(:TOpenALSound)i
+(:TPixmap,i,i)i
+(:TStream):TStreamStream
+(:TStream)i
+(:brl.audio.TChannel):TDirectSoundChannel
+(:brl.audio.TChannel):TFreeAudioChannel
+(:brl.audio.TChannel):TOpenALChannel
+(:brl.audiosample.TAudioSample,i):TDirectSoundSound
+(:brl.audiosample.TAudioSample,i):TFreeAudioSound
+(:brl.audiosample.TAudioSample,i):TOpenALSound
+(:brl.audiosample.TAudioSample,i):TSound
+(:brl.bank.TBank):TBankStream
+(:brl.graphics.TGraphics)i
+(:brl.graphics.TGraphics,:TMax2DDriver):TMax2DGraphics
+(:brl.pixmap.TPixmap):pub.directx.IDirectDrawSurface7
+(:brl.pixmap.TPixmap,i):TGLImageFrame
+(:brl.pixmap.TPixmap,i):TImageFrame
+(:brl.pixmap.TPixmap,i):brl.max2d.TImageFrame
+(:brl.pixmap.TPixmap,i,i)i
+(:brl.socket.TSocket,i):TSocketStream
+(:brl.stream.TStream):Object
+(:brl.stream.TStream):TAudioSample
+(:brl.stream.TStream):TDataStream
+(:brl.stream.TStream):TPixmap
+(:brl.stream.TStream):brl.audiosample.TAudioSample
+(:brl.stream.TStream):brl.pixmap.TPixmap
+(:brl.stream.TStream):brl.stream.TStream
+(:brl.stream.TStream)i
+(:brl.stream.TStream,i):TTextStream
+(:brl.stream.TStream,i,i)i
+(:pub.directx.DDSURFACEDESC2):pub.directx.IDirectDrawSurface7
+(:pub.directx.IDirectDrawSurface7)i
+([]:Object):TList
+(i):Object
+(i):TAudioSample
+(i):TDataId
+(i):TDirectSoundChannel
+(i):TFreeAudioChannel
+(i):TFreeTypeGlyph
+(i):TGlyph
+(i):TImageFrame
+(i):TImageGlyph
+(i):TOpenALChannel
+(i):TPixmap
+(i):TSocket
+(i):TTInfo
+(i):TTinfo
+(i):brl.audio.TSound
+(i):brl.max2d.TImage
+(i,(:Object,:Object)i)i
+(i,:Object,:Object):Object
+(i,:Object,i,i,i,i,:Object):TEvent
+(i,:brl.audiosample.TAudioSample):TFreeAudioSound
+(i,:brl.pixmap.TPixmap)i
+(i,i):TCStream
+(i,i):TD3D7Graphics
+(i,i):TGLGraphics
+(i,i):TGraphics
+(i,i):TSocket
+(i,i):brl.max2d.TImageFont
+(i,i):brl.max2d.TMax2DGraphics
+(i,i):brl.pixmap.TPixmap
+(i,i,i):TAudioSample
+(i,i,i):brl.max2d.TImageFrame
+(i,i,i):brl.pixmap.TPixmap
+(i,i,i,i):TPixmap
+(i,i,i,i):brl.pixmap.TPixmap
+(i,i,i,i,i):TD3D7Graphics
+(i,i,i,i,i):TGLGraphics
+(i,i,i,i,i):TGraphics
+(i,i,i,i,i):brl.max2d.TImage
+(i,i,i,i,i):brl.max2d.TMax2DGraphics
+(i,i,i,i,i,i,i):TImage
+)FI)! 'LK(!
+*9?9F9?ra9?
+*t2 n=Hm
+++++++++++]qr<M
++++++++++]qr++<
++++++++++]qr<M
++++++++++qr+++
+++++++++]qr<
+++++]rKS#KQZX
++++Y]]]]qq
++3[IosNd4/,
++_?$=_?=O_?Pa_?]s_?e
++s+tu++++++++++++++stu+
+,)*).**K22:KG*K
+,-9++++++Yrq]
+,ZkK>7$',@&
+-, EhD-,
+-,KS#KQZX E
+-LIBGCCW32-EH-2-SJLJ-GTHR-MINGW32
+-n?! 48rJ[b
+-w4$vDxu0$
+../../gcc/gcc/config/i386/w32-shared-ptr.c
+.;S 2;Bl5;
+.=3KBH=HB=9B=[>=8
+.?g1.?KN.?+k.?
+.AppleDouble/
+.SA;....0);D.
+.resource/
+0...2..S77ASN.S
+0123456789ABCDEFlibpng warning no. %s: %s
+0L?DK?l=44>k7MJ
+0q?m;q?QFq?/Qq?
+1.0.6 or earlier
+10Cy@T37%*
+11audiodevice
+11winmmdevice
+12dsounddevice
+18A XL
+1O?}HO?+_O?
+1v?":v?\Bv?
+2*KC:.284*@1@22*
+2@&lv2@ lv2@&dj2@ dj2@&Z_2@ Z_2@&OT2@ OT2
+2C8SHNCNHC>HCcBB=
+2x?'9x?-@x?.Gx?,Nx?$Ux?
+3'?pQ'?.o'?
+33333333333%333 18DD\
+39 KY:
+3=bo7+>/C+
+3\HB33335-BL3
+3dkIJjjIKjL?++?>,+?
+3kY FnB:
+3y}y;z|{BiikFYYZHeefIrrsKnmmLPQQIkllJ
+4")LiDG29bO?';d
+43.<H+++]]rY5
+4H?'MH?yeH?
+4W:WCWMWkWrW
+5BZl6,*6nGHB
+63?BR3?ln3?
+6663]==BB=8HB
+6=*r7=xD8=:
+6==B=BHB333333.3333
+6CIb#hab&6h
+7!]!7!7!7dd
+7.SJA37>9.G6G87.
+88888888888(888#6=JJd!!7dNG7778:1GR7
+8888888888YK
+88888888YK
+8Jf ifx
+8YYYY!!!!-,F#F`
+8gDCt0??00?@
+8}?|S}?sm}?
+9+++Y+++++]qr+++
+9910Cy@$'(
+9AL)quWr33e
+9IjkLMjkO/@@--@?
+:787=88dCCNd^8d!!
+:::8fCCHHC=NH
+:IjkLMjkO/@@--@?
+:TAudioDriver
+:TAudioSampleLoader
+:TD3D7Graphics
+:TD3D7ImageFrame
+:TD3D7Max2DDriver
+:TDataType
+:TFontLoader
+:TFreeTypeGlyph
+:TGraphicsMode
+:TImageFont
+:TImageFrame
+:TImageGlyph
+:TMax2DDriver
+:TNodeEnumerator
+:TOpenALSound
+:TOpenALSource
+:TPakFileManager
+:TPixmapLoader
+:TStreamFactory
+:TTableItem
+:TVolSpace
+:brl.audio.TChannel
+:brl.audio.TSound
+:brl.bank.TBank
+:brl.dxgraphics.TD3D7Graphics
+:brl.font.TFont
+:brl.freetypefont.TFreeTypeGlyph
+:brl.graphics.TGraphics
+:brl.graphics.TGraphicsMode
+:brl.linkedlist.TList
+:brl.map.TMap
+:brl.max2d.TImage
+:brl.max2d.TImageGlyph
+:brl.max2d.Timage
+:brl.pixmap.TPixmap
+:brl.socket.TSocket
+:pub.directx.DDSURFACEDESC2
+:pub.directx.DDSurfaceDesc2
+:pub.freetype.FTFace
+:~?{?~?ND~?
+<V|%LG' -,:60
+<fo:/0;mo:0
+<fo:/0;mo:05G
+<fo:/0;mo:0HZ
+<|?*A|?ZE|?
+=3\RH8=E?3O<O>=3
+=5^LI5;aV5
+=D?KVD?toD?
+=['c/?<GB7B<*zHA
+=xC i[^
+>Limiting gamma to 21474.83
+>i?[^>BB;^
+??qd@?t3A?7
+?Invalid fixed cHRM white point specified
+?Invalid sRGB rendering intent specified
+?ignoring out of range rgb_to_gray coefficients
+?pub.directx.IDirect3D7
+?pub.directx.IDirect3DDevice7
+?pub.directx.IDirectDraw7
+?pub.directx.IDirectDrawClipper
+?pub.directx.IDirectDrawSurface7
+?pub.directx.IDirectSound
+?pub.directx.IDirectSoundBuffer
+@&CI2@ CI2@&:=2@ :=2
+@?333?fff?
+@?zJ@?c~@?8
+@CUTA@?>=<;:987543210/.-,+*)('&%$#"!
+@^'c/?;HC6B<*zF@J
+@g?@Og?v^g?
+A:brl.audio.TSound
+AApplication was compiled with png.h from libpng-%.20s
+ADD_STYLE_NAME
+AVERAGE_WIDTH
+AVG_CAPITAL_WIDTH
+AVG_LOWERCASE_WIDTH
+Aacutesmall
+Ability_Disarm
+Ability_ID
+Ability_PickLock
+Ability_Spot
+Acircumflex
+Acircumflexsmall
+ActionLastTurn
+Acutesmall
+Adieresissmall
+AdjHeartBeat
+AdjustWindowRect
+AdjustWindowRectEx
+Adjust_Atmosphere_Volume
+Adjust_Light
+Adjust_Music_Volume
+Agravesmall
+AllocChannel
+AllocUserId
+Alpha_Tick
+Alphatonos
+Amulet Passkey 26
+Application  is  running with png.c from libpng-%.20s
+Application must supply a known background gamma
+Application was compiled with png.h from libpng-%.20s
+Apply_Effect
+Aringacute
+Aringsmall
+AtMainMenu
+Atildesmall
+AtmosSound
+Atmosphere_Channel
+AttachGraphics
+AttackMethod
+Attack_INIT
+Attempted to set both read_data_fn and write_data_fn in
+Attenuation0
+Attenuation1
+Attenuation2
+Attk_Entity
+Attk_Range
+Attribute_Effected
+Attribute_Mod
+AutoDepthStencilFormat
+Available_Attribute_Points
+Available_Skill_Points
+B%B+B:BIBuB
+BITMAPINFOHEADER
+BackBufferCount
+BackBufferFormat
+BackBufferHeight
+BackBufferWidth
+BaseShader
+Base_Damage
+Base_Decal
+BeginScene
+BlendAxisTypes
+BlendDesignMap
+BlendDesignPositions
+BlitzMax Application
+BlueValues
+Bold Italic
+Bonus_Damage
+Brevesmall
+Bs?^Ls?5Vs?
+Buffer error in compressed datastream in %s chunk
+BuildMipMaps
+C (:iU
+C Assert failed
+C2H2H287C8C8H=HC8C88
+C8dYN=CKE8VBUCC8
+CAP_HEIGHT
+CHARFORMAT
+CHARFORMATW
+CHARSET_COLLECTIONS
+CHARSET_ENCODING
+CHARSET_REGISTRY
+CHOOSECOLOR
+CHOOSEFONT
+CID Type 1
+CIDFontName
+CIDFontType
+CIDFontVersion
+CIDMapOffset
+COLORSCHEME
+COMBOBOXEXITEMW
+COMCTL32.DLL
+COMDLG32.DLL
+CRC error
+CTXKS#KQZX8
+C`BYYYYY-,
+Cai`D`B-,E
+Call to NULL read function
+Call to NULL write function
+CallNextHookEx
+Can't add Average filter after starting
+Can't add Paeth filter after starting
+Can't add Up filter after starting
+Can't write tRNS with an alpha channel
+CanHearPlayer
+Caronsmall
+Catch_Disease
+Ccedillasmall
+Ccircumflex
+Cedillasmall
+ChangeDisplaySettingsA
+CharStrings
+CharToGlyph
+Check_HideInShadow
+Child_Node
+ChoosePixelFormat
+Circumflexsmall
+Class_Title
+ClearCurrent
+ClearMouse
+ClearPixels
+Clear_To_Walk
+ClientToScreen
+ClipIntersection
+CloseGraphics
+CloseHandle
+Combat_Channel
+Combat_Music
+Combat_Music_Vol
+Combinable
+CommitedCrime
+Compression window is being reset to 512
+Container_Window
+Copy_Master
+Copyright (c) 1996-1997 Andreas Dilger
+Copyright (c) 1998-2006 Glenn Randers-Pehrson
+CountGlyphs
+CreateClient
+CreateDefault
+CreateEventA
+CreateFrameFromPixmap
+CreateFrameWithSize
+CreateFromPixmap
+CreateGraphics
+CreateProcessA
+CreateRenderSurface
+CreateSemaphoreA
+CreateSound
+CreateStatic
+CreateStream
+CreateSurface
+CreateThread
+CreateWindowExA
+CreateWithCStream
+CreateWithChannel
+CreateWithSound
+Cure_Disease
+Cure_Poison
+CurrentTile
+CurrentTrack
+Current_HP
+Current_Level
+Current_MP
+Current_Weight
+Current_XP
+D3DCLIPSTATUS
+D3DCLIPSTATUS9
+D3DDISPLAYMODE
+D3DLOCKED_RECT
+D3DMATERIAL7
+D3DMATERIAL9
+D3DPRESENT_PARAMETERS
+D3DRASTER_STATUS
+D3DRECTPATCH_INFO
+D3DSURFACE_DESC
+D3DTRIPATCH_INFO
+D3DVERTEXBUFFERDESC
+D3DVERTEXELEMENT9
+D3DVIEWPORT7
+D3DVIEWPORT9
+DDCAPS_DX1
+DDCAPS_DX3
+DDCAPS_DX5
+DDCAPS_DX6
+DDCAPS_DX7
+DDCOLORCONTROL
+DDCOLORKEY
+DDOPTSURFACEDESC
+DDOVERLAYFX
+DDPIXELFORMAT
+DDSURFACEDESC
+DDSURFACEDESC2
+DEFAULT_CHAR
+DESTINATION
+DEVICE_FONT_NAME
+DSBUFFERDESC
+DS_Celtic 1
+DYY+++++++++++++++++++++++++++++++++++++++++eB++
+Damage_Mod
+Data error in compressed datastream in %s chunk
+Decompression Error
+Decompression error
+DefWindowProcA
+Defe@knj9|
+DeltaError
+Description
+Description2
+DestroyRenderSurface
+DestroySurface
+DestroyWindow
+Dieresissmall
+Difficulty
+Direct3DDevice7
+DirectDraw7
+DirectSoundCreate
+Direction_x
+Direction_y
+Direction_z
+Directions
+Discovered
+DispatchMessageA
+Do_Functions
+Dotaccentsmall
+DrawPixmap
+DrawStarField
+Draw_Container
+Draw_Window
+Duplicate PLTE chunk
+Duplicate bKGD chunk
+Duplicate cHRM chunk
+Duplicate gAMA chunk
+Duplicate hIST chunk
+Duplicate iCCP chunk
+Duplicate oFFs chunk
+Duplicate pCAL chunk
+Duplicate pHYs chunk
+Duplicate sBIT chunk
+Duplicate sCAL chunk
+Duplicate sRGB chunk
+Duplicate tIME chunk
+Duplicate tRNS chunk
+D{CA f
+EDITSTREAM
+ENDPROPERTIES
+E]6r."&Kuy
+Eacutesmall
+Ecircumflex
+Ecircumflexsmall
+Edieresissmall
+Effect_Level
+Egravesmall
+Eh?K_^D"K*
+EhDEhDEhDEhDEhDEhDEhDEhDEhDEhDEhDEhDEhDEhDEhDEhD
+EiDEiDEiDsssstustu++++tu+++++sssssssssssssssssssssssss+++E
+EiDsEiDsEiDstuEiDsEiDEiDEiDstEiDEiDs+++++s+
+Emissive_a
+Emissive_b
+Emissive_g
+Emissive_r
+Empty keyword in iCCP chunk
+Empty keyword in sPLT chunk
+Empty keyword in tEXt chunk
+Empty keyword in zTXt chunk
+EnableAutoDepthStencil
+Ent_Slide_X
+Ent_Slide_Y
+EnumDisplaySettingsA
+Error decoding compressed text
+Event_Point
+ExitProcess
+ExpansionFactor
+Experience_Levels
+ExpertEncoding
+Extra compressed data
+Extra compressed data.
+Extra compression data
+ExtractIconA
+F had
+F,%#*N3#'grO30+/T?
+F0#A<"Yw=>w
+FAMILY_NAME
+FD?64.+)'#"
+FIGURE_WIDTH
+FKCP\:9BA:
+FLAG_AILMENT
+FLAG_ARMOR_PEN
+FLAG_BONUS_R1
+FLAG_BONUS_R2
+FLAG_BONUS_R3
+FLAG_BONUS_R4
+FLAG_ENCUMB
+FLAG_HIDDEN
+FLAG_OVERBURD
+FLAG_SCRAMBLE
+FLAG_SILENT
+FLAG_WEAPON_PEN
+FONTBOUNDINGBOX
+FONTNAME_REGISTRY
+FONT_ASCENT
+FONT_DESCENT
+FX_OriginX
+FX_OriginY
+FamilyBlues
+FamilyName
+FamilyOtherBlues
+FantasyBold1.000;Alts;FantasyFantasyBoldVersion 1.000Fantasy
+Fetch_Spell
+Find_Target
+FlushLonely
+FontDirectory
+FontMatrix
+ForceAttack
+ForceBoldThreshold
+Forge_Item
+FrameCount
+FullScreen_RefreshRateInHz
+G G*G1GJ
+G*GT.w=xeFq
+GC bbGCFree: mem has non-0 refs
+GC collectMem: memFreed=%i, time=%ims, objsFreed=%i, objsScanned=%i, objsLive=%i
+GLGraphicsDriver failed to set display mode
+GP47Ee#E`#Ee`#E`
+Gain_Experience
+GameOption
+Game_Atmosphere
+Game_Prepared
+Gb-G-:mn??F6
+Gcircumflex
+GetActiveWindow
+GetAnimImage
+GetAtomNameA
+GetAtomNameA (atom, s, sizeof(s)) != 0
+GetAudioSample
+GetClientRect
+GetCurrentThreadId
+GetCursorPos
+GetCustomDir
+GetDesktopWindow
+GetDiskFreeSpaceExA
+GetDiskSpace
+GetExitCodeProcess
+GetExtTile
+GetFileAttributesA
+GetFullPathNameA
+GetImageFont
+GetKeyState
+GetLastError
+GetLogicalDrives
+GetModuleFileNameA
+GetModuleHandleA
+GetOpenFileNameA
+GetProcAddress
+GetSaveFileNameA
+GetSettings
+GetUserAppDir
+GetUserDesktopDir
+GetUserDocumentsDir
+GetUserHomeDir
+GetVersionExA
+GetVolumeFreeSpace
+GetVolumeInfo
+GetVolumeInformationA
+GetVolumeSize
+GetWindowLongA
+GetWindowRect
+GoldTransaction
+GrabPixmap
+Gramuk escorts you through a secret tunnel underneath the Goblin Citadel. He says nothing as he leads you to a small door that he opens and promptly pushes you out of. With the sound of the door closing behind you, you realize it is all over. You stand there against the Citadel wall taking in the events that had just transpired while the desert winds howl and bite your face with sand. Everything happened so quickly that it may be days before the weight of your actions set in. Suddenly, the sound of Goblin war drums carried on the wind bring you back to the matter at hand: leaving this area as quickly as possible. *Under the blanket of the encroaching night, you make your way north to the Nimmia River where you are able to buy passage aboard a supply ship heading northwest into Eschalon. |screen_fade_out|
+GraphicsModes
+Gravesmall
+Gunther goes behind his counter and opens a small cash box. After fumbling around with a bunch of coins, he finally hands you 500 gold. "There you go! And thanks again, you've been a real help!">
+H++Co@J1:,
+H-,KS \X
+H8B1C8:!!!SSSN7
+H8H8H8H8cGB1
+HL_Mixer_Item
+Hagbert, *Don't forget: Once you make it to the Lonely Spirits Tavern in Blackwater, you must register under the name "Foozgrumph" for the innkeeper to give you the proper room. Once inside the room, you'll discover that the northwest wall is false. That is how you get there. Don't fail me again Hagbert or I'll cut out your liver." |quest 17 1|
+Hcircumflex
+He is at rest.
+Highlighted_Level
+Highlighted_Spell
+Hit_RecoveryTime
+Hungarumlautsmall
+Hv<_5x<"$z<
+I really must be going. Thank you. [END]
+I'd like to ask you something else. [BACK]
+I'd like to ask you someting else. [BACK]
+ID"5 A,hwu
+IF?lbF?({F?
+ISOLatin1Encoding
+ITALIC_ANGLE
+IZ |+?h
+Iacutesmall
+Icircumflex
+Icircumflexsmall
+Idieresissmall
+Idotaccent
+Ignoring PLTE chunk in grayscale PNG
+Ignoring attempt to set chromaticity value exceeding 21474.83
+Ignoring attempt to set negative chromaticity value
+Ignoring attempt to write 16-bit bKGD chunk when bit_depth is 8
+Ignoring attempt to write 16-bit tRNS chunk when bit_depth is 8
+Ignoring attempt to write bKGD chunk out-of-range for bit_depth
+Ignoring attempt to write tRNS chunk out-of-range for bit_depth
+Ignoring bad adaptive filter type
+Ignoring extra png_read_update_info() call; row buffer not reallocated
+Ignoring gAMA chunk with gamma=0
+Ignoring incorrect cHRM value when sRGB is also present
+Ignoring incorrect gAMA value when sRGB is also present
+Ignoring nonzero compression type in iCCP chunk
+Ignoring request to write a PLTE chunk in grayscale PNG
+Ignoring truncated iCCP profile.
+Igravesmall
+Illegal call to reserved method
+Image is too high to process with png_read_png()
+Image width or height is zero in IHDR
+Incompatible libpng version in application and library
+Incomplete compressed datastream in %s chunk
+Incorrect IEND chunk length
+Incorrect bKGD chunk index value
+Incorrect bKGD chunk length
+Incorrect cHRM chunk length
+Incorrect gAMA chunk length
+Incorrect hIST chunk length
+Incorrect oFFs chunk length
+Incorrect pHYs chunk length
+Incorrect sBIT chunk length
+Incorrect sRGB chunk length
+Incorrect tIME chunk length
+Incorrect tRNS chunk length
+Initialize
+InsertAfterLink
+InsertBeforeLink
+Insufficient memory to store text
+InterlockedDecrement
+InterlockedIncrement
+Invalid IHDR chunk
+Invalid PLTE after IDAT
+Invalid attempt to read row data
+Invalid bKGD after IDAT
+Invalid background palette index
+Invalid bit depth
+Invalid bit depth for RGB image
+Invalid bit depth for RGBA image
+Invalid bit depth for grayscale image
+Invalid bit depth for grayscale+alpha image
+Invalid bit depth for paletted image
+Invalid bit depth in IHDR
+Invalid cHRM after IDAT
+Invalid cHRM blue point
+Invalid cHRM blue point specified
+Invalid cHRM fixed red point specified
+Invalid cHRM green point
+Invalid cHRM green point specified
+Invalid cHRM red point
+Invalid cHRM red point specified
+Invalid cHRM white point
+Invalid cHRM white point specified
+Invalid color type
+Invalid color type in IHDR
+Invalid color type/bit depth combination in IHDR
+Invalid compression type specified
+Invalid filter method in IHDR
+Invalid filter type specified
+Invalid fixed cHRM blue point specified
+Invalid fixed cHRM green point specified
+Invalid gAMA after IDAT
+Invalid hIST after IDAT
+Invalid iCCP after IDAT
+Invalid image color type specified
+Invalid image height
+Invalid image size in IHDR
+Invalid image width
+Invalid interlace type specified
+Invalid number of colors in palette
+Invalid number of histogram entries specified
+Invalid number of transparent colors specified
+Invalid oFFs after IDAT
+Invalid pCAL after IDAT
+Invalid pCAL data
+Invalid pCAL parameters for equation type
+Invalid pHYs after IDAT
+Invalid palette chunk
+Invalid palette length
+Invalid sBIT after IDAT
+Invalid sBIT depth specified
+Invalid sCAL after IDAT
+Invalid sCAL data
+Invalid sPLT after IDAT
+Invalid sRGB after IDAT
+Invalid tRNS after IDAT
+Invalid time specified for tIME chunk
+Invalid zlib compression method or flags in IDAT
+IsDialogMessageA
+IsTargeted
+IsTrackingHome
+It's an error to set both read_data_fn and write_data_fn in the
+ItalicAngle
+Item_Category
+Item_Pointer
+J?v;J?6kJ?
+Jcircumflex
+KERNEL32.dll
+KO4S@``4S@884
+Known_Spell
+L=VaM=h?N=
+LVHITTESTINFO
+La?!;p6lb (1
+LanguageGroup
+LastDayInv
+LastEntTick
+LastScrollTime
+Level_Notify
+Level_Title
+Light_Falloff
+ListVolumes
+LittleEndian
+LoadAudioSample
+LoadBranch
+LoadCursorA
+LoadLibraryA
+LoadPakFile
+LoadPixmap
+Load_Atmosphere
+LocalSound
+LocalSound_Channel
+LoseInterest
+Lslashsmall
+MENUITEMINFOW
+MINMAXINFO
+MJI8w{99;5I%
+MN?vdN?]{N?>
+MNG features are not allowed in a PNG datastream
+MODE_WRITE
+MUSIC_INIT
+Macronsmall
+MakeCurrent
+Malformed iCCP chunk
+Map_Coloration
+Map_Outdoors
+Max_HP_Mod
+Max_Mana_Mod
+Maximum_Weight
+MessageBoxA
+MilliStart
+MinFeature
+Missing IHDR before IDAT
+Missing IHDR before PLTE
+Missing IHDR before bKGD
+Missing IHDR before cHRM
+Missing IHDR before gAMA
+Missing IHDR before hIST
+Missing IHDR before iCCP
+Missing IHDR before oFFs
+Missing IHDR before pCAL
+Missing IHDR before pHYs
+Missing IHDR before sCAL
+Missing IHDR before sPLT
+Missing IHDR before tEXt
+Missing IHDR before tRNS
+Missing IHDR before zTXt
+Missing PLTE before IDAT
+Missing PLTE before bKGD
+Missing PLTE before cHRM
+Missing PLTE before hIST
+Missing PLTE before tRNS
+Mixer_Slot
+Mixer_Window
+MoveRandom
+MoveTowards
+Move_From_Fire
+MsgWaitForMultipleObjects
+MultiSampleQuality
+MultiSampleType
+Music_Channel
+Music_Track
+Music_Track_Name
+My pleasure. [END]
+M}YVG ]>
+N10__cxxabiv117__class_type_infoE
+N10__cxxabiv120__si_class_type_infoE
+N10__cxxabiv121__vmi_class_type_infoE
+N=?-2mffm^QmcGU
+N>CU.w<xdCi!
+N>CU.w<zbA
+N>CU.w=vgP~
+NET_DIS_RESIST
+NET_ELM_RESIST
+NET_MAG_RESIST
+NET_TOX_RESIST
+NORM_SPACE
+NPCHistory
+NULL row buffer for row %ld, pass %d
+Narrative_Exp
+NextObject
+No IDATs written into file
+No image in file
+No memory for pCAL params.
+No memory for pCAL purpose.
+No memory for sPLT palettes.
+NoiseRange
+Not a PNG file
+Not enough image data
+Not enough memory for text.
+Not enough memory to decompress chunk
+Ntildesmall
+NumVertices
+Nz+3 3,/wXC.
+OA; +,"<>!-
+OA; +,"<>!-6
+OA; +-";>!-
+OPENGL32.DLL
+OR!Y>{1or0.
+OSVersionInfoEx
+Oacutesmall
+ObjectEnumerator
+Ocircumflex
+Ocircumflexsmall
+Odieresissmall
+Offset_Tick
+Ogoneksmall
+Ogravesmall
+Om?w\m?*im?
+Omar takes the skull from you and holds it up, looking into the empty eye sockets for a moment. He then wraps the skull in a fine animal skin and lays it gently on the ground. "We will return his skull to his body and Chieftain will be at rest."1
+Only compression method 8 is supported by PNG
+Only compression windows <= 32k supported by PNG
+Only compression windows >= 256 supported by PNG
+Oolasepf senses your approach. "Greetings again, human. How goes your quest?"^
+OpenAL32.dll
+OpticalSize
+OptionText
+Oslashacute
+Oslashsmall
+OtherBlues
+Otildesmall
+Out of Memory!
+Out of memory while procesing keyword
+Out of memory while processing sCAL chunk
+Out of place IHDR
+Out of place gAMA chunk
+Out of place iCCP chunk
+Out of place sBIT chunk
+Out of place sRGB chunk
+Out of place tIME chunk
+P++P+RG%k!
+P3gS(U1`!;
+PAINTSTRUCT
+PARAFORMAT
+PIXELFORMATDESCRIPTOR
+PIXEL_SIZE
+PNG file corrupted by ASCII conversion
+POINT_SIZE
+PQ5 :U
+Pause_Sound
+PeekDouble
+PeekMessageA
+Play_TitleMusic
+Player_Port
+PokeDouble
+Portal_MapFile
+Portal_MapName
+Portal_Tile
+Position_x
+Position_y
+Position_z
+PostThreadMessageA
+Potential overflow in png_zalloc()
+PresentationInterval
+Profile size field missing from iCCP chunk
+Proj_Impact
+Proj_Impact_Time
+Projectile
+Q&'FJL(GKHI)
+QUAD_WIDTH
+Qg R!F
+Qto& R
+QuestLev_Deny
+QuestLev_Req
+QuestNum_Deny
+QuestNum_Req
+QuickTravel
+Q}?!U}?hX}?
+R$|"QFB^9n
+R?C)R?5?R?"UR?
+RAW_ASCENT
+RAW_AVERAGE_WIDTH
+RAW_AVG_CAPITAL_WIDTH
+RAW_AVG_LOWERCASE_WIDTH
+RAW_CAP_HEIGHT
+RAW_DESCENT
+RAW_END_SPACE
+RAW_FIGURE_WIDTH
+RAW_MAX_SPACE
+RAW_MIN_SPACE
+RAW_NORM_SPACE
+RAW_PIXELSIZE
+RAW_PIXEL_SIZE
+RAW_POINTSIZE
+RAW_POINT_SIZE
+RAW_QUAD_WIDTH
+RAW_SMALL_CAP_SIZE
+RAW_STRIKEOUT_ASCENT
+RAW_STRIKEOUT_DESCENT
+RAW_SUBSCRIPT_SIZE
+RAW_SUBSCRIPT_X
+RAW_SUBSCRIPT_Y
+RAW_SUPERSCRIPT_SIZE
+RAW_SUPERSCRIPT_X
+RAW_SUPERSCRIPT_Y
+RAW_UNDERLINE_POSITION
+RAW_UNDERLINE_THICKNESS
+RAW_X_HEIGHT
+RELATIVE_SETWIDTH
+RELATIVE_WEIGHT
+RESOLUTION
+RESOLUTION_X
+RESOLUTION_Y
+RETURN Greetings
+RH++++qrY5
+Read Error
+ReadCyclicObject
+ReadDouble
+ReadFromStream
+ReadObject
+ReadString
+Readied_Spell
+Readied_Spell_Level
+Received Signal
+RegisterClassA
+ReleaseCapture
+ReleaseSemaphore
+RemotePort
+RemoveFirst
+RemoveLast
+Remove_Curse
+Remove_Effect
+Remove_if_Empty
+Rename_Item (Strange Amulet) (Amulet Passkey 26) ; toggle_port 3573 ; kill_quest 3
+RendXOffset
+RenderSurface
+RequestDir
+RequestFile
+ResetD3DDevice
+ResetGLContext
+Resistance
+Resume_Sound
+Resume_Sound_Vol
+RkIJjjIKjL?++?>,+?"
+Rotation_Tick
+RoundCount
+RoundsPerTurn
+SCROLLINFO
+SETWIDTH_NAME
+SHBrowseForFolderA
+SHELL32.DLL
+SHGetFolderPathW
+SHGetPathFromIDListA
+SMALL_CAP_SIZE
+SND_ATTACK
+SND_HITMISS
+SND_WEAPON
+SOUNDEVENT
+SPL>=<31/,"
+STARTPROPERTIES
+STRIKEOUT_ASCENT
+STRIKEOUT_DESCENT
+SUBSCRIPT_SIZE
+SUBSCRIPT_X
+SUBSCRIPT_Y
+SUPERSCRIPT_SIZE
+SUPERSCRIPT_X
+SUPERSCRIPT_Y
+Scale_Tick
+Scaronsmall
+ScatterZone
+Scircumflex
+ScreenFade
+ScreenToClient
+SelectQuickSpell
+Selected_Level
+Selected_Spell
+Selector_HL
+SendMessageA
+SetActiveFrame
+SetCapture
+SetClsColor
+SetCursorPos
+SetErrorMode
+SetGraphics
+SetLastError
+SetLineWidth
+SetMouseVisible
+SetPixelFormat
+SetTCPNoDelay
+SetTransform
+SetUnhandledExceptionFilter
+SetViewport
+SetWindowPos
+SetWindowsHookExA
+Setting gamma=0
+Setting negative gamma to zero
+ShellExecuteA
+ShowCursor
+ShowWindow
+Skill_Effected
+Skills_Scroll
+SmearEdges
+SoundEngine_Update
+Specular_a
+Specular_b
+Specular_g
+Specular_r
+Spell_Levels
+Spell_List_Handle
+Spell_Power
+Spell_Tablet
+St10bad_typeid
+St13bad_exception
+St8bad_cast
+St9bad_alloc
+St9exception
+St9type_info
+StandardEncoding
+StartFontMetrics
+StartVertexOffset
+StartVertexOffsetHeight
+StartVertexOffsetWidth
+Stats_Scroll
+Stats_Window
+Stop_Sound
+StrokeWidth
+SubrMapOffset
+Supplement
+SwapBuffers
+SwapEffect
+SwapSharedContext
+S|?'\|?Xd|?|l|?
+T3JwA6vwkq
+TArrayBoundsException
+TAudioDriver
+TAudioSample
+TAudioSampleLoader
+TAudioSampleLoaderOGG
+TAudioSampleLoaderWAV
+TBankDataType
+TBankStream
+TBankStreamFactory
+TBlitzException
+TCStandardIO
+TContainer
+TD3D7Graphics
+TD3D7GraphicsDriver
+TD3D7ImageFrame
+TD3D7Max2DDriver
+TD3D7Surface
+TDataStream
+TDataStreamFactory
+TDirectSoundAudioDriver
+TDirectSoundChannel
+TDirectSoundSound
+TEXTMETRIC
+TEXTRANGEW
+TFire_Tile
+TFontLoader
+TFreeAudioAudioDriver
+TFreeAudioChannel
+TFreeAudioSound
+TFreeTypeFont
+TFreeTypeFontLoader
+TFreeTypeGlyph
+TG9 }H
+TGLGraphics
+TGLGraphicsDriver
+TGLImageFrame
+TGLMax2DDriver
+TGraphicsDriver
+TGraphicsMode
+THTTPStreamFactory
+TINITCOMMONCONTROLSEX
+TImageDataType
+TImageFont
+TImageFrame
+TImageGlyph
+TInventory
+TKeyEnumerator
+TListDataType
+TMapEnumerator
+TMax2DDriver
+TMax2DGraphics
+TNodeEnumerator
+TNullFunctionException
+TNullMethodException
+TNullObjectException
+TOpenALAudioDriver
+TOpenALChannel
+TOpenALSound
+TOpenALSource
+TOutOfDataException
+TPakFileManager
+TPakFileStreamFactory
+TPaperdoll
+TPixmapDataType
+TPixmapLoader
+TPixmapLoaderPNG
+TPointStar
+TRamStream
+TRamStreamFactory
+TRuntimeException
+TS%O&K%8%4&0%
+TSocketException
+TSocketStream
+TSocketStreamFactory
+TSoundElement
+TSpell_Selector
+TStreamException
+TStreamFactory
+TStreamReadException
+TStreamStream
+TStreamWrapper
+TStreamWriteException
+TSystemDriver
+TTableItem
+TTextStream
+TTextStreamFactory
+TVINSERTSTRUCTW
+TValueEnumerator
+TWin32SystemDriver
+TWinVolume
+TWinVolumeDriver
+TXEndianStream
+TXEndianStreamFactory
+Thank you. [END]
+Thanks anyways. [END]
+The Goblins, aware that the Citadel is under assault, suddenly lock down every gateway and portcullis! You'll have to search for another way to reach the inner foyer and gain access to the next level. |toggle_port 14112; toggle_port 14514 ; toggle_port 14715 ; toggle_port 15117|
+The man's eyes seem to fill with despair. "I am afraid I do not believe you. You are a fool if you think you can clear the goblins from Grimmhold by yourself. You'll need to take the northern route through Thaermore to go west of here...I...[cough]"
+The other guard chuckles.
+This man is dead.
+Thornsmall
+Tildesmall
+TlsGetValue
+TlsSetValue
+Too many IDAT's found
+Torch_Time
+Total_Known_Skills
+Total_Known_Spells
+Track_Now_Playing
+TranslateMessage
+Travel_Dir
+TriggerLocalSound
+Truncating incorrect info tRNS chunk length
+Truncating incorrect tRNS chunk length
+Type 1
+Type 42
+U"UIUZUkU{
+U?%1U?GFU?c[U?ypU?
+UNDERLINE_POSITION
+UNDERLINE_THICKNESS
+USER32.dll
+Uacutesmall
+Ucircumflex
+Ucircumflexsmall
+Udieresissmall
+Ugravesmall
+Unable to write international text
+UnderlinePosition
+UnderlineThickness
+Unhandled Memory Exception Error
+Unknown compression method in IHDR
+Unknown compression type %d
+Unknown compression type in iCCP chunk
+Unknown compression type in zTXt chunk
+Unknown custom filter method
+Unknown filter heuristic method
+Unknown filter method in IHDR
+Unknown interlace method in IHDR
+Unknown row filter for method 0
+Unknown sRGB intent
+Unknown zTXt compression type %d
+Unknown zlib error
+Unrecognized equation type for pCAL chunk
+Unrecognized unit type for oFFs chunk
+Unrecognized unit type for pHYs chunk
+UpdateLocalName
+UpdatePointer
+UpdateRemoteName
+UpdateZones
+Update_Map_Color
+Update_Stats
+UsageIndex
+V`NomO`_Now
+Valid palette required for paletted images
+ValidateGraphics
+ValidateRect
+ValidateSize
+ValueAtIndex
+ValueForKey
+Vv?(gv?dwv?
+W,  EiD
+WAVEFORMATEX
+WEIGHT_NAME
+WH.9LgiN1+:
+WINDOWINFO
+WINDOW_CHARED
+WINDOW_OPTIONS
+WINDOW_TRADE
+WSACleanup
+WSAStartup
+WSOCK32.DLL
+WT fFhW7
+WVh iO
+WaitForSingleObject
+Wcircumflex
+WeightVector
+While he talks, the man's eyes never leave yours. His gaze is piercing, like a viper preparing to strike. "I am looking for someone to help me with a problem. There is an individual who has become troublesome to me and must be eliminated. Are you interested in the job?"/
+Why don't you stay in Aridell for a couple days and see if your memory returns. You can visit Father Michael next door in the Bethel of the Green Moon if you need further healing and you can get a room at the Owl
+Width is too large for libpng to process pixels
+Windows FNT
+WithStream
+Without warning, several men jump from the shadows of the nearby wood line and surround you. One of them, presumably the leader,  approaches you and speaks up:
+Write Error
+WriteBytes
+WriteDouble
+WriteFloat
+WriteObject
+WritePixel
+WriteShort
+WriteString
+XEbcdg*^_V]
+XV ErA
+Xiph.Org libVorbis I 20050304
+Y F jad
+YUTPKID>931*
+Yacutesmall
+Ycircumflex
+Ydieresissmall
+You see a shady character.
+Z\my:*CD+3}
+Zcaronsmall
+Zero length keyword
+Zero length tRNS chunk
+Zero length zTXt chunk
+Zz?3fz?Vqz?j|z?o
+Z|?4^|?Mb|?bf|?tj|?
+[Give Crux of Ages to Gramuk]}
+[Leave her be.]
+[NZYa5B@7-89:2;<=DC34+.6/1A,?0>SPRe\O
+[Say nothing and attempt to flee](
+[Threaten] "Listen, you maggot. I have information regarding a possible invasion by the goblins. If you prevent me from notifying the Captain about this and it happens, you are going to hang. This I promise."X
+[]:TDataType
+[]:TFreeTypeGlyph
+[]:TImageFrame
+[]:TImageGlyph
+[]:TPakItem
+[]:brl.audio.TChannel
+[]:brl.audio.TSound
+[]:brl.graphics.TGraphicsMode
+[]:brl.max2d.Timage
+[]:brl.pixmap.TPixmap
+];D7MP5CC6OV
+]]]]]]]]]]]]qqC\X@
+]qr++++++++
+]qr++++++3
+]qrr++++++<
+^!HY }aR
+^%blyjWVrV
+^^@_6VI<0"
+^{?kc{?Gh{?
+^}?.b}?je}?
+_ Oc2Oy
+_ n$ps~h
+_%$lcH/-$iZAD/
+_.y68EABqT
+_DeleteFixup
+_FirstNode
+_FlushRead
+_FlushWrite
+_InsertFixup
+_MULE_BASELINE_OFFSET
+_MULE_RELATIVE_COMPOSE
+_RemoveNode
+_RotateLeft
+_RotateRight
+_TrackMouseEvent
+_ValidateGraphics
+_WriteByte
+_XFREE86_GLYPH_RANGES
+__WSAFDIsSet
+__getmainargs
+__mb_cur_max
+__p__environ
+__p__fmode
+__set_app_type
+_autoClose
+_enumerator
+_findclose
+_findfirst
+_graphicss
+_imageFlags
+_localPort
+_n_fullscreen
+_n_graphics
+_playFlags
+_remotePort
+_renderSurf
+`@XWRNICA8*&
+`DY++++++++++++++++++u+++++++C\X
+`hz' Y.
+a(aIa]bBbRb
+a<jpc<DJe<
+aRKQ5rr5QKR5ss
+acircumflex
+activeBlend
+activeFrame
+activeFrameFlags
+add_gold 10
+add_gold 300
+add_gold 50
+add_gold 500
+ampersandsmall
+approxequal
+aringacute
+asciicircum
+asciitilde
+atomWindowType
+autofitter
+b nGO3
+b!?~U"?dG#?
+b$k3FEF@z%AB6
+bPitchAndFamily
+bW# Bt
+b\\vU$uH_f
+bad refs:obj=$%x refs=$%x
+biBitCount
+biClrImportant
+biCompression
+biSizeImage
+biXPelsPerMeter
+biYPelsPerMeter
+bitmap_left
+bitmap_top
+blend_mode
+braceright
+bracketleft
+bracketright
+buffer error
+cAccumAlphaBits
+cAccumBits
+cAccumBlueBits
+cAccumGreenBits
+cAccumRedBits
+cAlphaBits
+cAlphaShift
+cAuxBuffers
+cBlueShift
+cColorBits
+cDepthBits
+cGreenBits
+cGreenShift
+cMcRc`cicxc
+cStencilBits
+cbClsExtra
+cbWndExtra
+cchTextMax
+ccircumflex
+centinferior
+centoldstyle
+centsuperior
+cinunmraBODA1tal
+circumflex
+closesocket
+clrBtnHighlight
+clrBtnShadow
+clrMemBit error: membit not set
+clrMemBit error: mempage does not exist
+clscolor_blue
+clscolor_green
+clscolor_red
+colonmonetary
+color_alpha
+color_blue
+color_green
+commainferior
+commasuperior
+cond_gold 200 ; remove_gold 200 ; quest 16 2 ; give_item (Crypt Key) ; kill_quest 14
+cond_special 2
+copyright - 2000 - Daniel Steven SmithDS_Celtic-1RegularFontMonger:DS_Celtic 1DS_Celtic 1DSCeltic1
+crTextColor
+cv?9kv?Vsv?p{v?
+cxWindowBorders
+cyWindowBorders
+c}{2a CO
+c~?)f~?lh~?
+d d)d8dH
+d3d7graphics
+d?Z4e??te?
+d?nAd? bd?
+data error
+dckDestColorkey
+dckSrcColorkey
+ddckCKDestBlt
+ddckCKDestOverlay
+ddckCKSrcBlt
+ddckCKSrcOverlay
+ddckDestColorkeyHi
+ddckDestColorkeyLo
+ddckSrcColorkeyHi
+ddckSrcColorkeyLo
+dddckCKDestOverlay
+ddpf_BitCount
+ddpf_BitMask_0
+ddpf_BitMask_1
+ddpf_BitMask_2
+ddpf_BitMask_3
+ddpf_dwFlags
+ddpf_dwFourCC
+ddpf_dwSize
+ddsOldCaps
+deflate 1.2.3 Copyright 1995-2005 Jean-loup Gailly
+description
+dmBitsPerPel
+dmDefaultSource
+dmDisplayFlags
+dmDisplayFrequency
+dmDitherType
+dmDriverExtra
+dmDriverVersion
+dmICMIntent
+dmICMMethod
+dmLogPixels
+dmMediaType
+dmPanningHeight
+dmPanningWidth
+dmPelsHeight
+dmPelsWidth
+dmPosition_y
+dmPostition_x
+dmPrintQuality
+dmReserved1
+dmReserved2
+dmSpecVersion
+dmTTOption
+dmYResolution
+dollarinferior
+dollaroldstyle
+dollarsuperior
+dotoperator
+drop_ent 16 2965 ; gfx (Divine Light) 2965 0 ; drop_ent 16 2469 ; gfx (Divine Light) 2469 0 ; drop_ent 16 3470 ; gfx (Divine Light) 3470 0 ; drop_ent 16 3866 ; gfx (Divine Light) 3866 0
+dwAlignBoundaryDest
+dwAlignBoundarySrc
+dwAlignSizeDest
+dwAlignSizeSrc
+dwAlignStrideAlign
+dwAlphaBitDepth
+dwAlphaBltConstBitDepths
+dwAlphaBltPixelBitDepths
+dwAlphaBltSurfaceBitDepths
+dwAlphaDestConst
+dwAlphaDestConstBitDepth
+dwAlphaEdgeBlend
+dwAlphaEdgeBlendBitDepth
+dwAlphaOverlayConstBitDepths
+dwAlphaOverlayPixelBitDepths
+dwAlphaOverlaySurfaceBitDepths
+dwAlphaSrcConst
+dwAlphaSrcConstBitDepth
+dwBackBufferCount
+dwBufferBytes
+dwBuildNumber
+dwCKeyCaps
+dwColorSpaceHighValue
+dwColorSpaceLowValue
+dwCompressionRatio
+dwCurrVideoPorts
+dwCurrVisibleOverlays
+dwDamageMask
+dwFXAlphaCaps
+dwFillColor
+dwFreeHw3DAllBuffers
+dwFreeHw3DStaticBuffers
+dwFreeHw3DStreamingBuffers
+dwFreeHwMemBytes
+dwFreeHwMixingAllBuffers
+dwFreeHwMixingStaticBuffers
+dwFreeHwMixingStreamingBuffers
+dwItemData
+dwLayerMask
+dwMaxContigFreeHwMemBytes
+dwMaxHw3DAllBuffers
+dwMaxHw3DStaticBuffers
+dwMaxHw3DStreamingBuffers
+dwMaxHwCodecStretch
+dwMaxHwMixingAllBuffers
+dwMaxHwMixingStaticBuffers
+dwMaxHwMixingStreamingBuffers
+dwMaxLiveVideoStretch
+dwMaxOverlayStretch
+dwMaxSecondarySampleRate
+dwMaxVideoPorts
+dwMaxVisibleOverlays
+dwMinHwCodecStretch
+dwMinLiveVideoStretch
+dwMinOverlayStretch
+dwMinSecondarySampleRate
+dwMipMapCount
+dwNLVBCKeyCaps
+dwNLVBCaps
+dwNLVBCaps2
+dwNLVBFXCaps
+dwNLVBRops_0
+dwNLVBRops_1
+dwNLVBRops_2
+dwNLVBRops_3
+dwNLVBRops_4
+dwNLVBRops_5
+dwNLVBRops_6
+dwNLVBRops_7
+dwNumFourCCCodes
+dwNumVertices
+dwOSVersionInfoSize
+dwPlatformId
+dwPlayCpuOverhead
+dwPlayCpuOverheadSwBuffers
+dwPrimaryBuffers
+dwRefreshRate
+dwReserved
+dwReserved1
+dwReserved2
+dwReserved3
+dwReserved4
+dwReserved5
+dwReserved6
+dwRotationAngle
+dwSSBCKeyCaps
+dwSSBFXCaps
+dwSSBRops_0
+dwSSBRops_1
+dwSSBRops_2
+dwSSBRops_3
+dwSSBRops_4
+dwSSBRops_5
+dwSSBRops_6
+dwSSBRops_7
+dwSVBCKeyCaps
+dwSVBCaps2
+dwSVBFXCaps
+dwSVBRops_0
+dwSVBRops_1
+dwSVBRops_2
+dwSVBRops_3
+dwSVBRops_4
+dwSVBRops_5
+dwSVBRops_6
+dwSVBRops_7
+dwStateMask
+dwTextureStage
+dwTotalHwMemBytes
+dwTypeData
+dwUnlockTransferRate
+dwUnlockTransferRateHwBuffers
+dwVSBCKeyCaps
+dwVSBFXCaps
+dwVSBRops_0
+dwVSBRops_1
+dwVSBRops_2
+dwVSBRops_3
+dwVSBRops_4
+dwVSBRops_5
+dwVSBRops_6
+dwVSBRops_7
+dwVerMajor
+dwVerMinor
+dwVidMemFree
+dwVidMemTotal
+dwVisibleMask
+dwWindowStatus
+dwZBufferBaseDest
+dwZBufferBitDepths
+dwZBufferHigh
+dwZBufferLow
+dwZBufferOpCode
+dwZDestConst
+dwZDestConstBitDepth
+dwZSrcConst
+dwZSrcConstBitDepth
+dxRightIndent
+dxStartIndent
+e YqN<
+e?R$e?\De?Nde?)
+e?V,e?[<e?[Le?T\e?Gle?5|e?
+e@hB +
+eTLLK]Psc0
+ecircumflex
+eightinferior
+eightoldstyle
+eightsuperior
+emissive_a
+emissive_b
+emissive_g
+emissive_r
+exclamdown
+exclamdownsmall
+exclamsmall
+extra interior spaces removed from keyword
+fIncUpdate
+fa_channel
+failed to open data dump file
+figuredash
+file error
+fiveeighths
+fiveinferior
+fiveoldstyle
+fivesuperior
+fourinferior
+fouroldstyle
+foursuperior
+g?T!c@iEAE
+gIjkLMjkO/@@--@?
+gTLy #2
+gamma = (%d/100000)
+gcRadNt}I7GY)#\X
+gcircumflex
+genericdata
+genericdestructor
+germandbls
+gethostbyaddr
+gethostbyname
+getpeername
+getsockname
+getsockopt
+give_item (Crypt Key) ; Quest 16 2 ; Quest 14 9
+glAlphaFunc
+glBindTexture
+glBlendFunc
+glClearColor
+glColor4ubv
+glDeleteTextures
+glDrawPixels
+glGenTextures
+glGetDoublev
+glGetIntegerv
+glGetTexLevelParameteriv
+glLineWidth
+glLoadIdentity
+glLoadMatrixd
+glMatrixMode
+glPixelStorei
+glPopAttrib
+glPushAttrib
+glRasterPos2i
+glReadPixels
+glTexCoord2f
+glTexImage2D
+glTexParameteri
+glTexSubImage2D
+glVertex2f
+glVertex2i
+glViewport
+glyph-dict
+glyphformat
+greaterequal
+guid3DAlgorithm0
+guid3DAlgorithm1
+guid3DAlgorithm2
+guid3DAlgorithm3
+guillemotleft
+guillemotright
+guilsinglleft
+guilsinglright
+gx=%f, gy=%f, bx=%f, by=%f
+hDeviceWindow
+hInsertAfter
+hbmpChecked
+hbmpUnchecked
+hbrBackground
+hcircumflex
+header crc mismatch
+hjDV@rv"MeF
+hungarumlaut
+hypheninferior
+hyphensuperior
+i iDifi
+iLayerType
+iPixelType
+iPointSize
+iSelectedImage
+iTXt chunk not supported.
+icircumflex
+image size exceeds user limits in IHDR
+image_font
+incompatible version
+incorrect data check
+incorrect gamma=(%d/100000)
+incorrect header check
+incorrect length check
+inflate 1.2.3 Copyright 1995-2005 Mark Adler
+init_trade (eeru)
+init_trade (erik)
+init_trade abygale
+init_trade farwick
+insufficient memory
+invalid bit length repeat
+invalid block type
+invalid chunk type
+invalid code lengths set
+invalid distance code
+invalid distance too far back
+invalid distances set
+invalid keyword character 0x%02X
+invalid literal/length code
+invalid literal/lengths set
+invalid stored block lengths
+invalid window size
+io m6b|
+ioctlsocket
+isFixedPitch
+item_cChildren
+item_cchTextMax
+item_hItem
+item_iImage
+item_iSelectedImage
+item_lParam
+item_pszText
+item_state
+item_stateMask
+itemx_iIntegral
+j oj<a
+jcircumflex
+k?0,k?vGk?
+kIJjjIKjL?++?>,+?
+keyword length must be 1 - 79 characters
+kgreenlandic
+lBrightness
+lColorEnable
+lSaturation
+lSharpness
+lStructSize
+leading spaces removed from keyword
+lenBuildCharArray
+lfClipPrecision
+lfEscapement
+lfFaceName00
+lfFaceName01
+lfFaceName02
+lfFaceName03
+lfFaceName04
+lfFaceName05
+lfFaceName06
+lfFaceName07
+lfFaceName08
+lfFaceName09
+lfFaceName0a
+lfFaceName0b
+lfFaceName0c
+lfFaceName0d
+lfFaceName0e
+lfFaceName0f
+lfFaceName10
+lfFaceName11
+lfFaceName12
+lfFaceName13
+lfFaceName14
+lfFaceName15
+lfFaceName16
+lfFaceName17
+lfFaceName18
+lfFaceName19
+lfFaceName1a
+lfFaceName1b
+lfFaceName1c
+lfFaceName1d
+lfFaceName1e
+lfFaceName1f
+lfOrientation
+lfOutPrecision
+lfPitchAndFamily
+lfStrikeOut
+lfUnderline
+libpng error no. %s: %s
+libpng error: %s
+libpng error: %s, offset=%d
+libpng version 1.2.12 - June 27, 2006
+libpng version 1.2.12 - June 27, 2006 (header)
+libpng warning: %s
+line_width
+logicalnot
+lpCustColors
+lpTemplateName
+lpfnWndProc
+lpszClassName
+lpszMenuName
+lpwfxFormat
+l~?(o~?bq~?
+m m:mRmtm
+m?`Im?,|m?
+malformed height string in sCAL chunk
+malformed sPLT chunk
+malformed width string in sCAL chunk
+max_advance
+maxahieght
+metric_height
+metric_horiadvance
+metric_horibearingx
+metric_horibearingy
+metric_vertadvance
+metric_vertbearingx
+metric_vertbearingy
+metric_width
+msvcrt.dll
+multi-masters
+n &pAZ'
+n-gVW[@s_5
+nAvgBytesPerSec
+nBlockAlign
+nE=*`E{|RE{
+nSamplesPerSec
+napostrophe
+need dictionary
+nineinferior
+nineoldstyle
+ninesuperior
+nonbreakingspace
+nonmarkingreturn
+npc_die 58
+npc_die 72
+npc_disp_change 59 2
+npc_disp_change 87 2
+numbersign
+numcharmaps
+ocircumflex
+oivUTK8s=$y
+onedotenleader
+oneinferior
+oneoldstyle
+onequarter
+onesuperior
+opentype-validate
+ordfeminine
+ordmasculine
+oslashacute
+overscore.001
+o}?=r}?ju}?
+p?6Lp?uyp?]
+palette_mode
+parenleftinferior
+parenleftsuperior
+parenright
+parenrightinferior
+parenrightsuperior
+partialdiff
+periodcentered
+periodinferior
+periodsuperior
+perthousand
+pfnCallback
+pfr-metrics
+pi_GE"V030.]CG
+pivUTK8t=#y
+pixel_mode
+png_do_dither returned rowbytes=0
+png_do_rgb_to_gray found nongray pixel
+postscript-cmaps
+postscript-font-name
+postscript-info
+pure virtual method called
+py?&wy?]}y?
+qjQVV@(~ro
+qqqqqqqqqq
+quest 1 9
+quest 11 1 ; quest 12 3
+quest 11 9
+quest 12 2
+quest 12 3
+quest 12 4 ; remove_item (Antique Sextant)
+quest 14 1
+quest 17 9
+quest 18 1
+quest 18 9 ; remove_item (Potion of Absolute Restoration)
+quest 19 1 ; give_item (Incriminating Letter)
+quest 20 1
+quest 20 9
+quest 21 9
+quest 22 1
+quest 22 9 ; remove_item (Inscribed Gold Wedding Ring)
+quest 23 1
+quest 24 1
+quest 25 1
+quest 25 2
+quest 25 9 ; remove_item (Purest Water)
+quest 27 2
+quest 29 1
+quest 29 9
+quest 3 9
+quest 4 1
+quest 45 1
+quest 45 9 ; add_gold 300
+quest 47 1
+quest 47 2
+quest 47 2 ; npc_disp_change 76 0
+quest 47 9 ; remove_item (Amulet Passkey 15) ; add_gold 500 ; quest_step 54
+quest 49 1
+quest 49 1 ; quest 50 2
+quest 5 1
+quest 50 3 ; quest 29 9
+quest 52 1
+quest 53 2 ; screen_fade_out ; move_player 861 ; screen_fade_in ; book 31
+quest 55 1
+quest 56 1
+quest 58 1
+quest 58 9 ; remove_item (Burley Acorn) ; add_gold 300
+quest 59 1
+quest 6 1 ; npc_die 58
+quest 62 1
+quest 63 1 ; give_item (Rusted Key)
+quest 63 9 ; add_gold 200 ; remove_item (Brass Locket)
+quest 64 1
+quest 65 1
+quest 7 1
+quest 7 9
+quest 8 1 ; Rename_Item (Strange Amulet) (Amulet Passkey 26)
+quest_step 66 ; cond_special 15 ; quest 65 9
+questiondown
+questiondownsmall
+questionsmall
+quotedblbase
+quotedblleft
+quotedblright
+quoteright
+quotesinglbase
+quotesingle
+r03B6+?du[
+rGBdc^`D,\
+rGCBFtrGBCF;VXb
+rV`NomO`_Now
+rcPaint_bottom
+rcPaint_left
+rcPaint_right
+rcPaint_top
+rect_bottom
+rect_right
+registered
+remove_item (Bar of Mithril) ; quest 4 9 ; add_gold 375
+remove_item (Ceramic Crucible) ; add_gold 600 ; quest 24 9
+remove_item (Crux of Ages) ; kill_quest 56
+remove_item (Giant Skull) ; quest 49 9
+remove_item (Incriminating Letter) ; quest 19 9
+remove_item (Letter to Penelope) ; quest 61 9
+remove_item (Mercenary's Note) ; quest 64 9
+remove_item (Secrets of Transference Circuits) ; quest 5 9 ; add_gold 250
+rent_room 15 4690
+rent_room 30 8959
+rent_room 50 8959
+resource.frk/
+rq]++++++#
+rq]+++++++#
+s Roost  Tavern.
+s++++++++ssss+
+sPLT chunk has bad length
+sPLT chunk requires too much memory
+sPLT chunk too long
+scircumflex
+setMemBit error: membit already set
+setsockopt
+seveneighths
+seveninferior
+sevenoldstyle
+sevensuperior
+sfnt-table
+signal!:%d
+sixinferior
+sixoldstyle
+sixsuperior
+smooth-lcd
+smooth-lcdv
+softhyphen
+sound (gramport) ; drop_ent 16 2965 ; gfx (Divine Light) 2965 0 ; drop_ent 16 2469 ; gfx (Divine Light) 2469 0 ; drop_ent 16 3470 ; gfx (Divine Light) 3470 0 ; drop_ent 16 3866 ; gfx (Divine Light) 3866 0
+special_event 1
+specular_a
+specular_b
+specular_g
+specular_r
+stream end
+stream error
+surffrompixmap
+szCSDVersion
+tRNS chunk not allowed with alpha channel
+teach_skill (Aaron) 20
+teach_skill (Aaron) 24
+teach_skill (Siam) 3
+teach_skill (Sonya) 19
+teach_skill (Sonya) 21
+teach_skill (Sonya) 23
+tform_scale_x
+tform_scale_y
+threeeighths
+threeinferior
+threeoldstyle
+threequarters
+threequartersemdash
+threesuperior
+timeBeginPeriod
+timeEndPeriod
+timeGetTime
+timeKillEvent
+timeSetEvent
+tmAveCharWidth
+tmBreakChar
+tmDefaultChar
+tmDigitizedAspectX
+tmDigitizedAspectY
+tmExternalLeading
+tmFirstChar
+tmInternalLeading
+tmLastChar
+tmMaxCharWidth
+tmOverhang
+tmPitchAndFamily
+tmStruckOut
+tmUnderlined
+toggle_port 3573
+too many length or distance symbols
+trailing spaces removed from keyword
+twodotenleader
+twoinferior
+twooldstyle
+twosuperior
+u WPRQSV
+u?L-u?{Pu?\su?
+ucircumflex
+underlinepos
+underlinethick
+underscore
+unitsperem
+unknown compression method
+unknown critical chunk
+unknown header flags set
+v6v@vGvNvgvwx5
+v;D8LO6DD8MW
+vDB I=
+vXaOqnQa`Oqx
+viewport_h
+viewport_w
+viewport_x
+viewport_y
+vkDirection
+volumeDevice
+volumeFree
+volumeName
+volumeSize
+volumeType
+w0Yf)YRHXL3:
+w0^k)YSIVL3:
+w32_sharedptr->size == sizeof(W32_EH_SHARED)
+wAlignment
+wBitsPerSample
+wCreatorVersion
+wFormatTag
+wNumbering
+wProductType
+wServicePackMajor
+wServicePackMinor
+wSuiteMask
+wXbOqnPbaNqy
+waveOutClose
+waveOutGetPosition
+waveOutOpen
+waveOutPrepareHeader
+waveOutReset
+waveOutUnprepareHeader
+waveOutWrite
+waveOutWrite error
+wcircumflex
+wglCreateContext
+wglDeleteContext
+wglGetCurrentContext
+wglGetProcAddress
+wglMakeCurrent
+wglShareLists
+wglSwapIntervalEXT
+white_x=%f, white_y=%f
+white_x=%ld, white_y=%ld
+wx=%f, wy=%f, rx=%f, ry=%f
+xXbOqoQbaOry
+xf86-driver-name
+y-y>{?{@{AsIsJ
+ycircumflex
+z=ox:OJ8vt2
+z?k {?pH{?
+zero length keyword
+zeroinferior
+zerooldstyle
+zerosuperior
+zlib error
+zlib memory
+zlib memory error
+zlib version
+zlib version error
+{@5=9=HL)O9Z)^9z
+{c&fap!MGZ>
+|'R>M[4z-cx
+})0P@?Dv?i#
+}SNoqMRSMpsMP
+~?B$~?,8~?xK~?+^~?Fp~?
+~v#X7nPjFh

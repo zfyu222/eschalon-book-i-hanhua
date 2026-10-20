@@ -1,0 +1,291 @@
+"Elderhollow"
+air_prelude.ogg
+atmos_birds.wav
+atmos_desert.wav
+atmos_drip_dungeon.wav
+atmos_dry_dungeon.wav
+atmos_fog.wav
+atmos_sea.wav
+close_door 8467 ; sound (ghost_laugh) ; destroy_script
+cond_item (Amulet Passkey 1) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch
+cond_item (Amulet Passkey 10) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch ; toggle_port 11660
+cond_item (Amulet Passkey 11) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch ; toggle_port 11660
+cond_item (Amulet Passkey 12) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch ; toggle_port 11660
+cond_item (Amulet Passkey 13) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch ; toggle_port 11660
+cond_item (Amulet Passkey 14) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch ; toggle_port 11660
+cond_item (Amulet Passkey 15) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch ; toggle_port 8363 ; quest 54 2
+cond_item (Amulet Passkey 17) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch ; toggle_port 11660
+cond_item (Amulet Passkey 18) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch ; toggle_port 11660
+cond_item (Amulet Passkey 19) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch ; toggle_port 11660
+cond_item (Amulet Passkey 2) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch
+cond_item (Amulet Passkey 20) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch ; toggle_port 11660
+cond_item (Amulet Passkey 21) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch ; toggle_port 11660
+cond_item (Amulet Passkey 22) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch ; toggle_port 11660
+cond_item (Amulet Passkey 23) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch
+cond_item (Amulet Passkey 24) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch
+cond_item (Amulet Passkey 25) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch
+cond_item (Amulet Passkey 26) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch ; toggle_port 8646 ; quest 8 9
+cond_item (Amulet Passkey 27) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch
+cond_item (Amulet Passkey 28) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch ;  toggle_port 9236
+cond_item (Amulet Passkey 29) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch ;  toggle_port 9733
+cond_item (Amulet Passkey 3) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch
+cond_item (Amulet Passkey 30) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch ;  toggle_port 10231
+cond_item (Amulet Passkey 4) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch
+cond_item (Amulet Passkey 5) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch
+cond_item (Amulet Passkey 6) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch
+cond_item (Amulet Passkey 8) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch
+cond_item (Amulet Passkey 9) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.)
+cond_item (Amulet Passkey DRACO) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch ; toggle_port 11037 ; toggle_port 11137
+cond_item (Amulet Passkey OMEGA) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch ;  toggle_port 10417 ; toggle_port 10517
+cond_item (Amulet Passkey SOLARA) ; message (A passkey in your possession fits in the lever's slot allowing you to unlock it.) ; toggle_switch
+cond_item (Crux of Ages) ; condition (Do you wish to place the Crux of Ages on to the pedestal?) (Yes) (No) ; sound thunder ; remove_item (Crux of Ages) ; cond_special 7 ; destroy_script
+cond_item (Gate Key) ; message (The Gate Key in your inventory fits the keyhole. Upon inserting it, the gate crashes downward into the ground!) ; destroy_obj 7014 ; sound (sfx_port_down) ; gfx (Colored Smoke) 7014 4 ; remove_item (Gate Key)
+cond_not_quest 25 (-1) ; trigger_talk 77
+cond_quest 1 9 ;  no_crime
+cond_quest 13 0 ; quest 13 2 ; message (You've been ambushed!) ; drop_ent 14 12340 ; drop_ent 14 12344 ; drop_ent 14 13240 ; drop_ent 79 13044 ; drama ; alert_npcs ; trigger_talk 79
+cond_quest 18 1 ; no_crime
+cond_quest 24 1 ;  no_crime
+cond_quest 26 2 ; sound (sfx_energize) ; map_port 14_basement ; port_to 4316
+cond_quest 26 2 ; sound (sfx_energize) ; map_port 41 ; port_to 2244
+cond_quest 29 9 ; no_crime
+cond_quest 30 1 ; no_crime
+cond_quest 50 3 ; narrative 62
+cond_quest 50 3 ; quest 50 4 ; drop_ent 8 5169 ; drop_ent 8 7578 ; drop_ent 8 6281 ; drop_ent 8 4879 ; message (Suddenly you hear a war horn and four giants charge into the battle!) ; sound (war_horn)
+cond_quest 51 2 ; sound (sfx_energize) ; map_port 41 ; port_to 2445
+cond_quest 51 2 ; sound (sfx_energize) ; map_port goblin_cit_l1 ; port_to 13414
+cond_quest 53 2 ; book 32 ; cond_special 6
+cond_quest 54 3 ; drop_ent 88 11596 ; remove_npc 76 ; drop_ent 21 11495 ; drop_ent 21 12294 ; drop_ent 21 12196 ; trigger_talk 88 ; destroy_script
+cond_quest 54 3 ; drop_ent 88 4286 ; remove_npc 76 ; drop_ent 21 4186 ; drop_ent 21 3587 ; drop_ent 21 3386 ; trigger_talk 88 ; destroy_script
+cond_quest 6 9 ; destroy_obj 11959 ; destroy_obj 11860 ; destroy_obj 11760 ; destroy_obj 12462 ; destroy_obj 12362 ; destroy_obj 12263 ; destroy_script
+cond_quest 67 2 ; cond_special 16
+cond_special 1 ; sound (sfx_energize) ; port_to 16129
+cond_special 3 ; toggle_port 6881 ; toggle_port 6980 ; drop_ent 20 7871
+cond_special 4 ; toggle_port 13619 ; toggle_port 13719 ; toggle_port 13820
+cond_special 5 ; destroy_obj 13778 ; sound (stone_slide) ; gfx (Colored Smoke) 13778 5
+cond_spot ; convert_tile 1 ; message(There is something sticking out of the cracks in a nearby rock!)
+cond_spot ; convert_tile 1 ; message(You notice a leather pouch stuffed into the shelves of bones!) ; destroy_script
+cond_spot ; convert_tile 1 ; message(You notice something nearby on the wall. It appears to be a hidden area behind a brick!) ; destroy_script
+cond_spot ; convert_tile 1 ; message(You notice something stuffed into the shelves of bones!) ; destroy_script
+cond_state 9314 4 ; toggle_port 9915
+cond_state 9322 4 ; toggle_port 9919
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; message (The water smells putrid.) ; disease 6
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; message (The water tastes exceptionally fresh here!) ; restore 4 ; heal 4 0
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; message(Agh! The Goblins have been using this well as a toilet!) ; disease 0
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; message(Ah! Very refreshing!) ; Heal 1 0
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; message(It appears someone has been making wishes by throwing coins down the well!) ; add_gold 14 ; destroy_script
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; message(The water has a oily film floating on it. You decide to not drink it.)
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; message(Very odd...this well is completely dry. The bucket is filled with dry leaves.)
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; message(You only find a moldy bucket filled with smelly water.)
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; message(You take a drink of the refreshing water.)
+condition (There is a rope going down the well. Pull it up?) (Yes) (No) ; sound (MO2_MOVE) ; message(You've disturbed a nest of Bloodsippers!) ; drop_ent 2 14291 ; drop_ent 2 14691 ; drop_ent 2 14790 ; destroy_script
+dank_underworld.ogg
+darkness.ogg
+desert.ogg
+destroy_obj 11536 ; destroy_obj 11436 ; destroy_obj 11235 ; destroy_obj 11437 ; gfx (Colored Smoke) 11436 4; gfx (Colored Smoke) 11235 4; gfx (Colored Smoke) 11437 4 ; sound (stone_collapse) ; message (The blast opens a pathway through the rocks!) ; kill_narrative 23 ; destroy_script
+destroy_obj 13340 ; gfx (Colored Smoke) 13340 0 ; message (The blast knocks out the northwest wall to this room!) ; sound (stone_collapse) ; destroy_script
+destroy_obj 13440 ; gfx (Colored Smoke) 13440 0 ; destroy_script
+destroy_obj 5247 ; message (Upon stepping on this pressure plate, a section of wall to the southwest opens up!) ; sound (stone_slide) ; destroy_script
+destroy_obj 5864 ; gfx (Colored Smoke) 5864 4 ; sound (stone_collapse) ; destroy_script
+destroy_obj 8291 ; gfx (Colored Smoke) 8291 5 ; destroy_script
+det_keg 11077 ; det_keg 10878
+drop_ent 11 15019 ; drop_ent 10 14820 ; drop_ent 10 14720 ; drop_ent 11 14521 ; destroy_script
+drop_ent 12 13584 ; drop_ent 12 14283 ; destroy_script
+drop_ent 12 14623 ; drop_ent 12 14523 ; drop_ent 12 14724
+drop_ent 14 12968 ; drop_ent 14 13470 ; drop_ent 14 13769 ; drop_ent 14 14168 ; destroy_script
+drop_ent 14 14466 ; drop_ent 14 14468 ; drop_ent 14 14669 ; drop_ent 14 14767 ; destroy_script
+drop_ent 14 9809 ; drop_ent 14 10008 ; drop_ent 14 10507 ; drop_ent 14 10608 ; destroy_script
+drop_ent 18 6540 ; drop_ent 18 6844 ; drop_ent 18 5943 ; drop_ent 18 4947 ; drop_ent 18 6046 ; drop_ent 18 6845 ; destroy_script
+drop_ent 19 11974 ; drop_ent 19 12074 ; drop_ent 19 12274 ; destroy_script
+drop_ent 19 9354 ; drop_ent 19 9455 ; destroy_script
+drop_ent 19 9841 ; drop_ent 19 10243 ; destroy_script
+drop_ent 2 17857 ; drop_ent 2 17260 ; drop_ent 2 18058 ; destroy_script
+drop_ent 21 11937 ; drop_ent 21 11839 ; drop_ent 21 12139 ; destroy_script
+drop_ent 22 11435 ; destroy_script
+drop_ent 3 10619 ; drop_ent 3 10820 ; drop_ent 3 10721 ; destroy_script
+drop_ent 4 15155 ; drop_ent 4 13360 ; drop_ent 4 13053 ; destroy_script
+drop_ent 4 18072 ; drop_ent 4 17473 ; drop_ent 4 17474 ; destroy_script
+drop_ent 6 15481 ; drop_ent 6 16080 ; drop_ent 6 16377 ; destroy_script
+gfx (Flare)  8056 3 ; narrative 32 ; destroy_script
+grimmhold_maint
+hell_dungeon_1.ogg
+insanity.ogg
+lighthouse
+local_gap_rumble.wav
+map (shadowmirk_l1) ; port_to 11663
+message (A corpse rises from the coffin!) ; drop_ent 6 18080 ; destroy_script
+message (A skeleton rises from the coffin!) ; drop_ent 18 9572 ; destroy_script
+message (A spirit rises from the coffin!) ; drop_ent 20 6938 ; destroy_script
+message (Secret wall!)
+message (The barrel was full of Fungal Slime, and a small pouch of gold!) ; drop_ent 5 1051 ; drop_ent 5 950 ; drop_ent 5 1050 ; drop_ent 5 1349 ; drop_ent 5 1450 ; drop_ent 5 1650 ; drop_ent 5 1750 ; drop_ent 5 1651 ; destroy_script
+message (The casket was filled with Fanged Salamanders, gnawing away at what was left of the bones!) ; drop_ent 1 10179 ; drop_ent 1 10480 ; drop_ent 1 10580 ; destroy_script
+message (The door opens into a tiny closet containing a chest.)
+message (This storage room is filled with rusted shovels and picks hanging on the walls.)
+message (This switch is jammed and will not budge.)
+message (To prevent injury, the massive gate has been locked in place. A key or separate switch is needed to release it.)
+message("The ground gives way and you fall into darkness!") ; map_port sinkhole ; move_player 9950 ; trauma 10
+message(Abygale: You are not allowed in there! Please leave!)
+message(It appears someone has dug up a coffin and dragged it into this house. All that's left of the body inside is fragments of bone and clothing.)
+narrative 1
+narrative 10
+narrative 11
+narrative 12
+narrative 13
+narrative 14
+narrative 15
+narrative 16
+narrative 17
+narrative 18
+narrative 19 ; toggle_switch ; toggle_obj 12619 ; sound (water_rush) ; quest 6 9
+narrative 2
+narrative 20
+narrative 21
+narrative 22
+narrative 23
+narrative 24
+narrative 25
+narrative 26
+narrative 27
+narrative 28
+narrative 29
+narrative 3
+narrative 31
+narrative 33 ; drop_ent 2 17966 ; drop_ent 2 19260 ; drop_ent 2 18255 ; destroy_script
+narrative 34
+narrative 35
+narrative 36
+narrative 37
+narrative 38
+narrative 39
+narrative 4
+narrative 40
+narrative 41
+narrative 42
+narrative 43
+narrative 44
+narrative 45
+narrative 46
+narrative 47
+narrative 48
+narrative 49
+narrative 5
+narrative 50
+narrative 53
+narrative 54
+narrative 55
+narrative 56
+narrative 57
+narrative 58
+narrative 59
+narrative 6
+narrative 60
+narrative 61
+narrative 63
+narrative 64
+narrative 65
+narrative 66
+narrative 67
+narrative 68
+narrative 69
+narrative 7
+narrative 70
+narrative 71
+narrative 72
+narrative 73
+narrative 74
+narrative 78
+narrative 8
+narrative 9
+overland_1.ogg
+overland_2.ogg
+overland_3.ogg
+overland_4.ogg
+port_to (6131)
+port_to 10137
+port_to 14109
+port_to 14417
+port_to 14509
+port_to 15221
+port_to 15422
+port_to 15520
+port_to 16215
+port_to 16280
+port_to 16427
+port_to 16682
+port_to 17220
+port_to 17222
+sound (mo2_move) ; sound (stone_collapse) ; message (When you examine the rocks, several crash to the floor.) ; drop_ent 2 14722 ; drop_ent 2 14118 ; drop_ent 2 14020 ; drop_ent 2 14222 ; drop_ent 2 15519 ; drop_ent 2 15721 ; drop_ent 2 14718 ; drop_ent 2 14019 ; destroy_script
+sound (sfx_bell) ; condition (Upon pulling the switch, a bell rings and Eeru promptly greets you at the false door to the room. "Are you ready to leave? I would be happy to escort you back to the common area if you are.") (Yes) (No) ; move_player 9658
+sound (sfx_energize) ; map_port 32 ; port_to 9422
+sound (sfx_energize) ; map_port 41 ; port_to 2043
+sound (sfx_energize) ; map_port bs ; port_to 10154
+sound (stairs)
+sound Stairs
+sound(sfx_energize) ; map_port goblin_cit_l2 ; port_to 1974
+the_commonwealth.ogg
+toggle_obj 12873 ; sound (stone_slide) ; message (The wall on the northeast side of the room moves!)
+toggle_obj 13270 ; gfx (Colored Smoke) 13270 4 ; sound (stone_collapse) ; message (As you near the rock wall, a section crumbles apart! It appears this was only a poorly made false wall.) ; destroy_script
+toggle_port 11510 ; destroy_script
+toggle_port 11662 ; toggle_switch
+toggle_port 3950 ; toggle_port 4244 ; toggle_port 5249 ; destroy_script
+toggle_port 4361 ; message(The pressure plate triggers the portculis!)
+toggle_port 6852 ; toggle_port 7153
+toggle_port 7153 ; toggle_port 7455
+toggle_port 7455 ; toggle_port 7756
+toggle_port 7756 ; toggle_port 8058
+toggle_port 8058 ; toggle_port 8359
+toggle_port 8175 ; toggle_port 8376 ; toggle_port 9278 ; toggle_port 8375 ; toggle_port 8072 ; toggle_port 9559 ; destroy_script
+toggle_switch ; Toggle_port 9854
+toggle_switch ; cond_special 14
+toggle_switch ; cond_state 17363 5 ; cond_state 17463 4 ; cond_state 17562 5 ; cond_state 17564 4 ; cond_state 17664 5 ; cond_state 17763 4 ; destroy_obj 18062 ; sound (Stone_Slide) ; gfx (Colored Smoke) 18062 4
+toggle_switch ; destroy_obj 11465 ; message (Triggering the switch causes the gate to slide down into the walkway.) ; sound (sfx_port_down) ; destroy_script
+toggle_switch ; destroy_obj 8227 ; destroy_obj 8525 ; destroy_obj 8326 ; sound (Stone_Slide) ; gfx (Colored Smoke) 8525 4 ; gfx (Colored Smoke) 8326 4 ; gfx (Colored Smoke) 8028 4 ; destroy_obj 8028
+toggle_switch ; message (Nothing happens...)
+toggle_switch ; message (This switch feels broken. It just moves loosely back and forth.)
+toggle_switch ; message (This switch offers no resistance as if it is broken and no longer attached to any mechanism.)
+toggle_switch ; message(You hear the faint sound of a steel gate moving...) ; toggle_port 3170
+toggle_switch ; quest 51 2
+toggle_switch ; toggle_port 10325
+toggle_switch ; toggle_port 10547 ; toggle_port 10648 ; message (The gate rises and the lever becomes locked in place.) ; destroy_script
+toggle_switch ; toggle_port 10771
+toggle_switch ; toggle_port 10872 ; Message(Far away you can hear the faint sound of a gate moving...) ; Drop_Ent 1 3173 ; Drop_Ent 1 3372 ; Drop_Ent 1 3370 ; Drop_Ent 1 3672 ; destroy_script
+toggle_switch ; toggle_port 11335
+toggle_switch ; toggle_port 11426
+toggle_switch ; toggle_port 11510 ; toggle_port 12719
+toggle_switch ; toggle_port 11536
+toggle_switch ; toggle_port 11536 ; toggle_port 11335
+toggle_switch ; toggle_port 11949
+toggle_switch ; toggle_port 12236
+toggle_switch ; toggle_port 12267 ; toggle_port 12669
+toggle_switch ; toggle_port 12347
+toggle_switch ; toggle_port 12361
+toggle_switch ; toggle_port 12403 ; toggle_port 12005
+toggle_switch ; toggle_port 12745
+toggle_switch ; toggle_port 12832
+toggle_switch ; toggle_port 14112; toggle_port 14514 ; toggle_port 14715 ; toggle_port 15117
+toggle_switch ; toggle_port 14274 ; commit_crime
+toggle_switch ; toggle_port 15732
+toggle_switch ; toggle_port 15981 ; toggle_port 15583
+toggle_switch ; toggle_port 3573
+toggle_switch ; toggle_port 3665 ; drop_ent 9 2966 ; drop_ent 9 3268 ; message (A gate opens...) ; destroy_script
+toggle_switch ; toggle_port 3950
+toggle_switch ; toggle_port 4124
+toggle_switch ; toggle_port 4348 ; toggle_port 7331 ; toggle_port 7431
+toggle_switch ; toggle_port 5059
+toggle_switch ; toggle_port 5564
+toggle_switch ; toggle_port 5668
+toggle_switch ; toggle_port 5727
+toggle_switch ; toggle_port 6237
+toggle_switch ; toggle_port 6852 ; message(The portcullis behind you opens...)
+toggle_switch ; toggle_port 7435 ; toggle_port 6236 ; toggle_port 6141 ; toggle_port 7341 ; destroy_script
+toggle_switch ; toggle_port 7448
+toggle_switch ; toggle_port 7739 ; message (You hear the faint sound of a gate moving somewhere...)
+toggle_switch ; toggle_port 7743
+toggle_switch ; toggle_port 8113
+toggle_switch ; toggle_port 9241 ; toggle_port 9341
+toggle_switch ; toggle_port 9271 ; commit_crime
+toggle_switch ; toggle_port 9531 ; message (The sound of steel grinding on stone can be heard far off in the darkness.) ; drop_ent 15 13737 ; drop_ent 15 14340 ; destroy_script
+toggle_switch ; toggle_port 9559 ; message (A gate moves...)
+toggle_switch ; toggle_port 9619 ; toggle_port 10423
+toggle_switch ; toggle_port 9653
+toggle_switch ; toggle_port 9653 ; message (Far off you hear the fainest sound of a gate moving...)
+wizardtorium.ogg
