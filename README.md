@@ -567,6 +567,7 @@ BlitzMax 把字符串长度存在别处，字节扫描会把下一个字段的�
 - 已知问题：主菜单选项、状态栏标签、制作人员名单等预渲染艺术字图片仍为英文；少量独立界面可能显示英文；超长中文在窄界面中换行可能不理想；运行时注入组件可能被安全软件误报；仅验证 Steam 32 位版本。
 - ZIP SHA-256：`498291CB3157040396B6056257FDF50E7FDA06CE93DAD510303235BE9FBEA839`
 - GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.5`
+- 资产命名：GitHub 上传时会剔除中文，Release 资产显示为 `Eschalon.Book.I_.1.5.zip`（与 v1.4 行为一致），内容即本地的 `Eschalon Book I_子非鱼汉化1.5.zip`，SHA-256 一致。
 
 #### v1.5 打包过程说明（质量门禁）
 
