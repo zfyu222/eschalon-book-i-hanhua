@@ -417,6 +417,73 @@ BlitzMax 把字符串长度存在别处，字节扫描会把下一个字段的�
 & $py Analysis\check_ascii_residue.py   # ASCII 尾部残留剥离复核
 ```
 
+## 2026-10-20 对话面板部分英文的匹配修复
+
+### 现象
+
+实机截图中同一个 NPC 对话框里中文与英文混排：选项「我中了诅咒，需要精神恢复。」
+是中文，紧邻的「I am in need of healing.」却是英文；上方叙述段也整段英文。
+`runtime_untranslated.jsonl` 记录了这些碎片，说明译文存在但运行时没匹配上。
+
+### 三个根因
+
+1. **短条目不入索引**：`_build_word_index` / `_build_prefix_index` 都有
+   `len(source) < 40` 的下限。对话选项普遍只有 20–30 字符，完全进不了索引，
+   只能靠精确匹配；而源文带分支 ID（`"I am in need of healing."5`），
+   游戏绘制的是去 ID 的 `"I am in need of healing."`，精确匹配必然失败。
+2. **词长阈值漏掉整句**：词索引只收长度 ≥ 6 的词。
+   `No way. I'm not going to risk my life for a chunk of metal.` 里没有任何
+   六字母词，整句无法被索引到。
+3. **前缀索引用了带引号的原行**：选项绘制为 `"No way. ..."`，前两个词取到
+   `"No`，而索引 key 是 `No way.`，带引号的首词永远对不上。
+
+另有一个放大因素：`dialogParagraph` 在遇到任何无法匹配的绘制调用时立即清空。
+状态栏数字（`2.3/136 lbs`）恰好插在对话行之间，导致换行后的尾行
+（`me."`、`pieces.`、`services."`）失去上下文。
+
+### 修复
+
+| 位置 | 改动 |
+|------|------|
+| `_build_word_index` | 长度下限 40 → 12；词长 `{5,}` → `{4,}`（≥5 字母）；单词条目上限 40 → 200 |
+| `_build_prefix_index` | 长度下限 40 → 12 |
+| `translateDialogLine` | 前缀索引用去引号后的 `bare` 查找，并用 `startsWith(bare)` 比对 |
+| `dialogParagraph` | 连续 4 次未命中才丢弃上下文，避免被 UI 数字打断 |
+| `applyCombatPatterns` | 新增 `Level: N (职业)`、`N hours`、`日期 Jul 2026`、种族+职业两词组合规则 |
+
+译表 4555 → 4563 行，补充 8 条运行时确认缺失的短选项与标记：
+
+```
+"Hello?"              -> "你好？"
+"No pay? No way."     -> "没有报酬？想都别想。"
+"Eh, thanks." [BACK]  -> "呃，谢谢。" [返回]
+"Thank you." [BACK]   -> "谢谢。" [返回]
+"Goodbye." [END]      -> "再见。" [结束]
+[BACK] / [END] / BACK / END
+```
+
+### 验证
+
+- `Analysis/simulate_dialog_lookup.py` 用截图中的 12 行逐行复现查找链，
+  修复后 11 行命中（其中一行是截图误读的 `stained glass`，游戏原文为 `stain glass`）。
+- `Analysis/analyze_unmatched.py` 对运行时日志归因：可恢复条目 0 → 6，
+  阻塞条目 15 → 11，缺失条目 18 → 16。
+- 实机启动加载 4783 条映射，无 hook 报错；存档信息已显示
+  `Game '222' 加载成功。此角色的总游 戏时间： 9.6 小时。`
+
+### 说明
+
+状态栏 `Hit Points` / `Mana Points` / `Encumbrance` / `Experience` 仍为英文。
+前两项在译表里有独立条目，后两项在 EXE 中根本检索不到，四者与主菜单
+`Options` / `Save` 同为预渲染艺术字图片，文本 hook 无法覆盖。按既定范围不处理图片。
+
+### 复现命令
+
+```powershell
+& $py Analysis\simulate_dialog_lookup.py   # 逐行复现查找链
+& $py Analysis\analyze_unmatched.py        # 运行时日志归因
+```
+
 ## 对外发布
 
 ### v1.0（2026-08-20）

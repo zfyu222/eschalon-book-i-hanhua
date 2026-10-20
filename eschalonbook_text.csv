@@ -4553,3 +4553,11 @@ Stop the clocks from ticking; make the sun disappear; happiness for me is ending
 "This door seems to be as solid as the brick walls surrounding it; in fact, upon closer inspection, the door appears to have been painted upon the wall! There is no visible keyhole, though it appears this ""door"" may move under some other mechanical force."
 an old grave marker; the name is barely legible.
 I can do this.
+"""Hello?"""
+"""No pay? No way."""
+"""Eh, thanks."" [BACK]"
+"""Thank you."" [BACK]"
+"""Goodbye."" [END]"
+[BACK]
+[END]
+BACK

@@ -216,16 +216,19 @@ def load_offline_mapping():
 
 
 def _build_prefix_index(mapping):
-    """Index long paragraphs by their first two words.
+    """Index paragraphs by their first two words.
 
     Dialogue panels receive one wrapped line at a time, so the full paragraph
     never reaches a hook.  Keying paragraphs by their opening words lets the
     runtime recognise the first line of a paragraph and split the translation
     proportionally across the following lines.
+
+    Short options matter as much as long paragraphs: a 24-character reply is
+    still a full dialogue line, so only truly trivial keys are skipped.
     """
     index = {}
     for source in mapping:
-        if len(source) < 40 or "\ufffd" in source:
+        if len(source) < 12 or "\ufffd" in source:
             continue
         words = source.split()[:2]
         if len(words) < 2:
@@ -244,18 +247,24 @@ def _build_word_index(mapping):
     reaches the drawing call, so a fragment never equals a stored key and often
     starts mid-sentence. Looking a fragment up by its rarest words lets the
     runtime find the owning paragraph and slice the translation from there.
+
+    A five-letter floor is deliberate: sentences such as
+    "No way. I'm not going to risk my life for a chunk of metal." contain no
+    six-letter word at all and would otherwise be unreachable. The per-word
+    cap is high because common words appear in far more than forty paragraphs,
+    and dropping them removes the only handle the lookup has.
     """
     index = {}
     for source in mapping:
-        if len(source) < 40 or "\ufffd" in source:
+        if len(source) < 12 or "\ufffd" in source:
             continue
         compact = re.sub(r"\s+", " ", source).strip()
-        words = {word.lower() for word in re.findall(r"[A-Za-z][A-Za-z']{5,}", compact)}
+        words = {word.lower() for word in re.findall(r"[A-Za-z][A-Za-z']{4,}", compact)}
         if not words:
             continue
         for word in sorted(words, key=len, reverse=True)[:8]:
             index.setdefault(word, []).append(source)
-    return {word: items for word, items in index.items() if len(items) <= 40}
+    return {word: items for word, items in index.items() if len(items) <= 200}
 
 
 def build_hook_script(mapping):
@@ -277,6 +286,10 @@ const namePatterns = {name_patterns_json};
 const prefixIndex = {prefix_index_json};
 const wordIndex = {word_index_json};
 let dialogParagraph = null;
+// UI counters such as "2.3/136 lbs" are drawn between dialogue lines and used
+// to reset the paragraph immediately, which orphaned the final wrapped line.
+// Tolerate a few unrelated draws before dropping the context.
+let dialogMisses = 0;
 
 // Dialogue panels hand the drawing call one wrapped line at a time, so the text
 // never equals a stored paragraph. Recognise the owning paragraph, then return
@@ -341,29 +354,41 @@ function translateDialogLine(text) {{
     if (dialogParagraph !== null) {{
         const window = Math.max(0, dialogParagraph.consumed - 80);
         const position = dialogParagraph.normText.indexOf(line, window);
-        if (position >= 0) return paragraphSlice(dialogParagraph, position, line.length);
+        if (position >= 0) {{
+            dialogMisses = 0;
+            return paragraphSlice(dialogParagraph, position, line.length);
+        }}
         // The trailing quote of the final line is part of the record, not the
         // stored paragraph, so retry the same line without record punctuation.
         const bareTail = stripRecordQuotes(line);
         if (bareTail.length >= 3 && bareTail !== line) {{
             const tailPosition = dialogParagraph.normText.indexOf(bareTail, window);
             if (tailPosition >= 0) {{
+                dialogMisses = 0;
                 return paragraphSlice(dialogParagraph, tailPosition, bareTail.length);
             }}
         }}
-        dialogParagraph = null;
+        // Keep the paragraph for the next line, but do not hold it forever.
+        dialogMisses++;
+        if (dialogMisses >= 4) {{
+            dialogParagraph = null;
+            dialogMisses = 0;
+        }}
     }}
     const bare = stripRecordQuotes(line);
     if (bare.length >= 6) {{
         const slice = findParagraphByFragment(bare);
         if (slice !== undefined) return slice;
     }}
-    const words = line.split(' ').slice(0, 2).join(' ');
-    const candidates = prefixIndex[words];
+    // Quote-stripped form matches the stored keys. Options reach draw as
+    // '"No way. ..."' while the corpus stores them without the record quotes,
+    // and a quoted first token never matches the prefix index.
+    const words = bare.split(' ').slice(0, 2).join(' ');
+    const candidates = prefixIndex[words] || prefixIndex[line.split(' ').slice(0, 2).join(' ')];
     if (candidates === undefined) return undefined;
     for (const source of candidates) {{
         const normSource = normalizeText(source);
-        if (!normSource.startsWith(line)) continue;
+        if (!normSource.startsWith(bare)) continue;
         const target = translations[source];
         if (target === undefined) continue;
         const paragraph = {{normText: normSource, translated: target, consumed: 0}};
@@ -515,6 +540,30 @@ function applyCombatPatterns(text) {{
     out = out.replace(/\\byou\\s+gain\\s+(\\d+)\\s+experience\\b/gi, '获得 $1 点经验');
     out = out.replace(/\\bgains?\\s+(\\d+)\\s+experience\\b/gi, '获得 $1 点经验');
     out = out.replace(/\\bTown Guard\\b/g, '城镇守卫');
+    // Character sheet header: "Level: 1 (Layman)". The class name is a corpus
+    // entry of its own, so reuse it instead of duplicating every combination.
+    out = out.replace(/^Level:\\s*(\\d+)\\s*\\(([^)]+)\\)\\s*$/i, (match, level, cls) => {{
+        const name = translations[cls] || translations[cls.trim()] || cls;
+        return '等级：' + level + '（' + name + '）';
+    }});
+    // Play-time strings: "9.6 hours".
+    out = out.replace(/(\\d+(?:\\.\\d+)?)\\s*hours?\\b/gi, '$1 小时');
+    // Save-slot timestamps: "21 Jul 2026  22:41:06".
+    const months = {{
+        Jan: '1月', Feb: '2月', Mar: '3月', Apr: '4月', May: '5月', Jun: '6月',
+        Jul: '7月', Aug: '8月', Sep: '9月', Oct: '10月', Nov: '11月', Dec: '12月'
+    }};
+    out = out.replace(
+        /\\b(\\d{{1,2}})\\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s+(\\d{{4}})\\b/g,
+        (match, day, mon, year) => year + '年' + months[mon] + day + '日');
+    // Race plus class label drawn as one short string: "Druidic Rogue".
+    // Only exact two-word strings qualify, so prose cannot be affected.
+    const pair = out.trim().split(/\\s+/);
+    if (pair.length === 2) {{
+        const race = translations[pair[0]];
+        const klass = translations[pair[1]];
+        if (race !== undefined && klass !== undefined) out = race + ' ' + klass;
+    }}
     if (out !== text && /[\\u3400-\\u9fff]/.test(out) && /\\.\\s*$/.test(out)) {{
         out = out.replace(/\\.\\s*$/, '。');
     }}
