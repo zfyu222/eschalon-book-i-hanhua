@@ -782,6 +782,7 @@ BlitzMax 把字符串长度存在别处，字节扫描会把下一个字段的�
 - 检查：共用 `release-check` 通过并绑定 v1.7 三个载荷哈希。冻结代码递归字节码/常量及内嵌译表、字体与修复工程相同；独立冻结启动器达到响应正常的 Launch Menu，现场确认两处指令探针已挂载。启动控制台输出缓冲使首个管道观察超时，失败观察保留在本地；后续读取窗口和进程内探针的独立证据确认启动成功。升级/轻甲说明场景使用已完成的相同模块实机证据，未将冻结启动冒烟等同于重新走完整升级流程。
 - 安装验证：`Analysis/verify_release_v17.py` 使用真实 ZIP 与 PowerShell 脚本在临时目录完成 11 项新装、重复安装、改载荷升级、恢复原件、重复卸载、重装、v1.6 旧包升级/恢复路由、损坏载荷、外部文件变化、错误 EXE 拒绝测试；`Analysis/test_release_v17_cmd.py` 验证中文+空格目录中的真实 CMD 入口；公共发布测试套件 10 项通过。测试未安装到真实游戏目录，未发起 Steam 恢复。机器报告位于 `TranslateFiles/reports/release_v17/`。
 - 真实边界：本次不重排图片、不补译剩余英文，之前的返回主菜单问题未在本轮单独复测；旧贴图/翻译限制沿用工程记录。不把本次修复扩展为所有场景无崩溃保证。
-- GitHub 目标：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.7`（上传与公开下载复核后补记结果）。
+- GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.7`，已公开发布、非草稿、非预发布，设为最新稳定版。资产名 `Eschalon.Book.I_.1.7.zip`；匿名 HTML latest 跳转至 v1.7，匿名完整下载 HTTP 200，85,426,512 字节及 SHA-256 与本地 ZIP 一致，GitHub 资产 digest 也一致。说明正文仅换行编码归一化后与包内 TXT 完全相同，证据 `TranslateFiles/reports/release_v17/public_download.json`。匿名 API 因共享限额返回 403，元数据改由已连接 gh CLI 读取，公开页面与文件下载仍无鉴权验证。
 - 网盘入口：EschalonBook，`https://pan.baidu.com/s/5CzGvEaOYAUHbh8iBc-Jsww`；反馈：EschalonBook问题反馈，`https://docs.qq.com/sheet/DTnhoaFZweVRoV2t0?tab=BB08J2`。地址来自本游戏发布配置，未套用其他项目。
+- 百度网盘地址已写入 TXT/GitHub 正文；本次只上传 GitHub Release，没有向百度网盘传送文件，不把链接加入说明等同于网盘文件已更新。
 

@@ -1,6 +1,6 @@
 {
   "date": "2026-10-28",
-  "status": "built_regressions_levelup_and_skill_help_tests_passed",
+  "status": "released_v1.7_regressions_levelup_and_skill_help_tests_passed",
   "root_cause": "Function-lifetime listener used at an interior x86 instruction with a saved EDI at the stack top. The old listener corrupts the saved value with an interception return trampoline; an instruction-probe callback preserves it.",
   "official_api_reference": "https://frida.re/docs/javascript-api/#interceptor",
   "changes": [
@@ -31,7 +31,8 @@
     "sha256": "1b83086eaa3219c85579141f83a3f288e7d8d7cafa1c7e11814b223beb0c5b36",
     "source_hook_sha256": "be735987e1be7a726610f7a7a7efd02ec8147994fa5dde6138e65775a160529f",
     "builder": "PyInstaller 6.21.0 / Python 3.12.10",
-    "published": false,
+    "published": true,
+    "release_url": "https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.7",
     "previous_release_overwritten": false
   },
   "active_test_run": "Analysis/levelup_crash/20261028_010102_068435",

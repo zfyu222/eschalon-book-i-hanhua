@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "date": "2026-10-28T01:30:27.210421+08:00",
+  "anonymous": true,
+  "release": "https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.7",
+  "tag": "v1.7",
+  "draft": false,
+  "prerelease": false,
+  "metadata_source": "Connected gh CLI; anonymous API was rate-limited. Latest HTML page and full asset download verified without authentication.",
+  "latest_stable": true,
+  "asset": "Eschalon.Book.I_.1.7.zip",
+  "download_url": "https://github.com/zfyu222/eschalon-book-i-hanhua/releases/download/v1.7/Eschalon.Book.I_.1.7.zip",
+  "size": 85426512,
+  "sha256": "ec34b5c9d9961b496b9dbc4cf6ba0f101db12dd21811aabe74d824d30417f156",
+  "download_http_status": 200,
+  "cdn_host": "release-assets.githubusercontent.com",
+  "release_body_matches_txt": true,
+  "github_digest": "sha256:ec34b5c9d9961b496b9dbc4cf6ba0f101db12dd21811aabe74d824d30417f156",
+  "baidu_link_in_notes": true,
+  "feedback_link_in_notes": true,
+  "baidu_file_upload_performed": false
+}
