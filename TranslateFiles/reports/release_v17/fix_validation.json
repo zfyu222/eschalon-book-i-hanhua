@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-28",
+  "status": "built_regressions_levelup_and_skill_help_tests_passed",
+  "root_cause": "Function-lifetime listener used at an interior x86 instruction with a saved EDI at the stack top. The old listener corrupts the saved value with an interception return trampoline; an instruction-probe callback preserves it.",
+  "official_api_reference": "https://frida.re/docs/javascript-api/#interceptor",
+  "changes": [
+    "Skill paragraph site 0x4d950f uses a plain instruction-probe function, retaining pre-wrap Chinese substitution.",
+    "Narrative pre-wrap site 0x4c6c53 uses the same instruction-probe form; true function-entry hooks remain callbacks objects.",
+    "Expected instruction bytes are checked before installing the two probes.",
+    "Diagnostic observer uses an instruction probe too, avoiding reintroducing the old fault."
+  ],
+  "tests": {
+    "native_x86_fixture": "Analysis/instruction_probe_fixture_20261028.json",
+    "fixture_host": "Owned hidden SysWOW64 cmd helper; no game process or save involved",
+    "unhooked_register_preservation": "10/10",
+    "instruction_probe_register_preservation": "10/10",
+    "old_function_listener_register_preservation": "0/10",
+    "generated_js_contract": "Analysis/display_probe_contract_20261028.json",
+    "contract_tests_passed": 6,
+    "frozen_archive_check": "Both fixed instruction-probe callbacks confirmed in bundled display_hook_launcher code",
+    "game_startup": "Baseline diagnostic with fixed production hooks reached ready, 4774 translations; instruction byte guards passed",
+    "levelup_next_with_chinese_enabled": "passed_user_report_with_full_fixed_hooks",
+    "user_spell_description_screenshot": "Analysis/levelup_crash/20261028_010102_068435/user_spell_description.png",
+    "spell_description_chinese": "confirmed_in_user_screenshot; not the level-up skill-help panel",
+    "levelup_skill_help_visual": "passed_user_screenshot: Light Armor description Chinese, blue skill name, red movement-noise warning and 15% preserved",
+    "user_skill_description_screenshot": "Analysis/levelup_crash/20261028_010102_068435/user_skill_description.png",
+    "runtime_observation_after_user_report": "PID 54584 alive; no native_exception recorded in this fixed baseline run"
+  },
+  "candidate": {
+    "path": "Release/levelup_fix/EschalonBook_Chinese_Launcher.exe",
+    "sha256": "1b83086eaa3219c85579141f83a3f288e7d8d7cafa1c7e11814b223beb0c5b36",
+    "source_hook_sha256": "be735987e1be7a726610f7a7a7efd02ec8147994fa5dde6138e65775a160529f",
+    "builder": "PyInstaller 6.21.0 / Python 3.12.10",
+    "published": false,
+    "previous_release_overwritten": false
+  },
+  "active_test_run": "Analysis/levelup_crash/20261028_010102_068435",
+  "unchanged": ["translation CSVs", "fonts", "gfx.pak", "save files", "Dispatch v1.6 ZIP", "Release/v16 payload"]
+}

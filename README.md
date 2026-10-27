@@ -771,3 +771,17 @@ BlitzMax 把字符串长度存在别处，字节扫描会把下一个字段的�
 
 - 用户随后提供了真正的加点页截图：选中「护甲，轻甲」，底部整段轻甲技能介绍为中文，蓝色技能名称、红色移动噪音提示及 `15%` 数值保留。证据 `Analysis/levelup_crash/20261028_010102_068435/user_skill_description.png`。因此本次目标「升级下一步不崩溃，同时保留技能说明中文」的工程版实机验证通过；返回主菜单问题及冻结启动器的同场景测试未据此宣称通过，也未自动发布。
 
+## 对外发布 v1.7（2026-10-28）
+
+- 补丁：`Dispatch/Eschalon Book I_子非鱼汉化1.7.zip`，85,426,512 字节，SHA-256 `ec34b5c9d9961b496b9dbc4cf6ba0f101db12dd21811aabe74d824d30417f156`。保留 v1.0–v1.6 ZIP；上次 `Dispatch/Files` 暂存载荷保留到 `Dispatch/StagingArchive/v16/`。
+- 版本/平台：Steam 1.05 / Windows 32 位游戏，原 EXE SHA-256 `8f25c5ff8fc869e3c3b02c9e6f960c6a082cfcc097289a5247f237656c3031a8`。
+- 本版变更：修复技能/叙事函数中间位置误用函数监听器造成的寄存器破坏，升级加点「下一步」不再触发已复现的 NULL 物品对象崩溃，并保留技能说明中文；译表、字体和 39 张中文贴图不变。
+- 载荷：`Release/v17/EschalonBook_Chinese_Launcher.exe`（SHA-256 `1b83086eaa3219c85579141f83a3f288e7d8d7cafa1c7e11814b223beb0c5b36`）、`steam_appid.txt` 与 v1.6 相同的修改版 `gfx.pak`。不包含原游戏 EXE、原始游戏资源包、原件备份或诊断日志。
+- 安装包装：ZIP 中载荷位于 `汉化文件/`，真实目标路径在清单记录；根目录含 `安装汉化.cmd`、`卸载汉化.cmd`，调用系统自带 Windows PowerShell。安装程序保存原件与意图日志到游戏目录 `.zfy-localization/`，重复安装/升级沿用原件；旧版直接覆盖包没有原件时，卸载自动交给 Steam 恢复。版本哈希、路径约束和损坏载荷预检在脚本内部完成。
+- 发布入口：`Analysis/release_v17.py`；发布地址与逐游戏配置在 `Release/release_config.json`，安装配置在 `Release/installer_v17.json`。正式 ZIP 仅从核对后的 `Dispatch/Files/` 构建，包含完整说明、清单和 SHA256SUMS，UTF-8 BOM 说明与 GitHub 正文同步，更新日志保留 v1.0–v1.7。
+- 检查：共用 `release-check` 通过并绑定 v1.7 三个载荷哈希。冻结代码递归字节码/常量及内嵌译表、字体与修复工程相同；独立冻结启动器达到响应正常的 Launch Menu，现场确认两处指令探针已挂载。启动控制台输出缓冲使首个管道观察超时，失败观察保留在本地；后续读取窗口和进程内探针的独立证据确认启动成功。升级/轻甲说明场景使用已完成的相同模块实机证据，未将冻结启动冒烟等同于重新走完整升级流程。
+- 安装验证：`Analysis/verify_release_v17.py` 使用真实 ZIP 与 PowerShell 脚本在临时目录完成 11 项新装、重复安装、改载荷升级、恢复原件、重复卸载、重装、v1.6 旧包升级/恢复路由、损坏载荷、外部文件变化、错误 EXE 拒绝测试；`Analysis/test_release_v17_cmd.py` 验证中文+空格目录中的真实 CMD 入口；公共发布测试套件 10 项通过。测试未安装到真实游戏目录，未发起 Steam 恢复。机器报告位于 `TranslateFiles/reports/release_v17/`。
+- 真实边界：本次不重排图片、不补译剩余英文，之前的返回主菜单问题未在本轮单独复测；旧贴图/翻译限制沿用工程记录。不把本次修复扩展为所有场景无崩溃保证。
+- GitHub 目标：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.7`（上传与公开下载复核后补记结果）。
+- 网盘入口：EschalonBook，`https://pan.baidu.com/s/5CzGvEaOYAUHbh8iBc-Jsww`；反馈：EschalonBook问题反馈，`https://docs.qq.com/sheet/DTnhoaFZweVRoV2t0?tab=BB08J2`。地址来自本游戏发布配置，未套用其他项目。
+

@@ -1,0 +1,45 @@
+{
+  "exe": "eschalon_book_1.exe",
+  "exe_sha256": "8f25c5ff8fc869e3c3b02c9e6f960c6a082cfcc097289a5247f237656c3031a8",
+  "steam_app_id": "25600",
+  "originals": [
+    {
+      "path": "gfx.pak",
+      "sha256": "0ffbf360080320dd91b98034431a1644b703ff32ecabb306560dfd7da55825d9"
+    }
+  ],
+  "legacy": [
+    {
+      "path": "EschalonBook_Chinese_Launcher.exe",
+      "sha256": "cec7fceb4ad5636f750e29e43c93be474cd9b11a68cbb05abe018864fab238d4"
+    },
+    {
+      "path": "EschalonBook_Chinese_Launcher.exe",
+      "sha256": "d0faccad8e6039cdbfd1bd4fd0ba36a961cac063f3bcea49a4f54d49cc045e84"
+    },
+    {
+      "path": "EschalonBook_Chinese_Launcher.exe",
+      "sha256": "c049215510e48ca528810bd204d68d9f28f3fdd37fe00a39f3c288f8a66f10d4"
+    },
+    {
+      "path": "steam_appid.txt",
+      "sha256": "5fb32c61facf69722e429a4be6740bcc9c937e8dddad59d7531630c71a71ec1a"
+    },
+    {
+      "path": "EschalonBook_Chinese_Launcher.exe",
+      "sha256": "3e990b0e95f679d323a650000f615ff66833138e2c8a6a326a24ee8ee45f8525"
+    },
+    {
+      "path": "EschalonBook_Chinese_Launcher.exe",
+      "sha256": "1f20a9220c6bd6d6e523667f1a7b5d3839490aef1e82405be8e550dc01774633"
+    },
+    {
+      "path": "EschalonBook_Chinese_Launcher.exe",
+      "sha256": "252f19804c1fff0daef526fb1d47aa20228a6771c24059fca69d19667527dd2c"
+    },
+    {
+      "path": "gfx.pak",
+      "sha256": "2d2ffc2e4bd9882b4a0e212c26eca71d460613a5f0714db6456e3f9465bd4a80"
+    }
+  ]
+}

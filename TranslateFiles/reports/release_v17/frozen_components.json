@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "frozen_module_matches_tested_source": true,
+  "compared": "recursive code/constant/name objects; filenames excluded",
+  "launcher_sha256": "1b83086eaa3219c85579141f83a3f288e7d8d7cafa1c7e11814b223beb0c5b36",
+  "source_hook_sha256": "be735987e1be7a726610f7a7a7efd02ec8147994fa5dde6138e65775a160529f",
+  "frozen_resources_match_tested_project_files": {
+    "translated_strings.csv": "4b05a6e53d10e9d9fa3aaba20cc87a8a5089e54d8da2cc02c22cb1e514221d3b",
+    "translated_strings_translated.csv": "c614dc52cfe043d8cee0392706ff156d138b7d2e65648afede242faf04fcad35",
+    "eschalonbook_text.csv": "6aa4179c145876dbcd3d33deffda905dc781eac8d4bf77c4a9c04883b1b1b1bb",
+    "eschalonbook_text_translated.csv": "4c6629ae25fc1e740afaf7194c68668bac8a7437eae96eca8c76847033770841",
+    "runtime_fragment_overrides.json": "fcb32fc20a22df083ec188ef21b48665e3fad8a180759c6c64b09e5c733f9b5e",
+    "fonts/cn_OldTymeBG.ttf": "237cf5fd9f9d9eef629c110a493a21a3d7cc8086c7943a9f8e935d694941d6f7",
+    "fonts/cn_Fantasy.ttf": "d6791041d640651f3fd85a9d22adfacaaeb413f2a4114295ef953cb0b2302680",
+    "fonts/cn_DS_Celtic_1.ttf": "a61ffbc8b22f0dd0ce21ed4ca694ab3da0759b4eb4cb54759f71ea30cb3acedb"
+  },
+  "in_game_evidence": "Full fixed source module: level-up Next and Light Armor help; frozen launcher startup separately recorded.",
+  "unchanged_payload": [
+    "gfx.pak",
+    "steam_appid.txt"
+  ]
+}

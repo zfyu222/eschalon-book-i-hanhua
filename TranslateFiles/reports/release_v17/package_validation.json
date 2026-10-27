@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "archive": "Eschalon Book I_子非鱼汉化1.7.zip",
+  "sha256": "ec34b5c9d9961b496b9dbc4cf6ba0f101db12dd21811aabe74d824d30417f156",
+  "size": 85426512,
+  "crc": "passed",
+  "manifest_and_sums": "passed",
+  "files": [
+    "PATCH_MANIFEST.json",
+    "SHA256SUMS.txt",
+    "卸载汉化.cmd",
+    "安装汉化.cmd",
+    "汉化工具/config.json",
+    "汉化工具/patch.ps1",
+    "汉化文件/EschalonBook_Chinese_Launcher.exe",
+    "汉化文件/gfx.pak",
+    "汉化文件/steam_appid.txt",
+    "补丁说明.txt"
+  ],
+  "player_script_cases": [
+    "fresh_install",
+    "repeat_install",
+    "changed_payload_upgrade_preserves_original",
+    "uninstall_restores_original",
+    "repeat_uninstall",
+    "reinstall_after_uninstall",
+    "legacy_v16_upgrade",
+    "legacy_v16_uninstall_requests_steam_restore_without_launching_it",
+    "corrupt_payload_changes_nothing",
+    "externally_changed_file_preserved",
+    "wrong_exe_version_changes_nothing"
+  ],
+  "real_game_directory_modified": false,
+  "steam_validation_launched_during_tests": false
+}

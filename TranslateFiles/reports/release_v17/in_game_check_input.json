@@ -1,0 +1,96 @@
+{
+  "translation_sha256": "14a3362431c9fea6684d4bd738b55101b59d408b74e42776aae8b6e8eb243d17",
+  "game_version": "Steam 1.05（eschalon_book_1.exe，32 位）",
+  "platform": "Steam（Windows）",
+  "payload_files": [
+    {
+      "path": "Release/v17/EschalonBook_Chinese_Launcher.exe",
+      "game_path": "EschalonBook_Chinese_Launcher.exe",
+      "sha256": "1b83086eaa3219c85579141f83a3f288e7d8d7cafa1c7e11814b223beb0c5b36"
+    },
+    {
+      "path": "Release/v17/steam_appid.txt",
+      "game_path": "steam_appid.txt",
+      "sha256": "5fb32c61facf69722e429a4be6740bcc9c937e8dddad59d7531630c71a71ec1a"
+    },
+    {
+      "path": "Release/v17/gfx.pak",
+      "game_path": "gfx.pak",
+      "sha256": "2d2ffc2e4bd9882b4a0e212c26eca71d460613a5f0714db6456e3f9465bd4a80"
+    }
+  ],
+  "evidence_files": [
+    {
+      "path": "TranslateFiles/reports/rel_launch.png",
+      "sha256": "c20cac21791878dff04e2d78aaf77a301608c8a7f6ea3f5a561dc655ea6c7b64"
+    },
+    {
+      "path": "TranslateFiles/reports/rel_menu.png",
+      "sha256": "121fec276acea9d7646ac18c3222d9e28ca57b072f8b5c9e4bdd2f29eab1f86d"
+    },
+    {
+      "path": "TranslateFiles/reports/rel_ched2.png",
+      "sha256": "8fd5134e7ebb2bc63d74429987161982ba73e02180f3f9d60accda23604a04d8"
+    },
+    {
+      "path": "TranslateFiles/reports/g1_load.png",
+      "sha256": "acdf8d544265c847688c17cf95601b3825dfecb2408eafa7d566b917b0afef67"
+    },
+    {
+      "path": "TranslateFiles/reports/probe_ched.png",
+      "sha256": "81ac59242afa5368ffd4512f6649aa48481e783972c7c7d5f0db36a0aebd14da"
+    },
+    {
+      "path": "TranslateFiles/reports/release_v17/skill_help.png",
+      "sha256": "34ccd33fd39f70dca46600768ed0f2269191d9520de5d5257379a659ebc8742b"
+    },
+    {
+      "path": "TranslateFiles/reports/release_v17/spell_help.png",
+      "sha256": "97605c7d14d392b7eb2e46c8a0d73bd838467aa8d9e60285f837dcd4b5802d39"
+    },
+    {
+      "path": "TranslateFiles/reports/release_v17/frozen_smoke.json",
+      "sha256": "e9d6128ace1d295bba4496d2143a26bb9d401e9e2671e42c3585006337968284"
+    },
+    {
+      "path": "TranslateFiles/reports/release_v17/fix_validation.json",
+      "sha256": "62bb881a0f035028435386f35b4a00c8fb58739c9e08d92ca2bc5b030c4c9954"
+    },
+    {
+      "path": "TranslateFiles/reports/release_v17/frozen_components.json",
+      "sha256": "172cf43f92b3ac76e05963411a0bb5736b27dd705e10a6a108d8d4d16df56e09"
+    }
+  ],
+  "checks": [
+    {
+      "category": "fonts",
+      "status": "pass",
+      "scene": "角色创建界面（属性名、种族与职业列表、技能说明）、载入存档界面、启动菜单；升级页轻甲技能介绍",
+      "notes": "角色创建、技能说明、读档界面、启动菜单均显示中文，2492 个汉字按最新译表重建字体后无缺字方块。 新证据确认轻甲技能长说明中文、蓝色技能名、红色提示与15%数字保留；本版不修改字体文件。"
+    },
+    {
+      "category": "layout",
+      "status": "pass",
+      "scene": "世界地图、角色创建、状态窗与交易界面贴图",
+      "notes": "39 张界面贴图按原文字框重排，世界地图、状态窗、交易、法术、存读档版式正常，未见文字压边。 中文贴图与v1.6逐字节相同，沿用既有证据，本版不重排贴图。"
+    },
+    {
+      "category": "ui",
+      "status": "pass",
+      "scene": "启动菜单、主菜单、载入存档、角色创建；升级加点下一步、冻结启动器启动界面",
+      "notes": "启动菜单、主菜单、载入存档界面、角色创建界面逐页截图确认，按钮与标签均为中文。 本次修复模块的升级下一步与技能中文场景通过；冻结启动器到达 Launch Menu 且两个修复探针已挂载。冻结代码递归字节码/常量及全部内嵌译表、字体与实测工程相同；冻结版本身未重复操作完整升级流程，未把启动冒烟等同于全场景验证。"
+    },
+    {
+      "category": "dialogue",
+      "status": "not_applicable",
+      "scene": "未抽检",
+      "notes": "本版未做游戏内对话实机抽检；对话文本来自同一冻结术语表的统一语料，需玩家反馈补充验证。"
+    },
+    {
+      "category": "quest",
+      "status": "not_applicable",
+      "scene": "未抽检",
+      "notes": "本版未做任务日志与任务文本实机抽检；同上，留待玩家反馈确认。"
+    }
+  ]
+}

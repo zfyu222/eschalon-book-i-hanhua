@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "launcher": "Release\\levelup_fix\\EschalonBook_Chinese_Launcher.exe",
+  "sha256": "1b83086eaa3219c85579141f83a3f288e7d8d7cafa1c7e11814b223beb0c5b36",
+  "observed": {
+    "title": "Launch Menu",
+    "parent": {
+      "ProcessId": 17804,
+      "ParentProcessId": 55304,
+      "ExecutablePath": "D:\\StaticHanHua\\Projects\\EschalonBook\\Release\\levelup_fix\\EschalonBook_Chinese_Launcher.exe"
+    },
+    "game": {
+      "ProcessId": 4200,
+      "ParentProcessId": 17804,
+      "ExecutablePath": "D:\\StaticHanHua\\Projects\\EschalonBook\\Eschalon_CN\\eschalon_book_1.exe"
+    },
+    "responding": true
+  },
+  "live_instruction_probes": {
+    "pid": 4200,
+    "architecture": "ia32",
+    "skill": [
+      233,
+      240,
+      115,
+      226,
+      6,
+      102,
+      144
+    ],
+    "narrative": [
+      233,
+      172,
+      153
+    ]
+  },
+  "initial_pipe_capture": "Buffered console produced no lines; initial readiness timeout preserved in report.json, not treated as game failure.",
+  "character_loaded": false,
+  "gameplay_input": false,
+  "gameplay_evidence": "Identical fixed module and resources were tested in the existing level-up/skill-help run; component equivalence separately checked."
+}
