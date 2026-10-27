@@ -46,7 +46,9 @@ OBSERVER = r"""
     }catch(_){}
     return false; // Observe only; never suppress the game's exception.
   });
-  if (__ENABLE_SKILL_OBSERVER__) Interceptor.attach(ptr('0x4D950F'),{onEnter(){
+  // This is an interior instruction too: do not reintroduce the production bug
+  // in the diagnostic observer itself.
+  if (__ENABLE_SKILL_OBSERVER__) Interceptor.attach(ptr('0x4D950F'),function(){
     try{
       const event={type:'skill_paragraph',ebp:String(this.context.ebp),returnAddress:String(this.returnAddress)};
       try{
@@ -60,7 +62,7 @@ OBSERVER = r"""
       // Keep a bounded in-memory ring: this hook may run every UI frame.
       recent.push(event);if(recent.length>24)recent.shift();
     }catch(_){}
-  }});
+  });
   for(const name of ['ExitProcess','TerminateProcess']){
     try{
       const address=Process.getModuleByName('kernel32.dll').getExportByName(name);
@@ -78,7 +80,7 @@ OBSERVER = r"""
 def build_diagnostic_script(builder, mapping, mode):
     script=builder(mapping)
     if mode=='no-skill-hook':
-        start="Interceptor.attach(ptr('0x004D950F'), {"
+        start="Interceptor.attach(ptr('0x004D950F'), function () {"
         end="Interceptor.attach(ptr('0x00477B47'), {"
         if script.count(start)!=1 or script.count(end)!=1:
             raise ValueError('Hook layout changed; refusing an uncertain diagnostic transform')

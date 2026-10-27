@@ -752,3 +752,13 @@ BlitzMax 把字符串长度存在别处，字节扫描会把下一个字段的�
 - 本次只省略 `0x4D950F` 技能段落拦截（连同同地址观察器），其余汉化 Hook、字体、图片与译表沿用。因此已把复现故障隔离到这条拦截路径，不能再按“可能是译文太长”盲目返修译文。具体寄存器/栈被破坏的机制仍待进一步确认。
 - 当前对照模式是临时规避，部分技能长说明可能显示英文；**生产 `display_hook_launcher.py`、发布启动器和 ZIP 尚未修复**。后续正式修复应移除/迁移不安全的函数中间拦截并保留技能说明中文，验证升级加点、说明文字和返回菜单；不靠给物品 NULL 直接跳过绘制来掩盖异常索引。
 
+### 正式代码修复与回归（用户授权后）
+
+- 根因已经用独立 x86 夹具复现：在函数中间、栈顶保存 EDI 的位置使用 `Interceptor.attach(address, {onEnter(){...}})`，会把保存的寄存器值破坏为拦截返回跳板地址；这与两次实机崩溃的异常 EDI 及技能现场 `returnAddress` 一致。改用 `Interceptor.attach(address, function () {...})` 指令探针，既保留上下文又能在分词前翻译完整文本。[Frida 官方 API](https://frida.re/docs/javascript-api/#interceptor) 明确区分函数回调对象和任意指令探针。
+- `Analysis/test_mid_instruction_probe.py` 在临时、隐藏、独立的 32 位 Windows cmd 辅助进程里运行私有机器码夹具，不启动/操控游戏：未拦截保存 EDI 10/10、新指令探针 10/10、旧函数监听器 0/10。证据 `Analysis/instruction_probe_fixture_20261028.json`；不是只靠“关闭汉化后不崩溃”判断。
+- 正式修改 `display_hook_launcher.py`：`0x4D950F` 技能说明与 `0x4C6C53` 叙事预换行位置均改为指令探针，继续按旧文本槽和统一离线译表替换中文；真正函数入口（Draw/message/popup）维持函数回调。两个中间点各核对预期机器字节后才挂载，匹配 Steam 1.05 当前 EXE。没有给 NULL 物品跳过绘制，也没有清零物品索引来掩盖状态破坏。
+- 诊断器同地址观察器也改成指令探针，否则它自身会把已修好的生产路径再次破坏。`no-skill-hook` 仍保留为对照入口，不是正式修复的工作方式。
+- 离线契约测试 `Analysis/test_display_probe_contract.py` 通过 6 项：两个中间点采用探针、正常入口保持原形式、技能中文及叙事中文替换、空串不动、错误机器字节拒绝挂载。输出 `Analysis/display_probe_contract_20261028.json`。
+- PyInstaller 6.21.0 从现有 spec 构建独立候选 `Release/levelup_fix/EschalonBook_Chinese_Launcher.exe`，SHA-256 `1b83086eaa3219c85579141f83a3f288e7d8d7cafa1c7e11814b223beb0c5b36`；已从冻结归档核对包含两处修复。未覆盖 `Release/v16` 或已发布 ZIP，未对外发布。构建/测试摘要 `Analysis/levelup_fix_build.json`。
+- 已启动修复后的完整 baseline（不是关闭技能 Hook 的对照），记录 `Analysis/levelup_crash/20261028_010102_068435`，4774 条映射就绪，现场机器字节检查通过。**升级「下一步」、技能说明中文与返回菜单仍等待本轮用户实测，未宣称全部实机通过。**原译表、字体、中文贴图与存档均未修改。
+

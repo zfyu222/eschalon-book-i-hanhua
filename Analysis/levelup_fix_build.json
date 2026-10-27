@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-28",
+  "status": "built_regressions_passed_awaiting_in_game_retest",
+  "root_cause": "Function-lifetime listener used at an interior x86 instruction with a saved EDI at the stack top. The old listener corrupts the saved value with an interception return trampoline; an instruction-probe callback preserves it.",
+  "official_api_reference": "https://frida.re/docs/javascript-api/#interceptor",
+  "changes": [
+    "Skill paragraph site 0x4d950f uses a plain instruction-probe function, retaining pre-wrap Chinese substitution.",
+    "Narrative pre-wrap site 0x4c6c53 uses the same instruction-probe form; true function-entry hooks remain callbacks objects.",
+    "Expected instruction bytes are checked before installing the two probes.",
+    "Diagnostic observer uses an instruction probe too, avoiding reintroducing the old fault."
+  ],
+  "tests": {
+    "native_x86_fixture": "Analysis/instruction_probe_fixture_20261028.json",
+    "fixture_host": "Owned hidden SysWOW64 cmd helper; no game process or save involved",
+    "unhooked_register_preservation": "10/10",
+    "instruction_probe_register_preservation": "10/10",
+    "old_function_listener_register_preservation": "0/10",
+    "generated_js_contract": "Analysis/display_probe_contract_20261028.json",
+    "contract_tests_passed": 6,
+    "frozen_archive_check": "Both fixed instruction-probe callbacks confirmed in bundled display_hook_launcher code",
+    "game_startup": "Baseline diagnostic with fixed production hooks reached ready, 4774 translations; instruction byte guards passed",
+    "levelup_next_with_chinese_enabled": "pending_user_retest"
+  },
+  "candidate": {
+    "path": "Release/levelup_fix/EschalonBook_Chinese_Launcher.exe",
+    "sha256": "1b83086eaa3219c85579141f83a3f288e7d8d7cafa1c7e11814b223beb0c5b36",
+    "source_hook_sha256": "be735987e1be7a726610f7a7a7efd02ec8147994fa5dde6138e65775a160529f",
+    "builder": "PyInstaller 6.21.0 / Python 3.12.10",
+    "published": false,
+    "previous_release_overwritten": false
+  },
+  "active_test_run": "Analysis/levelup_crash/20261028_010102_068435",
+  "unchanged": ["translation CSVs", "fonts", "gfx.pak", "save files", "Dispatch v1.6 ZIP", "Release/v16 payload"]
+}

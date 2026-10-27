@@ -593,8 +593,20 @@ Interceptor.attach(ptr('0x4C69AD'), {{
     }}
 }});
 
-Interceptor.attach(ptr('0x{NARRATIVE_PREWRAP_VA:08X}'), {{
-    onEnter() {{
+// These two targets are instructions INSIDE native functions, not entries.
+// A callbacks object creates function-lifetime/return-address tracking and can
+// overwrite the saved EDI at the skill site. A plain function is Frida's
+// instruction-probe form: preserve the frame while replacing only the text slot.
+function assertInstructionBytes(address, expected) {{
+    const actual = new Uint8Array(ptr(address).readByteArray(expected.length));
+    for (let i = 0; i < expected.length; i++) {{
+        if (actual[i] !== expected[i]) {{
+            throw new Error('Unsupported code at instruction probe ' + address);
+        }}
+    }}
+}}
+assertInstructionBytes('0x{NARRATIVE_PREWRAP_VA:08X}', [0x83, 0xf8, 0x00]);
+Interceptor.attach(ptr('0x{NARRATIVE_PREWRAP_VA:08X}'), function () {{
         try {{
             const slot = this.context.ebp.sub(0x24);
             const source = readBlitzString(slot.readPointer());
@@ -613,7 +625,6 @@ Interceptor.attach(ptr('0x{NARRATIVE_PREWRAP_VA:08X}'), {{
         }} catch (error) {{
             send({{kind: 'hook_error', message: 'narrative: ' + String(error)}});
         }}
-    }}
 }});
 
 // The game funnels message-log prose through this routine while it is still
@@ -686,8 +697,8 @@ Interceptor.attach(ptr('0x{POPUP_PREWRAP_VA:08X}'), {{
 
 // Character creation / skill help stores the complete description at
 // [ebp-0x4c], then splits it character-by-character at 0x4D9524.
-Interceptor.attach(ptr('0x{SKILL_PARAGRAPH_VA:08X}'), {{
-    onEnter() {{
+assertInstructionBytes('0x{SKILL_PARAGRAPH_VA:08X}', [0xc7, 0x45, 0xe8, 0x01, 0x00, 0x00, 0x00]);
+Interceptor.attach(ptr('0x{SKILL_PARAGRAPH_VA:08X}'), function () {{
         try {{
             const slot = this.context.ebp.sub(0x4c);
             const source = readBlitzString(slot.readPointer());
@@ -706,7 +717,6 @@ Interceptor.attach(ptr('0x{SKILL_PARAGRAPH_VA:08X}'), {{
         }} catch (error) {{
             send({{kind: 'hook_error', message: 'paragraph: ' + String(error)}});
         }}
-    }}
 }});
 
 Interceptor.attach(ptr('0x{DRAW_TEXT_VA:08X}'), {{
