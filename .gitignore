@@ -16,6 +16,7 @@ runtime_*.jsonl
 /Analysis/live_out.txt
 /Analysis/live_err.txt
 /Analysis/shot_*.png
+/Analysis/levelup_crash/
 /ImageText/work-v1/
 /ImageText/contact_*.png
 /ImagePatch/*
