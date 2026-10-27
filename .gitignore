@@ -18,7 +18,8 @@ runtime_*.jsonl
 /Analysis/shot_*.png
 /ImageText/work-v1/
 /ImageText/contact_*.png
-/ImagePatch/
+/ImagePatch/*
+!/ImagePatch/*.py
 /TranslateFiles/image-text/TranslateFiles/state/
 /TranslateFiles/image-text/TranslateFiles/cache/
 /TranslateFiles/image-text/TranslateFiles/logs/
@@ -36,3 +37,7 @@ runtime_*.jsonl
 /TranslateFiles/*/analysis_input.json
 /TranslateFiles/glossary/*/analysis_input.json
 /TranslateFiles/glossary/*/glossary_original.json
+
+# 图片贴图脚本入库，渲染产物与重建包不入库
+/ImagePatch/*
+!/ImagePatch/*.py
