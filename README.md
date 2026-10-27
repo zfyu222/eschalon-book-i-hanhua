@@ -570,6 +570,23 @@ BlitzMax 把字符串长度存在别处，字节扫描会把下一个字段的�
 - GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.5`
 - 资产命名：GitHub 上传时会剔除中文，Release 资产显示为 `Eschalon.Book.I_.1.5.zip`（与 v1.4 行为一致），内容即本地的 `Eschalon Book I_子非鱼汉化1.5.zip`，SHA-256 一致。
 
+### v1.6（2026-10-27）
+
+- 补丁：`Dispatch/Eschalon Book I_子非鱼汉化1.6.zip`（81.6 MB，ZIP SHA-256 `955989A68ED678DDF6C7C2847CE30A2F03F9EDC1C117A494F75868CC8C186958`）
+- 标题：`《Eschalon Book I》子非鱼AI汉化补丁 v1.6`
+- 支持版本：Steam 1.05（`eschalon_book_1.exe`，32 位，Windows）
+- 载荷：`EschalonBook_Chinese_Launcher.exe`（55.7 MB，内含新译表与中文字体）、`steam_appid.txt`、`gfx.pak`（30.4 MB，39 张中文界面贴图）。按游戏根目录相对路径平铺，不含游戏本体与原始可执行文件。
+- 变更：
+  - 正文与图片统一重译——合并正文 4563 条与图片独有 180 条为 4743 条统一语料；统一提取并审校术语表（577 术语 / 105 人物 / 379 禁翻），图片与正文不再出现同名不同译；与 v1.5 的 143 条同名专名中仅 11 条译名变化。
+  - 新增 39 张中文界面贴图（主菜单、角色创建、世界地图、状态窗、交易、法术、存读档、死亡与结局文本、制作人员等）。
+  - 修复 alpha 遮罩图文字被烧成深灰、在深色界面上看不清的问题。
+  - 按新译表重建中文字体，补齐全 2492 个汉字（旧子集缺 179 字）。
+- 验证：`translation_workflow.py release-check` 通过；启动菜单、主菜单、载入存档界面、角色创建界面逐页截图确认中文与字体完整；贴图重建 225/225 条目读回校验通过；ZIP 解压后载荷 SHA-256 与 `SHA256SUMS.txt` 全部一致，说明书为 UTF-8 BOM 且更新日志 v1.0–v1.6 完整。
+- 未覆盖：对话与任务文本本版未做实机抽检，已在说明书「实机验证」与「已知问题」中如实标注。
+- 已知问题：启动界面（标题、选项标签、START 按钮）仍为英文原图；从角色创建返回主菜单后菜单项不显示，需退出重开（中文 Hook 副作用，详见上文「已知缺陷」）；地图北部竖排地名保持英文；菜单艺术字风格与中文黑体不一致。
+- 安装：三个文件放入游戏根目录（与 `eschalon_book_1.exe` 同级），覆盖 `gfx.pak` 前先备份，之后用 `EschalonBook_Chinese_Launcher.exe` 启动。
+- GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.6`
+
 #### v1.5 打包过程说明（质量门禁）
 
 - `create_release_patch.py` 的自定义工作流门禁首先拦下了打包：`TranslateFiles/state/workflow.sqlite3` 记录了一次 686 条的增量运行，但全部记录停在 `source` 阶段，`glossary_review` 还有 5 个 `running` 任务，从未进入 pilot/final 验收。
