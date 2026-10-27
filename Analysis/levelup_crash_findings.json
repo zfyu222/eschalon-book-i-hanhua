@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-28",
+  "status": "fault_localized_root_cause_pending_control",
+  "runtime": "Eschalon_CN/eschalon_book_1.exe",
+  "exe_sha256": "8f25c5ff8fc869e3c3b02c9e6f960c6a082cfcc097289a5247f237656c3031a8",
+  "module_base": "0x400000",
+  "reproduction": "升级加点后点击下一步",
+  "evidence_file": "Analysis/levelup_crash/20261028_001809_458655/events.jsonl",
+  "native_exception": {
+    "type": "access-violation",
+    "va": "0x4c30d4",
+    "rva": "0xc30d4",
+    "instruction": "mov eax, dword ptr [eax + 0xc]",
+    "eax": "0x0",
+    "access": "read",
+    "target": "0xc",
+    "edi": "0x659091f",
+    "call_stack": ["0x0","0x4c30d4","0x496225","0x4e2675","0x40140c","0x401257","0x4012c8","0x759a5d49","0x76eac75b","0x76eac6e1"],
+    "process_exit": "0xffffffff"
+  },
+  "static_analysis": {
+    "provider": "REA + Ghidra 12.1.4",
+    "function": "FUN_004c30ab",
+    "function_entry": "0x4c30ab",
+    "observations": [
+      "Function entry compares the object argument with BlitzMax NullObject 0x4f1ed0, not the native zero pointer.",
+      "Argument was zero at the fault; reading its +0xc field triggers the exception before string rendering.",
+      "Other callers read inventory/equipment array objects and call this function; this supports interpreting it as an item/detail display routine.",
+      "Caller return 0x496225 is immediately after the call at 0x496220. REA bytes show push [eax+edi*4+0x18] after loading the global array at 0x5a139c.",
+      "Fault-time EDI 0x659091f is not a plausible inventory index and equals the recent skill-hook returnAddress. A register/stack/transition-state issue is a strong hypothesis, not yet a proven cause."
+    ],
+    "limitations": [
+      "Ghidra does not identify a containing function for 0x496225 or 0x4d950f; do not treat reconstructed broad pseudocode as complete source.",
+      "The latest skill observer samples hold the valid empty string 0x4f1c90, not a translated Frida allocation; those samples do not prove a use-after-free."
+    ]
+  },
+  "next_test": "Launch_Diagnostic_Control.bat: omit both production skill-paragraph hook and diagnostic observer at 0x4d950f, keeping other current hooks, fonts, images and translations. Repeat the same save and Next action.",
+  "fix_installed": false,
+  "saves_modified_by_diagnostic": false
+}

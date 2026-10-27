@@ -736,3 +736,12 @@ BlitzMax 把字符串长度存在别处，字节扫描会把下一个字段的�
 - 版本区别：本次读取到 Steam `Game/gfx.pak` 仍是原始包 `0ffbf360…`，测试副本 `Eschalon_CN/gfx.pak` 是中文包 `2d2ffc2e…`；不能把两个目录当成同一已部署版本。根目录 `Launch_Chinese.bat` 和本诊断入口默认都从测试副本启动。
 - 验证：Frida 17.16.3 导入与完整注入脚本的 JavaScript 语法检查通过（`--check`），未自动启动或代操作游戏。**仍需用户用诊断入口重现一次；根因未确定，未实施修复，未更新发布。**
 
+### 首次原生崩溃捕获（00:19，诊断基线）
+
+- 用户复现成功，证据在 `Analysis/levelup_crash/20261028_001809_458655/events.jsonl`，摘要 `Analysis/levelup_crash_findings.json`。
+- 原生 access-violation：VA `0x4C30D4`（RVA `0xC30D4`），`mov eax,[eax+0xc]`，EAX=0，读取 `0xC`；最终退出码 `0xFFFFFFFF`。不是 JavaScript 回调抛错，也不是已经证明的中文字数问题。
+- REA/Ghidra 定位 `FUN_004c30ab`：它先与 BlitzMax NullObject `0x4F1ED0` 比较，但不检查 native NULL。其他调用点从物品/装备数组取对象，因此可判为物品详情显示相关路径。此次传入 NULL，函数尚未读取字符串就崩溃。
+- 调用链返回点 `0x496225` 对应 `0x496220` 调用；之前从 `0x5A139C` 的数组按 EDI 取项。崩溃时 EDI=`0x659091F`，明显不是正常物品序号，且与最近技能段落中间 Hook 的 `returnAddress` 相同，提示界面切换/寄存器或栈状态异常。**相同数值是线索，不足以确认是哪一个 Hook 破坏状态。**
+- 最近 24 个技能段落采样都是合法空字符串 `0x4F1C90`，并非 Frida 分配的中文对象，故本轮证据不支持直接断言“中文对象被释放”。
+- 新增对照入口 `Launch_Diagnostic_Control.bat`：只在诊断进程临时移除 `0x4D950F` 处的生产技能段落 Hook 与同地址观察器，其余汉化保持。部分技能长说明可能回到英文；重复同一存档和下一步动作，比较是否仍崩溃。生产脚本、发布包、存档均不改；这不是正式修复。
+

@@ -27,14 +27,26 @@ OBSERVER = r"""
         if(details.context[name]!==undefined)registers[name]=String(details.context[name]);
       let instruction=null;
       try{instruction=Instruction.parse(details.address).toString();}catch(_){}
+      const stackWords=[];
+      for(let i=0;i<20;i++){
+        try{stackWords.push(String(details.context.esp.add(i*4).readPointer()));}
+        catch(_){break;}
+      }
+      const itemState={};
+      try{
+        const array=ptr('0x5A139C').readPointer();
+        itemState.array=String(array);itemState.index=details.context.edi.toUInt32();
+        const slot=array.add(24+itemState.index*4);
+        itemState.slot=String(slot);itemState.value=String(slot.readPointer());
+      }catch(error){itemState.error=String(error);}
       if(++exceptionCount<=32)emit({type:'native_exception',exception:details.type,
         address:String(details.address),registers,instruction,number:exceptionCount,
         memory:details.memory?{operation:details.memory.operation,address:String(details.memory.address)}:null,
-        stack:trace(details.context),recent:recent.slice()});
+        stack:trace(details.context),stackWords,itemState,recent:recent.slice()});
     }catch(_){}
     return false; // Observe only; never suppress the game's exception.
   });
-  Interceptor.attach(ptr('0x4D950F'),{onEnter(){
+  if (__ENABLE_SKILL_OBSERVER__) Interceptor.attach(ptr('0x4D950F'),{onEnter(){
     try{
       const event={type:'skill_paragraph',ebp:String(this.context.ebp),returnAddress:String(this.returnAddress)};
       try{
@@ -63,20 +75,35 @@ OBSERVER = r"""
 """
 
 
+def build_diagnostic_script(builder, mapping, mode):
+    script=builder(mapping)
+    if mode=='no-skill-hook':
+        start="Interceptor.attach(ptr('0x004D950F'), {"
+        end="Interceptor.attach(ptr('0x00477B47'), {"
+        if script.count(start)!=1 or script.count(end)!=1:
+            raise ValueError('Hook layout changed; refusing an uncertain diagnostic transform')
+        left=script.index(start);right=script.index(end,left)
+        script=script[:left]+'// Diagnostic control: skill paragraph hook omitted.\n'+script[right:]
+    observer=OBSERVER.replace('__ENABLE_SKILL_OBSERVER__','false' if mode=='no-skill-hook' else 'true')
+    return script+'\n'+observer
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check',action='store_true',help='Check without launching.')
+    parser.add_argument('--mode',choices=['baseline','no-skill-hook'],default='baseline',
+                        help='Diagnostic control only; never changes production scripts.')
     args=parser.parse_args()
     os.environ['ESCHALON_WINDOWED']='1'  # Keep the existing preference, do not force fullscreen.
     import frida
     import display_hook_launcher as launcher
     if args.check:
         import subprocess
-        script=launcher.build_hook_script({})+'\n'+OBSERVER
+        script=build_diagnostic_script(launcher.build_hook_script,{},args.mode)
         check=subprocess.run(['node','--check'],input=script,text=True,capture_output=True)
         if check.returncode:raise RuntimeError(check.stderr)
         print(json.dumps({'frida':frida.__version__,'runtime':str(launcher.core.EXE),
-                          'javascript_syntax':'passed','launched':False}))
+                          'javascript_syntax':'passed','mode':args.mode,'launched':False}))
         return 0
     folder=ROOT/'Analysis/levelup_crash'/dt.datetime.now().strftime('%Y%m%d_%H%M%S_%f')
     folder.mkdir(parents=True)
@@ -94,10 +121,10 @@ def main():
             shutil.copy2(old,copy)
             old_hashes[old.name]=hashlib.sha256(copy.read_bytes()).hexdigest()
         setattr(launcher,attr,folder/old.name)
-    record({'type':'diagnostic_start','previous_log_sha256':old_hashes,'runtime':str(launcher.core.EXE),
+    record({'type':'diagnostic_start','mode':args.mode,'previous_log_sha256':old_hashes,'runtime':str(launcher.core.EXE),
             'source_hook_sha256':hashlib.sha256(Path(launcher.__file__).read_bytes()).hexdigest()})
     builder=launcher.build_hook_script
-    launcher.build_hook_script=lambda mapping:builder(mapping)+'\n'+OBSERVER
+    launcher.build_hook_script=lambda mapping:build_diagnostic_script(builder,mapping,args.mode)
     original_message=launcher.on_message
     def on_message(message,data):
         if message.get('type')=='error':record({'type':'frida_script_error','message':message})
@@ -132,6 +159,9 @@ def main():
         return result
     core.k32.WaitForSingleObject=wait
     print('诊断目录：',folder,flush=True)
+    print('诊断模式：',args.mode,flush=True)
+    if args.mode=='no-skill-hook':
+        print('对照测试：临时不挂技能段落拦截（包括该地址的观察器），部分技能长说明可能显示英文。',flush=True)
     print('请载入升级前的存档，按原来的步骤加点并点击下一步。诊断器不会替你保存。',flush=True)
     try:return launcher.main()
     except Exception as exc:
