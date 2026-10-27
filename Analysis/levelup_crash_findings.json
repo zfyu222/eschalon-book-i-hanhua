@@ -1,6 +1,6 @@
 {
   "date": "2026-10-28",
-  "status": "fault_localized_root_cause_pending_control",
+  "status": "skill_paragraph_hook_path_isolated_by_control",
   "runtime": "Eschalon_CN/eschalon_book_1.exe",
   "exe_sha256": "8f25c5ff8fc869e3c3b02c9e6f960c6a082cfcc097289a5247f237656c3031a8",
   "module_base": "0x400000",
@@ -34,7 +34,21 @@
       "The latest skill observer samples hold the valid empty string 0x4f1c90, not a translated Frida allocation; those samples do not prove a use-after-free."
     ]
   },
-  "next_test": "Launch_Diagnostic_Control.bat: omit both production skill-paragraph hook and diagnostic observer at 0x4d950f, keeping other current hooks, fonts, images and translations. Repeat the same save and Next action.",
+  "control_result": {
+    "evidence_file": "Analysis/levelup_crash/20261028_003328_238558/events.jsonl",
+    "mode": "no-skill-hook",
+    "user_report": "同样的升级加点、下一步操作没有崩溃",
+    "recorded_native_exceptions": 0,
+    "exit_hex": "0x00000000",
+    "conclusion": "Disabling the skill-paragraph interception path removes the reproduced failure while preserving the remaining Chinese hooks, fonts, images and translations. The exact register/stack corruption mechanism and a fully translated replacement remain to be established.",
+    "caveat": "This diagnostic control omits both the production hook and the observer at 0x4d950f. It isolates that interception path, not individual instructions within it."
+  },
+  "invalid_control_attempt": {
+    "evidence_file": "Analysis/levelup_crash/20261028_003115_061666/events.jsonl",
+    "actual_mode": "baseline",
+    "result": "Same fault at 0x4c30d4; does not show failure after disabling the hook."
+  },
+  "next_action": "Obtain direction for a production fix. Remove or relocate the unsafe interior interception without a null-object guard that merely conceals the corrupted index; then retest level-up, skill help and return-to-menu. Do not publish without testing.",
   "fix_installed": false,
   "saves_modified_by_diagnostic": false
 }
