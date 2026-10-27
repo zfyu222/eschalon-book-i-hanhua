@@ -1,6 +1,6 @@
 {
   "date": "2026-10-28",
-  "status": "built_regressions_passed_awaiting_in_game_retest",
+  "status": "built_regressions_and_user_levelup_test_passed",
   "root_cause": "Function-lifetime listener used at an interior x86 instruction with a saved EDI at the stack top. The old listener corrupts the saved value with an interception return trampoline; an instruction-probe callback preserves it.",
   "official_api_reference": "https://frida.re/docs/javascript-api/#interceptor",
   "changes": [
@@ -19,7 +19,11 @@
     "contract_tests_passed": 6,
     "frozen_archive_check": "Both fixed instruction-probe callbacks confirmed in bundled display_hook_launcher code",
     "game_startup": "Baseline diagnostic with fixed production hooks reached ready, 4774 translations; instruction byte guards passed",
-    "levelup_next_with_chinese_enabled": "pending_user_retest"
+    "levelup_next_with_chinese_enabled": "passed_user_report_with_full_fixed_hooks",
+    "user_spell_description_screenshot": "Analysis/levelup_crash/20261028_010102_068435/user_spell_description.png",
+    "spell_description_chinese": "confirmed_in_user_screenshot; not the level-up skill-help panel",
+    "levelup_skill_help_visual": "pending; production callback contract passed but the provided screenshot shows spells",
+    "runtime_observation_after_user_report": "PID 54584 alive; no native_exception recorded in this fixed baseline run"
   },
   "candidate": {
     "path": "Release/levelup_fix/EschalonBook_Chinese_Launcher.exe",
