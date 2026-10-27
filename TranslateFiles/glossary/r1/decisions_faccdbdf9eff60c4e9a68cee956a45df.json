@@ -1,0 +1,292 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e6 全部非翻译条目：保留 \\n\\n、[BACK]、[END]、&yes、[Threaten]、cond_gold 100 的运行/格式保护；为各条补齐 applicability，其中 [END] 与 &yes 使用精确 text，[BACK]、[Threaten] 及 cond_gold 100 使用 literal_context，并确认 f1。无新增、隔离或放行项。",
+  "acknowledged_findings": [
+    "F0001"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "字面 \\n\\n 是正文分段转义，450、451 中均嵌入对话，翻译时须原样保留。"
+        }
+      },
+      "reason": "补充分段转义的 applicability，限定为必须保留的字面 \\n\\n。",
+      "evidence_rows": [
+        450,
+        451
+      ],
+      "table": "non_translate",
+      "index": 3
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": " ",
+          "suffix": "",
+          "reason": "[BACK] 均出现在对话句末且前有空格，作为导航标记保留；限定该上下文，避免全局禁翻。"
+        }
+      },
+      "reason": "[BACK] 为句末嵌入的导航标签，补 literal_context 作用域。",
+      "evidence_rows": [
+        455,
+        474,
+        485,
+        714,
+        715,
+        4558,
+        4559
+      ],
+      "table": "non_translate",
+      "index": 4
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "[END] 既作为独立标记（4562）又嵌入对话句末（456 等），精确大写方括号串均须原样保留。"
+        }
+      },
+      "reason": "[END] 同时有独立与嵌入用例，使用精确 text 保护完整大写方括号标记。",
+      "evidence_rows": [
+        456,
+        4562
+      ],
+      "table": "non_translate",
+      "index": 5
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "&yes 出现在 439 的选项说明中，& 为控制/选项标记，带 & 的完整串须原样保留。"
+        }
+      },
+      "reason": "&yes 是内嵌选项控制符，补 text 作用域并保留 & 标记。",
+      "evidence_rows": [
+        439
+      ],
+      "table": "non_translate",
+      "index": 7
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": " ",
+          "suffix": "",
+          "reason": "[Threaten] 出现在 538 对话句末且前有空格，作为选项标签保留；限定该上下文。"
+        }
+      },
+      "reason": "[Threaten] 为句末嵌入的选项标签，补 literal_context 作用域。",
+      "evidence_rows": [
+        538
+      ],
+      "table": "non_translate",
+      "index": 11
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "",
+          "suffix": " ; remove_gold 100",
+          "reason": "cond_gold 100 位于 595 脚本行首，后接 remove_gold 100；仅保护该命令串，避免全局匹配。"
+        }
+      },
+      "reason": "按 f1 将脚本条件命令限定为本行起始且后接 remove_gold 100 的精确上下文。",
+      "evidence_rows": [
+        595
+      ],
+      "table": "non_translate",
+      "index": 24
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:3",
+      "evidence_rows": [
+        450,
+        451
+      ],
+      "source_excerpt": "forest.\" \\n\\n\"After",
+      "reason": "格式控制符；补 text 作用域，保留正文中的字面 \\n\\n。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "450、451 均含字面 \\n\\n 转义，原文可证。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译项，保留原分段转义，不产生译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属格式控制符；补 applicability=text，正文中字面 \\n\\n 均保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "450、451 中该转义形式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:4",
+      "evidence_rows": [
+        455,
+        474,
+        485,
+        714,
+        715,
+        4558,
+        4559
+      ],
+      "source_excerpt": "\"Thank you for taking time to chat with me.\" [BACK]",
+      "reason": "导航标签 [BACK] 均为句末嵌入；补 literal_context，避免全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "455、474、485、714、715、4558、4559 均在句末出现 [BACK]。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译导航标记，保留原样。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属对话导航控制标签；补 literal_context（前缀空格、句末）限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "[BACK] 在各对话行中大小写与方括号形式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:5",
+      "evidence_rows": [
+        456,
+        4562
+      ],
+      "source_excerpt": "\"I must be leaving.\" [END]",
+      "reason": "结束标签 [END] 有独立及句末嵌入两种用例；以 text 精确匹配大写方括号标记。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "456 句末嵌入 [END]，4562 为独立 [END]。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译结束标记，保留原样。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属对话结束控制标记；因独立/嵌入并存，用 text 精确匹配 [END]。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各用例均为大写 [END]。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:7",
+      "evidence_rows": [
+        439
+      ],
+      "source_excerpt": "Clicking &yes will add it to your quest journal.",
+      "reason": "&yes 是内嵌选项控制符；以 text 精确匹配带 & 的控制串。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "439 的条件说明中内嵌 &yes。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译控制串，保留 &yes 原样。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属选项控制符；用 text 精确匹配 &yes，保留 & 标记。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅见一处，形式与原文一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:11",
+      "evidence_rows": [
+        538
+      ],
+      "source_excerpt": "\"I don't play games like this. You will tell me what I need to know or I will force it out of you.\" [Threaten]",
+      "reason": "威胁选项标签 [Threaten] 为句末嵌入；补 literal_context。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "538 句末出现 [Threaten]。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译选项标签，保留原样。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属对话选项/动作标签；补 literal_context（前缀空格、句末）限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅见一处，方括号及大小写一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:24",
+      "evidence_rows": [
+        595
+      ],
+      "source_excerpt": "cond_gold 100 ; remove_gold 100",
+      "reason": "按 f1 将 cond_gold 100 限定为本行起始、后接 remove_gold 100 的脚本命令。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "595 行首为 cond_gold 100，后接 remove_gold 100。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译脚本命令，保留原样。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属脚本条件命令；按 f1 补 literal_context，仅保护本行首命令串。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "命令名与参数大小写、空格均按原文保留。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:3",
+    "non_translate:4",
+    "non_translate:5",
+    "non_translate:7",
+    "non_translate:11",
+    "non_translate:24"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

@@ -1,0 +1,414 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 12 条术语的原文、译名、分类与一致性。确认 e11 统一为已发布 v1.5 译名「柳树汁液」，并修正 e2、e3、e6、e9、e11 中 term_reason 的无原文依据或不足说明；其余条目保留。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "第3474行的装备名称，指精金制镶钉护腿。"
+      },
+      "reason": "原 term_reason 仅写行号，补充可证实的物品含义。",
+      "evidence_rows": [
+        3474
+      ],
+      "table": "terms",
+      "index": 515
+    },
+    {
+      "patch": {
+        "term_reason": "防御药水（Potion of Greater Protection、Invisibility）与灌注中的核心试剂。"
+      },
+      "reason": "第412/437行只支持防御药水和灌注，原文未见传送门配方，删除无依据内容。",
+      "evidence_rows": [
+        412,
+        437
+      ],
+      "table": "terms",
+      "index": 83
+    },
+    {
+      "patch": {
+        "term_reason": "其毒液在对话中被误当作治疗药水；第2822行单独作为该生物名。"
+      },
+      "reason": "原文第691行未出现 Paul，按可见对话与独立名称改写。",
+      "evidence_rows": [
+        691,
+        2822
+      ],
+      "table": "terms",
+      "index": 197
+    },
+    {
+      "patch": {
+        "term_reason": "Haste、Potion of Nimbleness 与灌注配方中的成分。"
+      },
+      "reason": "第411/412/437行支持配方与灌注材料；原文未见传送门配方，删除无依据内容。",
+      "evidence_rows": [
+        411,
+        412,
+        437
+      ],
+      "table": "terms",
+      "index": 87
+    },
+    {
+      "patch": {
+        "recommended_translation": "柳树汁液",
+        "term_reason": "Healing Elixir 与 Leatherskin 配方中的试剂；已发布 v1.5 译名作「柳树汁液」。"
+      },
+      "reason": "按已发布 v1.5 统一译名，并删除原文无据的 Tome of Alchemy 说明。",
+      "evidence_rows": [
+        410,
+        412
+      ],
+      "table": "terms",
+      "index": 89
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:82",
+      "evidence_rows": [
+        12,
+        13
+      ],
+      "source_excerpt": "Adamantine Bracers",
+      "reason": "核对装备名前缀，保留「精金」；term_reason 已说明材质前缀。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第12行作 Adamantine Bracers、第13行作 Adamantine Chest Plate，均为材质前缀。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「精金」符合 Adamantine 的材质义，并与本批装备名中的前缀一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "用于装备名，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批装备名中的 Adamantine 前缀统一译「精金」，未发现冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:515",
+      "evidence_rows": [
+        3474
+      ],
+      "source_excerpt": "Adamantine Studded Leggings",
+      "reason": "term_reason 由行号改为可证实的装备含义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3474行原文为 Adamantine Studded Leggings。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「精金镶钉护腿」对应 Adamantine + Studded Leggings，组合自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该原文为装备名，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Adamantine 前缀与「精金」统一，Studded Leggings 译「镶钉护腿」无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:83",
+      "evidence_rows": [
+        412,
+        437
+      ],
+      "source_excerpt": "Potion of Greater Protection : Ectoplasm and Sulfur",
+      "reason": "term_reason 删除原文无据的传送门配方，保留防御药水与灌注。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第412行防御药水配方含 Ectoplasm，第437行称其为灌注主要试剂。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「灵质」为 Ectoplasm 的奇幻炼金译名，符合试剂义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "在配方中作为炼金试剂，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Ectoplasm 译名，未见不一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:84",
+      "evidence_rows": [
+        410,
+        448
+      ],
+      "source_excerpt": "Keensight : Ambergris and Acid",
+      "reason": "保留「龙涎香」；配方证据明确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第410行 Keensight 配方含 Ambergris，第448行 Demon Oil 说明其为试剂。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「龙涎香」是 Ambergris 的固定中文名，符合材料义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为炼金材料，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Ambergris 译名，未见不一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:85",
+      "evidence_rows": [
+        411,
+        412,
+        437
+      ],
+      "source_excerpt": "Detox Serum : Belladonna and Serpent Venom",
+      "reason": "保留「蛇毒」；配方证据充分。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第411行 Detox Serum、第412行 Leatherskin/Stone Skin、第437行灌注配方均含 Serpent Venom。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「蛇毒」对应 Serpent Venom，物品名简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "在配方中作为炼金试剂，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为物品名统一译「蛇毒」；与描述性 Noximander venom 的「毒液」不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:197",
+      "evidence_rows": [
+        691,
+        2822
+      ],
+      "source_excerpt": "boiled-down Noximander venom",
+      "reason": "term_reason 已改为第691/2822行可证内容，删除原文未出现的 Paul。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第691行对话作 Noximander venom，第2822行单独作 Noximander，确认指该生物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「诺克西曼德」为专名音译，与毒液复合词词干一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "第2822行作为敌人/生物名，归入种族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e7 的「诺克西曼德毒液」沿用同名词干，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:533",
+      "evidence_rows": [
+        3895
+      ],
+      "source_excerpt": "boiled-down Noximander venom",
+      "reason": "保留 reference 级别，表示该生物毒液的描述性物质。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3895行对话明确出现 Noximander venom。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「诺克西曼德毒液」按专名音译加 venom 的「毒液」结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文是对话中的特定毒性物质，归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "专名部分与 e6「诺克西曼德」一致，venom 按描述性物质译「毒液」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:86",
+      "evidence_rows": [
+        437
+      ],
+      "source_excerpt": "Ectoplasm and Spider Silk",
+      "reason": "保留「蛛丝」；灌注配方证据明确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第437行说明提升护甲防护使用 Ectoplasm and Spider Silk。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「蛛丝」对应 Spider Silk，简洁且符合材料义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为灌注配方成分，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Spider Silk 译名，未见不一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:87",
+      "evidence_rows": [
+        411,
+        412,
+        437
+      ],
+      "source_excerpt": "Mandrake Root and Mercury",
+      "reason": "term_reason 删除原文无据的传送门配方，按 Haste/Nimbleness/灌注材料改写。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第411行 Haste、第412行 Potion of Nimbleness、第437行灌注配方均含 Mercury。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「水银」对应 Mercury 的炼金材料义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "在配方中作为炼金材料，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Mercury 译名；未发现同形异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:88",
+      "evidence_rows": [
+        410,
+        412,
+        448
+      ],
+      "source_excerpt": "Healing Elixir : Willow Sap and Sulfur",
+      "reason": "保留「硫磺」；配方证据充分。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第410行 Healing Elixir、第412行 Greater Protection、第448行 Demon Oil 配方均含 Sulfur。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「硫磺」对应 Sulfur，符合炼金反应物义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为炼金材料/反应物，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Sulfur 译名，未见不一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:89",
+      "evidence_rows": [
+        410,
+        412
+      ],
+      "source_excerpt": "Healing Elixir : Willow Sap and Sulfur",
+      "reason": "将译名统一为已发布 v1.5 的「柳树汁液」，并修正 term_reason 中无原文依据的 Tome of Alchemy。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第410行 Healing Elixir、第412行 Leatherskin 配方均含 Willow Sap。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由「柳树汁」改为已发布 v1.5 的「柳树汁液」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "配方中的炼金试剂，归入物品。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "同源 Willow Sap 统一为「柳树汁液」，旧译「柳树汁」不再使用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:90",
+      "evidence_rows": [
+        410,
+        411,
+        412
+      ],
+      "source_excerpt": "Mana Potion : Mandrake Root and Acid",
+      "reason": "保留「曼德拉草根」；Mana/Haste/Mana Fortify 配方证据明确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第410行 Mana Potion、第411行 Haste、第412行 Mana Fortify 配方均含 Mandrake Root。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「曼德拉草根」对应 Mandrake Root，符合草药材料义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为炼金材料，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Mandrake Root 译名，未见不一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:82",
+    "terms:515",
+    "terms:83",
+    "terms:84",
+    "terms:85",
+    "terms:197",
+    "terms:533",
+    "terms:86",
+    "terms:87",
+    "terms:88",
+    "terms:89",
+    "terms:90"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

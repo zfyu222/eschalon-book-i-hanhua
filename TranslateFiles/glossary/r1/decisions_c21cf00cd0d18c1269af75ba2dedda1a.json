@@ -1,0 +1,484 @@
+{
+  "review_complete": true,
+  "review_summary": "审校 11 个 non_translate 条目：NPC_Step 为动画状态标识符，OpenGL 为图形接口名，其余为字形/编码占位串。为全部条目补充明确 applicability；e1 用 text 覆盖独立及嵌入用法，e2 及占位串用 whole_record，避免裸字母或符号全局禁翻。未新增或隔离条目。",
+  "acknowledged_findings": [
+    "F0250",
+    "F0251",
+    "F0252"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "NPC_Step 是动画状态/标识符；原文在 ordinal 2832 独立出现，也在 ordinal 2954 的 CSV 字段内嵌入出现。按精确大小写保留该完整标识符，避免普通化翻译。"
+        }
+      },
+      "reason": "为 e1 补充明确作用域，覆盖独立与嵌入用例，并回应 f1。",
+      "evidence_rows": [
+        2832,
+        2954
+      ],
+      "table": "non_translate",
+      "index": 364
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "本批仅见 ordinal 3044 的独立记录 OpenGL，作为图形接口名称保留；无嵌入正文用例，故限定完整记录。"
+        }
+      },
+      "reason": "为 e2 补充 whole_record 作用域，回应 f2。",
+      "evidence_rows": [
+        3044
+      ],
+      "table": "non_translate",
+      "index": 366
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录为字形/编码占位串 Q ^，仅按完整记录保留；不保护裸 Q 或 ^。"
+        }
+      },
+      "reason": "补充整体记录作用域，避免短占位串扩大为全局禁翻。",
+      "evidence_rows": [
+        3341
+      ],
+      "table": "non_translate",
+      "index": 367
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录为字形/编码占位串 Q [，仅按完整记录保留；不保护裸 Q 或 [。"
+        }
+      },
+      "reason": "补充整体记录作用域，避免短占位串扩大为全局禁翻。",
+      "evidence_rows": [
+        3344
+      ],
+      "table": "non_translate",
+      "index": 370
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录为字形/编码占位串 Q ]，仅按完整记录保留；不保护裸 Q 或 ]。"
+        }
+      },
+      "reason": "补充整体记录作用域，避免短占位串扩大为全局禁翻。",
+      "evidence_rows": [
+        3346
+      ],
+      "table": "non_translate",
+      "index": 372
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录为字形/编码占位串 Q '，仅按完整记录保留；不保护裸 Q 或 '。"
+        }
+      },
+      "reason": "补充整体记录作用域，避免短占位串扩大为全局禁翻。",
+      "evidence_rows": [
+        3359
+      ],
+      "table": "non_translate",
+      "index": 373
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "本批仅见 ordinal 3374 的独立记录 Q _，作为字形/编码占位串按完整记录保留；不保护裸 Q 或 _。"
+        }
+      },
+      "reason": "为 e7 补充 whole_record 作用域，回应 f3。",
+      "evidence_rows": [
+        3374
+      ],
+      "table": "non_translate",
+      "index": 375
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录为字形/编码占位串 O [，仅按完整记录保留；不保护裸 O 或 [。"
+        }
+      },
+      "reason": "补充整体记录作用域，避免短占位串扩大为全局禁翻。",
+      "evidence_rows": [
+        3342
+      ],
+      "table": "non_translate",
+      "index": 368
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录为字形/编码占位串 O ^，仅按完整记录保留；不保护裸 O 或 ^。"
+        }
+      },
+      "reason": "补充整体记录作用域，避免短占位串扩大为全局禁翻。",
+      "evidence_rows": [
+        3373
+      ],
+      "table": "non_translate",
+      "index": 374
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录为字形/编码占位串 O `，仅按完整记录保留；不保护裸 O 或 `。"
+        }
+      },
+      "reason": "补充整体记录作用域，避免短占位串扩大为全局禁翻。",
+      "evidence_rows": [
+        3376
+      ],
+      "table": "non_translate",
+      "index": 377
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录为字形/编码占位串 R [，仅按完整记录保留；不保护裸 R 或 [。"
+        }
+      },
+      "reason": "补充整体记录作用域，避免短占位串扩大为全局禁翻。",
+      "evidence_rows": [
+        3343
+      ],
+      "table": "non_translate",
+      "index": 369
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:364",
+      "evidence_rows": [
+        2832,
+        2954
+      ],
+      "source_excerpt": "NPC_Step",
+      "reason": "核对独立记录与 CSV 嵌入字段，确认 NPC_Step 是动画状态标识符；保留精确拼写，并以 text 限定该标识符本身。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2832 原文为独立 NPC_Step；ordinal 2954 的 CSV 字段中亦含同一 NPC_Step，大小写和下划线一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无需译名；按运行标识符保留原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "NPC_Step 位于动作/动画字段中，是动画状态或运行标识符，不是普通正文词。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原文存在独立和嵌入两类用法；补充 applicability=text 且 case_sensitive=true，确保两处均保留同一拼写且不扩展到普通词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:366",
+      "evidence_rows": [
+        3044
+      ],
+      "source_excerpt": "OpenGL",
+      "reason": "核对独立记录，确认 OpenGL 为图形接口名称；无需翻译，并将作用域限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3044 原文仅为 OpenGL，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无需译名；图形接口名保留原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "OpenGL 是图形接口/API 名称，属于需要保留的品牌或技术标识。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 applicability=whole_record 且 case_sensitive=true，只在完整记录 OpenGL 时保护，避免全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:367",
+      "evidence_rows": [
+        3341
+      ],
+      "source_excerpt": "Q ^",
+      "reason": "核对原文为字形/编码占位串，按完整记录保留 Q ^，避免把裸字母或控制符全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3341 原文为 Q ^，包含空格和 ^ 字符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 占位串，无需译名，保留原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Q ^ 是字形/编码占位串，作为非翻译运行内容保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 applicability=whole_record 且 case_sensitive=true，仅匹配完整短记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:370",
+      "evidence_rows": [
+        3344
+      ],
+      "source_excerpt": "Q [",
+      "reason": "核对原文为字形/编码占位串，按完整记录保留 Q [，避免把裸字母或方括号全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3344 原文为 Q [，包含空格和 [ 字符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 占位串，无需译名，保留原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Q [ 是字形/编码占位串，作为非翻译运行内容保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 applicability=whole_record 且 case_sensitive=true，仅匹配完整短记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:372",
+      "evidence_rows": [
+        3346
+      ],
+      "source_excerpt": "Q ]",
+      "reason": "核对原文为字形/编码占位串，按完整记录保留 Q ]，避免把裸字母或方括号全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3346 原文为 Q ]，包含空格和 ] 字符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 占位串，无需译名，保留原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Q ] 是字形/编码占位串，作为非翻译运行内容保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 applicability=whole_record 且 case_sensitive=true，仅匹配完整短记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:373",
+      "evidence_rows": [
+        3359
+      ],
+      "source_excerpt": "Q '",
+      "reason": "核对原文为字形/编码占位串，按完整记录保留 Q '，避免把裸字母或引号全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3359 原文为 Q '，包含空格和单引号字符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 占位串，无需译名，保留原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Q ' 是字形/编码占位串，作为非翻译运行内容保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 applicability=whole_record 且 case_sensitive=true，仅匹配完整短记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:375",
+      "evidence_rows": [
+        3374
+      ],
+      "source_excerpt": "Q _",
+      "reason": "核对独立记录，确认 Q _ 为字形/编码占位串；按完整记录保留，避免把裸字母或下划线全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3374 原文为 Q _，包含空格和下划线字符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 占位串，无需译名，保留原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Q _ 是字形/编码占位串，作为非翻译运行内容保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 applicability=whole_record 且 case_sensitive=true，仅匹配完整短记录，回应 f3。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:368",
+      "evidence_rows": [
+        3342
+      ],
+      "source_excerpt": "O [",
+      "reason": "核对原文为字形/编码占位串，按完整记录保留 O [，避免把裸字母或方括号全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3342 原文为 O [，包含空格和 [ 字符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 占位串，无需译名，保留原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "O [ 是字形/编码占位串，作为非翻译运行内容保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 applicability=whole_record 且 case_sensitive=true，仅匹配完整短记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:374",
+      "evidence_rows": [
+        3373
+      ],
+      "source_excerpt": "O ^",
+      "reason": "核对原文为字形/编码占位串，按完整记录保留 O ^，避免把裸字母或控制符全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3373 原文为 O ^，包含空格和 ^ 字符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 占位串，无需译名，保留原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "O ^ 是字形/编码占位串，作为非翻译运行内容保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 applicability=whole_record 且 case_sensitive=true，仅匹配完整短记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:377",
+      "evidence_rows": [
+        3376
+      ],
+      "source_excerpt": "O `",
+      "reason": "核对原文为字形/编码占位串，按完整记录保留 O `，避免把裸字母或反引号全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3376 原文为 O `，包含空格和反引号字符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 占位串，无需译名，保留原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "O ` 是字形/编码占位串，作为非翻译运行内容保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 applicability=whole_record 且 case_sensitive=true，仅匹配完整短记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:369",
+      "evidence_rows": [
+        3343
+      ],
+      "source_excerpt": "R [",
+      "reason": "核对原文为字形/编码占位串，按完整记录保留 R [，避免把裸字母或方括号全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3343 原文为 R [，包含空格和 [ 字符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 占位串，无需译名，保留原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "R [ 是字形/编码占位串，作为非翻译运行内容保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 applicability=whole_record 且 case_sensitive=true，仅匹配完整短记录。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:364",
+    "non_translate:366",
+    "non_translate:367",
+    "non_translate:370",
+    "non_translate:372",
+    "non_translate:373",
+    "non_translate:375",
+    "non_translate:368",
+    "non_translate:374",
+    "non_translate:377",
+    "non_translate:369"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

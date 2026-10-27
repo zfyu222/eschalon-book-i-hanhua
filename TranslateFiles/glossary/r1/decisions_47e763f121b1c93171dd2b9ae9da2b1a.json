@@ -1,0 +1,498 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校 12 条：Shadowmirk 按法师要塞/塔统一为「暗影堡」，并联动侍僧条目；Darkwater 保留「暗水镇」以区别于 Blackwater；Acid Grubb(s) 统一为「酸液幼虫」；Fungal Slime(s) 统一为「真菌软泥怪」，Fungal Sludges 另译「真菌污泥怪」；三个地图内部标识补 whole_record 保护。f4 核对为同一名称的单复数变体共用译名，并非不同专名冲突。",
+  "acknowledged_findings": [
+    "F0197",
+    "F0198",
+    "F0199",
+    "F0283"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "暗影堡",
+        "term_reason": "原文称其为东/北方的巨大要塞、法师堡垒与法师塔，Erubor 主持；译名按建筑实体处理，不取“沼泽”义。"
+      },
+      "reason": "Shadowmirk 是 Mage Citadel/Mage Hall/tower，不是沼泽；将暂定“影沼”改为“暗影堡”并作为统一词根。",
+      "evidence_rows": [
+        731,
+        3941,
+        4344
+      ],
+      "table": "terms",
+      "index": 205
+    },
+    {
+      "patch": {
+        "recommended_translation": "暗影堡侍僧",
+        "term_reason": "角色数据中的侍僧身份/敌人名，冠以 Shadowmirk；随地名统一译作暗影堡侍僧。"
+      },
+      "reason": "acolyte 为侍僧身份，Shadowmirk 词根需与 e1 一致。",
+      "evidence_rows": [
+        2961
+      ],
+      "table": "terms",
+      "index": 466
+    },
+    {
+      "patch": {
+        "term_reason": "地图关卡内部标识，仅以完整独立标识符出现，不译。",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "2263 整行即 shadowmirk_l1，且无嵌入用例；只保护完整独立地图标识。"
+        }
+      },
+      "reason": "补明确保护范围，避免把裸标识扩展为全局禁翻。",
+      "evidence_rows": [
+        2263
+      ],
+      "table": "non_translate",
+      "index": 293
+    },
+    {
+      "patch": {
+        "term_reason": "地图关卡内部标识，仅以完整独立标识符出现，不译。",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "2264 整行即 shadowmirk_l2，且无嵌入用例；只保护完整独立地图标识。"
+        }
+      },
+      "reason": "补明确保护范围，避免把裸标识扩展为全局禁翻。",
+      "evidence_rows": [
+        2264
+      ],
+      "table": "non_translate",
+      "index": 294
+    },
+    {
+      "patch": {
+        "term_reason": "地图关卡内部标识，仅以完整独立标识符出现，不译。",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "2265 整行即 shadowmirk_l3，且无嵌入用例；只保护完整独立地图标识。"
+        }
+      },
+      "reason": "补明确保护范围，避免把裸标识扩展为全局禁翻。",
+      "evidence_rows": [
+        2265
+      ],
+      "table": "non_translate",
+      "index": 295
+    },
+    {
+      "patch": {
+        "recommended_translation": "酸液幼虫",
+        "term_reason": "剥去 Burley Oak 树皮、导致其死亡的害虫；复数形式，统一译作酸液幼虫。"
+      },
+      "reason": "采用已发布 v1.5 的“酸液幼虫”，并与单数条目统一，避免“蛆虫/格鲁布”分裂。",
+      "evidence_rows": [
+        751,
+        3966
+      ],
+      "table": "terms",
+      "index": 212
+    },
+    {
+      "patch": {
+        "recommended_translation": "酸液幼虫",
+        "term_reason": "敌人数据中的生物类型名，单数形式；与复数 Acid Grubbs 统一为酸液幼虫。"
+      },
+      "reason": "原暂定“酸液格鲁布”为音译，改为与 e8 一致的“酸液幼虫”。",
+      "evidence_rows": [
+        2835
+      ],
+      "table": "terms",
+      "index": 455
+    },
+    {
+      "patch": {
+        "category_path": "种族",
+        "recommended_translation": "真菌软泥怪",
+        "term_reason": "沼泽中喷射腐蚀污泥、阻断 Phillip 航线的黏液怪；复数形式，与单数 Fungal Slime 同指一类敌人。"
+      },
+      "reason": "Fungal Slimes 是敌人生物类型，不是“其他”；分类改为种族，并采用已发布 v1.5 的“真菌软泥怪”。",
+      "evidence_rows": [
+        849,
+        3917,
+        4076,
+        4077,
+        4081
+      ],
+      "table": "terms",
+      "index": 213
+    },
+    {
+      "patch": {
+        "recommended_translation": "真菌污泥怪",
+        "term_reason": "Bordertown 以东博拉丹沼泽中需清除的敌人；原文为 Fungal Sludges，与 Fungal Slimes 名称不同，保留“污泥怪”区分。"
+      },
+      "reason": "“菌泥怪”搭配不顺；按 Fungal Sludges 的污泥怪义改为“真菌污泥怪”，不强行并入史莱姆/软泥怪。",
+      "evidence_rows": [
+        1225
+      ],
+      "table": "terms",
+      "index": 312
+    },
+    {
+      "patch": {
+        "recommended_translation": "真菌软泥怪",
+        "term_reason": "敌人数据中的生物类型名，单数形式；与 Fungal Slimes 同指一类敌人，统一为真菌软泥怪。"
+      },
+      "reason": "与 e10 及已发布 v1.5 统一为“真菌软泥怪”，同时与 e11 的“真菌污泥怪”区分。",
+      "evidence_rows": [
+        2825,
+        3263
+      ],
+      "table": "terms",
+      "index": 454
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:205",
+      "evidence_rows": [
+        731,
+        3941,
+        4344
+      ],
+      "source_excerpt": "Shadowmirk, the Mage Citadel to the north",
+      "reason": "Shadowmirk 为古老法师要塞/法师塔，原译“影沼”不确；统一为“暗影堡”，并联动 e2。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "707/731/3941 均指同一 Shadowmirk，且 731 明称 Mage Citadel to the north。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“影沼”改为“暗影堡”，对应巨大要塞/法师塔，避免把 mirk 误作沼泽。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名，指要塞/法师塔实体。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e2 的 Shadowmirk Acolyte 统一词根；不采用已发布“暗影沼泽”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:466",
+      "evidence_rows": [
+        2961
+      ],
+      "source_excerpt": "Shadowmirk Acolyte",
+      "reason": "角色数据中的侍僧身份名，随 Shadowmirk 统一为暗影堡侍僧。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2961 行首字段为 Shadowmirk Acolyte，确为该角色名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改为“暗影堡侍僧”；acolyte 为侍僧，不保留“影沼”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "身份，指侍僧角色/敌人身份。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e1 暗影堡一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:293",
+      "evidence_rows": [
+        2263
+      ],
+      "source_excerpt": "shadowmirk_l1",
+      "reason": "地图内部标识，补 whole_record 范围，防止全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2263 整行即 shadowmirk_l1。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 保护项，不译。"
+        },
+        "category": {
+          "status": "not_applicable",
+          "evidence": "非术语分类表项。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 applicability whole_record，仅匹配完整独立标识；无嵌入用例。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:294",
+      "evidence_rows": [
+        2264
+      ],
+      "source_excerpt": "shadowmirk_l2",
+      "reason": "地图内部标识，补 whole_record 范围，防止全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2264 整行即 shadowmirk_l2。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 保护项，不译。"
+        },
+        "category": {
+          "status": "not_applicable",
+          "evidence": "非术语分类表项。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 applicability whole_record，仅匹配完整独立标识；无嵌入用例。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:295",
+      "evidence_rows": [
+        2265
+      ],
+      "source_excerpt": "shadowmirk_l3",
+      "reason": "地图内部标识，补 whole_record 范围，防止全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2265 整行即 shadowmirk_l3。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 保护项，不译。"
+        },
+        "category": {
+          "status": "not_applicable",
+          "evidence": "非术语分类表项。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 applicability whole_record，仅匹配完整独立标识；无嵌入用例。"
+        }
+      }
+    },
+    {
+      "ref": "terms:206",
+      "evidence_rows": [
+        716,
+        3927
+      ],
+      "source_excerpt": "north of Darkwater",
+      "reason": "Darkwater 是独立地名，保留“暗水镇”；不采纳“黑水镇”以避免与 Blackwater 混同。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "716/3927 两处均作 Darkwater。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留“暗水镇”，与 Darkwater 对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两出处一致；Darkwater 与 Blackwater 是不同英文名，未采用已发布“黑水镇”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:208",
+      "evidence_rows": [
+        853,
+        1225,
+        4081,
+        4684
+      ],
+      "source_excerpt": "Marshes of Boradan",
+      "reason": "Marshes of Boradan 为博拉丹沼泽，四出处一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "853/1225/4081/4684 均作 Marshes of Boradan。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“博拉丹沼泽”准确且一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "任务与地图条目统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:212",
+      "evidence_rows": [
+        751,
+        3966
+      ],
+      "source_excerpt": "Acid Grubbs",
+      "reason": "Acid Grubbs 是剥树皮致死的害虫；采用已发布“酸液幼虫”并与单数统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "751/3966 均作复数 Acid Grubbs。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“酸液蛆虫”改为“酸液幼虫”，与已发布 v1.5 统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族，指害虫/生物类型。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e9 单数 Acid Grubb 统一为酸液幼虫。"
+        }
+      }
+    },
+    {
+      "ref": "terms:455",
+      "evidence_rows": [
+        2835
+      ],
+      "source_excerpt": "Acid Grubb",
+      "reason": "Acid Grubb 为单数生物名，统一为酸液幼虫。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2835 行即 Acid Grubb。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由音译“酸液格鲁布”改为“酸液幼虫”，与 e8 一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族，敌人生物类型。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e8 复数统一；不保留“格鲁布”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:213",
+      "evidence_rows": [
+        849,
+        3917,
+        4076,
+        4077,
+        4081
+      ],
+      "source_excerpt": "Fungal Slimes",
+      "reason": "Fungal Slimes 是沼泽黏液怪；改分类为种族，采用已发布“真菌软泥怪”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "707/849/853/3917/4076/4077/4081 均作复数 Fungal Slimes。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“真菌史莱姆”改为“真菌软泥怪”，采用已发布 v1.5 并贴合黏液怪义。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "由“其他”改为“种族”，指敌人生物类型。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e12 单数统一；与 e11 Fungal Sludges 的“真菌污泥怪”区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:312",
+      "evidence_rows": [
+        1225
+      ],
+      "source_excerpt": "Fungal Sludges",
+      "reason": "Fungal Sludges 是沼泽中需清除的敌人；译作真菌污泥怪，与 Slime 区分。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1225 作 Fungal Sludges，位于 Marshes of Boradan。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“菌泥怪”改为“真菌污泥怪”，更贴合 Sludge 的污泥义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族，敌人生物类型。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原文名称与 Fungal Slime(s) 不同，保留独立译名，不强行合并。"
+        }
+      }
+    },
+    {
+      "ref": "terms:454",
+      "evidence_rows": [
+        2825,
+        3263
+      ],
+      "source_excerpt": "Fungal Slime",
+      "reason": "Fungal Slime 单数与 e10 复数同指；采用已发布“真菌软泥怪”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2825 为单数 Fungal Slime，3263 同一敌人。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“真菌史莱姆”改为“真菌软泥怪”，与 e10 及已发布 v1.5 统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "f4 核对：e10/e12 是同一名称单复数，共用译名合理；与 e11 的污泥怪区分。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:205",
+    "terms:466",
+    "non_translate:293",
+    "non_translate:294",
+    "non_translate:295",
+    "terms:206",
+    "terms:208",
+    "terms:212",
+    "terms:455",
+    "terms:213",
+    "terms:312",
+    "terms:454"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

@@ -1,0 +1,361 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校 e1-e12 共 12 条：逐条核对原文、译名、分类与一致性；e2 按已发布 v1.5 译名统一为“岁月圣枢”；f1 的 Stone Skin/Stoneskin 共享译名与 f2 的 Spot Hidden 变体均已核对，无额外冲突。",
+  "acknowledged_findings": [
+    "F0276",
+    "F0286"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "岁月圣枢",
+        "term_reason": "传说中的宝石/神器，又名Jewel of Thaermore；已发布 v1.5 译名为「岁月圣枢」。"
+      },
+      "reason": "按已发布 v1.5 译名统一 Crux of Ages；3655 确认其为泰尔莫最珍贵的宝石神器。",
+      "evidence_rows": [
+        3655
+      ],
+      "table": "terms",
+      "index": 104
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:101",
+      "evidence_rows": [
+        412
+      ],
+      "source_excerpt": "*Stone Skin : Jelly Fungus and Serpent Venom",
+      "reason": "核对防御药剂书中的配方/效果名，保留“石肤”译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "412 原文含 *Stone Skin : Jelly Fungus and Serpent Venom，源词拼写一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“石肤”对应 Stone Skin 的防御效果；与相关 Stoneskin 同义但源词不同。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "412 属于防御药剂书中的配方/效果列表，作为游戏效果术语归技能可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与相关 Stoneskin 共享“石肤”译名；空格差异及药剂/法术语境可区分，已核对。"
+        }
+      }
+    },
+    {
+      "ref": "terms:104",
+      "evidence_rows": [
+        3655
+      ],
+      "source_excerpt": "The Crux of Ages is Thaermore's most prized artifact; a jewel of absolute perfection",
+      "reason": "统一为已发布译名；原文确认其为泰尔莫的宝石神器。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3655 原文使用 The Crux of Ages，源词完整。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“岁月之核”改为已发布 v1.5 的“岁月圣枢”，与神器身份一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3655 称其为 Thaermore's most prized artifact，归物品。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原文多处指同一神器；统一为“岁月圣枢”以符合发布译名与后续任务/道具文本。"
+        }
+      }
+    },
+    {
+      "ref": "terms:112",
+      "evidence_rows": [
+        215,
+        425
+      ],
+      "source_excerpt": "Mapping Your World",
+      "reason": "核对书籍标题与制图术内容，保留现有书名格式。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "215 记录标题为 Mapping Your World。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《测绘你的世界》对应书名；425 说明该书教授 Cartography。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "425 为关于制图技能的书，书名条目归物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "书名统一加《》，与同类书籍条目格式一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:124",
+      "evidence_rows": [
+        10,
+        446
+      ],
+      "source_excerpt": "A World of Wonder",
+      "reason": "核对书名与埃斯卡隆世界介绍内容，保留现有译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10/446 标题含 A World of Wonder，源词一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《奇迹世界》作为书名对应 A World of Wonder，未改动专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "446 为介绍 Eschalon 各省的书，归物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "书名格式与同类书籍条目一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:113",
+      "evidence_rows": [
+        69,
+        427
+      ],
+      "source_excerpt": "Buying and Selling",
+      "reason": "核对商业书籍标题与内容，保留现有译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "69 记录标题为 Buying and Selling。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《买与卖》对应书名；427 说明其内容为商业、估价与讨价还价。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "427 为商业教科书，书名条目归物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "书名格式统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:115",
+      "evidence_rows": [
+        142,
+        426
+      ],
+      "source_excerpt": "Hidden Dangers and Treasures",
+      "reason": "核对盗贼指南类书籍标题与内容，保留现有译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "142 记录标题为 Hidden Dangers and Treasures。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《隐藏的危险与宝藏》对应书名；426 描述发现隐藏陷阱与宝藏。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "426 为盗贼野外指南类书籍，归物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "书名格式统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:283",
+      "evidence_rows": [
+        1057
+      ],
+      "source_excerpt": "The *Spot *Hidden Skill is the ability to passively spot hidden items, doors, traps and abnormalities.",
+      "reason": "核对技能名、功能及控制符，保留“察觉隐藏”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1057 原文技能名为 *Spot *Hidden，星号为强调控制符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“察觉隐藏”概括 1057 所述被动发现隐藏物品、门、陷阱与异常的能力。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1057 明确称其为 Skill，归技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8 的 Spot Hidden 为同一技能；标记差异不改变译名，统一“察觉隐藏”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:367",
+      "evidence_rows": [
+        1057,
+        2107
+      ],
+      "source_excerpt": "[Spot Hidden SUCCESS!]",
+      "reason": "核对无标记技能名与技能描述，保持与 e7 统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2107 成功提示为 [Spot Hidden SUCCESS!]，无标记源词一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "1057 描述该技能为被动发现隐藏物品、门、陷阱与异常；“察觉隐藏”对应其功能。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1057 明确为 Skill，归技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7 的 *Spot *Hidden 为同一技能变体，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:120",
+      "evidence_rows": [
+        384,
+        436
+      ],
+      "source_excerpt": "The Lumberjack",
+      "reason": "核对人物事迹书籍标题与内容，保留现有译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "384 记录标题为 The Lumberjack。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《伐木工》对应书名；436 记述矮人 Biggins 的伐木与战斗事迹。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "436 为人物事迹书籍，归物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "书名格式统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:133",
+      "evidence_rows": [
+        381
+      ],
+      "source_excerpt": "The Holy Tasslar",
+      "reason": "核对书籍标题；原文未展开，仅按专名音译保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "381 记录标题为 The Holy Tasslar。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《神圣塔斯拉》按书名处理，Tasslar 音译为塔斯拉。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "381 为书籍标题，归物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "书名统一加《》，专名音译一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:134",
+      "evidence_rows": [
+        378
+      ],
+      "source_excerpt": "The Crimson Sky",
+      "reason": "核对书籍标题，保留现有译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "378 记录标题为 The Crimson Sky。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《赤红天空》对应书名 The Crimson Sky。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "378 为书籍标题，归物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "书名格式统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:135",
+      "evidence_rows": [
+        377
+      ],
+      "source_excerpt": "The Art of Brewing",
+      "reason": "核对书籍标题，保留现有译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "377 记录标题为 The Art of Brewing。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《酿造的艺术》对应书名 The Art of Brewing。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "377 为书籍标题，归物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "书名格式统一。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:101",
+    "terms:104",
+    "terms:112",
+    "terms:124",
+    "terms:113",
+    "terms:115",
+    "terms:283",
+    "terms:367",
+    "terms:120",
+    "terms:133",
+    "terms:134",
+    "terms:135"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

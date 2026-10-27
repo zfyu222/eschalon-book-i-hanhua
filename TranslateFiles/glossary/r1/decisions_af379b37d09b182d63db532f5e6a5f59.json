@@ -1,0 +1,342 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e12 的来源、译名、分类与一致性；现有译名和分类均可保留。f1 已核实：Blisterpox 与 Blister Pox 是同一疾病名的拼写变体，共用“水疱痘”成立，无需改动。",
+  "acknowledged_findings": [
+    "F0289"
+  ],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:486",
+      "evidence_rows": [
+        3210
+      ],
+      "source_excerpt": "The Enchanter's Philosophy",
+      "reason": "店铺专名完整，现有译名与地名分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3210 原文为完整专名 The Enchanter's Philosophy，与 source 字段逐字一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“附魔师的哲学”对应 Enchanter's Philosophy，保留专名性质，中文可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "按 3210 的店铺招牌语境归入“地名”，属于允许分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同名冲突；作为 proper_name 采用 required，译名形式统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:487",
+      "evidence_rows": [
+        3212
+      ],
+      "source_excerpt": "The Glowing Anvil",
+      "reason": "店铺专名完整，现有译名与分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3212 原文为完整专名 The Glowing Anvil，与 source 字段逐字一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“发光铁砧”对应 Glowing Anvil，作为店名简洁可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "按 3212 的店铺招牌语境归入“地名”，属于允许分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批店铺名一样保留 proper_name/required 处理，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:501",
+      "evidence_rows": [
+        3318
+      ],
+      "source_excerpt": "The Minotaur",
+      "reason": "旅店专名完整，译名简洁，分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3318 原文为完整专名 The Minotaur，与 source 字段逐字一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“牛头人”对应 Minotaur，作为旅店名简洁且未扩展原词。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "按 3318 废弃旅店招牌语境归入“地名”，属于允许分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同名冲突；专名 required 处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:502",
+      "evidence_rows": [
+        3293
+      ],
+      "source_excerpt": "Blisterpox",
+      "reason": "疾病死因称谓明确，译名与同病名变体统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3293 原文含 Blisterpox，与 source 字段逐字一致，且为墓碑所记死因。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“水疱痘”对应 blister+pox 的疾病义，和墓碑死因语境相符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3293 表明它是疾病名，归入“其他”可容纳非人物、物品或地点的游戏词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "审计 f1 的 Blister Pox 是同一疾病名的拼写变体，共用“水疱痘”不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:503",
+      "evidence_rows": [
+        3153,
+        411
+      ],
+      "source_excerpt": "Klauss the Ogre trainer.",
+      "reason": "Ogre 在训练师称呼和药水名中均指食人魔，译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3153 原文含“Klauss the Ogre trainer”，Ogre 为其中的种族/身份词。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“食人魔”是 Ogre 的通行奇幻译名，适合训练师称呼。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3153 的 Ogre trainer 与 411 的 Ogre Strength 均指向食人魔种族或相关概念，归入“种族”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "411 的 Ogre Strength 支持同一词根使用“食人魔”，本条保持统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:506",
+      "evidence_rows": [
+        3201
+      ],
+      "source_excerpt": "Thin Key",
+      "reason": "解锁物品名完整，现有译名与分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3201 原文 unlocked_with (Thin Key) 中 Thin Key 与 source 字段一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“细钥匙”对应 Thin Key，作为解锁物品名简洁明确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3201 的 unlocked_with 条件表明 Thin Key 是物品，归入“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批钥匙名均按“限定词/材质+钥匙”处理，Thin Key 无例外。"
+        }
+      }
+    },
+    {
+      "ref": "terms:507",
+      "evidence_rows": [
+        3267
+      ],
+      "source_excerpt": "Bent Key",
+      "reason": "解锁物品名完整，现有译名与分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3267 原文 unlocked_with (Bent Key) 中 Bent Key 与 source 字段一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“弯曲钥匙”对应 Bent Key，符合钥匙形状描述。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3267 的 unlocked_with 条件表明其为物品，归入“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Thin Key 等钥匙条目采用同一命名结构，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:508",
+      "evidence_rows": [
+        3327
+      ],
+      "source_excerpt": "Door Key",
+      "reason": "解锁物品名完整，现有译名与分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3327 原文 unlocked_with (Door Key) 中 Door Key 与 source 字段一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“门钥匙”对应 Door Key，作为解锁物品名简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3327 的 unlocked_with 条件表明其为物品，归入“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批钥匙条目统一以“XX钥匙”结尾，Door Key 保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:509",
+      "evidence_rows": [
+        3329
+      ],
+      "source_excerpt": "Brassy Key",
+      "reason": "解锁物品名完整，材质义译法可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3329 原文 unlocked_with(Brassy Key) 中 Brassy Key 与 source 字段一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黄铜钥匙”取 brassy 的材质或色泽义，符合钥匙名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3329 的 unlocked_with 条件表明其为物品，归入“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Silver/Golden Key 等材质钥匙命名方式一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:510",
+      "evidence_rows": [
+        3415
+      ],
+      "source_excerpt": "Silver Key",
+      "reason": "解锁物品名完整，现有译名与分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3415 原文 unlocked_with (Silver Key) 中 Silver Key 与 source 字段一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“银钥匙”对应 Silver Key，作为解锁物品名简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3415 的 unlocked_with 条件表明其为物品，归入“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Brassy/Golden Key 的材质译法保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:511",
+      "evidence_rows": [
+        3428
+      ],
+      "source_excerpt": "Rusted Key",
+      "reason": "解锁物品名完整，状态描述译法可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3428 原文 unlocked_with (Rusted Key) 中 Rusted Key 与 source 字段一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“锈蚀钥匙”对应 Rusted Key，状态描述准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3428 的 unlocked_with 条件表明其为物品，归入“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Bent/Thin Key 等状态或形状钥匙条目结构一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:513",
+      "evidence_rows": [
+        3461
+      ],
+      "source_excerpt": "Golden Key",
+      "reason": "解锁物品名完整，现有译名与分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3461 原文 unlocked_with (Golden Key) 中 Golden Key 与 source 字段一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“金钥匙”对应 Golden Key，作为解锁物品名简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3461 的 unlocked_with 条件表明其为物品，归入“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Silver/Brassy Key 等材质钥匙译名统一。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:486",
+    "terms:487",
+    "terms:501",
+    "terms:502",
+    "terms:503",
+    "terms:506",
+    "terms:507",
+    "terms:508",
+    "terms:509",
+    "terms:510",
+    "terms:511",
+    "terms:513"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

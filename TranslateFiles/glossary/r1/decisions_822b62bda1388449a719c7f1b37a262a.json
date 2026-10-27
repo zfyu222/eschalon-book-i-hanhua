@@ -1,0 +1,397 @@
+{
+  "review_complete": true,
+  "review_summary": "完成 12 条术语审校：统一修正 e1 哥布林弓箭手、e6 蔚蓝卫队、e7/e8 格里姆霍尔德音译、e12 哥布林堡垒；确认 e2 与 e13 仅为单复数同词，不另立别名。其余条目保留，未新增、隔离或放行无匹配项。",
+  "acknowledged_findings": [
+    "F0292"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "哥布林弓箭手"
+      },
+      "reason": "Goblin Archer 与 Goblin Archers 为单复数同词，统一采用完整形式“哥布林弓箭手”；“弓手”虽可但会造成词族译名分裂。",
+      "evidence_rows": [
+        2850
+      ],
+      "table": "terms",
+      "index": 457
+    },
+    {
+      "patch": {
+        "recommended_translation": "蔚蓝卫队"
+      },
+      "reason": "Azure 与 Azure pass 统一为“蔚蓝”，避免“苍蓝/蔚蓝”分裂；Guard 组织义保留“卫队”。",
+      "evidence_rows": [
+        2959
+      ],
+      "table": "terms",
+      "index": 465
+    },
+    {
+      "patch": {
+        "recommended_translation": "东格里姆霍尔德"
+      },
+      "reason": "Grimmhold 统一为“格里姆霍尔德”，修正现有译名漏掉 m 音的问题；Eastern 作“东”。",
+      "evidence_rows": [
+        2978
+      ],
+      "table": "terms",
+      "index": 467
+    },
+    {
+      "patch": {
+        "recommended_translation": "东格里姆霍尔德大厅"
+      },
+      "reason": "随 Eastern Grimmhold 统一为“东格里姆霍尔德”，Grand Hall 作“大厅”。",
+      "evidence_rows": [
+        2978
+      ],
+      "table": "terms",
+      "index": 468
+    },
+    {
+      "patch": {
+        "recommended_translation": "哥布林堡垒"
+      },
+      "reason": "与 Goblin Citadel 词族统一 Citadel 为“堡垒”；所有格不另立译名。",
+      "evidence_rows": [
+        3022
+      ],
+      "table": "terms",
+      "index": 472
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:457",
+      "evidence_rows": [
+        2850
+      ],
+      "source_excerpt": "Goblin Archer",
+      "reason": "敌人/生物类型名，按哥布林弓手词族统一为完整形式。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Goblin Archer 是敌人数据中的哥布林远程单位类型名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改为“哥布林弓箭手”，与 Goblin Archers 的单复数词族一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为敌人/生物类型归入“种族”路径，路径合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一采用“弓箭手”，不再使用较短的“弓手”造成同词族分裂。"
+        }
+      }
+    },
+    {
+      "ref": "terms:458",
+      "evidence_rows": [
+        2854
+      ],
+      "source_excerpt": "Goblin Warlord",
+      "reason": "哥布林首领类型名；确认与复数条目同译合理，不按独立 Warlord 强行改译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Goblin Warlord 是敌人数据中的哥布林首领类型名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“哥布林军阀”可表达哥布林首领/军阀义，保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为敌人数据中的哥布林类型归入“种族”路径，路径合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Goblin Warlord 与 Goblin warlords 仅为单复数变体，共用“哥布林军阀”合理；独立 Warlord 的“督军”不强行套入本条。"
+        }
+      }
+    },
+    {
+      "ref": "terms:460",
+      "evidence_rows": [
+        2874
+      ],
+      "source_excerpt": "Giant Arachnid",
+      "reason": "巨型蛛形生物类型名，Giant 在此为形容词，不按 Giants 种族义统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Giant Arachnid 是敌人数据中的生物类型名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“巨型蛛形兽”准确表达 gigantic arachnid/巨型蛛形生物，保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为生物/敌人类型归入“种族”路径，路径合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Giant 在此为形容词“巨型”，与 Giants“巨人”的种族义不同，不强行统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:463",
+      "evidence_rows": [
+        2899
+      ],
+      "source_excerpt": "Spire Guard",
+      "reason": "特定守卫团体名，Spire 与 Bastion Spire 的“尖塔”一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Spire Guard 是角色数据中的特定守卫组织名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“尖塔卫队”保留 Spire“尖塔”与 Guard 组织义“卫队”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "“组织”路径符合守卫团体名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Bastion Spire 的“尖塔”核心译名一致，未见同批冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:464",
+      "evidence_rows": [
+        2956
+      ],
+      "source_excerpt": "Darkford Guard",
+      "reason": "达克福德守卫单位名；保留地名音译与角色/守卫义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Darkford Guard 是角色数据中的守卫单位名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“达克福德守卫”保留 Darkford 音译与 Guard 的守卫义，适合作为单位/角色名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "“组织”路径可涵盖其所属守卫团体，路径合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Darkford 音译稳定；本条 Guard 作守卫单位，与联邦卫队组织名语境不同，不强制改为“卫队”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:465",
+      "evidence_rows": [
+        2959
+      ],
+      "source_excerpt": "Azure Guard",
+      "reason": "蔚蓝守卫团体名；统一 Azure 为“蔚蓝”，Guard 组织义用“卫队”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Azure Guard 是角色数据中的守卫单位名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改为“蔚蓝卫队”，统一 Azure 为“蔚蓝”，Guard 组织义保留“卫队”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "“组织”路径符合卫队团体名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Azure pass“蔚蓝隘口”统一 Azure 为“蔚蓝”，不再使用“苍蓝”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:467",
+      "evidence_rows": [
+        2978
+      ],
+      "source_excerpt": "Eastern Grimmhold",
+      "reason": "大厅所在地名，统一 Grimmhold 音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Eastern Grimmhold 是文本中大厅所在地名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改为“东格里姆霍尔德”，按 Grimmhold 统一音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "“地名”路径正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Grimmhold“格里姆霍尔德”统一；Eastern 作“东”，不套用 Eastern Gap“东部隘口”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:468",
+      "evidence_rows": [
+        2978
+      ],
+      "source_excerpt": "Grand Hall of Eastern Grimmhold",
+      "reason": "具体大厅名，随 Eastern Grimmhold 统一，Grand Hall 作“大厅”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Grand Hall of Eastern Grimmhold 是东格里姆霍尔德的具体大厅名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改为“东格里姆霍尔德大厅”，统一 Grimmhold 音译，Grand Hall 作“大厅”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "“地名”路径正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Grimmhold、Eastern Grimmhold 统一；不与 Grand Scholars“大学者”混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:469",
+      "evidence_rows": [
+        2980
+      ],
+      "source_excerpt": "Goblin King",
+      "reason": "哥布林统治者称号，保留“哥布林之王”的书面称号义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Goblin King 是文本中哥布林统治者的特定称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“哥布林之王”保留称号义，符合西式奇幻书面语。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "“身份”路径符合统治者称号。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Goblin 词族统一；King 作“王”，未与普通词混淆。"
+        }
+      }
+    },
+    {
+      "ref": "terms:470",
+      "evidence_rows": [
+        2988
+      ],
+      "source_excerpt": "Ossuary",
+      "reason": "特定藏骨地点名，保留“藏骨堂”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Ossuary 是文本中特定藏骨设施/地点名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“藏骨堂”准确表达 ossuary，且适合作地点名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "“地名”路径正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条为具体地点，保留“藏骨堂”，不扩展为普通词。"
+        }
+      }
+    },
+    {
+      "ref": "terms:471",
+      "evidence_rows": [
+        3013
+      ],
+      "source_excerpt": "Barrens of Crakamir",
+      "reason": "南部边境地区名，Crakamir 音译一致，Barrens 作“荒原”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Barrens of Crakamir 是文本中南部边境地区名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“克拉卡米尔荒原”保留 Crakamir 音译，Barrens 作“荒原”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "“地名”路径正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Crakamir“克拉卡米尔”一致；Barrens 复数作“荒原”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:472",
+      "evidence_rows": [
+        3022
+      ],
+      "source_excerpt": "Goblin's Citadel",
+      "reason": "要塞入口/地标名，统一 Citadel 为“堡垒”，所有格不另译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Goblin's Citadel 是文本中要塞入口/地标名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改为“哥布林堡垒”，与 Goblin Citadel 词族统一 Citadel 为“堡垒”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "“地名”路径正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Goblin Citadel“哥布林堡垒”统一；所有格不另立译名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:457",
+    "terms:458",
+    "terms:460",
+    "terms:463",
+    "terms:464",
+    "terms:465",
+    "terms:467",
+    "terms:468",
+    "terms:469",
+    "terms:470",
+    "terms:471",
+    "terms:472"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

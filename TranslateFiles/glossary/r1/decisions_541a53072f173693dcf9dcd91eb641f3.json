@@ -1,0 +1,359 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e12 的来源、译名、分类与一致性；保留 11 条，补充 e4 非翻译适用域。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "该行是源码版权注释，仅整行保留，不能默认全局禁翻。"
+        }
+      },
+      "reason": "non_translate 条目缺少适用域，补充 whole_record 以限定只保护该完整源码注释。",
+      "evidence_rows": [
+        1377
+      ],
+      "table": "non_translate",
+      "index": 110
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:415",
+      "evidence_rows": [
+        1505
+      ],
+      "source_excerpt": "Layman",
+      "reason": "确认独立标签 Layman 作为等级/身份名保留，现有 whole_record 限定合理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 1505 仅有独立标签 Layman，无同形正文用例。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "门外汉可对应 layman 的门外行/非专业者义，符合该独立标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "身份类别适用于等级/身份标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "game_term、required 与 whole_record 限定一致，避免普通词全局替换。"
+        }
+      }
+    },
+    {
+      "ref": "terms:416",
+      "evidence_rows": [
+        1326
+      ],
+      "source_excerpt": "Poor quality",
+      "reason": "确认该品质标签的译名与 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 1326 为独立品质标签，无上下文歧义。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "劣质为简短品质标签，适合物品品质。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他类别可用于品质标签，不误归为物品名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "whole_record 防止普通描述被全局替换。"
+        }
+      }
+    },
+    {
+      "ref": "terms:418",
+      "evidence_rows": [
+        2452,
+        3047,
+        4564
+      ],
+      "source_excerpt": "Basilisk Games",
+      "reason": "确认开发商品牌名保留英文，三处出处一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2452、3047、4564 均为开发商名 Basilisk Games。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留英文品牌名与欢迎语、版权行及贴图一致，避免自造中文公司名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "组织类别符合开发商品牌。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "proper_name、required，三处出处一致；沿用候选中最常见的英文原名。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:110",
+      "evidence_rows": [
+        1377
+      ],
+      "source_excerpt": "//  Copyright 2007-2008 Basilisk Games",
+      "reason": "补充 non_translate 的 whole_record 适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1377 为源码版权注释，应原样保留。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目，无译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入 non_translate 符合源码注释用途。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；已补 whole_record，限定仅整行保护。"
+        }
+      }
+    },
+    {
+      "ref": "terms:420",
+      "evidence_rows": [
+        2575
+      ],
+      "source_excerpt": "Bitter Naga Amulet",
+      "reason": "确认 Naga 作种族名及娜迦译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2575 物品名中包含 Naga，指奇幻种族名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "娜迦为 Naga 的常见中文译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族类别符合 Naga 的种族义。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "game_term、required，与 Bitter Naga Amulet 中的修饰关系一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:421",
+      "evidence_rows": [
+        2432
+      ],
+      "source_excerpt": "Walking Corpse",
+      "reason": "确认怪物名及 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2432 为独立怪物名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "行尸对应 Walking Corpse。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为亡灵怪物类型归入种族类别可用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "whole_record 限定完整怪物标签，避免普通短语替换。"
+        }
+      }
+    },
+    {
+      "ref": "terms:422",
+      "evidence_rows": [
+        2433
+      ],
+      "source_excerpt": "Skeleton",
+      "reason": "确认怪物名及 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2433 为独立怪物名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "骷髅对应 Skeleton。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为亡灵怪物类型归入种族类别可用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "whole_record 限定完整怪物标签，避免日常词义误替换。"
+        }
+      }
+    },
+    {
+      "ref": "terms:423",
+      "evidence_rows": [
+        2435,
+        2438
+      ],
+      "source_excerpt": "Save vs. Divinity",
+      "reason": "保留暂定译名并维持 reference。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2435、2438 均出现 Save vs. Divinity 的成功/失败提示。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "神术豁免检定与提示格式相符；Divinity 批内无定义，保留 reference 暂译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他类别适合豁免检定提示。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "enforcement=reference 与暂译状态一致，未把未定词义冻结为 required。"
+        }
+      }
+    },
+    {
+      "ref": "terms:424",
+      "evidence_rows": [
+        2437,
+        438
+      ],
+      "source_excerpt": "your turning.",
+      "reason": "确认驱退能力义及限定范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2437 的 your turning 指驱退亡灵能力；438 的 turning point 是普通短语，不纳入。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "驱退符合该类能力；literal_context 只匹配 your turning。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能类别符合驱退能力。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "literal_context 的 prefix/suffix 与原文吻合，避免普通 turning 被替换。"
+        }
+      }
+    },
+    {
+      "ref": "terms:432",
+      "evidence_rows": [
+        2592
+      ],
+      "source_excerpt": "Brewmaster's Ring",
+      "reason": "确认独特戒指名及译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2592 物品名及 SKILL_ALCHEMY +3 支持其为提升炼金技能的戒指。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "酿酒师之戒准确对应 Brewmaster's Ring。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品类别符合独特戒指名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "game_term、required，与技能加成出处一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:434",
+      "evidence_rows": [
+        2598
+      ],
+      "source_excerpt": "Deadeye Pendant",
+      "reason": "确认独特吊坠名及译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2598 物品名及 SKILL_WEAPON_THROWN +4 支持其投掷武器加成。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "神射吊坠对应 Deadeye Pendant，且贴合投掷武器。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品类别符合独特吊坠名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "game_term、required，与技能加成出处一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:438",
+      "evidence_rows": [
+        2654
+      ],
+      "source_excerpt": "Loremaster's Ring",
+      "reason": "确认独特戒指名及译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2654 物品名及 SKILL_LORE +6 支持其学识加成。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "博学者之戒准确对应 Loremaster's Ring。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品类别符合独特戒指名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "game_term、required，与技能加成出处一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:415",
+    "terms:416",
+    "terms:418",
+    "non_translate:110",
+    "terms:420",
+    "terms:421",
+    "terms:422",
+    "terms:423",
+    "terms:424",
+    "terms:432",
+    "terms:434",
+    "terms:438"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

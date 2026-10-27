@@ -1,0 +1,445 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e12 的来源、译名、分类与一致性复核；修正 e3/e5 的 term_reason、e4 性别与 term_reason、e6/e8 的 Thorndike 词族译名、e11 性别与 term_reason。f1 判定 e11/e12 为同一树木角色拼写变体共用译名；f2 判定 e8 与只读 e13 为 Camp Thorndike/Thorndyke 拼写变体，e8 统一为桑代克营地，e13 留待其批次处理。",
+  "acknowledged_findings": [
+    "F0254",
+    "F0288"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "Bordertown 的铁匠，经营金属工坊；在铁砧旁工作。"
+      },
+      "reason": "原 term_reason 混入本批未支持的坩埚/Gunther 信息，按 607、712、4280 修正。",
+      "evidence_rows": [
+        607,
+        712,
+        4280
+      ],
+      "table": "characters",
+      "index": 34
+    },
+    {
+      "patch": {
+        "gender": "男性",
+        "term_reason": "Aridell 的铁匠/金属工坊店主，按足价收购 Mithril。"
+      },
+      "reason": "4230 以 his 指称 Farwick，性别应为男性；term_reason 按 1207、3616、4232 修正。",
+      "evidence_rows": [
+        639,
+        1207,
+        3616,
+        4230,
+        4232
+      ],
+      "table": "characters",
+      "index": 36
+    },
+    {
+      "patch": {
+        "term_reason": "Salted Coast 的患病男子；掌握 Father Michael 伪造信件与传送门指示的证据。"
+      },
+      "reason": "原 term_reason 的 Fleshrot/送药细节不在本批证据，按 679、681、696、4300 修正。",
+      "evidence_rows": [
+        679,
+        681,
+        696,
+        4300
+      ],
+      "table": "characters",
+      "index": 37
+    },
+    {
+      "patch": {
+        "recommended_translation": "桑代克领主",
+        "term_reason": "Baron's Thicket 旧猎营的主人，曾饲养 Carniraptors。"
+      },
+      "reason": "563/3757 原文为 Lord Thorndike；已发布 v1.5 与 e7 均作桑代克，统一为桑代克领主并去除模板备注。",
+      "evidence_rows": [
+        563,
+        3757
+      ],
+      "table": "characters",
+      "index": 38
+    },
+    {
+      "patch": {
+        "recommended_translation": "桑代克营地"
+      },
+      "reason": "1227、3112 均作 Camp Thorndike；与 e6/e7 的 Thorndike 核心名统一为桑代克。",
+      "evidence_rows": [
+        1227,
+        3112
+      ],
+      "table": "terms",
+      "index": 305
+    },
+    {
+      "patch": {
+        "gender": "男性",
+        "term_reason": "会心灵传话的古老树木，自称 Tanglewood Forest 最初树的后裔；原文以 his 指代。"
+      },
+      "reason": "1223/4338 以 he/his 指代，性别应为男性；term_reason 中泰尔莫无本批证据，按 781/4337 修正。",
+      "evidence_rows": [
+        781,
+        1223,
+        4338
+      ],
+      "table": "characters",
+      "index": 45
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:28",
+      "evidence_rows": [
+        416
+      ],
+      "source_excerpt": "Sirus Ortimer",
+      "reason": "作者名专名；源文、音译、角色分类及一致性均无冲突，无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "416 原文明确出现 Sirus Ortimer，为《Deconstructing Portals and Gateways》作者。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "西鲁斯·奥蒂默 对 Sirus Ortimer 音译自然，未发现既有异译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "被引用的作者属于 characters/proper_name；原文未给性别，保留其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此一处该人名，无同名或词族冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:33",
+      "evidence_rows": [
+        598,
+        599
+      ],
+      "source_excerpt": "I am Eeru, owner of The Lonely Spirits Tavern.",
+      "reason": "Eeru 为 Blackwater 酒馆老板；源文、译名、分类与一致性均通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "598 称其为 slender man 并自报 I am Eeru；599 以 His 指称。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "伊鲁 对应 Eeru，音译简洁且全批一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "598 明示男性男子，characters/proper_name 与 gender 男性相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "598 自报 Eeru，599 同指，译名伊鲁统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:34",
+      "evidence_rows": [
+        607,
+        712,
+        4280
+      ],
+      "source_excerpt": "My name is Erik",
+      "reason": "Bordertown 铁匠专名；term_reason 曾混入本批未支持的坩埚/Gunther 信息，已按原文修正。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "607 自报 Erik 并经营 Bordertown 金属工坊；712/4280 均称铁匠；原 term_reason 的坩埚/Gunther 细节无本批证据。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "埃里克 对应 Erik，音译稳定，无需改动。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "607/712/4280 均指向 Bordertown 铁匠，characters/proper_name 与 gender 男性成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "607、712、4280 同一 Erik，译名埃里克统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:36",
+      "evidence_rows": [
+        639,
+        1207,
+        3616,
+        4230,
+        4232
+      ],
+      "source_excerpt": "Farwick nods his head",
+      "reason": "Farwick 为 Aridell 铁匠/店主；4230 以 his 指称，性别应为男性，term_reason 也需去掉未支持表述。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "639/1207/3616/4232 均指 Farwick；本行证据支持其为 Aridell 铁匠/金属工坊店主并按价收购 Mithril。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "法威克 对 Farwick 音译一致，所有出处同名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "4230 用 Farwick nods his head，性别应为男性；characters/proper_name 不变。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "639、1207、3616、4230、4232 均同指 Farwick，译名法威克统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:37",
+      "evidence_rows": [
+        679,
+        681,
+        696,
+        4300
+      ],
+      "source_excerpt": "My name is Paul",
+      "reason": "Paul 为 Salted Coast 患病男子；term_reason 原含本批未支持的 Fleshrot/送药信息，已按证据修正。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "679 自报 Paul 且重病，681 说明 Salted Coast，696 涉及 Father Michael 的信件与传送门指示；原 term_reason 的 Fleshrot/送药无本批证据。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保罗 对应 Paul，音译稳定。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "679 明示 a withered man，characters/proper_name 与 gender 男性成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "679、696、4300 同指 Paul，译名保罗统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:38",
+      "evidence_rows": [
+        563,
+        3757
+      ],
+      "source_excerpt": "Lord Thorndike",
+      "reason": "Lord Thorndike 为 Baron's Thicket 旧猎营主人；按已发布 v1.5 与 e7 统一为桑代克领主，并清理 term_reason 备注。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "563/3757 原文均作 Lord Thorndike，且 563 说明他养 Carniraptors。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译索恩代克领主与已发布 v1.5 及 e7 的桑代克不一致；统一改为桑代克领主。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "563/3757 指向人类领主，characters/proper_name 与 gender 男性成立。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Thorndike 词族在 e6/e7/e8 应共用桑代克；本条由索恩代克改为桑代克。"
+        }
+      }
+    },
+    {
+      "ref": "characters:54",
+      "evidence_rows": [
+        867,
+        872,
+        4095
+      ],
+      "source_excerpt": "Human named Thorndike killed him",
+      "reason": "Thorndike 为巨人杀手；译名桑代克与 v1.5/e6 统一，无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "867/872/4095 均载 Human named Thorndike 杀 Thorus 并取头骨。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "桑代克 对 Thorndike 为惯用音译，且与已发布 v1.5 一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "867 称 human named Thorndike、Giant slayer，characters/proper_name 与 gender 男性成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e6 改为桑代克领主后，本条桑代克与词族一致；e8 同改桑代克营地。"
+        }
+      }
+    },
+    {
+      "ref": "terms:305",
+      "evidence_rows": [
+        1227,
+        3112
+      ],
+      "source_excerpt": "Camp Thorndike",
+      "reason": "Camp Thorndike 为 Thorndike 的狩猎营地；与 e6/e7 统一为桑代克营地。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1227/3112 原文均作 Camp Thorndike，1227 指明为取巨人酋长头骨之处。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译索恩代克营地与 Thorndike 词族桑代克不一致；改为桑代克营地。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1227/3112 均为地名，terms/proper_name 与 category_path 地名相符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Thorndike 词族统一为桑代克；本条原索恩代克需改为桑代克营地。"
+        }
+      }
+    },
+    {
+      "ref": "characters:41",
+      "evidence_rows": [
+        740,
+        3949,
+        4320
+      ],
+      "source_excerpt": "My name is Mary",
+      "reason": "Mary 为寻找丈夫 Bradon 的女性；译名、分类与一致性均无冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "740 交代其丈夫为 Bradon，3949/4320 自报 My name is Mary。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "玛丽 对 Mary 为常见音译，全批一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3949/4320 为女性 NPC，characters/proper_name 与 gender 女性成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "740、3949、4320 等均指同一 Mary，译名玛丽统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:42",
+      "evidence_rows": [
+        740,
+        3951,
+        4322
+      ],
+      "source_excerpt": "my husband's name is Bradon",
+      "reason": "Bradon 为 Mary 失踪的丈夫；译名、分类与一致性均无冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "740 明说 my husband's name is Bradon，3951/4322 说明他去 Darkford 取零件未归。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "布拉登 对 Bradon 音译自然，全批一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "740/3951/4322 均指向 Mary 的丈夫，characters/proper_name 与 gender 男性成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "740、3951、4322 均为同一 Bradon，译名布拉登统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:45",
+      "evidence_rows": [
+        781,
+        1223,
+        4338
+      ],
+      "source_excerpt": "I am Oolaseph",
+      "reason": "Oolaseph 为会心灵传话的古老树木；按 he/his 修正性别，并修正 term_reason 中无证据的泰尔莫。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "781/4338 自称 Oolaseph 且为 Tanglewood Forest 最初树后裔；原 term_reason 的泰尔莫无本批证据。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "奥拉塞夫 对应 Oolaseph，音译稳定；与 e12 拼写变体共用译名可接受。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "1223、4338 分别以 he、His leaves 指代，gender 应由其他改为男性；characters/proper_name 不变。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Oolaseph 与 Oolasepf 为同一树木角色的拼写变体，共用奥拉塞夫不产生新实体。"
+        }
+      }
+    },
+    {
+      "ref": "characters:46",
+      "evidence_rows": [
+        780
+      ],
+      "source_excerpt": "Oolasepf senses your approach.",
+      "reason": "Oolasepf 为 Oolaseph 的拼写变体；共用奥拉塞夫合理，本行无足够性别证据，不臆改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "780 原文作 Oolasepf senses your approach，并称 Greetings again，指向已识别的树木角色。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "奥拉塞夫 与 e11 的 Oolaseph 译名一致；f1 的同译属同角色拼写变体。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "780 为角色名，characters/proper_name 成立；本行无性别证据，保留其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Oolasepf 与 Oolaseph 仅尾字母差异，按同一古老树木的拼写变体共用译名，不另造新名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:28",
+    "characters:33",
+    "characters:34",
+    "characters:36",
+    "characters:37",
+    "characters:38",
+    "characters:54",
+    "terms:305",
+    "characters:41",
+    "characters:42",
+    "characters:45",
+    "characters:46"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

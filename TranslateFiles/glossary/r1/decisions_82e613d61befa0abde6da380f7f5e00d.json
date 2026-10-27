@@ -1,0 +1,406 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 的来源、译名、分类与一致性。修正 e5、e6、e9、e10、e12 的译名及理由；确认 f1 为 Goblin/Goblins 单复数变体，统一采用已发布译名「地精」；确认 f2 为 Sonic Blast/SonicBlast 拼写变体，统一「音波冲击」。",
+  "acknowledged_findings": [
+    "F0262",
+    "F0279"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "燃焰武器",
+        "term_reason": "原文为卷轴法术名，效果为给手持武器附加火焰伤害；取「燃焰」贴合 Enkindled，并使「武器」核心与同族复合词一致。"
+      },
+      "reason": "比较「点燃武器」「燃焰武器」「燃火武器」后，结合 1126 所述附加火焰伤害，改定为更贴合法术效果且保持武器词族核心的「燃焰武器」。",
+      "evidence_rows": [
+        1126
+      ],
+      "table": "terms",
+      "index": 151
+    },
+    {
+      "patch": {
+        "recommended_translation": "掘墓人之焰",
+        "term_reason": "原文为卷轴法术名，创造漂浮魔法火炬；Gravedigger's 核心与「掘墓人之光」「掘墓人护符」统一译作「掘墓人」。"
+      },
+      "reason": "候选「掘墓者之焰」与「掘墓人之焰」中，按 Gravedigger's 词族核心统一为「掘墓人」，修正为「掘墓人之焰」。",
+      "evidence_rows": [
+        1114
+      ],
+      "table": "terms",
+      "index": 156
+    },
+    {
+      "patch": {
+        "recommended_translation": "《泰尔莫尔史》",
+        "term_reason": "Eleanor 抽屉中的历史书籍标题；原文拼作 Thaemore，按地名 Thaermore 的统一译名「泰尔莫尔」处理。"
+      },
+      "reason": "原文标题 The History of Thaemore 中的 Thaemore 与常见 Thaermore 为拼写变体，按书名词族统一为《泰尔莫尔史》。",
+      "evidence_rows": [
+        484
+      ],
+      "table": "terms",
+      "index": 178
+    },
+    {
+      "patch": {
+        "recommended_translation": "地精",
+        "term_reason": "原文指组织成氏族、袭击城镇并与人类交战的种族/势力；Goblin/Goblins 单复数变体统一采用已发布 v1.5 译名「地精」。"
+      },
+      "reason": "核对 f1 后确认 Goblin 与 Goblins 为单复数变体，不是不同实体；按已发布 v1.5 译名统一为「地精」。",
+      "evidence_rows": [
+        488,
+        3024
+      ],
+      "table": "terms",
+      "index": 179
+    },
+    {
+      "patch": {
+        "recommended_translation": "库房总管",
+        "term_reason": "Repository 中核验护符与通行钥、管理 vault 的官员头衔；按已发布 v1.5 统一为「库房总管」。"
+      },
+      "reason": "比较「宝库总管」「宝库主管」「金库主管」「金库总管」后，按原文 Repository 的 vault 官员身份及已发布 v1.5 译名，统一为「库房总管」。",
+      "evidence_rows": [
+        3874
+      ],
+      "table": "terms",
+      "index": 184
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:144",
+      "evidence_rows": [
+        1108
+      ],
+      "source_excerpt": "Dancing Lights",
+      "reason": "核对来源、译名、分类与一致性；法术名译作「舞光」，未发现需修改项。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1108 原文为法术名 Dancing Lights，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Dancing Lights 直译为「舞光」，与现有推荐译名一致，可作卷轴法术名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 技能合法；term_kind game_term、enforcement required 与法术机制条目相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 light armors 仅共享 light 词面，语义不同；不作为同义术语处理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:148",
+      "evidence_rows": [
+        1072
+      ],
+      "source_excerpt": "Divine Heal",
+      "reason": "核对来源、译名、分类与一致性；译为「神圣治疗」符合法术名及治疗效果。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1072 原文为法术名 Divine Heal，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Divine Heal 译为「神圣治疗」，贴合神圣光治疗伤口的机制说明。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 技能合法；game_term、required 适用于法术条目。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Divine Ore 共享 divine 核心「神圣」，但复合词语义不同，不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:149",
+      "evidence_rows": [
+        1116
+      ],
+      "source_excerpt": "Element Armor",
+      "reason": "核对来源、译名、分类与一致性；译为「元素护甲」符合抗性法术机制。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1116 原文为法术名 Element Armor，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Element Armor 译为「元素护甲」，与提升元素抗性的说明相符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 技能合法；game_term、required 适用于法术条目。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 light armors 共享 armor 词面但复合语义不同；保留「元素护甲」不强行统一为轻甲译法。"
+        }
+      }
+    },
+    {
+      "ref": "terms:150",
+      "evidence_rows": [
+        1092
+      ],
+      "source_excerpt": "Enchanted Weapon",
+      "reason": "核对来源、译名、分类与一致性；译为「附魔武器」符合临时附加魔法伤害的机制。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1092 原文为法术名 Enchanted Weapon，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Enchanted Weapon 译为「附魔武器」，贴合为武器附加魔法伤害的说明。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 技能合法；game_term、required 适用于法术条目。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Enkindled Weapon 共享 weapon 核心「武器」，同类复合词核心一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:151",
+      "evidence_rows": [
+        1126
+      ],
+      "source_excerpt": "Enkindled Weapon",
+      "reason": "核对来源、译名、分类与一致性；将「点燃武器」修正为「燃焰武器」，并统一武器词族核心。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1126 原文为法术名 Enkindled Weapon，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原推荐「点燃武器」偏动作；结合 1126 所述为手持武器附加火焰伤害，改定为「燃焰武器」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 技能合法；game_term、required 适用于法术条目。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Enchanted Weapon 等同族复合词统一保留「武器」核心，并采用更贴合火焰效果的「燃焰」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:156",
+      "evidence_rows": [
+        1114
+      ],
+      "source_excerpt": "Gravedigger's Flame",
+      "reason": "核对来源、译名、分类与一致性；将「掘墓者之焰」修正为「掘墓人之焰」，统一 Gravedigger's 词族核心。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1114 原文为法术名 Gravedigger's Flame，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原推荐「掘墓者之焰」与同词族已有「掘墓人之光」「掘墓人护符」核心不一致，改为「掘墓人之焰」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 技能合法；game_term、required 适用于法术条目。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "按 Gravedigger's 构词统一核心为「掘墓人」；本条 1114 足以证明该构词，不视为不同实体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:170",
+      "evidence_rows": [
+        1122
+      ],
+      "source_excerpt": "Sonic Blast",
+      "reason": "核对来源、译名、分类与一致性；译为「音波冲击」，并确认 f2 为同一法术拼写变体。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1122 原文为法术名 Sonic Blast，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Sonic Blast 译为「音波冲击」，符合产生次声波震晕目标的机制说明。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 技能合法；game_term、required 适用于法术条目。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "已核对 f2：Sonic Blast 与 SonicBlast 为同一法术的拼写变体，统一「音波冲击」，不是不同名称冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:176",
+      "evidence_rows": [
+        466
+      ],
+      "source_excerpt": "the Magick Emporium",
+      "reason": "核对来源、译名、分类与一致性；商店名译作「魔法商行」，分类为组织可用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "466 原文出现 the Magick Emporium，为 Aridell 的商店名，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Magick Emporium 译为「魔法商行」，保留商店名性质且简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 组织合法；商店名按组织类专名收录，proper_name、required 相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Elemental Magick 共享 Magick 核心「魔法」，复合词性质不同，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:178",
+      "evidence_rows": [
+        484
+      ],
+      "source_excerpt": "The History of Thaemore",
+      "reason": "核对来源、译名、分类与一致性；将《泰尔莫史》修正为《泰尔莫尔史》，统一地名核心译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "484 原文出现 The History of Thaemore，指 Eleanor 抽屉中的历史书籍，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译《泰尔莫史》与已有 Thaermore 书名候选《泰尔莫尔史》不一致；按拼写变体统一为《泰尔莫尔史》。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 物品合法；书籍专名 proper_name、required 相符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Thaemore 视为 Thaermore 的拼写变体，书名核心「泰尔莫尔」统一；不因分批而隔离同一书名变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:179",
+      "evidence_rows": [
+        488,
+        3024
+      ],
+      "source_excerpt": "attacked by Goblins",
+      "reason": "核对来源、译名、分类与一致性；将「哥布林」修正为已发布译名「地精」，并确认单复数变体统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "488 原文 attacked by Goblins 指袭击城镇的种族势力，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原推荐「哥布林」与已发布 v1.5 译名「地精」不一致；按已发布译名修正为「地精」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 种族合法；game_term、required 适用于游戏种族/势力。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已核对 f1：Goblin/Goblins 是单复数变体，统一为「地精」；3024 亦以 The Goblins 指同一敌对势力，不是不同实体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:180",
+      "evidence_rows": [
+        497
+      ],
+      "source_excerpt": "Antique Sextant",
+      "reason": "核对来源、译名、分类与一致性；任务物品译作「古董六分仪」，未发现需修改项。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "497 原文出现 Antique Sextant，并作为向 Garrett 展示的任务物品，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Antique Sextant 译为「古董六分仪」，贴合家族传家宝与任务物品说明。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 物品合法；proper_name、required 与任务物品专名相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现同形名称或共享译名冲突；保留「古董六分仪」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:184",
+      "evidence_rows": [
+        3874,
+        553
+      ],
+      "source_excerpt": "I am the Vault Master here at the Repository.",
+      "reason": "核对来源、译名、分类与一致性；将「宝库总管」修正为已发布译名「库房总管」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3874 原文 I am the Vault Master here at the Repository 指 Repository 中管理 vault 的官员，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "候选「宝库总管」「宝库主管」「金库主管」「金库总管」中，按已发布 v1.5 统一为「库房总管」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 身份合法；game_term、required 适用于查验授权的官员头衔。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已核对多种候选及 553 所述 security vault in the Repository；按已发布译名统一「库房总管」，不采用宝库/金库主管等变体。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:144",
+    "terms:148",
+    "terms:149",
+    "terms:150",
+    "terms:151",
+    "terms:156",
+    "terms:170",
+    "terms:176",
+    "terms:178",
+    "terms:179",
+    "terms:180",
+    "terms:184"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

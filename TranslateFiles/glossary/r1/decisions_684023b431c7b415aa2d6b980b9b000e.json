@@ -1,0 +1,377 @@
+{
+  "review_complete": true,
+  "review_summary": "完成 e1-e12 术语审校；确认 e10 统一为「议长」，e3 增加 whole_record 适用范围以区分普通 divine light；其余译名、分类与词族关系核对通过。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "row 1400 为独立法术名；row 1103 的 'searing divine light' 为普通效果描述，避免全局替换。"
+        },
+        "term_reason": "独立法术名；普通效果描述中的 divine light 不适用。"
+      },
+      "reason": "限定为独立法术名，避免将 row 1103 的普通 divine light 描述误作法术名替换。",
+      "evidence_rows": [
+        1400,
+        1103
+      ],
+      "table": "terms",
+      "index": 346
+    },
+    {
+      "patch": {
+        "recommended_translation": "议长",
+        "term_reason": "William 在 Blackwater 的职位，即议会议长。"
+      },
+      "reason": "按已发布 v1.5 译名统一 Council Head 为「议长」，并清理 term_reason 中的待核对注记。",
+      "evidence_rows": [
+        1236
+      ],
+      "table": "terms",
+      "index": 372
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:342",
+      "evidence_rows": [
+        2394,
+        1518
+      ],
+      "source_excerpt": "Save vs Magick",
+      "reason": "确认对抗魔法的豁免标签。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "row 2394 原文含 '[Save vs Magick: SUCCESS!]'，与源文 Save vs Magick 一致；row 1518 为 'Save vs. Magick' 变体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'魔法豁免' 准确表达 Save vs Magick 的对抗魔法豁免含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，符合豁免检定标签而非技能/物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 row 1518 的带句点变体同义；术语无其他冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:343",
+      "evidence_rows": [
+        1514
+      ],
+      "source_excerpt": "Save vs. Element",
+      "reason": "确认对抗元素的豁免标签。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "row 1514 原文 '[Save vs. Element: SUCCESS!]' 直接含源文。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'元素豁免' 对应 Save vs. Element。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，豁免检定标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同结构的对抗魔法豁免标签平行，元素/魔法区分清楚。"
+        }
+      }
+    },
+    {
+      "ref": "terms:346",
+      "evidence_rows": [
+        1400,
+        1103
+      ],
+      "source_excerpt": "Divine Light",
+      "reason": "确认独立法术名，并限定避免同形普通词误替。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "row 1400 独立 'Divine Light' 可作法术名；row 1103 的 'searing divine light' 为普通效果描述，已区分。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'神光术' 作为法术名可表达 Divine Light；普通描述不套用该译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=技能，法术名归入技能类别可接受。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 applicability=whole_record，仅匹配独立标签，避免替换 row 1103 的普通 divine light；译名本身不改。"
+        }
+      }
+    },
+    {
+      "ref": "terms:355",
+      "evidence_rows": [
+        1736,
+        1806
+      ],
+      "source_excerpt": "Powder Blast",
+      "reason": "确认陷阱名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "row 1736 为独立 'Powder Blast'，row 1806 '[Powder Blast]' 为陷阱触发提示。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'火药爆裂' 对应陷阱名 Powder Blast，简洁可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，陷阱名不归技能/物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立名与行内 [Powder Blast] 用法一致，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:363",
+      "evidence_rows": [
+        1613,
+        412
+      ],
+      "source_excerpt": "Alchemy Skill",
+      "reason": "确认炼金技能名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "row 1613 含 'Alchemy Skill rating'，row 412 说明需 Alchemy skill 至少 5。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'炼金技能' 对应 Alchemy Skill；核心炼金与相关候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=技能，符合技能等级名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "相关候选关系为 Alchemy 派生；保留核心'炼金'，Skill 译'技能'，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:364",
+      "evidence_rows": [
+        2118,
+        1022
+      ],
+      "source_excerpt": "Divination Skill",
+      "reason": "确认占卜/预言系技能名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "row 2118 含 'Your Divination Skill'，row 1022 说明 Healer 起始 Divination skill。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'占卜技能' 可表达 Divination Skill；与近义'预言'候选可并存，无权威证据要求强改。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=技能，符合魔法技能名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "相关候选关系涉及 Divination 派生；本条按技能名采用占卜，不盲目统一为预言，允许近义搭配差异。"
+        }
+      }
+    },
+    {
+      "ref": "terms:365",
+      "evidence_rows": [
+        2119,
+        1021
+      ],
+      "source_excerpt": "Elemental Skill",
+      "reason": "确认元素技能名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "row 2119 含 'Your Elemental Skill'，row 1021 说明 Magick User 起始 Elemental skill。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'元素技能' 对应 Elemental Skill。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=技能，符合魔法技能名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "相关候选关系为 Elemental 派生；'元素技能' 与元素魔法核心一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:368",
+      "evidence_rows": [
+        1891
+      ],
+      "source_excerpt": "Move ^Silent",
+      "reason": "确认降低移动声响的技能名及控制符。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "row 1891 含 'increase your ^Move ^Silent skill'，源文 Move ^Silent 可定位该技能。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'静步' 简洁表达 Move Silent；实际正文需按 row 1891 保留 ^ 控制符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=技能，符合技能名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 row 1891 的 Active Effects 提示一致，未发现同名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:371",
+      "evidence_rows": [
+        2286
+      ],
+      "source_excerpt": "Spire Guards",
+      "reason": "确认尖塔守卫部队名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "row 2286 原文 'a platoon of Spire Guards rushes into the room' 直接含源文。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'尖塔卫兵' 对应 Spire Guards，符合守卫部队语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=组织，指冲入房间的守卫部队。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "相关候选关系为 Spire/Guard 组合；尖塔核心一致，platoon 语境用卫兵合理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:372",
+      "evidence_rows": [
+        1236
+      ],
+      "source_excerpt": "Council Head",
+      "reason": "修正为已发布译名议长。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "row 1236 原文 'William, the Council Head of Blackwater' 直接含源文。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "已发布 v1.5 译名为「议长」，将「议会长」统一修正为「议长」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=身份，Council Head 为 William 的职位。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 row 1236 的 Blackwater 议长职位及 v1.5 译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:402",
+      "evidence_rows": [
+        1488,
+        1299
+      ],
+      "source_excerpt": "Master",
+      "reason": "确认等级称号并核对适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "row 1488 独立 'Master' 为等级标签；row 1299 'became a Master of all Skills!' 为句中称号用法。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'大师' 可表达等级/称号 Master。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=身份，等级称号归身份类别。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "applicability=whole_record 仅限定 row 1488 类独立标签；row 1299 句中称号按上下文译大师，不与此限定冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:417",
+      "evidence_rows": [
+        1325,
+        1452
+      ],
+      "source_excerpt": "gold pieces",
+      "reason": "确认货币单位。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "row 1325 独立 'gold pieces'，row 1452 'gold pieces have been' 均指货币。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'金币' 对应 gold pieces 货币单位。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=物品，货币单位归物品类别。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单复数及行内用法一致，均译金币，无冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:342",
+    "terms:343",
+    "terms:346",
+    "terms:355",
+    "terms:363",
+    "terms:364",
+    "terms:365",
+    "terms:368",
+    "terms:371",
+    "terms:372",
+    "terms:402",
+    "terms:417"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

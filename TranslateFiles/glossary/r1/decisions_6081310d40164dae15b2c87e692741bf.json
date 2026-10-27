@@ -1,0 +1,354 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对全部 12 条术语：e1-e10、e12 的原文身份、译名、类别与用名一致；e6 与刺客词族核心译名一致。f1 指出 Thief 与 Rogue 共用“盗贼”，已将 e11 改为“窃贼”并在 term_reason 中说明区分依据。",
+  "acknowledged_findings": [
+    "F0285"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "窃贼",
+        "term_reason": "角色职业列表中的职业名，指以偷窃技能为生的职业；与 Rogue 的译名区分。"
+      },
+      "reason": "f1 指出 Thief 与 Rogue 共用“盗贼”；将 e11 改为“窃贼”以消除歧义。",
+      "evidence_rows": [
+        1481
+      ],
+      "table": "terms",
+      "index": 395
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:385",
+      "evidence_rows": [
+        1471
+      ],
+      "source_excerpt": "Rebel",
+      "reason": "独立身份/职业名，保留“反抗者”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1471 原文为独立词 Rebel，列表中用作身份/职业名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“反抗者”，符合该独立身份名的字面与列表用法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入“身份”，与列表中的职业/身份名相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现与其他条目译名冲突，作为独立身份名使用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:387",
+      "evidence_rows": [
+        1473
+      ],
+      "source_excerpt": "Mage",
+      "reason": "独立职业名，保留“法师”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1473 为独立词 Mage；1890 的完整句显示其为施法者职业名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“法师”，与 1890 中施法者语境一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入“身份”，是角色职业/身份名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "“法师”与列表职业称谓一致，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:388",
+      "evidence_rows": [
+        1474
+      ],
+      "source_excerpt": "Shepherd",
+      "reason": "独立职业/身份名，保留“牧者”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1474 原文为独立词 Shepherd，列表中用作身份/职业名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“牧者”，符合简洁的奇幻职业/身份称谓。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入“身份”，与职业列表用法相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现与其他条目译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:389",
+      "evidence_rows": [
+        1475
+      ],
+      "source_excerpt": "Berserker",
+      "reason": "独立职业名，保留“狂战士”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1475 原文为独立词 Berserker，列表中用作职业/身份名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“狂战士”，是该奇幻职业的通行译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入“身份”，与职业列表用法相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现与其他条目译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:390",
+      "evidence_rows": [
+        1476
+      ],
+      "source_excerpt": "Assassin",
+      "reason": "独立职业名，保留“刺客”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1476 原文为独立词 Assassin，列表中用作职业/身份名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“刺客”，符合该职业名含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入“身份”，与职业列表用法相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "“刺客”与 e6 戒指名中的核心词一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:444",
+      "evidence_rows": [
+        2685
+      ],
+      "source_excerpt": "Ring of the Assassin",
+      "reason": "独特戒指名，保留“刺客之戒”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2685 的物品数据行包含唯一物品名 Ring of the Assassin。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“刺客之戒”，保留戒指名及刺客核心词。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入“物品”，原文为戒指装备数据行。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "核心词“刺客”与刺客类术语的译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:391",
+      "evidence_rows": [
+        1477
+      ],
+      "source_excerpt": "Warlock",
+      "reason": "独立职业名，保留“邪术师”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1477 原文为独立词 Warlock，列表中用作职业/身份名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“邪术师”，是该奇幻职业的通行译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入“身份”，与职业列表用法相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现与其他条目译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:392",
+      "evidence_rows": [
+        1478
+      ],
+      "source_excerpt": "Necromancer",
+      "reason": "独立职业名，保留“死灵法师”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1478 原文为独立词 Necromancer，列表中用作职业/身份名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“死灵法师”，符合该职业名含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入“身份”，与职业列表用法相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现与其他条目译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:393",
+      "evidence_rows": [
+        1479
+      ],
+      "source_excerpt": "Blighter",
+      "reason": "独立职业名，保留“枯萎者”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1479 原文为独立词 Blighter，列表中用作职业/身份名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“枯萎者”，保留该独特职业名的字面意象。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入“身份”，与职业列表用法相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现与其他条目译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:394",
+      "evidence_rows": [
+        1480
+      ],
+      "source_excerpt": "Barbarian",
+      "reason": "独立职业名，保留“野蛮人”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1480 原文为独立词 Barbarian，列表中用作职业/身份名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“野蛮人”，是该奇幻职业的通行译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入“身份”，与职业列表用法相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现与其他条目译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:395",
+      "evidence_rows": [
+        1481
+      ],
+      "source_excerpt": "Thief",
+      "reason": "按 f1 修正与 Rogue 的同译冲突，译为“窃贼”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1481 原文为独立词 Thief，列表中作为职业/身份名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“盗贼”与 Rogue 的既定译名相同，易混淆；改作“窃贼”以区分 Thief 的偷窃职业义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入“身份”，与职业列表用法相符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Rogue 不再共用“盗贼”，并保留 Thief 的偷窃职业含义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:396",
+      "evidence_rows": [
+        1482
+      ],
+      "source_excerpt": "Theurgist",
+      "reason": "独立职业名，保留“神术师”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1482 原文为独立词 Theurgist，列表中用作职业/身份名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“神术师”，符合该施法职业名的含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入“身份”，与职业列表用法相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现与其他条目译名冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:385",
+    "terms:387",
+    "terms:388",
+    "terms:389",
+    "terms:390",
+    "terms:444",
+    "terms:391",
+    "terms:392",
+    "terms:393",
+    "terms:394",
+    "terms:395",
+    "terms:396"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

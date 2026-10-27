@@ -1,0 +1,556 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对全部 12 条非翻译标识：音效事件、文件/资源名、物品内部类型均为运行时标识而非正文词义。为每条补齐 applicability：独立整条记录用 whole_record，嵌在 Sound/display 参数中的用 literal_context，IC_SCROLL/IC_NOTE 用大小写敏感的 text 范围并补 term_reason。未发现需隔离或新增条目。",
+  "acknowledged_findings": [
+    "F0209",
+    "F0210",
+    "F0211",
+    "F0212",
+    "F0213",
+    "F0220",
+    "F0221",
+    "F0222",
+    "F0224",
+    "F0225"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": false,
+          "reason": "原文仅作为整条音效事件标识出现，含大小写变体，未嵌入自然语言句。"
+        }
+      },
+      "reason": "原条目无适用范围；补为整条记录大小写不敏感保护，覆盖 SFX_Beaker 与 sfx_beaker 两种完整记录。",
+      "evidence_rows": [
+        2309,
+        2311
+      ],
+      "table": "non_translate",
+      "index": 307
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文仅作为整条音效事件标识出现，不嵌入自然语言句。"
+        }
+      },
+      "reason": "补足适用范围，避免将音效标识作全局禁翻。",
+      "evidence_rows": [
+        2312
+      ],
+      "table": "non_translate",
+      "index": 308
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文仅作为整条音效事件标识出现，不嵌入自然语言句。"
+        }
+      },
+      "reason": "补足适用范围，限定为完整记录匹配。",
+      "evidence_rows": [
+        2313
+      ],
+      "table": "non_translate",
+      "index": 309
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文仅作为整条音效事件标识出现，不嵌入自然语言句。"
+        }
+      },
+      "reason": "补足适用范围，限定为完整记录匹配。",
+      "evidence_rows": [
+        2316
+      ],
+      "table": "non_translate",
+      "index": 310
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文仅作为整条音效事件标识出现，不嵌入自然语言句。"
+        }
+      },
+      "reason": "补足适用范围，限定为完整记录匹配。",
+      "evidence_rows": [
+        2317
+      ],
+      "table": "non_translate",
+      "index": 311
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文仅作为完整记录中的文件扩展名/资源标识出现。"
+        }
+      },
+      "reason": "补足适用范围，仅匹配完整记录 .tre，不扩为普通片段禁翻。",
+      "evidence_rows": [
+        2443
+      ],
+      "table": "non_translate",
+      "index": 330
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文仅作为整条物品内部标识出现，不嵌入自然语言句。"
+        }
+      },
+      "reason": "补足适用范围，限定为完整记录匹配。",
+      "evidence_rows": [
+        2497
+      ],
+      "table": "non_translate",
+      "index": 333
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "display (",
+          "suffix": ")",
+          "reason": "地图图片资源名仅出现在 display (regmap1.png) 参数中。"
+        }
+      },
+      "reason": "原条目无适用范围；补为 display(...) 参数内的精确字面匹配。",
+      "evidence_rows": [
+        2522,
+        2660
+      ],
+      "table": "non_translate",
+      "index": 334
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "(",
+          "suffix": ")",
+          "reason": "音效事件名仅作为 Sound(...) 的括号参数出现，保护该参数本身。"
+        }
+      },
+      "reason": "补足适用范围，限定为括号内的 SFX_Quaff 参数，避免全局禁翻。",
+      "evidence_rows": [
+        2485,
+        2493,
+        2519
+      ],
+      "table": "non_translate",
+      "index": 335
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "(",
+          "suffix": ")",
+          "reason": "音效事件名仅作为 Sound(...) 的括号参数出现，保护该参数本身。"
+        }
+      },
+      "reason": "补足适用范围，限定为括号内的 SFX_Heal 参数，避免全局禁翻。",
+      "evidence_rows": [
+        2498,
+        2499
+      ],
+      "table": "non_translate",
+      "index": 336
+    },
+    {
+      "patch": {
+        "term_reason": "内部物品类型标识（IC_SCROLL），作为独立记录或 CSV 记录首字段保留。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "IC_SCROLL 是特有全大写内部物品类型标识；既以独立记录出现，也作为物品定义 CSV 的首个引号字段出现，非自然语言词，需在文本中保留原样。"
+        }
+      },
+      "reason": "补足缺失的 term_reason 与适用范围；该标识具有独立与嵌入两类用法，使用大小写敏感 text。",
+      "evidence_rows": [
+        1347,
+        2698,
+        2722
+      ],
+      "table": "non_translate",
+      "index": 338
+    },
+    {
+      "patch": {
+        "term_reason": "内部物品类型标识（IC_NOTE），作为独立记录或 CSV 记录首字段保留。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "IC_NOTE 是特有全大写内部物品类型标识；既以独立记录出现，也作为物品定义 CSV 的首个引号字段出现，非自然语言词，需在文本中保留原样。"
+        }
+      },
+      "reason": "补足缺失的 term_reason 与适用范围；该标识具有独立与嵌入两类用法，使用大小写敏感 text。",
+      "evidence_rows": [
+        1345,
+        2737,
+        2766
+      ],
+      "table": "non_translate",
+      "index": 339
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:307",
+      "evidence_rows": [
+        2309,
+        2311
+      ],
+      "source_excerpt": "SFX_Beaker",
+      "reason": "非翻译音效标识；补 whole_record 大小写不敏感范围，覆盖两种完整记录写法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2309 为完整记录 SFX_Beaker，2311 为完整记录 sfx_beaker，均与音效事件标识一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 内部标识，不设中文译名，应保留原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "音效事件标识符，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 whole_record 且 case_sensitive=false，仅匹配完整记录，避免全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:308",
+      "evidence_rows": [
+        2312
+      ],
+      "source_excerpt": "SFX_EQP_Ring",
+      "reason": "非翻译音效标识；补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2312 原文完整记录即 SFX_EQP_Ring。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "内部音效事件标识，不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "音效事件标识符，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 whole_record 且大小写敏感，限定完整记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:309",
+      "evidence_rows": [
+        2313
+      ],
+      "source_excerpt": "SFX_Key",
+      "reason": "非翻译音效标识；补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2313 原文完整记录即 SFX_Key。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "内部音效事件标识，不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "音效事件标识符，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 whole_record 且大小写敏感，限定完整记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:310",
+      "evidence_rows": [
+        2316
+      ],
+      "source_excerpt": "SFX_Pot",
+      "reason": "非翻译音效标识；补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2316 原文完整记录即 SFX_Pot。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "内部音效事件标识，不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "音效事件标识符，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 whole_record 且大小写敏感，限定完整记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:311",
+      "evidence_rows": [
+        2317
+      ],
+      "source_excerpt": "SFX_Gem",
+      "reason": "非翻译音效标识；补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2317 原文完整记录即 SFX_Gem。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "内部音效事件标识，不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "音效事件标识符，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 whole_record 且大小写敏感，限定完整记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:330",
+      "evidence_rows": [
+        2443
+      ],
+      "source_excerpt": ".tre",
+      "reason": "非翻译文件扩展名/资源标识；补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2443 原文完整记录即 .tre。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "文件扩展名/资源标识，不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "资源标识符，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 whole_record 且大小写敏感，仅保护完整记录 .tre。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:333",
+      "evidence_rows": [
+        2497
+      ],
+      "source_excerpt": "IC_RANDOM",
+      "reason": "非翻译物品内部标识；补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2497 原文完整记录即 IC_RANDOM。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "内部物品标识，不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品内部标识符，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 whole_record 且大小写敏感，限定完整记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:334",
+      "evidence_rows": [
+        2522,
+        2660
+      ],
+      "source_excerpt": "display (regmap1.png)",
+      "reason": "非翻译地图图片资源名；补 literal_context，限定 display(...) 参数。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2522 与 2660 中均出现 display (regmap1.png) 的连续原文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "图片资源名，不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "图片资源标识符，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 literal_context：prefix 为 display (，suffix 为 )，仅匹配该资源参数。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:335",
+      "evidence_rows": [
+        2485,
+        2493
+      ],
+      "source_excerpt": "Sound(SFX_Quaff)",
+      "reason": "非翻译音效事件名；补 literal_context，限定括号参数。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2485 与 2493 均显示 SFX_Quaff 位于 Sound/sound(...) 参数中。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "音效事件标识，不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "音频事件标识符，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 literal_context：prefix 为 (，suffix 为 )，限定括号内参数匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:336",
+      "evidence_rows": [
+        2498,
+        2499
+      ],
+      "source_excerpt": "Sound(SFX_Heal)",
+      "reason": "非翻译音效事件名；补 literal_context，限定括号参数。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2498 与 2499 均显示 SFX_Heal 位于 Sound(...) 参数中。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "音效事件标识，不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "音频事件标识符，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 literal_context：prefix 为 (，suffix 为 )，限定括号内参数匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:338",
+      "evidence_rows": [
+        1347,
+        2698,
+        2722
+      ],
+      "source_excerpt": "IC_SCROLL",
+      "reason": "非翻译内部物品类型标识；补 term_reason 与大小写敏感 text 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1347 为独立记录 IC_SCROLL，2698/2722 的 CSV 记录首字段为 \"IC_SCROLL\"。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "内部物品类型标识，不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品内部类型标识符，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 term_reason 与 case_sensitive=true 的 text 范围，覆盖独立与嵌入式用法。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:339",
+      "evidence_rows": [
+        1345,
+        2737,
+        2766
+      ],
+      "source_excerpt": "IC_NOTE",
+      "reason": "非翻译内部物品类型标识；补 term_reason 与大小写敏感 text 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1345 为独立记录 IC_NOTE，2737/2766 的 CSV 记录首字段为 \"IC_NOTE\"。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "内部物品类型标识，不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品内部类型标识符，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 term_reason 与 case_sensitive=true 的 text 范围，覆盖独立与嵌入式用法。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:307",
+    "non_translate:308",
+    "non_translate:309",
+    "non_translate:310",
+    "non_translate:311",
+    "non_translate:330",
+    "non_translate:333",
+    "non_translate:334",
+    "non_translate:335",
+    "non_translate:336",
+    "non_translate:338",
+    "non_translate:339"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

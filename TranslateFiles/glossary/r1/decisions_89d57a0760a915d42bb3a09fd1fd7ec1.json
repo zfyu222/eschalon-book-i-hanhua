@@ -1,0 +1,477 @@
+{
+  "review_complete": true,
+  "review_summary": "完成 e1–e12 术语审校：将酒馆归为地名，统一「蔚蓝山口」「绝对复原药水」「26/15号护符通行钥」「缠木林」等固定名，保留「缠树藏骨堂」并统一 Tangletree 核心；已核对 f1–f3 的共用译名与同源关系。",
+  "acknowledged_findings": [
+    "F0258",
+    "F0259",
+    "F0282"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "地名"
+      },
+      "reason": "598/3208 指向 Blackwater 的具体酒馆场所，应归地名而非组织。",
+      "evidence_rows": [
+        598,
+        3208
+      ],
+      "table": "terms",
+      "index": 189
+    },
+    {
+      "patch": {
+        "recommended_translation": "蔚蓝山口",
+        "term_reason": "穿越屏障山脉的隘口，由达克福德扼守。"
+      },
+      "reason": "采用已发布 v1.5「蔚蓝山口」，统一 pass 的地理译法并清理待核对提示。",
+      "evidence_rows": [
+        615,
+        3397,
+        3807
+      ],
+      "table": "terms",
+      "index": 190
+    },
+    {
+      "patch": {
+        "recommended_translation": "绝对复原药水",
+        "term_reason": "Father Michael 托玩家交给患病者的稀有药水，用于治病。"
+      },
+      "reason": "与短名 Absolute Restoration 的已发布 v1.5 译名统一，并删除无出处的毒液推断。",
+      "evidence_rows": [
+        690,
+        3594,
+        4436
+      ],
+      "table": "terms",
+      "index": 196
+    },
+    {
+      "patch": {
+        "term_reason": "Lilith 鉴定其为开启 Underground Repository 中某箱子的特殊钥匙；任务护符。"
+      },
+      "reason": "原文 548 明确它为特殊钥匙，删除无出处的“26号库”推断。",
+      "evidence_rows": [
+        548,
+        675
+      ],
+      "table": "terms",
+      "index": 200
+    },
+    {
+      "patch": {
+        "recommended_translation": "26号护符通行钥",
+        "term_reason": "编号 26 的护符通行钥；脚本中用于 toggle_port 3573。"
+      },
+      "reason": "数字前置符合中文物品名，并与 15 号通行钥统一格式。",
+      "evidence_rows": [
+        673,
+        674,
+        4433
+      ],
+      "table": "terms",
+      "index": 201
+    },
+    {
+      "patch": {
+        "recommended_translation": "15号护符通行钥",
+        "term_reason": "编号 15 的护符通行钥；脚本中与 toggle_port 3573 关联。"
+      },
+      "reason": "数字前置符合中文物品名，并与同系列通行钥统一格式。",
+      "evidence_rows": [
+        676,
+        677,
+        987,
+        4435
+      ],
+      "table": "terms",
+      "index": 202
+    },
+    {
+      "patch": {
+        "term_reason": "Lorus of Eastleaf 的墓穴所在地，内有滑动锁；Tangletree 与 Tangletree Forest 同根，核心统一作「缠树」。"
+      },
+      "reason": "保留「缠树藏骨堂」以统一 Tangletree 核心，清理已发布「缠枝」待核对提示。",
+      "evidence_rows": [
+        792,
+        4010
+      ],
+      "table": "terms",
+      "index": 207
+    },
+    {
+      "patch": {
+        "recommended_translation": "缠木林",
+        "term_reason": "Ranger Lord 的辖地名，与 Tanglewood Forest 同源；短名作「缠木林」。"
+      },
+      "reason": "短名采用已发布 v1.5「缠木林」，与 Tanglewood Forest 的「缠木」核心一致。",
+      "evidence_rows": [
+        833,
+        3756
+      ],
+      "table": "terms",
+      "index": 210
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:189",
+      "evidence_rows": [
+        598,
+        3208
+      ],
+      "source_excerpt": "I am Eeru, owner of The Lonely Spirits Tavern.",
+      "reason": "将酒馆归类为地名；译名「孤魂酒馆」与无冠词变体一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "598/3208 均出现 The Lonely Spirits Tavern，598 并称 Eeru 为店主。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「孤魂酒馆」保留 tavern 的酒馆义，与 3208 招牌名相符。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原为「组织」，但 598/3208 指向 Blackwater 的具体酒馆场所，应改为「地名」。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与无冠词 Lonely Spirits Tavern 为同一店名的冠词变体，译名统一为「孤魂酒馆」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:190",
+      "evidence_rows": [
+        615,
+        3397,
+        3807
+      ],
+      "source_excerpt": "Darkford is the stronghold that secures Azure pass through Barrier Range",
+      "reason": "采用「蔚蓝山口」，统一通道名的地理译法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "615/3807 作 Azure pass，3397 作 Azure Pass，均指同一通道。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "pass 指穿越山脉的通道；按已发布 v1.5 统一为「蔚蓝山口」，不保留「蔚蓝隘口」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "615 说明其为由 Darkford 扼守的通道，属地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Barrier Range、Darkford 搭配一致，全名统一为「蔚蓝山口」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:191",
+      "evidence_rows": [
+        615,
+        3807,
+        4686
+      ],
+      "source_excerpt": "Barrier Range",
+      "reason": "无需改动；屏障山脉译名与原文相符。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "615/3807 作 Barrier Range，4686 地图标签同名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「屏障山脉」准确表达 barrier + range，保留既有标准译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "615/4686 表明其为分隔泰尔莫东西部的地图山脉，属地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Azure Pass、Darkford 的空间关系描述一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:196",
+      "evidence_rows": [
+        690,
+        3594,
+        4436
+      ],
+      "source_excerpt": "Potion of Absolute Restoration",
+      "reason": "统一为「绝对复原药水」，并删除无出处的毒液推断。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "690/3594/4436 均作 Potion of Absolute Restoration。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "采用已发布 v1.5「绝对复原药水」，不保留「完全复原药水」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "690/4436 为可给予/持有的任务药水，属物品。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与短名 Absolute Restoration 共用「绝对复原药水」，全短名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:199",
+      "evidence_rows": [
+        817,
+        628,
+        4446
+      ],
+      "source_excerpt": "Give the Incriminating Letter to Captain Morgan",
+      "reason": "无需改动；罪证信件为同一任务物品。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "817/4446 均作 Incriminating Letter，628 脚本移除同名物品。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「罪证信件」保留 incriminating 的罪证义和 letter 的信件义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "817/4446 为交给 Captain Morgan 的任务物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "628 的 remove_item 与 817/4446 指同一物品，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:200",
+      "evidence_rows": [
+        548,
+        675,
+        4434
+      ],
+      "source_excerpt": "it is actually a key. A very special key.",
+      "reason": "保留「奇异护符」，按原文将其认定为特殊钥匙而非普通饰品。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "548 作 the strange amulet，675/4434 作 Strange Amulet。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「奇异护符」直译 strange amulet，核心「护符」与通行钥一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "548/675/4434 指玩家持有的任务护符，属物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "548 明确其为特殊钥匙；不误译为普通饰品，保留护符核心。"
+        }
+      }
+    },
+    {
+      "ref": "terms:201",
+      "evidence_rows": [
+        673,
+        674,
+        4433
+      ],
+      "source_excerpt": "Show him the Amulet Passkey 26",
+      "reason": "统一为「26号护符通行钥」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "673/4433 作 Amulet Passkey 26，674 同名列脚本。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改为「26号护符通行钥」，数字前置，passkey 译通行钥。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "673/4433 为可出示的通行钥物品，属物品。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 15 号通行钥采用同一「编号+护符通行钥」格式。"
+        }
+      }
+    },
+    {
+      "ref": "terms:202",
+      "evidence_rows": [
+        676,
+        677,
+        987,
+        4435,
+        4442
+      ],
+      "source_excerpt": "Show him the Amulet Passkey 15",
+      "reason": "统一为「15号护符通行钥」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "676/4435/4442 作 Amulet Passkey 15，677/987 同名列脚本。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改为「15号护符通行钥」，数字前置，passkey 译通行钥。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "676/4435/4442 为可出示/给予的通行钥物品，属物品。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与同系列 Amulet Passkey 采用统一「编号+护符通行钥」格式。"
+        }
+      }
+    },
+    {
+      "ref": "terms:203",
+      "evidence_rows": [
+        1217,
+        694,
+        3083,
+        3807,
+        3951
+      ],
+      "source_excerpt": "Captain of Darkford",
+      "reason": "保留音译「达克福德」，不采用「暗渡」异体。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "694/1217/3083/3807 均作 Darkford；1217 指 Captain of Darkford。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「达克福德」为稳定音译，适用于城镇/据点名，避免同词多译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "615/1217/3951 表明其为由 Captain Morgan 驻守的城镇/要塞，属地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Azure Pass、Barrier Range 的专名体系一致；不采用「暗渡镇」等异体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:207",
+      "evidence_rows": [
+        792,
+        1994,
+        4010
+      ],
+      "source_excerpt": "His tomb is located in Tangletree Ossuary.",
+      "reason": "保留「缠树藏骨堂」，统一 Tangletree 核心。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "792/4010 作 Tangletree Ossuary，1994 为快速旅行标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「缠树藏骨堂」直译 Tangletree + Ossuary，保留藏骨堂义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "792/4010 表明其为 Lorus 墓穴所在藏骨堂，属地名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "将 Tangletree 核心统一作「缠树」，不采用已发布「缠枝」异体，避免与同根森林名分裂。"
+        }
+      }
+    },
+    {
+      "ref": "terms:209",
+      "evidence_rows": [
+        3994,
+        4337,
+        781
+      ],
+      "source_excerpt": "what your people would later call Tanglewood Forest.",
+      "reason": "保留「缠木森林」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "781/3994/4337 均作 Tanglewood Forest。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「缠木森林」保留 Tanglewood 的缠木+森林义，与短名 Tanglewood 同核。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3994/4337 指 Oolaseph 所在森林，属地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Tanglewood 短名共用「缠木」核心；与 Tangletree 的「缠树」按原文区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:210",
+      "evidence_rows": [
+        833,
+        3756,
+        3760
+      ],
+      "source_excerpt": "Ranger Lord of Tanglewood",
+      "reason": "短名采用「缠木林」，与 Tanglewood Forest 同核。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "833 作 Ranger Lord of Tanglewood，3756/3760 亦指该林区。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "短名按已发布 v1.5 作「缠木林」，与 Tanglewood Forest 的「缠木森林」同核。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "833/3756 指 Ranger Lord 辖地/附近林区，属地名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "采用短名「缠木林」；与 Tanglewood Forest 共用「缠木」核心，避免与 Tangletree 混用。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:189",
+    "terms:190",
+    "terms:191",
+    "terms:196",
+    "terms:199",
+    "terms:200",
+    "terms:201",
+    "terms:202",
+    "terms:203",
+    "terms:207",
+    "terms:209",
+    "terms:210"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

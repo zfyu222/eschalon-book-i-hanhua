@@ -1,0 +1,499 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校本批12条术语/非翻译项：确认法术、状态、职业与物品名的主译名，修正带控制符译名、跨条目词根一致性及非翻译标识符的适用范围；f1已通过补充whole_record范围处理。",
+  "acknowledged_findings": [
+    "F0045"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "传奇剑士",
+        "term_reason": "383为独立专名/标题The Legendary Swordsman；原文未提供更多载体信息，按专名直译。"
+      },
+      "reason": "移除未由原文证明的书籍书名号，按物品表条目保留专名直译。",
+      "evidence_rows": [
+        383
+      ],
+      "table": "terms",
+      "index": 136
+    },
+    {
+      "patch": {
+        "recommended_translation": "气盾",
+        "term_reason": "法术名；1666确认可弹开投射物，2698卷轴可学习该法术。"
+      },
+      "reason": "统一为气盾，与Air Shielded状态气盾护体词根一致，且更适合界面/卷轴名。",
+      "evidence_rows": [
+        1666,
+        2698
+      ],
+      "table": "terms",
+      "index": 137
+    },
+    {
+      "patch": {
+        "recommended_translation": "*盾牌",
+        "term_reason": "1047中以*标记的盾牌技能名；*为原文控制符，译文保留。"
+      },
+      "reason": "原译漏掉原文的控制符*，需在技能名译文中保留。",
+      "evidence_rows": [
+        1047
+      ],
+      "table": "terms",
+      "index": 273
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "1066整条记录为法术名 Bless；280/2699卷轴名内嵌用法按短语处理，避免普通 bless/blessed 误匹配。"
+        },
+        "term_reason": "1066为独立法术名；1016以'Bless'出现，280/2699卷轴名中的Bless同指该法术。"
+      },
+      "reason": "原applicability仅限Scroll of Bless，遗漏1066独立法术名；改为whole_record锁定独立词条，避免普通词全局匹配。",
+      "evidence_rows": [
+        1066,
+        280
+      ],
+      "table": "terms",
+      "index": 138
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "text",
+          "reason": "1022的Healers与2576的of the Healer均指治疗职业；1554小写healer为普通求医语境，精确大写区分，仅保护职业名。"
+        }
+      },
+      "reason": "补充职业名范围，避免把1554小写普通healer误纳入。",
+      "evidence_rows": [
+        1022,
+        1554
+      ],
+      "table": "terms",
+      "index": 267
+    },
+    {
+      "patch": {
+        "recommended_translation": "治疗师的祝福绳带",
+        "term_reason": "2576为独特腰带名；Healer按职业术语统一为治疗师，Blessed在物品名中作祝福。"
+      },
+      "reason": "统一Healer译名并补出所属关系。",
+      "evidence_rows": [
+        2576
+      ],
+      "table": "terms",
+      "index": 430
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "1401整条记录为音效标识符SFX_Bless；本批无嵌入用例，按整条保护。"
+        },
+        "term_reason": "音效标识符；1401整条为SFX_Bless，保留不译。"
+      },
+      "reason": "补齐非翻译标识符的显式whole_record范围，避免全局禁翻。",
+      "evidence_rows": [
+        1401
+      ],
+      "table": "non_translate",
+      "index": 118
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "2349整条记录为预设角色数据路径data/healer；本批无嵌入用例，按整条保护。"
+        },
+        "term_reason": "预设角色数据路径；2349整条为data/healer，保留不译。"
+      },
+      "reason": "补齐数据路径标识符的显式whole_record范围，避免误扩到普通healer。",
+      "evidence_rows": [
+        2349
+      ],
+      "table": "non_translate",
+      "index": 323
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "text",
+          "reason": "Cat's Eyes为法术/药水效果名；235/281/1068/2528/2700均同指，精确大写与撇号形式区分普通cat's eyes。"
+        }
+      },
+      "reason": "补充效果名适用范围，避免与普通“猫眼”字面义混淆。",
+      "evidence_rows": [
+        1068,
+        2528,
+        235
+      ],
+      "table": "terms",
+      "index": 139
+    },
+    {
+      "patch": {
+        "recommended_translation": "猫^眼",
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "literal_context",
+          "prefix": "^",
+          "suffix": " allows",
+          "reason": "1895中granting you ^Cats ^Eyes allows...；^为原文控制符，译文保留且与Cat's Eyes统一为猫眼。"
+        },
+        "term_reason": "1895中作为法术/药水效果名；^为原文控制符，译文保留。"
+      },
+      "reason": "去掉无依据的“术”字，保留^控制符，并与e11统一核心译名“猫眼”。",
+      "evidence_rows": [
+        1895
+      ],
+      "table": "terms",
+      "index": 370
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:136",
+      "evidence_rows": [
+        383
+      ],
+      "source_excerpt": "The Legendary Swordsman",
+      "reason": "独立专名；移除未证实书名号，保留直译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "383仅给出The Legendary Swordsman，按独立专名处理，未扩展设定。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译《传奇剑士》加入书名号且暗示书名；该条目为物品表条目，改为传奇剑士。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "383为独立名称，保留物品类专名条目；无更强类别证据。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "专名主体“传奇剑士”不与同批其他条目冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:137",
+      "evidence_rows": [
+        279,
+        1110,
+        1666,
+        2698
+      ],
+      "source_excerpt": "Projectile deflected by Air Shield!",
+      "reason": "法术名，确认弹开投射物；统一气盾。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "279/1110/1666/2698均指同一法术Air Shield，1666说明其弹开投射物。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译空气护盾改为气盾，与e4气盾护体词根一致且更适合界面/卷轴。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能类法术，category_path=技能正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与Air Shielded状态气盾护体统一气盾词根。"
+        }
+      }
+    },
+    {
+      "ref": "terms:273",
+      "evidence_rows": [
+        1047
+      ],
+      "source_excerpt": "The *Shield Skill deals with the effective use of hand-held shields in combative situations.",
+      "reason": "技能名带*控制符，译文补回*。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1047正文为The *Shield Skill...，*为原文控制符，source保留正确。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译盾牌漏掉*控制符，改为*盾牌。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1047说明其为手持盾牌使用技能，技能分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Shield Skill与Air Shield为不同概念，不强行统一为同一词根。"
+        }
+      }
+    },
+    {
+      "ref": "terms:295",
+      "evidence_rows": [
+        1159
+      ],
+      "source_excerpt": "Air Shielded",
+      "reason": "状态标签，整条范围正确，气盾护体与e2一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1159整条即状态标签Air Shielded，whole_record范围准确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "气盾护体为四字状态标签，简洁且对应气盾法术生效。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "状态标签归入其他，避免当作独立技能名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e2气盾词根一致；状态词尾护体属语境差异。"
+        }
+      }
+    },
+    {
+      "ref": "terms:138",
+      "evidence_rows": [
+        1066,
+        280
+      ],
+      "source_excerpt": "Bless",
+      "reason": "独立法术名；修正范围并保留祝福译名。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "原applicability仅占Scroll of前缀，遗漏1066整条法术名；改为whole_record锁定独立法术名，卷轴名内嵌用法按短语处理。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Bless译祝福，与Blessed受祝福词根一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Bless为法术名，技能分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "祝福/受祝福为法术与状态的自然派生，允许词形差异。"
+        }
+      }
+    },
+    {
+      "ref": "terms:267",
+      "evidence_rows": [
+        1022,
+        1554
+      ],
+      "source_excerpt": "Healers are people who promote the restoration of life.",
+      "reason": "职业名治疗师；补大写范围避免普通healer。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "1022的Healers指职业，1554小写healer为普通求医语境；补case_sensitive text仅保护大写职业名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Healer职业译治疗师，与e8统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1022定义为促进生命恢复的职业，身份分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e8治疗师一致；小写普通healer不纳入。"
+        }
+      }
+    },
+    {
+      "ref": "terms:297",
+      "evidence_rows": [
+        1161
+      ],
+      "source_excerpt": "Blessed",
+      "reason": "状态标签，whole_record正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1161整条即状态标签Blessed，whole_record避免匹配447小写blessed形容词。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "受祝福符合状态标签且与Bless祝福词根一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "状态标签归其他，分类合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e5祝福、e8物品祝福用语区分状态/物品语境。"
+        }
+      }
+    },
+    {
+      "ref": "terms:430",
+      "evidence_rows": [
+        2576
+      ],
+      "source_excerpt": "Blessed Rope Belt of the Healer",
+      "reason": "独特腰带名；统一Healer为治疗师并补所属关系。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2576完整物品名为Blessed Rope Belt of the Healer。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译治疗者祝福绳带将Healer改为治疗者且缺所属关系；改为治疗师的祝福绳带。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "2576为IC_BELT物品记录，物品分类正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Healer统一为治疗师，Blessed用祝福，与e6/e7核心一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:118",
+      "evidence_rows": [
+        1401
+      ],
+      "source_excerpt": "SFX_Bless",
+      "reason": "音效标识符，补whole_record范围。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "1401整条为SFX_Bless标识符；原条目无applicability，补whole_record避免全局禁翻。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate标识符不译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "SFX_前缀与1401整条记录表明为音效标识符，保留分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批未见SFX_Bless嵌入用例，whole_record与证据一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:323",
+      "evidence_rows": [
+        2349
+      ],
+      "source_excerpt": "data/healer",
+      "reason": "数据路径，补whole_record范围。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "2349整条为data/healer路径；补whole_record，避免误扩到普通healer。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate路径不译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "data/前缀表明预设数据路径/标识符，保留分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无嵌入用例，whole_record范围与证据一致；与e6职业名区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:139",
+      "evidence_rows": [
+        1068,
+        2528,
+        235
+      ],
+      "source_excerpt": "Cat's Eyes",
+      "reason": "法术/效果名，补大小写敏感范围。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "1068整条Cat's Eyes、235/281卷轴/药水名及2528 effect内均同指；补case_sensitive text限定大写撇号形式。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Cat's Eyes译猫眼，适合药水/卷轴/效果名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为法术/药水效果名，技能分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e12的Cats ^Eyes核心猫眼一致；e12保留^控制符。"
+        }
+      }
+    },
+    {
+      "ref": "terms:370",
+      "evidence_rows": [
+        1895
+      ],
+      "source_excerpt": "Cats ^Eyes",
+      "reason": "效果名变体，保留^并统一猫眼。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "1895原文为^Cats ^Eyes allows...；条目source取其中的Cats ^Eyes，补literal_context限定该句。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译猫眼术增加术且丢^；改为猫^眼，保留控制符并与e11猫眼一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1895说明为法术/药水效果，技能分类正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "由猫眼术改为猫^眼，核心与e11猫眼统一，^为原文控制差异。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:136",
+    "terms:137",
+    "terms:273",
+    "terms:295",
+    "terms:138",
+    "terms:267",
+    "terms:297",
+    "terms:430",
+    "non_translate:118",
+    "non_translate:323",
+    "terms:139",
+    "terms:370"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

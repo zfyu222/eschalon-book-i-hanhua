@@ -1,0 +1,533 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对全部 12 条 SFX 音效资源标识符：来源均为独立记录且与原文一致，均属 non_translate 运行标记，不涉及正文翻译；已为每条补充 whole_record 适用范围，避免将 SFX_ 等片段扩展为全局禁翻。未发现译名或分类冲突，无需隔离或新增条目。",
+  "acknowledged_findings": [
+    "F0092",
+    "F0093",
+    "F0095",
+    "F0096",
+    "F0097",
+    "F0098",
+    "F0099",
+    "F0102",
+    "F0103",
+    "F0104",
+    "F0105",
+    "F0196"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "第1725行原文为完整音效资源标识符 SFX_Bash_Break，且仅见独立使用；应只保护完整记录，避免把 SFX_ 等片段作为全局禁翻词。"
+        }
+      },
+      "reason": "为独立音效标识符补充完整记录级适用范围。",
+      "evidence_rows": [
+        1725
+      ],
+      "table": "non_translate",
+      "index": 172
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "第2250行原文为完整音效资源标识符 SFX_Break，且仅见独立使用；应只保护完整记录，不能因含普通词 Break 而扩大保护范围。"
+        }
+      },
+      "reason": "为独立音效标识符补充完整记录级适用范围。",
+      "evidence_rows": [
+        2250
+      ],
+      "table": "non_translate",
+      "index": 292
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "第1746行原文为完整音效资源标识符 SFX_Container_Latch，且仅见独立使用；应只保护完整记录，不拆分保护 Container/Latch 等片段。"
+        }
+      },
+      "reason": "为独立音效标识符补充完整记录级适用范围。",
+      "evidence_rows": [
+        1746
+      ],
+      "table": "non_translate",
+      "index": 173
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "第1750行原文为完整音效资源标识符 SFX_Container_Open，且仅见独立使用；应只保护完整记录，不对普通词 Open 作全局禁翻。"
+        }
+      },
+      "reason": "为独立音效标识符补充完整记录级适用范围。",
+      "evidence_rows": [
+        1750
+      ],
+      "table": "non_translate",
+      "index": 175
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "第1768行原文为完整音效资源标识符 SFX_Disarm，且仅见独立使用；应只保护完整记录，避免将普通词 Disarm 的用法一并禁翻。"
+        }
+      },
+      "reason": "为独立音效标识符补充完整记录级适用范围。",
+      "evidence_rows": [
+        1768
+      ],
+      "table": "non_translate",
+      "index": 177
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "第1769行原文为完整音效资源标识符 SFX_Disarm_Success，且仅见独立使用；应只保护完整记录，不把其组成词扩散为全局规则。"
+        }
+      },
+      "reason": "为独立音效标识符补充完整记录级适用范围。",
+      "evidence_rows": [
+        1769
+      ],
+      "table": "non_translate",
+      "index": 178
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "第1771行原文为完整音效资源标识符 SFX_Disarm_Fail，且仅见独立使用；应只保护完整记录，不把其组成词扩散为全局规则。"
+        }
+      },
+      "reason": "为独立音效标识符补充完整记录级适用范围。",
+      "evidence_rows": [
+        1771
+      ],
+      "table": "non_translate",
+      "index": 179
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "第1779行原文为完整音效资源标识符 SFX_Lockpick，且仅见独立使用；应只保护完整记录，避免将普通词 Lockpick 作全局禁翻。"
+        }
+      },
+      "reason": "为独立音效标识符补充完整记录级适用范围。",
+      "evidence_rows": [
+        1779
+      ],
+      "table": "non_translate",
+      "index": 181
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "第1785行原文为完整音效资源标识符 SFX_EQP_ARMM，且仅见独立使用；应只保护完整记录，不将缩写片段单独作为全局规则。"
+        }
+      },
+      "reason": "为独立音效标识符补充完整记录级适用范围。",
+      "evidence_rows": [
+        1785
+      ],
+      "table": "non_translate",
+      "index": 184
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "第1790行原文为完整音效资源标识符 sfx_desert，且仅见独立使用；大小写与下划线均属标识符本身，应只保护完整记录。"
+        }
+      },
+      "reason": "为独立音效标识符补充完整记录级适用范围。",
+      "evidence_rows": [
+        1790
+      ],
+      "table": "non_translate",
+      "index": 185
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "第1792行原文为完整音效资源标识符 SFX_Pullbow，且仅见独立使用；应只保护完整记录，不拆分保护 Pullbow 片段。"
+        }
+      },
+      "reason": "为独立音效标识符补充完整记录级适用范围。",
+      "evidence_rows": [
+        1792
+      ],
+      "table": "non_translate",
+      "index": 186
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "第1795行原文为完整音效资源标识符 SFX_Glass，且仅见独立使用；应只保护完整记录，避免将普通词 Glass 作全局禁翻。"
+        }
+      },
+      "reason": "为独立音效标识符补充完整记录级适用范围。",
+      "evidence_rows": [
+        1795
+      ],
+      "table": "non_translate",
+      "index": 187
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:172",
+      "evidence_rows": [
+        1725
+      ],
+      "source_excerpt": "SFX_Bash_Break",
+      "reason": "独立音效资源键，来源匹配；补加完整记录级运行保护，不涉及翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第1725行原文为 SFX_Bash_Break，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原标识符，不进行翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "SFX_ 前缀及击打破碎音效词干表明其为音效资源标识符；原条缺适用范围，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按完整标识符 SFX_Bash_Break 保留，不将 SFX_ 或 Break 片段单独作为全局禁翻词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:292",
+      "evidence_rows": [
+        2250
+      ],
+      "source_excerpt": "SFX_Break",
+      "reason": "独立音效资源键，来源匹配；补加完整记录级运行保护，不涉及翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第2250行原文为 SFX_Break，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原标识符，不进行翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "SFX_ 前缀及 Break 音效标识表明其为音效资源标识符；原条缺适用范围，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "保留完整键名 SFX_Break，不因其含普通词 Break 而改为译文或全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:173",
+      "evidence_rows": [
+        1746
+      ],
+      "source_excerpt": "SFX_Container_Latch",
+      "reason": "独立音效资源键，来源匹配；补加完整记录级运行保护，不涉及翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第1746行原文为 SFX_Container_Latch，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原标识符，不进行翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "SFX_ 前缀及容器锁扣音效词干表明其为音效资源标识符；原条缺适用范围，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按完整标识符 SFX_Container_Latch 保留，不将 Container 或 Latch 片段单独设为全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:175",
+      "evidence_rows": [
+        1750
+      ],
+      "source_excerpt": "SFX_Container_Open",
+      "reason": "独立音效资源键，来源匹配；补加完整记录级运行保护，不涉及翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第1750行原文为 SFX_Container_Open，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原标识符，不进行翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "SFX_ 前缀及容器开启音效词干表明其为音效资源标识符；原条缺适用范围，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按完整标识符 SFX_Container_Open 保留，不对普通词 Open 作全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:177",
+      "evidence_rows": [
+        1768
+      ],
+      "source_excerpt": "SFX_Disarm",
+      "reason": "独立音效资源键，来源匹配；补加完整记录级运行保护，不涉及翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第1768行原文为 SFX_Disarm，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原标识符，不进行翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "SFX_ 前缀及解除武装音效词干表明其为音效资源标识符；原条缺适用范围，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "保留完整键名 SFX_Disarm，避免将普通词 Disarm 的所有用例一并禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:178",
+      "evidence_rows": [
+        1769
+      ],
+      "source_excerpt": "SFX_Disarm_Success",
+      "reason": "独立音效资源键，来源匹配；补加完整记录级运行保护，不涉及翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第1769行原文为 SFX_Disarm_Success，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原标识符，不进行翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "SFX_ 前缀及解除武装成功音效词干表明其为音效资源标识符；原条缺适用范围，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按完整标识符 SFX_Disarm_Success 保留，不将组成词扩散为全局规则。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:179",
+      "evidence_rows": [
+        1771
+      ],
+      "source_excerpt": "SFX_Disarm_Fail",
+      "reason": "独立音效资源键，来源匹配；补加完整记录级运行保护，不涉及翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第1771行原文为 SFX_Disarm_Fail，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原标识符，不进行翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "SFX_ 前缀及解除武装失败音效词干表明其为音效资源标识符；原条缺适用范围，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按完整标识符 SFX_Disarm_Fail 保留，不将组成词扩散为全局规则。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:181",
+      "evidence_rows": [
+        1779
+      ],
+      "source_excerpt": "SFX_Lockpick",
+      "reason": "独立音效资源键，来源匹配；补加完整记录级运行保护，不涉及翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第1779行原文为 SFX_Lockpick，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原标识符，不进行翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "SFX_ 前缀及撬锁音效词干表明其为音效资源标识符；原条缺适用范围，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "保留完整键名 SFX_Lockpick，避免将普通词 Lockpick 作全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:184",
+      "evidence_rows": [
+        1785
+      ],
+      "source_excerpt": "SFX_EQP_ARMM",
+      "reason": "独立音效资源键，来源匹配；补加完整记录级运行保护，不涉及翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第1785行原文为 SFX_EQP_ARMM，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原标识符，不进行翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "SFX_ 前缀及 EQP_ARMM 缩写组合表明其为音效资源标识符；原条缺适用范围，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "保留完整键名 SFX_EQP_ARMM，不将缩写片段单独作为全局规则。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:185",
+      "evidence_rows": [
+        1790
+      ],
+      "source_excerpt": "sfx_desert",
+      "reason": "独立音效资源键，来源匹配；补加完整记录级运行保护，不涉及翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第1790行原文为 sfx_desert，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原标识符，不进行翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "小写 sfx_ 前缀及 desert 场景词干表明其为音效资源标识符；原条缺适用范围，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按原大小写和完整键名 sfx_desert 保留，不把 sfx_ 或 desert 片段设为全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:186",
+      "evidence_rows": [
+        1792
+      ],
+      "source_excerpt": "SFX_Pullbow",
+      "reason": "独立音效资源键，来源匹配；补加完整记录级运行保护，不涉及翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第1792行原文为 SFX_Pullbow，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原标识符，不进行翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "SFX_ 前缀及拉弓音效词干表明其为音效资源标识符；原条缺适用范围，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "保留完整键名 SFX_Pullbow，不拆分保护 Pullbow 片段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:187",
+      "evidence_rows": [
+        1795
+      ],
+      "source_excerpt": "SFX_Glass",
+      "reason": "独立音效资源键，来源匹配；补加完整记录级运行保护，不涉及翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第1795行原文为 SFX_Glass，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原标识符，不进行翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "SFX_ 前缀及玻璃音效词干表明其为音效资源标识符；原条缺适用范围，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "保留完整键名 SFX_Glass，避免将普通词 Glass 作全局禁翻。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:172",
+    "non_translate:292",
+    "non_translate:173",
+    "non_translate:175",
+    "non_translate:177",
+    "non_translate:178",
+    "non_translate:179",
+    "non_translate:181",
+    "non_translate:184",
+    "non_translate:185",
+    "non_translate:186",
+    "non_translate:187"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

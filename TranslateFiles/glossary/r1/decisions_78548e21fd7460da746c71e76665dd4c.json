@@ -1,0 +1,527 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对本批 12 个 non_translate 条目及 f1-f4。运行时命令、资源文件名或路径、音频 API、音效标识符和扩展名均保持原文；我为每条补全了 whole_record 作用范围，避免默认全局禁翻。map 也可能表示普通地图词，因此仅在小写完整记录时保护，且不与 .map 扩展名合并。",
+  "acknowledged_findings": [
+    "F0023",
+    "F0029",
+    "F0031",
+    "F0163"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条记录为 drop_ent 加实体参数，仅按完整记录匹配，避免把命令词或数字当正文禁翻。"
+        }
+      },
+      "reason": "补 whole_record 作用范围，仅保护完整运行时命令记录。",
+      "evidence_rows": [
+        995
+      ],
+      "table": "non_translate",
+      "index": 65
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条记录为 drop_item 命令及物品参数，仅按完整记录保留，避免影响普通掉落描述。"
+        }
+      },
+      "reason": "补 whole_record 作用范围，仅保护完整 drop_item 命令记录。",
+      "evidence_rows": [
+        1003
+      ],
+      "table": "non_translate",
+      "index": 73
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "gfx.pak 是完整的资源包文件名，因此仅按完整记录保留。"
+        }
+      },
+      "reason": "补 whole_record 作用范围，仅保护完整资源包文件名。",
+      "evidence_rows": [
+        1146
+      ],
+      "table": "non_translate",
+      "index": 78
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "pak:: 是资源路径前缀标记，仅按完整记录保留，避免影响普通 pak 文本。"
+        }
+      },
+      "reason": "补 whole_record 作用范围，仅保护完整 pak:: 路径前缀标记。",
+      "evidence_rows": [
+        1152
+      ],
+      "table": "non_translate",
+      "index": 80
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "data/retmark.bin 是完整数据文件路径，因此仅按完整记录保留。"
+        }
+      },
+      "reason": "补 whole_record 作用范围，仅保护完整数据文件路径。",
+      "evidence_rows": [
+        1255
+      ],
+      "table": "non_translate",
+      "index": 86
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "data/14.map 是完整地图数据路径，因此仅按完整记录保留。"
+        }
+      },
+      "reason": "补 whole_record 作用范围，仅保护完整地图数据路径。",
+      "evidence_rows": [
+        1257
+      ],
+      "table": "non_translate",
+      "index": 88
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "DirectSound 是音频 API 名称；当前仅有独立标签用例，因此按完整记录保留。"
+        }
+      },
+      "reason": "补 whole_record 作用范围，仅保护独立 DirectSound 标签。",
+      "evidence_rows": [
+        1265
+      ],
+      "table": "non_translate",
+      "index": 90
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "SFX_Pickup 是音效标识符；当前仅有独立用例，因此按完整记录保留。"
+        }
+      },
+      "reason": "补 whole_record 作用范围，仅保护独立 SFX_Pickup 标识符。",
+      "evidence_rows": [
+        1290
+      ],
+      "table": "non_translate",
+      "index": 96
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": ".map 是地图文件扩展名，按完整记录保留，避免把无点 map 一并禁翻。"
+        }
+      },
+      "reason": "补 whole_record 作用范围，仅保护完整 .map 扩展名记录。",
+      "evidence_rows": [
+        1301
+      ],
+      "table": "non_translate",
+      "index": 97
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "map 可能是脚本关键字，但也可能是普通地图词；仅在整条记录恰为小写 map 时保留，避免全局禁翻。"
+        }
+      },
+      "reason": "补 whole_record 且区分大小写，仅保护完整小写 map 脚本关键字记录，避免把普通地图词禁翻。",
+      "evidence_rows": [
+        2050,
+        1301
+      ],
+      "table": "non_translate",
+      "index": 258
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "tmp/ 是临时目录路径片段，因此按完整记录保留。"
+        }
+      },
+      "reason": "补 whole_record 作用范围，仅保护完整 tmp/ 临时目录标记。",
+      "evidence_rows": [
+        1302
+      ],
+      "table": "non_translate",
+      "index": 98
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": ".ent 是实体文件扩展名，按完整记录保留。"
+        }
+      },
+      "reason": "补 whole_record 作用范围，仅保护完整 .ent 扩展名记录。",
+      "evidence_rows": [
+        1303
+      ],
+      "table": "non_translate",
+      "index": 99
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:65",
+      "evidence_rows": [
+        995
+      ],
+      "source_excerpt": "drop_ent 12 2429",
+      "reason": "确认整条为实体掉落运行时命令；补 whole_record 作用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 995 原文为 drop_ent 12 2429，含命令名、实体编号和参数。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保持整条命令原文，不对命令词和数字作目标语转换。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补全 whole_record 且 case_sensitive=true，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 drop_item 等同批运行时命令分别按完整记录保护，不合并普通词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:73",
+      "evidence_rows": [
+        1003
+      ],
+      "source_excerpt": "drop_item (Odd Key)",
+      "reason": "确认整条为掉落物品命令；补 whole_record 作用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1003 原文为 drop_item (Odd Key)，含掉落命令和物品参数。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保持整条命令及括号内物品参数原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补全 whole_record 且 case_sensitive=true，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 drop_ent 同为运行时命令但对象不同，按各自完整记录保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:78",
+      "evidence_rows": [
+        1146
+      ],
+      "source_excerpt": "gfx.pak",
+      "reason": "确认 gfx.pak 为资源包文件名；补 whole_record 作用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1146 原文为 gfx.pak，是完整图形资源包文件名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保持文件名原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补全 whole_record 且 case_sensitive=true。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 data/... 等资源路径同属文件标识，按完整记录保护，不互相替代。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:80",
+      "evidence_rows": [
+        1152
+      ],
+      "source_excerpt": "pak::",
+      "reason": "确认 pak:: 为路径前缀标记；补 whole_record 作用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1152 原文为 pak::，是资源包路径前缀标记。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保持标记原文，不译双冒号。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补全 whole_record 且 case_sensitive=true。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 gfx.pak 等资源路径同批出现，但作为前缀标记单独保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:86",
+      "evidence_rows": [
+        1255
+      ],
+      "source_excerpt": "data/retmark.bin",
+      "reason": "确认 data/retmark.bin 为完整数据路径；补 whole_record 作用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1255 原文为 data/retmark.bin，是运行时数据文件路径。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保持路径原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补全 whole_record 且 case_sensitive=true。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 data/14.map 等路径条目一致，均按完整路径保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:88",
+      "evidence_rows": [
+        1257
+      ],
+      "source_excerpt": "data/14.map",
+      "reason": "确认 data/14.map 为完整地图路径；补 whole_record 作用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1257 原文为 data/14.map，是地图数据文件路径。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保持路径原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补全 whole_record 且 case_sensitive=true。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 .map 扩展名相关但本条是完整路径，不把无点 map 一并冻结。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:90",
+      "evidence_rows": [
+        1265
+      ],
+      "source_excerpt": "DirectSound",
+      "reason": "确认 DirectSound 为音频 API 名称；补 whole_record 作用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1265 原文为 DirectSound，是音频 API 名称。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保持 API 名称原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；当前仅独立用例，补全 whole_record 且 case_sensitive=true。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 SFX_Pickup 等运行时标识符同属保留项，按完整记录区分。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:96",
+      "evidence_rows": [
+        1290
+      ],
+      "source_excerpt": "SFX_Pickup",
+      "reason": "确认 SFX_Pickup 为音效标识符；补 whole_record 作用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1290 原文为 SFX_Pickup，是音效标识符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保持标识符原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；当前仅独立用例，补全 whole_record 且 case_sensitive=true。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 DirectSound 等同属运行时标识符，不扩展到普通词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:97",
+      "evidence_rows": [
+        1301
+      ],
+      "source_excerpt": ".map",
+      "reason": "确认 .map 为地图文件扩展名；补 whole_record 作用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1301 原文为 .map，是地图文件扩展名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保持扩展名原文，不译点号。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补全 whole_record，避免把无点 map 一并禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e10 的裸 map 区分：.map 仅按扩展名完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:258",
+      "evidence_rows": [
+        2050,
+        1301
+      ],
+      "source_excerpt": "map",
+      "reason": "确认 map 仅在整条小写记录时按脚本关键字保留；补 whole_record 作用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2050 原文为 map；corpus 1301 仅显示 .map 扩展名中的同样字串，未提供更多脚本上下文。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，整条记录保持 map；普通地图词义不由此全局禁翻。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立但裸词易混；补 whole_record 且 case_sensitive=true，仅匹配完整小写 map。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "词族候选 e9/e10 不合并：.map 是扩展名，map 是脚本关键字整条记录，语境不同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:98",
+      "evidence_rows": [
+        1302
+      ],
+      "source_excerpt": "tmp/",
+      "reason": "确认 tmp/ 为临时目录标记；补 whole_record 作用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1302 原文为 tmp/，是临时目录路径片段。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保持路径标记原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补全 whole_record 且 case_sensitive=true。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 data/ 等路径条目同属文件系统标识，按完整记录保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:99",
+      "evidence_rows": [
+        1303
+      ],
+      "source_excerpt": ".ent",
+      "reason": "确认 .ent 为实体文件扩展名；补 whole_record 作用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1303 原文为 .ent，是实体文件扩展名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保持扩展名原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补全 whole_record 且 case_sensitive=true。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 .map 扩展名同属文件扩展名，按各自完整记录保护，不全局合并。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:65",
+    "non_translate:73",
+    "non_translate:78",
+    "non_translate:80",
+    "non_translate:86",
+    "non_translate:88",
+    "non_translate:90",
+    "non_translate:96",
+    "non_translate:97",
+    "non_translate:258",
+    "non_translate:98",
+    "non_translate:99"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

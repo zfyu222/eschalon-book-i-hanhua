@@ -1,0 +1,391 @@
+{
+  "review_complete": true,
+  "review_summary": "完成 e1-e12 共 12 个角色专名的来源、译名、分类与一致性审校。确认 f1：e3 Erubor 与 e4 Erudor 为同一人物的拼写变体，统一译作「埃鲁博」，并清理 e4 的待定注记；e10 Siam 采用已发布 v1.5 译名「赛厄姆」。其余条目维持原译名。",
+  "acknowledged_findings": [
+    "F0255"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "原文对暗影堡校长 Erubor 的拼写变体，指同一人物；按同一人物统一译作「埃鲁博」。"
+      },
+      "reason": "确认 Erudor 为 Erubor 的拼写变体，清理待定译名注记，统一为「埃鲁博」。",
+      "evidence_rows": [
+        733,
+        829,
+        4355
+      ],
+      "table": "characters",
+      "index": 50
+    },
+    {
+      "patch": {
+        "recommended_translation": "赛厄姆",
+        "term_reason": "Blackwater 魔法公会会长，人物名 Siam；按已发布 v1.5 及人名音译统一为「赛厄姆」。"
+      },
+      "reason": "采用已发布译名，避免把 2191 的「暹」或内部标识 siam 当作人物名。",
+      "evidence_rows": [
+        4176,
+        929,
+        2191
+      ],
+      "table": "characters",
+      "index": 59
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:47",
+      "evidence_rows": [
+        802,
+        2925
+      ],
+      "source_excerpt": "My name is Walter.",
+      "reason": "核对来源、译名、分类与一致性；角色名与暗影堡见习法师身份一致，通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "802 原文自报「My name is Walter.」；2925 独立名称亦为 Walter。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "沃尔特为 Walter 的常用音译，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name=required，符合 NPC 专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批均指暗影堡同一见习法师，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:48",
+      "evidence_rows": [
+        816,
+        2928,
+        4446
+      ],
+      "source_excerpt": "I am Captain Morgan",
+      "reason": "核对来源、译名、分类与一致性；达克福德守军首领名保留军阶，通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "816 自报「I am Captain Morgan」；2928/4446 以完整名出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「摩根队长」保留军阶与姓名，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name=required，为达克福德守军首领。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一角色，无别称冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:49",
+      "evidence_rows": [
+        731,
+        936,
+        4044
+      ],
+      "source_excerpt": "I am Erubor",
+      "reason": "核对来源、译名、分类与一致性；与 e4 同人拼写变体统一，通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4044 自报「I am Erubor」；731/936 亦以 Erubor 指暗影秘院首领。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「埃鲁博」为通行音译，优于「埃鲁博尔」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name=required，为 Shadowmirk 首领/校长。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4 的 Erudor 为同一人物拼写变体，统一为「埃鲁博」；f1 已核对。"
+        }
+      }
+    },
+    {
+      "ref": "characters:50",
+      "evidence_rows": [
+        733,
+        4314,
+        4355
+      ],
+      "source_excerpt": "seek Erudor advice",
+      "reason": "核对来源、译名、分类与一致性；确认拼写变体并修订 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "733/4314 出现 Erudor，4355 叙述同一法师在书房活动；拼写为 Erudor。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "按同一人物 Erubor 统一译「埃鲁博」，不采用待定「埃鲁多」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name=required，指向暗影秘院法师。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "f1 已核对：Erudor/Erubor 为同人拼写变体，统一「埃鲁博」；已修订 term_reason 清除待定注记。"
+        }
+      }
+    },
+    {
+      "ref": "characters:51",
+      "evidence_rows": [
+        843,
+        1225,
+        4068
+      ],
+      "source_excerpt": "I am Phillip",
+      "reason": "核对来源、译名、分类与一致性；船夫专名统一，通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "843 自报「I am Phillip」；1225/4068 以 Phillip 指边境镇船夫。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「菲利普」为 Phillip 常用音译，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name=required，为 NPC 船夫。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一角色，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:52",
+      "evidence_rows": [
+        835,
+        1227,
+        4084
+      ],
+      "source_excerpt": "Omar, their leader",
+      "reason": "核对来源、译名、分类与一致性；巨人首领专名统一，通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "835 称「Omar, their leader」；1227/4084 明确 Omar 为巨人部落首领。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「奥马尔」为 Omar 常用音译，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name=required，为巨人首领。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一角色，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:53",
+      "evidence_rows": [
+        867,
+        872,
+        4095
+      ],
+      "source_excerpt": "Great Giant chieftain named Thorus",
+      "reason": "核对来源、译名、分类与一致性；前巨人酋长专名统一，通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "867/872/4095 均以 Thorus 指被 Thorndike 猎杀的前巨人酋长。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「索鲁斯」为 Thorus 音译，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name=required，为前巨人酋长。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一角色，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:55",
+      "evidence_rows": [
+        792,
+        1228,
+        3482,
+        4009
+      ],
+      "source_excerpt": "a great Ranger named Lorus of Eastleaf",
+      "reason": "核对来源、译名、分类与一致性；完整人物专名统一，通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "792 称「a great Ranger named Lorus of Eastleaf」；3482 墓志同用全名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「东叶的洛鲁斯」保留称号与地名修饰，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name=required，为传奇游侠。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "792/1228/3482/4009 均指同一人，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:58",
+      "evidence_rows": [
+        910,
+        4153
+      ],
+      "source_excerpt": "My name is Aaron",
+      "reason": "核对来源、译名、分类与一致性；训练师专名统一，通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "910 自报「My name is Aaron」；4153 同名并称 Range Master。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「亚伦」为 Aaron 常用音译，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name=required，为射术训练师。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一角色，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:59",
+      "evidence_rows": [
+        929,
+        2181,
+        2191,
+        4176
+      ],
+      "source_excerpt": "I am Siam the Guildmaster",
+      "reason": "核对来源、译名、分类与一致性；采用已发布译名并排除地名旧称与内部标识。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4176 自报「I am Siam the Guildmaster」；929 亦以 Siam 称呼。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原暂定「西姆」与已发布 v1.5「赛厄姆」不一致；按人名音译修订为「赛厄姆」，不取 2191 的「暹」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name=required；2191 的「暹」为地名旧称，不适用于该人物。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "人物名统一「赛厄姆」；2181 小写 siam 为内部标识，不并入该专名翻译。"
+        }
+      }
+    },
+    {
+      "ref": "characters:60",
+      "evidence_rows": [
+        952,
+        1237,
+        4203
+      ],
+      "source_excerpt": "My name is Hesham",
+      "reason": "核对来源、译名、分类与一致性；墓穴研究者专名统一，通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "952 自报「My name is Hesham」；1237/4203 指墓穴炼金术士。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「赫沙姆」为 Hesham 音译，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name=required，为墓穴研究者。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一角色，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:62",
+      "evidence_rows": [
+        1231
+      ],
+      "source_excerpt": "Vezzar, the Magick Shop owner",
+      "reason": "核对来源、译名、分类与一致性；魔法商店店主专名统一，通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1231 明确「Vezzar, the Magick Shop owner in Blackwater」。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「维扎尔」为 Vezzar 音译，仅见候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name=required，为魔法商店店主。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单条出处，无跨条冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:47",
+    "characters:48",
+    "characters:49",
+    "characters:50",
+    "characters:51",
+    "characters:52",
+    "characters:53",
+    "characters:55",
+    "characters:58",
+    "characters:59",
+    "characters:60",
+    "characters:62"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

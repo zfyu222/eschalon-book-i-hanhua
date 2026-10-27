@@ -1,0 +1,390 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 的来源、译名、分类与一致性。e2 改为既有 v1.5 书名译法；e4 将 Portal 的匹配范围收窄为 whole_record；e10 作为普通五芒星符号隔离。f1 的共享译名经核对为 mithril/Mythril 同物异拼，统一秘银，不构成冲突。",
+  "acknowledged_findings": [
+    "F0274"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "《传送门与通道的解构》",
+        "term_reason": "Sirus Ortimer 所著书名，记录 416/3546；采用既有 v1.5 译名《传送门与通道的解构》。"
+      },
+      "reason": "416 明确为 Sirus Ortimer 的书，3546 为书名；改用既有 v1.5 译名，避免动词式译法与书名名词化结构不符。",
+      "evidence_rows": [
+        416,
+        3546
+      ],
+      "table": "terms",
+      "index": 106
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "1138 整条记录为法术名 Portal；1642/1139 中小写 portal 为普通名词，故不全局匹配。"
+        },
+        "term_reason": "1138 整条记录为法术名 Portal；亦见于卷轴名 Scroll of Portal，指设置锚点并开启返回该点的传送门。"
+      },
+      "reason": "原文 1138 是独立法术名，1642/1139 的 portal 为普通名词；将匹配范围收窄为整条记录，避免全局误译。",
+      "evidence_rows": [
+        1138,
+        308,
+        2727,
+        1642,
+        1139
+      ],
+      "table": "terms",
+      "index": 166
+    }
+  ],
+  "quarantine": [
+    {
+      "reason": "416 中 Pentagram 是普通五芒星符号，虽为仪式组件但无专有名称或特殊游戏义，不应冻结为全局术语；保留普通词语境翻译即可。",
+      "evidence_rows": [
+        416
+      ],
+      "table": "terms",
+      "index": 77
+    }
+  ],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:74",
+      "evidence_rows": [
+        416
+      ],
+      "source_excerpt": "Gateway Incantation",
+      "reason": "416 将该咒语描述为绑定门并完成 Transference Circuit 的步骤；保留为机制术语，译名简洁。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "416 原文连续出现 Gateway Incantation，且上下文说明其绑定门、完成回路。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Gateway Incantation 译传送门咒语，符合咒语名和中文搭配。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "416 表明它是仪式咒语而非物品/地名，归其他游戏机制术语可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "416 中该咒语名独立使用，未见同条异译；保留现有核心译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:106",
+      "evidence_rows": [
+        416,
+        3546
+      ],
+      "source_excerpt": "Deconstructing Portals and Gateways",
+      "reason": "416 与 3546 相互印证为 Sirus Ortimer 所著书名；采用既有 v1.5 译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "416 明确为 Sirus Ortimer 的书，3546 为书名原文 Deconstructing Portals and Gateways。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由《解构传送门与通道》改为既有 v1.5 译名《传送门与通道的解构》，更贴合书名名词化结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为可查阅的书名，归物品类书目名称，proper_name 保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "书名内 Portals/Gateways 按传送门与通道处理，与 416 的引用语境一致；未发现同条异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:131",
+      "evidence_rows": [
+        232
+      ],
+      "source_excerpt": "Portal Instructions",
+      "reason": "232 仅为独立标题 Portal Instructions；按物品/说明书名保留，译名与 Portal=传送门一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "232 原文仅为 Portal Instructions，是独立标题。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Portal Instructions 译《传送门说明》，Portal 译传送门，Instructions 译说明，简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "独立标题按物品/说明书名条目处理，category_path 物品合适，proper_name 保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条无其他译法；Portal 的译名在标题内保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:166",
+      "evidence_rows": [
+        1138,
+        308,
+        2727,
+        1642,
+        1139
+      ],
+      "source_excerpt": "Portal",
+      "reason": "1138 是独立法术名；1642/1139 的 portal 为普通名词，故将匹配范围收窄为整条记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1138 原条为 Portal；308/2727 的 Scroll of Portal 亦指同一法术名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "法术名 Portal 译传送门，与技能界面选项中的 Portal 用法一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1138 为技能/法术名，category_path 技能合适；保留 game_term。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "1642/1139 中小写 portal 为普通名词；applicability 改为 whole_record，避免全局误匹配，同时 term_reason 说明卷轴名中的同一法术用法。"
+        }
+      }
+    },
+    {
+      "ref": "terms:348",
+      "evidence_rows": [
+        1639
+      ],
+      "source_excerpt": "Portal Set",
+      "reason": "1639 为传送门法术的界面选项；译设置传送门，与 Portal 译名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1639 原文为 Portal Set，是法术界面选项。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Portal Set 译设置传送门，Set 作设置，语义明确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为 Portal 法术的界面选项，归技能类游戏术语合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条内 Portal 译传送门，与法术名用法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:349",
+      "evidence_rows": [
+        1640
+      ],
+      "source_excerpt": "Open Portal",
+      "reason": "1640 为传送门法术的界面选项；译开启传送门，与 Portal 译名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1640 原文为 Open Portal，是法术界面选项。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Open Portal 译开启传送门，Open 作开启，搭配自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为 Portal 法术的界面选项，归技能类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条内 Portal 译传送门，与同组选项用法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:351",
+      "evidence_rows": [
+        1644
+      ],
+      "source_excerpt": "Portal Recall",
+      "reason": "1644 为传送门法术的界面选项；译传送门召回，与 Portal 译名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1644 原文为 Portal Recall，是法术界面选项。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Portal Recall 译传送门召回，Recall 作召回，语义可辨。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为 Portal 法术的界面选项，归技能类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条内 Portal 译传送门，与同组选项用法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:75",
+      "evidence_rows": [
+        416
+      ],
+      "source_excerpt": "Ethereal Salts",
+      "reason": "416 将 Ethereal Salts 列为制作 Transference Circuit 的材料之一；译名按奇幻材料处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "416 将 Ethereal Salts 列为制作 Transference Circuit 的材料之一。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Ethereal Salts 译以太盐，符合奇幻材料名和中文习惯。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "416 明列为配方材料，归物品类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条无其他译法；与同段其他材料名并列时保持简洁。"
+        }
+      }
+    },
+    {
+      "ref": "terms:76",
+      "evidence_rows": [
+        416
+      ],
+      "source_excerpt": "Divining Crystals",
+      "reason": "416 将 Divining Crystals 列为制作 Transference Circuit 的材料之一；译名按奇幻材料处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "416 将 Divining Crystals 列为制作 Transference Circuit 的材料之一。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Divining Crystals 译占卜水晶，符合材料名和中文搭配。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "416 明列为配方材料，归物品类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条无其他译法；与同段其他材料名并列时保持简洁。"
+        }
+      }
+    },
+    {
+      "ref": "terms:77",
+      "evidence_rows": [
+        416
+      ],
+      "source_excerpt": "Pentagram",
+      "reason": "416 中 Pentagram 是普通五芒星符号，虽为仪式组件但无专名；建议 quarantine，不作全局术语冻结。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "416 原文为 required symbolic Pentagram，确指仪式所需五芒星图形。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Pentagram 的普通词义即五芒星，现有译名本身无误。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "该词是普通象征物名称，不是游戏专有名称或需冻结的游戏术语；应 quarantine，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条无其他变体；quarantine 后仍可按普通词在语境中译作五芒星。"
+        }
+      }
+    },
+    {
+      "ref": "terms:79",
+      "evidence_rows": [
+        441
+      ],
+      "source_excerpt": "Bangdust",
+      "reason": "441 明示 Bangdust 是地精炸弹单位携带的桶装爆炸物；译名简洁可辨。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "441 原文称 Goblin Bombthug 身绑一桶 Bangdust，用于自爆。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Bangdust 译爆尘，保留爆炸粉尘的构词感，简洁可辨。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "441 明示为桶装爆炸物，归物品类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条无其他译法；作为自爆物名称与上下文一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:81",
+      "evidence_rows": [
+        436,
+        1207
+      ],
+      "source_excerpt": "mithril",
+      "reason": "436/1207 等原文均指秘银材料；与审计 f1 的共享译名经核对为同物异拼，统一秘银。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "436 出现 mithril axe，1207 出现 bar of Mithril，均指同一贵金属。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "mithril/Mithril 译秘银，符合奇幻金属标准译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "436 为斧材质、1207/3605/4232/4477 为金属锭，归物品类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "大小写变体及审计 f1 的共享译名经核对为同一材料的不同拼写，统一作秘银，不是冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:74",
+    "terms:106",
+    "terms:131",
+    "terms:166",
+    "terms:348",
+    "terms:349",
+    "terms:351",
+    "terms:75",
+    "terms:76",
+    "terms:77",
+    "terms:79",
+    "terms:81"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

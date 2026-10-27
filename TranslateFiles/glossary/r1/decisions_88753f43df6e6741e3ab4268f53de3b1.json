@@ -1,0 +1,366 @@
+{
+  "review_complete": true,
+  "review_summary": "完成 12 条等级称号审校；修正 Vanquisher 的 term_reason 误述，并将 Supreme Archmaster 改为“至高大宗师”以与 Archmaster“大宗师”保持复合核心一致；其余译名、分类与 whole_record 适用范围核对通过，corpus 1021/4031/4344 已用于确认小写普通义与 Shadowmirk 入门身份。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "连续等级称号列表中的最高等级名。"
+      },
+      "reason": "原 term_reason 将其误作职业名；该词与后续 Supreme Archmaster 至 Greenhorn 构成连续等级称号列表，Vanquisher 位于首位。",
+      "evidence_rows": [
+        1484
+      ],
+      "table": "terms",
+      "index": 398
+    },
+    {
+      "patch": {
+        "recommended_translation": "至高大宗师",
+        "term_reason": "连续等级称号列表中的高级等级名。"
+      },
+      "reason": "Supreme Archmaster 为 Archmaster 的复合高级称号；保留“大宗师”核心以保持层级一致，原“至高宗师”丢失“大”这一层级差，且该称号并非列表最高。",
+      "evidence_rows": [
+        1485
+      ],
+      "table": "terms",
+      "index": 399
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:398",
+      "evidence_rows": [
+        1484
+      ],
+      "source_excerpt": "Vanquisher",
+      "reason": "修正 term_reason 的职业名误述；译名与分类保留。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "原文为独立称号 Vanquisher，位于连续等级称号列表首位；原 term_reason 误作职业名，已修正为等级称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“征服者”可对应最高等级称号 Vanquisher，未改动。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "称号/等级名归入身份类，符合 category_path 合法值。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与后续 Supreme Archmaster 至 Greenhorn 的等级称号序列并列，译名不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:399",
+      "evidence_rows": [
+        1485
+      ],
+      "source_excerpt": "Supreme Archmaster",
+      "reason": "修正译名与 term_reason，保持复合称号核心一致。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "原文 Supreme Archmaster 为 Archmaster 的复合高级称号，非列表最高；term_reason 已修正。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原“至高宗师”丢失 Archmaster 的“大宗师”核心；改为“至高大宗师”以保持复合层级一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "高级等级称号归入身份类。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Archmaster 的核心译名“大宗师”对齐，形成宗师＜大宗师＜至高大宗师层级。"
+        }
+      }
+    },
+    {
+      "ref": "terms:400",
+      "evidence_rows": [
+        1486
+      ],
+      "source_excerpt": "Archmaster",
+      "reason": "译名、分类与层级均核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 Archmaster 为独立等级称号，位于 Supreme Archmaster 与 Grandmaster 之间。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“大宗师”对应 Archmaster，保留 arch- 的高阶含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "等级称号归入身份类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Supreme Archmaster 的“至高大宗师”共享“大宗师”核心，与 Grandmaster“宗师”形成层级。"
+        }
+      }
+    },
+    {
+      "ref": "terms:401",
+      "evidence_rows": [
+        1487
+      ],
+      "source_excerpt": "Grandmaster",
+      "reason": "译名与相邻层级一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 Grandmaster 为独立等级称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“宗师”对应 Grandmaster，低于大宗师。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "等级称号归入身份类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Archmaster“大宗师”、Supreme Archmaster“至高大宗师”层级区分清楚。"
+        }
+      }
+    },
+    {
+      "ref": "terms:403",
+      "evidence_rows": [
+        1489
+      ],
+      "source_excerpt": "Specialist",
+      "reason": "译名与相邻称号区分清楚。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 Specialist 为独立等级称号，位于 Expert 之上。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“专精者”对应 Specialist，体现专精方向。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "等级称号归入身份类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Expert“能手”、Adept“精通者”等相邻称号区分，未冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:404",
+      "evidence_rows": [
+        1490
+      ],
+      "source_excerpt": "Expert",
+      "reason": "译名简洁且层级明确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 Expert 为独立等级称号，位于 Specialist 与 Adept 之间。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“能手”对应 Expert，简洁且符合等级称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "等级称号归入身份类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Specialist“专精者”、Adept“精通者”保持层级区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:405",
+      "evidence_rows": [
+        1492,
+        1021
+      ],
+      "source_excerpt": "Adept",
+      "reason": "whole_record 正确隔离小写普通形容词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 Adept 为独立等级称号；所附 1021 行小写 adept 为“熟练的”形容词，非本条称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“精通者”对应称号 Adept，未与 Journeyman“熟练者”混同。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "等级称号归入身份类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "whole_record 限定仅匹配独立称号，避免把 1021 行小写形容词纳入。"
+        }
+      }
+    },
+    {
+      "ref": "terms:406",
+      "evidence_rows": [
+        1495
+      ],
+      "source_excerpt": "Journeyman",
+      "reason": "译名体现已出师但未至精通。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 Journeyman 为独立等级称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“熟练者”对应 Journeyman，体现已出师但未至精通。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "等级称号归入身份类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Adept“精通者”、Yeoman“自由民”相邻层级区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:409",
+      "evidence_rows": [
+        1499
+      ],
+      "source_excerpt": "Yeoman",
+      "reason": "按常用历史义保留自由民译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 Yeoman 为独立等级称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“自由民”对应 Yeoman 的常用历史义，作为称号使用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "等级称号归入身份类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "位于 Journeyman 与 Initiate 之间，译名未与相邻称号重复。"
+        }
+      }
+    },
+    {
+      "ref": "terms:412",
+      "evidence_rows": [
+        1502,
+        4031,
+        4344
+      ],
+      "source_excerpt": "Initiate",
+      "reason": "corpus 证据确认其为 Shadowmirk 新入学者身份。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 Initiate 为独立称号；4031/4344 行明确指 Shadowmirk 新入学者，须通过二级测试。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“入门者”对应被接纳的 initiate，符合低阶身份。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "等级称号归入身份类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "whole_record 限定独立称号，避免与普通动词 initiate 混淆；与 Neophyte“初学者”、Greenhorn“新手”层级区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:413",
+      "evidence_rows": [
+        1503
+      ],
+      "source_excerpt": "Neophyte",
+      "reason": "低阶称号层级清楚。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 Neophyte 为独立等级称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“初学者”对应 Neophyte，低于入门者。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "等级称号归入身份类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Initiate“入门者”、Greenhorn“新手”形成低阶区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:414",
+      "evidence_rows": [
+        1504
+      ],
+      "source_excerpt": "Greenhorn",
+      "reason": "最低阶称号译名明确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 Greenhorn 为独立等级称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“新手”对应 Greenhorn，为最低阶称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "等级称号归入身份类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Neophyte“初学者”、Initiate“入门者”层级区分清楚。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:398",
+    "terms:399",
+    "terms:400",
+    "terms:401",
+    "terms:403",
+    "terms:404",
+    "terms:405",
+    "terms:406",
+    "terms:409",
+    "terms:412",
+    "terms:413",
+    "terms:414"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

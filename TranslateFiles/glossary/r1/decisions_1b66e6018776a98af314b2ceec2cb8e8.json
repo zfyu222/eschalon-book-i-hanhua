@@ -1,0 +1,555 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 全部条目：统一法术译名（食人魔之力、毒雾喷射、掠食者视觉、揭示地图、重击、石肤、撕裂血肉、超新星、解除陷阱），将法术名 term_kind 修正为 proper_name；为 SFX_Poison、cure_poison 补充明确适用域并核对独立/嵌入用法；确认 Stone Skin/Stoneskin 共享“石肤”属相关变体，不构成冲突。",
+  "acknowledged_findings": [
+    "F0068",
+    "F0142",
+    "F0276"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "term_reason": "Ogre Strength 为法术/效果及药水名，见卷轴与药剂记录；统一译作食人魔之力。"
+      },
+      "reason": "法术名按专名处理，统一译名食人魔之力。",
+      "evidence_rows": [
+        2538,
+        2676,
+        2725
+      ],
+      "table": "terms",
+      "index": 164
+    },
+    {
+      "patch": {
+        "recommended_translation": "&力量",
+        "term_reason": "1024 定义 &Strength 为角色物理力量，& 为强调控制符需保留；影响负重、攻击力与毒素抗性。"
+      },
+      "reason": "保留 & 控制符，属性名统一为力量。",
+      "evidence_rows": [
+        1024
+      ],
+      "table": "terms",
+      "index": 251
+    },
+    {
+      "patch": {
+        "recommended_translation": "毒雾喷射",
+        "term_kind": "proper_name",
+        "term_reason": "Poison Spray 为法术名及卷轴名，见307/1082/2726；统一译作毒雾喷射。"
+      },
+      "reason": "统一法术名，采用毒雾喷射，并按法术专名分类。",
+      "evidence_rows": [
+        307,
+        1082,
+        2726
+      ],
+      "table": "terms",
+      "index": 165
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "1611 整条记录为音效标识符 SFX_Poison，作为运行标记原样保留；现有证据仅见独立使用。"
+        },
+        "term_reason": "音效标识符，运行时标记，需原样保留。"
+      },
+      "reason": "为音效标识符补充明确适用范围，避免全局禁翻。",
+      "evidence_rows": [
+        1611
+      ],
+      "table": "non_translate",
+      "index": 146
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "text",
+          "reason": "2029 整条记录为脚本关键字 cure_poison；2493 中又在 sound/effect 脚本表达式内作为效果参数出现，需在脚本上下文中原样保留。"
+        },
+        "term_reason": "脚本关键字/效果参数，运行时标记，需原样保留。"
+      },
+      "reason": "补充脚本标识符适用范围，覆盖独立与嵌入用法。",
+      "evidence_rows": [
+        2029,
+        2493
+      ],
+      "table": "non_translate",
+      "index": 237
+    },
+    {
+      "patch": {
+        "recommended_translation": "掠食者视觉",
+        "term_kind": "proper_name",
+        "term_reason": "Predator Sight 为法术名；1121 说明其使施法者看见生物电磁光环并在黑暗中定位。"
+      },
+      "reason": "统一为掠食者视觉，并按法术专名分类。",
+      "evidence_rows": [
+        1120,
+        1121,
+        2728
+      ],
+      "table": "terms",
+      "index": 167
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "term_reason": "Reveal Map 为法术名及卷轴名，见310/1118/2729；统一译作揭示地图。"
+      },
+      "reason": "法术名按专名分类，保留揭示地图译名。",
+      "evidence_rows": [
+        310,
+        1118,
+        2729
+      ],
+      "table": "terms",
+      "index": 168
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "literal_context",
+          "prefix": "Scroll of ",
+          "suffix": "",
+          "reason": "仅匹配卷轴名 Scroll of Smite 中的法术名，避免将普通动词 smite 全局纳入；1104 整条记录同为该法术名，按本条译名处理。"
+        },
+        "term_reason": "Smite 为法术名，卷轴名 Scroll of Smite 中亦指同一法术；统一译作重击。"
+      },
+      "reason": "修正法术分类，并用 literal_context 限定 Smite 的匹配范围。",
+      "evidence_rows": [
+        311,
+        1104,
+        2730
+      ],
+      "table": "terms",
+      "index": 169
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "text",
+          "reason": "1098 为法术名，1418 为效果名，2540/2678 为药剂效果，2732 为卷轴名；这些记录均指同一 Stoneskin 术语，按区分大小写的正文术语匹配。"
+        },
+        "term_reason": "Stoneskin 为法术/效果及药水名，见1098/1418/2540/2678/2732；统一译作石肤。"
+      },
+      "reason": "修正法术分类，并将适用域从仅卷轴扩大到同一 Stoneskin 术语的正文/效果语境。",
+      "evidence_rows": [
+        1098,
+        1418,
+        2540,
+        2678,
+        2732
+      ],
+      "table": "terms",
+      "index": 171
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "term_reason": "Sunder Flesh 为法术名及卷轴名，见1096/2733；统一译作撕裂血肉。"
+      },
+      "reason": "法术名按专名分类，保留撕裂血肉译名。",
+      "evidence_rows": [
+        1096,
+        2733
+      ],
+      "table": "terms",
+      "index": 172
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "literal_context",
+          "prefix": "Scroll of ",
+          "suffix": "",
+          "reason": "仅匹配卷轴名 Scroll of Supernova 中的法术名，避免将普通天文词 supernova 全局纳入；1142 整条记录同为该法术名，按本条译名处理。"
+        },
+        "term_reason": "Supernova 为法术名及卷轴名，见315/1142/2734；统一译作超新星。"
+      },
+      "reason": "修正法术分类，并用 literal_context 限定 Supernova 的匹配范围。",
+      "evidence_rows": [
+        315,
+        1142,
+        2734
+      ],
+      "table": "terms",
+      "index": 173
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "term_reason": "Trapkill 为法术名及卷轴名，见1136/2735；统一译作解除陷阱。"
+      },
+      "reason": "法术名按专名分类，保留解除陷阱译名。",
+      "evidence_rows": [
+        1136,
+        2735
+      ],
+      "table": "terms",
+      "index": 174
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:164",
+      "evidence_rows": [
+        2538,
+        2676,
+        2725
+      ],
+      "source_excerpt": "Scroll of Ogre Strength",
+      "reason": "确认法术/效果/药水名及统一译名，修正分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2725 卷轴记录含 Scroll of Ogre Strength；2538/2676 亦见同一效果/药剂名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "统一译作“食人魔之力”，可覆盖卷轴、效果与药水名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原 term_kind 为 game_term；法术名应归 proper_name，category_path 技能保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选食人魔力量、食人魔力、食人魔之力中统一为食人魔之力，覆盖卷轴与药剂记录。"
+        }
+      }
+    },
+    {
+      "ref": "terms:251",
+      "evidence_rows": [
+        1024
+      ],
+      "source_excerpt": "&Strength is a measure of your character's physical power",
+      "reason": "确认属性定义及控制符保留，修正译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1024 原文定义 &Strength 为角色物理力量，并影响负重、攻击力与毒素抗性。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "推荐译名由“力量”改为“&力量”，保留原文 & 强调控制符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为属性/机制术语归“其他”可接受；term_kind 保持 game_term。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "&Strength 保留 & 控制符；Strength 统一力量，不与其他复合名混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:165",
+      "evidence_rows": [
+        307,
+        1082,
+        2726
+      ],
+      "source_excerpt": "Scroll of Poison Spray",
+      "reason": "确认法术名及统一译名，修正分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "307/1082/2726 均为 Poison Spray 法术名或卷轴名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原推荐毒喷雾；统一为毒雾喷射，更符合法术名构词且保持四字。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "法术名应由 game_term 改为 proper_name；category_path 技能保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选毒喷雾、毒雾喷射、毒液喷射中择毒雾喷射，避免毒液改变 poison 词义。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:146",
+      "evidence_rows": [
+        1611
+      ],
+      "source_excerpt": "SFX_Poison",
+      "reason": "确认音效标识符并补充适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1611 整条记录即 SFX_Poison，确为音效标识符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 运行标记，保留原文，不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "音效标识符属运行标记；适用 whole_record，仅匹配完整记录。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "音效标识符按运行标记保留；whole_record 仅匹配完整记录，不扩大全局。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:237",
+      "evidence_rows": [
+        2029,
+        2493
+      ],
+      "source_excerpt": "sound (SFX_Quaff) ; cure_poison 4 ; to_flask",
+      "reason": "确认脚本关键字并覆盖独立/嵌入用法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2029 整条为 cure_poison；2493 在脚本表达式中作为效果参数出现。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 脚本关键字，原样保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属脚本关键字/效果参数；applicability 设为 case_sensitive text，理由为两种脚本上下文均需保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立与嵌入用法均保留 cure_poison，不译作解毒。"
+        }
+      }
+    },
+    {
+      "ref": "terms:167",
+      "evidence_rows": [
+        1120,
+        1121,
+        2728
+      ],
+      "source_excerpt": "Scroll of Predator Sight",
+      "reason": "确认法术名及视觉能力描述，统一译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1120/2728 为 Predator Sight 法术/卷轴名；1121 说明其看见生物电磁光环。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原推荐掠食者视界；改掠食者视觉，更贴合看见光环的视觉能力。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "法术名 term_kind 改为 proper_name；category_path 技能保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各候选仅 Sight 译法不同；统一掠食者视觉，与效果描述一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:168",
+      "evidence_rows": [
+        310,
+        1118,
+        2729
+      ],
+      "source_excerpt": "Scroll of Reveal Map",
+      "reason": "确认法术名及译名，修正分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "310/2729 为卷轴名，1118 为法术名 Reveal Map。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留揭示地图；动词+宾语的法术名自然。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "term_kind 改为 proper_name；category_path 技能保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选显示地图偏 UI 动作；法术名统一揭示地图。"
+        }
+      }
+    },
+    {
+      "ref": "terms:169",
+      "evidence_rows": [
+        311,
+        1104,
+        2730
+      ],
+      "source_excerpt": "Scroll of Smite",
+      "reason": "确认法术名，修正分类与匹配范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1104 整条为 Smite；311/2730 为 Scroll of Smite 卷轴名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留重击；不取神罚以免引入神术含义，不取制裁以免过度司法化。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "term_kind 改为 proper_name；category_path 技能保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "新增 case_sensitive literal_context 限定卷轴名，避免全局匹配普通动词 smite；1104 独立记录按同一法术名处理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:171",
+      "evidence_rows": [
+        1098,
+        1418,
+        2540,
+        2678,
+        2732
+      ],
+      "source_excerpt": "Your Stoneskin effect has been neutralized.",
+      "reason": "确认法术/效果/药剂名，修正分类与适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1098 为法术名，1418 为效果名，2540/2678 为药剂效果，2732 为卷轴名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留石肤；石肤术非必要，石肤可覆盖法术/效果/药剂名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "term_kind 改为 proper_name；category_path 技能保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原 applicability 仅限 Scroll of；改为 case_sensitive text，覆盖法术名、效果句与药剂效果，避免遗漏。"
+        }
+      }
+    },
+    {
+      "ref": "terms:172",
+      "evidence_rows": [
+        1096,
+        2733
+      ],
+      "source_excerpt": "Scroll of Sunder Flesh",
+      "reason": "确认法术名及统一译名，修正分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1096 为法术名 Sunder Flesh；2733 为卷轴名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留撕裂血肉；译名与短语字面一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "term_kind 改为 proper_name；category_path 技能保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "所有候选译名一致，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:173",
+      "evidence_rows": [
+        315,
+        1142,
+        2734
+      ],
+      "source_excerpt": "Scroll of Supernova",
+      "reason": "确认法术名及统一译名，修正分类与匹配范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1142 整条为 Supernova；315/2734 为卷轴名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留超新星；法术名简洁且与词形一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "term_kind 改为 proper_name；category_path 技能保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "因 Supernova 亦为普通天文词，新增 case_sensitive literal_context 限定卷轴名；1142 独立记录按同一法术名处理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:174",
+      "evidence_rows": [
+        1136,
+        2735
+      ],
+      "source_excerpt": "Scroll of Trapkill",
+      "reason": "确认法术名及统一译名，修正分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1136 为法术名 Trapkill；2735 为卷轴名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留解除陷阱；较破阱、陷阱破坏更自然。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "term_kind 改为 proper_name；category_path 技能保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选破阱过于生僻、陷阱破坏偏名词化；统一解除陷阱。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:164",
+    "terms:251",
+    "terms:165",
+    "non_translate:146",
+    "non_translate:237",
+    "terms:167",
+    "terms:168",
+    "terms:169",
+    "terms:171",
+    "terms:172",
+    "terms:173",
+    "terms:174"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

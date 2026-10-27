@@ -1,0 +1,364 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对e1-e10的来源、译名、分类与一致性；统一Luna为「月神」、Saint Velhera为「圣维尔赫拉」并修正教堂名，补全Eschalon释义，为两条non_translate路径补whole_record适用范围。audit.findings为空。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "月神",
+        "term_reason": "3593中Bethel提供服侍Luna旨意的工作；Luna为神名，已发布v1.5作「月神」。"
+      },
+      "reason": "按已发布v1.5统一Luna为「月神」，并在term_reason中明确其神名含义。",
+      "evidence_rows": [
+        3593
+      ],
+      "table": "characters",
+      "index": 99
+    },
+    {
+      "patch": {
+        "recommended_translation": "圣维尔赫拉"
+      },
+      "reason": "与已发布v1.5及e3教堂名统一，补足Velhera的音节。",
+      "evidence_rows": [
+        3975
+      ],
+      "table": "characters",
+      "index": 101
+    },
+    {
+      "patch": {
+        "recommended_translation": "圣维尔赫拉大教堂",
+        "term_reason": "Father Jonathon 所在的教堂，供奉圣维尔赫拉。"
+      },
+      "reason": "按Saint Velhera统一译名修正教堂名，并明确其为宗教建筑。",
+      "evidence_rows": [
+        3975
+      ],
+      "table": "terms",
+      "index": 534
+    },
+    {
+      "patch": {
+        "term_reason": "世界/地区名，见 eastern province of Eschalon；创世神话中亦指封住天空裂口的宝石。"
+      },
+      "reason": "原term_reason只写世界名且引文未在附列记录中；据438/4682补世界/地区义，据3040补宝石义。",
+      "evidence_rows": [
+        438,
+        3040,
+        4682
+      ],
+      "table": "terms",
+      "index": 0
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "第1259条为完整存档目录路径，需整条原样保留。"
+        }
+      },
+      "reason": "non_translate须明确applicability；该条是完整路径，限定为whole_record且区分大小写。",
+      "evidence_rows": [
+        1259
+      ],
+      "table": "non_translate",
+      "index": 89
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "第1569条为完整配置文件名，需整条原样保留。"
+        }
+      },
+      "reason": "non_translate须明确applicability；该条是完整文件名，限定为whole_record且区分大小写。",
+      "evidence_rows": [
+        1569
+      ],
+      "table": "non_translate",
+      "index": 135
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:99",
+      "evidence_rows": [
+        3593
+      ],
+      "source_excerpt": "Will of Luna",
+      "reason": "Luna为Bethel相关宗教语境中的神名；按已发布v1.5统一为「月神」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3593中「Will of Luna」表明Luna为Bethel相关宗教语境中的神名，属专名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "推荐译名由「露娜」改为已发布v1.5的「月神」，与宗教语境和既有译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required，Luna为具名神祇，性别女性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "「月神」与既有v1.5统一；同批无其他Luna译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:101",
+      "evidence_rows": [
+        3975
+      ],
+      "source_excerpt": "Saint Velhera",
+      "reason": "Saint Velhera为Basilica所供奉的圣徒；采用已发布v1.5译名「圣维尔赫拉」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3975中「Basilica of Saint Velhera」表明Saint Velhera为教堂所奉圣徒专名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "「圣维赫拉」改为已发布v1.5「圣维尔赫拉」，补足音节并与e3统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required，圣徒专名；无证据确定性别，保留其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e3教堂名中的圣徒译名统一为「圣维尔赫拉」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:534",
+      "evidence_rows": [
+        3975
+      ],
+      "source_excerpt": "Basilica of Saint Velhera",
+      "reason": "教堂专名；按圣徒名统一改为「圣维尔赫拉大教堂」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3975中「Basilica of Saint Velhera」为教堂名称，Father Jonathon在此服务。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "「圣维赫拉大教堂」改为「圣维尔赫拉大教堂」，与Saint Velhera译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/proper_name/required，category_path=地名，作为宗教建筑/地点名合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e2圣徒名「圣维尔赫拉」保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:103",
+      "evidence_rows": [
+        4550
+      ],
+      "source_excerpt": "Lars; man about town, now under ground.",
+      "reason": "墓碑铭文中的男性名字；保持「拉尔斯」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4550显示Lars为墓碑上的人名，man about town指其生前身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「拉尔斯」为Lars常用音译，符合人名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required，男性人物名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批无人名冲突；无v1.5异名提示。"
+        }
+      }
+    },
+    {
+      "ref": "characters:104",
+      "evidence_rows": [
+        4551
+      ],
+      "source_excerpt": "Rachel - Beauty now bones; hollow and alone.",
+      "reason": "墓碑铭文中的女性名字；保持「蕾切尔」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4551显示Rachel为墓碑人名，并描述其美貌已成枯骨。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「蕾切尔」为Rachel常用译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required，女性人物名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批无人名冲突；无v1.5异名提示。"
+        }
+      }
+    },
+    {
+      "ref": "terms:0",
+      "evidence_rows": [
+        3040
+      ],
+      "source_excerpt": "The gem became known as Eschalon",
+      "reason": "Eschalon兼指世界/地区名与创世神话中的宝石；统一译「埃斯卡隆」，并修正term_reason的释义范围。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "原term_reason只写世界名且引文未在附列记录中；据438/4682补世界/地区义，据3040补宝石义。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「埃斯卡隆」与游戏背景及e7/e8标题中的Eschalon一致，也适用于宝石名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/proper_name/required，category_path=地名；世界/地区义为主，宝石义不改变专名分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e7/e8的Eschalon=埃斯卡隆一致；e9/e10为non_translate路径，不参与正文译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:311",
+      "evidence_rows": [
+        4734
+      ],
+      "source_excerpt": "Eschalon: Book I",
+      "reason": "游戏标题，采用背景给定中文名「埃斯卡隆：卷一」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4734等显示Eschalon: Book I为完整游戏标题。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "与game_background中文名「埃斯卡隆：卷一」一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/proper_name/required，category_path=其他，符合作品标题分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e6的Eschalon=埃斯卡隆一致，Book I译卷一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:555",
+      "evidence_rows": [
+        4735
+      ],
+      "source_excerpt": "Eschalon: Book II",
+      "reason": "续作标题；沿用Eschalon=埃斯卡隆，Book II译卷二。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4735中「story continues in Eschalon: Book II」表明其为续作标题。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「埃斯卡隆：卷二」与e7命名格式一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/proper_name/required，category_path=其他，作品标题合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e6/e7的Eschalon及Book编号译法一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:89",
+      "evidence_rows": [
+        1259
+      ],
+      "source_excerpt": "/Eschalon Book 1 Saved Games/",
+      "reason": "完整存档目录路径，属运行/文件标识；补whole_record级applicability，整条保留原文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1259整条为存档目录路径，不含需翻译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate标识按原文保留，无译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目缺applicability；补为whole_record、case_sensitive=true，限定仅整条路径保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与non_translate保留文件路径的策略一致，不影响e6正文专名。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:135",
+      "evidence_rows": [
+        1569
+      ],
+      "source_excerpt": "eschalon.cfg",
+      "reason": "配置文件路径/标识符；补whole_record级applicability，整条保留原文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1569整条为配置文件名，属运行/文件标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate标识按原文保留，无译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目缺applicability；补为whole_record、case_sensitive=true，限定仅该文件名保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与non_translate保留配置文件的策略一致，不影响e6正文专名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:99",
+    "characters:101",
+    "terms:534",
+    "characters:103",
+    "characters:104",
+    "terms:0",
+    "terms:311",
+    "terms:555",
+    "non_translate:89",
+    "non_translate:135"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

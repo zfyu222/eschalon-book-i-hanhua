@@ -1,0 +1,366 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核 e1-e12 全部条目。确认 Eleanor 与 Eleanor Mistlepine 的简称/全名关系；按已发布 v1.5 译名统一 e2 为「埃莉诺·米斯特尔派恩」；修正 e5 的性别与说明，明确 William 为 Blackwater 男性议会首领。其余人名、书名及化名条目的来源、译名、分类与同批一致性未发现需改动之处。audit.findings 为空，无需确认 f 编号。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "埃莉诺·米斯特尔派恩",
+        "term_reason": "阿里德尔村的议会首领；原文以 Eleanor Mistlepine 自称，后文简称 Eleanor。"
+      },
+      "reason": "候选存在「米斯尔派恩」与「米斯特尔派恩」两种；按已发布 v1.5 译名统一为「埃莉诺·米斯特尔派恩」，并保留 Aridell 议会首领身份说明。",
+      "evidence_rows": [
+        3629,
+        3656
+      ],
+      "table": "characters",
+      "index": 29
+    },
+    {
+      "patch": {
+        "gender": "男性",
+        "term_reason": "Blackwater 的男性议会首领；原文以 a man 与 Council Head 介绍自己，并委托调查刺杀阴谋。"
+      },
+      "reason": "937 原文明确 William 为 a man，且 1236/4184 说明其为 Blackwater 议会首领并委托调查刺杀阴谋；原 gender=其他与说明不准确。",
+      "evidence_rows": [
+        937,
+        1236
+      ],
+      "table": "characters",
+      "index": 22
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:17",
+      "evidence_rows": [
+        4244
+      ],
+      "source_excerpt": "Eleanor says with a puzzled look upon her face. She steps back and quickly examines you.",
+      "reason": "Eleanor 为 Aridell 村中与玩家交谈的女性 NPC，简称译名稳定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4244 以 her/she 指代 Eleanor，确认其为女性人物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Eleanor 译作「埃莉诺」，与 e2 全名简称一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，归入 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2 的 Eleanor Mistlepine 共用「埃莉诺」，未误合并全名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:29",
+      "evidence_rows": [
+        3629
+      ],
+      "source_excerpt": "our Council Head, Eleanor Mistlepine, though I suspect she'll just give you the patriotic speach she gives everyone.",
+      "reason": "Eleanor Mistlepine 为 Aridell 议会首领；全名译名按已发布 v1.5 统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3629 明确称其为 Council Head 并用 she 指代；3656 自报全名 Eleanor Mistlepine。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "候选有「米斯尔派恩」与「米斯特尔派恩」；按已发布 v1.5 统一修正为「埃莉诺·米斯特尔派恩」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物全名专名，归入 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1 的简称 Eleanor 共用「埃莉诺」，全名独立为「埃莉诺·米斯特尔派恩」。"
+        }
+      }
+    },
+    {
+      "ref": "characters:20",
+      "evidence_rows": [
+        439
+      ],
+      "source_excerpt": "*-Mort-",
+      "reason": "Mort 为信件署名人物名，译名「莫特」无同批冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "439 信末署名为 -Mort-，可确认是写信人姓名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Mort 音译为「莫特」，符合人物名处理。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，归入 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形或词族冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:21",
+      "evidence_rows": [
+        440
+      ],
+      "source_excerpt": "Kalus, *Payment will be delivered upon news that William has been eliminated.",
+      "reason": "Kalus 为密信收件人名，译名「卡卢斯」可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "440 开头直呼 Kalus，并提及 William 被消除后付款，可确认是收件人姓名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Kalus 音译为「卡卢斯」，未与普通词混淆。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，归入 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同文 William 统一为「威廉」，Kalus 独立不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:22",
+      "evidence_rows": [
+        937
+      ],
+      "source_excerpt": "I am William, Council Head of Blackwater.",
+      "reason": "William 为 Blackwater 男性议会首领；修正原 gender 与说明。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "937 原文以 a man 介绍 William，故 gender 由「其他」修正为「男性」；1236/4184 补充其议会首领身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "William 译作「威廉」，为常用译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，归入 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e6 的 William Brown 共用 William=「威廉」，全名独立为「威廉·布朗」，未误合并。"
+        }
+      }
+    },
+    {
+      "ref": "characters:78",
+      "evidence_rows": [
+        3146
+      ],
+      "source_excerpt": "William Brown",
+      "reason": "William Brown 为墓碑人名，译名「威廉·布朗」稳定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3146 仅有人名 William Brown，作为墓碑逝者姓名可识别为人物专名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "William Brown 译作「威廉·布朗」，William=威廉，Brown=布朗。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，归入 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e5 的 William 共用「威廉」，与 e7 的 Brown 共用「布朗」。"
+        }
+      }
+    },
+    {
+      "ref": "characters:93",
+      "evidence_rows": [
+        3243
+      ],
+      "source_excerpt": "Harriett Brown",
+      "reason": "Harriett Brown 为墓碑人名，译名「哈丽雅特·布朗」可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3243 仅有人名 Harriett Brown，作为墓碑逝者姓名可识别为人物专名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Harriett Brown 译作「哈丽雅特·布朗」，音译自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，归入 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Brown 与 e6 的 William Brown 统一为「布朗」，名字部分独立不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:23",
+      "evidence_rows": [
+        443
+      ],
+      "source_excerpt": "Jak notched an arrow and pulled the string back until he felt that familiar feeling of feathers against his cheek.",
+      "reason": "Jak 为故事中的弓手人物名，译名「贾克」保留 Jak 的音形。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "443 以 he/his 叙述 Jak 拉弓战斗，可确认其为故事人物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Jak 译作「贾克」，保留 a 音，未混同 Jack 的常见译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，归入 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形或词族冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:24",
+      "evidence_rows": [
+        444
+      ],
+      "source_excerpt": "Benny knew he shouldn't keep it.",
+      "reason": "Benny 为故事男孩人物名，译名「本尼」与书名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "444 以 he/his 叙述 Benny 与蛋，可确认其为故事人物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Benny 译作「本尼」，音译稳定。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，归入 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e10 书名中的 Benny 统一为「本尼」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:122",
+      "evidence_rows": [
+        42
+      ],
+      "source_excerpt": "Benny and the Dragon",
+      "reason": "书名专名，译名「《本尼与龙》」与人物 Benny 一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "42 原文为书名 Benny and the Dragon。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作「《本尼与龙》」，保留书名号，Benny=本尼。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "故事书书名作为物品名，归入 terms/物品可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e9 人物 Benny 统一为「本尼」。"
+        }
+      }
+    },
+    {
+      "ref": "characters:26",
+      "evidence_rows": [
+        433
+      ],
+      "source_excerpt": "Don't fail me again Hagbert or I'll cut out your liver.",
+      "reason": "Hagbert 为警告信收件人，译名「哈格伯特」无同批冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "433 信件直接称呼 Hagbert，并威胁其不要失败，可确认是收件人姓名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Hagbert 音译为「哈格伯特」，符合人物名处理。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，归入 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同信中的化名 Foozgrumph 为不同名称，未混同。"
+        }
+      }
+    },
+    {
+      "ref": "characters:27",
+      "evidence_rows": [
+        433
+      ],
+      "source_excerpt": "you must register under the name \"Foozgrumph\" for the innkeeper to give you the proper room.",
+      "reason": "Foozgrumph 为登记时使用的化名，译名「福兹格伦普」保留化名性质。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "433 明确要求以 Foozgrumph 名义登记，可确认是化名/登记名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Foozgrumph 音译为「福兹格伦普」，作为专名处理。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物化名/登记名，归入 characters 可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Hagbert 为同信中不同名称，未误合并。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:17",
+    "characters:29",
+    "characters:20",
+    "characters:21",
+    "characters:22",
+    "characters:78",
+    "characters:93",
+    "characters:23",
+    "characters:24",
+    "terms:122",
+    "characters:26",
+    "characters:27"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

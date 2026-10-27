@@ -1,0 +1,377 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对12个术语的原文、译名、分类与一致性；修正 e1、e6、e12 的译名，其余保留。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "缠木藏骨堂",
+        "term_reason": "Lorus of Eastleaf 墓穴所在的任务地点；Tangletree 与 Tangletree Forest 同词根，Ossuray 为藏骨堂变体。"
+      },
+      "reason": "Tangletree 应沿用「缠木」，Ossuray 译「藏骨堂」，修正译名并补足原文依据。",
+      "evidence_rows": [
+        1228
+      ],
+      "table": "terms",
+      "index": 307
+    },
+    {
+      "patch": {
+        "recommended_translation": "掘墓者之光",
+        "term_reason": "独立名称；Gravedigger 与 Gravedigger's Flame 同词根，Light 指光/照明效果；按现有物品类保留。"
+      },
+      "reason": "Gravedigger 词根应与相关 Flame 条目统一为「掘墓者」，修正译名。",
+      "evidence_rows": [
+        1950
+      ],
+      "table": "terms",
+      "index": 320
+    },
+    {
+      "patch": {
+        "recommended_translation": "护甲等级",
+        "term_reason": "角色防御属性；原文以 Armor Rating +N 表示数值加成，沿用已发布 v1.5 译名「护甲等级」。"
+      },
+      "reason": "原文为数值型防御属性，按已发布 v1.5 统一为「护甲等级」。",
+      "evidence_rows": [
+        1905,
+        1918
+      ],
+      "table": "terms",
+      "index": 336
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:307",
+      "evidence_rows": [
+        1228
+      ],
+      "source_excerpt": "Tangletree Ossuray",
+      "reason": "修正 Tangletree 词根与 Ossuray 词义，使任务地点名与既有地名用字一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 1228 明确出现「Tangletree Ossuray」，为 Lorus of Eastleaf 墓穴所在任务地点。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "Tangletree 沿用「缠木」，Ossuray 译「藏骨堂」，改为「缠木藏骨堂」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文说明其为任务地点，归地名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Tangletree Forest 译名「缠木森林」保持同一词根，不再作「缠枝」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:309",
+      "evidence_rows": [
+        1989
+      ],
+      "source_excerpt": "Grimmhold East",
+      "reason": "快速旅行地点名，译名与 Grimmhold 词根一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1989 出现「Grimmhold East」，为快速旅行地点列表名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「Grimmhold East」译「格里姆霍尔德东」，保留方位且简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "快速旅行地点，归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Grimmhold 与相关译名「格里姆霍尔德」一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:310",
+      "evidence_rows": [
+        1990
+      ],
+      "source_excerpt": "Grimmhold West",
+      "reason": "快速旅行地点名，译名与 Grimmhold 词根一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1990 出现「Grimmhold West」，为快速旅行地点列表名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「Grimmhold West」译「格里姆霍尔德西」，保留方位且简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "快速旅行地点，归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Grimmhold 与相关译名「格里姆霍尔德」一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:313",
+      "evidence_rows": [
+        1981
+      ],
+      "source_excerpt": "Goblin teleporter",
+      "reason": "Crakamir 快速旅行限制语境中的传送设施名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1981 出现「Goblin teleporter」，位于 Crakamir 快速旅行限制语境。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「Goblin teleporter」译「哥布林传送器」，符合传送设施名称。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为可使用的传送设施，归物品类可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Goblin 统一为「哥布林」，teleporter 统一为「传送器」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:315",
+      "evidence_rows": [
+        1231
+      ],
+      "source_excerpt": "Magick Shop",
+      "reason": "Blackwater 的商店类型名，Magick 与既有魔法术语用字一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1231 出现「Vezzar, the Magick Shop owner in Blackwater」，指 Blackwater 的商店。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「Magick Shop」译「魔法商店」，Magick 与「元素魔法」用字一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指商店经营体，归组织类可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Magick 统一为「魔法」，Shop 统一为「商店」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:320",
+      "evidence_rows": [
+        1950
+      ],
+      "source_excerpt": "Gravedigger's Light",
+      "reason": "Gravedigger 词根与相关 Flame 条目统一，修正译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1950 仅有独立标签「Gravedigger's Light」，可确认名称。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "Gravedigger 应作「掘墓者」，改为「掘墓者之光」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "现有证据仅见独立名称，按物品类保留，无充分原文改判。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Gravedigger's Flame「掘墓者之焰」保持同一词根，Light 译「光」以区别「焰」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:327",
+      "evidence_rows": [
+        1884
+      ],
+      "source_excerpt": "Spell Journal",
+      "reason": "准备法术的界面/系统名称，译名与 Quest Journal 结构一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1884 出现「Spell Journal」，为准备法术的界面名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「Spell Journal」译「法术日志」，简洁且符合界面名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "界面/系统名称，归其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Spell 统一「法术」，Journal 统一「日志」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:329",
+      "evidence_rows": [
+        1980
+      ],
+      "source_excerpt": "Quest Journal",
+      "reason": "任务日志界面名称，译名与 Spell Journal 结构一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1980 出现「Quest Journal」，为关闭任务日志提示。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「Quest Journal」译「任务日志」，与 Spell Journal 结构一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "界面名称，归其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Quest 统一「任务」，Journal 统一「日志」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:332",
+      "evidence_rows": [
+        1814
+      ],
+      "source_excerpt": "Readied Spell",
+      "reason": "已准备可施放法术的状态/栏位名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1814 出现「Readied Spell」，为状态/栏位标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「Readied Spell」译「已准备法术」，表达已准备可施放状态。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "状态/栏位名，归其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Spell 与 Spell Journal 同译「法术」，readied 译「已准备」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:334",
+      "evidence_rows": [
+        2105
+      ],
+      "source_excerpt": "Hit Points",
+      "reason": "角色生命资源属性名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2105 出现「Hit Points」，为角色生命资源。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「Hit Points」译「生命值」，为通行属性译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "角色资源属性，归其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Mana Points「法力值」保持「X值」资源命名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:335",
+      "evidence_rows": [
+        1623
+      ],
+      "source_excerpt": "Mana Points",
+      "reason": "角色法力资源属性名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1623 出现「Mana Points」，为施法资源。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「Mana Points」译「法力值」，为通行资源译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "角色资源属性，归其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Hit Points「生命值」保持「X值」结构。"
+        }
+      }
+    },
+    {
+      "ref": "terms:336",
+      "evidence_rows": [
+        1905
+      ],
+      "source_excerpt": "Armor Rating +2",
+      "reason": "按已发布 v1.5 统一防御属性译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1905 出现「Armor Rating +2」，表示防御属性加成。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文为数值型防御属性，按已发布 v1.5 统一改为「护甲等级」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "防御属性名，归其他。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与已发布 v1.5 术语「护甲等级」统一，不再用「护甲值」。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:307",
+    "terms:309",
+    "terms:310",
+    "terms:313",
+    "terms:315",
+    "terms:320",
+    "terms:327",
+    "terms:329",
+    "terms:332",
+    "terms:334",
+    "terms:335",
+    "terms:336"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

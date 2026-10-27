@@ -1,0 +1,445 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对全部 e1-e12。确认 Virtuous、Nefarious、Agnostic 是信条标签；*Dodge、*Mercantile、*Move *Silently、*Survival 是技能名；*Pick *Locks 与 Pick Locks 是同一技能的不同标记变体，共享“开锁”（f1）。Rogue 按职业名改译“游荡者”，与相关 Thief 的“盗贼”区分（f2）。为 data/rogue 补 whole_record，并为若干普通词或独立标签补 literal_context 或 whole_record。",
+  "acknowledged_findings": [
+    "F0267",
+    "F0285"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "of ",
+          "suffix": " faith",
+          "reason": "1016 中“of Virtuous faith”为信条名，限定该紧邻字串，避免普通形容词全局匹配。"
+        }
+      },
+      "reason": "补足日常形容词作为信条标签时的匹配范围。",
+      "evidence_rows": [
+        1016
+      ],
+      "table": "terms",
+      "index": 261
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "of ",
+          "suffix": " faith",
+          "reason": "1017 中“of Nefarious faith”为信条名，限定该紧邻字串，避免普通形容词全局匹配。"
+        }
+      },
+      "reason": "补足日常形容词作为信条标签时的匹配范围。",
+      "evidence_rows": [
+        1017
+      ],
+      "table": "terms",
+      "index": 262
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "1459 整条记录为独立分类标签 Agnostic；限定整条匹配，避免与 1018 释义句混用。"
+        }
+      },
+      "reason": "补足独立标签的匹配范围。",
+      "evidence_rows": [
+        1459
+      ],
+      "table": "terms",
+      "index": 263
+    },
+    {
+      "patch": {
+        "recommended_translation": "游荡者",
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "The ",
+          "suffix": " starts",
+          "reason": "1020 中“The Rogue starts with the *Pick *Lock skill.”明确为职业名，限定该紧邻字串。"
+        },
+        "term_reason": "1020 为低调、擅长开锁与拆陷阱的职业，初始拥有 *Pick *Lock 技能；作为职业名译作“游荡者”。"
+      },
+      "reason": "f2 显示 Rogue 与 Thief 共享“盗贼”；本条 Rogue 为职业名，改译“游荡者”以区分，并限定职业名用法。",
+      "evidence_rows": [
+        1020
+      ],
+      "table": "terms",
+      "index": 265
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "2347 整条记录为 data/rogue 资源路径，应整体保留。"
+        }
+      },
+      "reason": "non_translate 必须显式限定匹配范围，避免默认全局禁用翻译。",
+      "evidence_rows": [
+        2347
+      ],
+      "table": "non_translate",
+      "index": 321
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "skill '",
+          "suffix": "'",
+          "reason": "1762 中“learn the skill 'Pick Locks'”为技能名，限定紧邻引号字串。"
+        }
+      },
+      "reason": "Pick Locks 由普通词组构成，需限定在对话引号内匹配。",
+      "evidence_rows": [
+        1762
+      ],
+      "table": "terms",
+      "index": 366
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:261",
+      "evidence_rows": [
+        1016
+      ],
+      "source_excerpt": "A person of Virtuous faith lives a life of altruism and strives to promote goodwill with others.",
+      "reason": "确认 Virtuous 为信条标签，保留“仁善”，并补 literal_context 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1016 定义“A person of Virtuous faith”为利他与善意信条，并说明自动获得 Bless、易被诅咒。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“仁善”对应 Virtuous 的道德善行义，作为信条标签简洁；不把 *Divination 等控制符并入术语。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "信条或信仰不属于技能、地名等，归入“其他”可接受。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目无 applicability；已在 edit 中补 literal_context（of ... faith），与 e2/e3 的信条类处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:262",
+      "evidence_rows": [
+        1017
+      ],
+      "source_excerpt": "A person of Nefarious faith lives a life of self-indulgence and corruption.",
+      "reason": "确认 Nefarious 为信条标签，保留“邪恶”，并补 literal_context 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1017 定义 Nefarious 为自我放纵与腐化信条，攻击可造成 Malice Damage，且不受善意治疗。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“邪恶”对应 Nefarious 的恶行或腐化义，作为信条标签简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "信条或信仰不属于技能、地名等，归入“其他”可接受。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目无 applicability；已在 edit 中补 literal_context（of ... faith），与 e1/e3 一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:263",
+      "evidence_rows": [
+        1018,
+        1459
+      ],
+      "source_excerpt": "The Agnostic person generally believes in some sort of higher power on a personal level, but balances this belief with observable truths and grounded ideals.",
+      "reason": "确认 Agnostic 为信条标签；主译保留“不可知论”，独立标签用 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1018 说明 Agnostic 在个人层面相信高等力量，但以可观察真相平衡；1459 为独立标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“不可知论”对应信条概念；1459 作为独立标签也宜用该概念，不选“不可知论者”作主译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "主条目与 e1/e2 同归“其他”；1459 候选的“身份”不改主分类。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原主条目无 applicability；已在 edit 中按 1459 补 whole_record，避免与 1018 的形容词用法混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:265",
+      "evidence_rows": [
+        1020
+      ],
+      "source_excerpt": "The Rogue starts with the *Pick *Lock skill.",
+      "reason": "确认 Rogue 为职业名；改译“游荡者”以消除与 Thief 的共享译名冲突，并补职业名匹配范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1020 描述 Rogue 为低调、擅长开锁与拆陷阱的职业，并明确“The Rogue starts...”。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“盗贼”与 f2 中 Thief 的“盗贼”冲突；Rogue 作为职业名改译“游荡者”，保留“盗贼/窃贼”给 Thief。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "职业或身份名归入“身份”正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已通过 edit 改译并补 literal_context（The ... starts）；f2 的共享译名冲突在本条消除。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:321",
+      "evidence_rows": [
+        2347
+      ],
+      "source_excerpt": "data/rogue",
+      "reason": "确认 non_translate 路径，补 whole_record applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2347 整条即 data/rogue，属于预设角色资源路径或标识符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 不翻译，保留原字符串 data/rogue。"
+        },
+        "category": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无 category_path，分类维度不适用。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺 applicability；已在 edit 中补 whole_record、case_sensitive=true，避免全局禁用翻译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:275",
+      "evidence_rows": [
+        1049
+      ],
+      "source_excerpt": "*Dodge allows you to avoid being attacked through evasive actions, such as a carefully timed sidestep or twist of your body.",
+      "reason": "确认 *Dodge 为被动技能，保留“闪避”；corpus 1055 不用于本条定义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1049 明确 *Dodge 为侧步或扭身躲避攻击的被动技能，每点 1% 闪避率。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“闪避”对应 dodge 的动作或技能义，符合技能名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能名归入“技能”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 *Pick *Locks 等技能同为带 * 控制符的术语；corpus 1055 是 Pick Locks 定义，不改变本条。"
+        }
+      }
+    },
+    {
+      "ref": "terms:279",
+      "evidence_rows": [
+        1053
+      ],
+      "source_excerpt": "*Mercantile is the ability to negotiate better prices when buying and selling items from merchants.",
+      "reason": "确认 Mercantile 为议价技能，保留“商术”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1053 说明 *Mercantile 是向商人买卖时议价的能力，越高买价越低、卖价越高。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“商术”作为技能名可表达经商或议价能力，且保持两字紧凑。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能名归入“技能”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 *Dodge、*Survival 等带 * 标记的技能命名方式一致，无跨条冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:280",
+      "evidence_rows": [
+        1054
+      ],
+      "source_excerpt": "*Move *Silently is a stealth skill that allows you to move without producing sound to avoid detection.",
+      "reason": "确认 Move Silently 为潜行技能，保留“无声移动”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1054 说明 *Move *Silently 为不发声音移动以避免发现的潜行技能，可抵消护甲噪音惩罚。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“无声移动”对应 move without producing sound，技能名简洁明确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能名归入“技能”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两个 * 为原文控制标记，不影响术语核心译名；与同类技能术语处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:281",
+      "evidence_rows": [
+        1055
+      ],
+      "source_excerpt": "The *Pick *Locks Skill is the ability to utilize lockpicks to release locks on doors and chests.",
+      "reason": "确认 *Pick *Locks 为开锁技能，与无标记变体共享“开锁”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1055 说明 *Pick *Locks 是使用开锁工具打开门与箱子锁的技能，受智力与敏捷加成。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“开锁”对应 pick locks 的技能义，简洁且与普通动作区分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能名归入“技能”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 中 *Pick *Locks 与无标记 Pick Locks 为同一技能的不同标记形式，共享“开锁”合理；相关条目的 lock picking 是书籍主题，不改本条。"
+        }
+      }
+    },
+    {
+      "ref": "terms:366",
+      "evidence_rows": [
+        1762
+      ],
+      "source_excerpt": "To attempt to pick this lock, you must first learn the skill 'Pick Locks'.",
+      "reason": "确认对话中的技能名 Pick Locks，与 *Pick *Locks 同译“开锁”，并补 literal_context。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1762 在对话中明确“learn the skill 'Pick Locks'”，指开锁技能。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“开锁”与同技能 *Pick *Locks 的译名一致，符合 f1 的同一技能变体。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能名归入“技能”正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目无 applicability；已在 edit 中补 literal_context（skill '...'），确认与 *Pick *Locks 共享译名而不全局匹配普通短语。"
+        }
+      }
+    },
+    {
+      "ref": "terms:284",
+      "evidence_rows": [
+        1058
+      ],
+      "source_excerpt": "*Survival is the ability to dress wounds and utilize common herbs for faster recovery of ^Hit ^Points, as well as an increase in resistance to ^Toxins and ^Disease.",
+      "reason": "确认 Survival 为生存技能，保留“生存”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1058 说明 *Survival 可包扎伤口、用草药加速 ^Hit ^Points 恢复，并提高对 ^Toxins/^Disease 的抗性。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“生存”对应 survival 的技能义，简洁；^ 控制符保留在正文处理。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能名归入“技能”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 *Dodge、*Mercantile 等带 * 标记技能的处理一致，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:293",
+      "evidence_rows": [
+        1157,
+        2407
+      ],
+      "source_excerpt": "Entangled",
+      "reason": "确认 Entangled 为状态标签，保留“被纠缠”；whole_record 已正确限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1157 整条为状态标签 Entangled；2407 为小写动词句“Target was not entangled...”，可区分。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“被纠缠”对应状态标签，符合 UI 状态名；2407 的动词句应按普通句翻译，不套用标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "状态效果归入“其他”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "已有 whole_record、case_sensitive=true，仅匹配 1157 整条，不会影响 2407 的小写 entangled。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:261",
+    "terms:262",
+    "terms:263",
+    "terms:265",
+    "non_translate:321",
+    "terms:275",
+    "terms:279",
+    "terms:280",
+    "terms:281",
+    "terms:366",
+    "terms:284",
+    "terms:293"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

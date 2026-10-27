@@ -1,0 +1,373 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e12 的来源、译名、分类与一致性审校；e10 Detox 按法术名修正为 proper_name 并用 whole_record 限定，避免与 Detox Serum 同形词混淆；审计 f1 中 e12/e13 同译“法力强化”属同源效果/状态词，语义可共存，无需改译。",
+  "acknowledged_findings": [
+    "F0275"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "1070 整条记录为法术名 Detox；限定为独立法术记录，避免误套到 Detox Serum 等复合物品名。"
+        },
+        "term_reason": "Detox 为法术名，指移除毒素的法术；1070 为独立法术记录，Scroll of Detox 为对应卷轴名。"
+      },
+      "reason": "1070 独立记录与 2708 卷轴记录均表明 Detox 是法术名；按专名处理并限定适用范围，避免同形物品名误用。",
+      "evidence_rows": [
+        1070,
+        2708
+      ],
+      "table": "terms",
+      "index": 147
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:91",
+      "evidence_rows": [
+        411,
+        412
+      ],
+      "source_excerpt": "Jelly Fungus and Bromine",
+      "reason": "Jelly Fungus 是炼金配方中的菌类材料，译名与物品类别相符。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "411 行 Ogre Strength 配方含 Jelly Fungus，412 行 Stone Skin 配方亦含该材料。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“胶质菌”对应 Jelly Fungus 的菌类材料义，中文搭配自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为炼金配方成分，归入“物品”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批材料类条目均按配方成分处理，无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:323",
+      "evidence_rows": [
+        1242,
+        1909
+      ],
+      "source_excerpt": "Eye Fungus",
+      "reason": "Eye Fungus 是可由血清治愈的疾病名，按疾病名处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1909 行将 Eye Fungus 与 Dungeon Fever、Rusty Knuckles 并列为 common diseases；1242 为同名标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“眼真菌”简洁对应疾病名，保留真菌义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "疾病名归入“其他”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为疾病名，与同批其他疾病名并列，译名不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:92",
+      "evidence_rows": [
+        410,
+        411,
+        412
+      ],
+      "source_excerpt": "Cat's Eyes Serum : Willow Sap and Bromine",
+      "reason": "Bromine 是多份配方中的炼金材料，译“溴”准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "410、411、412 行分别列出 Bromine 在 Cat's Eyes Serum、Ogre Strength、Mana Fortify 配方中的用途。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“溴”是化学元素名，作为炼金材料简洁准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为配方材料归入“物品”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "三处配方均作材料，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:93",
+      "evidence_rows": [
+        411
+      ],
+      "source_excerpt": "Belladonna and Charcoal",
+      "reason": "Belladonna 是 Cure Disease 与 Detox Serum 配方中的植物材料。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "411 行 Cure Disease 与 Detox Serum 配方均含 Belladonna。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“颠茄”为 Belladonna 的常用植物名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为炼金材料归入“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 411 行其他材料并列，译名无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:94",
+      "evidence_rows": [
+        411,
+        412
+      ],
+      "source_excerpt": "Belladonna and Charcoal",
+      "reason": "Charcoal 是 Cure Disease 与 Invisibility 配方中的材料。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "411 行 Cure Disease 配方含 Charcoal，412 行 Invisibility 配方亦含。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“木炭”为 Charcoal 的常用译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为炼金材料归入“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与配方中其他材料并列，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:95",
+      "evidence_rows": [
+        410
+      ],
+      "source_excerpt": "Mana Potion : Mandrake Root and Acid",
+      "reason": "Acid 是 Mana Potion 与 Keensight 配方中的炼金材料。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "410 行 Mana Potion 和 Keensight 配方均使用 Acid。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“酸液”对应炼金液体材料，中文搭配自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为配方材料归入“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处配方均作材料，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:96",
+      "evidence_rows": [
+        410,
+        414,
+        2623,
+        2624
+      ],
+      "source_excerpt": "Healing Elixir : Willow Sap and Sulfur",
+      "reason": "Healing Elixir 是治疗药剂系列，配方为 Willow Sap 与 Sulfur；候选“治疗秘药”亦通，但“治疗药剂”更贴合配方药剂语境。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "410 行列配方，2623/2624 行为 Healing Elixir I/II 物品记录。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“治疗药剂”准确表达 healing elixir，并与 Mana Potion 等药剂名区分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为可制作和持有的药剂归入“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Healing Elixir I/II 共用“治疗药剂”核心译名，与配方书一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:98",
+      "evidence_rows": [
+        410
+      ],
+      "source_excerpt": "Cat's Eyes Serum : Willow Sap and Bromine",
+      "reason": "Cat's Eyes Serum 是配方中的血清类药剂，译名保留 Cat's Eyes 与 Serum。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "410 行列明 Cat's Eyes Serum 由 Willow Sap 与 Bromine 制成。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“猫眼血清”对应 Cat's Eyes + Serum，作为药剂名简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为炼金药剂归入“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Serum 类药剂统一保留“血清”后缀，与同批同类名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:103",
+      "evidence_rows": [
+        94,
+        411,
+        2602
+      ],
+      "source_excerpt": "Detox Serum : Belladonna and Serpent Venom",
+      "reason": "Detox Serum 是解毒药剂，配方为 Belladonna 与 Serpent Venom；2602 行显示 cure_poison 效果。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "94 行为名称，411 行为配方，2602 行为物品记录。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“解毒血清”准确表达 detox serum，并保留 Serum 类后缀。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为可制作和持有的药剂归入“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "核心“解毒”与法术名 Detox 一致，物品后缀“血清”与同类条目一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:147",
+      "evidence_rows": [
+        1070,
+        2708
+      ],
+      "source_excerpt": "Detox",
+      "reason": "Detox 是法术名；1070 为独立法术记录，2708 为 Scroll of Detox 卷轴记录。原 game_term 改为 proper_name，并用 whole_record 限定，避免把 Detox Serum 中的同形词误当法术专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1070 整条为 Detox；2708 卷轴记录含 Scroll of Detox，确认同名法术。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“解毒”对应 Detox 的祛毒义，作为法术名简洁。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "1070/2708 表明其为法术相关名称；term_kind 由 game_term 修正为 proper_name，enforcement 保持 required，category_path 仍为“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Detox Serum 的“解毒”核心一致；applicability 限定为独立法术记录，避免误套到复合物品名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:99",
+      "evidence_rows": [
+        410,
+        1163,
+        2674
+      ],
+      "source_excerpt": "Keensight",
+      "reason": "Keensight 是药剂/效果名，配方为 Ambergris 与 Acid，亦用于状态标签和 Potion of Keensight；译“锐视”保留 sight 的视觉义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "410 行列配方，1163 为独立标签，2674 为 Potion of Keensight。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“锐视”简洁对应 Keensight；候选“锐眼”亦通但更偏 eye，保留“视”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为药剂效果/名称归入“技能”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Keensight 与 Potion of Keensight 核心译名一致，状态标签不另起译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:100",
+      "evidence_rows": [
+        412
+      ],
+      "source_excerpt": "Mana Fortify : Mandrake Root and Bromine",
+      "reason": "Mana Fortify 是配方中的效果/药剂名，译“法力强化”；与同源 Mana Fortified 同译已在 f1 核对。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "412 行列明 Mana Fortify 由 Mandrake Root 与 Bromine 制成。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“法力强化”准确对应 Mana Fortify。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为配方中的效果/药剂名归入“技能”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "412 的配方名与同源状态词共享“法力强化”；审计 f1 已核对，属同源效果/状态词，允许一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:91",
+    "terms:323",
+    "terms:92",
+    "terms:93",
+    "terms:94",
+    "terms:95",
+    "terms:96",
+    "terms:98",
+    "terms:103",
+    "terms:147",
+    "terms:99",
+    "terms:100"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

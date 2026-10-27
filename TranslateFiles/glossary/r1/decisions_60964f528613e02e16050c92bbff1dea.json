@@ -1,0 +1,550 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对12个非翻译标识。e1-e11的适用范围缺失均已按独立、嵌入或大小写变体用例补齐；e12补全图像文件名保护范围。未新增、隔离或允许无匹配条目。",
+  "acknowledged_findings": [
+    "F0051",
+    "F0053",
+    "F0054",
+    "F0055",
+    "F0057",
+    "F0059",
+    "F0060",
+    "F0062",
+    "F0063",
+    "F0066",
+    "F0119"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "SFX_Coins 是独立出现的音效标识符，整条记录即该标识；仅保护完整记录可避免正文普通词误匹配。"
+        }
+      },
+      "reason": "补齐独立音效标识的适用域。",
+      "evidence_rows": [
+        1454
+      ],
+      "table": "non_translate",
+      "index": 124
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "drop_loot 是独立出现的脚本/掉落表标识，整条记录即该 token，采用整条匹配保护。"
+        }
+      },
+      "reason": "补齐脚本/掉落标识的适用域。",
+      "evidence_rows": [
+        1534
+      ],
+      "table": "non_translate",
+      "index": 126
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "transmog 在此为独立内部效果标识；整条记录保护可避免把普通文本中的同形缩写一并禁翻。"
+        }
+      },
+      "reason": "补齐内部效果标识的适用域。",
+      "evidence_rows": [
+        1538
+      ],
+      "table": "non_translate",
+      "index": 128
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": false,
+          "reason": "音效标识以 SFX_Negative、sfx_negative、SFX_negative 等独立记录大小写变体出现；仅整条记录匹配并忽略大小写，可覆盖变体且不保护正文中的普通 negative。"
+        }
+      },
+      "reason": "补齐音效标识大小写变体的整记录保护。",
+      "evidence_rows": [
+        1556,
+        2365,
+        2389
+      ],
+      "table": "non_translate",
+      "index": 129
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "proj_firedart 是独立出现的投射物内部标识，整条记录即该标识，采用整条匹配。"
+        }
+      },
+      "reason": "补齐投射物内部标识的适用域。",
+      "evidence_rows": [
+        1564
+      ],
+      "table": "non_translate",
+      "index": 131
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "SFX_CloseWin 是独立出现的音效标识，整条记录即该标识，采用整条匹配。"
+        }
+      },
+      "reason": "补齐独立音效标识的适用域。",
+      "evidence_rows": [
+        1582
+      ],
+      "table": "non_translate",
+      "index": 136
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": false,
+          "reason": "同一音效标识在独立记录 SFX_Stash 与脚本参数 sound(sfx_stash) 中出现；下划线标识符无普通词义，大小写不敏感的 text 保护可覆盖独立及嵌入用例。"
+        }
+      },
+      "reason": "补齐独立与嵌入音效标识的统一保护。",
+      "evidence_rows": [
+        1587,
+        2481
+      ],
+      "table": "non_translate",
+      "index": 137
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sfx_magic_activate 是独立出现的音效标识，整条记录即该标识，采用整条匹配。"
+        }
+      },
+      "reason": "补齐独立音效标识的适用域。",
+      "evidence_rows": [
+        1589
+      ],
+      "table": "non_translate",
+      "index": 139
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "SFX_Magic 是独立出现的音效标识，整条记录即该标识；采用整条匹配避免误扩展到其他 SFX 名称。"
+        }
+      },
+      "reason": "补齐独立音效标识的适用域。",
+      "evidence_rows": [
+        1599
+      ],
+      "table": "non_translate",
+      "index": 144
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "activate_qt 是脚本命令关键字，既独立出现也带数字参数出现；字符串唯一，句中同样必须保留该 token 才能不破坏命令。"
+        }
+      },
+      "reason": "补齐命令关键字独立及带参用法的保护。",
+      "evidence_rows": [
+        2005,
+        3069,
+        3094,
+        3231
+      ],
+      "table": "non_translate",
+      "index": 214
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "SFX_Stats_Open 是音频事件标识，既独立出现也嵌入 Sound(SFX_Stats_Open) 等脚本调用；保留精确标识符以免破坏音频调用。"
+        }
+      },
+      "reason": "补齐音效标识独立及嵌入用法的保护。",
+      "evidence_rows": [
+        1591,
+        2476,
+        2522,
+        2525
+      ],
+      "table": "non_translate",
+      "index": 140
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "0.png 是独立出现的图像资源文件名；整条记录保护可避免匹配到其他文件名中的数字子串。"
+        }
+      },
+      "reason": "补齐图像文件名的整记录保护。",
+      "evidence_rows": [
+        1592
+      ],
+      "table": "non_translate",
+      "index": 141
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:124",
+      "evidence_rows": [
+        1454
+      ],
+      "source_excerpt": "SFX_Coins",
+      "reason": "独立音效标识；补 whole_record 保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1454 原文即 SFX_Coins，音效标识符完整一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译运行标识，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属音效运行标识；原缺 applicability，已补整记录保护。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该标识仅以独立形式出现，保护范围与源串一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:126",
+      "evidence_rows": [
+        1534
+      ],
+      "source_excerpt": "drop_loot",
+      "reason": "独立脚本/掉落标识；补 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1534 原文即 drop_loot，脚本/掉落表 token 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译运行标识，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属脚本/掉落表标识；已补 whole_record 适用域。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅独立记录出现，整记录保护与用法匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:128",
+      "evidence_rows": [
+        1538
+      ],
+      "source_excerpt": "transmog",
+      "reason": "独立内部效果标识；补 whole_record 防止普通词面误匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1538 原文即 transmog，内部效果标识一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译运行标识，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属内部效果标识；已限定为整记录匹配而非全局普通词禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "当前证据仅独立形式，整记录保护不扩展同形普通词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:129",
+      "evidence_rows": [
+        1556,
+        2365,
+        2389
+      ],
+      "source_excerpt": "SFX_Negative",
+      "reason": "音效标识有大小写变体；补 whole_record 且不区分大小写。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1556 原文为 SFX_Negative，音效标识符一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译运行标识，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属音效运行标识；已补整记录且大小写不敏感的适用范围。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "2365、2389 出现 sfx_negative/SFX_negative 等大小写变体，已用 whole_record+case_sensitive=false 覆盖纯记录变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:131",
+      "evidence_rows": [
+        1564
+      ],
+      "source_excerpt": "proj_firedart",
+      "reason": "独立投射物标识；补 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1564 原文即 proj_firedart，投射物内部标识一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译运行标识，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属投射物内部标识；已补整记录保护。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "当前证据仅独立记录出现，保护范围与源串一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:136",
+      "evidence_rows": [
+        1582
+      ],
+      "source_excerpt": "SFX_CloseWin",
+      "reason": "独立音效标识；补 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1582 原文即 SFX_CloseWin，音效标识符一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译运行标识，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属音效运行标识；已补整记录保护。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅独立记录出现，整记录保护与用法匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:137",
+      "evidence_rows": [
+        1587,
+        2481
+      ],
+      "source_excerpt": "sound(sfx_stash)",
+      "reason": "音效标识有独立与嵌入两种用法；补大小写不敏感 text 保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1587 原文为 SFX_Stash，2481 嵌入 sound(sfx_stash)。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译运行标识，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属音效运行标识；已补 text 适用域并说明嵌入调用依据。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "独立 SFX_Stash 与嵌入 sfx_stash 大小写不同，已用 case_sensitive=false 统一保护同一音效标识用法。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:139",
+      "evidence_rows": [
+        1589
+      ],
+      "source_excerpt": "sfx_magic_activate",
+      "reason": "独立音效标识；补 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1589 原文即 sfx_magic_activate，音效标识符一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译运行标识，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属音效运行标识；已补整记录保护。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "当前证据仅独立记录出现，保护范围与源串一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:144",
+      "evidence_rows": [
+        1599
+      ],
+      "source_excerpt": "SFX_Magic",
+      "reason": "独立音效标识；补 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1599 原文即 SFX_Magic，音效标识符一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译运行标识，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属音效运行标识；已补整记录保护以避免误扩展到其他 SFX 名称。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅独立记录出现，整记录保护与用法匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:214",
+      "evidence_rows": [
+        2005,
+        3069,
+        3094,
+        3231
+      ],
+      "source_excerpt": "activate_qt 2",
+      "reason": "命令关键字有独立与带参用法；补 text 保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2005 为 activate_qt，3069/3094/3231 为带数字参数的同一命令关键字。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译运行命令，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属脚本命令关键字；已补 text 适用域并覆盖带参调用。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "独立与带参形式共用 activate_qt 核心 token，已按 text 保护命令关键字。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:140",
+      "evidence_rows": [
+        1591,
+        2476,
+        2522,
+        2525
+      ],
+      "source_excerpt": "Sound(SFX_Stats_Open) ; book 14",
+      "reason": "音效标识有独立与嵌入用法；补 text 保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1591 为独立 SFX_Stats_Open；2476/2522/2525 嵌入 Sound(SFX_Stats_Open) 调用。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译音频事件标识，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属音效运行标识；已补 text 适用域并覆盖嵌入调用。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "独立与嵌入形式使用同一 SFX_Stats_Open，已统一为精确 text 保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:141",
+      "evidence_rows": [
+        1592
+      ],
+      "source_excerpt": "0.png",
+      "reason": "独立图像文件名；补 whole_record 防止子串误匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1592 原文即 0.png，图像资源文件名一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译资源文件名，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属资源文件名；已补整记录保护，避免误匹配其他文件名中的数字子串。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "当前证据仅独立文件名出现，整记录保护与用法匹配。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:124",
+    "non_translate:126",
+    "non_translate:128",
+    "non_translate:129",
+    "non_translate:131",
+    "non_translate:136",
+    "non_translate:137",
+    "non_translate:139",
+    "non_translate:144",
+    "non_translate:214",
+    "non_translate:140",
+    "non_translate:141"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

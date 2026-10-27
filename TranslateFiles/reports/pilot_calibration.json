@@ -1,0 +1,2863 @@
+{
+  "schema": 1,
+  "kind": "pilot",
+  "purpose": "calibration",
+  "pilot_key": "bc7eac5d09f9533a64e30b54b11c2e9bfc69638bcf94765c44a97f8d81eb7b54",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15",
+  "glossary": {
+    "hash": "76cc99de19df4e649ef5056129ff4b8bdd8cc0c6e1fadde69dfc3b1416c32787",
+    "path": "glossary\\r1\\freeze_0680ffd0\\built\\glossary_reviewed.json",
+    "revision": 1
+  },
+  "config": {
+    "agent_attempt_limit": 2,
+    "agent_task_limit": 1,
+    "api": {
+      "api_format": "OpenAI",
+      "api_key_env": "SHH_TRANSLATION_API_KEY",
+      "api_url": "",
+      "concurrency": 50,
+      "extra_body": {},
+      "max_completion_tokens": 16384,
+      "max_requests": 10000,
+      "model_name": "",
+      "request_timeout": 120,
+      "requests_per_minute": 0,
+      "stream": false,
+      "target_platform": "custom_platform_shh",
+      "temperature": 1,
+      "think_switch": false,
+      "tls_switch": false
+    },
+    "backend": "api",
+    "batch_chars": 12000,
+    "batch_records": null,
+    "batch_tokens": 1024,
+    "body_repair_round_limit": 6,
+    "case_sensitive": false,
+    "context_records": 0,
+    "draft_scan_workers": 1,
+    "escalation_backend": "codex",
+    "exclusions": [],
+    "extract_batch_records": null,
+    "extract_batch_tokens": 10000,
+    "game_background": "## 游戏信息\n- **原名**: Eschalon: Book I\n- **中文名**: 埃斯卡隆：卷一\n- **开发商**: Basilisk Games\n- **发行平台**: Steam / GOG\n- **引擎**: 自研引擎（Blender Game Engine 衍生，32位，OpenGL 渲染）\n- **原语言**: 英语\n- **目标语言**: 简体中文",
+    "glossary_review_batch_records": 12,
+    "glossary_review_batch_tokens": 10000,
+    "layout_normalization": "exact_v1",
+    "lease_seconds": 3600,
+    "max_attempts": 3,
+    "model": "deepseek-v4.1-flash",
+    "pilot_batch_count": null,
+    "pilot_call_limit": null,
+    "pilot_ordinals": [],
+    "pilot_records": 150,
+    "placeholder_family_overrides": {
+      "square_bracket": null
+    },
+    "polish": false,
+    "protect_named_curly": null,
+    "quality_version": 2,
+    "record_constraints": {},
+    "review_batch_records": 80,
+    "review_batch_tokens": 1024,
+    "review_estimate": {
+      "ascii_chars_per_token": 3,
+      "full_base_tokens": 420,
+      "non_ascii_tokens_per_char": 2,
+      "pilot_base_tokens": 120,
+      "translation_multiplier": 3
+    },
+    "review_output_reserve_percent": 20,
+    "review_output_tokens": 32768,
+    "sol_no_progress_limit": 2,
+    "sol_repair_model": "gpt-6-sol",
+    "sol_repair_round_limit": 3,
+    "source_language": "English",
+    "stage_backends": {},
+    "style": "西式奇幻角色扮演游戏文本。叙述、书籍、任务与物品说明采用简洁典雅的书面中文；NPC 对话自然口语化，保留人物身份与语气差异；物品、技能、属性、地名、人名严格遵循冻结术语表，不得自行改译。图片界面文字（菜单、按钮、标签、状态栏、教程标注）必须简短紧凑，优先使用两到四字词，避免超出原始文字块的宽度。方括号内的完整句或短语（如 [Give him the Amulet Passkey 15]、[Save vs Disease: SUCCESS!]、[Powder Blast]、[End his life]、[BACK]、[END]）是玩家可见文本，必须翻译其内容并保留方括号；只有 [P1] 这类占位符编号保持原样。保留原文中的 * & # ^ $ 等颜色与强调控制符、{ } 变量、|| 分段和字面 \\n 转义。",
+    "target_language": "简体中文",
+    "task_input_chars": 48000,
+    "task_input_tokens": 65536,
+    "whole_word": true,
+    "workflow": "custom"
+  },
+  "records": [
+    {
+      "id": "R0000016_593a1fd13f",
+      "ordinal": 16,
+      "source": "Adamantine Great Helm",
+      "translation": "精金巨盔",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000076_2632c885aa",
+      "ordinal": 76,
+      "source": "Charcoal",
+      "translation": "木炭",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000124_42c611190c",
+      "ordinal": 124,
+      "source": "Gold Goblin Key",
+      "translation": "黄金哥布林钥匙",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000125_314ec57c30",
+      "ordinal": 125,
+      "source": "Golden Key",
+      "translation": "金钥匙",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000140_69208f3c79",
+      "ordinal": 140,
+      "source": "Heavy Key",
+      "translation": "沉重钥匙",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000189_737a67a5d1",
+      "ordinal": 189,
+      "source": "Leather Gloves",
+      "translation": "皮手套",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000210_28f0d15b2f",
+      "ordinal": 210,
+      "source": "Mana Potion II",
+      "translation": "法力药水 II",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000278_88bca2ced9",
+      "ordinal": 278,
+      "source": "Scout's Sandals",
+      "translation": "斥候凉鞋",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000299_2a1128e36d",
+      "ordinal": 299,
+      "source": "Scroll of Haste",
+      "translation": "加速卷轴",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000309_52134afc70",
+      "ordinal": 309,
+      "source": "Scroll of Predator Sight",
+      "translation": "掠食者视觉卷轴",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000424_e2e8c850d2",
+      "ordinal": 424,
+      "source": "This book is a primer for the realm of Divination magick. It outlines the many gods that are believed to be the source of this magick and how the caster becomes a channel for their divine powers. Likewise you learn various casting techniques for stronger spells, the pros and cons of using dark divination, and the basics of \"natural casting\" for atheists who study the field of Divination. By the end of the book you feel as if you've learned quite a bit about the realm of Divination magick.",
+      "translation": "本书是预言魔法领域的入门读物。书中概述了据信为这种魔法之源的多位神祇，以及施法者如何成为其神力的通道。同样，你还会学到强化法术的各种施法技巧、使用黑暗预言的利弊，以及为研究预言术领域的无神论者所准备的“自然施法”基础。读完全书，你觉得自己对预言魔法领域已有相当多的了解。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000469_25e1dec620",
+      "ordinal": 469,
+      "source": "\"What is this war regarding?\"",
+      "translation": "“这场战争是为了什么？”",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000489_1c38cb74b6",
+      "ordinal": 489,
+      "source": "\"Thanks for your time.\" [END]",
+      "translation": "“多谢你抽出时间。” [END]",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000635_fbc4b4851d",
+      "ordinal": 635,
+      "source": "init_trade (gunther)",
+      "translation": "init_trade (gunther)",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [
+        {
+          "reason": "本条为脚本命令 init_trade (gunther)，t15 明确要求整串保留原文，故不将参数 gunther 译为“冈瑟”。",
+          "source": "gunther"
+        }
+      ],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000667_0e6d78cacd",
+      "ordinal": 667,
+      "source": "\"No, I'm still working on it.\"Y",
+      "translation": "“不，我还在做。”Y",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000719_2b16e1b7e7",
+      "ordinal": 719,
+      "source": "init_trade (gamfari)",
+      "translation": "init_trade (gamfari)",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [
+        {
+          "reason": "本条为脚本命令 init_trade (gamfari)，t18 明确要求整串保留原文，故不将参数 gamfari 译为“加姆法里”。",
+          "source": "gamfari"
+        }
+      ],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000736_da423f668f",
+      "ordinal": 736,
+      "source": "\"Brother, end my life. I...I am broken. Even with the most powerful of medicines I cannot recover from this. I will be dead in a few hours...please do not allow me to suffer that long.\"\\n\\nYou notice a single tear run down your brother's face, creating a clean path through the blood and sweat and dirt. \"I am sorry you do not remember me brother, but I am glad the amnesia will spare you the pain of my passing.\"\\n\\nHe lowers his head and takes a long slow breath.",
+      "translation": "“兄弟，结束我的生命吧。我……我废了。就算用最强大的药，我也无法从这伤势中恢复。再过几个小时我就会死……求你别让我受那么久的苦。”\\n\\n你注意到一滴泪从你兄弟脸上滑落，在血水、汗水和泥土中冲出一道干净的痕迹。“很抱歉你记不起我了，兄弟，但我很高兴失忆能让你免于承受我离世的痛苦。”\\n\\n他低下头，缓缓吸了一口长气。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000737_6428ebed5f",
+      "ordinal": 737,
+      "source": "\"I will do this for you. Goodbye, brother.\" [End his life]",
+      "translation": "“我会替你完成此事。永别了，兄弟。” [结束他的生命]",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000772_32e94be4c7",
+      "ordinal": 772,
+      "source": "The man smiles at your response. \"There is a woman who resides in Tangletree Forest. Her name is Lilith and she lives in a cottage on Lake Atria. The reasons I want her killed are my own and do not concern you.\"\\n\\n\"Hear this, for it is most important: she wears an amulet around her neck. It is just a worthless trinket and is of no importance to me, of course. However, I need that amulet returned to me to prove you have completed the task. I can assure you she won't part with it while she is still breathing.\"\\n\\n\"If you do this job, I will pay you 500 gold and may have other work for you. So, are you interested?\"",
+      "translation": "那男人对你的回答微微一笑。“缠树森林里住着一个女人。她叫莉莉丝，住在阿特里亚湖畔的一间小屋里。我想杀她的理由是我自己的事，与你无关。”\\n\\n“听好了，这点至关重要：她脖子上戴着一件护身符。当然，那只是个不值钱的玩意儿，对我毫无价值。不过，我需要你把那护身符带回来，作为你完成任务的凭证。我可以向你保证，只要她还活着，就绝不会把它交出来。”\\n\\n“如果你接下这活，我会付你 500 金币，之后也许还有别的活给你。那么，你有兴趣吗？”",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000774_5c717fd5db",
+      "ordinal": 774,
+      "source": "\"That's the spirit! I will wait here for you. Remember, you get the money only when you bring back the amulet.\"\\n\\n\"Oh yes, and be careful. She is very dangerous. Don't toy with her, just end her life as quickly as possible.\"",
+      "translation": "“这才像话！我会在这里等你。记住，只有带回护身符，你才能拿到钱。”\\n\\n“哦，对了，小心点。她非常危险。别跟她耍花样，尽快了结她的性命。”",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000789_41669996cb",
+      "ordinal": 789,
+      "source": "\"I need not prove my worth to a tree, and I will certainly not fetch you water as if I were your gardener!\"q",
+      "translation": "“我不需要向一棵树证明自己的价值，也绝不会像个园丁似的替你打水！”q",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000835_f074ccfb90",
+      "ordinal": 835,
+      "source": "\"I know the location of only one other key. It is with the Giants of the Timberland Plains. Not long ago a goblin scout party, led by a warlord, made the mistake of sneaking into the Giant's village. They were brutally crushed and the Giants recovered the warlord's key. You must go to them and ask for it. While they are not trusting of humans, I have gained the friendship of Omar, their leader, and I will send word that you are coming for the key. $, do what you can to earn their trust. The Giants may prove to be our greatest allies against the Goblins.\\n\\n\"As for the other two keys, they are still somewhere in Thaermore. Perhaps you have even recovered them already. If not, look for where the goblins have begun to gather and most likely a warlord is leading them. Kill the warlord and recover the key. When you have recovered all four keys and the Crux, it is time to enter the Citadel and deal with Gramuk.\"",
+      "translation": "“我只知道另一把钥匙的下落。它在林地平原的巨人族手中。不久前，一支由军阀率领的哥布林侦察队犯下大错，潜入了巨人村。他们被残酷击溃，巨人夺回了那军阀的钥匙。你必须去他们那里索要钥匙。虽然他们不信任人类，但我已与他们首领奥马尔结下友谊，我会传信说你要来取钥匙。$，尽你所能赢得他们的信任。巨人或许会成为我们对抗地精的最强盟友。\\n\\n“至于另外两把钥匙，它们仍在泰尔莫的某处。也许你甚至已经找回了它们。若还没有，就去找地精开始聚集的地方，那里多半有军阀率领。杀掉军阀，夺回钥匙。当你集齐四把钥匙和圣核后，就该进入堡垒，对付格拉穆克了。”",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000879_9e6cb470b1",
+      "ordinal": 879,
+      "source": "\"So you have. Well then, let us not delay this inevitable confrontation. I have much to do and the sooner I deal with you, the better.\"\\n\\nThe frail old goblin raises his hands and utters a strange incantation. As his hands drop, the room fills with flashes of light...",
+      "translation": "“看来你已经来了。那么，我们别再拖延这场不可避免的对决了。我还有很多事要做，越早解决你越好。”\\n\\n那虚弱的老哥布林举起双手，念出一段古怪的咒语。随着他的双手落下，房间里充满了闪烁的光芒……",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000924_b36e38a7d0",
+      "ordinal": 924,
+      "source": "\"Thank you. Given your loss, this is more than generous.\" [END]",
+      "translation": "“谢谢你。考虑到你的损失，这已经非常慷慨了。” [END]",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000933_cdf4626f37",
+      "ordinal": 933,
+      "source": "\"I'd like to know more about Elemental magick.\";",
+      "translation": "“我想进一步了解元素魔法。”;",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000939_ed62bbbfb7",
+      "ordinal": 939,
+      "source": "\"What can you tell me about Blackwater?\"",
+      "translation": "“关于黑水镇，你能告诉我些什么？”",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000941_27c700a5da",
+      "ordinal": 941,
+      "source": "\"What are your thoughts on this war?\"",
+      "translation": "“你对这场战争怎么看？”",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0000942_f7a9c43fbb",
+      "ordinal": 942,
+      "source": "\"This war is about the most absurd thing I have ever come to know. First we are told the Orakur are out to get us, stealin' the Crux and what not. Then, the Goblins show up and start raiding our towns and villages. Now we've got Barrea Mercenaries coming in from the far west, and no one seems to know what they are doing here or what they're up to. I'll tell you, some days I just feel like the whole world is coming to an end. It's only gonna get a whole lot worse before it gets any better.\"\\n\\n\"I'm sure you were hoping for more information than that, with me being a public official and all, but I really don't know any more about it than you probably do.\"",
+      "translation": "“这场战争大概是我听过的最荒唐的事。起初，我们被告知奥拉库尔人要来对付我们，还偷走了圣核之类的。接着，地精冒出来，开始劫掠我们的城镇和村庄。现在又有巴雷亚佣兵团从遥远的西方赶来，似乎没人知道他们为什么来、想干什么。我跟你说，有些日子我就是觉得整个世界都要完了。情况只会先变得更糟，然后才可能好转。”\\n\\n“我敢说你原本希望我这个公职人员能提供更多消息，但我对这件事的了解，大概也不比你多多少。”",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00001-0959c617",
+        "instance": "api-pilot_translate-07eb42f4b5a746c88c99d8638ef21c49"
+      }
+    },
+    {
+      "id": "R0001010_5db89a7de1",
+      "ordinal": 1010,
+      "source": "Barreans hail from the vast Desolation of Barrea, far to the West. It is a region of desert and scrubland, where even a simple living requires a great deal of work. Barreans tend to be lean and swift, and can travel immense distances in a short amount of time. Barreans receive a &+2 &Speed and &+1 &Strength.",
+      "translation": "巴瑞亚人来自遥远西方广阔无垠的巴雷亚荒原。那是一片沙漠与灌木荒地，即使维持简朴的生活也需要付出大量劳作。巴瑞亚人往往瘦削而迅捷，能在短时间内长途跋涉。巴瑞亚人获得 &+2 &速度 和 &+1 &力量。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001019_27692e9a8b",
+      "ordinal": 1019,
+      "source": "Fighters are experts at hand-to-hand combat, preferring the feel of a solid weapon in their hand over anything else. Fighters may adventure for the simple thrill of battle, or to sell their services as a Mercenary to the wealthiest armies. The Fighter starts with the *Swords skill.",
+      "translation": "战士精通近身搏斗，最喜欢手握坚实武器的感觉，胜过其他一切。战士可能只是为了追求战斗的快感而冒险，或作为雇佣兵为最富有的军队效力。战士初始拥有 *剑术技能。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001084_dd328cc7a5",
+      "ordinal": 1084,
+      "source": "Nimbleness",
+      "translation": "灵巧",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001134_3875d47bd2",
+      "ordinal": 1134,
+      "source": "Lock Melt",
+      "translation": "熔锁",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001180_6e034f76d8",
+      "ordinal": 1180,
+      "source": "Mercantile",
+      "translation": "商业",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001188_eaed8b62d3",
+      "ordinal": 1188,
+      "source": "Bow Weapons",
+      "translation": "弓类武器",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001219_e95020537e",
+      "ordinal": 1219,
+      "source": "A note you left for yourself says you must find your brother. He is probaby being held captive by the Goblins in the abandoned city of Vela.",
+      "translation": "你留给自己的一张便条上写着，你必须找到你的兄弟。他很可能被地精囚禁在废弃城市维拉。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001272_bb7a620b2c",
+      "ordinal": 1272,
+      "source": "sound/Step_Dun1.wav",
+      "translation": "sound/Step_Dun1.wav",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001274_6e24899cef",
+      "ordinal": 1274,
+      "source": "sound/Step_armor1.wav",
+      "translation": "sound/Step_armor1.wav",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001280_f3062ed551",
+      "ordinal": 1280,
+      "source": "DROP",
+      "translation": "丢弃",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001331_48d8a03583",
+      "ordinal": 1331,
+      "source": "IC_TORSO",
+      "translation": "IC_TORSO",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001332_a16859b0eb",
+      "ordinal": 1332,
+      "source": "IC_WEAPON",
+      "translation": "IC_WEAPON",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001336_630aea6e68",
+      "ordinal": 1336,
+      "source": "IC_RING",
+      "translation": "IC_RING",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001382_8afdc55e77",
+      "ordinal": 1382,
+      "source": "Footsplash",
+      "translation": "Footsplash",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001436_d47cbca408",
+      "ordinal": 1436,
+      "source": "Your Leatherskin effect has been neutralized.",
+      "translation": "你的“皮革皮肤”效果已被解除。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001439_439f81688f",
+      "ordinal": 1439,
+      "source": "sfx_slip",
+      "translation": "sfx_slip",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001500_fce5ffa57e",
+      "ordinal": 1500,
+      "source": "Senior Apprentice",
+      "translation": "高级学徒",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001507_9e5c1b1ff1",
+      "ordinal": 1507,
+      "source": "SFX_Level",
+      "translation": "SFX_Level",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001523_44b3c5003d",
+      "ordinal": 1523,
+      "source": "electric",
+      "translation": "电击",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001550_61adabc652",
+      "ordinal": 1550,
+      "source": "dehex",
+      "translation": "dehex",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001551_5133efce11",
+      "ordinal": 1551,
+      "source": "A curse has been lifted off of you!",
+      "translation": "你身上的诅咒已被解除！",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001558_5a5c3f75eb",
+      "ordinal": 1558,
+      "source": "Dart",
+      "translation": "飞镖",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001595_7cc6078a35",
+      "ordinal": 1595,
+      "source": "Level:",
+      "translation": "等级：",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001632_5ed10cfdcc",
+      "ordinal": 1632,
+      "source": "] is required to cast",
+      "translation": "] 为施放所需",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001633_f25b9a33ce",
+      "ordinal": 1633,
+      "source": "Divination skill of [",
+      "translation": "占卜技能 [",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001678_ac27288594",
+      "ordinal": 1678,
+      "source": ", ToHit probability [",
+      "translation": "，命中率 [",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001684_5927ffcee4",
+      "ordinal": 1684,
+      "source": "Miss!",
+      "translation": "未命中！",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001716_a23243580e",
+      "ordinal": 1716,
+      "source": "That was your last",
+      "translation": "那是你最后的",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001770_9b546207c8",
+      "ordinal": 1770,
+      "source": "Trap Disarmed!",
+      "translation": "陷阱已解除！",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001784_5c7acab181",
+      "ordinal": 1784,
+      "source": "quest 59 9",
+      "translation": "quest 59 9",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001792_64395db5b8",
+      "ordinal": 1792,
+      "source": "SFX_Pullbow",
+      "translation": "SFX_Pullbow",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001829_abebde337e",
+      "ordinal": 1829,
+      "source": "Quest_fin",
+      "translation": "Quest_fin",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001847_21059ce590",
+      "ordinal": 1847,
+      "source": "ERROR SAVING GAME! The system encountered an error. Try saving again. Error DELDIR.",
+      "translation": "保存游戏时出错！系统遇到错误。请再次尝试保存。错误 DELDIR。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001855_5ab7a4b9e0",
+      "ordinal": 1855,
+      "source": "ERROR WHEN ATTEMPTING TO SAVE GAME!!",
+      "translation": "尝试保存游戏时出错！！",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001897_f1d53ab650",
+      "ordinal": 1897,
+      "source": "Helpful playing tip: ||Maximum Weapon Damage is calculated from the weapon itself and your skill with it, as well as certain physical Attributes as follows: Bows use ^Dexterity and ^Concentration; Thrown weapons use ^Strength and ^Dexterity; Melee Weapons use ^Strength and ^Speed.",
+      "translation": "实用游戏提示：||最大武器伤害由武器本身、你使用该武器的技能，以及下列某些身体属性计算得出：弓使用 ^敏捷 和 ^专注；投掷武器使用 ^力量 和 ^敏捷；近战武器使用 ^力量 和 ^速度。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001924_6d41f9b7c3",
+      "ordinal": 1924,
+      "source": "Causes the drinker to move at increased speed, allowing an extra action per round. The duration is 50 rounds.",
+      "translation": "使饮用者移动速度加快，每轮可额外行动一次。持续 50 轮。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001928_820055209c",
+      "ordinal": 1928,
+      "source": "Causes the skin of the user to become thick and leathery, increasing Armor Rating +6 and reducing the effects of physical damage. Effect lasts 100 rounds.",
+      "translation": "使使用者的皮肤变得厚实如皮革，护甲等级 +6，并减弱物理伤害效果。效果持续 100 轮。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001947_11872bf36b",
+      "ordinal": 1947,
+      "source": "Reactant",
+      "translation": "反应物",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001959_2142316df8",
+      "ordinal": 1959,
+      "source": "[Attribute]",
+      "translation": "[属性]",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0001985_b174aae086",
+      "ordinal": 1985,
+      "source": "You cannot Quick Travel when you are overburdened!",
+      "translation": "负重过高时无法快速旅行！",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002006_0226373648",
+      "ordinal": 2006,
+      "source": "add_gold",
+      "translation": "add_gold",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002008_47f903ea7d",
+      "ordinal": 2008,
+      "source": "all_quests",
+      "translation": "all_quests",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002120_b628d17bc5",
+      "ordinal": 2120,
+      "source": "to be able to understand this Divination scroll.",
+      "translation": "才能理解这张预言术卷轴。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002138_8f01ecc807",
+      "ordinal": 2138,
+      "source": "will cost you",
+      "translation": "需要花费你",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002139_bb3b328f2a",
+      "ordinal": 2139,
+      "source": ": to train you in level",
+      "translation": "：将你训练至等级",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002210_a7417248cb",
+      "ordinal": 2210,
+      "source": ": That item really isn't worth much to me, but I'll give you ^",
+      "translation": "：那件物品对我来说实在不值什么钱，不过我愿意给你 ^",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002286_a137f166b5",
+      "ordinal": 2286,
+      "source": "As the Chancellor falls to the floor, a gate opens and a platoon of Spire Guards rushes into the room. 'Assassin!' they yell as they charge at you...",
+      "translation": "当议长倒在地上时，一道门打开了，一队尖塔卫兵冲进房间。“刺客！”他们一边大喊，一边向你冲来……",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002312_cbac1e5e05",
+      "ordinal": 2312,
+      "source": "SFX_EQP_Ring",
+      "translation": "SFX_EQP_Ring",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002360_f7f3b578ff",
+      "ordinal": 2360,
+      "source": "Ready to exit the Character Editor?",
+      "translation": "准备好退出角色编辑器了吗？",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002363_75718cec6f",
+      "ordinal": 2363,
+      "source": "'s maximum Hit Points have increased by",
+      "translation": "的最大生命值提高了",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002394_88d6987f1a",
+      "ordinal": 2394,
+      "source": "[Save vs Magick: SUCCESS!]",
+      "translation": "[魔法豁免：成功！]",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002401_200dac89d9",
+      "ordinal": 2401,
+      "source": "The curse was too strong. You must cast this spell at a higher level to be effective.",
+      "translation": "诅咒太强了。你必须以更高等级施放此法术才能生效。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002479_aa213192b8",
+      "ordinal": 2479,
+      "source": "Sound(SFX_Stats_Open) ; book 43",
+      "translation": "Sound(SFX_Stats_Open) ; book 43",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002520_b6eb2ac142",
+      "ordinal": 2520,
+      "source": "cond_mana ; Message(You feel a surge of power as the potion restores your arcane energies.) ; Restore 40 ; Sound(SFX_Quaff) ; Sound(SFX_Restore) ; to_flask",
+      "translation": "cond_mana ; Message(你感到一股力量涌动，药剂恢复了你的奥术能量。) ; Restore 40 ; Sound(SFX_Quaff) ; Sound(SFX_Restore) ; to_flask",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002548_5fbacc5354",
+      "ordinal": 2548,
+      "source": "Sound(SFX_Stats_Open) ; book 6",
+      "translation": "Sound(SFX_Stats_Open) ; book 6",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002597_d94fb4e095",
+      "ordinal": 2597,
+      "source": "\"IC_KEY\",\"Crypt Key\",0.1,0,9,222,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,",
+      "translation": "\"IC_KEY\",\"墓穴钥匙\",0.1,0,9,222,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002625_6fe9a37c65",
+      "ordinal": 2625,
+      "source": "\"IC_POTION\",\"Healing Elixir III\",0.3,0,3,154,100,1,0,0,0,0,0,0,0,0,0,0,0,0,0,\"cond_health ; Message(You feel the elixir course through your veins.) ; Heal 90 0 ; Sound(SFX_quaff) ; Sound(SFX_Heal) ; to_flask\"",
+      "translation": "\"IC_POTION\",\"治疗药剂 III\",0.3,0,3,154,100,1,0,0,0,0,0,0,0,0,0,0,0,0,0,\"cond_health ; Message(你感到药剂在血脉中流转。) ; Heal 90 0 ; Sound(SFX_quaff) ; Sound(SFX_Heal) ; to_flask\"",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002685_a5b35102c6",
+      "ordinal": 2685,
+      "source": "\"IC_RING\",\"Ring of the Assassin\",0.1,0,3,122,1800,0,0,0,0,0,0,0,0,0,5,2,0,0,0,",
+      "translation": "\"IC_RING\",\"刺客之戒\",0.1,0,3,122,1800,0,0,0,0,0,0,0,0,0,5,2,0,0,0,",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002686_cce3b738f1",
+      "ordinal": 2686,
+      "source": "\"IC_RING\",\"Ring of the Fire Master\",0.1,0,4,132,1020,0,0,0,0,0,\"SKILL_ARCANE_ELEMENTAL\",3,0,0,0,0,0,0,0,",
+      "translation": "\"IC_RING\",\"火焰大师之戒\",0.1,0,4,132,1020,0,0,0,0,0,\"SKILL_ARCANE_ELEMENTAL\",3,0,0,0,0,0,0,0,",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002707_9b282315c4",
+      "ordinal": 2707,
+      "source": "\"IC_SCROLL\",\"Scroll of Dehex\",0.1,\"SKILL_ARCANE_DIVINATION\",4,129,900,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\"Learn ; Remove\"",
+      "translation": "\"IC_SCROLL\",\"解咒卷轴\",0.1,\"SKILL_ARCANE_DIVINATION\",4,129,900,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\"Learn ; Remove\"",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002730_0607ef22dd",
+      "ordinal": 2730,
+      "source": "\"IC_SCROLL\",\"Scroll of Smite\",0.1,\"SKILL_ARCANE_DIVINATION\",3,129,900,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\"Learn ; Remove\"",
+      "translation": "\"IC_SCROLL\",\"重击卷轴\",0.1,\"SKILL_ARCANE_DIVINATION\",3,129,900,0,0,0,0,0,0,0,0,0,0,0,0,0,0,\"Learn ; Remove\"",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002797_1838880218",
+      "ordinal": 2797,
+      "source": "Rng",
+      "translation": "射程",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002810_f6e0653740",
+      "ordinal": 2810,
+      "source": "MO1_ATTACK",
+      "translation": "MO1_ATTACK",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002825_639ae6f507",
+      "ordinal": 2825,
+      "source": "Fungal Slime",
+      "translation": "真菌软泥怪",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002848_f017366f1c",
+      "ordinal": 2848,
+      "source": "MO9_ATTACK",
+      "translation": "MO9_ATTACK",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002892_6d5db98802",
+      "ordinal": 2892,
+      "source": "Barrea Mercenary",
+      "translation": "巴雷亚雇佣兵",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002908_3a57aaa983",
+      "ordinal": 2908,
+      "source": "Garrett",
+      "translation": "加勒特",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00002-21fe703b",
+        "instance": "api-pilot_translate-5e348e4a1c6f40b8aa1725f352195f3f"
+      }
+    },
+    {
+      "id": "R0002945_0e7f95e01b",
+      "ordinal": 2945,
+      "source": "\"Goblin Hacker\",9,8,8,15,0,0,-1,9,0,1,38,13,13,8,55,0.75,4,0,5,0,20,0,\"ACTION_MELEE\",60,1,0,\"MO9_IDLE\",\"MO9_MOVE\",\"MO9_ATTACK\",\"*\",\"*\",1,\"MO9_DIE\"",
+      "translation": "\"哥布林劈砍兵\",9,8,8,15,0,0,-1,9,0,1,38,13,13,8,55,0.75,4,0,5,0,20,0,\"ACTION_MELEE\",60,1,0,\"MO9_IDLE\",\"MO9_MOVE\",\"MO9_ATTACK\",\"*\",\"*\",1,\"MO9_DIE\"",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0002958_e2a18ec604",
+      "ordinal": 2958,
+      "source": "\"Vault Guard\",78,50,8,15,0,26,12,60,1,2,50,10,10,10,250,0.75,5,0,20,0,0,0,\"ACTION_MELEE\",60,1,0,\"*\",\"NPC_Step\",\"SFX_MAN_ATTACK\",\"SFX_MAN_HURT\",\"*\",1,\"SFX_MAN_DIE\"",
+      "translation": "\"宝库守卫\",78,50,8,15,0,26,12,60,1,2,50,10,10,10,250,0.75,5,0,20,0,0,0,\"ACTION_MELEE\",60,1,0,\"*\",\"NPC_Step\",\"SFX_MAN_ATTACK\",\"SFX_MAN_HURT\",\"*\",1,\"SFX_MAN_DIE\"",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003009_2bf927a6ec",
+      "ordinal": 3009,
+      "source": "You are entering the town of Vela. A ghostly fog hangs in the air and most of the streets appear to be flooded with water. On this main avenue entering the town, banners displaying the goblin crest are nailed to makeshift walls, built from the ruins of the once bustling shops. You also see Goblin totems- long poles adorned with human skulls. These are territorial signs. This area belongs to the goblins now.",
+      "translation": "你正在进入维拉镇。空中弥漫着幽灵般的雾气，大多数街道似乎都被水淹没。在这条进入城镇的主干道上，临时搭建的墙壁上钉着绘有哥布林纹章的旗帜——这些墙壁由昔日繁华店铺的废墟砌成。你还能看到哥布林图腾——上面装饰着人类头骨的长杆。这些是领地标记。这片区域如今属于地精。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003037_94210b7fab",
+      "ordinal": 3037,
+      "source": "Gramuk falls to the floor. His body writhes and his skin cracks. Amidst a shower of magickal energy, he transforms into a Dirachnid- a massive spider seen only in the deepest of dungeons!",
+      "translation": "格拉穆克倒在地上。他的身体扭动着，皮肤裂开。在一阵魔法能量的光芒中，他变成了一只迪拉克尼德——一种只在最深的地牢中才能见到的巨型蜘蛛！",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003038_3cc8132c54",
+      "ordinal": 3038,
+      "source": "With that final blow, the Dirachnid's body crumbles in a spray of gore. A blue mist pours from the broken shell of the giant spider and crawls through the air as if looking for refuge. You stand back and watch it dissipate until you are confident that the creature is truly dead, then you sense a calmness settle upon the room.",
+      "translation": "随着最后一击，迪拉克尼德的身体在血雾中崩碎。蓝色雾气从巨型蜘蛛破碎的甲壳中涌出，在空中蜿蜒爬行，仿佛在寻找避难之所。你退后观望，看着它逐渐消散，直到确信这生物已经彻底死去；随后，你感到一种平静笼罩了房间。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003145_5e12b8ec4b",
+      "ordinal": 3145,
+      "source": "Here is the grave of good ol",
+      "translation": "这里是老伙计的坟墓",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003166_b14c6d01ff",
+      "ordinal": 3166,
+      "source": "North Parish Family Crypt",
+      "translation": "北教区家族墓穴",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003175_eec2d610f4",
+      "ordinal": 3175,
+      "source": "a stone sarcophagus bearing the name \"Meneroth Hem\".",
+      "translation": "一具刻有“梅内罗斯·赫姆”之名的石棺。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003219_4d8ab19664",
+      "ordinal": 3219,
+      "source": "a road sign.",
+      "translation": "一块路牌。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003269_982f0a55a4",
+      "ordinal": 3269,
+      "source": "an amazing chest of steel and gold trim, secured with a sliding lock.",
+      "translation": "一只精美的钢制镶金箱子，用滑动锁锁着。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003285_1a0cc1fafb",
+      "ordinal": 3285,
+      "source": "Kara d. 681",
+      "translation": "卡拉，卒于681年",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003338_da4d07072a",
+      "ordinal": 3338,
+      "source": "You hear the faint sound of a gate moving somewhere...",
+      "translation": "你听到某处传来大门移动的微弱声响……",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003354_eb636cf7a1",
+      "ordinal": 3354,
+      "source": "Northwest: Blackwater",
+      "translation": "西北：黑水镇",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003384_4519229d08",
+      "ordinal": 3384,
+      "source": "Eastern Crakamir",
+      "translation": "克拉卡米尔东部",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003442_08c2e6083d",
+      "ordinal": 3442,
+      "source": "A gate moves...",
+      "translation": "一扇大门移动了……",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003571_471801cea7",
+      "ordinal": 3571,
+      "source": "Who? Well, I don't know really. I try not to get too involved with other people's business. Years ago I was a courier for Lord Archable, so people have always just entrusted me with important matters. A gentleman came to town a while back and paid me to do this job for him- to hold on to these items for someone with your name fitting your description. He wore a mask and I wasn't able to see his face. I didn't ask who he was or why he needed this done. It's the Courier's Code not to ask questions.",
+      "translation": "谁？唉，我真不知道。我尽量不掺和别人的事。多年前我曾是阿查布尔勋爵的信使，所以人们总把重要的事情托付给我。前阵子有位先生来到镇上，付钱让我替他办这件事——保管这些物品，交给一位名字和相貌都符合你描述的人。他戴着面具，我看不到他的脸。我没问他是谁，也没问他为什么需要这么做。信使守则就是不问问题。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003628_b9a6b9e421",
+      "ordinal": 3628,
+      "source": "Please, can you tell me more about this conflict?",
+      "translation": "拜托，能多告诉我一些关于这场冲突的事吗？",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003646_f1382da499",
+      "ordinal": 3646,
+      "source": "I've seen many strange beasts roaming around outside the village and ruined buildings. What has happened to this land?",
+      "translation": "我看见许多奇怪的野兽在村外和废墟间游荡。这片土地到底发生了什么？",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003667_b2b6530bb3",
+      "ordinal": 3667,
+      "source": "Elderhollow was a casualty of this war that we are currently engaged in. Without any help from the Commonwealth Guard to defend itself, Elderhollow was frequently attacked by Goblins and other creatures that so freely walk the lands now. Most of the town's people left; some settled here, others went north. The few who foolishly stayed paid with their lives.",
+      "translation": "埃尔德霍洛是这场我们正卷入的战争的牺牲品。由于没有联邦卫队前来协防，埃尔德霍洛屡遭地精和其他如今在这片土地上肆意游荡的生物袭击。镇上的大多数人离开了；有些人在这里定居，另一些人去了北方。少数愚蠢地留下来的人则付出了生命。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003706_43af8b9b18",
+      "ordinal": 3706,
+      "source": "Godspeed to you.",
+      "translation": "愿你一路平安。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003731_118ab44909",
+      "ordinal": 3731,
+      "source": "Return to me with the Queen's stinger and I'll know the task has been completed. Then we will have a talk.",
+      "translation": "带着女王毒刺回来见我，我就知道任务已经完成。然后我们谈谈。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003743_9b70afded8",
+      "ordinal": 3743,
+      "source": "And this 'amulet key' unlocks a box there?",
+      "translation": "那这个‘护符钥匙’能打开那里的一个箱子？",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003784_21290b2087",
+      "ordinal": 3784,
+      "source": "Greetings Traveler.",
+      "translation": "你好，旅行者。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003817_aea454434b",
+      "ordinal": 3817,
+      "source": "That's okay. I didn't think you had it in you but I figured I'd tell you about the job anyways. If you have any friends that can do it, send 'em my way.",
+      "translation": "没关系。我本来就不觉得你能办到，不过我想着还是把这份差事告诉你。要是你有朋友能办到，就让他们来找我。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003854_3894d2e90c",
+      "ordinal": 3854,
+      "source": "I need to retrieve something that belongs to me.",
+      "translation": "我需要取回属于我的东西。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003857_c06006202d",
+      "ordinal": 3857,
+      "source": "My business is my own. Give me the key.",
+      "translation": "我的事不用你管。把钥匙给我。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003866_82cf24738d",
+      "ordinal": 3866,
+      "source": "Yes, that is acceptable. Here is 200 gold.",
+      "translation": "好，这可以接受。这是200金币。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003870_2d8438e6e6",
+      "ordinal": 3870,
+      "source": "Well keep at it. You'll get no key from me if you can't clean up my problem downstairs!",
+      "translation": "那就继续努力吧。你要是解决不了我楼下那摊麻烦，就别想从我这儿拿到钥匙！",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003888_157dc74271",
+      "ordinal": 3888,
+      "source": "I am here to rob you. Hand over your valuables!",
+      "translation": "我是来打劫的。把值钱的东西交出来！",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003923_fc7309a4d2",
+      "ordinal": 3923,
+      "source": "That's okay, I'll keep searching for someone. Perhaps even I could buy some equipment from Erik the blacksmith and head down there myself.",
+      "translation": "没关系，我会继续另找别人。也许我甚至可以找铁匠埃里克买些装备，亲自下去一趟。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0003932_f2657d2109",
+      "ordinal": 3932,
+      "source": "Come and see me anytime you need Alchemy supplies. I have the best stock in Thaermore!",
+      "translation": "需要炼金术用品时随时来找我。我这里有泰尔莫最好的存货！",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0004023_3585fe426b",
+      "ordinal": 4023,
+      "source": "Well, I guess we have the same first assignment: finding out how to get up to level two of the tower.",
+      "translation": "好吧，看来我们接到了同样的第一个任务：弄清楚怎么登上塔的第二层。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0004042_0150ec020a",
+      "ordinal": 4042,
+      "source": "I said it would be dealt with.",
+      "translation": "我说过会处理的。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0004048_51fbaccc1d",
+      "ordinal": 4048,
+      "source": "Erubor, I've come here to tell you that Shadowmirk is in danger.",
+      "translation": "埃鲁博，我来这里是要告诉你，暗影堡有危险。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0004050_8f22fa5e1e",
+      "ordinal": 4050,
+      "source": "What will happen if Shadowmirk falls to the goblins?",
+      "translation": "如果暗影堡落入地精之手，会发生什么？",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00003-5848b599",
+        "instance": "api-pilot_translate-20c4dd1ef943418ba2ebb11d6932a744"
+      }
+    },
+    {
+      "id": "R0004051_656cf1aa7d",
+      "ordinal": 4051,
+      "source": "If Shadowmirk falls, so shall the rest of Thaermore. Shadowmirk is Thaermore's last defense since the Chancellor is no longer well. He is under a wicked spell placed upon him by the Goblin shaman Gramuk. He believes the Orakur stole the Crux of Ages and so he has sent his men-at-arms far away, deep underground, to chase shadows. This has left the goblins free to run amok, unchallenged.",
+      "translation": "若暗影堡陷落，泰尔莫的其余部分也将随之沦陷。议长身体已不如从前，暗影堡便是泰尔莫最后的防线。他被哥布林萨满格拉穆克施下了恶咒，深信是奥拉库尔偷走了岁月圣枢，因此把麾下士兵派往远方、深入地下，去追逐幻影。这让地精得以肆无忌惮地横行，无人可挡。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004107_60f5e93755",
+      "ordinal": 4107,
+      "source": "Now Giants will also help you fight Goblins. Only way into Citadel is through front gate but Goblins will attack you with great numbers. Giants will come to your aid when this happens. We help smash Goblin defense. But Giants not follow you inside because we too big.",
+      "translation": "现在巨人也会帮你打地精。进要塞只能走前门，但地精会成群结队地攻来。到时巨人会来助你。我们帮你砸碎哥布林的防御。但巨人不会跟你进去，因为我们太大了。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004109_dfbcb25e53",
+      "ordinal": 4109,
+      "source": "Human! Come closer, we have much to discuss.",
+      "translation": "人类！靠近些，我们有许多事要谈。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004140_18fc2b6382",
+      "ordinal": 4140,
+      "source": "Groveling is so pathetic, especially coming from a murderer. Besides, our negotiations ended in Blackwater.",
+      "translation": "卑躬屈膝真是可悲，尤其是出自一个杀人犯之口。再说，我们的谈判已在黑水镇了结。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004174_97c775cde5",
+      "ordinal": 4174,
+      "source": "I am sorry. Thank you for the gold.",
+      "translation": "很抱歉。谢谢你的金币。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004240_9234a74495",
+      "ordinal": 4240,
+      "source": "A slender, pale woman stands before you in the middle of a magicks shop. The smell of herbs and sulfur and many other magickal components hang in the air.",
+      "translation": "在一间魔法商店中央，一位纤细苍白的女子站在你面前。空气中弥漫着草药、硫磺和许多其他魔法材料的气味。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004278_054cb84011",
+      "ordinal": 4278,
+      "source": "Eeru smiles as you approach him. His piercing eyes make you uncomfortable.",
+      "translation": "你走近时，伊鲁微微一笑。他那锐利的目光令你感到不安。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004294_3d7ae9cc5f",
+      "ordinal": 4294,
+      "source": "The ugly little creature just stares at you, his upper lip curling back into a half smile, half snarl. \"Just a moment, human.",
+      "translation": "那个丑陋的小东西只是盯着你，上唇向后翻起，露出半是微笑、半是狞笑的神情。“稍等片刻，人类。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004320_2b66657560",
+      "ordinal": 4320,
+      "source": "She reacts cautiously as you approach her. \"Hail to you, traveler. My name is Mary. If...if you are a bandit come to rob me I must tell you your friends paid a visit not more than 2 days ago. They've taken everything I had. There is no more.",
+      "translation": "你走近她时，她戒备地作出反应。“向你致敬，旅人。我叫玛丽。如果……如果你是个来抢劫我的强盗，我得告诉你，你的同伙不到两天前来过一趟。他们拿走了我所有的东西。再没有什么可抢的了。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004336_ccbe9a50b8",
+      "ordinal": 4336,
+      "source": "He looks around to ensure no one is watching before taking the amulet from your hand and stuffing it into his shirt pocket. He then draws out a large pouch of coins.",
+      "translation": "他环顾四周，确认没人注意，才从你手中接过护符，塞进衬衫口袋。随后，他掏出一个装满金币的大钱袋。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004349_ec184d2cda",
+      "ordinal": 4349,
+      "source": "Here, let me take a look at that.\" The Captain takes the note and opens it, holding it to the torch light.",
+      "translation": "来，让我看看那个。”队长接过纸条，展开，就着火炬的光查看。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004433_c72731b48b",
+      "ordinal": 4433,
+      "source": "[Show him the Amulet Passkey 26]",
+      "translation": "[把26号护符通行钥给他看]",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004493_49a7ca5f58",
+      "ordinal": 4493,
+      "source": "No way. I will not pay your toll!",
+      "translation": "休想。我才不会给你交过路费！",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004502_11437790d5",
+      "ordinal": 4502,
+      "source": "Blast barrier? Nice.",
+      "translation": "爆裂屏障？不错。",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004528_25a86447ec",
+      "ordinal": 4528,
+      "source": "Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.",
+      "translation": "版权所有 (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.",
+      "metadata": {
+        "group": "text",
+        "resource": "eschalonbook_text.csv",
+        "text_type": "game_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004586_d539cd97ca",
+      "ordinal": 4586,
+      "source": "NE",
+      "translation": "东北",
+      "metadata": {
+        "group": "image",
+        "note": "该文本刻在游戏贴图上，排版区域固定，译文需简短，避免超出原始文字块宽度。",
+        "resource": "img_0039",
+        "text_type": "image_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004616_e205a306ce",
+      "ordinal": 4616,
+      "source": "Your quest ends in the west where you are able to buy a farm overlooking the eastern mountains bordering Thaermore.",
+      "translation": "你的旅程将在西方落幕，你可以在那里买下一座农场，俯瞰与泰尔莫接壤的东部山脉。",
+      "metadata": {
+        "group": "image",
+        "note": "该文本刻在游戏贴图上，排版区域固定，译文需简短，避免超出原始文字块宽度。",
+        "resource": "img_0053",
+        "text_type": "image_text"
+      },
+      "exceptions": [
+        {
+          "reason": "原句 Your quest ends in the west 里 quest 是普通名词，意为“旅程/任务”，并非后接参数的小写脚本命令，故不保留原文。",
+          "source": "quest"
+        }
+      ],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004641_9e903d8342",
+      "ordinal": 4641,
+      "source": "F3  Keyboard Shortcut Help",
+      "translation": "F3  快捷键帮助",
+      "metadata": {
+        "group": "image",
+        "note": "该文本刻在游戏贴图上，排版区域固定，译文需简短，避免超出原始文字块宽度。",
+        "resource": "img_0090",
+        "text_type": "image_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004665_1509f561f2",
+      "ordinal": 4665,
+      "source": "Save",
+      "translation": "保存",
+      "metadata": {
+        "group": "image",
+        "note": "该文本刻在游戏贴图上，排版区域固定，译文需简短，避免超出原始文字块宽度。",
+        "resource": "img_0176",
+        "text_type": "image_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    },
+    {
+      "id": "R0004681_655a83d6b6",
+      "ordinal": 4681,
+      "source": "Quick Travel",
+      "translation": "快速旅行",
+      "metadata": {
+        "group": "image",
+        "note": "该文本刻在游戏贴图上，排版区域固定，译文需简短，避免超出原始文字块宽度。",
+        "resource": "img_0197",
+        "text_type": "image_text"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r5-00004-03a8b0a7",
+        "instance": "api-pilot_translate-6e8b1fc1f47b4a50b8f9f231b3adbfec"
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "id": "pilot_translate-r5-00001-0959c617",
+      "stage": "pilot_translate",
+      "status": "done",
+      "attempt": 1,
+      "backend": "api",
+      "ids": "[\"R0000016_593a1fd13f\",\"R0000076_2632c885aa\",\"R0000124_42c611190c\",\"R0000125_314ec57c30\",\"R0000140_69208f3c79\",\"R0000189_737a67a5d1\",\"R0000210_28f0d15b2f\",\"R0000278_88bca2ced9\",\"R0000299_2a1128e36d\",\"R0000309_52134afc70\",\"R0000424_e2e8c850d2\",\"R0000469_25e1dec620\",\"R0000489_1c38cb74b6\",\"R0000635_fbc4b4851d\",\"R0000667_0e6d78cacd\",\"R0000719_2b16e1b7e7\",\"R0000736_da423f668f\",\"R0000737_6428ebed5f\",\"R0000772_32e94be4c7\",\"R0000774_5c717fd5db\",\"R0000789_41669996cb\",\"R0000835_f074ccfb90\",\"R0000879_9e6cb470b1\",\"R0000924_b36e38a7d0\",\"R0000933_cdf4626f37\",\"R0000939_ed62bbbfb7\",\"R0000941_27c700a5da\",\"R0000942_f7a9c43fbb\"]",
+      "error": null
+    },
+    {
+      "id": "pilot_translate-r5-00002-21fe703b",
+      "stage": "pilot_translate",
+      "status": "done",
+      "attempt": 1,
+      "backend": "api",
+      "ids": "[\"R0001010_5db89a7de1\",\"R0001019_27692e9a8b\",\"R0001084_dd328cc7a5\",\"R0001134_3875d47bd2\",\"R0001180_6e034f76d8\",\"R0001188_eaed8b62d3\",\"R0001219_e95020537e\",\"R0001272_bb7a620b2c\",\"R0001274_6e24899cef\",\"R0001280_f3062ed551\",\"R0001331_48d8a03583\",\"R0001332_a16859b0eb\",\"R0001336_630aea6e68\",\"R0001382_8afdc55e77\",\"R0001436_d47cbca408\",\"R0001439_439f81688f\",\"R0001500_fce5ffa57e\",\"R0001507_9e5c1b1ff1\",\"R0001523_44b3c5003d\",\"R0001550_61adabc652\",\"R0001551_5133efce11\",\"R0001558_5a5c3f75eb\",\"R0001595_7cc6078a35\",\"R0001632_5ed10cfdcc\",\"R0001633_f25b9a33ce\",\"R0001678_ac27288594\",\"R0001684_5927ffcee4\",\"R0001716_a23243580e\",\"R0001770_9b546207c8\",\"R0001784_5c7acab181\",\"R0001792_64395db5b8\",\"R0001829_abebde337e\",\"R0001847_21059ce590\",\"R0001855_5ab7a4b9e0\",\"R0001897_f1d53ab650\",\"R0001924_6d41f9b7c3\",\"R0001928_820055209c\",\"R0001947_11872bf36b\",\"R0001959_2142316df8\",\"R0001985_b174aae086\",\"R0002006_0226373648\",\"R0002008_47f903ea7d\",\"R0002120_b628d17bc5\",\"R0002138_8f01ecc807\",\"R0002139_bb3b328f2a\",\"R0002210_a7417248cb\",\"R0002286_a137f166b5\",\"R0002312_cbac1e5e05\",\"R0002360_f7f3b578ff\",\"R0002363_75718cec6f\",\"R0002394_88d6987f1a\",\"R0002401_200dac89d9\",\"R0002479_aa213192b8\",\"R0002520_b6eb2ac142\",\"R0002548_5fbacc5354\",\"R0002597_d94fb4e095\",\"R0002625_6fe9a37c65\",\"R0002685_a5b35102c6\",\"R0002686_cce3b738f1\",\"R0002707_9b282315c4\",\"R0002730_0607ef22dd\",\"R0002797_1838880218\",\"R0002810_f6e0653740\",\"R0002825_639ae6f507\",\"R0002848_f017366f1c\",\"R0002892_6d5db98802\",\"R0002908_3a57aaa983\"]",
+      "error": null
+    },
+    {
+      "id": "pilot_translate-r5-00003-5848b599",
+      "stage": "pilot_translate",
+      "status": "done",
+      "attempt": 1,
+      "backend": "api",
+      "ids": "[\"R0002945_0e7f95e01b\",\"R0002958_e2a18ec604\",\"R0003009_2bf927a6ec\",\"R0003037_94210b7fab\",\"R0003038_3cc8132c54\",\"R0003145_5e12b8ec4b\",\"R0003166_b14c6d01ff\",\"R0003175_eec2d610f4\",\"R0003219_4d8ab19664\",\"R0003269_982f0a55a4\",\"R0003285_1a0cc1fafb\",\"R0003338_da4d07072a\",\"R0003354_eb636cf7a1\",\"R0003384_4519229d08\",\"R0003442_08c2e6083d\",\"R0003571_471801cea7\",\"R0003628_b9a6b9e421\",\"R0003646_f1382da499\",\"R0003667_b2b6530bb3\",\"R0003706_43af8b9b18\",\"R0003731_118ab44909\",\"R0003743_9b70afded8\",\"R0003784_21290b2087\",\"R0003817_aea454434b\",\"R0003854_3894d2e90c\",\"R0003857_c06006202d\",\"R0003866_82cf24738d\",\"R0003870_2d8438e6e6\",\"R0003888_157dc74271\",\"R0003923_fc7309a4d2\",\"R0003932_f2657d2109\",\"R0004023_3585fe426b\",\"R0004042_0150ec020a\",\"R0004048_51fbaccc1d\",\"R0004050_8f22fa5e1e\"]",
+      "error": null
+    },
+    {
+      "id": "pilot_translate-r5-00004-03a8b0a7",
+      "stage": "pilot_translate",
+      "status": "done",
+      "attempt": 1,
+      "backend": "api",
+      "ids": "[\"R0004051_656cf1aa7d\",\"R0004107_60f5e93755\",\"R0004109_dfbcb25e53\",\"R0004140_18fc2b6382\",\"R0004174_97c775cde5\",\"R0004240_9234a74495\",\"R0004278_054cb84011\",\"R0004294_3d7ae9cc5f\",\"R0004320_2b66657560\",\"R0004336_ccbe9a50b8\",\"R0004349_ec184d2cda\",\"R0004433_c72731b48b\",\"R0004493_49a7ca5f58\",\"R0004502_11437790d5\",\"R0004528_25a86447ec\",\"R0004586_d539cd97ca\",\"R0004616_e205a306ce\",\"R0004641_9e903d8342\",\"R0004665_1509f561f2\",\"R0004681_655a83d6b6\"]",
+      "error": null
+    }
+  ],
+  "config_note": "Current configuration. Saved outputs retain their producer task/input snapshots; a settings change alone does not mean these outputs were regenerated.",
+  "ready_for_assessment": true,
+  "statistics": {
+    "sample_records": 150,
+    "translated_records": 150,
+    "mechanical_failed_records": 0,
+    "task_statuses": {
+      "done": 4
+    },
+    "api_request_statuses_cumulative": {
+      "APIConnectionError:transport": 3,
+      "received": 8
+    }
+  },
+  "failures": [],
+  "note": "Mechanical findings are diagnostic, not a semantic error rate. Main AI assesses pipeline reliability, style and recurring quality problems. Individual errors need not be cleared before accepting calibration.",
+  "snapshot_hash": "a36fb8a88c350792526ee3d5ce647bb754bba83e38be8f15a4b447f3d004b324",
+  "report_hash": "c51f0d6294b1c32c1e7ddd045c4f32b3b07cb8261e37804b45e03ee6756d2f25"
+}

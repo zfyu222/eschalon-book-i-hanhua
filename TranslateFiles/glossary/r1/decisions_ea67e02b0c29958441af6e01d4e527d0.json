@@ -1,0 +1,383 @@
+{
+  "review_complete": true,
+  "review_summary": "已审阅 e1-e12 全部 12 条。e10 将译名由“元素护甲状态”改为“元素护甲”，并限定为完整状态标签；e11 保留“高等防护”，将适用范围由 whole_record 修正为大小写敏感的 text，并补足术语用途说明，以覆盖状态标签、效果参数及护符复合名。其余条目按原文核对后保留现有译名与分类。已逐项核对 f1-f5，未将大小写、复数或控制符差异误判为需改译，也未采用缺少本批出处的跨批候选。",
+  "acknowledged_findings": [
+    "F0266",
+    "F0268",
+    "F0272",
+    "F0273",
+    "F0287"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "元素护甲",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "1156 整条记录为状态标签 Elemental Armor"
+        }
+      },
+      "reason": "去除译名中原文没有的“状态”，并将适用范围限定为该完整状态标签。",
+      "evidence_rows": [
+        1156
+      ],
+      "table": "terms",
+      "index": 292
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "1169 为状态标签，2532 为效果参数，2567 显示其嵌入护符名称；均指高等防护效果，按大小写精确匹配。"
+        },
+        "term_reason": "1169 为状态标签；2532 为效果参数，2567 显示也用于护符名称，均指高等防护效果。"
+      },
+      "reason": "原文证据显示该效果名会嵌入效果参数与物品名，原 whole_record 过窄；改为大小写敏感 text 以覆盖这些确定用法。",
+      "evidence_rows": [
+        1169,
+        2532,
+        2567
+      ],
+      "table": "terms",
+      "index": 304
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:278",
+      "evidence_rows": [
+        1052
+      ],
+      "source_excerpt": "*Meditation",
+      "reason": "技能名与定义匹配，译名与分类无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1052 原文出现 *Meditation，并说明其专注抗魔法、极端冷热及加速回复法力的技能。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“冥想”准确对应 Meditation；* 为原文控制符，不属于译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1052 将该能力定义为可提升抗性与法力回复的技能，归入技能正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Meditation 译名；“冥想”与技能名用法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:282",
+      "evidence_rows": [
+        1056
+      ],
+      "source_excerpt": "*Skullduggery",
+      "reason": "技能定义明确，保留现有译名与技能分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1056 原文以 *Skullduggery is... 定义陷阱理解与解除技能。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“诡术”可概括 trickery/disarm 的技能含义，且为暂定标准译名；不因无出处的跨批候选改译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1056 明确定义为机械理解与解除陷阱的技能，归入技能正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "term_families 中 skullduggery 的“诡诈术”仅为跨批只读候选且无本批出处，不作改译依据；本条保留“诡术”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:285",
+      "evidence_rows": [
+        1059
+      ],
+      "source_excerpt": "*Unarmed *Combat",
+      "reason": "技能名与原文定义一致，分类正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1059 原文出现 *Unarmed *Combat 并定义仅用手脚攻击的技能。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“徒手战斗”准确对应 Unarmed Combat。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1059 明确为战斗技能，并列出力量/速度加成，归入技能正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与运行标识 SKILL_UNARMED_COMBAT 属不同层，普通技能名译“徒手战斗”无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:286",
+      "evidence_rows": [
+        1060
+      ],
+      "source_excerpt": "*Bludgeoning *Weapons",
+      "reason": "武器技能定义明确，共享译名可接受。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1060 原文以 *Bludgeoning *Weapons include Staves, Maces... 定义钝器技能。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“钝击武器”对应 Bludgeoning Weapons，并涵盖原文所列钝器。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1060 定义为近战武器技能并受力量/速度加成，归入技能正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f4 中 e16 的 bludgeoning weapons 与本条仅大小写、复数及控制符差异，同指钝击武器技能，共用“钝击武器”合理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:287",
+      "evidence_rows": [
+        1061
+      ],
+      "source_excerpt": "*Bow *Weapons",
+      "reason": "弓类技能名与原文定义一致，注意与一般 archery 区分。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1061 原文以 *Bow *Weapons include any variation... 定义弓类技能。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“弓术”作为 Bow Weapons 技能名简洁准确，涵盖使用箭矢的弓类装置。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1061 明确为受专注/敏捷加成的武器技能，归入技能正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f2 的另一来源 archery 是一般弓术概念且跨批提示已发布名为“箭术”；本条 Bow Weapons 保留“弓术”，不混淆技能与一般概念。"
+        }
+      }
+    },
+    {
+      "ref": "terms:288",
+      "evidence_rows": [
+        1062
+      ],
+      "source_excerpt": "*Cleaving *Weapons",
+      "reason": "劈砍武器技能名与定义一致，共享译名可接受。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1062 原文以 *Cleaving *Weapons include Axes, Machetes... 定义劈砍武器技能。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“劈砍武器”准确对应 Cleaving Weapons 所列斧、砍刀等。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1062 明确为近战武器技能，归入技能正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f3 中 e15 的 cleaving weapons 与本条仅大小写、复数及控制符差异，同指该技能，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:289",
+      "evidence_rows": [
+        1063
+      ],
+      "source_excerpt": "*Short *Bladed *Weapons",
+      "reason": "短刃武器技能名与定义一致，分类正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1063 原文以 *Short *Bladed *Weapons include Knives, Daggers... 定义短刃武器技能。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“短刃武器”对应 Short Bladed Weapons，并保留与 Swords 的分类区别。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1063 明确为近战武器技能并受力量/速度加成，归入技能正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "1063 特别说明 Short Swords 属 Swords 而非本条，“短刃武器”不会误并入“剑术”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:290",
+      "evidence_rows": [
+        1064
+      ],
+      "source_excerpt": "*Swords",
+      "reason": "剑类技能名与定义一致，共享“剑术”不构成冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1064 原文以 *Swords include all forms of medium to long-bladed... 定义剑类技能。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“剑术”可作为 Swords 技能名，原文说明其涵盖中长刃单手或双手剑。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1064 明确为近战武器技能，归入技能正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 中 swordsmanship 与本条共享“剑术”，两者均指剑术/剑类技能语义，不造成同词多译或歧义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:291",
+      "evidence_rows": [
+        1065
+      ],
+      "source_excerpt": "*Thrown *Weapons",
+      "reason": "投掷武器技能名与定义一致，共享译名可接受。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1065 原文以 *Thrown *Weapons include special knives... 定义投掷武器技能。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“投掷武器”准确对应 Thrown Weapons，并涵盖飞刀、手斧、标枪等。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1065 明确为受力量/敏捷加成的武器技能，归入技能正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f5 中 e17 的 Thrown weapons 与本条仅大小写、复数及控制符差异，同指投掷武器技能，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:292",
+      "evidence_rows": [
+        1156
+      ],
+      "source_excerpt": "Elemental Armor",
+      "reason": "原文仅为效果名 Elemental Armor；原译“元素护甲状态”多出“状态”，现改为“元素护甲”，并限定为整条状态标签。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1156 原文仅为 Elemental Armor，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“元素护甲状态”多出原文没有的“状态”；现改为“元素护甲”，状态含义可由 term_reason 说明。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1156 是状态效果标签，不属技能、人物或地名，归入其他合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "该名仅作完整状态标签出现，已用 whole_record 限定并统一译名“元素护甲”，避免把说明词写入名称。"
+        }
+      }
+    },
+    {
+      "ref": "terms:304",
+      "evidence_rows": [
+        1169,
+        2532,
+        2567
+      ],
+      "source_excerpt": "Greater Protection",
+      "reason": "译名“高等防护”可保留；原 whole_record 只覆盖 1169，未覆盖 2532 的效果参数和 2567 的护符复合名，现改为大小写敏感 text 并补足 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1169 原文为 Greater Protection，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“高等防护”准确对应 Greater Protection，并适用于状态、效果与物品复合名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该名表示防护效果而非技能或物品本体，归入其他合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "2532 显示其作为效果参数，2567 显示其嵌入护符名；原 whole_record 仅覆盖 1169，现改为大小写敏感 text 并补充用途说明。"
+        }
+      }
+    },
+    {
+      "ref": "terms:306",
+      "evidence_rows": [
+        1227,
+        4699
+      ],
+      "source_excerpt": "Giant's Village",
+      "reason": "专名译名与地点分类均正确，图片文字也足够简短。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4699 原文为 Giant's Village；1227 也将其作为 Omar 所在聚落。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“巨人村”准确对应 Giant's Village，图片标签也足够简短。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1227 与 4699 均表明其为巨人聚落/地图地名，归入地名正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "1227 的 Giant's Village 与 4699 地图名同一地点，译名统一为“巨人村”；proper_name 与 required 设置合适。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:278",
+    "terms:282",
+    "terms:285",
+    "terms:286",
+    "terms:287",
+    "terms:288",
+    "terms:289",
+    "terms:290",
+    "terms:291",
+    "terms:292",
+    "terms:304",
+    "terms:306"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

@@ -1,0 +1,551 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核 e1-e12 的 non_translate 分类与适用范围。e1-e5 为完整资源路径，使用 whole_record 保留；e6-e12 为脚本标识符，其中 e6、e12 本批仅有独立用例，使用 whole_record，e7-e11 同时存在独立与嵌入命令串用例，使用大小写敏感的 text 精确保留。全部条目来源、分类与一致性均已核对，并回应 f1-f7。",
+  "acknowledged_findings": [
+    "F0122",
+    "F0127",
+    "F0134",
+    "F0135",
+    "F0136",
+    "F0158",
+    "F0159"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录为环境音资源路径，仅需对完整记录原样保留。"
+        }
+      },
+      "reason": "补齐 non_translate 适用范围内，避免默认全局禁翻。",
+      "evidence_rows": [
+        1878
+      ],
+      "table": "non_translate",
+      "index": 207
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录为叙事文本资源路径，仅需对完整记录原样保留。"
+        }
+      },
+      "reason": "补齐 non_translate 适用范围。",
+      "evidence_rows": [
+        1997
+      ],
+      "table": "non_translate",
+      "index": 209
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录为书籍文本资源路径，仅需对完整记录原样保留。"
+        }
+      },
+      "reason": "补齐 non_translate 适用范围。",
+      "evidence_rows": [
+        1998
+      ],
+      "table": "non_translate",
+      "index": 210
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录为带 incbin 前缀的叙事文本资源路径，仅需对完整记录原样保留。"
+        }
+      },
+      "reason": "补齐 non_translate 适用范围。",
+      "evidence_rows": [
+        1999
+      ],
+      "table": "non_translate",
+      "index": 211
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录为带 incbin 前缀的书籍文本资源路径，仅需对完整记录原样保留。"
+        }
+      },
+      "reason": "补齐 non_translate 适用范围。",
+      "evidence_rows": [
+        2000
+      ],
+      "table": "non_translate",
+      "index": 212
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录仅为任务脚本关键字 all_quests，本批未发现嵌入正文用例，限定完整记录原样保留。"
+        },
+        "term_reason": "任务脚本命令标识符。"
+      },
+      "reason": "回应 f1；为无嵌入用例的脚本关键字补充 whole_record 范围，避免全局匹配。",
+      "evidence_rows": [
+        2008
+      ],
+      "table": "non_translate",
+      "index": 217
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "脚本命令标识符 commit_crime 独立出现，并在分号后的命令串中嵌入出现；含下划线且非普通词，需按精确文本原样保留。"
+        },
+        "term_reason": "犯罪判定脚本命令标识符，用于威胁部落首领后触发犯罪记录或后果。"
+      },
+      "reason": "回应 f2；依据独立与嵌入用例补充大小写敏感 text 范围。",
+      "evidence_rows": [
+        2014,
+        860
+      ],
+      "table": "non_translate",
+      "index": 222
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "任务未完成条件脚本关键字 cond_not_quest 独立出现，并在带参数条件串中嵌入出现；需按精确文本原样保留。"
+        },
+        "term_reason": "任务未完成条件脚本条件标识符。"
+      },
+      "reason": "回应 f3；依据独立与嵌入用例补充大小写敏感 text 范围。",
+      "evidence_rows": [
+        2021,
+        990
+      ],
+      "table": "non_translate",
+      "index": 229
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "任务条件脚本关键字 cond_quest 独立出现，并在多个带参数条件串中嵌入出现；需按精确文本原样保留。"
+        },
+        "term_reason": "任务条件脚本条件标识符。"
+      },
+      "reason": "回应 f4；依据独立与嵌入用例补充大小写敏感 text 范围。",
+      "evidence_rows": [
+        2022,
+        1006,
+        2527
+      ],
+      "table": "non_translate",
+      "index": 230
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "特殊条件脚本关键字 cond_special 独立出现，并在多个带编号条件串中嵌入出现；需按精确文本原样保留。"
+        },
+        "term_reason": "特殊条件脚本条件标识符。"
+      },
+      "reason": "回应 f5；依据独立与嵌入用例补充大小写敏感 text 范围。",
+      "evidence_rows": [
+        2023,
+        3389,
+        3410,
+        3464
+      ],
+      "table": "non_translate",
+      "index": 231
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "初始化交易脚本关键字 init_trade 独立出现，并在带参数命令串中嵌入出现；需按精确文本原样保留。"
+        },
+        "term_reason": "初始化交易脚本命令标识符。"
+      },
+      "reason": "回应 f6；依据独立与嵌入用例补充大小写敏感 text 范围。",
+      "evidence_rows": [
+        2045,
+        932
+      ],
+      "table": "non_translate",
+      "index": 253
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录仅为叙事终止脚本关键字 kill_narrative，本批未发现嵌入用例，限定完整记录原样保留。"
+        },
+        "term_reason": "叙事终止脚本命令标识符。"
+      },
+      "reason": "回应 f7；为无嵌入用例的脚本关键字补充 whole_record 范围。",
+      "evidence_rows": [
+        2046
+      ],
+      "table": "non_translate",
+      "index": 254
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:207",
+      "evidence_rows": [
+        1878
+      ],
+      "source_excerpt": "sound/local_town.wav",
+      "reason": "完整记录是环境音资源路径，保留原样；补 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "源文即完整路径 sound/local_town.wav，记录一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "资源路径不翻译，没有目标译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确，已补 whole_record 适用范围。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同类资源路径一致，均为原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:209",
+      "evidence_rows": [
+        1997
+      ],
+      "source_excerpt": "resources/incbin/narrative.txt",
+      "reason": "完整记录是叙事文本资源路径，保留原样；补 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "源文即完整路径 resources/incbin/narrative.txt。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "资源路径不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确，已补 whole_record 适用范围。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同类资源路径一致，均为原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:210",
+      "evidence_rows": [
+        1998
+      ],
+      "source_excerpt": "resources/incbin/books.txt",
+      "reason": "完整记录是书籍文本资源路径，保留原样；补 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "源文即完整路径 resources/incbin/books.txt。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "资源路径不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确，已补 whole_record 适用范围。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同类资源路径一致，均为原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:211",
+      "evidence_rows": [
+        1999
+      ],
+      "source_excerpt": "incbin::incbin/narrative.txt",
+      "reason": "完整记录是带 incbin 前缀的叙事文本资源路径，保留原样；补 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "源文即完整路径 incbin::incbin/narrative.txt。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "资源路径不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确，已补 whole_record 适用范围。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同类资源路径一致，均为原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:212",
+      "evidence_rows": [
+        2000
+      ],
+      "source_excerpt": "incbin::incbin/books.txt",
+      "reason": "完整记录是带 incbin 前缀的书籍文本资源路径，保留原样；补 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "源文即完整路径 incbin::incbin/books.txt。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "资源路径不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确，已补 whole_record 适用范围。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同类资源路径一致，均为原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:217",
+      "evidence_rows": [
+        2008
+      ],
+      "source_excerpt": "all_quests",
+      "reason": "任务脚本关键字，本批仅有独立完整记录，使用 whole_record 保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "完整记录为 all_quests，属于脚本标识符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "脚本关键字不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；审计 f1 指出无适用范围，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与其他脚本命令一致，保持原始标识符。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:222",
+      "evidence_rows": [
+        2014,
+        860
+      ],
+      "source_excerpt": "commit_crime",
+      "reason": "犯罪判定脚本命令，独立记录与嵌入命令串均出现，使用大小写敏感精确文本保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2014 为独立 commit_crime；860 中在分号后作为命令嵌入。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "脚本命令不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；审计 f2 指出无适用范围，已补 text/case_sensitive。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同类脚本命令均保持原标识符，范围依据独立/嵌入证据确定。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:229",
+      "evidence_rows": [
+        2021,
+        990
+      ],
+      "source_excerpt": "cond_not_quest 8 9",
+      "reason": "任务未完成条件脚本关键字，独立与带参数条件串均出现，使用大小写敏感精确文本保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2021 为独立 cond_not_quest；990 中 cond_not_quest 8 9 作为条件命令。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "脚本条件关键字不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；审计 f3 指出无适用范围，已补 text/case_sensitive。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同类脚本命令均保持原标识符，范围依据独立/嵌入证据确定。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:230",
+      "evidence_rows": [
+        2022,
+        1006,
+        2527
+      ],
+      "source_excerpt": "cond_quest 28 3",
+      "reason": "任务条件脚本关键字，独立与多个带参数条件串出现，使用大小写敏感精确文本保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2022 为独立 cond_quest；1006、2527 中带参数作为条件命令出现。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "脚本条件关键字不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；审计 f4 指出无适用范围，已补 text/case_sensitive。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同类脚本命令均保持原标识符，范围依据独立/嵌入证据确定。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:231",
+      "evidence_rows": [
+        2023,
+        3389,
+        3410,
+        3464
+      ],
+      "source_excerpt": "cond_special 17",
+      "reason": "特殊条件脚本关键字，独立与多个带编号条件串出现，使用大小写敏感精确文本保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2023 为独立 cond_special；3389、3410、3464 中带编号作为条件命令出现。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "脚本条件关键字不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；审计 f5 指出无适用范围，已补 text/case_sensitive。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同类脚本命令均保持原标识符，范围依据独立/嵌入证据确定。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:253",
+      "evidence_rows": [
+        2045,
+        932
+      ],
+      "source_excerpt": "init_trade siam",
+      "reason": "初始化交易脚本关键字，独立与带参数命令串均出现，使用大小写敏感精确文本保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2045 为独立 init_trade；932 中 init_trade siam 作为命令出现。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "脚本命令不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；审计 f6 指出无适用范围，已补 text/case_sensitive。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同类脚本命令均保持原标识符，范围依据独立/嵌入证据确定。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:254",
+      "evidence_rows": [
+        2046
+      ],
+      "source_excerpt": "kill_narrative",
+      "reason": "叙事终止脚本关键字，本批仅有独立完整记录，使用 whole_record 保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "完整记录为 kill_narrative，属于脚本标识符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "脚本关键字不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；审计 f7 指出无适用范围，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与其他独立记录的脚本命令一致，保持原始标识符。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:207",
+    "non_translate:209",
+    "non_translate:210",
+    "non_translate:211",
+    "non_translate:212",
+    "non_translate:217",
+    "non_translate:222",
+    "non_translate:229",
+    "non_translate:230",
+    "non_translate:231",
+    "non_translate:253",
+    "non_translate:254"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

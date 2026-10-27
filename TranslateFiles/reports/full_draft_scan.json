@@ -1,0 +1,77 @@
+{
+  "stage": "translate",
+  "key": "8c267248f98da566a5894caf6e8865963b1e6caa0ed76abd91091dbb8e1066c6",
+  "records": 4743,
+  "failed_records": 0,
+  "clean": true,
+  "failures": [],
+  "repair_tasks": [],
+  "repair_dispatch": [],
+  "phase": "final_full",
+  "checked_records": 4774,
+  "checked_rounds": [
+    {
+      "round": 2,
+      "phase": "issue_recheck",
+      "scope": "issues",
+      "checked_records": 31,
+      "result": "passed"
+    },
+    {
+      "round": 3,
+      "phase": "final_full",
+      "scope": "full",
+      "checked_records": 4743,
+      "result": "passed"
+    }
+  ],
+  "round_reports": [
+    "D:\\StaticHanHua\\Projects\\EschalonBook\\TranslateFiles\\reports\\draft_checks\\round_00002.json",
+    "D:\\StaticHanHua\\Projects\\EschalonBook\\TranslateFiles\\reports\\draft_checks\\round_00003.json"
+  ],
+  "repair_status": [
+    {
+      "id": "draft-repair-a44efc58e8fe46b68bf6",
+      "status": "done",
+      "attempt": 1,
+      "ids": [
+        "R0000496_07b57a0c9a",
+        "R0000497_df2874ef06",
+        "R0000510_1ef35fc5ed",
+        "R0000533_431234a5a3",
+        "R0000547_7dcc0bf5d7",
+        "R0000628_60c2569658",
+        "R0000629_ac9551a4fb",
+        "R0000631_72ff7e534f",
+        "R0000635_fbc4b4851d",
+        "R0000673_eb571013af",
+        "R0000675_27b698ca13",
+        "R0000676_d0e1374cb9",
+        "R0000705_d4630951eb",
+        "R0000719_2b16e1b7e7",
+        "R0000722_5f8520a147",
+        "R0000966_db14d2dbbd",
+        "R0000986_14879e9344",
+        "R0000987_b2fcc7c68a",
+        "R0000992_2eee2ecf56",
+        "R0000996_2509ee6550",
+        "R0001003_dac06084c4",
+        "R0001004_3798eb429c",
+        "R0001007_58c4ccff1a",
+        "R0001025_194482b969",
+        "R0001054_e62ccc4dff",
+        "R0001057_9b161616a8",
+        "R0001059_edf45bd03e",
+        "R0001259_59262fcb4b",
+        "R0001279_dad30018b2",
+        "R0002348_4dea2d1a20",
+        "R0002350_0f481b1dda"
+      ],
+      "round": 1
+    }
+  ],
+  "imported_baseline": null,
+  "needs_attention_ids": [],
+  "repair_stop_reasons": {},
+  "status": "clean"
+}

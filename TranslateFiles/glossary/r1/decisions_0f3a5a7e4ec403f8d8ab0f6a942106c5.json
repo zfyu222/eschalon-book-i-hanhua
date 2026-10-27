@@ -1,0 +1,502 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对全部11条：确认5个法术名译名并修正term_kind/term_reason；为5个non_translate标识补齐whole_record作用域；将小写dehex另列为内部non_translate。",
+  "acknowledged_findings": [
+    "F0017",
+    "F0048",
+    "F0058",
+    "F0077",
+    "F0124"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "term_reason": "287/2706 卷轴名与 1128 独立记录中的法术名，属奥术元素技能。"
+      },
+      "reason": "Deep Freeze 为法术专名，应将 term_kind 由 game_term 修正为 proper_name，并补足原文依据。",
+      "evidence_rows": [
+        287,
+        1128,
+        2706
+      ],
+      "table": "terms",
+      "index": 145
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "term_reason": "288/2707 卷轴名与 1106 独立记录中的法术名；1550 的小写 dehex 是内部标识，另行保护。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "288/2707 的 Scroll of Dehex 与 1106 的独立记录 Dehex 均指同一法术；1550 的小写 dehex 为另一内部标识，不应被本条匹配。"
+        }
+      },
+      "reason": "Dehex 为法术专名；首字母大写用于正文/技能，小写 dehex 是运行标识，需区分。",
+      "evidence_rows": [
+        288,
+        1106,
+        2707,
+        1550
+      ],
+      "table": "terms",
+      "index": 146
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "term_reason": "294/2713 的 Scroll of Entangle 与 1074 独立记录中为法术名；不扩展到普通动词 entangle。"
+      },
+      "reason": "Entangle 在卷轴及独立法术记录中为专名，修正 term_kind 并说明不等于普通动词。",
+      "evidence_rows": [
+        294,
+        1074,
+        2713
+      ],
+      "table": "terms",
+      "index": 152
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "term_reason": "295/2714 卷轴名与 1112 独立记录中的法术名，指火焰飞镖法术。"
+      },
+      "reason": "Fire Dart 为法术专名，修正 term_kind 并补足原文依据。",
+      "evidence_rows": [
+        295,
+        1112,
+        2714
+      ],
+      "table": "terms",
+      "index": 153
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "term_reason": "296/2715 卷轴名与 1130 独立记录中的法术名，指火球法术。"
+      },
+      "reason": "Fireball 为法术专名，修正 term_kind 并补足原文依据。",
+      "evidence_rows": [
+        296,
+        1130,
+        2715
+      ],
+      "table": "terms",
+      "index": 154
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": false,
+          "reason": "1655 的 SFX_Freeze 与 1698 的 sfx_freeze 均整条为音效标识符，不是正文词语。"
+        }
+      },
+      "reason": "补齐 non_translate 作用域，仅保护完整音效标识记录。",
+      "evidence_rows": [
+        1655,
+        1698
+      ],
+      "table": "non_translate",
+      "index": 155
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "763 整条记录为运行时解除诅咒服务命令 cleric_dehex，非正文短语。"
+        }
+      },
+      "reason": "补齐 runtime 命令作用域，仅保护完整命令记录。",
+      "evidence_rows": [
+        763
+      ],
+      "table": "non_translate",
+      "index": 47
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "2011 整条记录为运行时治疗脚本关键字 cleric_heal，非正文词语。"
+        }
+      },
+      "reason": "补齐脚本关键字作用域，仅保护完整关键字记录。",
+      "evidence_rows": [
+        2011
+      ],
+      "table": "non_translate",
+      "index": 219
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": false,
+          "reason": "1420 的 sfx_entangle 与 2404 的 SFX_Entangle 均整条为音效标识符。"
+        }
+      },
+      "reason": "补齐 non_translate 作用域，覆盖大小写两种完整音效标识。",
+      "evidence_rows": [
+        1420,
+        2404
+      ],
+      "table": "non_translate",
+      "index": 121
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "1565 整条记录为投射物内部标识 proj_fireball，非正文词语。"
+        }
+      },
+      "reason": "补齐投射物内部标识作用域，仅保护完整标识记录。",
+      "evidence_rows": [
+        1565
+      ],
+      "table": "non_translate",
+      "index": 132
+    }
+  ],
+  "quarantine": [],
+  "additions": [
+    {
+      "table": "non_translate",
+      "row": {
+        "source": "dehex",
+        "term_reason": "内部移除诅咒效果标识。",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "1550 整条记录为小写内部效果标识 dehex，与首字母大写的法术名 Dehex 区分。"
+        }
+      },
+      "reason": "1550 的小写 dehex 是运行标识，不能与法术名 Dehex 共用全局保护；需单独按整条记录保留。",
+      "evidence_rows": [
+        1550
+      ]
+    }
+  ],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:145",
+      "evidence_rows": [
+        287,
+        1128,
+        2706
+      ],
+      "source_excerpt": "Scroll of Deep Freeze",
+      "reason": "确认 Deep Freeze 为卷轴及独立记录中的法术名，统一译深度冻结，并修正 term_kind。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "287 为 Scroll of Deep Freeze，1128 为独立 Deep Freeze，2706 的完整卷轴行同样含该名称，来源一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "选择深度冻结；1128 候选的深度冰冻虽可通，但287/2706及主提案均用深度冻结，且符合法术名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原 term_kind=game_term；作为法术专名改为 proper_name，category_path=技能 保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一采用深度冻结并补 term_reason，排除深度冰冻候选。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:155",
+      "evidence_rows": [
+        1655,
+        1698
+      ],
+      "source_excerpt": "SFX_Freeze",
+      "reason": "确认为音效标识符，非正文；补齐 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1655 原文为 SFX_Freeze，1698 为小写 sfx_freeze，均为完整音效标识记录。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "作为 non_translate 音效标识，不译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于运行时音效标识符，列入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条无 applicability；已补为 whole_record、大小写不敏感，仅保护完整音效标识。"
+        }
+      }
+    },
+    {
+      "ref": "terms:146",
+      "evidence_rows": [
+        288,
+        1106,
+        2707,
+        1550
+      ],
+      "source_excerpt": "Dehex",
+      "reason": "确认首字母大写 Dehex 为法术名，统一解咒；小写 dehex 另作运行标识处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "288/2707 为 Scroll of Dehex，1106 为独立 Dehex；1550 为小写 dehex，形态和作用不同。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "法术名统一解咒；dehex 为内部标识不译，二者不混用。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原 term_kind=game_term；法术专名改为 proper_name，category_path=技能 保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 case_sensitive text 作用域，仅匹配 Dehex；另将小写 dehex 作为 non_translate 新增，避免同形混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:386",
+      "evidence_rows": [
+        1472
+      ],
+      "source_excerpt": "Cleric",
+      "reason": "确认列表中的独立职业名，译牧师，whole_record 避免与普通词混淆。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1472 原文为 Cleric，作为独立职业列表项。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Cleric 职业名统一译牧师。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于身份/职业名，game_term 与 category_path=身份 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "whole_record、case_sensitive=true 已限定为独立职业名，不与普通 cleric 混用。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:47",
+      "evidence_rows": [
+        763
+      ],
+      "source_excerpt": "cleric_dehex",
+      "reason": "确认运行时解除诅咒服务命令，非正文；补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "763 原文为完整命令 cleric_dehex。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "运行时命令保留不译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于服务/命令标识，列入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条无 applicability；已补 whole_record、大小写敏感，仅保护该完整命令。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:219",
+      "evidence_rows": [
+        2011
+      ],
+      "source_excerpt": "cleric_heal",
+      "reason": "确认脚本关键字，非正文；补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2011 原文为完整脚本关键字 cleric_heal。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "脚本关键字保留不译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于运行时脚本关键字，列入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条无 applicability；已补 whole_record、大小写敏感，仅保护该完整关键字。"
+        }
+      }
+    },
+    {
+      "ref": "terms:152",
+      "evidence_rows": [
+        294,
+        1074,
+        2713
+      ],
+      "source_excerpt": "Scroll of Entangle",
+      "reason": "确认 Entangle 为法术名，统一纠缠，并限定不扩展到普通动词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "294/2713 为 Scroll of Entangle，1074 为独立 Entangle，均指同一法术。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "采用纠缠；2713 的缠绕候选不取，纠缠更符合法术名通行译法。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原 term_kind=game_term；法术专名改为 proper_name，category_path=技能 保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "保留 literal_context 前缀 Scroll of 以避免普通动词误匹配；卷轴内统一纠缠。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:121",
+      "evidence_rows": [
+        1420,
+        2404
+      ],
+      "source_excerpt": "sfx_entangle",
+      "reason": "确认大小写两种音效标识，非正文；补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1420 为 sfx_entangle，2404 为 SFX_Entangle，均为完整音效标识记录。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "音效标识保留不译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于运行时音效标识符，列入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条无 applicability；已补 whole_record、大小写不敏感，覆盖两种形态。"
+        }
+      }
+    },
+    {
+      "ref": "terms:153",
+      "evidence_rows": [
+        295,
+        1112,
+        2714
+      ],
+      "source_excerpt": "Fire Dart",
+      "reason": "确认 Fire Dart 为法术名，统一火焰飞镖，并修正 term_kind。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "295/2714 为 Scroll of Fire Dart，1112 为独立 Fire Dart。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "采用火焰飞镖；与 dart 的飞镖义一致，候选一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原 term_kind=game_term；法术专名改为 proper_name，category_path=技能 保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一火焰飞镖并补 term_reason，排除其他意译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:154",
+      "evidence_rows": [
+        296,
+        1130,
+        2715
+      ],
+      "source_excerpt": "Fireball",
+      "reason": "确认 Fireball 为法术名，采用火球，并修正 term_kind；火球术候选不取。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "296/2715 为 Scroll of Fireball，1130 为独立 Fireball。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "采用火球；296 的火球术虽可通，但1130/2715及主提案均为火球，技能名从简。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原 term_kind=game_term；法术专名改为 proper_name，category_path=技能 保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 term_reason 统一为火球；保留 whole_record 以避免普通名词 fireball 全局匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:132",
+      "evidence_rows": [
+        1565
+      ],
+      "source_excerpt": "proj_fireball",
+      "reason": "确认投射物内部标识，非正文；补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1565 原文为完整投射物标识 proj_fireball。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "内部标识保留不译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于投射物内部标识，列入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条无 applicability；已补 whole_record、大小写敏感，仅保护该标识。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:145",
+    "non_translate:155",
+    "terms:146",
+    "terms:386",
+    "non_translate:47",
+    "non_translate:219",
+    "terms:152",
+    "non_translate:121",
+    "terms:153",
+    "terms:154",
+    "non_translate:132"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

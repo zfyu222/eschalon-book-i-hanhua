@@ -1,0 +1,540 @@
+{
+  "review_complete": true,
+  "review_summary": "已审 e1-e12 非译条目，核对其在 records 中的完整原文与脚本用途；为全部 non_translate 条目补齐 applicability，区分整行命令、分号脚本片段及大小写不敏感的命令调用，避免将 message 等普通词全局禁译。未发现需隔离或新增条目。",
+  "acknowledged_findings": [
+    "F0010",
+    "F0012",
+    "F0013",
+    "F0015",
+    "F0016"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "; ",
+          "suffix": " ;",
+          "reason": "仅匹配分号分隔脚本中的完整 move_player 5753 命令；参数为脚本值，不按普通文本翻译。"
+        }
+      },
+      "reason": "补齐 applicability，明确仅保护分号脚本片段。",
+      "evidence_rows": [
+        672
+      ],
+      "table": "non_translate",
+      "index": 34
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "screen_fade_in 含下划线，是脚本命令标识符；在独立记录 2070 及嵌入分号命令 605/629/672/815 中均仅作命令，未发现普通文本用法，故全文保留。"
+        }
+      },
+      "reason": "补齐 applicability，明确命令标识符的全局保护依据及独立/嵌入用例。",
+      "evidence_rows": [
+        605,
+        2070
+      ],
+      "table": "non_translate",
+      "index": 36
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 628 整行即 remove_item (Incriminating Letter) 命令；仅保护该完整记录，不全局冻结 Incriminating Letter。"
+        }
+      },
+      "reason": "补齐 applicability，限定为整行命令。",
+      "evidence_rows": [
+        628
+      ],
+      "table": "non_translate",
+      "index": 37
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "",
+          "suffix": " ;",
+          "reason": "仅匹配记录 631 开头 remove_item (Divine Ore) 命令片段；括号内为脚本物品参数。"
+        }
+      },
+      "reason": "补齐 applicability，限定为记录开头命令片段。",
+      "evidence_rows": [
+        631
+      ],
+      "table": "non_translate",
+      "index": 38
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "; ",
+          "suffix": "",
+          "reason": "仅匹配记录 631 末尾 quest 62 9 任务命令；数字参数为脚本值。"
+        }
+      },
+      "reason": "补齐 applicability，限定为记录末尾任务命令。",
+      "evidence_rows": [
+        631
+      ],
+      "table": "non_translate",
+      "index": 39
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": false,
+          "prefix": "; ",
+          "suffix": " (",
+          "reason": "仅保护脚本中作为命令调用、后接空格加左括号的 Message/message；不保护普通文本 message 及无参数独立记录 2052。"
+        }
+      },
+      "reason": "补齐 applicability，限定大小写不敏感的脚本命令调用，避免普通 message 误禁译。",
+      "evidence_rows": [
+        595,
+        672,
+        3270
+      ],
+      "table": "non_translate",
+      "index": 41
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 705 整行即 init_trade krista 交易命令；仅保护该完整记录，不全局冻结正文人名 Krista。"
+        }
+      },
+      "reason": "补齐 applicability，限定为整行交易命令。",
+      "evidence_rows": [
+        705
+      ],
+      "table": "non_translate",
+      "index": 42
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 719 整行即 init_trade (gamfari) 交易命令；仅保护该完整记录。"
+        }
+      },
+      "reason": "补齐 applicability，限定为整行交易命令。",
+      "evidence_rows": [
+        719
+      ],
+      "table": "non_translate",
+      "index": 43
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 722 整行即 teach_skill (Gamfari) 1 技能教学命令；仅保护该完整记录。"
+        }
+      },
+      "reason": "补齐 applicability，限定为整行技能教学命令。",
+      "evidence_rows": [
+        722
+      ],
+      "table": "non_translate",
+      "index": 44
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 766 整行即 teach_skill (Jonathon) 2 技能教学命令；仅保护该完整记录。"
+        }
+      },
+      "reason": "补齐 applicability，限定为整行技能教学命令。",
+      "evidence_rows": [
+        766
+      ],
+      "table": "non_translate",
+      "index": 45
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 749 整行即 init_trade (vekkar) 交易命令；仅保护该完整记录。"
+        }
+      },
+      "reason": "补齐 applicability，限定为整行交易命令。",
+      "evidence_rows": [
+        749
+      ],
+      "table": "non_translate",
+      "index": 46
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 815 整行即 screen_fade_out ; map_port 14 ; screen_fade_in 复合命令；仅保护该完整记录。"
+        }
+      },
+      "reason": "补齐 applicability，限定为整行复合命令。",
+      "evidence_rows": [
+        815
+      ],
+      "table": "non_translate",
+      "index": 48
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:34",
+      "evidence_rows": [
+        672
+      ],
+      "source_excerpt": "move_player 5753",
+      "reason": "脚本 move_player 5753 命令；保留原文，已限定分号脚本上下文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 672 原文包含连续片段 move_player 5753，作为分号分隔脚本中的完整命令。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 命令，保留原文，无目标译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；已改为 literal_context，prefix 为分号加空格，suffix 为空格加半角分号，仅保护该脚本片段。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 move_player/screen_fade 等命令按分号上下文保护的做法一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:36",
+      "evidence_rows": [
+        605,
+        2070
+      ],
+      "source_excerpt": "screen_fade_in",
+      "reason": "脚本 screen_fade_in 命令；保留原文，已按含下划线标识符全文保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2070 独立为 screen_fade_in，605/629/672/815 中亦作为分号命令出现。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "运行命令标识符，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 text，case_sensitive=true；含下划线且仅有命令用例，避免全局误伤普通词的理由成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批 screen_fade_out/in 命令保护范围一致，不涉及普通文本。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:37",
+      "evidence_rows": [
+        628
+      ],
+      "source_excerpt": "remove_item (Incriminating Letter)",
+      "reason": "remove_item 移除物品命令；整行保留，不冻结物品名正文译法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 628 整行即 remove_item (Incriminating Letter)。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 命令，整条保留；括号内为脚本物品参数。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 whole_record；仅匹配记录 628 整行，不全局冻结 Incriminating Letter。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 remove_item/Divine Ore 同类命令保护方式一致，区别于物品名正文译法。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:38",
+      "evidence_rows": [
+        631
+      ],
+      "source_excerpt": "remove_item (Divine Ore)",
+      "reason": "remove_item 移除物品命令片段；仅记录开头保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 631 开头为 remove_item (Divine Ore)，后接 ; quest 62 9。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 命令，保留原文，括号内为脚本物品参数。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 literal_context，prefix 为空，suffix 为空格加半角分号，只保护记录 631 开头该命令片段。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e3 remove_item 命令一致；不阻止 Divine Ore 在正文中译作神圣矿石。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:39",
+      "evidence_rows": [
+        631
+      ],
+      "source_excerpt": "quest 62 9",
+      "reason": "quest 任务状态命令；按记录末尾片段限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 631 末尾连续片段为 quest 62 9。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "脚本任务命令，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 literal_context，prefix 为分号加空格，suffix 为空，仅匹配记录 631 末尾该命令。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "quest 为命令关键字而非正文 quest 普通词；按数字参数限定，避免全局保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:41",
+      "evidence_rows": [
+        595,
+        672,
+        3270
+      ],
+      "source_excerpt": "message (You wake laying upon cold dirt. The smell of death is all around you...)",
+      "reason": "Message/message 命令调用；仅保护后接括号的命令形式，普通词不全局禁译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 595/672 中 Message/message 后接空格加左括号作为脚本命令调用；3270 为普通词 message，2052 为无参数独立记录。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "命令关键字保留原文；普通词 message 仍可正常翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 literal_context，prefix 为分号加空格，suffix 为空格加左括号，case_sensitive=false；仅保护后接空括号的命令调用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "排除 3270 的普通 message 和 2052 的独立记录，避免常见词全局禁译；与脚本 Message 调用一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:42",
+      "evidence_rows": [
+        705
+      ],
+      "source_excerpt": "init_trade krista",
+      "reason": "init_trade 交易初始化命令；整行保护，不冻结人名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 705 整行即 init_trade krista。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "运行时交易初始化命令，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 whole_record；仅匹配该整行命令，不冻结正文人名 Krista。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 init_trade (gamfari)/(vekkar) 等其他交易命令一致，人名正文另按术语表处理。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:43",
+      "evidence_rows": [
+        719
+      ],
+      "source_excerpt": "init_trade (gamfari)",
+      "reason": "init_trade 交易初始化命令；整行保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 719 整行即 init_trade (gamfari)。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "运行时交易初始化命令，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 whole_record；仅匹配该整行命令。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7/e11 init_trade 命令一致，不全局冻结 gamfari。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:44",
+      "evidence_rows": [
+        722
+      ],
+      "source_excerpt": "teach_skill (Gamfari) 1",
+      "reason": "teach_skill 技能教学命令；整行保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 722 整行即 teach_skill (Gamfari) 1。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "运行时技能教学命令，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 whole_record；仅匹配该整行命令。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 teach_skill (Jonathon) 2 同类命令一致，不全局冻结 Gamfari。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:45",
+      "evidence_rows": [
+        766
+      ],
+      "source_excerpt": "teach_skill (Jonathon) 2",
+      "reason": "teach_skill 技能教学命令；整行保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 766 整行即 teach_skill (Jonathon) 2。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "运行时技能教学命令，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 whole_record；仅匹配该整行命令。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e9 teach_skill 命令一致，不全局冻结 Jonathon。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:46",
+      "evidence_rows": [
+        749
+      ],
+      "source_excerpt": "init_trade (vekkar)",
+      "reason": "init_trade 交易初始化命令；整行保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 749 整行即 init_trade (vekkar)。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "运行时交易初始化命令，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 whole_record；仅匹配该整行命令。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7/e8 init_trade 命令一致，不全局冻结 vekkar。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:48",
+      "evidence_rows": [
+        815
+      ],
+      "source_excerpt": "screen_fade_out ; map_port 14 ; screen_fade_in",
+      "reason": "组合运行时命令；整行保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 815 整行即 screen_fade_out ; map_port 14 ; screen_fade_in。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "组合运行时命令，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 whole_record；仅匹配记录 815 整行复合命令。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 screen_fade_out/in、map_port 等命令保护一致；不扩展到普通文本。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:34",
+    "non_translate:36",
+    "non_translate:37",
+    "non_translate:38",
+    "non_translate:39",
+    "non_translate:41",
+    "non_translate:42",
+    "non_translate:43",
+    "non_translate:44",
+    "non_translate:45",
+    "non_translate:46",
+    "non_translate:48"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

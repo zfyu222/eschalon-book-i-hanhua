@@ -1,0 +1,339 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e12 共12个石棺/墓碑人名条目，源文均可在对应 ordinal 确认，译名音译合理，proper_name 分类与 required 执行级别一致；e1/e2 与 e8/e9 共享姓氏译名一致，无需修订。",
+  "acknowledged_findings": [],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:86",
+      "evidence_rows": [
+        3177
+      ],
+      "source_excerpt": "Isenia Amdar",
+      "reason": "石棺铭文专名，现译可确认，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3177行原文为石棺铭文，含姓名“Isenia Amdar”，提取无误。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“伊塞妮娅·阿姆达尔”按音译处理，作为逝者姓名与原文对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "墓碑/石棺上的具体逝者姓名，term_kind=proper_name、enforcement=required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2 共享 Amdar，均译“阿姆达尔”，未见同名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:87",
+      "evidence_rows": [
+        3178
+      ],
+      "source_excerpt": "Belgroth Amdar",
+      "reason": "石棺铭文专名，现译可确认，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3178行原文为石棺铭文，含姓名“Belgroth Amdar”，提取无误。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“贝尔格罗斯·阿姆达尔”与原文对应，音译自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具体逝者姓名，作为 proper_name 且 required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1 共享 Amdar，均译“阿姆达尔”，未见冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:88",
+      "evidence_rows": [
+        3179
+      ],
+      "source_excerpt": "Lassila Undim",
+      "reason": "石棺铭文专名，现译可确认，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3179行原文含姓名“Lassila Undim”，提取无误。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“拉西拉·温迪姆”按音译处理，与原文姓名对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "石棺铭文中的逝者姓名，proper_name 分类合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立姓名，未发现同族词或既有译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:89",
+      "evidence_rows": [
+        3180
+      ],
+      "source_excerpt": "Dolader",
+      "reason": "单一逝者姓名，现译可确认，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3180行原文含姓名“Dolader”，提取无误。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“多拉德”为单一专名音译，未添加无据身份信息。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "石棺铭文中的逝者姓名，作为 proper_name 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现同族词或既有译名冲突；原文未说明性别，保留谨慎处理。"
+        }
+      }
+    },
+    {
+      "ref": "characters:90",
+      "evidence_rows": [
+        3185
+      ],
+      "source_excerpt": "Kilroy Bjornson",
+      "reason": "石棺铭文专名，现译可确认，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3185行原文含姓名“Kilroy Bjornson”，提取无误。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“基尔罗伊·比约恩森”与原文姓名对应，音译可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "石棺铭文中的逝者姓名，proper_name 分类合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立姓名，未发现同族词或既有译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:91",
+      "evidence_rows": [
+        3240
+      ],
+      "source_excerpt": "Samuel Weston",
+      "reason": "墓碑逝者姓名，现译可确认，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3240行原文含墓碑姓名“Samuel Weston”，提取无误。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“塞缪尔·韦斯顿”按音译处理，与原文对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "路边墓碑上的逝者姓名，作为 proper_name 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Weston 译“韦斯顿”，未见同名或同族冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:92",
+      "evidence_rows": [
+        3242
+      ],
+      "source_excerpt": "Mittens the cat",
+      "reason": "宠物猫墓碑名，现译可确认，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3242行原文含“Mittens the cat”，提取无误。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“猫咪米滕斯”保留 the cat 的指称并音译 Mittens，符合中文墓碑称呼习惯。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "纪念宠物猫的专名，作为 characters 条目 proper_name 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与其他人名无冲突；Mittens 译“米滕斯”可确认。"
+        }
+      }
+    },
+    {
+      "ref": "characters:94",
+      "evidence_rows": [
+        3282
+      ],
+      "source_excerpt": "Margo Copperwand",
+      "reason": "墓碑逝者姓名，现译可确认，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3282行原文含墓碑姓名“Margo Copperwand”，提取无误。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“玛戈·科珀旺德”与原文姓名对应，姓氏按音译处理。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "墓碑上的逝者姓名，proper_name 分类合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e9 共享 Copperwand，均译“科珀旺德”，未见冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:95",
+      "evidence_rows": [
+        3283
+      ],
+      "source_excerpt": "Gunthar Copperwand",
+      "reason": "墓碑逝者姓名，现译可确认，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3283行原文含墓碑姓名“Gunthar Copperwand”，提取无误。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“冈瑟·科珀旺德”与原文姓名对应，音译自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "墓碑上的逝者姓名，作为 proper_name 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8 共享 Copperwand，均译“科珀旺德”，未见冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:96",
+      "evidence_rows": [
+        3285
+      ],
+      "source_excerpt": "Kara",
+      "reason": "墓碑逝者姓名，现译可确认，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3285行原文含墓碑姓名“Kara”，提取无误。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“卡拉”为短名音译，与原文对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "墓碑上的逝者姓名，作为 proper_name 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立姓名，未发现同族词或既有译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:97",
+      "evidence_rows": [
+        3290
+      ],
+      "source_excerpt": "Ned Greenleaf",
+      "reason": "墓碑逝者姓名，现译可确认，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3290行原文含墓碑姓名“Ned Greenleaf”，提取无误。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“内德·格林利夫”按音译处理，与原文姓名对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "墓碑上的逝者姓名，作为 proper_name 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Greenleaf 译“格林利夫”，未见同名或同族冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:98",
+      "evidence_rows": [
+        3293
+      ],
+      "source_excerpt": "Leo",
+      "reason": "墓碑逝者姓名，现译可确认，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3293行原文含墓碑姓名“Leo”，提取无误。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“利奥”为短名音译，与原文对应，未将死因混入译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "墓碑上的逝者姓名，作为 proper_name 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立姓名，未发现同族词或既有译名冲突；Blisterpox 仅为死因说明。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:86",
+    "characters:87",
+    "characters:88",
+    "characters:89",
+    "characters:90",
+    "characters:91",
+    "characters:92",
+    "characters:94",
+    "characters:95",
+    "characters:96",
+    "characters:97",
+    "characters:98"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

@@ -1,0 +1,565 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 12 个 non_translate 条目，确认它们均为脚本命令、运行时标记或音频事件标识；已补足 applicability 并区分 restore 与图片菜单 Restore、heal 与 Divine Heal、gfx/Gfx/gfx.pak 等上下文，无需新增、隔离或放行未匹配。",
+  "acknowledged_findings": [
+    "F0154",
+    "F0155",
+    "F0156",
+    "F0157",
+    "F0164",
+    "F0168",
+    "F0169",
+    "F0171",
+    "F0179",
+    "F0180",
+    "F0181",
+    "F0223"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "2041 为完整独立记录 full_restore，属于恢复全部状态的脚本命令；按完整记录匹配可避免误伤正文。"
+        },
+        "term_reason": "独立脚本命令 full_restore，用于恢复全部状态；非正文词。"
+      },
+      "reason": "将保护限定为完整记录并补充说明命令用途。",
+      "evidence_rows": [
+        2041
+      ],
+      "table": "non_translate",
+      "index": 249
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "2069 为小写独立命令 restore；4657/4666 的 Restore 是贴图菜单文案，大小写与记录均不同，需可翻译。"
+        },
+        "term_reason": "独立脚本命令 restore（小写），与图片菜单 Restore 的界面文案区分。"
+      },
+      "reason": "避免把可翻译的 Restore 菜单按钮纳入保护。",
+      "evidence_rows": [
+        2069,
+        4657,
+        4666
+      ],
+      "table": "non_translate",
+      "index": 276
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "Sound(",
+          "suffix": ")",
+          "reason": "2519/2520 中 SFX_Restore 仅作为 Sound(...) 的音频事件参数出现，保留该参数本身。"
+        },
+        "term_reason": "音频事件标识 SFX_Restore，出现在 Sound(...) 调用中，需原样保留。"
+      },
+      "reason": "用紧邻调用语法限定音频事件标识，避免全局保护。",
+      "evidence_rows": [
+        2519,
+        2520
+      ],
+      "table": "non_translate",
+      "index": 337
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "2042 为独立命令，966 为带物品参数的同一 give_item 命令；下划线标识符无普通正文用法，句中同样保留。"
+        },
+        "term_reason": "脚本命令 give_item，可独立出现或带物品参数，令牌不可翻译。"
+      },
+      "reason": "保护独立及带参数两种脚本命令用法。",
+      "evidence_rows": [
+        2042,
+        966
+      ],
+      "table": "non_translate",
+      "index": 250
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": false,
+          "reason": "2043 为 gfx 命令，1146 为资源名 gfx.pak，2782 为大小写变体 Gfx；均为引擎/资源技术标识，非正文词汇。"
+        },
+        "term_reason": "引擎技术缩写 gfx，用于命令/资源名（如 gfx.pak），不是正文词汇。"
+      },
+      "reason": "覆盖命令、资源文件名及大小写变体，保留技术标识。",
+      "evidence_rows": [
+        2043,
+        1146,
+        2782
+      ],
+      "table": "non_translate",
+      "index": 251
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "2044 为小写独立命令 heal；1072 的 Divine Heal 是技能名，其中 Heal 大写且应随技能名翻译，不能由该命令保护。"
+        },
+        "term_reason": "脚本命令 heal（小写），与技能名 Divine Heal 中的词区分。"
+      },
+      "reason": "将命令保护限定为小写完整记录，避免冻结 Divine Heal 技能名。",
+      "evidence_rows": [
+        2044,
+        1072
+      ],
+      "table": "non_translate",
+      "index": 252
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "2051 为独立命令 map_port，815 为带地图编号的同一命令 map_port 14；下划线标识符在句中同样应保留。"
+        },
+        "term_reason": "脚本命令 map_port，可带地图编号参数，需原样保留。"
+      },
+      "reason": "覆盖独立及带参数用法，同时避免普通正文匹配。",
+      "evidence_rows": [
+        2051,
+        815
+      ],
+      "table": "non_translate",
+      "index": 259
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "2056 为独立标记 notebox，3492 为带编号的 notebox 8；均属运行时标记，句中参数前的标记需保留。"
+        },
+        "term_reason": "运行时标记 notebox，可带编号参数，需原样保留。"
+      },
+      "reason": "补足独立及带编号用法的保护范围。",
+      "evidence_rows": [
+        2056,
+        3492
+      ],
+      "table": "non_translate",
+      "index": 263
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "2057 为完整独立记录 npc_die，属于 NPC 死亡事件脚本命令。"
+        },
+        "term_reason": "独立脚本命令 npc_die，用于 NPC 死亡事件。"
+      },
+      "reason": "将保护限定为完整命令记录。",
+      "evidence_rows": [
+        2057
+      ],
+      "table": "non_translate",
+      "index": 264
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "2059 为完整独立记录 port_to，属于传送/跳转脚本命令。"
+        },
+        "term_reason": "独立脚本命令 port_to，属于传送/跳转逻辑。"
+      },
+      "reason": "将保护限定为完整命令记录。",
+      "evidence_rows": [
+        2059
+      ],
+      "table": "non_translate",
+      "index": 266
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "2067 为完整独立记录 rename_item，属于物品重命名脚本命令。"
+        },
+        "term_reason": "独立脚本命令 rename_item，属于物品重命名逻辑。"
+      },
+      "reason": "将保护限定为完整命令记录。",
+      "evidence_rows": [
+        2067
+      ],
+      "table": "non_translate",
+      "index": 274
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "2068 为完整独立记录 rent_room，属于租赁房间脚本命令。"
+        },
+        "term_reason": "独立脚本命令 rent_room，属于租赁房间逻辑。"
+      },
+      "reason": "将保护限定为完整命令记录。",
+      "evidence_rows": [
+        2068
+      ],
+      "table": "non_translate",
+      "index": 275
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:249",
+      "evidence_rows": [
+        2041
+      ],
+      "source_excerpt": "full_restore",
+      "reason": "full_restore 为独立脚本命令，应按完整记录保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2041 原文为 full_restore，确为脚本命令。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，保留原文，不产出中文译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；已补 whole_record 限定，避免全局匹配。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "full_restore 与 restore/SFX_Restore 虽共享词根，但为不同命令/标识，不合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:276",
+      "evidence_rows": [
+        2069,
+        4657,
+        4666
+      ],
+      "source_excerpt": "restore",
+      "reason": "小写 restore 为独立脚本命令；图片菜单 Restore 属可翻译界面文案，二者不合并。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2069 原文 restore；4657/4666 为 Restore 菜单文字，大小写和句法不同。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "命令本身保留；Restore 贴图文案另按界面短译处理。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补 whole_record 且区分大小写，避免保护 Restore 按钮。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "小写 restore 命令与图片菜单 Restore 不合并；后者可译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:337",
+      "evidence_rows": [
+        2519,
+        2520
+      ],
+      "source_excerpt": "Sound(SFX_Restore)",
+      "reason": "SFX_Restore 仅作为 Sound 参数保留，属于音频事件标识。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2519/2520 的 SFX_Restore 位于 Sound(...) 参数中，是音频事件标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "音频事件标识保留原文，不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补 literal_context 'Sound(' / ')' 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "SFX_Restore 是音频事件，与 restore/full_restore 命令功能不同，不能合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:250",
+      "evidence_rows": [
+        2042,
+        966
+      ],
+      "source_excerpt": "give_item (Flask of Incinerator Fuel)",
+      "reason": "give_item 为脚本命令令牌，独立及带物品参数时均须保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2042 为独立 give_item，966 为带物品参数的同一命令。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "命令令牌保留，参数中的物品名仍可翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补 text 且区分大小写以覆盖嵌入命令。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立及带参数用法均为 give_item，保护范围一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:251",
+      "evidence_rows": [
+        2043,
+        1146,
+        2782
+      ],
+      "source_excerpt": "gfx.pak",
+      "reason": "gfx/Gfx 为引擎技术标识，gfx.pak 为资源文件名，均不是正文词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2043 为 gfx，1146 为 gfx.pak，2782 为 Gfx，均为技术标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "技术标识保留原文，不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补 text 非区分大小写以覆盖 Gfx/gfx.pak。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "gfx/Gfx/gfx.pak 保持同一技术词根；Gfx 不按普通词翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:252",
+      "evidence_rows": [
+        2044,
+        1072
+      ],
+      "source_excerpt": "heal",
+      "reason": "heal 为小写脚本命令；Divine Heal 是技能名，不由此条冻结。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2044 为小写 heal；1072 为技能名 Divine Heal 的片段。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "heal 命令保留；Divine Heal 作为技能名另行翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补 whole_record 且区分大小写，限定为小写命令。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "heal 命令与 Divine Heal 技能名语境不同，不合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:259",
+      "evidence_rows": [
+        2051,
+        815
+      ],
+      "source_excerpt": "map_port 14",
+      "reason": "map_port 可独立或带地图编号出现，属于脚本命令。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2051 为 map_port，815 为 map_port 14。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "命令令牌保留，地图编号参数不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补 text 且区分大小写覆盖带参用法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立与带参 map_port 为同一命令。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:263",
+      "evidence_rows": [
+        2056,
+        3492
+      ],
+      "source_excerpt": "notebox 8",
+      "reason": "notebox 为运行时标记，可带编号，均须保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2056 为 notebox，3492 为 notebox 8。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "标记保留，编号参数不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补 text 且区分大小写覆盖带编号标记。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "notebox 与 notebox 8 为同一运行时标记。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:264",
+      "evidence_rows": [
+        2057
+      ],
+      "source_excerpt": "npc_die",
+      "reason": "npc_die 为独立脚本命令，用于 NPC 死亡事件。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2057 为完整 npc_die 命令记录。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "命令保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅见独立 npc_die，与正文无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:266",
+      "evidence_rows": [
+        2059
+      ],
+      "source_excerpt": "port_to",
+      "reason": "port_to 为独立传送/跳转脚本命令。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2059 为完整 port_to 命令记录。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "命令保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "port_to 与 map_port 等为不同命令，不按共享词根合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:274",
+      "evidence_rows": [
+        2067
+      ],
+      "source_excerpt": "rename_item",
+      "reason": "rename_item 为独立物品重命名脚本命令。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2067 为完整 rename_item 命令记录。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "命令保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "rename_item 仅见独立命令，保护范围一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:275",
+      "evidence_rows": [
+        2068
+      ],
+      "source_excerpt": "rent_room",
+      "reason": "rent_room 为独立租赁房间脚本命令。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2068 为完整 rent_room 命令记录。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "命令保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "rent_room 仅见独立命令，保护范围一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:249",
+    "non_translate:276",
+    "non_translate:337",
+    "non_translate:250",
+    "non_translate:251",
+    "non_translate:252",
+    "non_translate:259",
+    "non_translate:263",
+    "non_translate:264",
+    "non_translate:266",
+    "non_translate:274",
+    "non_translate:275"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

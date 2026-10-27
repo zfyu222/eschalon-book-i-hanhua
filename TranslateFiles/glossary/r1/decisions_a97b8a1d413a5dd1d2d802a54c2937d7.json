@@ -1,0 +1,409 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e12 的原文、译名、分类与一致性。将 e2/e3 统一为已发布译名「任性铁匠铺」，修正 e2 分类为地名；e1 按法术名归 proper_name，e8 按陷阱机制名归 game_term；e9 补充 whole_record applicability。f1 为同一店铺不同写法，f2 为 Hive Drones/Hive Drone 单复数变体，均不构成译名冲突。",
+  "acknowledged_findings": [
+    "F0280",
+    "F0281"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_kind": "proper_name"
+      },
+      "reason": "Turn Undead 为卷轴上的法术/技能名，按法术名归 proper_name；译名维持「驱散不死」。",
+      "evidence_rows": [
+        1100,
+        2736
+      ],
+      "table": "terms",
+      "index": 175
+    },
+    {
+      "patch": {
+        "recommended_translation": "任性铁匠铺",
+        "category_path": "地名",
+        "term_reason": "Aridell 的铁匠铺名；Blacksmithe 为原文拼写；按已发布 v1.5 统一为「任性铁匠铺」。"
+      },
+      "reason": "466 为 Aridell 店铺名；按已发布 v1.5 统一为「任性铁匠铺」，并归地名。",
+      "evidence_rows": [
+        466
+      ],
+      "table": "terms",
+      "index": 177
+    },
+    {
+      "patch": {
+        "recommended_translation": "任性铁匠铺"
+      },
+      "reason": "3280 与 e2 同指该店铺招牌，统一为「任性铁匠铺」。",
+      "evidence_rows": [
+        3280
+      ],
+      "table": "terms",
+      "index": 495
+    },
+    {
+      "patch": {
+        "term_kind": "game_term"
+      },
+      "reason": "1734 为陷阱机制名，不是人物或地点专名，term_kind 改 game_term；译名「毒刺飞镖」不变。",
+      "evidence_rows": [
+        1734
+      ],
+      "table": "terms",
+      "index": 353
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 996 为完整 drop_item 掉落命令，整条记录作为运行时命令保留。"
+        }
+      },
+      "reason": "996 是完整运行时掉落命令；补 whole_record applicability，防止全局禁翻。",
+      "evidence_rows": [
+        996
+      ],
+      "table": "non_translate",
+      "index": 66
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:175",
+      "evidence_rows": [
+        1100,
+        2736
+      ],
+      "source_excerpt": "Turn Undead",
+      "reason": "1100/2736 均为卷轴上的法术/技能名；译名与技能类别相符，按法术名修正 term_kind。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1100 原文为“Turn Undead”，2736 显示“Scroll of Turn Undead”并带 SKILL_ARCANE_DIVINATION，来源明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“驱散不死”对应 Turn Undead 的驱散不死生物效果，较“驱散亡灵”更贴近原文不死类别。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "category_path=技能成立；term_kind 由 game_term 改为 proper_name，因原文为法术/技能名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一 source 的候选译名“驱散不死/驱散亡灵”，按法术名统一取“驱散不死”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:177",
+      "evidence_rows": [
+        466
+      ],
+      "source_excerpt": "the Wayward Blacksmithe shop",
+      "reason": "466 为 Aridell 的店铺名；按已发布 v1.5 统一为「任性铁匠铺」，并归地名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "466 明确列出“the Wayward Blacksmithe shop”，是 Aridell 的店铺名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原暂定“迷途铁匠铺”将 wayward 理解成迷途；条目元数据给出已发布 v1.5 译名“任性铁匠铺”，故统一。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "由“组织”改为“地名”：466 将其与 Owl's Roost Tavern 等地点并列，且与 e3 店铺招牌一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e3“The Wayward Blacksmithe”统一为“任性铁匠铺”；f1 为同一店铺的不同写法，不是不同实体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:495",
+      "evidence_rows": [
+        3280
+      ],
+      "source_excerpt": "The Wayward Blacksmithe",
+      "reason": "3280 为店铺招牌；与 e2 同一店铺，统一为「任性铁匠铺」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3280 原文为店铺招牌“The Wayward Blacksmithe”。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原“迷途铁匠铺”与 e2 的已发布译名不一致，统一改为“任性铁匠铺”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=地名，商店招牌作为地点/店铺名成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2 的“Wayward Blacksmithe shop”同指一家店，共用“任性铁匠铺”不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:181",
+      "evidence_rows": [
+        537
+      ],
+      "source_excerpt": "They are called Hive Drones",
+      "reason": "537 明确 Hive Drones 为 Tangletree 的大型攻击性黄蜂；译名「蜂巢雄蜂」保留 drone 的雄蜂义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "537 原文“They are called Hive Drones and they are very aggressive.”明确其为大型黄蜂。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“蜂巢雄蜂”对应 Hive Drones；drone 在蜂群语境为雄蜂，与后续 Drones 简称一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=种族适用于该虫群敌人类型。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e5 单数 Hive Drone 共用“蜂巢雄蜂”，f2 为单复数变体，不是译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:459",
+      "evidence_rows": [
+        2856,
+        3268
+      ],
+      "source_excerpt": "Hive Drone",
+      "reason": "2856 为敌人类型名，3268 在尸体描述中指同一种蜂巢敌人；单数统一为「蜂巢雄蜂」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2856 原文即“Hive Drone”，3268 亦以“a Hive Drone”指该敌人。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "单数 Hive Drone 译为“蜂巢雄蜂”，与 e4 复数形式共用同一核心译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=种族与 e4 的虫群敌人类型一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e4/e5 为单复数变体，f2 不构成不同实体；统一“蜂巢雄蜂”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:182",
+      "evidence_rows": [
+        1210
+      ],
+      "source_excerpt": "Hive Queen",
+      "reason": "1210 明确 Hive Queen 是盘踞 Tangletree 洞穴、需击杀并取毒刺为证的独特蜂群首领；译名「蜂巢女王」与 e7 物品名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1210 原文“find and kill the Hive Queen... Her stinger will be proof”明确其为独特任务目标。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“蜂巢女王”保留 Hive+Queen，且与 e7“Hive Queen Stinger”的“蜂巢女王”核心一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他用于独特怪物/首领，term_kind=proper_name 可由 1210 的唯一目标任务支持。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7 的 Hive Queen Stinger 共用“蜂巢女王”，e7 整体为“蜂巢女王毒刺”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:238",
+      "evidence_rows": [
+        996
+      ],
+      "source_excerpt": "Hive Queen Stinger",
+      "reason": "996 为击杀 Hive Queen 后掉落的证明物品；译名「蜂巢女王毒刺」与 e6 蜂巢女王一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "996 原文“drop_item (Hive Queen Stinger)”明确物品来源/名称。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Hive Queen Stinger 译为“蜂巢女王毒刺”，stinger 取毒刺义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=物品适用于任务证明物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e6“蜂巢女王”核心译名一致，复合词不另立译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:353",
+      "evidence_rows": [
+        1734
+      ],
+      "source_excerpt": "Stinger Dart",
+      "reason": "1734 为陷阱名称；按游戏机制名改为 game_term，译名「毒刺飞镖」保留 Stinger=毒刺、Dart=飞镖。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1734 原文为“Stinger Dart”，候选理由指出其为陷阱名称及触发消息用名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“毒刺飞镖”对应 Stinger Dart，且与 e7 的 Stinger=毒刺一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "category_path=其他可容纳陷阱；term_kind 由 proper_name 改为 game_term，因原文是陷阱机制名而非人物/地点专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7 的“毒刺”核心一致；作为陷阱/投射物名不改变 Hive Queen Stinger 的完整译名。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:66",
+      "evidence_rows": [
+        996
+      ],
+      "source_excerpt": "drop_item (Hive Queen Stinger)",
+      "reason": "996 是完整运行时掉落命令；补 applicability=whole_record，保持整条命令不翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "996 原文为完整命令“drop_item (Hive Queen Stinger)”。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "运行时命令保持原文，无译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "补充 applicability={mode:whole_record,case_sensitive:true,...}，限定为完整记录匹配，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "命令中的 Hive Queen Stinger 与 e7 物品名一致，但整条命令仍按运行时标记保留。"
+        }
+      }
+    },
+    {
+      "ref": "terms:183",
+      "evidence_rows": [
+        3264
+      ],
+      "source_excerpt": "Whistling Cave",
+      "reason": "3264 为地点名；沿用多数候选「呼啸洞穴」，与 542/1232/3730 的上下文一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3264 原文“Whistling Cave”，542/1232 均作为 Tangletree 附近洞穴名出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“呼啸洞穴”对应 Whistling Cave，较“呼啸洞窟”更常用且保留 cave=洞穴。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=地名成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批各出处均为同一洞穴，统一“呼啸洞穴”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:185",
+      "evidence_rows": [
+        1988,
+        557
+      ],
+      "source_excerpt": "Bordertown",
+      "reason": "1988/557 明确 Bordertown 为 Darkford 外难民营地/城镇；统一「边境镇」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1988 原文即“Bordertown”；557 说明其为 Darkford 外的小营地。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“边境镇”符合 bordertown 的边境聚落义，且全批一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=地名成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e12 的 Bordertown Arms 共享 Bordertown 词根；e12 作为店铺专名可简作“边境军械铺”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:227",
+      "evidence_rows": [
+        3057,
+        1222
+      ],
+      "source_excerpt": "Bordertown Arms",
+      "reason": "3057 为店铺招牌，1222 说明其在 Bordertown；保留「边境军械铺」这一简明店名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3057 原文为“Bordertown Arms”，1222 说明该店在 Bordertown、可领取坩埚。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“边境军械铺”对应 Bordertown Arms；Arms 取军械义，店名从简。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=地名适用于店铺招牌/地点名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e11 的 Bordertown=边境镇不冲突：复合店名按 UI 简短原则保留“边境军械铺”。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:175",
+    "terms:177",
+    "terms:495",
+    "terms:181",
+    "terms:459",
+    "terms:182",
+    "terms:238",
+    "terms:353",
+    "non_translate:66",
+    "terms:183",
+    "terms:185",
+    "terms:227"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

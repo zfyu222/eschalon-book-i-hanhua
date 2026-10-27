@@ -1,0 +1,417 @@
+{
+  "review_complete": true,
+  "review_summary": "已审 12 条术语。确认 f1 为 Goblin/Goblins 单复数同译，f2/f3 为带 * 控制符的技能变体同译；修正 e2 的 term_kind、e3 的分类与 term_kind、e4/e7 的译名，并清理 e9 的旧译备注。无隔离、无新增、无 allow_no_match。",
+  "acknowledged_findings": [
+    "F0262",
+    "F0264",
+    "F0265"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_kind": "game_term",
+        "term_reason": "5世纪末组织起来的哥布林氏族/战争群体，非单一专名。"
+      },
+      "reason": "441将 Goblin Clans 描述为哥布林组织成氏族的复数战争群体，不是单一专名；改为 game_term 并补充使用范围。",
+      "evidence_rows": [
+        441
+      ],
+      "table": "terms",
+      "index": 37
+    },
+    {
+      "patch": {
+        "category_path": "身份",
+        "term_kind": "game_term",
+        "term_reason": "Gramuk信中向之祈求的哥布林上级/领主群体，属身份称谓，非组织专名。"
+      },
+      "reason": "445中 Goblin Lords 是 Gramuk 需取悦的哥布林上级群体，属身份称谓；原分类组织及 proper_name 不确。",
+      "evidence_rows": [
+        445
+      ],
+      "table": "terms",
+      "index": 38
+    },
+    {
+      "patch": {
+        "recommended_translation": "军阀"
+      },
+      "reason": "441明确 Warlord 为哥布林单位指挥官；按 Warlord 头衔及同词族 Goblin Warlord 的现有「军阀」统一。",
+      "evidence_rows": [
+        441
+      ],
+      "table": "terms",
+      "index": 43
+    },
+    {
+      "patch": {
+        "recommended_translation": "哥布林弓手"
+      },
+      "reason": "441的 Goblin Archers 为哥布林弓兵单位；中文不区分复数，与单数 Goblin Archer 的「哥布林弓手」统一。",
+      "evidence_rows": [
+        441
+      ],
+      "table": "terms",
+      "index": 46
+    },
+    {
+      "patch": {
+        "term_reason": "游戏中的种族/敌对势力；单数 Goblin 指个体，复数 Goblins 指群体，亦用于钥匙、要塞及复合名中的种族修饰语。"
+      },
+      "reason": "441/1229/4617均以 Goblin(s) 指同一哥布林种族/势力；term_reason 不应保留与当前统一译名冲突的 v1.5「地精」备注，改为实际使用范围。",
+      "evidence_rows": [
+        441,
+        1229,
+        4617
+      ],
+      "table": "terms",
+      "index": 49
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:35",
+      "evidence_rows": [
+        438
+      ],
+      "source_excerpt": "a council of twelve advisors, known as The Grand Scholars",
+      "reason": "核对438原文，Grand Scholars为议长身边十二名顾问组成的议会，译名与组织分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "438原文明确 'council of twelve advisors, known as The Grand Scholars'，指特定议会。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「大学者议会」准确表达 The Grand Scholars 的议会属性，未改变专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=组织，term_kind=proper_name，enforcement=required，符合特定议会专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与相关 Grand Hall/Grand Magicks 等 Grand 成分不构成同义冲突，专名独立。"
+        }
+      }
+    },
+    {
+      "ref": "terms:37",
+      "evidence_rows": [
+        441
+      ],
+      "source_excerpt": "Goblins began to organize themselves into clans.",
+      "reason": "441原文说明哥布林在5世纪末结成氏族/战争群体；修正 term_kind 为 game_term，避免把普通复数群体当专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "441原文 'Goblins began to organize themselves into clans'，Goblin Clans 指组织成氏族的战争群体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「哥布林氏族」对应 clans，保留哥布林种族前缀，语义准确。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "441中 Goblin Clans 为复数群体/势力而非单一专名，term_kind 改为 game_term；category_path=组织保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同词族「哥布林」前缀一致；不涉及其他专名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:38",
+      "evidence_rows": [
+        445
+      ],
+      "source_excerpt": "You do well and Goblin Lords be pleased.",
+      "reason": "445中 Goblin Lords 是 Gramuk 信中祈求的哥布林上级群体，属身份称谓；修正分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "445原文 'Goblin Lords be pleased'，指 Gramuk 需取悦的哥布林上级。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「哥布林领主」可表达 Lords 的上级/领主身份，保留种族前缀。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "该词是身份称谓而非组织，category_path 改为身份；term_kind 改为 game_term，非单一专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Warlord「军阀」层级不同，未混用；哥布林前缀统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:43",
+      "evidence_rows": [
+        441
+      ],
+      "source_excerpt": "The Goblin unit is loosely assembled and generally led by a Warlord.",
+      "reason": "441明确 Warlord 为哥布林单位指挥官；与同词族 Goblin Warlord 的「军阀」统一，修正译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "441原文 'generally led by a Warlord'，指哥布林单位的松散指挥官。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "「督军」偏行政军职；按 Warlord 头衔及同词族现有「军阀」统一为「军阀」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=身份，term_kind=game_term，符合游戏内头衔。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Goblin Warlord「哥布林军阀」核心译名统一，避免督军/军阀并立。"
+        }
+      }
+    },
+    {
+      "ref": "terms:44",
+      "evidence_rows": [
+        432,
+        4051,
+        4066
+      ],
+      "source_excerpt": "A powerful Goblin Shaman named Gramuk is using a technique called \"Temporal Linking\"",
+      "reason": "432及4051/4066均指 Gramuk 的哥布林萨满身份；译名和身份分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "432称 Gramuk 为 Goblin Shaman；4051/4066亦以 Goblin shaman 指同一角色。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「哥布林萨满」对应 Goblin Shaman，保留种族与职业。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=身份，term_kind=game_term，符合职业/角色。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Goblin 前缀「哥布林」一致，未与 Gramuk 人名混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:45",
+      "evidence_rows": [
+        441,
+        2845
+      ],
+      "source_excerpt": "The basic warrior, called the Goblin Hacker, uses a short sword or machete in a savage but effective attack.",
+      "reason": "441定义 Goblin Hacker 为使用短剑/砍刀的基础战士，2845为敌人标签；译名与身份分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "441原文 'The basic warrior, called the Goblin Hacker' 给出定义；2845敌人标签同形。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「哥布林劈砍兵」表达 Hacker 的劈砍战斗方式及兵种属性。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=身份，term_kind=game_term，指哥布林战士单位/兵种。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Goblin 前缀「哥布林」一致；2845标签同译，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:46",
+      "evidence_rows": [
+        441
+      ],
+      "source_excerpt": "Goblin Archers have been witnessed to have impressive accuracy with short bows.",
+      "reason": "441说明 Goblin Archers 为使用短弓的哥布林兵种；与单数 Goblin Archer 的「哥布林弓手」统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "441原文 'Goblin Archers have been witnessed...'，指哥布林弓兵单位。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "「哥布林弓箭手」语义正确，但同词族单数现有「哥布林弓手」；统一为「哥布林弓手」更简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=身份，term_kind=game_term，符合兵种/角色。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "复数 Archers 与单数 Archer 在中文不区分复数，核心译名统一为「哥布林弓手」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:47",
+      "evidence_rows": [
+        441,
+        2885
+      ],
+      "source_excerpt": "the Goblin Bombthug, a unit strapped with a keg of Bangdust",
+      "reason": "441定义 Goblin Bombthug 为身绑 Bangdust 桶的哥布林单位，2885为敌人标签；译名与分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "441原文 'the Goblin Bombthug, a unit strapped with a keg of Bangdust' 给出定义；2885标签同形。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「哥布林炸弹暴徒」表达 Bombthug 的炸弹与暴徒含义，保留种族前缀。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=身份，term_kind=game_term，指哥布林兵种/单位。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Goblin 前缀「哥布林」一致；2885标签同译，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:49",
+      "evidence_rows": [
+        441,
+        1229,
+        4617
+      ],
+      "source_excerpt": "Recover all four Goblin Keys and use them to enter the Goblin Citadel.",
+      "reason": "441/1229/4617均以 Goblin(s) 指同一哥布林种族/势力；单复数同译「哥布林」，并清除 term_reason 中 v1.5「地精」旧译备注。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "441以复数 Goblins 指种族/势力，1229以 Goblin 作钥匙与要塞修饰语，4617以 Goblins 指入侵势力。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「哥布林」覆盖单数个体、复数群体及复合名修饰语；与相关条目统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=种族，term_kind=game_term，符合种族/敌对势力义。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "单复数 Goblin/Goblins 同译；term_reason 移除与当前统一译名冲突的 v1.5「地精」备注。"
+        }
+      }
+    },
+    {
+      "ref": "terms:51",
+      "evidence_rows": [
+        408,
+        446,
+        3383
+      ],
+      "source_excerpt": "First, a note concerning Giants: they are not the feeble-minded creatures of popular conception.",
+      "reason": "408详述巨人在Thaermore被奴役及起义，446/3383亦以 Giants 指该种族；译名与分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "408原文 'a note concerning Giants' 及后文叙述其被奴役/起义；446、3383同指巨人种族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「巨人」为 Giants 的通用且准确译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=种族，term_kind=game_term，符合种族义。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与相关 Giant's Village/Timberland Giant 的「巨人」核心一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:55",
+      "evidence_rows": [
+        410,
+        411,
+        716,
+        1613
+      ],
+      "source_excerpt": "the more skilled you are in Alchemy, the more potent your mixtures become.",
+      "reason": "410/411以 Alchemy skill 说明炼金术等级，716/1613亦指技能；译名与技能分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "410原文 'the more skilled you are in Alchemy'，411要求 Alchemy skill，1613称 Alchemy Skill rating。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「炼金术」为 Alchemy 的标准译名，符合调配药水/灵药技能。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=技能，term_kind=game_term，符合游戏技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与相关 *Alchemy 仅差格式星号，同译「炼金术」；审计 f2 为格式变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:56",
+      "evidence_rows": [
+        425,
+        494,
+        1119
+      ],
+      "source_excerpt": "This book talks in depth about the skill of Cartography.",
+      "reason": "425称 Cartography 为技能，494/1119亦指可学习/可增强的技能；译名与分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "425原文 'the skill of Cartography'，494提出学习 Cartography，1119称 Cartography Skill。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「制图学」准确表达 Cartography 的绘图/地图技能义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=技能，term_kind=game_term，符合游戏技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与相关 *Cartography 仅差格式星号，同译「制图学」；审计 f3 为格式变体。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:35",
+    "terms:37",
+    "terms:38",
+    "terms:43",
+    "terms:44",
+    "terms:45",
+    "terms:46",
+    "terms:47",
+    "terms:49",
+    "terms:51",
+    "terms:55",
+    "terms:56"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

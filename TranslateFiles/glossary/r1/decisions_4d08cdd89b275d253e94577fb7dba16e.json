@@ -1,0 +1,528 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对本批 12 条 non_translate 资源路径/内部标识：原文与分类均成立，文件路径及内部代码均保留原样；为所有条目补充明确 applicability，其中 Spell_Lore 限定为完整记录，IC_AMULET 与 SKILL_ARCANE_ELEMENTAL 以大小写敏感文本匹配覆盖独立及 CSV 内嵌用法，incbin::incbin/ 按资源嵌入前缀匹配。",
+  "acknowledged_findings": [
+    "F0218",
+    "F0230",
+    "F0236"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sound/ched_skill.wav 为音效资源路径，证据中作为完整记录出现；路径大小写敏感，应原样保留。"
+        }
+      },
+      "reason": "补充资源路径的明确保护范围，避免将路径词误作正文翻译。",
+      "evidence_rows": [
+        2322
+      ],
+      "table": "non_translate",
+      "index": 316
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sound/thunder2.wav 为音效资源路径，证据中作为完整记录出现；路径大小写敏感，应原样保留。"
+        }
+      },
+      "reason": "补充资源路径的明确保护范围，避免将路径词误作正文翻译。",
+      "evidence_rows": [
+        2324
+      ],
+      "table": "non_translate",
+      "index": 317
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sound/sfx_die_roll.wav 为音效资源路径，证据中作为完整记录出现；路径大小写敏感，应原样保留。"
+        }
+      },
+      "reason": "补充资源路径的明确保护范围，避免将路径词误作正文翻译。",
+      "evidence_rows": [
+        2325
+      ],
+      "table": "non_translate",
+      "index": 318
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sound/sfx_scribble1.wav 为音效资源路径，证据中作为完整记录出现；路径大小写敏感，应原样保留。"
+        }
+      },
+      "reason": "补充资源路径的明确保护范围，避免将路径词误作正文翻译。",
+      "evidence_rows": [
+        2326
+      ],
+      "table": "non_translate",
+      "index": 319
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sound/sfx_scribble2.wav 为音效资源路径，证据中作为完整记录出现；路径大小写敏感，应原样保留。"
+        }
+      },
+      "reason": "补充资源路径的明确保护范围，避免将路径词误作正文翻译。",
+      "evidence_rows": [
+        2327
+      ],
+      "table": "non_translate",
+      "index": 320
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "data/magick 为预设角色数据路径，证据中作为完整记录出现；路径大小写敏感，应原样保留。"
+        }
+      },
+      "reason": "补充数据路径的明确保护范围，避免将路径词误作正文翻译。",
+      "evidence_rows": [
+        2348
+      ],
+      "table": "non_translate",
+      "index": 322
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "Spell_Lore 是内部法术效果标识，证据中仅见其作为完整记录出现，未证明可嵌入普通文本；按完整记录大小写敏感保留。"
+        }
+      },
+      "reason": "处理 f1：将内部法术效果标识限定为完整记录匹配，避免把普通 Spell/Lore 文本纳入保护。",
+      "evidence_rows": [
+        2408
+      ],
+      "table": "non_translate",
+      "index": 327
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "incbin::incbin/ 是资源嵌入路径前缀，可能作为更长资源路径的开头出现；按大小写敏感匹配该确切字串以保留原样。"
+        }
+      },
+      "reason": "补充资源嵌入前缀的明确保护范围，支持匹配更长资源路径中的原样片段。",
+      "evidence_rows": [
+        2444
+      ],
+      "table": "non_translate",
+      "index": 329
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sound/dramatic_cue.wav 为音频文件路径，证据中作为完整记录出现；路径大小写敏感，应原样保留。"
+        }
+      },
+      "reason": "补充音频资源路径的明确保护范围，避免误译。",
+      "evidence_rows": [
+        2450
+      ],
+      "table": "non_translate",
+      "index": 331
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sound/Woosh.wav 为音频文件路径，证据中作为完整记录出现；路径大小写敏感，应原样保留。"
+        }
+      },
+      "reason": "补充音频资源路径的明确保护范围，避免误译。",
+      "evidence_rows": [
+        2451
+      ],
+      "table": "non_translate",
+      "index": 332
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "IC_AMULET 在 ordinal 1330 作为独立内部标识，在 ordinal 2760 的 CSV 首列内嵌出现；应大小写敏感保留原样，故使用文本级精确匹配。"
+        }
+      },
+      "reason": "处理 f2：为内部物品标识 IC_AMULET 补充覆盖独立与 CSV 内嵌用法的明确适用范围。",
+      "evidence_rows": [
+        1330,
+        2760
+      ],
+      "table": "non_translate",
+      "index": 344
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "SKILL_ARCANE_ELEMENTAL 在 ordinal 1355 独立出现，在 ordinal 2698 的物品数据字段内嵌出现；应大小写敏感保留原样，故使用文本级精确匹配。"
+        }
+      },
+      "reason": "处理 f3：为内部技能标识 SKILL_ARCANE_ELEMENTAL 补充覆盖独立与 CSV 内嵌用法的明确适用范围。",
+      "evidence_rows": [
+        1355,
+        2698
+      ],
+      "table": "non_translate",
+      "index": 350
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:316",
+      "evidence_rows": [
+        2322
+      ],
+      "source_excerpt": "sound/ched_skill.wav",
+      "reason": "音效资源路径，保留原文并补明确保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2322 原文为 sound/ched_skill.wav，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "资源路径不翻译，保留 sound/ched_skill.wav。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于非翻译资源路径，列入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record、大小写敏感保护，与路径类条目处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:317",
+      "evidence_rows": [
+        2324
+      ],
+      "source_excerpt": "sound/thunder2.wav",
+      "reason": "音效资源路径，保留原文并补明确保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2324 原文为 sound/thunder2.wav，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "资源路径不翻译，保留 sound/thunder2.wav。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于非翻译资源路径，列入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record、大小写敏感保护，与路径类条目处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:318",
+      "evidence_rows": [
+        2325
+      ],
+      "source_excerpt": "sound/sfx_die_roll.wav",
+      "reason": "音效资源路径，保留原文并补明确保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2325 原文为 sound/sfx_die_roll.wav，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "资源路径不翻译，保留 sound/sfx_die_roll.wav。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于非翻译资源路径，列入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record、大小写敏感保护，与路径类条目处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:319",
+      "evidence_rows": [
+        2326
+      ],
+      "source_excerpt": "sound/sfx_scribble1.wav",
+      "reason": "音效资源路径，保留原文并补明确保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2326 原文为 sound/sfx_scribble1.wav，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "资源路径不翻译，保留 sound/sfx_scribble1.wav。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于非翻译资源路径，列入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record、大小写敏感保护，与路径类条目处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:320",
+      "evidence_rows": [
+        2327
+      ],
+      "source_excerpt": "sound/sfx_scribble2.wav",
+      "reason": "音效资源路径，保留原文并补明确保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2327 原文为 sound/sfx_scribble2.wav，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "资源路径不翻译，保留 sound/sfx_scribble2.wav。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于非翻译资源路径，列入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record、大小写敏感保护，与路径类条目处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:322",
+      "evidence_rows": [
+        2348
+      ],
+      "source_excerpt": "data/magick",
+      "reason": "预设角色数据路径，保留原文并补明确保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2348 原文为 data/magick，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "数据路径不翻译，保留 data/magick。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于预设角色数据路径，列入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record、大小写敏感保护，与路径类条目处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:327",
+      "evidence_rows": [
+        2408
+      ],
+      "source_excerpt": "Spell_Lore",
+      "reason": "内部法术效果标识，保留原文并限定保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2408 原文为 Spell_Lore，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "内部法术效果标识保留原文，不译作正文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于内部效果标识，列入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已按 f1 将范围限定为 whole_record 且大小写敏感，避免把普通 Spell/Lore 文本纳入保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:329",
+      "evidence_rows": [
+        2444
+      ],
+      "source_excerpt": "incbin::incbin/",
+      "reason": "资源嵌入路径前缀，保留原文并补明确保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2444 原文为 incbin::incbin/，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "资源嵌入路径前缀保留原文，不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于资源嵌入路径，列入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已按 text、大小写敏感覆盖该前缀，便于匹配更长资源路径中的原样片段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:331",
+      "evidence_rows": [
+        2450
+      ],
+      "source_excerpt": "sound/dramatic_cue.wav",
+      "reason": "音频文件路径，保留原文并补明确保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2450 原文为 sound/dramatic_cue.wav，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "音频文件路径不翻译，保留 sound/dramatic_cue.wav。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于非翻译音频资源路径，列入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record、大小写敏感保护，与路径类条目处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:332",
+      "evidence_rows": [
+        2451
+      ],
+      "source_excerpt": "sound/Woosh.wav",
+      "reason": "音频文件路径，保留原文并补明确保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2451 原文为 sound/Woosh.wav，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "音频文件路径不翻译，保留 sound/Woosh.wav。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于非翻译音频资源路径，列入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record、大小写敏感保护，与路径类条目处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:344",
+      "evidence_rows": [
+        1330,
+        2760
+      ],
+      "source_excerpt": "\"IC_AMULET\"",
+      "reason": "内部物品标识，独立与 CSV 内嵌用法均保留原文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1330 为独立 IC_AMULET，ordinal 2760 中该标识内嵌于 CSV 首列；均与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为内部物品标识保留原文，不译作正文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于数据/运行标识，列入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补充 text、大小写敏感适用域，覆盖独立及 CSV 内嵌用法，处理 f2。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:350",
+      "evidence_rows": [
+        1355,
+        2698
+      ],
+      "source_excerpt": "\"SKILL_ARCANE_ELEMENTAL\"",
+      "reason": "内部技能标识，独立与 CSV 内嵌用法均保留原文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1355 为独立 SKILL_ARCANE_ELEMENTAL，ordinal 2698 中该标识内嵌于物品数据字段；均与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为内部技能标识保留原文，不译作正文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于数据/运行标识，列入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补充 text、大小写敏感适用域，覆盖独立及 CSV 内嵌用法，处理 f3。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:316",
+    "non_translate:317",
+    "non_translate:318",
+    "non_translate:319",
+    "non_translate:320",
+    "non_translate:322",
+    "non_translate:327",
+    "non_translate:329",
+    "non_translate:331",
+    "non_translate:332",
+    "non_translate:344",
+    "non_translate:350"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

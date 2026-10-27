@@ -1,0 +1,411 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对e1-e12。保留多数已确认的专名译名；按已发布v1.5将e5 Rai改为「莱」、e7 Lord Archable改为「阿查布尔勋爵」、e12 Baron's Thicket改为「男爵灌木林」，并修正e1/e6/e7/e12术语理由。审计f1通过区分Lord Archibald与Lord Archable解决。",
+  "acknowledged_findings": [
+    "F0256"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "以绰号形式出现的角色名；原文对话以“Vidar the Knife”称呼，'the Knife'为绰号。"
+      },
+      "reason": "原term_reason含未由证据支持的勒索情节，改为原文可证描述。",
+      "evidence_rows": [
+        2273,
+        2924
+      ],
+      "table": "characters",
+      "index": 63
+    },
+    {
+      "patch": {
+        "recommended_translation": "莱",
+        "term_reason": "创世神话中名为光明的强大者，原文用his指代；按已发布v1.5译名统一为「莱」。"
+      },
+      "reason": "Rai为光明神专名，已发布v1.5译名为「莱」，统一译名。",
+      "evidence_rows": [
+        3040,
+        3540
+      ],
+      "table": "characters",
+      "index": 67
+    },
+    {
+      "patch": {
+        "term_reason": "原文为带Lord头衔的独立角色名。"
+      },
+      "reason": "证据仅显示Lord Archibald，未显示墓碑，去除未证实信息。",
+      "evidence_rows": [
+        3363
+      ],
+      "table": "characters",
+      "index": 68
+    },
+    {
+      "patch": {
+        "recommended_translation": "阿查布尔勋爵",
+        "term_reason": "3571中作为独立领主称谓出现；按已发布v1.5译名统一为「阿查布尔勋爵」，与Lord Archibald不合并为同一专名。"
+      },
+      "reason": "原文拼写为Archable而非Archibald，证据不足以断言同一人；按已发布v1.5译名区分，解决共享译名冲突。",
+      "evidence_rows": [
+        3571
+      ],
+      "table": "characters",
+      "index": 69
+    },
+    {
+      "patch": {
+        "recommended_translation": "男爵灌木林",
+        "term_reason": "Lord Thorndike猎营所在危险林地，Carniraptors逃逸后盘踞；按已发布v1.5译名统一为「男爵灌木林」。"
+      },
+      "reason": "Thicket意为灌木丛/密林，已发布v1.5译名为「男爵灌木林」，统一地名译名。",
+      "evidence_rows": [
+        563,
+        3106,
+        3757,
+        3758
+      ],
+      "table": "terms",
+      "index": 186
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:63",
+      "evidence_rows": [
+        2273,
+        2924
+      ],
+      "source_excerpt": "Vidar the Knife: Hey boys, we're drinkin' tonight! Let's go!",
+      "reason": "术语理由中勒索情节不见于证据，已改为原文可证的绰号角色名；译名保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2273以Vidar the Knife作为说话者，2924为同名独立条目，源文一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Vidar the Knife为专名加绰号，译作「刀手维达尔」保留the Knife的绰号义，候选「刀客维达尔」亦可但无需改动。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters表，term_kind=proper_name，source为带绰号的独立人名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "目前无其他Vidar the Knife译名冲突，保留「刀手维达尔」。"
+        }
+      }
+    },
+    {
+      "ref": "characters:64",
+      "evidence_rows": [
+        2909
+      ],
+      "source_excerpt": "Oswell",
+      "reason": "独立角色名，音译可用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2909原文仅为独立名Oswell，作为角色名条目出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Oswell按音译作「奥斯韦尔」，未发现其他候选或冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters表，term_kind=proper_name，符合独立人名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无同源变体或跨条冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:65",
+      "evidence_rows": [
+        2918
+      ],
+      "source_excerpt": "Larrus",
+      "reason": "独立角色名，音译可用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2918原文仅为独立名Larrus，作为角色名条目出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Larrus按音译作「拉鲁斯」，未发现其他候选或冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters表，term_kind=proper_name，符合独立人名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无同源变体或跨条冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:66",
+      "evidence_rows": [
+        3040,
+        3541
+      ],
+      "source_excerpt": "Onos, in all his wickedness, retaliated with great vengeance!",
+      "reason": "创世神话黑暗神名，译名确认。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3040说明Onos为名为黑暗的强大者，3541用he指代Onos，确认角色/神名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Onos音译「奥诺斯」，与候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters表，term_kind=proper_name，指创世神话中的黑暗神名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无其他Onos译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:67",
+      "evidence_rows": [
+        3040,
+        3540
+      ],
+      "source_excerpt": "the Light, named Rai",
+      "reason": "Rai为光明神专名；按已发布v1.5将译名由「拉伊」修正为「莱」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3040称Rai为名为光明的强大者，3540用his指代Rai。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文专名Rai按已发布v1.5译名统一为「莱」，不再用候选「拉伊」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters表，term_kind=proper_name，指光明神名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已发布v1.5作「莱」；与Onos/奥诺斯同属创世神话双神，统一采用「莱」。"
+        }
+      }
+    },
+    {
+      "ref": "characters:68",
+      "evidence_rows": [
+        3363
+      ],
+      "source_excerpt": "Lord Archibald",
+      "reason": "term_reason中“墓碑”未见证据，已改为仅称带Lord头衔的独立角色名；译名保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3363原文为Lord Archibald，带Lord头衔的独立角色名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Archibald音译「阿奇博尔德」，Lord作「领主」，与现有领主名条目体例一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters表，term_kind=proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e7的Lord Archable拼写不同；本条目保留「阿奇博尔德领主」，e7另按阿查布尔处理，不再共享译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:69",
+      "evidence_rows": [
+        3571
+      ],
+      "source_excerpt": "Years ago I was a courier for Lord Archable",
+      "reason": "证据不足以证明与Lord Archibald同一人，按已发布v1.5区分译名，解决f1共享译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3571原文为Lord Archable，出现在“courier for Lord Archable”句中。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "Archable与Archibald拼写不同，按已发布v1.5译名作「阿查布尔勋爵」，不再套用「阿奇博尔德领主」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters表，term_kind=proper_name，带Lord头衔的角色名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "审计f1指出与e6共享译名；本条目按不同源名及已发布v1.5译名区分，采用「阿查布尔勋爵」。"
+        }
+      }
+    },
+    {
+      "ref": "characters:70",
+      "evidence_rows": [
+        3364
+      ],
+      "source_excerpt": "Lord Papaldum",
+      "reason": "领主名，译名可用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3364原文为Lord Papaldum，带Lord头衔的独立角色名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Papaldum音译「帕帕尔杜姆」，Lord作「领主」，与同批领主名体例一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters表，term_kind=proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无同源变体或冲突译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:71",
+      "evidence_rows": [
+        3365
+      ],
+      "source_excerpt": "Lord Bradford",
+      "reason": "领主名，译名可用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3365原文为Lord Bradford，带Lord头衔的独立角色名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Bradford音译「布拉德福德」，Lord作「领主」，与同批领主名体例一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters表，term_kind=proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无同源变体或冲突译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:72",
+      "evidence_rows": [
+        3366
+      ],
+      "source_excerpt": "Baron Edwards",
+      "reason": "男爵名，译名确认。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3366原文为Baron Edwards，带Baron头衔的独立角色名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Edwards音译「爱德华兹」，Baron作「男爵」，符合头衔体例。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters表，term_kind=proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与Edward/爱德华为不同源名，未共享译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:102",
+      "evidence_rows": [
+        4549
+      ],
+      "source_excerpt": "Edward - Loving father, helpful friend; neither helped him in the end.",
+      "reason": "墓志式人物名，译名确认。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4549原文为Edward，并附“Loving father, helpful friend”墓志式描述。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Edward音译「爱德华」，与e10 Edwards「爱德华兹」区分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters表，term_kind=proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与Baron Edwards/爱德华兹为不同源名，未混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:186",
+      "evidence_rows": [
+        563,
+        3106,
+        3757,
+        3758
+      ],
+      "source_excerpt": "a very dangerous area called Baron's Thicket",
+      "reason": "地名专名，按已发布v1.5修正译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "563称Baron's Thicket为危险区域，3106为独立地名，3757/3758重复该地点及危险语境。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "Thicket意为灌木丛/密林；按已发布v1.5译名统一为「男爵灌木林」，替代「男爵密林」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms表，category_path=地名合法，term_kind=proper_name。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已发布v1.5作「男爵灌木林」；同批563/3106/3757/3758均指同一地点，统一采用该译名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:63",
+    "characters:64",
+    "characters:65",
+    "characters:66",
+    "characters:67",
+    "characters:68",
+    "characters:69",
+    "characters:70",
+    "characters:71",
+    "characters:72",
+    "characters:102",
+    "terms:186"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

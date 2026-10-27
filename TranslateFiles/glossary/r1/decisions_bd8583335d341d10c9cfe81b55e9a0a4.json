@@ -1,0 +1,350 @@
+{
+  "review_complete": true,
+  "review_summary": "复核 9 条 non_translate：e8、e9 保留并补齐限定适用范围；e1-e5 为无法归类的残缺字符片段，e6/e7 为可译的咳嗽拟声提示，共 7 条隔离。未新增条目。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "refer to the ",
+          "suffix": " file",
+          "reason": "原文为图像提示句，help.htm 仅作为安装目录中的文件名出现；只在该紧邻上下文保留原样。"
+        }
+      },
+      "reason": "补齐字面上下文范围，限定仅文件名保持原样，避免把 help.htm 作为全局禁翻。",
+      "evidence_rows": [
+        4654
+      ],
+      "table": "non_translate",
+      "index": 384
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 4736 整条仅为数字字形串，可能是数字贴图或样张；只整条保留，不扩展到其他数字。"
+        }
+      },
+      "reason": "补齐 whole_record 范围，避免将普通数字全局禁翻。",
+      "evidence_rows": [
+        4736
+      ],
+      "table": "non_translate",
+      "index": 385
+    }
+  ],
+  "quarantine": [
+    {
+      "reason": "源码仅为残缺两字符片段，无法证明是占位控制符或标识符；不应作为 non_translate 保留，隔离待核。",
+      "evidence_rows": [
+        3345
+      ],
+      "table": "non_translate",
+      "index": 371
+    },
+    {
+      "reason": "源码仅为残缺两字符片段，无法证明是占位控制符或标识符；不应作为 non_translate 保留，隔离待核。",
+      "evidence_rows": [
+        3375
+      ],
+      "table": "non_translate",
+      "index": 376
+    },
+    {
+      "reason": "源码仅为残缺两字符片段，无法证明是占位控制符或标识符；不应作为 non_translate 保留，隔离待核。",
+      "evidence_rows": [
+        3452
+      ],
+      "table": "non_translate",
+      "index": 378
+    },
+    {
+      "reason": "源码仅为残缺两字符片段，无法证明是占位控制符或标识符；不应作为 non_translate 保留，隔离待核。",
+      "evidence_rows": [
+        3466
+      ],
+      "table": "non_translate",
+      "index": 379
+    },
+    {
+      "reason": "源码仅为残缺两字符片段，无法证明是占位控制符或标识符；不应作为 non_translate 保留，隔离待核。",
+      "evidence_rows": [
+        3473
+      ],
+      "table": "non_translate",
+      "index": 380
+    },
+    {
+      "reason": "“<cough>”是对话中的咳嗽拟声或舞台提示，目标文应随正文处理为“（咳嗽）”，并非已证实的运行标记，不应列入禁翻表。",
+      "evidence_rows": [
+        3701
+      ],
+      "table": "non_translate",
+      "index": 381
+    },
+    {
+      "reason": "“[cough]”是对话中的咳嗽拟声或舞台提示，目标文应随正文处理为“（咳嗽）”，并非运行标记或专名，不应列入禁翻表。",
+      "evidence_rows": [
+        3704,
+        3709
+      ],
+      "table": "non_translate",
+      "index": 382
+    }
+  ],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:371",
+      "evidence_rows": [
+        3345
+      ],
+      "source_excerpt": "P [",
+      "reason": "残缺片段，无运行标记依据，建议隔离。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3345 原文为“P [”，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译保留项，无目标译文可核；处理结论见 category 与 consistency。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "仅见裸字符与括号残片，无运行标记、文件名或标识符依据，不能归入 non_translate；已建议隔离。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "条目无可用 applicability，短残片若全局禁翻会误伤正文，处理为 quarantine。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:376",
+      "evidence_rows": [
+        3375
+      ],
+      "source_excerpt": "P `",
+      "reason": "残缺片段，无运行标记依据，建议隔离。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3375 原文为“P `”，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译保留项，无目标译文可核；处理结论见 category 与 consistency。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "仅见裸字符与反引号残片，无运行标记或标识符依据，不能归入 non_translate；已建议隔离。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "条目无可用 applicability，短残片若全局禁翻会误伤正文，处理为 quarantine。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:378",
+      "evidence_rows": [
+        3452
+      ],
+      "source_excerpt": ". U",
+      "reason": "残缺片段，无运行标记依据，建议隔离。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3452 原文为“. U”，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译保留项，无目标译文可核；处理结论见 category 与 consistency。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "仅见标点与大写字母残片，无运行标记或标识符依据，不能归入 non_translate；已建议隔离。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "条目无可用 applicability，短残片若全局禁翻会误伤正文，处理为 quarantine。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:379",
+      "evidence_rows": [
+        3466
+      ],
+      "source_excerpt": "A )",
+      "reason": "残缺片段，无运行标记依据，建议隔离。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3466 原文为“A )”，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译保留项，无目标译文可核；处理结论见 category 与 consistency。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "仅见字母与右括号残片，无运行标记或标识符依据，不能归入 non_translate；已建议隔离。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "条目无可用 applicability，短残片若全局禁翻会误伤正文，处理为 quarantine。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:380",
+      "evidence_rows": [
+        3473
+      ],
+      "source_excerpt": "&V",
+      "reason": "残缺片段，无运行标记依据，建议隔离。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3473 原文为“&V”，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译保留项，无目标译文可核；处理结论见 category 与 consistency。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "“&V”不是完整实体或明确控制符，无运行标记依据，不能归入 non_translate；已建议隔离。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "条目无可用 applicability，短残片若全局禁翻会误伤正文，处理为 quarantine。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:381",
+      "evidence_rows": [
+        3701
+      ],
+      "source_excerpt": "<cough>",
+      "reason": "可译咳嗽提示被误列为禁翻，建议隔离并按正文翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3701 完整对话中逐字含“<cough>”。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文为对话中的咳嗽拟声或舞台提示，目标文应随正文处理为“（咳嗽）”，不应禁翻。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "“<cough>”是拟声提示，并非已证实的运行标记或专名，列入 non_translate 依据不足；已 quarantine。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与同类方括号咳嗽提示均属可译拟声，处理一致：隔离，不走禁翻表。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:382",
+      "evidence_rows": [
+        3704,
+        3709
+      ],
+      "source_excerpt": "[cough]",
+      "reason": "可译咳嗽提示被误列为禁翻，建议隔离并按正文翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3704 与 3709 原文均逐字含“[cough]”。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文为对话中的咳嗽提示，目标文应译为“（咳嗽）”并随正文排版，不应作为 non_translate。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "方括号拟声不是运行标记或专名，列入 non_translate 依据不足；已 quarantine。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与尖括号咳嗽提示同属可译舞台提示，统一按正文翻译处理，不保留禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:384",
+      "evidence_rows": [
+        4654
+      ],
+      "source_excerpt": "help.htm",
+      "reason": "文件名应保留，但需限定为句中的字面上下文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 4654 原文逐字含“help.htm”。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "文件名不在翻译范围；无需目标译文，重点核对保留范围。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "它是安装目录中的文件名，不是普通正文词；non_translate 分类成立。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability，需以 literal_context 限定前缀“refer to the ”与后缀“ file”；已在 edits 补齐。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:385",
+      "evidence_rows": [
+        4736
+      ],
+      "source_excerpt": "0123456789",
+      "reason": "纯数字字形串应整条保留，避免全局禁翻数字。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 4736 原文整条为“0123456789”。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "纯数字字形串无自然语言译文可核；重点核对保留范围。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该图像记录为纯数字字形串，可能用于数字贴图或样张，作为 non_translate 保留成立。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability，必须限定 whole_record 而非全局禁翻数字；已在 edits 补齐。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:371",
+    "non_translate:376",
+    "non_translate:378",
+    "non_translate:379",
+    "non_translate:380",
+    "non_translate:381",
+    "non_translate:382",
+    "non_translate:384",
+    "non_translate:385"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

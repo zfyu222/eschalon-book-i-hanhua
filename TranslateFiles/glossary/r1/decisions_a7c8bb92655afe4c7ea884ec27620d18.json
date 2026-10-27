@@ -1,0 +1,397 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对12条物品/书籍术语：保留11条，统一4条含Thaermore的译名为“泰尔莫”；隔离1条普通日志条目“Journal Entry”。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "泰尔莫之宝"
+      },
+      "reason": "Thaermore按既有地名译名统一为“泰尔莫”，保留其作为Crux of Ages别名的物品名。",
+      "evidence_rows": [
+        447
+      ],
+      "table": "terms",
+      "index": 105
+    },
+    {
+      "patch": {
+        "recommended_translation": "《泰尔莫的哥布林》"
+      },
+      "reason": "Thaermore统一为“泰尔莫”，保留书名号。",
+      "evidence_rows": [
+        379,
+        441
+      ],
+      "table": "terms",
+      "index": 117
+    },
+    {
+      "patch": {
+        "recommended_translation": "《泰尔莫之宝》"
+      },
+      "reason": "Thaermore统一为“泰尔莫”；本条为书籍标题，保留书名号以区别同名别名。",
+      "evidence_rows": [
+        447
+      ],
+      "table": "terms",
+      "index": 118
+    },
+    {
+      "patch": {
+        "recommended_translation": "《泰尔莫史》",
+        "term_reason": "第438条内容为泰尔莫历史年表，对应此书。"
+      },
+      "reason": "按既有地名译名统一为“泰尔莫”，并同步修正term_reason中的地名。",
+      "evidence_rows": [
+        438
+      ],
+      "table": "terms",
+      "index": 123
+    }
+  ],
+  "quarantine": [
+    {
+      "reason": "“Journal Entry”原文指普通日志残页，非专有名称或特定游戏术语；不应冻结为书名。",
+      "evidence_rows": [
+        415
+      ],
+      "table": "terms",
+      "index": 130
+    }
+  ],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:105",
+      "evidence_rows": [
+        447
+      ],
+      "source_excerpt": "The blessed Jewel of Thaermore, to be forever known as the Crux of Ages",
+      "reason": "e1为Crux of Ages的别名，保留专名；将Thaermore统一为“泰尔莫”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第447条明确将Jewel of Thaermore称为Crux of Ages的别名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "地名Thaermore按既有译名统一为“泰尔莫”，译为“泰尔莫之宝”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品/圣物别名，category_path=物品；专名分类成立。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与跨批Thaermore译名“泰尔莫”及本条别名含义一致，已修正译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:108",
+      "evidence_rows": [
+        2696,
+        448
+      ],
+      "source_excerpt": "Sam's Guide to Demon Oil",
+      "reason": "保留物品短标题译名；与全称条目不冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第2696条物品名与source一致；第448条展开为三指萨姆的恶魔油制作指南。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《萨姆的恶魔油指南》准确；Demon Oil按既有术语作“恶魔油”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "书籍/物品，category_path=物品合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "短标题省略Three-fingered属于物品显示名差异，不改变核心译名；与恶魔油术语一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:110",
+      "evidence_rows": [
+        429
+      ],
+      "source_excerpt": "This book is a guide to the use of heavy armors.",
+      "reason": "译名可用；category_path合法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第429条说明本书讲解重甲使用。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《重甲战地指南》保留书名，重甲译名与术语一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "书籍/物品，category_path=物品合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与轻甲指南成对，Field Guide译法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:111",
+      "evidence_rows": [
+        428
+      ],
+      "source_excerpt": "This book is a guide to the use of light armors.",
+      "reason": "译名可用；category_path合法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第428条说明本书讲解轻甲使用。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《轻甲战地指南》保留书名，轻甲译名与术语一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "书籍/物品，category_path=物品合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与重甲指南成对，Field Guide译法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:114",
+      "evidence_rows": [
+        419
+      ],
+      "source_excerpt": "This book talks in depth about the design of locks throughout history",
+      "reason": "保留译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第419条说明本书讲锁具设计、历史与开锁理论。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《锁孔与制栓》准确对应Keyholes and Tumblers。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "书籍/物品，category_path=物品合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "锁具术语“制栓”使用恰当，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:116",
+      "evidence_rows": [
+        408
+      ],
+      "source_excerpt": "A historical account of the enslavement of Giants in Thaermore, by Mars Birchun.",
+      "reason": "保留译名；内容确为历史著作。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第408条标题及正文说明为Mars Birchun所著泰尔莫巨人奴役史。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《人与巨人》对应Of Men and Giants。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "书籍/物品，category_path=物品合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Giants作“巨人”；地名Thaermore在说明中保留原文，不涉及译名修正。"
+        }
+      }
+    },
+    {
+      "ref": "terms:117",
+      "evidence_rows": [
+        379,
+        441
+      ],
+      "source_excerpt": "The Goblins of Thaermore",
+      "reason": "保留书名；统一Thaermore译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第379条标题即The Goblins of Thaermore；第441条正文说明该书讲哥布林氏族、兵种与组织。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "Thaermore统一为“泰尔莫”，改为《泰尔莫的哥布林》。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "书籍/物品，category_path=物品合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与跨批Thaermore译名“泰尔莫”一致；书名号保留。"
+        }
+      }
+    },
+    {
+      "ref": "terms:118",
+      "evidence_rows": [
+        447
+      ],
+      "source_excerpt": "The Jewel of Thaermore",
+      "reason": "书籍标题，与同名别名同源；统一地名并保留书名号。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第447条为同名书籍，记述Jewel/Crux of Ages。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "Thaermore统一为“泰尔莫”，书名作《泰尔莫之宝》。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "书籍/物品，category_path=物品合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与同名别名共享核心词，但以书名号区分；译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:123",
+      "evidence_rows": [
+        438
+      ],
+      "source_excerpt": "This hefty tome recounts the early years of Thaermore's history in exhausting detail.",
+      "reason": "历史书标题；统一地名并更新term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第438条为泰尔莫历史书，含年表。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "按既有地名译名改为《泰尔莫史》。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "书籍/物品，category_path=物品合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与Thaermore译名“泰尔莫”一致，term_reason同步修正。"
+        }
+      }
+    },
+    {
+      "ref": "terms:128",
+      "evidence_rows": [
+        439
+      ],
+      "source_excerpt": "My dearest sister Penelope,",
+      "reason": "保留译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第439条为Mort写给姐姐Penelope的信。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《给佩内洛普的信》与Penelope既有译名“佩内洛普”一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "书信/任务物品，category_path=物品合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Penelope译名一致，书名号适合可阅读信件。"
+        }
+      }
+    },
+    {
+      "ref": "terms:130",
+      "evidence_rows": [
+        415
+      ],
+      "source_excerpt": "This parchment appears to be part of a journal entry...",
+      "reason": "普通日志条目，非专名/游戏术语，建议隔离。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第415条原文为一张羊皮纸，属于日志的一部分。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "Journal Entry为普通日志条目，不应作为冻结书名加《》；该条已隔离。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "普通日志称谓，非专有名称，不应以proper_name收录。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "普通词条不符合术语收录范围，已quarantine。"
+        }
+      }
+    },
+    {
+      "ref": "terms:132",
+      "evidence_rows": [
+        414
+      ],
+      "source_excerpt": "(This appears to be a page torn from an old Tome of Alchemy.)",
+      "reason": "保留译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第414条为旧炼金术典籍残页，Tome of Alchemy指该书。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《炼金术典籍》对应Tome of Alchemy，炼金术术语一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "书籍/物品，category_path=物品合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Alchemy作“炼金术”，与相关术语一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:105",
+    "terms:108",
+    "terms:110",
+    "terms:111",
+    "terms:114",
+    "terms:116",
+    "terms:117",
+    "terms:118",
+    "terms:123",
+    "terms:128",
+    "terms:130",
+    "terms:132"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

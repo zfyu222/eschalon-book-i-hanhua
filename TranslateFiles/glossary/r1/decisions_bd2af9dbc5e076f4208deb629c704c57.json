@@ -1,0 +1,547 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 全部 non_translate 条目：均为运行时脚本命令或控制标记，应保留原样；已为每条补充 applicability，独立整条命令用 whole_record，嵌入命令/标记用 literal_context，脚本关键字用 text，并核对 toggle_port/updatezones/strip_items 的独立与嵌入用例，无翻译或分类冲突。",
+  "acknowledged_findings": [
+    "F0004",
+    "F0005",
+    "F0008",
+    "F0011",
+    "F0014",
+    "F0187",
+    "F0188",
+    "F0189"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": " ; ",
+          "suffix": " ; toggle_port 14274",
+          "reason": "带参数传送门命令嵌在含对话的脚本行内；按分号及后接命令限定，仅保留该命令串。"
+        }
+      },
+      "reason": "补充限定适用范围，避免把带参数命令当作全局禁译词。",
+      "evidence_rows": [
+        595
+      ],
+      "table": "non_translate",
+      "index": 27
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "toggle_port 9271 ; ",
+          "suffix": "",
+          "reason": "带参数传送门命令位于脚本行末；按前接传送门命令和行末限定。"
+        }
+      },
+      "reason": "补充限定适用范围，明确该命令仅在所示脚本行末保留。",
+      "evidence_rows": [
+        595
+      ],
+      "table": "non_translate",
+      "index": 28
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "\\n",
+          "suffix": "",
+          "reason": "传送门命令位于物品脚本行末；按字面换行转义及行末限定，仅保留命令。"
+        }
+      },
+      "reason": "补充限定适用范围，避免裸 toggle_port 关键字全局禁译。",
+      "evidence_rows": [
+        674,
+        677
+      ],
+      "table": "non_translate",
+      "index": 40
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": " ; ",
+          "suffix": "",
+          "reason": "两条传送门命令位于消息脚本行末；按分号及行末限定，保留整个命令串。"
+        }
+      },
+      "reason": "补充限定适用范围，明确命令串位于消息脚本行末。",
+      "evidence_rows": [
+        1005
+      ],
+      "table": "non_translate",
+      "index": 75
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条原文仅由两条传送门运行时命令组成，保留原样。"
+        }
+      },
+      "reason": "补充 whole_record 范围，整条记录都是运行时命令。",
+      "evidence_rows": [
+        1008
+      ],
+      "table": "non_translate",
+      "index": 77
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "脚本命令关键字 toggle_port；独立命令及带参数命令中均须保留，避免把标识符译成普通词。"
+        }
+      },
+      "reason": "补充 text 范围并保留独立与嵌入两类用例，确认关键字应统一保留。",
+      "evidence_rows": [
+        2078,
+        3459
+      ],
+      "table": "non_translate",
+      "index": 282
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条原文为单一开关运行时命令，保留原样。"
+        }
+      },
+      "reason": "补充 whole_record 范围，整条记录都是运行时命令。",
+      "evidence_rows": [
+        2079
+      ],
+      "table": "non_translate",
+      "index": 283
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条原文为单一对象切换运行时命令，保留原样。"
+        }
+      },
+      "reason": "补充 whole_record 范围，整条记录都是运行时命令。",
+      "evidence_rows": [
+        2080
+      ],
+      "table": "non_translate",
+      "index": 284
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "区域更新脚本命令关键字；独立命令及命令序列中均须保留。"
+        }
+      },
+      "reason": "补充 text 范围并保留独立与嵌入两类用例，确认关键字应统一保留。",
+      "evidence_rows": [
+        629,
+        2085
+      ],
+      "table": "non_translate",
+      "index": 32
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "移除物品脚本命令关键字；独立命令及命令序列中均须保留。"
+        }
+      },
+      "reason": "补充 text 范围并保留独立与嵌入两类用例，确认关键字应统一保留。",
+      "evidence_rows": [
+        672,
+        2074
+      ],
+      "table": "non_translate",
+      "index": 35
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "\" ",
+          "suffix": "",
+          "reason": "退出对话控制标记位于对话末尾；按右引号加空格及行末限定，仅保留括号标记。"
+        }
+      },
+      "reason": "补充限定适用范围，明确 [EXIT] 为对话末尾控制标记。",
+      "evidence_rows": [
+        842
+      ],
+      "table": "non_translate",
+      "index": 52
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条原文仅由三条实体掉落运行时命令组成，保留原样。"
+        }
+      },
+      "reason": "补充 whole_record 范围，整条记录都是运行时命令。",
+      "evidence_rows": [
+        994
+      ],
+      "table": "non_translate",
+      "index": 64
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:27",
+      "evidence_rows": [
+        595
+      ],
+      "source_excerpt": "toggle_port 9271",
+      "reason": "带参数传送门脚本命令，嵌于含对话的脚本行；保留原样并按行内上下文限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文第595行可见 toggle_port 9271 作为脚本命令子串出现，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目应保留原样；无需中文翻译，避免破坏传送门命令。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属于运行时脚本命令而非普通文本；已补 literal_context applicability，限定在含相邻分号的脚本行内。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同族 toggle_port 命令均保留英文关键字和参数；参数不同不构成译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:28",
+      "evidence_rows": [
+        595
+      ],
+      "source_excerpt": "toggle_port 14274",
+      "reason": "带参数传送门脚本命令，位于脚本行末；保留原样并按行内上下文限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文第595行末尾可见 toggle_port 14274，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目应保留原样；无需中文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属于运行时脚本命令；已补 literal_context applicability，限定在前接传送门命令和行末之间。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1 同属 toggle_port 命令，仅参数不同；保留英文关键字和参数。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:40",
+      "evidence_rows": [
+        674,
+        677
+      ],
+      "source_excerpt": "toggle_port 3573",
+      "reason": "物品脚本行末的传送门命令，按字面换行转义限定范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第674、677行均在物品名后以字面换行转义接 toggle_port 3573，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "运行时命令保留原样，不译作普通传送门词。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属于运行时脚本命令；已补 literal_context applicability，prefix 为字面换行转义、suffix 为空。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两条记录使用同一命令和参数，保留方式一致，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:75",
+      "evidence_rows": [
+        1005
+      ],
+      "source_excerpt": "toggle_port 9845 ; toggle_port 9646",
+      "reason": "消息脚本行末的两条传送门命令，保留整个命令串。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第1005行消息文本后接 toggle_port 9845 ; toggle_port 9646，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "两条运行时命令保留原样，不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属于运行时命令串；已补 literal_context applicability，限定在分号及行末之间。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 toggle_port 关键字族一致，参数和分隔符保持原样。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:77",
+      "evidence_rows": [
+        1008
+      ],
+      "source_excerpt": "toggle_port 4674 ; toggle_port 4473",
+      "reason": "整条记录仅由两条传送门命令组成，应保留原样。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第1008行原文与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "整条为运行时命令，保留原样。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属于独立命令记录；已补 whole_record applicability，覆盖整条记录。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 toggle_port 关键字族一致，命令和参数未改写。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:282",
+      "evidence_rows": [
+        2078,
+        3459
+      ],
+      "source_excerpt": "toggle_port",
+      "reason": "传送门脚本关键字，既有独立命令也有带参数形式；保留关键字并限定为脚本标识符。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第2078行为独立 toggle_port，第3459行为 toggle_port 5366，均含该关键字。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留原样，不译作传送门开关等普通文字。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；已补 text 且 case_sensitive=true，覆盖独立及带参数脚本关键字。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1-e5 的 toggle_port 命令一致，参数化命令不改写关键字。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:283",
+      "evidence_rows": [
+        2079
+      ],
+      "source_excerpt": "toggle_switch",
+      "reason": "单一开关运行时命令关键字，整条记录保留原样。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第2079行原文与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "运行时命令关键字保留原样，不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属于独立运行时命令；已补 whole_record applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "toggle_switch 与 toggle_port/toggle_obj 为不同命令，无同形译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:284",
+      "evidence_rows": [
+        2080
+      ],
+      "source_excerpt": "toggle_obj",
+      "reason": "单一对象切换运行时命令关键字，整条记录保留原样。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第2080行原文与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "运行时命令关键字保留原样，不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属于独立运行时命令；已补 whole_record applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "toggle_obj 与 toggle_port/toggle_switch 为不同命令，保留方式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:32",
+      "evidence_rows": [
+        629,
+        2085
+      ],
+      "source_excerpt": "updatezones",
+      "reason": "区域更新脚本命令关键字，独立与嵌入形式均保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第629行命令序列中含 updatezones，第2085行为独立 updatezones。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "运行时命令关键字保留原样，不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；已补 text 且 case_sensitive=true，覆盖独立及嵌入命令。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一区域更新命令在两种上下文中均保留原标识符，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:35",
+      "evidence_rows": [
+        672,
+        2074
+      ],
+      "source_excerpt": "strip_items",
+      "reason": "移除物品脚本命令关键字，独立与嵌入形式均保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第672行命令序列中含 strip_items，第2074行为独立 strip_items。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "运行时命令关键字保留原样，不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；已补 text 且 case_sensitive=true，覆盖独立及嵌入命令。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一移除物品命令在两种上下文中均保留原标识符，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:52",
+      "evidence_rows": [
+        842
+      ],
+      "source_excerpt": "[EXIT]",
+      "reason": "对话末尾退出控制标记，保留原样并限定上下文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第842行对话末尾含 [EXIT] 控制标记。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为退出对话控制标记保留原样，不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；已补 literal_context，限定为右引号加空格后的 [EXIT] 标记。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "[EXIT] 为独立控制标记，不与正文普通词混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:64",
+      "evidence_rows": [
+        994
+      ],
+      "source_excerpt": "drop_ent 12 4851 ; drop_ent 12 3788 ; drop_ent 12 4590",
+      "reason": "整条记录仅由三条实体掉落命令组成，应保留原样。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第994行原文与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "整条为运行时实体掉落命令，保留原样。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属于独立命令记录；已补 whole_record applicability，覆盖整条记录。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "三个 drop_ent 命令格式一致，参数和分隔符保持原样。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:27",
+    "non_translate:28",
+    "non_translate:40",
+    "non_translate:75",
+    "non_translate:77",
+    "non_translate:282",
+    "non_translate:283",
+    "non_translate:284",
+    "non_translate:32",
+    "non_translate:35",
+    "non_translate:52",
+    "non_translate:64"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

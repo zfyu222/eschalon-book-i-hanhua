@@ -1,0 +1,316 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e8 的出处、译名、分类及一致性；补全 SFX_Level/SFX_Level2 的 whole_record 保护范围，统一 Temporal Linking 与 Secrets of Transference Circuits 的已发布译名，并确认 Transference Circuit 核心词一致。",
+  "acknowledged_findings": [
+    "F0052",
+    "F0219"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "enforcement": "required"
+      },
+      "reason": "424说明这是Divination研究者所用基础，3549为独立技能名；属明确游戏术语，需统一译名。",
+      "evidence_rows": [
+        424,
+        3549
+      ],
+      "table": "terms",
+      "index": 63
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "1507整条记录仅为音效标识符SFX_Level；限定完整记录匹配，避免作为普通文本或SFX_Level2子串误保护。"
+        }
+      },
+      "reason": "补全 non_translate 适用范围；1507为独立标识符。",
+      "evidence_rows": [
+        1507
+      ],
+      "table": "non_translate",
+      "index": 125
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "2436整条记录仅为音效标识符SFX_Level2；限定完整记录匹配，避免与SFX_Level混淆。"
+        }
+      },
+      "reason": "补全 non_translate 适用范围；2436为独立标识符。",
+      "evidence_rows": [
+        2436
+      ],
+      "table": "non_translate",
+      "index": 328
+    },
+    {
+      "patch": {
+        "recommended_translation": "时空链接",
+        "category_path": "技能",
+        "term_reason": "432说明这是Gramuk用于通过关联记忆定位人物的技术；3550为独立能力名。采用已发布v1.5译名「时空链接」以统一。"
+      },
+      "reason": "432/3550均指同一技术；依据已发布v1.5统一为「时空链接」，并归入技能。",
+      "evidence_rows": [
+        432,
+        3550
+      ],
+      "table": "terms",
+      "index": 72
+    },
+    {
+      "patch": {
+        "recommended_translation": "《传送回路之秘》",
+        "term_reason": "记录Transference Circuit创建原理的书籍；采用已发布v1.5译名，并与「传送回路」核心词统一。"
+      },
+      "reason": "320/1208/2739/3622/4237均指同一书名；与e7「传送回路」及已发布v1.5统一为「《传送回路之秘》」。",
+      "evidence_rows": [
+        320,
+        416,
+        1208,
+        2739,
+        3622,
+        4237
+      ],
+      "table": "terms",
+      "index": 107
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:63",
+      "evidence_rows": [
+        424,
+        3549
+      ],
+      "source_excerpt": "natural casting",
+      "reason": "确认 natural casting 为明确游戏术语；译名「自然施法」可保留，enforcement 调整为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3549 为独立技能名，424 说明其用于不信仰神的 Divination 研究者。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「自然施法」准确表达 natural casting，且与施法体系用词一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "技能分类正确；依据424/3549，enforcement 应由 reference 改为 required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Casting Level 的「施法」用词一致；二者非同一术语，不合并。"
+        }
+      }
+    },
+    {
+      "ref": "terms:333",
+      "evidence_rows": [
+        1638,
+        1635,
+        1081
+      ],
+      "source_excerpt": "Casting Level",
+      "reason": "Casting Level 为法术施放前选择的等级，译名与分类保持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1638 明确必须选择 Spell 与 Casting Level；1635/1081 也出现 casting level。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「施法等级」对应选择法术时的施法等级。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为施法界面机制名归「其他」合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1 的「自然施法」共用「施法」；与 e3/e4 的 SFX_Level 仅字面相似，不建立同义关系。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:125",
+      "evidence_rows": [
+        1507
+      ],
+      "source_excerpt": "SFX_Level",
+      "reason": "确认保留原样，并将保护范围限定为完整记录；审计 f1 已核对。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1507 整条记录仅为 SFX_Level，是音效标识符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保持原样，不进入翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "补 applicability=whole_record、case_sensitive=true；仅匹配完整标签，避免与 SFX_Level2 或普通文本混淆。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "SFX_Level 与 SFX_Level2 是不同标签，whole_record 可区分。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:328",
+      "evidence_rows": [
+        2436
+      ],
+      "source_excerpt": "SFX_Level2",
+      "reason": "确认保留原样，限定 whole_record；审计 f2 已核对。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2436 整条记录仅为 SFX_Level2，是音效标识符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保持原样，不进入翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "补 applicability=whole_record、case_sensitive=true；避免把 SFX_Level2 拆成 SFX_Level 子串。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 SFX_Level 明确区分，且不与 Casting Level 建立词族关联。"
+        }
+      }
+    },
+    {
+      "ref": "terms:65",
+      "evidence_rows": [
+        427
+      ],
+      "source_excerpt": "commerce",
+      "reason": "确认 commerce 为书籍所授交易类技能，译名与分类保持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "427 该书教授 commerce 的以物易物、估价和讨价还价。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「商业」作为技能名可涵盖交易、估价与讨价还价；原文未支持其他译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能分类合理；enforcement required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "commerce 不属施法体系；无需并入 e1/e2 的施法术语。"
+        }
+      }
+    },
+    {
+      "ref": "terms:72",
+      "evidence_rows": [
+        432,
+        3550
+      ],
+      "source_excerpt": "Temporal Linking",
+      "reason": "确认 432/3550 指同一技术；按已发布译名统一为「时空链接」并归入技能。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "432 称其为 Gramuk 使用的 technique；3550 为独立能力名，均指 Temporal Linking。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "统一采用已发布 v1.5 译名「时空链接」，避免与「时间链接」「时序联结」混用。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文明确为 technique，3550 为独立能力名，归「技能」而非泛「其他」。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "按已发布 v1.5 统一；与 e2/e3/e4 的 Level 词族无同义关系。"
+        }
+      }
+    },
+    {
+      "ref": "terms:73",
+      "evidence_rows": [
+        416
+      ],
+      "source_excerpt": "Transference Circuit",
+      "reason": "确认 Transference Circuit 为需材料与五芒星激活的传送构造，译名保持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "416 多次出现 Transference Circuit，指需 Ethereal Salts、Divining Crystals 与 Pentagram 激活的传送构造。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「传送回路」对应 circuit，并与 e8 书名核心词一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为魔法构造归「其他」合适，非普通物品或技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "核心词与 e8 统一为「传送回路」，不采用「转移」「传导」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:107",
+      "evidence_rows": [
+        320,
+        416,
+        1208,
+        3622,
+        4237
+      ],
+      "source_excerpt": "Secrets of Transference Circuits",
+      "reason": "确认多个出处均指同一书籍，统一书名译名并保持核心词一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "320 为书名；1208/3622/4237 均称其为特殊书籍 Secrets of Transference Circuits。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "统一为「《传送回路之秘》」：采用已发布 v1.5 译名，核心词与 e7「传送回路」一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "书籍属于「物品」；proper_name required 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "多候选「转移回路」「传导回路」「之谜」均不采用，保持与 e7 及已发布 v1.5 一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:63",
+    "terms:333",
+    "non_translate:125",
+    "non_translate:328",
+    "terms:65",
+    "terms:72",
+    "terms:73",
+    "terms:107"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

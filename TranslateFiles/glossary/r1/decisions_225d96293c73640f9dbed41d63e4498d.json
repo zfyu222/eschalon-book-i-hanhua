@@ -1,0 +1,392 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 的来源、译名、分类与一致性；修正 e2、e5、e6、e12 的译名以统一 Timberland Plains、Thaermore、Crakamir 相关专名；其余条目通过。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "林地平原的巨人族",
+        "term_reason": "林木平原的巨人群体；其首领为 Omar，可能成为对抗哥布林的盟友；Timberland Plains 按关联术语作“林地平原”。"
+      },
+      "reason": "统一 Timberland Plains 译名，避免与既有“林地平原”不一致。",
+      "evidence_rows": [
+        4356
+      ],
+      "table": "terms",
+      "index": 549
+    },
+    {
+      "patch": {
+        "recommended_translation": "泰尔莫联邦",
+        "term_reason": "地图题名中的政治实体全称；Thaermore 按关联术语作“泰尔莫”，为东埃斯卡隆省份。"
+      },
+      "reason": "更正 Thaermore 音译并统一政治实体全称。",
+      "evidence_rows": [
+        4682
+      ],
+      "table": "terms",
+      "index": 556
+    },
+    {
+      "patch": {
+        "recommended_translation": "西泰尔莫",
+        "term_reason": "地图地名，指 Thaermore 西部区域；Thaermore 统一作“泰尔莫”。"
+      },
+      "reason": "统一 Thaermore 地名译法。",
+      "evidence_rows": [
+        4689
+      ],
+      "table": "terms",
+      "index": 558
+    },
+    {
+      "patch": {
+        "recommended_translation": "克拉卡米尔荒原",
+        "term_reason": "地图地名，指 Crakamir 区域的荒原；Crakamir 统一作“克拉卡米尔”，并与 Barrens of Crakamir 的既有译名一致。"
+      },
+      "reason": "统一 Crakamir 荒原译名。",
+      "evidence_rows": [
+        4704
+      ],
+      "table": "terms",
+      "index": 566
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:548",
+      "evidence_rows": [
+        4344,
+        4031,
+        810
+      ],
+      "source_excerpt": "I dropped the key to the Necrotic studies lab",
+      "reason": "名称与地点分类核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4344 原文出现“the key to the Necrotic studies lab”，指暗影秘院内的具体研究室。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“死灵学研究室”对应 Necrotic studies lab，语义和词序自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该名称为暗影秘院内的地点或房间，归入“地名”可区分于普通物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 corpus 4031、810 中的同一地点名称一致，无需另立别名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:549",
+      "evidence_rows": [
+        4356
+      ],
+      "source_excerpt": "It is with the Giants of the Timberland Plains.",
+      "reason": "统一 Timberland Plains 译名并校正群体称谓。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4356 明确把该群体称为 Giants of the Timberland Plains，并称 Omar 为首领。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "“Timberland Plains”按关联术语统一作“林地平原”，故改为“林地平原的巨人族”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "这是埃鲁多所指的巨人群体，归入“种族”并作为专名处理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Timberland Plains=林地平原 的既有译名统一，保留“巨人族”作为群体称谓。"
+        }
+      }
+    },
+    {
+      "ref": "terms:550",
+      "evidence_rows": [
+        4502,
+        681
+      ],
+      "source_excerpt": "Blast barrier? Nice.",
+      "reason": "技能名及上下文核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4502 直接出现“Blast barrier”，681 上下文说明这是 NPC 的防护法术。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“爆裂屏障”保留 barrier 的屏障义，并用爆裂对应 blast。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文用作法术或防护能力名称，归入“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "4502 与 681 的 blast barrier 指向同一法术，译名可统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:553",
+      "evidence_rows": [
+        4447
+      ],
+      "source_excerpt": "[give Giant Skull to Omar]",
+      "reason": "任务物品名核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4447 的任务指令写明“give Giant Skull to Omar”，Giant Skull 是交付物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“巨人头骨”直译准确，保留物品名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "交付物属于任务物品，归入“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条为独立物品名，与 Omar 等既有专名无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:556",
+      "evidence_rows": [
+        4682
+      ],
+      "source_excerpt": "The Commonwealth of Thaermore",
+      "reason": "更正 Thaermore 译名并统一政治实体全称。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4682 题名完整写作 The Commonwealth of Thaermore，并标明其为东埃斯卡隆省份。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将误用的“塞尔莫尔”改为“泰尔莫”，全称译作“泰尔莫联邦”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Commonwealth 指政治实体或政体，归入“组织”以表示其国家政治身份。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与关联术语 Thaermore=泰尔莫 统一，消除“塞尔莫尔”不一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:558",
+      "evidence_rows": [
+        4689
+      ],
+      "source_excerpt": "Western Thaermore",
+      "reason": "统一 Thaermore 地名译法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4689 地图题名明确为 Western Thaermore，指泰尔莫西部区域。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "按 Thaermore=泰尔莫 改为“西泰尔莫”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "这是地图上的区域名称，归入“地名”。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e5 及关联术语 Thaermore=泰尔莫 保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:559",
+      "evidence_rows": [
+        4693
+      ],
+      "source_excerpt": "Eastern Rift",
+      "reason": "地图地名核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4693 地图题名为 Eastern Rift。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“东部裂谷”对应 Eastern Rift，简洁适合地图标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地图地名，归入“地名”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与既有 Eastern Gap=东部隘口 区分，无同名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:560",
+      "evidence_rows": [
+        4694
+      ],
+      "source_excerpt": "Numinia River",
+      "reason": "河流名核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4694 地图题名为 Numinia River。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“努米尼亚河”音译 Numinia 并保留 River 的河义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "河流名称归入“地名”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与关联术语 Nimmia River=尼米亚河 拼写不同，未混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:561",
+      "evidence_rows": [
+        4695
+      ],
+      "source_excerpt": "Crakamir Rift",
+      "reason": "地貌名及 Crakamir 译名核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4695 地图题名为 Crakamir Rift。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“克拉卡米尔裂谷”保留 Crakamir 的既定音译及 rift 的裂谷义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地图地貌名称归入“地名”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Crakamir=克拉卡米尔 的关联译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:563",
+      "evidence_rows": [
+        4700
+      ],
+      "source_excerpt": "Rotwood Forest",
+      "reason": "森林地名核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4700 地图题名为 Rotwood Forest。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“朽木森林”对应 Rotwood Forest，语义明确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "森林地名归入“地名”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未与 Tangletree Forest 等其他森林名混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:565",
+      "evidence_rows": [
+        4703,
+        882
+      ],
+      "source_excerpt": "Goblin Lands",
+      "reason": "区域地名核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4703 地图题名为 Goblin Lands，882 也出现 Goblin lands 的区域用法。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“哥布林领地”对应 Goblin Lands，简洁且符合地图标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "哥布林控制的区域名称归入“地名”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Goblin 的常用译名一致，未与其他地名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:566",
+      "evidence_rows": [
+        4704
+      ],
+      "source_excerpt": "The Barrens of Crakamir",
+      "reason": "统一 Crakamir 荒原译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4704 地图题名为 The Barrens of Crakamir。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "按关联术语 Barrens of Crakamir=克拉卡米尔荒原 统一改为“克拉卡米尔荒原”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "荒原地貌名称归入“地名”。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Crakamir=克拉卡米尔 及 Barrens of Crakamir=克拉卡米尔荒原 保持一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:548",
+    "terms:549",
+    "terms:550",
+    "terms:553",
+    "terms:556",
+    "terms:558",
+    "terms:559",
+    "terms:560",
+    "terms:561",
+    "terms:563",
+    "terms:565",
+    "terms:566"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

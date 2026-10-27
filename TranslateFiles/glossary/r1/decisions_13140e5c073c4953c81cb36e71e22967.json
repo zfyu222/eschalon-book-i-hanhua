@@ -1,0 +1,428 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校 e1-e12，核对源词、译名、分类及共享译名审计 f1-f5。e9 统一为「恶魔之油」，e10 按已发布译名统一为「神域矿石」；e6-e8 补全技能定义说明，其余条目保留现译。",
+  "acknowledged_findings": [
+    "F0269",
+    "F0270",
+    "F0271",
+    "F0272",
+    "F0273"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "1056 将其定义为对陷阱与诡计的机械理解，以及有效解除陷阱的能力；430 是书中提升该技能理解的用法。"
+      },
+      "reason": "原 term_reason 只引书籍结尾，未说明游戏技能定义；依据 corpus 1056 补全实际含义与范围。",
+      "evidence_rows": [
+        1056,
+        430
+      ],
+      "table": "terms",
+      "index": 68
+    },
+    {
+      "patch": {
+        "term_reason": "1062 定义包括斧、砍刀等劈砍武器，受力量与速度加成；436 以 Biggins 故事表现该技能知识提升。"
+      },
+      "reason": "补全游戏技能定义，避免仅以书籍情节解释术语。",
+      "evidence_rows": [
+        1062,
+        436
+      ],
+      "table": "terms",
+      "index": 69
+    },
+    {
+      "patch": {
+        "term_reason": "1060 定义包括法杖、钉头锤、锤、棍等钝击武器，受力量与速度加成；420 是锤类历史书提升该技能知识的用法。"
+      },
+      "reason": "补全游戏技能定义，避免仅以书籍情节解释术语。",
+      "evidence_rows": [
+        1060,
+        420
+      ],
+      "table": "terms",
+      "index": 70
+    },
+    {
+      "patch": {
+        "recommended_translation": "恶魔之油",
+        "term_reason": "以 Ambergris 和 Sulfur 在空瓶中混合制成的炼金投掷物；书名与物品系列均沿用已发布 v1.5 译名「恶魔之油」。"
+      },
+      "reason": "比较候选后统一为已发布 v1.5 译名「恶魔之油」；448 配方、2599 投掷物、3560 书名均指同一物品。",
+      "evidence_rows": [
+        448,
+        2599,
+        3560
+      ],
+      "table": "terms",
+      "index": 78
+    },
+    {
+      "patch": {
+        "recommended_translation": "神域矿石",
+        "term_reason": "Gunther 失窃并委托取回的任务矿石，也作为 Gramuk 宝库中的贵重矿石；沿用已发布 v1.5 译名「神域矿石」。"
+      },
+      "reason": "比较候选后按行内已发布 v1.5 译名统一为「神域矿石」；639/1234/2607/4432 均指同一任务物品。",
+      "evidence_rows": [
+        639,
+        1234,
+        2607,
+        4432
+      ],
+      "table": "terms",
+      "index": 80
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:61",
+      "evidence_rows": [
+        423,
+        4176
+      ],
+      "source_excerpt": "you feel you've learned quite a bit about Elemental Magick.",
+      "reason": "确认元素魔法领域名称，保留「元素魔法」；与共享译名审计 f1 核对无冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "423 结尾出现 Elemental Magick，4176 出现 Elemental magick training，源词一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Elemental Magick 译为「元素魔法」，对应元素领域魔法，语义准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "423 称其为 arcane magick 领域，4176 提供对应训练，归入技能合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "审计 f1 的共享译名「元素魔法」用于元素魔法领域/技能，语境一致，无别名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:62",
+      "evidence_rows": [
+        424
+      ],
+      "source_excerpt": "This book is a primer for the realm of Divination magick.",
+      "reason": "确认预言魔法领域译名，保留「预言魔法」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "424 出现 Divination magick，并重复使用 Divination 词根。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Divination magick 译为「预言魔法」，符合占卜/预言魔法领域。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "424 描述魔法领域与施法技术，归入技能合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "424 同段重复 Divination magick；dark divination 另列参考条目，词根一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:64",
+      "evidence_rows": [
+        424
+      ],
+      "source_excerpt": "the pros and cons of using dark divination",
+      "reason": "确认 dark divination 为 Divination magick 下的参考性用法，保留「黑暗预言」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "424 原文为 using dark divination，源词为小写短语。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "dark divination 译为「黑暗预言」，与 Divination magick 的「预言」词根一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "424 将其作为预言魔法中的使用方式讨论，归入技能可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅作 reference，不宣称独立机制；与 e2 的「预言魔法」共享词根，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:66",
+      "evidence_rows": [
+        428
+      ],
+      "source_excerpt": "This book is a guide to the use of light armors.",
+      "reason": "确认轻甲技能名，保留「轻甲」；与共享译名审计 f2 核对无冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "428 出现 light armors 与 light armor，复数变体不改变词义。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "light armors 译为「轻甲」，对应轻甲类别/技能。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "428 为轻甲使用指南，结合 f2 对应 Light Armor 技能，归入技能合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "审计 f2 的共享译名「轻甲」用于 Light Armor 技能变体，单复数差异不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:67",
+      "evidence_rows": [
+        429
+      ],
+      "source_excerpt": "This book is a guide to the use of heavy armors.",
+      "reason": "确认重甲技能名，保留「重甲」；与共享译名审计 f3 核对无冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "429 出现 heavy armors 与 heavy armor，复数变体不改变词义。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "heavy armors 译为「重甲」，对应重甲类别/技能。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "429 为重甲使用指南，结合 f3 对应 Heavy Armor 技能，归入技能合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "审计 f3 的共享译名「重甲」用于 Heavy Armor 技能变体，单复数差异不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:68",
+      "evidence_rows": [
+        1056,
+        430
+      ],
+      "source_excerpt": "*Skullduggery is the mechanical understanding of traps and trickery, and the ability to effectively disarm them.",
+      "reason": "补全术语说明为陷阱与诡计技能；保留「诡诈术」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1056 定义 Skullduggery 为对陷阱与诡计的机械理解及解除能力，430 为书籍提升该技能理解。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Skullduggery 译为「诡诈术」，涵盖 trickery/解除陷阱的技能名，简短可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1056 明示其为技能，归入技能合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "430 与 1056 同指该技能，译名统一为「诡诈术」，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:69",
+      "evidence_rows": [
+        1062,
+        4149
+      ],
+      "source_excerpt": "*Cleaving *Weapons include Axes, Machetes, and similar chopping weapons.",
+      "reason": "补全劈砍武器技能定义；保留「劈砍武器」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1062 定义 *Cleaving *Weapons 包括斧、砍刀等劈砍武器，4149 为 Sonya 教授该技能。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "cleaving weapons 译为「劈砍武器」，对应 chopping weapons 技能。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1062 明示为武器技能，归入技能合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "审计 f4 的共享译名「劈砍武器」用于 *Cleaving *Weapons 技能变体，大小写/星号差异不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:70",
+      "evidence_rows": [
+        1060,
+        420
+      ],
+      "source_excerpt": "*Bludgeoning *Weapons include Staves, Maces, Hammers, Clubs and similar blunt-force weapons.",
+      "reason": "补全钝击武器技能定义；保留「钝击武器」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1060 定义 *Bludgeoning *Weapons 包括法杖、钉头锤、锤、棍等钝击武器，420 为锤类史书提升该技能。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "bludgeoning weapons 译为「钝击武器」，对应 blunt-force weapons 技能。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1060 明示为武器技能，归入技能合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "审计 f5 的共享译名「钝击武器」用于 *Bludgeoning *Weapons 技能变体，大小写/星号差异不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:78",
+      "evidence_rows": [
+        448,
+        2599,
+        2696,
+        3560
+      ],
+      "source_excerpt": "Three-fingered Sam's Guide to making Demon Oil",
+      "reason": "将 Demon Oil 统一为已发布译名「恶魔之油」，并补全物品说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "448 与 3560 均出现 Demon Oil，2599 为 Demon Oil I 投掷物，源词为同一物品名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原推荐「恶魔油」；统一为已发布 v1.5 译名「恶魔之油」，与油状炼金物品及书名匹配。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "448 说明其为炼金混合油，2599 标为 IC_WEAPON 投掷武器，归入物品合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "448/2599/2696/3560 均指同一 Demon Oil，书名与物品名统一为「恶魔之油」，无别名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:80",
+      "evidence_rows": [
+        434,
+        639,
+        1234,
+        2607,
+        3041,
+        3837,
+        3842,
+        4432
+      ],
+      "source_excerpt": "I had purchased a bit of Divine Ore from Farwick in Aridell a few months ago.",
+      "reason": "将 Divine Ore 按已发布译名统一为「神域矿石」，并限定为任务矿石/贵重矿石。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "639、1234、4432 均指 Gunther 失窃并需取回的 Divine Ore，2607 为任务物品名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原推荐「神圣矿石」；按行内已发布 v1.5 译名统一为「神域矿石」，指同一任务矿石。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "2607 标为 IC_QUEST，639/1234 为任务材料，归入物品合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "434/639/1234/2607/3041/3837/3842/4432 均为同一 Divine Ore，统一译名避免与候选「神圣矿石」混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:97",
+      "evidence_rows": [
+        410,
+        2656,
+        2657
+      ],
+      "source_excerpt": "Mana Potion : Mandrake Root and Acid",
+      "reason": "确认法力药水物品名，保留「法力药水」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "410 出现 Mana Potion 配方，2656/2657 为 Mana Potion I/II 物品名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Mana Potion 译为「法力药水」，对应恢复法力的药剂。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "410 为药剂配方，2656 标为 IC_POTION，归入物品合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "410/2656/2657 同指 Mana Potion 系列，译名统一为「法力药水」，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:102",
+      "evidence_rows": [
+        239,
+        412
+      ],
+      "source_excerpt": "Potion of Greater Protection",
+      "reason": "确认高等防护药水物品名，保留「高等防护药水」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "239 为 Potion of Greater Protection，412 为同名防御药水配方。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Greater Protection 译为「高等防护」，整体为「高等防护药水」，语义准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "412 为防御药水配方，239 为药水名，归入物品合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "239 与 412 同指该药水，译名统一，无冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:61",
+    "terms:62",
+    "terms:64",
+    "terms:66",
+    "terms:67",
+    "terms:68",
+    "terms:69",
+    "terms:70",
+    "terms:78",
+    "terms:80",
+    "terms:97",
+    "terms:102"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

@@ -1,0 +1,354 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 的原文、译名、分类与一致性；将 e2 的宗教语境译名修正为“露娜的旨意”，其余现译保留；f1 经查为同一 Camp Thorndyke 的跨批重复，共用译名不构成异名冲突。",
+  "acknowledged_findings": [
+    "F0288"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "露娜的旨意",
+        "term_reason": "3593 中 Bethel 所侍奉的神意；Will 在宗教语境下译作“旨意”。"
+      },
+      "reason": "“Will of Luna”处于 Bethel 的宗教侍奉语境，译作“露娜的旨意”比“露娜的意志”更贴合神意。",
+      "evidence_rows": [
+        3593
+      ],
+      "table": "terms",
+      "index": 520
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:514",
+      "evidence_rows": [
+        3357
+      ],
+      "source_excerpt": "The Gate Key in your inventory fits the keyhole.",
+      "reason": "具体钥匙类任务物品，现译与原文一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3357 明示“The Gate Key”位于物品栏并可插入锁孔。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“大门钥匙”对应 Gate Key，且与同句 gate 的“大门”一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具体钥匙类任务物品归入“物品”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同源异译，key 相关译法统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:520",
+      "evidence_rows": [
+        3593
+      ],
+      "source_excerpt": "serve the Will of Luna",
+      "reason": "修正为宗教语境下更自然的“露娜的旨意”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3593 中 Bethel 让人 serve the Will of Luna，指侍奉露娜的神意。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "“意志”偏心理能力；改为“旨意”更贴合宗教侍奉语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为特定宗教概念归入“其他”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Luna 保持音译“露娜”，本批无其他同源译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:522",
+      "evidence_rows": [
+        3449
+      ],
+      "source_excerpt": "Outpost at Burning Sands",
+      "reason": "地名现译准确，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3449 为前哨站名“Outpost at Burning Sands”，Burning Sands 是地名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“灼热沙地”可作 Burning Sands 的奇幻地名译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名归入“地名”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同源异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:523",
+      "evidence_rows": [
+        3385
+      ],
+      "source_excerpt": "The Gulf of Madria",
+      "reason": "海湾地名现译准确，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3385 完整文本即“The Gulf of Madria”，为海湾地名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“马德里亚湾”对应 Madria 音译与 Gulf 的“湾”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "海湾地名归入“地名”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同源异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:529",
+      "evidence_rows": [
+        3655
+      ],
+      "source_excerpt": "all Thaerish citizens could view it.",
+      "reason": "定语位置的居民称谓，现译成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3655 中 Thaerish 作定语修饰 citizens，指泰尔莫的公民/居民。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“泰尔莫的”在此定语位置成立；若单独作名词可另行处理为“泰尔莫人”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "表示泰尔莫居民/族属身份，归入“身份”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Thaerish 与 Thaermore 的译名“泰尔莫”保持词根一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:541",
+      "evidence_rows": [
+        4168
+      ],
+      "source_excerpt": "he hadn't even left Tarel yet.",
+      "reason": "地名音译准确，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4168 中 Tarel 是 Penelope 兄弟尚未离开的地点。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“塔瑞尔”为 Tarel 的音译地名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名归入“地名”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同源异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:543",
+      "evidence_rows": [
+        4176
+      ],
+      "source_excerpt": "I am Siam the Guildmaster.",
+      "reason": "职位称谓准确，保留为 reference。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4176 中 Siam 自称为 Guildmaster，指 Blackwater 魔法公会会长。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“公会会长”准确表达该职位。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "职位/身份归入“身份”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Siam、Blackwater 等专名不冲突；作为职位用 reference 合适。"
+        }
+      }
+    },
+    {
+      "ref": "terms:546",
+      "evidence_rows": [
+        3999
+      ],
+      "source_excerpt": "one gift of the tree kin",
+      "reason": "族群称谓准确，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3999 中 Oolaseph 提及 tree kin 的赠礼，指有知觉树木同类。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“树族”简洁表达 tree kin 的族群含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为族群/种族称谓归入“种族”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同源异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:551",
+      "evidence_rows": [
+        4437
+      ],
+      "source_excerpt": "[Give Krista the Brass Locket]",
+      "reason": "具体任务物品专名，现译准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4437 明示 Brass Locket 是交给 Krista 的具体任务物品。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黄铜吊坠”对应 Brass Locket。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具体任务物品归入“物品”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为专名以 required 保留，译名与物品名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:554",
+      "evidence_rows": [
+        4440
+      ],
+      "source_excerpt": "[Give wedding ring to Mary.]",
+      "reason": "任务物品名保留为 reference，现译准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4440 明示 wedding ring 是交给 Mary 的任务物品。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“结婚戒指”对应 wedding ring。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "任务物品归入“物品”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "普通物品名用 reference 保留，避免过度冻结；与 Mary 译名不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:557",
+      "evidence_rows": [
+        4687
+      ],
+      "source_excerpt": "Camp Thorndyke",
+      "reason": "地图地名现译准确，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4687 贴图文字为“Camp Thorndyke”，是地图地名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“索恩代克营地”对应 Camp Thorndyke，且与同源条目译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地图地名归入“地名”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 经查为同一 source“Camp Thorndyke”的跨批重复，共用译名不构成异名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:562",
+      "evidence_rows": [
+        4696
+      ],
+      "source_excerpt": "Gloomful Oubliette",
+      "reason": "地图地名现译简短且贴合，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4696 贴图文字为“Gloomful Oubliette”，是地图地名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“幽暗地牢”对应 Gloomful Oubliette，简短适合贴图。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地图地名归入“地名”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同源异译。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:514",
+    "terms:520",
+    "terms:522",
+    "terms:523",
+    "terms:529",
+    "terms:541",
+    "terms:543",
+    "terms:546",
+    "terms:551",
+    "terms:554",
+    "terms:557",
+    "terms:562"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

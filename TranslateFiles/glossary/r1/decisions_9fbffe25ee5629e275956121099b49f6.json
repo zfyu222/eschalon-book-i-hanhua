@@ -1,0 +1,376 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 的来源、译名、分类与一致性；将 e7 修正为“命中率”，隔离无运行标记依据的 e5，并确认 e9/e11 共用“伤害减免”为合理全称/缩写别名。",
+  "acknowledged_findings": [
+    "F0153",
+    "F0290"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "命中率",
+        "term_reason": "攻击命中概率/命中判定属性；原文有 ToHit probability 与 ToHit accuracy 用例，统一译作命中率。"
+      },
+      "reason": "ToHit 指命中概率或命中判定，译作“命中率”比“命中”更贴合 probability/accuracy 语义。",
+      "evidence_rows": [
+        1885,
+        1964,
+        1049
+      ],
+      "table": "terms",
+      "index": 337
+    }
+  ],
+  "quarantine": [
+    {
+      "reason": "仅见普通词 effect 及错误提示，未见可证实的脚本命令或运行标识符依据；取消无范围禁翻保护。",
+      "evidence_rows": [
+        2040,
+        2379,
+        2474
+      ],
+      "table": "non_translate",
+      "index": 248
+    }
+  ],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:326",
+      "evidence_rows": [
+        1883,
+        1981,
+        4681
+      ],
+      "source_excerpt": "Click on the Automap window to see the locations you can Quick Travel to.",
+      "reason": "Quick Travel 为地图旅行机制名，译名“快速旅行”准确且紧凑。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1883/1981 均以 Quick Travel 指地图地点间传送机制，非普通短语。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“快速旅行”为通行四字译法，适配文本与图片标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属地图/旅行系统机制名，category_path=其他可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "译名四字紧凑，可作为 Quick Travel Menu 的派生词根。"
+        }
+      }
+    },
+    {
+      "ref": "terms:331",
+      "evidence_rows": [
+        1636
+      ],
+      "source_excerpt": "Hold down a number key (0-9) when clicking 'OK' to Quick Set your readied spell for faster retrieval.",
+      "reason": "Quick Set 为预设法术的操作机制名，译名“快速设定”简洁明确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1636 描述按住数字键预设法术的机制，Quick Set 为操作名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“快速设定”简洁表达预设机制，适合教程句。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属操作机制术语，归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与“快速旅行”共享“快速”前缀，但此处按设定语义区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:517",
+      "evidence_rows": [
+        3039
+      ],
+      "source_excerpt": "Playing Hint: There is a town sign nearby. Walk over next to it and touch it to activate this location in your Quick Travel Menu.",
+      "reason": "Quick Travel Menu 为旅行菜单名，译名“快速旅行菜单”完整保留词根。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3039 中 Quick Travel Menu 指激活地点的旅行菜单。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“快速旅行菜单”完整保留 Quick Travel 词根，语义明确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "界面菜单名，归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Quick Travel 的“快速旅行”一致，仅追加“菜单”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:328",
+      "evidence_rows": [
+        1891
+      ],
+      "source_excerpt": "When you see *Silent in the Active Effects window that means no other creature can currently hear you.",
+      "reason": "Active Effects 为状态效果窗口名，译名“当前效果”符合简短 UI 语域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1891 的 Active Effects window 指显示 Silent 等状态的效果窗口。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“当前效果”符合状态窗口的简短 UI 语域。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "状态效果窗口名，归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "效果窗口译名独立，不与普通词 effect 混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:248",
+      "evidence_rows": [
+        2040,
+        2379,
+        2474
+      ],
+      "source_excerpt": "effect not recognized!!",
+      "reason": "仅见普通词 effect 及错误提示，未见可证实的脚本命令或运行标识符依据；应隔离而非无范围禁翻。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "2040 为孤立 effect，2379 为普通错误提示 effect not recognized!!，2474 为 Effect；均不足以证明是运行标识符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该条作为非翻译项被隔离，不设定译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原分类 non_translate 缺少运行标记依据，应 quarantine，不保留禁翻。"
+        },
+        "consistency": {
+          "status": "not_applicable",
+          "evidence": "无有效术语译名可核对；不再与 Active Effects 绑定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:330",
+      "evidence_rows": [
+        1048,
+        1883
+      ],
+      "source_excerpt": "The on-screen automap #does #not #work unless you have at least one point in the *Cartography Skill.",
+      "reason": "Automap 指屏幕地图窗口，译名“自动地图”为通行四字界面译法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1048 与 1883 均以 automap 指屏幕地图窗口。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“自动地图”为通行译名，四字适合界面。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地图窗口/界面功能名，归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Quick Travel 场景中的 Automap window 指向同一地图窗口，译名稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:337",
+      "evidence_rows": [
+        1885,
+        1964,
+        1049
+      ],
+      "source_excerpt": "When you perform a successful dodge, your opponent is thrown off balance granting you a ^+10% ^ToHit probability on your follow-up attack.",
+      "reason": "ToHit 指命中概率/命中判定，修正为“命中率”以保留概率语义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1049 明示 ToHit probability，1885 言 ToHit accuracy，1964 为属性标签，均指命中率/命中判定。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“命中”改为“命中率”，保留概率语义，单独 UI 标签也简洁可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "战斗命中属性标签，归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "修正后与 ToHit probability/accuracy 语义一致，不再使用歧义的“命中”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:338",
+      "evidence_rows": [
+        1960
+      ],
+      "source_excerpt": "Base Damage:",
+      "reason": "Base Damage 为武器/物品信息中的伤害标签，译名“基础伤害”准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1960 为武器/物品信息中的伤害标签 Base Damage。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“基础伤害”准确对应 Base Damage。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "战斗属性标签，归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Max Damage 的“最大伤害”共享“伤害”词根，语义层级清楚。"
+        }
+      }
+    },
+    {
+      "ref": "terms:339",
+      "evidence_rows": [
+        1709
+      ],
+      "source_excerpt": "[Damage Reduction, Damaged Halved]",
+      "reason": "Damage Reduction 为战斗减伤修正，译名“伤害减免”准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1709 的 Damage Reduction 指减免伤害的战斗修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“伤害减免”准确表达减伤机制。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "战斗减伤机制/属性，归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "译名“伤害减免”语义完整，可与缩写形式共用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:577",
+      "evidence_rows": [
+        4727
+      ],
+      "source_excerpt": "Max Damage",
+      "reason": "Max Damage 为图片战斗属性标签，译名“最大伤害”四字紧凑。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4727 为图片战斗属性标签 Max Damage。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“最大伤害”四字紧凑，适合固定贴图。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "战斗属性标签，归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与“基础伤害/伤害减免”保持“伤害”词根一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:578",
+      "evidence_rows": [
+        4728
+      ],
+      "source_excerpt": "Dmg Reduction",
+      "reason": "Dmg 为 Damage 的缩写，Dmg Reduction 与全称同义，共用“伤害减免”合理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4728 中 Dmg 为 Damage 的缩写，Dmg Reduction 指标签化减伤属性。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“伤害减免”与全称条共用译名，缩写场景下仍准确且四字适配。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "战斗属性标签，归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与全称 Damage Reduction 同义，共用“伤害减免”经核对属合理别名，不另造词。"
+        }
+      }
+    },
+    {
+      "ref": "terms:341",
+      "evidence_rows": [
+        1425,
+        1430
+      ],
+      "source_excerpt": "[Save vs Toxins: FAILED!]",
+      "reason": "Save vs Toxins 为对抗毒素的豁免检定提示，译名“毒素豁免”简洁准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1425/1430 为 Save vs Toxins 的失败/成功检定提示。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“毒素豁免”简洁对应 Save vs Toxins，适合括号提示。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "豁免检定标签，归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "失败/成功两态共用“毒素豁免”词根，语义一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:326",
+    "terms:331",
+    "terms:517",
+    "terms:328",
+    "non_translate:248",
+    "terms:330",
+    "terms:337",
+    "terms:338",
+    "terms:339",
+    "terms:577",
+    "terms:578",
+    "terms:341"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

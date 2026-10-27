@@ -1,0 +1,536 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 12 条 non_translate 候选：e1/e2/e3 为普通词或普通标题用词，缺乏脚本关键字证据，予以隔离；e4/e5/e6/e7/e8/e9/e10/e11/e12 为标识符、音效、资源扩展名或地图路径，保留不译并补充 applicability（e5 采用 text 覆盖独立及嵌入用例，e10 大小写不敏感覆盖 SFX_TorchOff 变体）。未新增条目。",
+  "acknowledged_findings": [
+    "F0185",
+    "F0190",
+    "F0191",
+    "F0192",
+    "F0193",
+    "F0195",
+    "F0200",
+    "F0201",
+    "F0203",
+    "F0207"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "脚本事件/对话触发标识符，证据仅见完整记录 trigger_talk。"
+        },
+        "term_reason": "脚本事件/对话触发标识符，保留原文。"
+      },
+      "reason": "补充适用范围和精确理由。",
+      "evidence_rows": [
+        2083
+      ],
+      "table": "non_translate",
+      "index": 287
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "运行时解锁条件标识符 unlocked_with 含下划线；在独立记录 2084 及后接钥匙名的嵌入记录 3122/3139/3432 中均须保留原文。"
+        },
+        "term_reason": "运行时解锁条件标识符，独立出现或后接钥匙名时均保留原文。"
+      },
+      "reason": "补充 text 适用范围，覆盖独立与嵌入用例。",
+      "evidence_rows": [
+        2084,
+        3122,
+        3139,
+        3432
+      ],
+      "table": "non_translate",
+      "index": 288
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "资源文件扩展名 .mer 以独立记录出现，按完整记录保留。"
+        },
+        "term_reason": "资源文件扩展名标识，保留原文。"
+      },
+      "reason": "补充适用范围和精确理由。",
+      "evidence_rows": [
+        2192
+      ],
+      "table": "non_translate",
+      "index": 290
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "音效标识符 SFX_Bash 以独立记录出现。"
+        },
+        "term_reason": "音效标识符，保留原文。"
+      },
+      "reason": "补充适用范围和精确理由。",
+      "evidence_rows": [
+        2247
+      ],
+      "table": "non_translate",
+      "index": 291
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "地图内部标识符 ug_reposit 以独立记录出现。"
+        },
+        "term_reason": "地图内部标识符，保留原文。"
+      },
+      "reason": "补充适用范围和精确理由。",
+      "evidence_rows": [
+        2266
+      ],
+      "table": "non_translate",
+      "index": 296
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "音效标识符 ghost_laugh 以独立记录出现。"
+        },
+        "term_reason": "音效标识符，保留原文。"
+      },
+      "reason": "补充适用范围和精确理由。",
+      "evidence_rows": [
+        2276
+      ],
+      "table": "non_translate",
+      "index": 297
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": false,
+          "reason": "音效标识符 sfx_torchoff；同一标识符在 1393 以 SFX_TorchOff 大小写变体出现，故按完整记录且不区分大小写保留。"
+        },
+        "term_reason": "音效标识符，保留原文；涵盖 SFX_TorchOff 大写变体。"
+      },
+      "reason": "补充大小写不敏感的完整记录适用范围。",
+      "evidence_rows": [
+        2280,
+        1393
+      ],
+      "table": "non_translate",
+      "index": 299
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "地图数据文件路径 data/ash.map 以独立记录出现。"
+        },
+        "term_reason": "地图数据文件路径，保留原文。"
+      },
+      "reason": "补充适用范围和精确理由。",
+      "evidence_rows": [
+        2303
+      ],
+      "table": "non_translate",
+      "index": 303
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "音效标识符 SFX_EQP_ARML 以独立记录出现。"
+        },
+        "term_reason": "音效标识符，保留原文。"
+      },
+      "reason": "补充适用范围和精确理由。",
+      "evidence_rows": [
+        2307
+      ],
+      "table": "non_translate",
+      "index": 305
+    }
+  ],
+  "quarantine": [
+    {
+      "reason": "time 为普通时间词/标题词，证据 2146 为句子、2492 为标题；非脚本关键字，不应作为全局不译项。",
+      "evidence_rows": [
+        2076,
+        2146,
+        2492
+      ],
+      "table": "non_translate",
+      "index": 280
+    },
+    {
+      "reason": "trauma 为普通名词，1026 中位于 physical trauma 句子，2081 独立记录不足以证明脚本关键字；应参与翻译。",
+      "evidence_rows": [
+        2081,
+        1026
+      ],
+      "table": "non_translate",
+      "index": 285
+    },
+    {
+      "reason": "trap 为普通名词/标题用词，175 为 It's a Trap!，2082 独立记录不足以证明脚本关键字；应参与翻译。",
+      "evidence_rows": [
+        2082,
+        175
+      ],
+      "table": "non_translate",
+      "index": 286
+    }
+  ],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:280",
+      "evidence_rows": [
+        2076,
+        2146,
+        2492
+      ],
+      "source_excerpt": "time",
+      "reason": "原文 time 是普通时间词；2146 为句子 The current time is，2492 为标题 Time，均不支持脚本关键字。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2076 原文为 time；2146/2492 显示普通文本用法。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "不应保留原文；在 2146/2492 中应译为“时间/当前时间是”。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原 non_translate 分类缺乏脚本标记依据，已按普通词隔离。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "2146 与 2492 用法一致，均为普通时间词义。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:285",
+      "evidence_rows": [
+        2081,
+        1026
+      ],
+      "source_excerpt": "trauma",
+      "reason": "trauma 为普通名词，1026 中作 physical trauma 的普通宾语，不能仅凭独立记录认定为脚本关键字。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2081 原文为 trauma；1026 中为 physical trauma。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "应译为“创伤”等普通词义，不应作为不译标识符。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "无运行时/脚本标识证据，quarantine 更合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "1026 与 2081 均为创伤/损伤的普通词义。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:286",
+      "evidence_rows": [
+        2082,
+        175
+      ],
+      "source_excerpt": "trap",
+      "reason": "trap 为普通词，175 为标题 It's a Trap!，2082 独立记录不足以证明脚本关键字；应翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2082 原文为 trap；175 中作 It's a Trap! 的普通名词。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "应译为“陷阱”等，不应保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "普通名词/标题用词，非脚本关键字，quarantine。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "175 与 2082 均为陷阱的普通词义。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:287",
+      "evidence_rows": [
+        2083
+      ],
+      "source_excerpt": "trigger_talk",
+      "reason": "保留为脚本事件/对话触发标识符；仅见完整记录，适用 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2083 原文为 trigger_talk，含下划线，非自然语言。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为标识符应保持原样 trigger_talk。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于脚本事件/对话触发标识符，non_translate 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅见该独立记录，无冲突变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:288",
+      "evidence_rows": [
+        2084,
+        3122,
+        3139,
+        3432
+      ],
+      "source_excerpt": "unlocked_with",
+      "reason": "保留为运行时解锁条件标识符；既独立出现，也后接钥匙名嵌入出现，适用 text 覆盖两种用例。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2084 为独立 unlocked_with；3122/3139/3432 为 unlocked_with (Storage/Crypt/Odd Key) 嵌入用例。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "标识符在独立及嵌入文本中均应保持 unlocked_with 不译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "运行时解锁条件标记，non_translate 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立和嵌入用例使用同一 token，大小写一致；适用 text。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:290",
+      "evidence_rows": [
+        2192
+      ],
+      "source_excerpt": ".mer",
+      "reason": "保留为资源文件扩展名 .mer；证据仅见独立记录，适用 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2192 原文为 .mer。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "扩展名保持 .mer 不译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "资源文件扩展名标识，non_translate 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅见该独立记录，无冲突变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:291",
+      "evidence_rows": [
+        2247
+      ],
+      "source_excerpt": "SFX_Bash",
+      "reason": "保留为音效标识符 SFX_Bash；仅见完整记录，适用 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2247 原文为 SFX_Bash。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "音效标识符保持原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "音效标识符，non_translate 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅见该独立记录，无冲突变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:296",
+      "evidence_rows": [
+        2266
+      ],
+      "source_excerpt": "ug_reposit",
+      "reason": "保留为地图内部标识符 ug_reposit；仅见完整记录，适用 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2266 原文为 ug_reposit。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "内部地图标识保持原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地图内部标识符，non_translate 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅见该独立记录，无冲突变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:297",
+      "evidence_rows": [
+        2276
+      ],
+      "source_excerpt": "ghost_laugh",
+      "reason": "保留为音效标识符 ghost_laugh；仅见完整记录，适用 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2276 原文为 ghost_laugh。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "音效标识符保持原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "音效标识符，non_translate 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅见该独立记录，无冲突变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:299",
+      "evidence_rows": [
+        2280,
+        1393
+      ],
+      "source_excerpt": "sfx_torchoff",
+      "reason": "保留为音效标识符；2280 为小写 sfx_torchoff，1393 为 SFX_TorchOff 大小写变体，故 whole_record 且 case_sensitive false。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2280 原文为 sfx_torchoff；1393 corpus 为 SFX_TorchOff。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "音效标识符保持原文，不因大小写变体翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "音效标识符，non_translate 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "大小写变体指向同一音效标识，已用 case_sensitive false 覆盖。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:303",
+      "evidence_rows": [
+        2303
+      ],
+      "source_excerpt": "data/ash.map",
+      "reason": "保留为地图数据文件路径；仅见完整记录，适用 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2303 原文为 data/ash.map。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "路径保持原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地图数据文件路径，non_translate 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅见该独立记录，无冲突变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:305",
+      "evidence_rows": [
+        2307
+      ],
+      "source_excerpt": "SFX_EQP_ARML",
+      "reason": "保留为音效标识符；仅见完整记录，适用 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2307 原文为 SFX_EQP_ARML。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "音效标识符保持原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "音效标识符，non_translate 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅见该独立记录，无冲突变体。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:280",
+    "non_translate:285",
+    "non_translate:286",
+    "non_translate:287",
+    "non_translate:288",
+    "non_translate:290",
+    "non_translate:291",
+    "non_translate:296",
+    "non_translate:297",
+    "non_translate:299",
+    "non_translate:303",
+    "non_translate:305"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

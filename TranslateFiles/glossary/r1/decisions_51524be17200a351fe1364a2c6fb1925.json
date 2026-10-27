@@ -1,0 +1,411 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1–e11 的原文、译名、分类与一致性：统一 Barrea 为「巴雷亚」、Eversleep Cemetery 为「长眠公墓」、Southern Gate(s) 为「南门」，并将 Mercenary's Note 修正为「佣兵字条」；其余条目保留或仅作一致性确认。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "巴雷亚"
+      },
+      "reason": "采用已发布 v1.5 的 Barrea 音译「巴雷亚」，避免「巴瑞亚／巴雷亚」并存。",
+      "evidence_rows": [
+        446,
+        1010
+      ],
+      "table": "terms",
+      "index": 2
+    },
+    {
+      "patch": {
+        "recommended_translation": "佣兵字条",
+        "term_reason": "任务中交给威廉、用作刺杀阴谋证据的独特佣兵字条。"
+      },
+      "reason": "原文是 Note（字条/便条），不是笔记或书；按任务物品统一为「佣兵字条」。",
+      "evidence_rows": [
+        217,
+        950,
+        4452
+      ],
+      "table": "terms",
+      "index": 129
+    },
+    {
+      "patch": {
+        "recommended_translation": "巴雷亚荒原"
+      },
+      "reason": "Barrea 统一为「巴雷亚」；Desolation of Barrea 指其荒原地区。",
+      "evidence_rows": [
+        1010
+      ],
+      "table": "terms",
+      "index": 224
+    },
+    {
+      "patch": {
+        "recommended_translation": "巴雷亚佣兵团",
+        "term_reason": "从远西进入、来源与目的不明的巴雷亚雇佣兵势力。"
+      },
+      "reason": "沿用已发布 v1.5 的「巴雷亚」音译；复数势力作为组织译为「佣兵团」，与单兵类型区分。",
+      "evidence_rows": [
+        942,
+        4190
+      ],
+      "table": "terms",
+      "index": 234
+    },
+    {
+      "patch": {
+        "recommended_translation": "巴雷亚雇佣兵"
+      },
+      "reason": "Barrea 与已发布 v1.5 统一为「巴雷亚」；单兵类型用「雇佣兵」。",
+      "evidence_rows": [
+        2892
+      ],
+      "table": "terms",
+      "index": 462
+    },
+    {
+      "patch": {
+        "recommended_translation": "长眠公墓",
+        "term_reason": "Leurik 管理、位于 North Parish 的墓地，Adler Keldam 的墓室所在地。"
+      },
+      "reason": "采用已发布 v1.5 译名「长眠公墓」，替换「永眠公墓」，保持任务与人物文本一致。",
+      "evidence_rows": [
+        648,
+        1205,
+        3164
+      ],
+      "table": "terms",
+      "index": 7
+    },
+    {
+      "patch": {
+        "recommended_translation": "南门"
+      },
+      "reason": "与单数 Southern Gate 及地图短标签统一为「南门」，避免「南方大门／南门」并存。",
+      "evidence_rows": [
+        439,
+        3042
+      ],
+      "table": "terms",
+      "index": 15
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:2",
+      "evidence_rows": [
+        446,
+        1010
+      ],
+      "source_excerpt": "Province of Barrea",
+      "reason": "Barrea 为西部省份专名；译名需按已发布版本统一为「巴雷亚」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "446 将 Barrea 定义为 Eschalon 西部省份，1010 亦以 Barrea 指该地区。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "已由「巴瑞亚」改为「巴雷亚」，与已发布 v1.5 的 Barrea 音译一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为地名，符合原文的 Province of Barrea。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Barrea 在 446 与 1010 中同指西部省份，统一为「巴雷亚」，避免音译分裂。"
+        }
+      }
+    },
+    {
+      "ref": "terms:20",
+      "evidence_rows": [
+        446
+      ],
+      "source_excerpt": "known as The Desolation",
+      "reason": "The Desolation 是 Barrea 内的具名荒地地区，保留独立地名译法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "446 明言 Barrea 是被称为 The Desolation 的严酷荒地。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「荒芜之地」可表达该具名荒地，不按普通形容词处理。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为地名，符合其为 Barrea 内地区的用法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "446 同段同时出现 The Desolation 与 Barrea，保留独立地名「荒芜之地」可与「巴雷亚荒原」的复合地名并存。"
+        }
+      }
+    },
+    {
+      "ref": "terms:129",
+      "evidence_rows": [
+        217,
+        950,
+        4452
+      ],
+      "source_excerpt": "Mercenary's Note",
+      "reason": "这是交给威廉的任务字条，原文 Note 不应译为笔记或书。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "217 为物品标题，950/4452 均显示该字条用于交给 William。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由「《佣兵笔记》」改为「佣兵字条」，避免把 Note 误作笔记/书。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为物品，符合任务物品「Mercenary's Note」。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "任务文本 950/4452 与物品标题 217 统一采用「佣兵字条」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:224",
+      "evidence_rows": [
+        1010
+      ],
+      "source_excerpt": "vast Desolation of Barrea",
+      "reason": "Desolation of Barrea 是 Barreans 故乡的荒漠灌丛地区，Barrea 需统一音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1010 说明 Barreans 来自远西的 vast Desolation of Barrea。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "已由「巴瑞亚荒原」改为「巴雷亚荒原」，统一 Barrea 音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为地名，符合文中荒漠灌丛地区。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "1010 的 Barrea 与西部省份同名，统一为「巴雷亚」；复合地名保留「荒原」义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:234",
+      "evidence_rows": [
+        942,
+        4190
+      ],
+      "source_excerpt": "Barrea Mercenaries",
+      "reason": "Barrea Mercenaries 指从远西进入的雇佣兵势力，作为组织统一译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "942/4190 均称 Barrea Mercenaries 从远西进入，来源与目的不明。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "已由「巴瑞亚佣兵团」改为「巴雷亚佣兵团」，采用已发布 v1.5 的 Barrea 音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为组织，符合该复数势力作为雇佣兵组织的用法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "942/4190 同指该势力，统一为「巴雷亚佣兵团」；Barrea 不再出现「巴瑞亚」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:374",
+      "evidence_rows": [
+        1460,
+        1019
+      ],
+      "source_excerpt": "Mercenary",
+      "reason": "1460 是独立的职业/身份标签；1019 显示普通句中也作职业泛称，需限定匹配范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1460 为独立记录「Mercenary」；1019 中亦出现 as a Mercenary 的职业泛称。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "独立标签译为「雇佣兵」，并以 whole_record 仅匹配完整记录，避免误替换普通句。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为身份，符合独立职业/分类标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Barrea Mercenary 的「雇佣兵」词根一致；普通句义不被全局冻结。"
+        }
+      }
+    },
+    {
+      "ref": "terms:462",
+      "evidence_rows": [
+        2892
+      ],
+      "source_excerpt": "Barrea Mercenary",
+      "reason": "这是与 Barrea 派系相关的敌人/单位类型名，需统一 Barrea 音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2892 为独立单位标签「Barrea Mercenary」。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "已由「巴瑞亚雇佣兵」改为「巴雷亚雇佣兵」，统一 Barrea 音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为身份，符合单位类型标签。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "2892 的 Barrea 统一为「巴雷亚」；单兵用「雇佣兵」，与复数组织的「佣兵团」区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:7",
+      "evidence_rows": [
+        648,
+        1205,
+        3164
+      ],
+      "source_excerpt": "director of Eversleep Cemetery",
+      "reason": "Eversleep Cemetery 是 North Parish 的具名墓地，采用已发布 v1.5 译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "648 明言 Leurik 是 Eversleep Cemetery 的主管；1205 将该墓地列为任务地点。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "已由「永眠公墓」改为「长眠公墓」，与已发布 v1.5 译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为地名，符合墓地地点用法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "648/1205/3164 均指同一墓地，统一采用「长眠公墓」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:15",
+      "evidence_rows": [
+        439,
+        3042
+      ],
+      "source_excerpt": "reached the Southern Gates",
+      "reason": "Southern Gates 是封锁通往 Thaermore 的关隘，需与单数变体及地图标签统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "439/3042 均描述商队抵达被封锁的 Southern Gates。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "已由「南方大门」改为「南门」，兼顾地名统一与地图短标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为地名，符合关隘/通道地标。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "复数 Southern Gates 统一为「南门」，与单数 Southern Gate 的译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:16",
+      "evidence_rows": [
+        441,
+        1981,
+        4697
+      ],
+      "source_excerpt": "called the Southern Gate",
+      "reason": "Southern Gate 是 Crakamir 边界关隘/长墙，单复数变体统一为「南门」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "441 称长墙为 Southern Gate；1981 将其作为快速旅行出口；4697 为地图标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「南门」简短且与复数变体一致，适合地图标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为地名，符合关隘/长墙地标。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "441/1981/4697 均指 Southern Gate，统一为「南门」，不因单复数分批而改译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:28",
+      "evidence_rows": [
+        462,
+        4243
+      ],
+      "source_excerpt": "along the Southern Sea",
+      "reason": "Southern Sea 是 Salted Coast 所临海域，作为地名保留简洁译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "462/4243 均将 Salted Coast 描述为沿 Southern Sea 的地区。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译为「南海」，简洁且符合海域地名用法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为地名，符合 Southern Sea 的海域名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "462/4243 同指该海域，统一为「南海」，未与 Salted Coast 混同。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:2",
+    "terms:20",
+    "terms:129",
+    "terms:224",
+    "terms:234",
+    "terms:374",
+    "terms:462",
+    "terms:7",
+    "terms:15",
+    "terms:16",
+    "terms:28"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

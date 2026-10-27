@@ -1,0 +1,369 @@
+{
+  "review_complete": true,
+  "review_summary": "已审 12 条分配条目，逐项核对来源、译名、分类与一致性；f1–f6 均已查看。共享译名多为同一术语的控制符或词形变体，保留统一；e1 按已发布 v1.5 译名修正为「绝对复原药水」，e8 将 Divination 核心译名统一为「占卜术」。",
+  "acknowledged_findings": [
+    "F0264",
+    "F0265",
+    "F0269",
+    "F0270",
+    "F0271",
+    "F0282"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "绝对复原药水"
+      },
+      "reason": "采用已发布 v1.5 译名「绝对复原药水」，替代暂定「完全复原药水」；该条与全称 Potion of Absolute Restoration 指同一药水。",
+      "evidence_rows": [
+        1216
+      ],
+      "table": "terms",
+      "index": 245
+    },
+    {
+      "patch": {
+        "recommended_translation": "占卜术"
+      },
+      "reason": "将 *Divination 的技能核心译名统一为「占卜术」，与跨批 Divination 条目一致；* 为控制符，不进入译名。",
+      "evidence_rows": [
+        1043
+      ],
+      "table": "terms",
+      "index": 269
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:245",
+      "evidence_rows": [
+        1216
+      ],
+      "source_excerpt": "a potion of Absolute Restoration",
+      "reason": "1216 明确这是要送给盐渍海岸以西病人的药水；Absolute Restoration 是其省略名称。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1216 原文 a potion of Absolute Restoration 指向该药水名，来源成立。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译「完全复原药水」可用，但已发布 v1.5 译名为「绝对复原药水」，本批改为该名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "任务药水归入物品，符合用途。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与全称 Potion of Absolute Restoration 指同一药水，采用已发布核心名「绝对复原药水」；跨批 e18 为只读项待同步。"
+        }
+      }
+    },
+    {
+      "ref": "terms:246",
+      "evidence_rows": [
+        918
+      ],
+      "source_excerpt": "Letter for Penelope",
+      "reason": "918 原文 Give her the Letter for Penelope，是交给佩内洛普的任务信件。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "918 原文 Give her the Letter for Penelope 明确信件用途与收件人。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「给佩内洛普的信」准确对应 Letter for Penelope；for/to 不改变物品核心名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "任务信件属于物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Penelope 译名「佩内洛普」及 related Letter to Penelope 的「给佩内洛普的信」核心一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:247",
+      "evidence_rows": [
+        893
+      ],
+      "source_excerpt": "opened vault 15",
+      "reason": "893 中 Vault Master 指认玩家打开的 vault 15，是具体编号宝库。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "893 原文 opened vault 15 明确该编号宝库。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「15号宝库」对应 vault 15；与 Vault Master 的「宝库」用词一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具体编号宝库在任务语境中作为地点/场所，归地名合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "宝库核心词与 related Vault Master=宝库总管 一致；未采用易混的「金库」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:250",
+      "evidence_rows": [
+        1212
+      ],
+      "source_excerpt": "Find the Goblin Obelisk in Crakamir",
+      "reason": "1212 将 Goblin Obelisk 作为 Crakamir 中的地标。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1212 原文 Find the Goblin Obelisk in Crakamir 明确其为地标。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「哥布林方尖碑」直接对应 Goblin Obelisk。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地标归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Goblin 在此为修饰语，按普通族名译「哥布林」；不套用 Goblin Gruzz 的专名音译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:264",
+      "evidence_rows": [
+        1019
+      ],
+      "source_excerpt": "Fighters are experts at hand-to-hand combat",
+      "reason": "1019 描述 Fighters 为近战专家，且初始拥有 *Swords 技能。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1019 原文 Fighters are experts at hand-to-hand combat 明确职业定位。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「战士」对应 Fighter 职业名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "职业身份归入身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 *Swords 等技能名不冲突；普通词 fighter 不另作全局术语扩散。"
+        }
+      }
+    },
+    {
+      "ref": "terms:266",
+      "evidence_rows": [
+        1021
+      ],
+      "source_excerpt": "Magick Users are proficient in the Magickal Arts",
+      "reason": "1021 描述 Magick Users 专精 Magickal Arts，并初始拥有 *Elemental 技能。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1021 原文明确其为专精魔法技艺的职业。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「魔法师」对应 Magick User 职业名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "职业身份归入身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Elemental Magick=元素魔法 共享「魔法」核心，但 Magick User 为职业名，不与技能混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:268",
+      "evidence_rows": [
+        1042
+      ],
+      "source_excerpt": "*Alchemy deals with the production of Potions and Elixirs",
+      "reason": "1042 定义 *Alchemy 为通过混合 Reactants/Reagents 制造 Potions/Elixirs 的奥术技能。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1042 原文明确 *Alchemy 的制造药水/灵药机制。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「炼金术」对应 *Alchemy；* 为颜色控制符，不进入译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "奥术技能归入技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 已核对：与 e13 Alchemy=炼金术 为同一技能，星号差异不构成改译理由。"
+        }
+      }
+    },
+    {
+      "ref": "terms:269",
+      "evidence_rows": [
+        1043
+      ],
+      "source_excerpt": "The Arcane Skill of *Divination deals with Magicks of the Spiritual and Organic realms",
+      "reason": "1043 定义 *Divination 为处理灵魂与有机领域魔法的奥术技能。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1043 原文明确 *Divination 的技能领域与用途。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译「预言术」改为「占卜术」，使 Divination 的核心译名与跨批同名条目统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "奥术技能归入技能。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 related Divination=占卜术 的核心译名一致；* 为控制符不译，复合词 Divination magick 可另按语境处理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:270",
+      "evidence_rows": [
+        1044
+      ],
+      "source_excerpt": "The Arcane Skill of *Elemental deals with Magicks of the elemental realms",
+      "reason": "1044 定义 *Elemental 为火、土、气、水四系元素的奥术技能。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1044 原文明确 *Elemental 涵盖四元素魔法。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「元素魔法」对应 *Elemental 技能；* 为控制符不译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "奥术技能归入技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f3 已核对：与 e15 Elemental Magick=元素魔法 指向同一元素魔法领域/技能，共用译名可接受。"
+        }
+      }
+    },
+    {
+      "ref": "terms:271",
+      "evidence_rows": [
+        1045
+      ],
+      "source_excerpt": "*Light *Armor encompasses the use of lightweight protection",
+      "reason": "1045 定义 *Light *Armor 涵盖轻质皮甲等防护，并说明穿戴增加移动噪音 15%。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1045 原文明确轻甲范围与噪音机制。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「轻甲」对应 *Light *Armor；星号为控制符不译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为盔甲使用技能归入技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f4 已核对：与 e16 light armors=轻甲 的护甲类别核心一致；单复数/技能名差异不影响译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:272",
+      "evidence_rows": [
+        1046
+      ],
+      "source_excerpt": "*Heavy *Armor encompasses the use of heavyweight protection",
+      "reason": "1046 定义 *Heavy *Armor 涵盖金属合金重甲，并说明噪音增加 30%。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1046 原文明确重甲范围与噪音机制。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「重甲」对应 *Heavy *Armor；星号为控制符不译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为盔甲使用技能归入技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f5 已核对：与 e17 heavy armors=重甲 核心一致，不因单复数改译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:274",
+      "evidence_rows": [
+        1048
+      ],
+      "source_excerpt": "*Cartography is the ability to accurately map your surroundings as you explore.",
+      "reason": "1048 定义 *Cartography 为探索时准确绘制周围地图的能力，至少 1 点才启用自动地图。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1048 原文明确制图技能与自动地图机制。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「制图学」对应 *Cartography；星号为控制符不译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "探索绘图能力归入技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f2 已核对：与 e14 Cartography=制图学 为同一技能，共用译名正确。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:245",
+    "terms:246",
+    "terms:247",
+    "terms:250",
+    "terms:264",
+    "terms:266",
+    "terms:268",
+    "terms:269",
+    "terms:270",
+    "terms:271",
+    "terms:272",
+    "terms:274"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

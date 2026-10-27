@@ -1,0 +1,543 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成全部 12 条非翻译条目复核：确认它们均为运行标识、网址或扩展名，应保留原文；未新增或改变译名，仅为各条补全限定作用域，并处理 f1–f8。",
+  "acknowledged_findings": [
+    "F0032",
+    "F0033",
+    "F0035",
+    "F0041",
+    "F0043",
+    "F0044",
+    "F0049",
+    "F0050"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "1304 的整条记录就是地图遮挡文件扩展名 .opq，只在完整记录匹配时保留。"
+        }
+      },
+      "reason": "为 .opq 补明确作用域，避免形成全局禁翻。",
+      "evidence_rows": [
+        1304
+      ],
+      "table": "non_translate",
+      "index": 100
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "IC_QUIVER 是箭袋类物品的图标字段，1327 独立出现，2747/2617 作为物品行首字段嵌入；按大小写敏感精确文本保护。"
+        }
+      },
+      "reason": "处理 f1：该内部图标常量在独立与嵌入用例中均须原样保留。",
+      "evidence_rows": [
+        1327,
+        2747,
+        2617
+      ],
+      "table": "non_translate",
+      "index": 101
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "IC_HELM 是头盔类物品的图标字段，1328 独立出现，2752 作为物品行首字段嵌入；按大小写敏感精确文本保护。"
+        }
+      },
+      "reason": "处理 f2：该内部图标常量在独立与嵌入用例中均须原样保留。",
+      "evidence_rows": [
+        1328,
+        2752
+      ],
+      "table": "non_translate",
+      "index": 102
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "IC_KEY 是钥匙类物品的图标字段，1339 独立出现，2740/2663 作为物品行首字段嵌入；按大小写敏感精确文本保护。"
+        }
+      },
+      "reason": "处理 f3：该内部图标常量在独立与多次嵌入用例中均须原样保留。",
+      "evidence_rows": [
+        1339,
+        2740,
+        2663
+      ],
+      "table": "non_translate",
+      "index": 104
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "1379 的整条记录是完整购买网址，仅按完整记录保留 URL。"
+        }
+      },
+      "reason": "为购买网址补明确作用域，避免全局禁翻。",
+      "evidence_rows": [
+        1379
+      ],
+      "table": "non_translate",
+      "index": 112
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "1381 的整条记录是完整购买网址，仅按完整记录保留 URL。"
+        }
+      },
+      "reason": "为另一完整购买网址补明确作用域。",
+      "evidence_rows": [
+        1381
+      ],
+      "table": "non_translate",
+      "index": 114
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "www.basiliskgames.com 在 4660、4735 中作为字面域名嵌入购买/续作提示，必须保留；精确文本保护可同时覆盖这两处及更大 URL 中的同域名。"
+        }
+      },
+      "reason": "域名为字面网址，补大小写敏感文本作用域以覆盖嵌入用例。",
+      "evidence_rows": [
+        4660,
+        4735
+      ],
+      "table": "non_translate",
+      "index": 383
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "1380 的整条记录是独立音效标识符 SFX_Chimes，仅按完整记录保留。"
+        }
+      },
+      "reason": "处理 f4：音效标识符需限定为完整记录匹配。",
+      "evidence_rows": [
+        1380
+      ],
+      "table": "non_translate",
+      "index": 113
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": false,
+          "reason": "1392 与 2281 分别为 SFX_TorchOn、sfx_torchon，均作为独立音效标识符出现；不区分大小写的完整记录匹配可覆盖两种写法。"
+        }
+      },
+      "reason": "处理 f5：覆盖同一音效标识符的大小写变体，避免全局禁翻。",
+      "evidence_rows": [
+        1392,
+        2281
+      ],
+      "table": "non_translate",
+      "index": 116
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "1396 的整条记录是独立音效标识符 SFX_Deflect，仅按完整记录保留。"
+        }
+      },
+      "reason": "处理 f6：音效标识符需限定为完整记录匹配。",
+      "evidence_rows": [
+        1396
+      ],
+      "table": "non_translate",
+      "index": 117
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "1434 的整条记录是独立音效标识符 SFX_Ping，仅按完整记录保留。"
+        }
+      },
+      "reason": "处理 f7：音效标识符需限定为完整记录匹配。",
+      "evidence_rows": [
+        1434
+      ],
+      "table": "non_translate",
+      "index": 122
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "1439 的整条记录是独立音效标识符 sfx_slip，仅按完整记录保留。"
+        }
+      },
+      "reason": "处理 f8：音效标识符需限定为完整记录匹配。",
+      "evidence_rows": [
+        1439
+      ],
+      "table": "non_translate",
+      "index": 123
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:100",
+      "evidence_rows": [
+        1304
+      ],
+      "source_excerpt": ".opq",
+      "reason": "地图遮挡文件扩展名；整条记录为字面扩展名，保留原文并补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1304 的完整原文为 .opq，与条目 source 一致，含义是地图遮挡文件扩展名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译条目应原样保留，未改译或添加中文扩展名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；原缺 applicability，已补为 whole_record、大小写敏感。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该扩展名只有一种写法，无同形正文词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:101",
+      "evidence_rows": [
+        1327,
+        2747,
+        2617
+      ],
+      "source_excerpt": "IC_QUIVER",
+      "reason": "箭袋类物品图标常量；1327 独立出现，2747/2617 嵌入物品 CSV 行，保留原文并补大小写敏感 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1327 为独立 IC_QUIVER；2747/2617 的完整物品行以其为首字段，并与 Flight Arrow、Steel Arrow 配套，确为箭袋图标常量。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留内部图标标识，不把 IC_QUIVER 译成正文“箭袋”。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；补大小写敏感 text 作用域以覆盖独立和嵌入 CSV 字段。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各用例均写作 IC_QUIVER，无大小写或拼写变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:102",
+      "evidence_rows": [
+        1328,
+        2752
+      ],
+      "source_excerpt": "IC_HELM",
+      "reason": "头盔图标常量；1328 独立出现，2752 嵌入 Steel Full Helm 物品行，保留原文并补大小写敏感 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1328 为独立 IC_HELM；2752 的 Steel Full Helm 物品行以其为首字段，确为头盔图标常量。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留内部图标标识，不译作“头盔”等正文词。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；补大小写敏感 text 作用域以覆盖独立和嵌入用例。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立与嵌入用例均写作 IC_HELM，无变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:104",
+      "evidence_rows": [
+        1339,
+        2740,
+        2663
+      ],
+      "source_excerpt": "IC_KEY",
+      "reason": "钥匙图标常量；1339 独立出现，2740/2663 嵌入 Security Key、Odd Key 物品行，保留原文并补大小写敏感 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1339 为独立 IC_KEY；2740 的 Security Key、2663 的 Odd Key 物品行均以其为首字段，确为钥匙图标常量。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留内部图标标识，不译作“钥匙”等正文词。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；补大小写敏感 text 作用域以覆盖独立和多次嵌入用例。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各用例均写作 IC_KEY，无大小写或拼写变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:112",
+      "evidence_rows": [
+        1379
+      ],
+      "source_excerpt": "www.basiliskgames.com/purchase",
+      "reason": "完整购买网址；原样保留，补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1379 整条记录为 www.basiliskgames.com/purchase，是购买网址。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为 URL 原样保留，未本地化域名或路径。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；补 whole_record、大小写敏感作用域，仅保护完整记录。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该购买网址写法固定，无译名或大小写变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:114",
+      "evidence_rows": [
+        1381
+      ],
+      "source_excerpt": "http://basiliskgames.com/purchase.html",
+      "reason": "完整购买网址；原样保留，补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1381 整条记录为 http://basiliskgames.com/purchase.html，是购买网址。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为 URL 原样保留，未本地化协议、域名或路径。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；补 whole_record、大小写敏感作用域，仅保护完整记录。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该完整 URL 写法固定，无译名或大小写变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:383",
+      "evidence_rows": [
+        4660,
+        4735
+      ],
+      "source_excerpt": "www.basiliskgames.com",
+      "reason": "字面域名嵌入两句图像文字；保留原文，并补大小写敏感 text 作用域覆盖嵌入式用例。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4660 与 4735 的完整句子分别嵌入 www.basiliskgames.com，均为购买/续作信息中的字面域名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "域名作为网址原样保留，不翻译 www 或域名主体。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；补大小写敏感 text 作用域以覆盖两个嵌入式用例及更大 URL 中的同域名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处均保留同一域名写法，无替代译名。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:113",
+      "evidence_rows": [
+        1380
+      ],
+      "source_excerpt": "SFX_Chimes",
+      "reason": "独立音效标识符；原样保留，补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1380 的完整原文为 SFX_Chimes，是独立的音效标识符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留音效标识符，不翻译为“钟声”等正文词。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；补 whole_record、大小写敏感作用域。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "只有该独立写法，无变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:116",
+      "evidence_rows": [
+        1392,
+        2281
+      ],
+      "source_excerpt": "SFX_TorchOn",
+      "reason": "火把开启音效标识符；1392 与 2281 为大小写变体，补不区分大小写的 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1392 为 SFX_TorchOn，2281 为小写 sfx_torchon，二者均独立出现，指同一火把开启音效标识符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留音效标识符原样；大小写变体按记录各自保留，不作正文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；补 whole_record 且不区分大小写，覆盖两种独立形式。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "大小写变体属同一标识符，保护规则统一，不产生不同译名。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:117",
+      "evidence_rows": [
+        1396
+      ],
+      "source_excerpt": "SFX_Deflect",
+      "reason": "独立音效标识符；原样保留，补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1396 的完整原文为 SFX_Deflect，是独立音效标识符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留音效标识符，不译作“格挡”等正文词。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；补 whole_record、大小写敏感作用域。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "只有该独立写法，无变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:122",
+      "evidence_rows": [
+        1434
+      ],
+      "source_excerpt": "SFX_Ping",
+      "reason": "独立音效标识符；原样保留，补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1434 的完整原文为 SFX_Ping，是独立音效标识符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留音效标识符，不译作“叮声”等正文词。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；补 whole_record、大小写敏感作用域。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "只有该独立写法，无变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:123",
+      "evidence_rows": [
+        1439
+      ],
+      "source_excerpt": "sfx_slip",
+      "reason": "独立音效标识符；原样保留，补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1439 的完整原文为 sfx_slip，是独立音效标识符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留音效标识符原样，不译作“滑倒”等正文词。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；补 whole_record、大小写敏感作用域。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该条为小写固定写法，无其他变体。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:100",
+    "non_translate:101",
+    "non_translate:102",
+    "non_translate:104",
+    "non_translate:112",
+    "non_translate:114",
+    "non_translate:383",
+    "non_translate:113",
+    "non_translate:116",
+    "non_translate:117",
+    "non_translate:122",
+    "non_translate:123"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

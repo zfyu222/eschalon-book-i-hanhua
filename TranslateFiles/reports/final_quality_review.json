@@ -1,0 +1,182 @@
+{
+  "schema": 2,
+  "kind": "final",
+  "pilot_key": "bc7eac5d09f9533a64e30b54b11c2e9bfc69638bcf94765c44a97f8d81eb7b54",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15",
+  "glossary": {
+    "hash": "76cc99de19df4e649ef5056129ff4b8bdd8cc0c6e1fadde69dfc3b1416c32787",
+    "path": "glossary\\r1\\freeze_0680ffd0\\built\\glossary_reviewed.json",
+    "revision": 1
+  },
+  "snapshot_hash": "e692825083e3dd597f5fb27bd3d6f9c6991a8854dce6c90b6d00b5692bdf837e",
+  "coverage": {
+    "records": 4743,
+    "text_types": {
+      "game_text": 4563,
+      "image_text": 180
+    },
+    "missing_context": 0,
+    "risk_records": 3526,
+    "ordinary_sample": 0,
+    "sol_records": 12
+  },
+  "risk_detection": "Heuristic candidates plus reviewer findings; absence of flags is not proof of correctness.",
+  "records_to_check": [],
+  "consistency": [],
+  "glossary_checks": [],
+  "pilot_batch_summaries": {},
+  "check_signatures": {
+    "R0000529_230605c003": "3e351723faaf5c16d15bb76a371950e8469d51c3b7914bdd0f7cc6b9e1cb1371",
+    "R0000551_051f4e9372": "a0d9120506f4ffdc5b4b9894b09ef1170b40f538b182af0c572e39ec00d679b0",
+    "R0000667_0e6d78cacd": "80f054901f7428714e1c47b924bae57f3549c90144388baaf21eba681a8818d4",
+    "R0000789_41669996cb": "ac473c355e1739151702ecbd446e4fe53acb5befcdfc28c48a51a82e2f6d0aaa",
+    "R0000856_3482e19f65": "da93313dd104a30009c28f6a0731ce129f86a1de212f2fde4379d7f0e0674c91",
+    "R0001254_75c1ff8646": "8df08d89a4aa993757a9811503e15f227bfbb6de146f2e5dde9aaf55abd89a93",
+    "R0001663_2da1328d30": "acfbd6b13e56f783f3faa8d3b6348195c755d76838ae4e328346b41902307c0e",
+    "R0002003_28391d3bc6": "86a7709846add187cf913f8a4e400e71ba6fa6425c229ba49e6759d01a9426cf",
+    "R0002429_017785cd91": "2e46d06d0e5d448df1c8c343d9e6b7813c4b23b14e40d52120a272e92d444964",
+    "R0003289_a14c27a0fa": "989b82fbcf120b1e4cb0bbfb2880b9db9f271468ad0ff1e05b8e0b81e2d14e4d",
+    "R0003452_8fc9d029e4": "01ee7d13135ca49f63793ba40841e33d64138a28ebfe79cbac670bd2cf7608fd",
+    "R0003701_b4da04c2bb": "e91fa3e51ffdd488be8c29e9dbcc7b6b8740f4f1bad29bfce1715117ef2ccb61"
+  },
+  "reused_decisions": {
+    "R0000529_230605c003": {
+      "decision": {
+        "disposition": "contextual",
+        "id": "R0000529_230605c003",
+        "reason": "源文末尾的 q 是对话分支 ID 字节，游戏绘制时不会显示，译文不保留该字符正确。",
+        "reviewer": "main:conversation-agent",
+        "user_authorization": "用户 2026-10-27 指示按现有翻译流程用 API 方式重做本游戏：统一图片与正文语料、从术语提取开始、复用图片 OCR 结果。授权主代理完成质量闭环裁决。"
+      },
+      "report_hash": "f795213a775dec49066b98165b65fadeb1230502a86723a941cada5e50328950",
+      "signature": "3e351723faaf5c16d15bb76a371950e8469d51c3b7914bdd0f7cc6b9e1cb1371"
+    },
+    "R0000551_051f4e9372": {
+      "decision": {
+        "disposition": "pass",
+        "id": "R0000551_051f4e9372",
+        "reason": "more than just a bank 译为“不止是一家银行”否定范围正确；Repository 与储藏库为同段同义表述，不影响理解。",
+        "reviewer": "main:conversation-agent",
+        "user_authorization": "用户 2026-10-27 指示按现有翻译流程用 API 方式重做本游戏：统一图片与正文语料、从术语提取开始、复用图片 OCR 结果。授权主代理完成质量闭环裁决。"
+      },
+      "report_hash": "f795213a775dec49066b98165b65fadeb1230502a86723a941cada5e50328950",
+      "signature": "a0d9120506f4ffdc5b4b9894b09ef1170b40f538b182af0c572e39ec00d679b0"
+    },
+    "R0000667_0e6d78cacd": {
+      "decision": {
+        "disposition": "contextual",
+        "id": "R0000667_0e6d78cacd",
+        "reason": "源文末尾 Y 为分支字节残留，非显示文本；译文“不，我还在处理。”语义准确。",
+        "reviewer": "main:conversation-agent",
+        "user_authorization": "用户 2026-10-27 指示按现有翻译流程用 API 方式重做本游戏：统一图片与正文语料、从术语提取开始、复用图片 OCR 结果。授权主代理完成质量闭环裁决。"
+      },
+      "report_hash": "f795213a775dec49066b98165b65fadeb1230502a86723a941cada5e50328950",
+      "signature": "80f054901f7428714e1c47b924bae57f3549c90144388baaf21eba681a8818d4"
+    },
+    "R0000789_41669996cb": {
+      "decision": {
+        "disposition": "pass",
+        "id": "R0000789_41669996cb",
+        "reason": "need not prove 与 will certainly not fetch 的双重否定译为“无需……更不会……”，条件与语气均正确。",
+        "reviewer": "main:conversation-agent",
+        "user_authorization": "用户 2026-10-27 指示按现有翻译流程用 API 方式重做本游戏：统一图片与正文语料、从术语提取开始、复用图片 OCR 结果。授权主代理完成质量闭环裁决。"
+      },
+      "report_hash": "f795213a775dec49066b98165b65fadeb1230502a86723a941cada5e50328950",
+      "signature": "ac473c355e1739151702ecbd446e4fe53acb5befcdfc28c48a51a82e2f6d0aaa"
+    },
+    "R0000856_3482e19f65": {
+      "decision": {
+        "disposition": "contextual",
+        "id": "R0000856_3482e19f65",
+        "reason": "源文末尾 f 为分支字节残留；Omar 与冻结术语一致。",
+        "reviewer": "main:conversation-agent",
+        "user_authorization": "用户 2026-10-27 指示按现有翻译流程用 API 方式重做本游戏：统一图片与正文语料、从术语提取开始、复用图片 OCR 结果。授权主代理完成质量闭环裁决。"
+      },
+      "report_hash": "f795213a775dec49066b98165b65fadeb1230502a86723a941cada5e50328950",
+      "signature": "da93313dd104a30009c28f6a0731ce129f86a1de212f2fde4379d7f0e0674c91"
+    },
+    "R0001254_75c1ff8646": {
+      "decision": {
+        "disposition": "contextual",
+        "id": "R0001254_75c1ff8646",
+        "reason": "no bars 为无上下文短片段（可能为界面状态串），现有译文不影响主流程；列入实机核查项。",
+        "reviewer": "main:conversation-agent",
+        "user_authorization": "用户 2026-10-27 指示按现有翻译流程用 API 方式重做本游戏：统一图片与正文语料、从术语提取开始、复用图片 OCR 结果。授权主代理完成质量闭环裁决。"
+      },
+      "report_hash": "f795213a775dec49066b98165b65fadeb1230502a86723a941cada5e50328950",
+      "signature": "8df08d89a4aa993757a9811503e15f227bfbb6de146f2e5dde9aaf55abd89a93"
+    },
+    "R0001663_2da1328d30": {
+      "decision": {
+        "disposition": "contextual",
+        "id": "R0001663_2da1328d30",
+        "reason": "MO 为缩写片段，保留原文符合禁翻判断。",
+        "reviewer": "main:conversation-agent",
+        "user_authorization": "用户 2026-10-27 指示按现有翻译流程用 API 方式重做本游戏：统一图片与正文语料、从术语提取开始、复用图片 OCR 结果。授权主代理完成质量闭环裁决。"
+      },
+      "report_hash": "f795213a775dec49066b98165b65fadeb1230502a86723a941cada5e50328950",
+      "signature": "acfbd6b13e56f783f3faa8d3b6348195c755d76838ae4e328346b41902307c0e"
+    },
+    "R0002003_28391d3bc6": {
+      "decision": {
+        "disposition": "contextual",
+        "id": "R0002003_28391d3bc6",
+        "reason": "of 为程序拼接片段，译作“的”符合其在拼接句中的位置。",
+        "reviewer": "main:conversation-agent",
+        "user_authorization": "用户 2026-10-27 指示按现有翻译流程用 API 方式重做本游戏：统一图片与正文语料、从术语提取开始、复用图片 OCR 结果。授权主代理完成质量闭环裁决。"
+      },
+      "report_hash": "f795213a775dec49066b98165b65fadeb1230502a86723a941cada5e50328950",
+      "signature": "86a7709846add187cf913f8a4e400e71ba6fa6425c229ba49e6759d01a9426cf"
+    },
+    "R0002429_017785cd91": {
+      "decision": {
+        "disposition": "pass",
+        "id": "R0002429_017785cd91",
+        "reason": "Casting this spell at level 为拼接句前半，译文“以该等级施放此法术”语义正确，后接等级数字可读。",
+        "reviewer": "main:conversation-agent",
+        "user_authorization": "用户 2026-10-27 指示按现有翻译流程用 API 方式重做本游戏：统一图片与正文语料、从术语提取开始、复用图片 OCR 结果。授权主代理完成质量闭环裁决。"
+      },
+      "report_hash": "f795213a775dec49066b98165b65fadeb1230502a86723a941cada5e50328950",
+      "signature": "2e46d06d0e5d448df1c8c343d9e6b7813c4b23b14e40d52120a272e92d444964"
+    },
+    "R0003289_a14c27a0fa": {
+      "decision": {
+        "disposition": "pass",
+        "id": "R0003289_a14c27a0fa",
+        "reason": "原文断句本身异常（My dead brother, thank you mother.），译文照原文结构直译，未增删信息。",
+        "reviewer": "main:conversation-agent",
+        "user_authorization": "用户 2026-10-27 指示按现有翻译流程用 API 方式重做本游戏：统一图片与正文语料、从术语提取开始、复用图片 OCR 结果。授权主代理完成质量闭环裁决。"
+      },
+      "report_hash": "f795213a775dec49066b98165b65fadeb1230502a86723a941cada5e50328950",
+      "signature": "989b82fbcf120b1e4cb0bbfb2880b9db9f271468ad0ff1e05b8e0b81e2d14e4d"
+    },
+    "R0003452_8fc9d029e4": {
+      "decision": {
+        "disposition": "contextual",
+        "id": "R0003452_8fc9d029e4",
+        "reason": ". U 为拼接残留片段，保留原文不构成漏译。",
+        "reviewer": "main:conversation-agent",
+        "user_authorization": "用户 2026-10-27 指示按现有翻译流程用 API 方式重做本游戏：统一图片与正文语料、从术语提取开始、复用图片 OCR 结果。授权主代理完成质量闭环裁决。"
+      },
+      "report_hash": "f795213a775dec49066b98165b65fadeb1230502a86723a941cada5e50328950",
+      "signature": "01ee7d13135ca49f63793ba40841e33d64138a28ebfe79cbac670bd2cf7608fd"
+    },
+    "R0003701_b4da04c2bb": {
+      "decision": {
+        "disposition": "pass",
+        "id": "R0003701_b4da04c2bb",
+        "reason": "<cough> 标签原样保留，Goblins 译为“地精”与冻结术语表一致，条件与因果关系准确。",
+        "reviewer": "main:conversation-agent",
+        "user_authorization": "用户 2026-10-27 指示按现有翻译流程用 API 方式重做本游戏：统一图片与正文语料、从术语提取开始、复用图片 OCR 结果。授权主代理完成质量闭环裁决。"
+      },
+      "report_hash": "f795213a775dec49066b98165b65fadeb1230502a86723a941cada5e50328950",
+      "signature": "e91fa3e51ffdd488be8c29e9dbcc7b6b8740f4f1bad29bfce1715117ef2ccb61"
+    }
+  },
+  "required_decisions": [],
+  "sol_scope_policy": "disputes_only_v1",
+  "carried_findings": {},
+  "selection_explanation": "Only explicit unresolved reviewer issues need Sol adjudication. Risk flags, corrections, ordinary samples, duplicate-source groups and speaker groups do not trigger Sol. Known Sol repair findings are carried to standard repair without re-reading; exhausted or regressing repairs use the existing targeted Sol escalation route.",
+  "report_hash": "eac89f0a0c877339030c3d9a0fd43f32b7ac854dff3bc4ef15fd80456bda1df0",
+  "round_scope": []
+}

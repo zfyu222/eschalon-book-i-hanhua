@@ -1,0 +1,537 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 全部 non_translate 标识符、变量、路径与音效名；依据记录为独立整条或内嵌字段分别设置 whole_record 或 text 适用域，保留 /savename、tmp/savename 等派生形式的变量族保护一致性，未将普通词新增为术语。",
+  "acknowledged_findings": [
+    "F0106",
+    "F0107",
+    "F0109",
+    "F0110",
+    "F0112",
+    "F0113",
+    "F0115",
+    "F0117"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": false,
+          "reason": "内部施法常量/标识；1796 为 CAST_DIV，2903 为大小写变体 Cast_Div，均按整条记录保留。"
+        }
+      },
+      "reason": "补齐非翻译常量适用域，覆盖大小写整条变体。",
+      "evidence_rows": [
+        1796,
+        2903
+      ],
+      "table": "non_translate",
+      "index": 188
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": false,
+          "reason": "内部音效标识符；1797/2926 为独立大小写记录，2961 的 NPC 数据行内以小写字段内嵌，均须原样保留。"
+        }
+      },
+      "reason": "补齐音效标识符适用域，覆盖独立与内嵌字段。",
+      "evidence_rows": [
+        1797,
+        2926,
+        2961
+      ],
+      "table": "non_translate",
+      "index": 189
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "内部音效标识符；1804 为整条 SFX_Trap_Dart，仅按整条保留。"
+        }
+      },
+      "reason": "补齐独立音效标识符适用域。",
+      "evidence_rows": [
+        1804
+      ],
+      "table": "non_translate",
+      "index": 191
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "陷阱内部标识；1808 为整条 wet_trap，按整条保留。"
+        }
+      },
+      "reason": "补齐陷阱内部标识适用域。",
+      "evidence_rows": [
+        1808
+      ],
+      "table": "non_translate",
+      "index": 192
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "内部音效标识符；1830 为整条 SFX_Hurt3，按整条保留。"
+        }
+      },
+      "reason": "补齐独立音效标识符适用域。",
+      "evidence_rows": [
+        1830
+      ],
+      "table": "non_translate",
+      "index": 194
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "存档名变量占位符；1836 独立出现，1839 的 /savename 闭合标记中内嵌同名变量，须保留变量名。"
+        }
+      },
+      "reason": "补齐变量名适用域，覆盖独立与闭合标记内嵌。",
+      "evidence_rows": [
+        1836,
+        1839
+      ],
+      "table": "non_translate",
+      "index": 196
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "存档名变量闭合标记；1839 为整条 /savename，按整条保留。"
+        }
+      },
+      "reason": "补齐闭合标记适用域。",
+      "evidence_rows": [
+        1839
+      ],
+      "table": "non_translate",
+      "index": 197
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "临时存档路径；1848 为整条 tmp/savename，按整条保留。"
+        }
+      },
+      "reason": "补齐临时存档路径适用域。",
+      "evidence_rows": [
+        1848
+      ],
+      "table": "non_translate",
+      "index": 199
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "临时角色数据路径；1849 为整条 tmp/char，按整条保留。"
+        }
+      },
+      "reason": "补齐临时角色数据路径适用域。",
+      "evidence_rows": [
+        1849
+      ],
+      "table": "non_translate",
+      "index": 200
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "地图内部标识；1858 为整条 35_cellar，按整条保留。"
+        }
+      },
+      "reason": "补齐地图内部标识适用域。",
+      "evidence_rows": [
+        1858
+      ],
+      "table": "non_translate",
+      "index": 201
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "数据目录路径片段；1868 为整条 data/，按整条保留。"
+        }
+      },
+      "reason": "补齐数据目录路径片段适用域。",
+      "evidence_rows": [
+        1868
+      ],
+      "table": "non_translate",
+      "index": 203
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "音效标识符；1995 为整条 sfx_qt，按整条保留。"
+        }
+      },
+      "reason": "补齐独立音效标识符适用域。",
+      "evidence_rows": [
+        1995
+      ],
+      "table": "non_translate",
+      "index": 208
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:188",
+      "evidence_rows": [
+        1796,
+        2903
+      ],
+      "source_excerpt": "CAST_DIV",
+      "reason": "内部施法常量，记录中存在 CAST_DIV 与 Cast_Div 大小写变体，应整条保留而非翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1796 原文为 CAST_DIV，2903 为 Cast_Div，均为内部常量。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目保持原样，无需提供中文译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目缺少适用域；已补为 whole_record、case_sensitive=false，覆盖独立大小写变体。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同类内部施法/音效标识的保护方向一致，未发现需改译的派生词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:189",
+      "evidence_rows": [
+        1797,
+        2926,
+        2961
+      ],
+      "source_excerpt": "SFX_CAST_ELEM",
+      "reason": "内部音效标识符，独立记录有大小写变体，NPC 数据行中亦以内嵌字段出现，应统一保持原样。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1797 为 SFX_CAST_ELEM，2926 为 sfx_cast_elem，2961 的 CSV 行内含 \"sfx_cast_elem\" 字段。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目保持原文，不翻译为音效名称。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目缺少适用域；已补为 text、case_sensitive=false，覆盖独立与内嵌字段。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "大小写变体与内嵌字段均保持同一内部标识，不视为需中文化术语。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:191",
+      "evidence_rows": [
+        1804
+      ],
+      "source_excerpt": "SFX_Trap_Dart",
+      "reason": "内部音效标识符，仅以独立整条记录出现，应整条保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1804 原文为 SFX_Trap_Dart，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目保持原样，无需提供中文译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目缺少适用域；已补为 whole_record、case_sensitive=true。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "命名结构与同类 SFX_ 音效标识一致，无需按字面翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:192",
+      "evidence_rows": [
+        1808
+      ],
+      "source_excerpt": "wet_trap",
+      "reason": "陷阱内部标识，仅以独立整条记录出现，应整条保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1808 原文为 wet_trap，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目保持原样，不译为普通陷阱描述。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目缺少适用域；已补为 whole_record、case_sensitive=true。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为内部标识不与普通词 wet/trap 的翻译混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:194",
+      "evidence_rows": [
+        1830
+      ],
+      "source_excerpt": "SFX_Hurt3",
+      "reason": "内部音效标识符，仅以独立整条记录出现，应整条保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1830 原文为 SFX_Hurt3，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目保持原样，无需提供中文译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目缺少适用域；已补为 whole_record、case_sensitive=true。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同类 SFX_ 音效标识的保护方式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:196",
+      "evidence_rows": [
+        1836,
+        1839
+      ],
+      "source_excerpt": "savename",
+      "reason": "存档名变量占位符，独立出现并内嵌于 /savename 闭合标记，应保护变量名本身。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1836 原文为 savename；1839 为 /savename，含同名闭合标记。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目保持变量名，不提供译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目缺少适用域；已补为 text、case_sensitive=true，覆盖独立变量名及闭合标记内嵌。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 /savename、tmp/savename 的变量族保护方向一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:197",
+      "evidence_rows": [
+        1839
+      ],
+      "source_excerpt": "/savename",
+      "reason": "存档名变量闭合标记，作为独立整条记录出现，应整条保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1839 原文为 /savename，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目保持原样，不拆分或翻译标记。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目缺少适用域；已补为 whole_record、case_sensitive=true。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 savename、tmp/savename 的变量族标记保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:199",
+      "evidence_rows": [
+        1848
+      ],
+      "source_excerpt": "tmp/savename",
+      "reason": "临时存档路径，作为独立整条记录出现，应整条保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1848 原文为 tmp/savename，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目保持原样，不翻译路径成分。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目缺少适用域；已补为 whole_record、case_sensitive=true。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 savename、/savename 的存档路径变量族一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:200",
+      "evidence_rows": [
+        1849
+      ],
+      "source_excerpt": "tmp/char",
+      "reason": "临时角色数据路径，作为独立整条记录出现，应整条保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1849 原文为 tmp/char，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目保持原样，不翻译路径成分。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目缺少适用域；已补为 whole_record、case_sensitive=true。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 tmp/savename 等临时路径标识的保护方式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:201",
+      "evidence_rows": [
+        1858
+      ],
+      "source_excerpt": "35_cellar",
+      "reason": "地图内部标识，作为独立整条记录出现，应整条保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1858 原文为 35_cellar，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目保持原样，不翻译为地牢名称。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目缺少适用域；已补为 whole_record、case_sensitive=true。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为地图内部标识，不与普通地名 cellar 的翻译混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:203",
+      "evidence_rows": [
+        1868
+      ],
+      "source_excerpt": "data/",
+      "reason": "数据目录路径片段，作为独立整条记录出现，应整条保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1868 原文为 data/，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目保持原样，不翻译路径片段。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目缺少适用域；已补为 whole_record、case_sensitive=true。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 tmp/ 等其他路径片段的保护方式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:208",
+      "evidence_rows": [
+        1995
+      ],
+      "source_excerpt": "sfx_qt",
+      "reason": "音效标识符，作为独立整条记录出现，应整条保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1995 原文为 sfx_qt，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目保持原样，无需提供中文译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目缺少适用域；已补为 whole_record、case_sensitive=true。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同类 sfx_ 音效标识的保护方式一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:188",
+    "non_translate:189",
+    "non_translate:191",
+    "non_translate:192",
+    "non_translate:194",
+    "non_translate:196",
+    "non_translate:197",
+    "non_translate:199",
+    "non_translate:200",
+    "non_translate:201",
+    "non_translate:203",
+    "non_translate:208"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

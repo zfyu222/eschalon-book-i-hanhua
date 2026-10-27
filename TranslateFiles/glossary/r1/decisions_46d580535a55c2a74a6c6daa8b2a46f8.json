@@ -1,0 +1,518 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核 e1-e12：3 条方括号对话选项建议移出 non_translate，9 条脚本命令补充明确 applicability；未新增术语。",
+  "acknowledged_findings": [
+    "F0002",
+    "F0003",
+    "F0006",
+    "F0007",
+    "F0009"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条记录就是 teach_skill 脚本命令及参数，需按完整记录原样保留。"
+        }
+      },
+      "reason": "为独立脚本命令补充 whole_record 作用域。",
+      "evidence_rows": [
+        496
+      ],
+      "table": "non_translate",
+      "index": 21
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条记录就是 init_trade 脚本命令及参数，需按完整记录原样保留。"
+        }
+      },
+      "reason": "为独立脚本命令补充 whole_record 作用域。",
+      "evidence_rows": [
+        510
+      ],
+      "table": "non_translate",
+      "index": 22
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条记录就是 init_trade 脚本命令及参数，需按完整记录原样保留。"
+        }
+      },
+      "reason": "为独立脚本命令补充 whole_record 作用域。",
+      "evidence_rows": [
+        635
+      ],
+      "table": "non_translate",
+      "index": 23
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "reason": "remove_gold 100 仅作为脚本串中的参数化命令出现，需锚定前后命令，避免全局禁翻。",
+          "prefix": "cond_gold 100 ; ",
+          "suffix": " ; quest"
+        }
+      },
+      "reason": "补充 literal_context，按实际前后命令锚定嵌入式脚本命令。",
+      "evidence_rows": [
+        595
+      ],
+      "table": "non_translate",
+      "index": 25
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "reason": "quest 10 2 仅作为脚本串中的任务状态命令出现，需锚定前后命令。",
+          "prefix": "remove_gold 100 ; ",
+          "suffix": " ; Message"
+        }
+      },
+      "reason": "补充 literal_context，按实际前后命令锚定嵌入式脚本命令。",
+      "evidence_rows": [
+        595
+      ],
+      "table": "non_translate",
+      "index": 26
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "screen_fade_out 是引擎画面淡出命令标识符，在独立记录与脚本串中均按原样保留，且无自然语言歧义。"
+        }
+      },
+      "reason": "补充 text 作用域并采用精确大小写匹配，覆盖独立与嵌入用法。",
+      "evidence_rows": [
+        2071,
+        605
+      ],
+      "table": "non_translate",
+      "index": 29
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "reason": "move_player 8357 仅作为脚本串中的玩家移动命令出现，需锚定前后命令。",
+          "prefix": "screen_fade_out ; ",
+          "suffix": " ; screen_fade_in"
+        }
+      },
+      "reason": "补充 literal_context，按实际前后命令锚定嵌入式脚本命令。",
+      "evidence_rows": [
+        605
+      ],
+      "table": "non_translate",
+      "index": 30
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "reason": "map_port (Darkford) 仅作为脚本串中的地图传送点命令出现，需锚定前后命令。",
+          "prefix": "screen_fade_out ; ",
+          "suffix": " ; updatezones"
+        }
+      },
+      "reason": "补充 literal_context，按实际前后命令锚定嵌入式脚本命令。",
+      "evidence_rows": [
+        629
+      ],
+      "table": "non_translate",
+      "index": 31
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "areacheck 是区域检查命令标识符，在独立记录与脚本串中均按原样保留，且无自然语言歧义。"
+        }
+      },
+      "reason": "补充 text 作用域并采用精确大小写匹配，覆盖独立与嵌入用法。",
+      "evidence_rows": [
+        2009,
+        434
+      ],
+      "table": "non_translate",
+      "index": 33
+    }
+  ],
+  "quarantine": [
+    {
+      "reason": "方括号内为可译对话选项正文，不是脚本命令或运行标记；整串列入 non_translate 会阻止翻译，建议移出保护。",
+      "evidence_rows": [
+        646
+      ],
+      "table": "non_translate",
+      "index": 18
+    },
+    {
+      "reason": "方括号内为可译对话选项正文，含动词和信件名；整串列入 non_translate 会阻止翻译，建议移出保护。",
+      "evidence_rows": [
+        626
+      ],
+      "table": "non_translate",
+      "index": 19
+    },
+    {
+      "reason": "方括号内为可译对话选项正文，含可译句子和药水专名；整串列入 non_translate 会阻止翻译，建议移出保护。",
+      "evidence_rows": [
+        690
+      ],
+      "table": "non_translate",
+      "index": 20
+    }
+  ],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:18",
+      "evidence_rows": [
+        646
+      ],
+      "source_excerpt": "[Give Divine Ore to Gunther]",
+      "reason": "方括号内是对话选项正文，应移出保护后翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 646 原文连续包含 [Give Divine Ore to Gunther]。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非译名条目，无目标译文可核对。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "方括号内为对话选项正文，不是脚本命令或运行标记。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "应移出 non_translate 后按对话选项文本处理，与其他脚本命令条不属同类。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:19",
+      "evidence_rows": [
+        626
+      ],
+      "source_excerpt": "[Hand the incriminating letter to him.]",
+      "reason": "方括号内是含信件名的可译选项句，应移出保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 626 原文连续包含 [Hand the incriminating letter to him.]。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非译名条目，无目标译文可核对。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "方括号内是可译对话选项正文，含动词和信件名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "同属对话选项文本，不应整串保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:20",
+      "evidence_rows": [
+        690
+      ],
+      "source_excerpt": "[give him the Potion of Absolute Restoration]",
+      "reason": "方括号内是含药水专名的可译选项句，应移出保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 690 原文连续包含 [give him the Potion of Absolute Restoration]。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非译名条目，无目标译文可核对。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "方括号内是可译对话选项正文，含药水专名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "药水名应按冻结术语翻译，整串不保留英文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:21",
+      "evidence_rows": [
+        496
+      ],
+      "source_excerpt": "teach_skill (Garrett) 7",
+      "reason": "独立脚本命令，保留整条并补充 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 496 完整原文即 teach_skill (Garrett) 7。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "脚本命令无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "整条记录是 teach_skill 命令及参数。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 whole_record 作用域，保留完整命令串。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:22",
+      "evidence_rows": [
+        510
+      ],
+      "source_excerpt": "init_trade(porter)",
+      "reason": "独立脚本命令，保留整条并补充 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 510 完整原文即 init_trade(porter)。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "脚本命令无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "整条记录是 init_trade 命令及参数。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 whole_record 作用域，保留完整命令串。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:23",
+      "evidence_rows": [
+        635
+      ],
+      "source_excerpt": "init_trade (gunther)",
+      "reason": "独立脚本命令，保留整条并补充 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 635 完整原文即 init_trade (gunther)。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "脚本命令无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "整条记录是 init_trade 命令及参数。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 whole_record 作用域，保留完整命令串。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:25",
+      "evidence_rows": [
+        595
+      ],
+      "source_excerpt": "remove_gold 100",
+      "reason": "嵌入式脚本命令，按实际上下文锚定保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 595 原文连续包含 remove_gold 100，位于 cond_gold 与 quest 命令之间。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "脚本命令无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "嵌入脚本串的参数化命令。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 literal_context，前后锚定 cond_gold/quest。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:26",
+      "evidence_rows": [
+        595
+      ],
+      "source_excerpt": "quest 10 2",
+      "reason": "嵌入式任务状态命令，按实际上下文锚定保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 595 原文连续包含 quest 10 2，位于 remove_gold 与 Message 命令之间。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "脚本命令无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "嵌入脚本串的任务状态命令。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 literal_context，前后锚定 remove_gold/Message。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:29",
+      "evidence_rows": [
+        2071,
+        605
+      ],
+      "source_excerpt": "screen_fade_out",
+      "reason": "画面淡出命令标识符，独立及嵌入脚本串均保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2071 为独立 screen_fade_out；ordinal 605 中作为命令串成员出现。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "脚本标识符无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "引擎画面淡出命令标识符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 text 作用域并按大小写精确匹配独立与嵌入用法。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:30",
+      "evidence_rows": [
+        605
+      ],
+      "source_excerpt": "move_player 8357",
+      "reason": "嵌入式玩家移动命令，按实际上下文锚定保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 605 原文连续包含 move_player 8357。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "脚本命令无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "嵌入脚本串的玩家移动命令。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 literal_context，前后锚定 screen_fade_out/screen_fade_in。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:31",
+      "evidence_rows": [
+        629
+      ],
+      "source_excerpt": "map_port (Darkford)",
+      "reason": "嵌入式地图传送点命令，按实际上下文锚定保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 629 原文连续包含 map_port (Darkford)。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "脚本命令无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "嵌入脚本串的地图传送点命令。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 literal_context，前后锚定 screen_fade_out/updatezones。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:33",
+      "evidence_rows": [
+        2009,
+        434
+      ],
+      "source_excerpt": "areacheck",
+      "reason": "区域检查命令标识符，独立及嵌入脚本串均保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2009 为独立 areacheck；ordinal 434 中作为脚本串成员出现。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "脚本标识符无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "区域检查命令标识符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 text 作用域并按大小写精确匹配独立与嵌入用法。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:18",
+    "non_translate:19",
+    "non_translate:20",
+    "non_translate:21",
+    "non_translate:22",
+    "non_translate:23",
+    "non_translate:25",
+    "non_translate:26",
+    "non_translate:29",
+    "non_translate:30",
+    "non_translate:31",
+    "non_translate:33"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

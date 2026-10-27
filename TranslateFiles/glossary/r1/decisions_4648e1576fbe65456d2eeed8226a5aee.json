@@ -1,0 +1,441 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12：补齐 e2 的 whole_record 适用域，并为 e4-e10 含 & 控制符的属性译名补回控制符；其余译名、分类与一致性成立。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "1007 原文为完整运行时掉落命令 drop_item (Fancy Key)，仅整条记录保留。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，避免全局禁翻。",
+      "evidence_rows": [
+        1007
+      ],
+      "table": "non_translate",
+      "index": 76
+    },
+    {
+      "patch": {
+        "recommended_translation": "&敏捷"
+      },
+      "reason": "原文属性名含 & 强调控制符，译名应保留为 &敏捷。",
+      "evidence_rows": [
+        1025
+      ],
+      "table": "terms",
+      "index": 252
+    },
+    {
+      "patch": {
+        "recommended_translation": "&耐力"
+      },
+      "reason": "原文属性名含 & 强调控制符，译名应保留为 &耐力。",
+      "evidence_rows": [
+        1026
+      ],
+      "table": "terms",
+      "index": 253
+    },
+    {
+      "patch": {
+        "recommended_translation": "&速度"
+      },
+      "reason": "原文属性名含 & 强调控制符，译名应保留为 &速度。",
+      "evidence_rows": [
+        1027
+      ],
+      "table": "terms",
+      "index": 254
+    },
+    {
+      "patch": {
+        "recommended_translation": "&智力"
+      },
+      "reason": "原文属性名含 & 强调控制符，译名应保留为 &智力。",
+      "evidence_rows": [
+        1028
+      ],
+      "table": "terms",
+      "index": 255
+    },
+    {
+      "patch": {
+        "recommended_translation": "&智慧"
+      },
+      "reason": "原文属性名含 & 强调控制符，译名应保留为 &智慧。",
+      "evidence_rows": [
+        1029
+      ],
+      "table": "terms",
+      "index": 256
+    },
+    {
+      "patch": {
+        "recommended_translation": "&感知"
+      },
+      "reason": "原文属性名含 & 强调控制符，译名应保留为 &感知。",
+      "evidence_rows": [
+        1030
+      ],
+      "table": "terms",
+      "index": 257
+    },
+    {
+      "patch": {
+        "recommended_translation": "&专注"
+      },
+      "reason": "原文属性名含 & 强调控制符，译名应保留为 &专注。",
+      "evidence_rows": [
+        1031
+      ],
+      "table": "terms",
+      "index": 258
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:244",
+      "evidence_rows": [
+        1007,
+        3476
+      ],
+      "source_excerpt": "drop_item (Fancy Key)",
+      "reason": "Fancy Key 为可掉落并用于解锁的钥匙物品，精致钥匙译名与物品类别成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1007 原文 drop_item (Fancy Key) 中 Fancy Key 为物品名，来源成立。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "精致钥匙 对 Fancy Key 的字面物品名翻译无冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品类别及 game_term/required 符合其为钥匙类物品的用途。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "3476 的 unlocked_with (Fancy Key) 表明同一钥匙还用于解锁，译名可统一。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:76",
+      "evidence_rows": [
+        1007
+      ],
+      "source_excerpt": "drop_item (Fancy Key)",
+      "reason": "1007 为完整运行时掉落命令，需以 whole_record 限定保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1007 原文为完整运行时掉落命令 drop_item (Fancy Key)。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译条目，整条命令保留，无普通译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目未限定适用域；已补 whole_record，限定仅整条记录保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "whole_record 仅保护 1007 完整命令，正文中的 Fancy Key 仍可按物品名翻译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:248",
+      "evidence_rows": [
+        1211
+      ],
+      "source_excerpt": "lockbox number 26",
+      "reason": "lockbox number 26 为任务中需用护身符钥匙开启的特定保险箱，译名成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1211 原文 use it to open lockbox number 26 明确指出该编号保险箱。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "26号保险箱 与 lockbox number 26 的编号物品含义一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品类别与保险箱容器用途相符，game_term/required 适用于该任务对象。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一原文仅出现该编号容器，译名无需另选。"
+        }
+      }
+    },
+    {
+      "ref": "terms:252",
+      "evidence_rows": [
+        1025,
+        1055
+      ],
+      "source_excerpt": "&Dexterity is a measure of steadiness, accuracy, hand-eye coordination, balance, and grace in physical activity.",
+      "reason": "属性术语含义成立；修正译名以保留原文 & 强调控制符，并与并列属性一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1025 将 &Dexterity 定义为稳定、准确、手眼协调与平衡等身体活动能力。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文属性名带 & 控制符，已将译名修正为 &敏捷。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他类别及 game_term/required 符合属性术语。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "1055 中 &Intelligence and &Dexterity 并列使用，&敏捷 与 &智力 保持属性译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:253",
+      "evidence_rows": [
+        1026,
+        1009
+      ],
+      "source_excerpt": "&Endurance is a measure of how well your character can endure physical trauma, poisons, diseases and fatigue.",
+      "reason": "属性术语含义成立；修正译名以保留原文 & 强调控制符，并与并列属性一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1026 将 &Endurance 定义为承受创伤、毒、疾病与疲劳的能力。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文属性名带 & 控制符，已将译名修正为 &耐力。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他类别及 game_term/required 符合属性术语。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "1009 中 &+2 &Endurance and &+1 &Concentration 并列使用，&耐力 与 &专注 保持属性译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:254",
+      "evidence_rows": [
+        1027,
+        1062
+      ],
+      "source_excerpt": "&Speed is a measure of how quickly your character is able to perform actions.",
+      "reason": "属性术语含义成立；修正译名以保留原文 & 强调控制符，并与并列属性一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1027 将 &Speed 定义为行动快慢。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文属性名带 & 控制符，已将译名修正为 &速度。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他类别及 game_term/required 符合属性术语。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "1062 中 &Strength and &Speed complement this skill，&速度 与 &力量 保持属性译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:255",
+      "evidence_rows": [
+        1028,
+        1055
+      ],
+      "source_excerpt": "&Intelligence is a measure of your character's ability to understand and retain new information, as well as his logistic skills.",
+      "reason": "属性术语含义成立；修正译名以保留原文 & 强调控制符，并与并列属性一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1028 将 &Intelligence 定义为理解与记忆新信息的能力，并影响物品鉴定。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文属性名带 & 控制符，已将译名修正为 &智力。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他类别及 game_term/required 符合属性术语。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "1055 中 &Intelligence and &Dexterity complement this skill，&智力 与 &敏捷 保持属性译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:256",
+      "evidence_rows": [
+        1029,
+        1043
+      ],
+      "source_excerpt": "&Wisdom is a measure of your character's insight, common sense and quality of judgment, as well as general cognitive abilities.",
+      "reason": "属性术语含义成立；修正译名以保留原文 & 强调控制符，并与预言术语境一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1029 将 &Wisdom 定义为洞察、常识与判断力。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文属性名带 & 控制符，已将译名修正为 &智慧。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他类别及 game_term/required 符合属性术语。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "1043 中 &Wisdom compliments this skill，&智慧 与预言术语境一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:257",
+      "evidence_rows": [
+        1030,
+        1057
+      ],
+      "source_excerpt": "&Perception is the ability to sense, channel and utilize the arcane energies that exists below the surface of observable reality.",
+      "reason": "属性术语含义成立；修正译名以保留原文 & 强调控制符，并与发现隐藏物语境一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1030 将 &Perception 定义为感知与引导奥术能量的能力。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文属性名带 & 控制符，已将译名修正为 &感知。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他类别及 game_term/required 符合属性术语。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "1057 中 This skill is complemented by the &Perception attribute，&感知 与发现隐藏物技能语境一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:258",
+      "evidence_rows": [
+        1031,
+        1056
+      ],
+      "source_excerpt": "&Concentration is a measure of your character's ability to maintain attention and mental focus, especially while distressed.",
+      "reason": "属性术语含义成立；修正译名以保留原文 & 强调控制符，并与并列属性一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1031 将 &Concentration 定义为在压力下维持注意力与精神集中的能力。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文属性名带 & 控制符，已将译名修正为 &专注。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他类别及 game_term/required 符合属性术语。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "1056 中 &Concentration and &Dexterity complement this skill，&专注 与 &敏捷 保持属性译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:259",
+      "evidence_rows": [
+        1014
+      ],
+      "source_excerpt": "The Atheist has their mind grounded in observable truths.",
+      "reason": "Atheist 为不信高等神灵或迷信的信条，译名成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1014 原文以 The Atheist 指代该信条角色，来源成立。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "无神论者 与 Atheist 含义一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他类别及 game_term/required 符合该信条/背景术语。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "1014 中仅此词形，无多译冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:260",
+      "evidence_rows": [
+        1015,
+        1043
+      ],
+      "source_excerpt": "A person of Druidic faith believes in the divinity of the living world itself",
+      "reason": "Druidic 指德鲁伊信仰，1015/1043 均用于同一信仰语境，德鲁伊信仰译名成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1015 原文 A person of Druidic faith 指该信条。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "德鲁伊信仰 与 Druidic faith 含义一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他类别及 game_term/required 符合信条/背景术语。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "1043 中 persons of Druidic faith 用于同一信仰语境，译名可保持一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:244",
+    "non_translate:76",
+    "terms:248",
+    "terms:252",
+    "terms:253",
+    "terms:254",
+    "terms:255",
+    "terms:256",
+    "terms:257",
+    "terms:258",
+    "terms:259",
+    "terms:260"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

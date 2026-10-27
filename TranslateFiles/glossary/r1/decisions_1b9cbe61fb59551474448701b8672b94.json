@@ -1,0 +1,422 @@
+{
+  "review_complete": true,
+  "review_summary": "完成 12 条术语/非翻译条目审校；核对原文、译名、分类与一致性，修正 e8 的未证实来源描述，简化 e9 界面译名，并为 e10-e12 补齐适用性范围。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "图像界面中的独立标签，按字面容器义使用；具体机制未在原文展开。",
+        "applicability": {
+          "case_sensitive": false,
+          "mode": "whole_record",
+          "reason": "仅作为图像界面中的独立标签，按容器义使用"
+        }
+      },
+      "reason": "原文仅有 Vessel 标签，删除未见于证据的 Mix/炼金关联并限定适用范围。",
+      "evidence_rows": [
+        4661
+      ],
+      "table": "terms",
+      "index": 579
+    },
+    {
+      "patch": {
+        "recommended_translation": "战术网格"
+      },
+      "reason": "图片界面标签需简短紧凑，四字译名符合排版要求。",
+      "evidence_rows": [
+        4668
+      ],
+      "table": "terms",
+      "index": 580
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": false,
+          "mode": "text",
+          "reason": "正文中作为玩家姓名变量占位符，与逗号、句号或空格相邻出现，需原样保留"
+        }
+      },
+      "reason": "补齐变量占位符的适用性范围，避免无范围禁翻。",
+      "evidence_rows": [
+        409,
+        473
+      ],
+      "table": "non_translate",
+      "index": 0
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": false,
+          "mode": "text",
+          "reason": "正文中作为分段/强调控制符，与文字相邻出现，需原样保留"
+        }
+      },
+      "reason": "补齐格式控制符的适用性范围。",
+      "evidence_rows": [
+        408,
+        409
+      ],
+      "table": "non_translate",
+      "index": 1
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "text",
+          "reason": "正文中作为文档结束/控制标记嵌在句末，需原样保留"
+        }
+      },
+      "reason": "补齐固定控制标记的适用性范围。",
+      "evidence_rows": [
+        409,
+        417
+      ],
+      "table": "non_translate",
+      "index": 2
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:564",
+      "evidence_rows": [
+        4701
+      ],
+      "source_excerpt": "Rami Oasis",
+      "reason": "核对图像地名标签，译名与词类均一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4701 原文为 Rami Oasis，属地名标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "拉米绿洲对应 Rami Oasis，简洁且符合地名译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=地名，符合该专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "proper_name/required 与地名译名一致，无跨条冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:567",
+      "evidence_rows": [
+        4705
+      ],
+      "source_excerpt": "Lost Bay Lighthouse",
+      "reason": "核对图像地名标签，译名与词类均一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4705 原文为 Lost Bay Lighthouse，属地名标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "失落湾灯塔对应 Lost Bay Lighthouse，简洁且符合地名译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=地名，符合该专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "proper_name/required 与地名译名一致，无跨条冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:570",
+      "evidence_rows": [
+        4570,
+        4580,
+        1038
+      ],
+      "source_excerpt": "Axiom",
+      "reason": "核对角色创建类别标签及句内并列用法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4570 为独立标签 Axiom；4580/1038 显示其与 Origin、Class 并列使用。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "信条作为角色创建类别译名，符合该机制语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，符合角色创建类别标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "game_term/reference 与 whole_record 限定一致，未与同批条目冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:571",
+      "evidence_rows": [
+        4569,
+        4580,
+        1035
+      ],
+      "source_excerpt": "Origin",
+      "reason": "核对角色创建类别标签及句内并列用法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4569 为独立标签 Origin；4580/1035 显示其与 Axiom、Class 并列或带 ^ 标记出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "出身对应角色来源/出身，符合该类别语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=身份，符合角色出身类别。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "game_term/reference 与 whole_record 限定一致，未与同批条目冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:574",
+      "evidence_rows": [
+        4722
+      ],
+      "source_excerpt": "Mana Cost",
+      "reason": "核对法术日志属性标签。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4722 原文为 Mana Cost，是施法消耗标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "法力消耗对应 Mana Cost，简短且符合界面标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，符合属性标签定位。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "game_term/required 与法力消耗义一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:575",
+      "evidence_rows": [
+        4712
+      ],
+      "source_excerpt": "Encumbrance",
+      "reason": "核对状态栏负重标签。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4712 原文为 Encumbrance，状态栏负重标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "负重对应 Encumbrance，简短且符合界面标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，符合状态栏标签定位。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "game_term/reference 与 whole_record 限定一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:576",
+      "evidence_rows": [
+        4726
+      ],
+      "source_excerpt": "To Hit Ability",
+      "reason": "核对战斗属性标签。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4726 原文为 To Hit Ability，是战斗属性标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "命中能力对应 To Hit Ability，四字简洁且符合界面标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，符合属性标签定位。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "game_term/required 与命中能力义一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:579",
+      "evidence_rows": [
+        4661
+      ],
+      "source_excerpt": "Vessel",
+      "reason": "原文仅有独立标签，修正未证实的机制关联。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4661 原文仅为 Vessel，未提供 Mix 或炼金界面上下文。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "容器对应 Vessel 的字面容器义，适合独立界面标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=物品，按容器物件归类可接受。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已修正 term_reason/applicability，删除未见于原文的 Mix 关联；保留 whole_record 与容器义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:580",
+      "evidence_rows": [
+        4668
+      ],
+      "source_excerpt": "Draw Tactical Grid",
+      "reason": "按图片界面排版要求简化为四字标签。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4668 原文为 Draw Tactical Grid，属选项界面标签。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由绘制战术网格改为战术网格，更符合图片界面简短排版要求。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，符合选项标签定位。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "game_term/required 与战术网格义一致，无跨条冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:0",
+      "evidence_rows": [
+        409,
+        473
+      ],
+      "source_excerpt": "$, *You don't know who I am",
+      "reason": "核对玩家姓名变量占位符并补齐适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "409 开头为 $,，473 句末为 $，均作玩家姓名变量占位符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译变量占位符，保留原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入 non_translate 合理，属运行时变量标记。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补全 applicability 为 text，明确按玩家姓名占位符保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:1",
+      "evidence_rows": [
+        408,
+        409
+      ],
+      "source_excerpt": "*The giants of Tharemore",
+      "reason": "核对分段/强调控制符并补齐适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "408 中 * 作分段/强调控制符嵌在段首；409 中亦见 *:E: 组合使用。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "控制符不译，保留原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属格式控制符，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补全 applicability 为 text，确保内嵌 * 原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:2",
+      "evidence_rows": [
+        409,
+        417
+      ],
+      "source_excerpt": ":E:",
+      "reason": "核对文档结束/控制标记并补齐适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "409 与 417 均在文末或段末出现 :E: 控制标记。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "控制标记不译，保留原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属运行/文档控制标记，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补全 applicability 为 text，匹配该固定标记。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:564",
+    "terms:567",
+    "terms:570",
+    "terms:571",
+    "terms:574",
+    "terms:575",
+    "terms:576",
+    "terms:579",
+    "terms:580",
+    "non_translate:0",
+    "non_translate:1",
+    "non_translate:2"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

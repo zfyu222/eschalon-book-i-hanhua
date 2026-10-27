@@ -1,0 +1,348 @@
+{
+  "review_complete": true,
+  "review_summary": "已审阅本批 e1-e12 全部词条：状态标签、地名、物品与材料名均维持现有译名与分类；未发现需改写或隔离项。已核对 f1-f3：Mythril/mithril 为同一金属拼写变体，Mana Fortify/Mana Fortified 与 Invisibility/Invisible 分属配方/法术名和状态标签，共用译名在各自语境下可接受。",
+  "acknowledged_findings": [
+    "F0274",
+    "F0275",
+    "F0277"
+  ],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:294",
+      "evidence_rows": [
+        1158
+      ],
+      "source_excerpt": "Stunned",
+      "reason": "状态标签 Stunned 的译名与分类均匹配，维持原条目。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1158 原文即 Stunned，与 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Stunned 作状态标签译“眩晕”，简洁且符合状态栏用词。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "状态标签归入“其他”，未误归技能或物品，分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与全批状态标签的简短名词式译法一致；无同译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:296",
+      "evidence_rows": [
+        1160
+      ],
+      "source_excerpt": "Poisoned",
+      "reason": "状态标签 Poisoned 的译名与分类均匹配，维持原条目。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1160 原文即 Poisoned，与 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Poisoned 译“中毒”，准确表达中毒状态且适合短标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "状态标签归入“其他”，分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与其他状态标签采用简短状态词的做法一致；无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:298",
+      "evidence_rows": [
+        1162,
+        2507,
+        2508
+      ],
+      "source_excerpt": "Invisible",
+      "reason": "状态标签，维持“隐形”；f3 同译名项为法术/卷轴名，不冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1162 原文为 Invisible；2507/2508 中 effect (Invisible) 为同名脚本标识。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "状态标签 Invisible 译“隐形”，符合状态义且适合短标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "本条按状态标签归“其他”；2507/2508 的 effect 标识不参与分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "审计 f3 的同译名项为法术/卷轴名 Invisibility，本条为状态标签 Invisible，语境不同可共用“隐形”；整条记录匹配不命中脚本文本。"
+        }
+      }
+    },
+    {
+      "ref": "terms:299",
+      "evidence_rows": [
+        1164
+      ],
+      "source_excerpt": "Paralyzed",
+      "reason": "状态标签 Paralyzed 的译名与分类均匹配，维持原条目。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1164 原文即 Paralyzed，与 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Paralyzed 译“麻痹”，准确表达无法行动的状态且适合短标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "状态标签归入“其他”，分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与其他状态标签的简短名词式译法一致；无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:300",
+      "evidence_rows": [
+        1165
+      ],
+      "source_excerpt": "Scared",
+      "reason": "状态标签 Scared 译“恐惧”可成立，维持原条目。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1165 原文即 Scared，与 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Scared 作状态标签译“恐惧”，简洁且符合状态栏用词。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "状态标签归入“其他”，分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与其他状态标签保持简短状态词风格；未发现需隔离的同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:302",
+      "evidence_rows": [
+        1167
+      ],
+      "source_excerpt": "Off-Balance",
+      "reason": "状态标签 Off-Balance 的译名与分类均匹配，维持原条目。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1167 原文即 Off-Balance，与 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Off-Balance 译“失衡”，准确表达失去平衡的状态。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "状态标签归入“其他”，分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与其他状态标签的简短译法一致；无同译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:303",
+      "evidence_rows": [
+        1168,
+        2531,
+        2669
+      ],
+      "source_excerpt": "Mana Fortified",
+      "reason": "状态标签，维持“法力强化”；f2 同译名项为配方/效果名，不冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1168 原文为 Mana Fortified；2531/2669 中 effect (Mana Fortified) 为同名脚本标识。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "状态标签 Mana Fortified 译“法力强化”，与强化法力状态相符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "本条按状态标签归“其他”；不将脚本 effect 误归技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "审计 f2 的同译名项为配方/效果名 Mana Fortify，本条为状态标签 Mana Fortified，共用“法力强化”可接受；整条记录匹配不翻译 effect 标识。"
+        }
+      }
+    },
+    {
+      "ref": "terms:308",
+      "evidence_rows": [
+        2304,
+        4707
+      ],
+      "source_excerpt": "Ash Island",
+      "reason": "地名 Ash Island 统一译“灰烬岛”，维持原条目。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2304 的乘船句与 4707 的地图贴图均含 Ash Island，source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "专名 Ash Island 译“灰烬岛”，两处统一，符合地名译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名归入“地名”，分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "乘船句与地图贴图统一使用“灰烬岛”；贴图短词符合宽度。"
+        }
+      }
+    },
+    {
+      "ref": "terms:314",
+      "evidence_rows": [
+        1227
+      ],
+      "source_excerpt": "Giant Chieftain’s skull",
+      "reason": "任务物品译名与原文一致，维持原条目。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1227 原文含 Giant Chieftain’s skull，source 拼写一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "任务物品译“巨人酋长头骨”，保留巨人酋长与头骨要素。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "任务物品归“物品”，分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与任务说明中的取回/交还语境一致；Omar、Camp Thorndike 等上下文不改。"
+        }
+      }
+    },
+    {
+      "ref": "terms:316",
+      "evidence_rows": [
+        2219
+      ],
+      "source_excerpt": "Bar of Mythril",
+      "reason": "材料物品 Bar of Mythril 译“秘银锭”，维持原条目。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2219 原文即 Bar of Mythril，与 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "材料锭译“秘银锭”，Bar 译为锭，保留材料名秘银。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "材料物品归“物品”，分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同词族材料名统一作“秘银”，本条“秘银锭”与材料名不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:317",
+      "evidence_rows": [
+        2219
+      ],
+      "source_excerpt": "Mythril",
+      "reason": "与同形变体 mithril 统一“秘银”；f1 拼写变体非冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2219 的 Bar of Mythril 含 Mythril，与 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Mythril 为奇幻金属，译“秘银”，与 Bar of Mythril 的“秘银锭”一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "材料名归“物品”，分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "审计 f1 中同译名项为小写 mithril，同一奇幻金属拼写变体；本条 Mythril 译“秘银”一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:318",
+      "evidence_rows": [
+        2310
+      ],
+      "source_excerpt": "Diamond-tipped Throwing Dart",
+      "reason": "物品名 Diamond-tipped Throwing Dart 译名可成立，维持原条目。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2310 原文即 Diamond-tipped Throwing Dart，与 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译“钻石尖投掷镖”，保留钻石尖与投掷镖特征，名称简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品名归“物品”，分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与物品命名风格一致；无同译名冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:294",
+    "terms:296",
+    "terms:298",
+    "terms:299",
+    "terms:300",
+    "terms:302",
+    "terms:303",
+    "terms:308",
+    "terms:314",
+    "terms:316",
+    "terms:317",
+    "terms:318"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

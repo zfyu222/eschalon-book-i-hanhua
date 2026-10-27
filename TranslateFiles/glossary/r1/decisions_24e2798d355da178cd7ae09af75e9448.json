@@ -1,0 +1,536 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 12 条 non_translate 条目审校；资源路径按完整记录保护，脚本命令和内部常量按大小写敏感精确文本保护并覆盖独立及嵌入用例，技能常量在仅有独立记录时限定为完整记录。未发现需隔离、新增或待定匹配的条目。",
+  "acknowledged_findings": [
+    "F0030",
+    "F0034",
+    "F0036",
+    "F0037",
+    "F0038"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "内部资源清单路径，当前记录整条即为该路径，按完整记录保持原文。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，限定为完整记录，避免全局禁翻。",
+      "evidence_rows": [
+        1252
+      ],
+      "table": "non_translate",
+      "index": 84
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "内部资源路径，当前记录整条即为该路径，按完整记录保持原文。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，限定为完整记录，避免全局禁翻。",
+      "evidence_rows": [
+        1253
+      ],
+      "table": "non_translate",
+      "index": 85
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "音效资源路径，当前记录整条即为该路径，按完整记录保持原文。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，限定为完整记录，避免全局禁翻。",
+      "evidence_rows": [
+        1256
+      ],
+      "table": "non_translate",
+      "index": 87
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "音效资源路径，当前记录整条即为该路径，按完整记录保持原文。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，限定为完整记录，避免全局禁翻。",
+      "evidence_rows": [
+        1267
+      ],
+      "table": "non_translate",
+      "index": 91
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "音效资源路径，当前记录整条即为该路径，按完整记录保持原文。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，限定为完整记录，避免全局禁翻。",
+      "evidence_rows": [
+        1268
+      ],
+      "table": "non_translate",
+      "index": 92
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "音效资源路径，当前记录整条即为该路径，按完整记录保持原文。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，限定为完整记录，避免全局禁翻。",
+      "evidence_rows": [
+        1276
+      ],
+      "table": "non_translate",
+      "index": 93
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "预设角色数据路径，当前记录整条即为该路径，按完整记录保持原文。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，限定为完整记录，避免全局禁翻。",
+      "evidence_rows": [
+        1279
+      ],
+      "table": "non_translate",
+      "index": 94
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "脚本任务命令及参数，独立记录与分号串联命令中均按原文保留。"
+        }
+      },
+      "reason": "修正脚本命令的未限定保护范围；按精确文本覆盖独立及嵌入用例。",
+      "evidence_rows": [
+        1283,
+        989
+      ],
+      "table": "non_translate",
+      "index": 95
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "物品栏图标常量，独立记录及物品数据表字段中均按原文保留。"
+        }
+      },
+      "reason": "修正图标常量的未限定保护范围；按精确文本覆盖独立及嵌入用例。",
+      "evidence_rows": [
+        1332,
+        2743
+      ],
+      "table": "non_translate",
+      "index": 103
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "技能内部常量，独立记录及物品数据表字段中均按原文保留。"
+        }
+      },
+      "reason": "修正技能常量的未限定保护范围；按精确文本覆盖独立及嵌入用例。",
+      "evidence_rows": [
+        1353,
+        2592
+      ],
+      "table": "non_translate",
+      "index": 105
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "技能内部常量，独立记录及物品/卷轴数据表字段中均按原文保留。"
+        }
+      },
+      "reason": "修正技能常量的未限定保护范围；按精确文本覆盖独立及嵌入用例。",
+      "evidence_rows": [
+        1354,
+        2699,
+        2722
+      ],
+      "table": "non_translate",
+      "index": 106
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "技能内部常量，当前仅见独立记录，按完整记录保持原文。"
+        }
+      },
+      "reason": "依据现有证据限定为完整记录，避免无依据的全局禁翻。",
+      "evidence_rows": [
+        1359
+      ],
+      "table": "non_translate",
+      "index": 107
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:84",
+      "evidence_rows": [
+        1252
+      ],
+      "source_excerpt": "incbin::incbin/master_item_sheet.csv",
+      "reason": "内部资源清单路径，保持原文；applicability 限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1252 原文整条为内部资源清单路径 incbin::incbin/master_item_sheet.csv。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目无需翻译，译文保持原文不变。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "资源路径不属于可译文本，归入 non_translate 正确；适用域为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他资源路径一致，均保持原文，未发现译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:85",
+      "evidence_rows": [
+        1253
+      ],
+      "source_excerpt": "resources/incbin/master_item_sheet.csv",
+      "reason": "内部资源路径，保持原文；applicability 限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1253 原文整条为内部资源路径 resources/incbin/master_item_sheet.csv。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目无需翻译，译文保持原文不变。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "资源路径不属于可译文本，归入 non_translate 正确；适用域为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1 的同类资源路径处理一致，均保持原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:87",
+      "evidence_rows": [
+        1256
+      ],
+      "source_excerpt": "sound/mo12_attack.wav",
+      "reason": "音效资源路径，保持原文；applicability 限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1256 原文整条为音效资源路径 sound/mo12_attack.wav。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目无需翻译，译文保持原文不变。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "音效资源路径不属于可译文本，归入 non_translate 正确；适用域为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他音效/资源路径一致，均保持原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:91",
+      "evidence_rows": [
+        1267
+      ],
+      "source_excerpt": "sound/Heart.wav",
+      "reason": "音效资源路径，保持原文；applicability 限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1267 原文整条为音效资源路径 sound/Heart.wav。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目无需翻译，译文保持原文不变。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "音效资源路径不属于可译文本，归入 non_translate 正确；适用域为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他 sound/ 路径一致，均保持原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:92",
+      "evidence_rows": [
+        1268
+      ],
+      "source_excerpt": "sound/Step_Hard1.wav",
+      "reason": "音效资源路径，保持原文；applicability 限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1268 原文整条为音效资源路径 sound/Step_Hard1.wav。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目无需翻译，译文保持原文不变。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "音效资源路径不属于可译文本，归入 non_translate 正确；适用域为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他 sound/ 路径一致，均保持原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:93",
+      "evidence_rows": [
+        1276
+      ],
+      "source_excerpt": "sound/MouseClick.wav",
+      "reason": "音效资源路径，保持原文；applicability 限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1276 原文整条为音效资源路径 sound/MouseClick.wav。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目无需翻译，译文保持原文不变。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "音效资源路径不属于可译文本，归入 non_translate 正确；适用域为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他 sound/ 路径一致，均保持原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:94",
+      "evidence_rows": [
+        1279
+      ],
+      "source_excerpt": "data/fighter",
+      "reason": "预设角色数据路径，保持原文；applicability 限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1279 原文整条为预设角色数据路径 data/fighter。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目无需翻译，译文保持原文不变。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "预设角色数据路径不属于可译文本，归入 non_translate 正确；适用域为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他资源路径一致，均保持原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:95",
+      "evidence_rows": [
+        1283,
+        989
+      ],
+      "source_excerpt": "kill_quest 24",
+      "reason": "脚本命令及参数；已补 text 适用域，覆盖独立和嵌入命令。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1283 独立出现 kill_quest 24，ordinal 989 以 kill_quest 62 ; kill_quest 24 形式出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 保持原文，不翻译命令及参数。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "脚本命令及参数归入 non_translate 正确；原适用域未限定，已补为 text 精确匹配。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "命令写法与现有脚本命令保护方向一致，覆盖独立及嵌入用例，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:103",
+      "evidence_rows": [
+        1332,
+        2743
+      ],
+      "source_excerpt": "IC_WEAPON",
+      "reason": "物品栏图标常量；已补 text 适用域，覆盖独立和嵌入字段。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1332 独立出现 IC_WEAPON，ordinal 2743 在物品数据表字段中嵌入出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 常量保持原文，不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "物品栏图标常量归入 non_translate 正确；已补 text 适用域以覆盖嵌入字段。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与物品表图标常量用法一致，大小写敏感精确保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:105",
+      "evidence_rows": [
+        1353,
+        2592
+      ],
+      "source_excerpt": "SKILL_ALCHEMY",
+      "reason": "技能内部常量；已补 text 适用域，覆盖独立和嵌入字段。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1353 独立出现 SKILL_ALCHEMY，ordinal 2592 在物品数据表字段中嵌入出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 技能常量保持原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "技能内部常量归入 non_translate 正确；已补 text 适用域覆盖嵌入用例。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与技能常量命名及保护方式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:106",
+      "evidence_rows": [
+        1354,
+        2699,
+        2722
+      ],
+      "source_excerpt": "SKILL_ARCANE_DIVINATION",
+      "reason": "技能内部常量；已补 text 适用域，覆盖独立和嵌入字段。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1354 独立出现，ordinal 2699 与 2722 在卷轴/物品数据表字段中嵌入出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 技能常量保持原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "技能内部常量归入 non_translate 正确；已补 text 适用域覆盖独立及嵌入用例。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 SKILL_ALCHEMY 等同批技能常量保护方式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:107",
+      "evidence_rows": [
+        1359
+      ],
+      "source_excerpt": "SKILL_CARTOGRAPHY",
+      "reason": "技能内部常量；依据现有证据限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1359 独立出现 SKILL_CARTOGRAPHY，未见本批嵌入用例。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 技能常量保持原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "技能内部常量归入 non_translate 正确；依据现有证据限定为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批技能常量命名一致，按完整记录保护。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:84",
+    "non_translate:85",
+    "non_translate:87",
+    "non_translate:91",
+    "non_translate:92",
+    "non_translate:93",
+    "non_translate:94",
+    "non_translate:95",
+    "non_translate:103",
+    "non_translate:105",
+    "non_translate:106",
+    "non_translate:107"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

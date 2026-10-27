@@ -1,0 +1,2398 @@
+{
+  "format_version": 1,
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15",
+  "snapshot_sha256": "4ca0dedf746f4d7dfd80852a6cf533c06ff9a6c510bf7fef4c19b6090932b626",
+  "original_counts": {
+    "characters": 105,
+    "terms": 581,
+    "non_translate": 386
+  },
+  "findings": [
+    {
+      "id": "F0000",
+      "code": "category",
+      "refs": [
+        "terms:539"
+      ],
+      "message": "Unsupported AINiee category: 地点"
+    },
+    {
+      "id": "F0001",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:24"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0002",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:25"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0003",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:26"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0004",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:27"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0005",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:28"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0006",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:29"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0007",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:30"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0008",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:32"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0009",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:33"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0010",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:34"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0011",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:35"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0012",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:36"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0013",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:39"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0014",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:40"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0015",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:41"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0016",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:42"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0017",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:47"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0018",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:54"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0019",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:56"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0020",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:59"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0021",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:61"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0022",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:63"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0023",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:65"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0024",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:67"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0025",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:68"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0026",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:69"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0027",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:70"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0028",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:71"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0029",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:90"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0030",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:95"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0031",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:96"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0032",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:101"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0033",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:102"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0034",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:103"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0035",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:104"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0036",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:105"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0037",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:106"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0038",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:107"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0039",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:108"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0040",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:109"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0041",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:113"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0042",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:115"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0043",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:116"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0044",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:117"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0045",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:118"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0046",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:119"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0047",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:120"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0048",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:121"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0049",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:122"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0050",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:123"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0051",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:124"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0052",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:125"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0053",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:126"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0054",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:128"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0055",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:129"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0056",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:130"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0057",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:131"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0058",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:132"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0059",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:136"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0060",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:137"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0061",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:138"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0062",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:139"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0063",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:140"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0064",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:142"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0065",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:143"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0066",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:144"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0067",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:145"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0068",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:146"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0069",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:147"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0070",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:148"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0071",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:149"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0072",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:150"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0073",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:151"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0074",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:152"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0075",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:153"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0076",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:154"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0077",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:155"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0078",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:158"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0079",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:159"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0080",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:160"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0081",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:161"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0082",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:162"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0083",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:163"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0084",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:164"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0085",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:165"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0086",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:166"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0087",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:167"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0088",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:168"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0089",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:169"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0090",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:170"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0091",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:171"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0092",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:172"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0093",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:173"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0094",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:174"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0095",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:175"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0096",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:177"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0097",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:178"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0098",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:179"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0099",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:181"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0100",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:182"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0101",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:183"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0102",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:184"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0103",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:185"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0104",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:186"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0105",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:187"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0106",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:188"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0107",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:189"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0108",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:190"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0109",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:191"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0110",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:192"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0111",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:193"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0112",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:194"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0113",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:196"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0114",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:198"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0115",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:201"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0116",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:202"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0117",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:208"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0118",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:213"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0119",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:214"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0120",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:215"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0121",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:216"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0122",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:217"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0123",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:218"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0124",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:219"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0125",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:220"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0126",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:221"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0127",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:222"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0128",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:223"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0129",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:224"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0130",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:225"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0131",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:226"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0132",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:227"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0133",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:228"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0134",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:229"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0135",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:230"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0136",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:231"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0137",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:232"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0138",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:233"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0139",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:234"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0140",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:235"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0141",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:236"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0142",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:237"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0143",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:238"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0144",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:239"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0145",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:240"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0146",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:241"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0147",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:242"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0148",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:243"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0149",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:244"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0150",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:245"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0151",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:246"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0152",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:247"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0153",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:248"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0154",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:249"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0155",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:250"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0156",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:251"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0157",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:252"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0158",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:253"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0159",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:254"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0160",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:255"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0161",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:256"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0162",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:257"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0163",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:258"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0164",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:259"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0165",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:260"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0166",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:261"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0167",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:262"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0168",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:263"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0169",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:264"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0170",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:265"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0171",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:266"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0172",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:267"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0173",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:268"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0174",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:269"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0175",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:270"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0176",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:271"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0177",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:272"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0178",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:273"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0179",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:274"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0180",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:275"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0181",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:276"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0182",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:277"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0183",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:278"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0184",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:279"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0185",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:280"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0186",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:281"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0187",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:282"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0188",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:283"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0189",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:284"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0190",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:285"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0191",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:286"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0192",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:287"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0193",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:288"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0194",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:289"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0195",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:291"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0196",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:292"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0197",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:293"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0198",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:294"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0199",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:295"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0200",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:296"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0201",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:297"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0202",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:298"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0203",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:299"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0204",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:301"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0205",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:302"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0206",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:304"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0207",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:305"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0208",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:306"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0209",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:307"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0210",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:308"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0211",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:309"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0212",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:310"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0213",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:311"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0214",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:312"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0215",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:313"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0216",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:325"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0217",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:326"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0218",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:327"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0219",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:328"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0220",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:333"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0221",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:335"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0222",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:336"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0223",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:337"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0224",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:338"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0225",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:339"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0226",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:340"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0227",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:341"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0228",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:342"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0229",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:343"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0230",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:344"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0231",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:345"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0232",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:346"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0233",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:347"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0234",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:348"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0235",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:349"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0236",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:350"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0237",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:351"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0238",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:352"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0239",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:353"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0240",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:354"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0241",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:355"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0242",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:356"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0243",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:357"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0244",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:358"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0245",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:359"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0246",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:360"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0247",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:361"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0248",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:362"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0249",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:363"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0250",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:364"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0251",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:366"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0252",
+      "code": "unscoped_nontranslate",
+      "refs": [
+        "non_translate:375"
+      ],
+      "message": "Word/identifier protection needs explicit applicability and contextual reasoning; inspect standalone and embedded uses."
+    },
+    {
+      "id": "F0253",
+      "code": "ambiguous_applicability",
+      "refs": [
+        "non_translate:278"
+      ],
+      "message": "Ordinary word/single letter: quarantine unless a real game-specific meaning is evidenced; otherwise supply explicit applicability, case sensitivity and reason."
+    },
+    {
+      "id": "F0254",
+      "code": "shared_translation",
+      "refs": [
+        "characters:45",
+        "characters:46"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0255",
+      "code": "shared_translation",
+      "refs": [
+        "characters:49",
+        "characters:50"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0256",
+      "code": "shared_translation",
+      "refs": [
+        "characters:68",
+        "characters:69"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0257",
+      "code": "shared_translation",
+      "refs": [
+        "terms:1",
+        "terms:528"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0258",
+      "code": "shared_translation",
+      "refs": [
+        "terms:8",
+        "terms:209",
+        "terms:210"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0259",
+      "code": "shared_translation",
+      "refs": [
+        "terms:9",
+        "terms:189"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0260",
+      "code": "shared_translation",
+      "refs": [
+        "terms:27",
+        "terms:532",
+        "terms:568"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0261",
+      "code": "shared_translation",
+      "refs": [
+        "terms:34",
+        "terms:211"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0262",
+      "code": "shared_translation",
+      "refs": [
+        "terms:49",
+        "terms:179"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0263",
+      "code": "shared_translation",
+      "refs": [
+        "terms:52",
+        "terms:504"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0264",
+      "code": "shared_translation",
+      "refs": [
+        "terms:55",
+        "terms:268"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0265",
+      "code": "shared_translation",
+      "refs": [
+        "terms:56",
+        "terms:274"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0266",
+      "code": "shared_translation",
+      "refs": [
+        "terms:57",
+        "terms:290"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0267",
+      "code": "shared_translation",
+      "refs": [
+        "terms:58",
+        "terms:281",
+        "terms:366"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0268",
+      "code": "shared_translation",
+      "refs": [
+        "terms:59",
+        "terms:287"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0269",
+      "code": "shared_translation",
+      "refs": [
+        "terms:61",
+        "terms:270"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0270",
+      "code": "shared_translation",
+      "refs": [
+        "terms:66",
+        "terms:271"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0271",
+      "code": "shared_translation",
+      "refs": [
+        "terms:67",
+        "terms:272"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0272",
+      "code": "shared_translation",
+      "refs": [
+        "terms:69",
+        "terms:288"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0273",
+      "code": "shared_translation",
+      "refs": [
+        "terms:70",
+        "terms:286"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0274",
+      "code": "shared_translation",
+      "refs": [
+        "terms:81",
+        "terms:317"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0275",
+      "code": "shared_translation",
+      "refs": [
+        "terms:100",
+        "terms:303"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0276",
+      "code": "shared_translation",
+      "refs": [
+        "terms:101",
+        "terms:171"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0277",
+      "code": "shared_translation",
+      "refs": [
+        "terms:158",
+        "terms:298"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0278",
+      "code": "shared_translation",
+      "refs": [
+        "terms:161",
+        "terms:277"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0279",
+      "code": "shared_translation",
+      "refs": [
+        "terms:170",
+        "terms:362"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0280",
+      "code": "shared_translation",
+      "refs": [
+        "terms:177",
+        "terms:495"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0281",
+      "code": "shared_translation",
+      "refs": [
+        "terms:181",
+        "terms:459"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0282",
+      "code": "shared_translation",
+      "refs": [
+        "terms:196",
+        "terms:245"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0283",
+      "code": "shared_translation",
+      "refs": [
+        "terms:213",
+        "terms:454"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0284",
+      "code": "shared_translation",
+      "refs": [
+        "terms:217",
+        "terms:218"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0285",
+      "code": "shared_translation",
+      "refs": [
+        "terms:265",
+        "terms:395"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0286",
+      "code": "shared_translation",
+      "refs": [
+        "terms:283",
+        "terms:367"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0287",
+      "code": "shared_translation",
+      "refs": [
+        "terms:291",
+        "terms:540"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0288",
+      "code": "shared_translation",
+      "refs": [
+        "terms:305",
+        "terms:557"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0289",
+      "code": "shared_translation",
+      "refs": [
+        "terms:324",
+        "terms:502"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0290",
+      "code": "shared_translation",
+      "refs": [
+        "terms:339",
+        "terms:578"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0291",
+      "code": "shared_translation",
+      "refs": [
+        "terms:452",
+        "terms:505"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    },
+    {
+      "id": "F0292",
+      "code": "shared_translation",
+      "refs": [
+        "terms:458",
+        "terms:535"
+      ],
+      "message": "Different names share a translation; verify aliases/context."
+    }
+  ]
+}

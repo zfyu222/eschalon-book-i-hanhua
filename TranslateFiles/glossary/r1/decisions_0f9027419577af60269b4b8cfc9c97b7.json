@@ -1,0 +1,355 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐项审校 e1-e11 的原文、译名、分类和一致性；确认 f1 为 dwarf/Dwarven 同词族共用中文词根而非专名冲突，修正 e6/e9 的术语说明，并为 e7 补充 non_translate 的适用范围。",
+  "acknowledged_findings": [
+    "F0263"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "Tanglewood 的一位游侠领主；曾寻回一把钥匙并交给说话者保管。"
+      },
+      "reason": "原 term_reason 含未在 4060 出处出现的 Erubor/Goblin key 细节，按原文可证内容修正。",
+      "evidence_rows": [
+        4060
+      ],
+      "table": "terms",
+      "index": 536
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "该原文整条为角色数据路径标识符 data/ranger，应原样保留，避免资源路径失效。"
+        }
+      },
+      "reason": "non_translate 条目需明确 applicability，限为完整记录匹配，避免将裸 ranger 全局禁翻。",
+      "evidence_rows": [
+        2350
+      ],
+      "table": "non_translate",
+      "index": 324
+    },
+    {
+      "patch": {
+        "term_reason": "泰尔莫尔地下种族；年表记载其与定居者因矿脉争端爆发 Plague Wars，后被逐入地下。"
+      },
+      "reason": "删除无出处的 underfolk 说法，按 438 原文修正术语说明。",
+      "evidence_rows": [
+        438
+      ],
+      "table": "terms",
+      "index": 50
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:42",
+      "evidence_rows": [
+        1023
+      ],
+      "source_excerpt": "Rangers are scouts and protectors of their homeland.",
+      "reason": "Ranger 为角色职业；原文说明其斥候/守护者定位与远程战斗倾向，译名“游侠”准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1023 明确以 Rangers are scouts and protectors of their homeland 定义该职业。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Ranger 在角色职业语境译“游侠”，保留职业身份且简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "身份类别符合角色职业/身份；enforcement=required 用于冻结职业名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批 Ranger 词根统一按“游侠”处理，无冲突译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:121",
+      "evidence_rows": [
+        380
+      ],
+      "source_excerpt": "The Greatest Ranger",
+      "reason": "标题式专名，按完整书名/物品名保留译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "380 原文为标题式名称 The Greatest Ranger，无附加正文。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译为《最伟大的游侠》，完整保留 Greatest Ranger 语义并使用书名号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为书籍/物品标题归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Ranger 译作“游侠”，与同词根职业术语一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:433",
+      "evidence_rows": [
+        2593
+      ],
+      "source_excerpt": "Burglar's Leather Gloves",
+      "reason": "独特物品名；属性行显示其提升开锁技能，译名保留材质与装备类型。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2593 物品名称字段明确为 Burglar's Leather Gloves，并带 SKILL_PICK_LOCKS 属性。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译名“盗贼皮手套”对应 Burglar's Leather Gloves，简洁保留物品类别。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "装备名称归入物品，category_path=物品 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与皮革装备命名方式一致，保留材质+装备类别。"
+        }
+      }
+    },
+    {
+      "ref": "terms:437",
+      "evidence_rows": [
+        2648
+      ],
+      "source_excerpt": "Leather of the Prowler",
+      "reason": "独特皮甲名；属性行显示提升潜行技能，译名明确装备部位。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2648 名称字段为 Leather of the Prowler，属性含 SKILL_MOVE_SILENT。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“潜行者皮甲”对应 Prowler 的潜行含义并明确装备部位。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "装备名称归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与皮革装备译法保持材质+部位格式。"
+        }
+      }
+    },
+    {
+      "ref": "terms:441",
+      "evidence_rows": [
+        2681
+      ],
+      "source_excerpt": "Ranger's Leather Bracers",
+      "reason": "独特皮护腕名；属性行显示提升弓术，Ranger 词根沿用“游侠”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2681 名称字段为 Ranger's Leather Bracers，属性含 SKILL_WEAPON_BOW。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“游侠皮护腕”对应 Ranger's Leather Bracers，并保留 Ranger 词根译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "装备名称归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Ranger 译“游侠”，与同词根条目保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:536",
+      "evidence_rows": [
+        4060
+      ],
+      "source_excerpt": "This key was recently recovered by a Ranger Lord of Tanglewood",
+      "reason": "身份称谓；原文显示为 Tanglewood 的 Ranger Lord。已修正 term_reason，去除未在出处出现的细节。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4060 原文确有 a Ranger Lord of Tanglewood，并说明其寻回钥匙交给说话者。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“游侠领主”保留 Ranger 词根及 Lord 的领主/首领含义；作为称谓参考译名可接受。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "身份称谓归入身份，enforcement=reference 适合单处暂定称谓。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Ranger 词根沿用“游侠”，Lord 按头衔译“领主”，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:324",
+      "evidence_rows": [
+        2350
+      ],
+      "source_excerpt": "data/ranger",
+      "reason": "非翻译资源路径；已补充 whole_record applicability，防止路径被翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2350 整条原文为 data/ranger，是角色数据资源路径/标识符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产生译文，应原样保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入 non_translate 而非术语表，符合资源路径保护需求。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "补 applicability=mode:whole_record 后仅匹配完整记录 data/ranger，不把裸 ranger 全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "terms:48",
+      "evidence_rows": [
+        432
+      ],
+      "source_excerpt": "Scryers who perform Temporal Linking can use these linked memories to identify and locate people by focusing in on specific events.",
+      "reason": "施法者称谓；原文以关系从句解释其职能，因无统一职业名保留 reference 暂定译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "432 原文明确 Scryers 通过 Temporal Linking 使用关联记忆识别并定位人物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“占卜师”可表达 Scryers 的探知/占卜职能，保留 reference 暂定译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "施法者身份归入身份，reference 与不确定职业名相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批未出现其他 Scryer 变体，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:50",
+      "evidence_rows": [
+        438,
+        442,
+        464
+      ],
+      "source_excerpt": "Year 409 - Loneloft settlers report they have encountered a peaceful race of subterranean peoples known as the Orakur.",
+      "reason": "Orakur 为地下种族专名；已修正 term_reason 中无出处的 underfolk 说法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "438 年表明确称 Orakur 为地下种族，并与定居者因矿脉争端爆发战争。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "专名音译为“奥拉库尔”，在书名等相关名称中保持同一音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为种族/族群名归入种族，proper_name+required 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "已修正 term_reason；本批 Orakur 用例统一译“奥拉库尔”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:119",
+      "evidence_rows": [
+        385,
+        442
+      ],
+      "source_excerpt": "The Orakur Are Watching",
+      "reason": "书名专名；442 表明其是收录 Orakur 恐怖故事的儿童书。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "385 原文为 The Orakur Are Watching，442 说明其是收录 Orakur 恐怖故事的儿童书。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "书名译为《奥拉库尔在注视》，Orakur 音译与同词根专名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "儿童书标题归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Orakur 统一译“奥拉库尔”，标题保持完整。"
+        }
+      }
+    },
+    {
+      "ref": "terms:52",
+      "evidence_rows": [
+        436
+      ],
+      "source_excerpt": "This book is about a dwarf named Biggins",
+      "reason": "种族名词；原文用 dwarf 指 Biggins，并提及其在 Dwarven Legion 服役。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "436 原文称 Biggins 为 dwarf，并提及其在 Dwarven Legion 服役。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "dwarf 在奇幻种族语境译“矮人”，与 Dwarven 形容词词根一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族名归入种族，game_term+required 可冻结该族名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 核对：Dwarven 为同词族形容词，中文共用“矮人”词根，非不同专名冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:42",
+    "terms:121",
+    "terms:433",
+    "terms:437",
+    "terms:441",
+    "terms:536",
+    "non_translate:324",
+    "terms:48",
+    "terms:50",
+    "terms:119",
+    "terms:52"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

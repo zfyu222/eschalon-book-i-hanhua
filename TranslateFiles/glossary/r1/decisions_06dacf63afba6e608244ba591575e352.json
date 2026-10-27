@@ -1,0 +1,443 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条审校 e1-e12 的原文、译名、分类与一致性；e3、e8、e9、e10、e11 已按原文定义、中文搭配及已发布 v1.5 统一修订。e12 与只读 related e13 为同一组织单复数变体，共享“联邦卫队”合理，audit f1 已核对无冲突。",
+  "acknowledged_findings": [
+    "F0261"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "哥布林要塞",
+        "term_reason": "Gramuk 所在的哥布林据点，需四把哥布林钥匙进入；地图与关卡名同指 Goblin's Citadel。"
+      },
+      "reason": "采用已发布 v1.5 的“哥布林要塞”，既保留 Citadel 的要塞义，也避免与 Bastion Spire 的“堡垒尖塔”混淆。",
+      "evidence_rows": [
+        832,
+        3402,
+        4702
+      ],
+      "table": "terms",
+      "index": 12
+    },
+    {
+      "patch": {
+        "recommended_translation": "东部裂谷",
+        "term_reason": "Grimmhold 横跨其上的巨大裂谷，原为通向西泰尔莫的通道；城门封锁此处。"
+      },
+      "reason": "原文明确为 a huge rift cut into the ground，已发布 v1.5 用“东部裂谷”比“隘口”更贴合地貌。",
+      "evidence_rows": [
+        450,
+        522,
+        3701
+      ],
+      "table": "terms",
+      "index": 25
+    },
+    {
+      "patch": {
+        "category_path": "地名",
+        "recommended_translation": "猫头鹰栖木酒馆",
+        "term_reason": "Aridell 的酒馆，由 Porter 经营；原文亦作 Owls Roost Tavern。"
+      },
+      "reason": "酒馆是有名称的具体场所，category_path 宜为地名；译名采用已发布 v1.5 标准并统一各出处。",
+      "evidence_rows": [
+        462,
+        506,
+        3686
+      ],
+      "table": "terms",
+      "index": 29
+    },
+    {
+      "patch": {
+        "recommended_translation": "地下大世界",
+        "term_reason": "Orakur 所称的其矿物被定居者盗采的地下领域，亦作地图地点名。"
+      },
+      "reason": "“大地下”中文搭配生硬；按 the Great Underground 的领域义改为“地下大世界”，并统一 438 与 3554 两处。",
+      "evidence_rows": [
+        438,
+        3554
+      ],
+      "table": "terms",
+      "index": 32
+    },
+    {
+      "patch": {
+        "category_path": "组织",
+        "recommended_translation": "地下宝库",
+        "term_reason": "提供匿名保管服务的秘密金库组织/设施，后文简称 Repository；可用钥匙开启26号保险箱。"
+      },
+      "reason": "原文 551/3742 明说其为 service 与 secret society，不只是普通地名；译名采用已发布 v1.5“地下宝库”。",
+      "evidence_rows": [
+        551,
+        1211,
+        3742
+      ],
+      "table": "terms",
+      "index": 33
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:10",
+      "evidence_rows": [
+        555,
+        557,
+        2990,
+        4276
+      ],
+      "source_excerpt": "an old mining town called Blackwater",
+      "reason": "Blackwater 是城镇专名，推荐“黑水镇”与 town 语义及本批多处城门/城镇语境一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 557 明确称 Blackwater 为 an old mining town，是城镇专名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黑水镇”保留专名并补出 town 语义，符合 557 的城镇语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为城镇，category_path=地名 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "555、557、2990、4276 等均指同一城镇 Blackwater，现有“黑水镇”可统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:11",
+      "evidence_rows": [
+        435,
+        618,
+        3811
+      ],
+      "source_excerpt": "up the Nimmia River",
+      "reason": "Nimmia River 为河流专名，推荐“尼米亚河”与全部本批出处一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "618 明作 Nimmia River，是可航行河流专名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“尼米亚河”音译 Nimmia 并保留 River 的“河”义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为河流名，category_path=地名 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "435、618、3811 均作 Nimmia River；本批统一为“尼米亚河”，不按近似拼写擅自改并。"
+        }
+      }
+    },
+    {
+      "ref": "terms:12",
+      "evidence_rows": [
+        832,
+        3402,
+        4702
+      ],
+      "source_excerpt": "Goblin Citadel, Level 1",
+      "reason": "Goblin Citadel 为关卡与地图地名，推荐统一为“哥布林要塞”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3402 与 4702 均以 Goblin Citadel 作关卡/地图专名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原推荐“哥布林堡垒”改为已发布 v1.5“哥布林要塞”，避免与 Bastion Spire“堡垒尖塔”混淆。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文指哥布林据点/关卡地名，category_path=地名 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "832、4056、4702 同指一处，统一用“哥布林要塞”；与只读 related 的 Goblin's Citadel 译名相符。"
+        }
+      }
+    },
+    {
+      "ref": "terms:13",
+      "evidence_rows": [
+        439,
+        446,
+        786,
+        922
+      ],
+      "source_excerpt": "now we are stuck in Crakamir",
+      "reason": "Crakamir 为南部荒漠地区名，推荐“克拉卡米尔”保持一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "439 将 Crakamir 作商队被困地区，446 又见 North Crakamir。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“克拉卡米尔”音译稳定，符合本批所有候选。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文指荒漠/边境地区，category_path=地名 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "439、446、786、922 均指同一 Crakamir，现有译名可统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:14",
+      "evidence_rows": [
+        446
+      ],
+      "source_excerpt": "North Crakamir, home of Eschalon's largest population of Goblins",
+      "reason": "North Crakamir 是 Crakamir 北部地区专名，推荐“北克拉卡米尔”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "446 明作 North Crakamir，并说明是最大哥布林族群所在地。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“北克拉卡米尔”保留 North + Crakamir 的复合地名结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为地区名，category_path=地名 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4 的 Crakamir“克拉卡米尔”保持一致，未另造译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:18",
+      "evidence_rows": [
+        447,
+        520,
+        3390,
+        4620
+      ],
+      "source_excerpt": "Bastion Spire, Level 5",
+      "reason": "Bastion Spire 是泰尔莫首都/要塞名，推荐“堡垒尖塔”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3390 以 Bastion Spire, Level 5 作区域名，447/520 亦指首都要塞。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“堡垒尖塔”对应 Bastion=堡垒、Spire=尖塔，语义与地名功能相符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为都城/要塞地名，category_path=地名 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "447、520、3390、4620 均指同一地点，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:24",
+      "evidence_rows": [
+        450,
+        709,
+        1209,
+        3962
+      ],
+      "source_excerpt": "Grimmhold is an old fortress",
+      "reason": "Grimmhold 为旧要塞地名，推荐“格里姆霍尔德”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "450 明称 Grimmhold 为 old fortress，709/1209 亦作具体地点。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“格里姆霍尔德”完整对应 Grimmhold；候选少字变体“格里姆霍德”不宜采用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为旧要塞/通道地点，category_path=地名 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "450、709、1209、3962 均指同一 Grimmhold，最终译名可统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:25",
+      "evidence_rows": [
+        450,
+        522,
+        3701
+      ],
+      "source_excerpt": "the Eastern Gap, a huge rift cut into the ground",
+      "reason": "Eastern Gap 是巨大裂谷地貌，推荐修订为“东部裂谷”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "450 明确其为 a huge rift cut into the ground，并非普通山口。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原“东部隘口”改为已发布 v1.5“东部裂谷”，更贴合 rift 地貌。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为具名地理裂隙，category_path=地名 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "522、3701 的 Eastern Gap 均指同一被城门封锁处，统一用“东部裂谷”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:29",
+      "evidence_rows": [
+        462,
+        506,
+        1213,
+        3686,
+        3688
+      ],
+      "source_excerpt": "Welcome to the Owl's Roost Tavern",
+      "reason": "Owl's Roost Tavern 是 Aridell 具名酒馆，推荐统一为已发布“猫头鹰栖木酒馆”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "506 明作 Owl's Roost Tavern，并说明 Porter 为 owner。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "采用已发布 v1.5“猫头鹰栖木酒馆”，准确表达 Owl's Roost；不保留“枭栖酒馆”作为最终名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "酒馆是有名称的具体场所，category_path 由组织改为地名更准确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "462、506、1213、3686、3688 均指同一酒馆，含 Owls Roost Tavern 省撇号变体，统一为“猫头鹰栖木酒馆”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:32",
+      "evidence_rows": [
+        438,
+        3554
+      ],
+      "source_excerpt": "what they refer to as the \"Great Underground\"",
+      "reason": "Great Underground 是 Orakur 所称的地下领域名，推荐改译“地下大世界”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "438 说明 Orakur 以此名指称其矿物被定居者盗采的地下领域；3554 为地点标签。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "“大地下”中文搭配生硬，改为“地下大世界”以保留 Great + Underground 的领域名含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为地下领域/地点名，category_path=地名 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "438 与 3554 同用 Great Underground，统一采用“地下大世界”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:33",
+      "evidence_rows": [
+        548,
+        551,
+        1211,
+        3740,
+        3742
+      ],
+      "source_excerpt": "The Underground Repository is a service that provides uncompromised security and anonymity to its members.",
+      "reason": "Underground Repository 是秘密保管服务/组织及设施名，推荐“地下宝库”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "548/3740 称其为 place，551/3742 明确定义为 service 与 secret society。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原“地下仓库”改为已发布 v1.5“地下宝库”，既保留 Repository 的保管义，也符合秘密金库性质。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "551/3742 显示其为有章程的秘密服务/组织，category_path 由地名改为组织更准确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "548/3740 的全名与 1211 的 Repository 简称同指一处，统一用“地下宝库”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:34",
+      "evidence_rows": [
+        438,
+        488,
+        4617,
+        4620
+      ],
+      "source_excerpt": "Thaermore establishes the Commonwealth Guard",
+      "reason": "Commonwealth Guard 是泰尔莫军事组织，推荐“联邦卫队”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "438 明载 Thaermore establishes the Commonwealth Guard，是具名军队/卫队。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“联邦卫队”准确表达 Commonwealth 的联邦/共同体属性与 Guard 的卫队义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为军事组织，category_path=组织 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "438/488 为单数，4617 为复数 Commonwealth Guards，均指同一组织；与只读 e13 的单复变体共享“联邦卫队”合理，f1 非异名冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:10",
+    "terms:11",
+    "terms:12",
+    "terms:13",
+    "terms:14",
+    "terms:18",
+    "terms:24",
+    "terms:25",
+    "terms:29",
+    "terms:32",
+    "terms:33",
+    "terms:34"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

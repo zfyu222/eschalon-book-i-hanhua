@@ -1,0 +1,18 @@
+{
+  "workflow": "custom",
+  "backend": "api",
+  "source_language": "English",
+  "target_language": "简体中文",
+  "style": "西式奇幻角色扮演游戏文本。叙述、书籍、任务与物品说明采用简洁典雅的书面中文；NPC 对话自然口语化，保留人物身份与语气差异；物品、技能、属性、地名、人名严格遵循冻结术语表，不得自行改译。图片界面文字（菜单、按钮、标签、状态栏、教程标注）必须简短紧凑，优先使用两到四字词，避免超出原始文字块的宽度。方括号内的完整句或短语（如 [Give him the Amulet Passkey 15]、[Save vs Disease: SUCCESS!]、[Powder Blast]、[End his life]、[BACK]、[END]）是玩家可见文本，必须翻译其内容并保留方括号；只有 [P1] 这类占位符编号保持原样。保留原文中的 * & # ^ $ 等颜色与强调控制符、{ } 变量、|| 分段和字面 \\n 转义。",
+  "batch_tokens": 1024,
+  "task_input_tokens": 65536,
+  "extract_batch_tokens": 10000,
+  "glossary_review_batch_records": 60,
+  "glossary_review_batch_tokens": 10000,
+  "max_attempts": 3,
+  "polish": false,
+  "model": "deepseek-v4.1-flash",
+  "placeholder_family_overrides": {
+    "square_bracket": null
+  }
+}

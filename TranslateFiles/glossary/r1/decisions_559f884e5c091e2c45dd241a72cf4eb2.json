@@ -1,0 +1,366 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对全部12条术语的原文、译名、分类与一致性；修正e1的Gamfari译名和e3的Tangletree Forest译名，其余条目保留。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "加姆法里秘术店",
+        "term_reason": "3067店铺招牌名；Gamfari按既有译名统一为加姆法里。"
+      },
+      "reason": "Gamfari与既有译名加姆法里不一致，修正店铺名译名。",
+      "evidence_rows": [
+        3067
+      ],
+      "table": "terms",
+      "index": 474
+    },
+    {
+      "patch": {
+        "recommended_translation": "大缠木森林",
+        "term_reason": "3215路牌与4691地图中的森林全称；Tangletree Forest按既有译名统一为缠木森林，加Great为大缠木森林。"
+      },
+      "reason": "与既有Tangletree Forest译名缠木森林保持一致。",
+      "evidence_rows": [
+        3215,
+        4691
+      ],
+      "table": "terms",
+      "index": 478
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:474",
+      "evidence_rows": [
+        3067
+      ],
+      "source_excerpt": "Gamfari's Hermetics",
+      "reason": "店铺招牌专名；Gamfari按既有译名统一为加姆法里。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3067原文为Gamfari's Hermetics，确为店铺招牌专名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "修正为加姆法里秘术店，使Gamfari与既有加姆法里一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "店铺招牌作为地名类专名可保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Gamfari统一为加姆法里，Hermetics保留秘术店。"
+        }
+      }
+    },
+    {
+      "ref": "terms:476",
+      "evidence_rows": [
+        3104
+      ],
+      "source_excerpt": "Angelix's Armor",
+      "reason": "店铺招牌专名，译名与类别可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3104原文为Angelix's Armor，确为店铺招牌名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "安杰利克斯防具店准确表达Angelix's Armor并保留店铺名功能。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "店铺招牌归地名类专名可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Angelix音译稳定，Armor用防具与店名相符。"
+        }
+      }
+    },
+    {
+      "ref": "terms:478",
+      "evidence_rows": [
+        3215,
+        4691
+      ],
+      "source_excerpt": "Great Tangletree Forest",
+      "reason": "森林地名；按既有Tangletree Forest译名统一为大缠木森林。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3215和4691原文均为Great Tangletree Forest。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "修正为大缠木森林，采用既有Tangletree Forest=缠木森林。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "森林地名归地名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与Tangletree Forest缠木森林一致，统一Great为大为大缠木森林。"
+        }
+      }
+    },
+    {
+      "ref": "terms:481",
+      "evidence_rows": [
+        3139
+      ],
+      "source_excerpt": "Crypt Key",
+      "reason": "解锁条件中的钥匙物品名，译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3139中Crypt Key为解锁条件中的物品名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "墓穴钥匙对应Crypt Key，且与e5墓穴译法一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "钥匙物品归物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Crypt与North Parish Family Crypt的墓穴译法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:483",
+      "evidence_rows": [
+        3166
+      ],
+      "source_excerpt": "North Parish Family Crypt",
+      "reason": "墓穴地点专名，译名与类别可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3166原文为North Parish Family Crypt。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "北教区家族墓穴对应原文，North Parish与既有北教区一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "墓穴地点归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "North Parish译北教区，Family Crypt译家族墓穴，与Crypt Key墓穴一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:485",
+      "evidence_rows": [
+        3199
+      ],
+      "source_excerpt": "Blackwater Region",
+      "reason": "区域标题专名，译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3199原文Blackwater Region为区域标题。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "黑水地区自然表达Blackwater Region，区域标题简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "区域名称归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Blackwater在区域名中作黑水修饰，与单用黑水镇不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:488",
+      "evidence_rows": [
+        3222
+      ],
+      "source_excerpt": "Sonya's House of Pain",
+      "reason": "店铺招牌专名，译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3222原文Sonya's House of Pain为店铺招牌。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "索尼娅的痛苦之屋对应原文，Sonya与既有索尼娅一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "店铺招牌归地名类专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Sonya译索尼娅与相关条一致，House of Pain直译可保留。"
+        }
+      }
+    },
+    {
+      "ref": "terms:489",
+      "evidence_rows": [
+        3225
+      ],
+      "source_excerpt": "Guild of Fighters",
+      "reason": "公会组织专名，译名与类别可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3225原文明确Guild of Fighters为认证Sonya的公会名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "战士公会对应Guild of Fighters，Fighter取战士。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "公会名归组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Fighter译战士与既有Fighter=战士一致，Guild统一为公会。"
+        }
+      }
+    },
+    {
+      "ref": "terms:490",
+      "evidence_rows": [
+        3227
+      ],
+      "source_excerpt": "Blackwater Guild of Magicks",
+      "reason": "公会组织专名，译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3227原文Blackwater Guild of Magicks为公会招牌名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "黑水魔法公会对应Blackwater Guild of Magicks，Magicks取魔法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "公会名归组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Blackwater作黑水修饰，Guild of Magicks与魔法公会译法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:491",
+      "evidence_rows": [
+        3229
+      ],
+      "source_excerpt": "Blackwater Council House",
+      "reason": "建筑地点专名，译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3229原文Blackwater Council House为建筑名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "黑水议事厅对应Blackwater Council House，Council House取议事厅。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "建筑名归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Blackwater作黑水修饰，Council House统一议事厅。"
+        }
+      }
+    },
+    {
+      "ref": "terms:492",
+      "evidence_rows": [
+        3237
+      ],
+      "source_excerpt": "Crossroads of Thaermore",
+      "reason": "路牌地点专名，译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3237原文牌匾宣称该地为Crossroads of Thaermore。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "泰尔莫十字路口对应Crossroads of Thaermore，Thaermore与既有泰尔莫一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "路牌地点归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Thaermore译泰尔莫，Crossroads译十字路口。"
+        }
+      }
+    },
+    {
+      "ref": "terms:493",
+      "evidence_rows": [
+        3298
+      ],
+      "source_excerpt": "Village of Aridell Council House",
+      "reason": "议事厅建筑专名，译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3298原文Village of Aridell Council House为议事厅建筑名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "阿里德尔村议事厅对应原文，Aridell与既有阿里德尔一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "建筑名归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Aridell译阿里德尔，Council House与e10议事厅一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:474",
+    "terms:476",
+    "terms:478",
+    "terms:481",
+    "terms:483",
+    "terms:485",
+    "terms:488",
+    "terms:489",
+    "terms:490",
+    "terms:491",
+    "terms:492",
+    "terms:493"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

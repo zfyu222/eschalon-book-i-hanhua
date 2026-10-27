@@ -1,0 +1,432 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 的来源、译名、分类与一致性；f1 确认 SonicBlast 与 Sonic Blast 为同一法术的拼写变体，共用“音波冲击”不冲突；为 Sawbones、Illusionist、Naturalist、Preserver、True Druid、Conjuror 补充 whole_record 适用范围，避免普通词误替换。",
+  "acknowledged_findings": [
+    "F0279"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "Sawbones 在职业列表中作独立职业名，本身又是普通词，限定完整记录匹配以避免正文误替换。"
+        }
+      },
+      "reason": "补充适用范围，防止普通词义被全局替换。",
+      "evidence_rows": [
+        1462
+      ],
+      "table": "terms",
+      "index": 376
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "Illusionist 在职业列表中作独立职业名，本身又是普通词，限定完整记录匹配以避免正文误替换。"
+        }
+      },
+      "reason": "补充适用范围，防止普通词义被全局替换。",
+      "evidence_rows": [
+        1463
+      ],
+      "table": "terms",
+      "index": 377
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "Naturalist 在职业列表中作独立职业名，本身又是普通词，限定完整记录匹配以避免正文误替换。"
+        }
+      },
+      "reason": "补充适用范围，防止普通词义被全局替换。",
+      "evidence_rows": [
+        1464
+      ],
+      "table": "terms",
+      "index": 378
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "Preserver 在职业列表中作独立职业名，本身又是普通词，限定完整记录匹配以避免正文误替换。"
+        }
+      },
+      "reason": "补充适用范围，防止普通词义被全局替换。",
+      "evidence_rows": [
+        1465
+      ],
+      "table": "terms",
+      "index": 379
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "True Druid 在职业列表中作独立职业名，限定完整记录匹配以避免普通组合被误替换。"
+        }
+      },
+      "reason": "补充适用范围，防止普通组合词被全局替换。",
+      "evidence_rows": [
+        1467
+      ],
+      "table": "terms",
+      "index": 381
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "Conjuror 在职业列表中作独立职业名，本身又是普通词，限定完整记录匹配以避免正文误替换。"
+        }
+      },
+      "reason": "补充适用范围，防止普通词义被全局替换。",
+      "evidence_rows": [
+        1468
+      ],
+      "table": "terms",
+      "index": 382
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:362",
+      "evidence_rows": [
+        2418
+      ],
+      "source_excerpt": "SonicBlast",
+      "reason": "核对技能标识来源、译名、分类及共享译名；确认拼写变体共用译名不冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "证据 2418 原文为 SonicBlast，与 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "SonicBlast 由 sonic 与 blast 构成，译作“音波冲击”符合法术/效果名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "条目为音波法术的技能/效果标识，归入技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "SonicBlast 为无空格技能标识，采用“音波冲击”与同源法术名一致，未产生语义冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:373",
+      "evidence_rows": [
+        1458
+      ],
+      "source_excerpt": "Destroyer",
+      "reason": "核对称号/职业名来源、译名、分类与适用范围，未见需改项。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "证据 1458 原文为 Destroyer，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Destroyer 在称号/职业语境译“毁灭者”，保留破坏含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "条目为列表中的独立称号/职业名，归入身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "已用 whole_record 限定，避免与普通词 destroyer 混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:375",
+      "evidence_rows": [
+        1461
+      ],
+      "source_excerpt": "Bard",
+      "reason": "核对职业名来源、译名、分类与适用范围，未见需改项。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "证据 1461 原文为 Bard，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Bard 采用标准奇幻职业译名“吟游诗人”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1461 为职业名 Bard，归入身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "已用 whole_record 限定，译名稳定且不与普通词混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:376",
+      "evidence_rows": [
+        1462
+      ],
+      "source_excerpt": "Sawbones",
+      "reason": "核对原文、译名、分类与适用范围；需补 whole_record 以避免普通词误替换。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "证据 1462 原文为 Sawbones，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Sawbones 为带粗粝外科意象的职业名，“锯骨医师”保留原词形象且长度可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1462 为职业名 Sawbones，归入身份。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；已补 whole_record，使 Sawbones 仅在完整职业名记录中替换。"
+        }
+      }
+    },
+    {
+      "ref": "terms:377",
+      "evidence_rows": [
+        1463
+      ],
+      "source_excerpt": "Illusionist",
+      "reason": "核对原文、译名、分类与适用范围；需补 whole_record 以避免普通词误替换。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "证据 1463 原文为 Illusionist，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Illusionist 采用标准奇幻职业译名“幻术师”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1463 为职业名 Illusionist，归入身份。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；已补 whole_record，避免普通词误替换。"
+        }
+      }
+    },
+    {
+      "ref": "terms:378",
+      "evidence_rows": [
+        1464
+      ],
+      "source_excerpt": "Naturalist",
+      "reason": "核对原文、译名、分类与适用范围；需补 whole_record 以避免普通词误替换。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "证据 1464 原文为 Naturalist，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Naturalist 译“自然学家”，符合职业名与自然主题。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1464 为职业名 Naturalist，归入身份。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；已补 whole_record，避免普通词误替换。"
+        }
+      }
+    },
+    {
+      "ref": "terms:379",
+      "evidence_rows": [
+        1465
+      ],
+      "source_excerpt": "Preserver",
+      "reason": "核对原文、译名、分类与适用范围；需补 whole_record 以避免普通词误替换。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "证据 1465 原文为 Preserver，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Preserver 译“护存者”，与 Guardian“守护者”区分，保留保存/维护含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1465 为职业名 Preserver，归入身份。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；已补 whole_record，避免普通词误替换。"
+        }
+      }
+    },
+    {
+      "ref": "terms:380",
+      "evidence_rows": [
+        1466
+      ],
+      "source_excerpt": "Shadowlark",
+      "reason": "核对独特职业名来源、译名与分类，未见需改项。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "证据 1466 原文为 Shadowlark，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Shadowlark 为独特复合职业名，“影雀”保留 shadow+lark 的意象。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1466 为职业名 Shadowlark，归入身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Shadowlark 为独特职业名，无同形普通词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:381",
+      "evidence_rows": [
+        1467
+      ],
+      "source_excerpt": "True Druid",
+      "reason": "核对原文、译名、分类与适用范围；需补 whole_record 以避免普通组合被误替换。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "证据 1467 原文为 True Druid，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "True Druid 译“真德鲁伊”，true 直接修饰职业名，术语一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1467 为职业名 True Druid，归入身份。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；已补 whole_record，避免普通组合被误替换。"
+        }
+      }
+    },
+    {
+      "ref": "terms:382",
+      "evidence_rows": [
+        1468
+      ],
+      "source_excerpt": "Conjuror",
+      "reason": "核对原文、译名、分类与适用范围；需补 whole_record 以避免普通词误替换。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "证据 1468 原文为 Conjuror，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Conjuror 译“咒术师”作为施法职业名，简短可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1468 为职业名 Conjuror，归入身份。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；已补 whole_record，避免普通词误替换。"
+        }
+      }
+    },
+    {
+      "ref": "terms:383",
+      "evidence_rows": [
+        1469
+      ],
+      "source_excerpt": "Guardian",
+      "reason": "核对职业名来源、译名、分类与适用范围，未见需改项。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "证据 1469 原文为 Guardian，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Guardian 采用标准译名“守护者”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1469 为职业名 Guardian，归入身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "已用 whole_record 限定，且与 Preserver“护存者”区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:384",
+      "evidence_rows": [
+        1470
+      ],
+      "source_excerpt": "Paladin",
+      "reason": "核对职业名来源、译名、分类与适用范围，未见需改项。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "证据 1470 原文为 Paladin，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Paladin 采用标准奇幻职业译名“圣骑士”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1470 为职业名 Paladin，归入身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "已用 whole_record 限定，译名稳定。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:362",
+    "terms:373",
+    "terms:375",
+    "terms:376",
+    "terms:377",
+    "terms:378",
+    "terms:379",
+    "terms:380",
+    "terms:381",
+    "terms:382",
+    "terms:383",
+    "terms:384"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

@@ -1,0 +1,378 @@
+{
+  "review_complete": true,
+  "review_summary": "本批共审校10条：e1、e2、e3、e9、e10的物品与疾病术语在原文、译名、分类及一致性上通过；e4-e8为音乐资源路径，补whole_record applicability后保留不译；f1已核对为Blister Pox/Blisterpox空格变体，统一“水疱痘”。",
+  "acknowledged_findings": [
+    "F0289"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "原文2315为物品名Vintage Wine，指陈年葡萄酒类可获取物品。"
+      },
+      "reason": "原term_reason仅写“物品名称条目”，补足具体指称与原文依据。",
+      "evidence_rows": [
+        2315
+      ],
+      "table": "terms",
+      "index": 319
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "资源路径记录原文仅为music/battle_loop.wav，属于运行时音频资源路径，非正文可译内容。"
+        }
+      },
+      "reason": "音频资源路径需限定保留范围，避免将music或扩展名全局禁翻。",
+      "evidence_rows": [
+        1566
+      ],
+      "table": "non_translate",
+      "index": 133
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "资源路径记录原文仅为music/title.ogg，属于运行时音频资源路径，非正文可译内容。"
+        }
+      },
+      "reason": "音频资源路径需限定保留范围，避免将music或扩展名全局禁翻。",
+      "evidence_rows": [
+        1567
+      ],
+      "table": "non_translate",
+      "index": 134
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "资源路径记录原文仅为music/death.ogg，属于运行时音频资源路径，非正文可译内容。"
+        }
+      },
+      "reason": "音频资源路径需限定保留范围，避免将music或扩展名全局禁翻。",
+      "evidence_rows": [
+        1831
+      ],
+      "table": "non_translate",
+      "index": 195
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "资源路径记录原文仅为music/insanity.ogg，属于运行时音频资源路径，非正文可译内容。"
+        }
+      },
+      "reason": "音频资源路径需限定保留范围，避免将music或扩展名全局禁翻。",
+      "evidence_rows": [
+        2282
+      ],
+      "table": "non_translate",
+      "index": 300
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "资源路径记录原文仅为music/forge_thy_destiny.ogg，属于运行时音频资源路径，非正文可译内容。"
+        }
+      },
+      "reason": "音频资源路径需限定保留范围，避免将music或扩展名全局禁翻。",
+      "evidence_rows": [
+        2320
+      ],
+      "table": "non_translate",
+      "index": 314
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:319",
+      "evidence_rows": [
+        2315
+      ],
+      "source_excerpt": "Vintage Wine",
+      "reason": "物品名与原文一致，译名、分类通过；补足term_reason的原文指称。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2315原文为“Vintage Wine”，与条目source完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Vintage Wine”作为物品名译为“陈年葡萄酒”，符合简洁书面物品名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词为可获取物品名，category_path=物品合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形冲突，保留game_term/required设置。"
+        }
+      }
+    },
+    {
+      "ref": "terms:321",
+      "evidence_rows": [
+        1238,
+        1909
+      ],
+      "source_excerpt": "Dungeon Fever",
+      "reason": "疾病名与原文一致，译名、分类及疾病术语一致性通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1238原文为“Dungeon Fever”，1909将其列为血清可治的common disease。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Dungeon Fever”译为“地牢热病”，保留疾病名结构，与1909语境相符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词为疾病名，归入“其他”并作为game_term/required合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e3/e9/e10同为疾病名，病名结构处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:325",
+      "evidence_rows": [
+        1246,
+        1910
+      ],
+      "source_excerpt": "Insanity Fever",
+      "reason": "严重疾病名与原文一致，译名、分类及一致性通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1246原文为“Insanity Fever”，1910将其列为serious disease。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Insanity Fever”译为“狂乱热病”，符合严重疾病名的简洁表达。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词为疾病名，归入“其他”并作为game_term/required合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e2/e10的疾病命名风格一致，未与e7资源路径混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:133",
+      "evidence_rows": [
+        1566
+      ],
+      "source_excerpt": "music/battle_loop.wav",
+      "reason": "音频资源路径，保留不译；补whole_record限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1566原文为完整资源路径“music/battle_loop.wav”，与条目source一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate资源路径，无正文译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目未明确applicability；已通过edits.patch限定为whole_record，仅完整记录匹配时保留路径。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e5-e8的music/资源路径处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:134",
+      "evidence_rows": [
+        1567
+      ],
+      "source_excerpt": "music/title.ogg",
+      "reason": "音频资源路径，保留不译；补whole_record限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1567原文为完整资源路径“music/title.ogg”，与条目source一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate资源路径，无正文译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目未明确applicability；已通过edits.patch限定为whole_record，仅完整记录匹配时保留路径。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e4/e6-e8的music/资源路径处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:195",
+      "evidence_rows": [
+        1831
+      ],
+      "source_excerpt": "music/death.ogg",
+      "reason": "音频资源路径，保留不译；补whole_record限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1831原文为完整资源路径“music/death.ogg”，与条目source一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate资源路径，无正文译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目未明确applicability；已通过edits.patch限定为whole_record，仅完整记录匹配时保留路径。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e4/e5/e7/e8的music/资源路径处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:300",
+      "evidence_rows": [
+        2282
+      ],
+      "source_excerpt": "music/insanity.ogg",
+      "reason": "音频资源路径，保留不译；补whole_record限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2282原文为完整资源路径“music/insanity.ogg”，与条目source一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate资源路径，无正文译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目未明确applicability；已通过edits.patch限定为whole_record，仅完整记录匹配时保留路径。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e4-e6/e8的music/资源路径处理一致；不与e3疾病术语混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:314",
+      "evidence_rows": [
+        2320
+      ],
+      "source_excerpt": "music/forge_thy_destiny.ogg",
+      "reason": "音频资源路径，保留不译；补whole_record限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2320原文为完整资源路径“music/forge_thy_destiny.ogg”，与条目source一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate资源路径，无正文译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目未明确applicability；已通过edits.patch限定为whole_record，仅完整记录匹配时保留路径。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e4-e7的music/资源路径处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:322",
+      "evidence_rows": [
+        1240,
+        1909
+      ],
+      "source_excerpt": "Rusty Knuckles",
+      "reason": "疾病名与原文一致，译名、分类及一致性通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1240原文为“Rusty Knuckles”，1909将其列为血清可治的common disease。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译为“锈指病”，保留knuckles所指手指关节的意象，作为疾病名简洁可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词为疾病名，归入“其他”并作为game_term/required合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e2同为common disease，病名后缀“病”处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:324",
+      "evidence_rows": [
+        1244,
+        1910
+      ],
+      "source_excerpt": "Blister Pox",
+      "reason": "严重疾病名与原文一致，译名、分类及一致性通过；f1已核对为同一疾病空格变体。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1244原文为“Blister Pox”，1910将其列为serious disease。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Blister Pox”译为“水疱痘”，blister=水疱、pox=痘，语义准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词为疾病名，归入“其他”并作为game_term/required合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e3同为serious disease，病名格式一致；本批无冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:319",
+    "terms:321",
+    "terms:325",
+    "non_translate:133",
+    "non_translate:134",
+    "non_translate:195",
+    "non_translate:300",
+    "non_translate:314",
+    "terms:322",
+    "terms:324"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

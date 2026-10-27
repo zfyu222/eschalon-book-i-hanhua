@@ -1,0 +1,390 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校全部12条术语，确认地名、物品、技能、组织分类；修正e2、e3、e7、e10的译名及术语一致性，其余保留。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "枭栖酒馆",
+        "term_reason": "3296酒馆招牌名；462对话中Porter为其店主。"
+      },
+      "reason": "酒馆名与同店变体Owl's Roost Tavern统一为‘枭栖酒馆’，避免同店异译。",
+      "evidence_rows": [
+        3296,
+        462
+      ],
+      "table": "terms",
+      "index": 497
+    },
+    {
+      "patch": {
+        "recommended_translation": "教区地带"
+      },
+      "reason": "‘教区地区’语义重复，改为更自然的地名搭配‘教区地带’，保留Parishes=教区。",
+      "evidence_rows": [
+        3574
+      ],
+      "table": "terms",
+      "index": 498
+    },
+    {
+      "patch": {
+        "recommended_translation": "《三指萨姆的恶魔油制作指南》",
+        "term_reason": "3560书名；Three-fingered Sam译‘三指萨姆’，Demon Oil统一为‘恶魔油’。"
+      },
+      "reason": "Demon Oil按相关术语统一为‘恶魔油’，书名去掉‘之’并保留三指萨姆。",
+      "evidence_rows": [
+        3560
+      ],
+      "table": "terms",
+      "index": 516
+    },
+    {
+      "patch": {
+        "recommended_translation": "地下仓库",
+        "term_reason": "3490地下区域名；与Underground Repository统一为‘地下仓库’。"
+      },
+      "reason": "与Underground Repository变体统一为‘地下仓库’，避免同地异译。",
+      "evidence_rows": [
+        3490
+      ],
+      "table": "terms",
+      "index": 524
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:496",
+      "evidence_rows": [
+        3287,
+        4241
+      ],
+      "source_excerpt": "Grand Magicks Emporium",
+      "reason": "确认店招与Abygale自述指同一魔法商店；保留‘大魔法商行’，类别按命名商铺/地点处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3287店招与4241 Abygale自述均作Grand Magicks Emporium，确指同一店铺。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Grand=大，Magicks=魔法，Emporium=商行；‘大魔法商行’简洁且符合店名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "有招牌的命名商铺/场所，归入地名可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Grand/Magicks/Emporium与‘大/魔法/商行’对应，未与其他Grand词条冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:497",
+      "evidence_rows": [
+        3296,
+        462
+      ],
+      "source_excerpt": "The Owl's Roost Tavern",
+      "reason": "确认酒馆名；为与同店变体Owl's Roost Tavern一致，改为‘枭栖酒馆’。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3296为招牌原文，462中Porter为店主，确指同一酒馆。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原‘猫头鹰栖木酒馆’冗长；按Owl's Roost核心改为‘枭栖酒馆’，与同店变体统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "命名酒馆，归入地名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "The Owl's Roost Tavern与Owl's Roost Tavern为同店异形，核心统一为‘枭栖酒馆’。"
+        }
+      }
+    },
+    {
+      "ref": "terms:498",
+      "evidence_rows": [
+        3574
+      ],
+      "source_excerpt": "Parishes region",
+      "reason": "确认Parishes region为区域名；将重复的‘地区’改为‘地带’。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3574原文‘in the Parishes region of Thaermore’表明是Thaermore内的教区区域。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原‘教区地区’语义重复；改为‘教区地带’，保留Parishes=教区。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "区域名，归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "保留‘教区’核心，与North/South Parish的‘教区’用法相容。"
+        }
+      }
+    },
+    {
+      "ref": "terms:499",
+      "evidence_rows": [
+        3255
+      ],
+      "source_excerpt": "Grimmhold West Entrance",
+      "reason": "确认西入口译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3255为关卡入口专名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Grimmhold=格里姆霍尔德，West Entrance=西门；简洁准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "命名入口/地点，归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与Grimmhold东门共用‘格里姆霍尔德’和‘门’的核心。"
+        }
+      }
+    },
+    {
+      "ref": "terms:500",
+      "evidence_rows": [
+        3306
+      ],
+      "source_excerpt": "Grimmhold East Entrance",
+      "reason": "确认东入口译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3306为关卡入口专名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Grimmhold=格里姆霍尔德，East Entrance=东门；简洁准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "命名入口/地点，归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与Grimmhold西门共用‘格里姆霍尔德’和‘门’的核心。"
+        }
+      }
+    },
+    {
+      "ref": "terms:512",
+      "evidence_rows": [
+        3458
+      ],
+      "source_excerpt": "Heavy Key",
+      "reason": "确认钥匙物品名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3458解锁条件括号内为物品名Heavy Key。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Heavy=沉重，Key=钥匙；‘沉重钥匙’为清晰物品名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "解锁条件中的钥匙物品，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Heavy Key作为完整物品名，词义与结构稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:516",
+      "evidence_rows": [
+        3560
+      ],
+      "source_excerpt": "Three-fingered Sam's Guide to making Demon Oil",
+      "reason": "确认书名；Demon Oil统一为‘恶魔油’，去掉‘之’。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3560为书名，含作者名和Demon Oil。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原‘恶魔之油’与Demon Oil术语不一致；改为‘恶魔油制作指南’，并采用‘三指萨姆’。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "书籍作为可获取/阅读物品，归入物品。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Three-fingered Sam=三指萨姆，Demon Oil=恶魔油；书名核心与相关术语统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:518",
+      "evidence_rows": [
+        3468
+      ],
+      "source_excerpt": "Elemental Studies",
+      "reason": "确认元素学科目名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3468为Shadowmirk科目标签Elemental Studies。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Elemental=元素，Studies=学；‘元素学’为自然科目名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为魔法学科/科目，归入技能可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与Divinational Studies同样以‘学’译Studies，Elemental与Elemental Magick共享‘元素’。"
+        }
+      }
+    },
+    {
+      "ref": "terms:519",
+      "evidence_rows": [
+        3469
+      ],
+      "source_excerpt": "Divinational Studies",
+      "reason": "确认占卜学科目名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3469为Shadowmirk科目标签Divinational Studies。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Divinational=占卜的，Studies=学；‘占卜学’准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "占卜学科目，归入技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Studies与Elemental Studies统一译‘学’，Divination系译‘占卜’。"
+        }
+      }
+    },
+    {
+      "ref": "terms:524",
+      "evidence_rows": [
+        3490
+      ],
+      "source_excerpt": "The Underground Repository",
+      "reason": "确认地下区域名；与Underground Repository变体统一为‘地下仓库’。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3490为The Underground Repository区域名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原‘地下储藏库’与同词Underground Repository的‘地下仓库’不一致；统一为‘地下仓库’。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地下区域名，归入地名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Underground Repository核心统一为‘地下仓库’，The不另译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:525",
+      "evidence_rows": [
+        3236
+      ],
+      "source_excerpt": "Western Tanglewood",
+      "reason": "确认西部区域名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3236为区域名Western Tanglewood。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Western=西，Tanglewood=缠木林；‘西缠木林’简洁且保留地貌。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "区域名，归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Tanglewood按‘缠木林’处理，Western前置为‘西’，无同批冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:526",
+      "evidence_rows": [
+        3304
+      ],
+      "source_excerpt": "Riders of Thaermore",
+      "reason": "确认组织名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3304纪念碑献给Riders of Thaermore，确为组织名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Thaermore=泰尔莫，Riders=骑兵团；‘泰尔莫骑兵团’符合纪念语文体。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "武装组织名，归入组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Thaermore与相关地名统一为‘泰尔莫’，Riders译‘骑兵团’。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:496",
+    "terms:497",
+    "terms:498",
+    "terms:499",
+    "terms:500",
+    "terms:512",
+    "terms:516",
+    "terms:518",
+    "terms:519",
+    "terms:524",
+    "terms:525",
+    "terms:526"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

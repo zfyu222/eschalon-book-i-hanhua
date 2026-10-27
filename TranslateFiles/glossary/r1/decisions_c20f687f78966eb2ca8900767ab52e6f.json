@@ -1,0 +1,529 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12：运行时击杀/任务/条件/掉落命令及资源与字体路径均应保留原文；为 e1-e5、e7-e12 补 whole_record 作用域，e6 因同时存在独立与嵌入用例补精确 text 作用域。",
+  "acknowledged_findings": [
+    "F0022",
+    "F0024",
+    "F0025",
+    "F0026",
+    "F0027",
+    "F0028"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条为 kill_quest 61 运行时命令，仅在整条记录使用，保留命令及参数。"
+        }
+      },
+      "reason": "补充明确作用域，避免默认全局禁翻。",
+      "evidence_rows": [
+        993
+      ],
+      "table": "non_translate",
+      "index": 63
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条为 kill_quest 1 运行时命令，仅在整条记录使用，保留命令及参数。"
+        }
+      },
+      "reason": "补充明确作用域，避免默认全局禁翻。",
+      "evidence_rows": [
+        997
+      ],
+      "table": "non_translate",
+      "index": 67
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条为 kill_quest 4 运行时命令，仅在整条记录使用，保留命令及参数。"
+        }
+      },
+      "reason": "补充明确作用域，避免默认全局禁翻。",
+      "evidence_rows": [
+        998
+      ],
+      "table": "non_translate",
+      "index": 68
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条为 kill_quest 5 运行时命令，仅在整条记录使用，保留命令及参数。"
+        }
+      },
+      "reason": "补充明确作用域，避免默认全局禁翻。",
+      "evidence_rows": [
+        999
+      ],
+      "table": "non_translate",
+      "index": 69
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条为 kill_quest 11 运行时命令，仅在整条记录使用，保留命令及参数。"
+        }
+      },
+      "reason": "补充明确作用域，避免默认全局禁翻。",
+      "evidence_rows": [
+        1000
+      ],
+      "table": "non_translate",
+      "index": 70
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "kill_quest 18 作为完整命令串在独立记录与复合命令行中均出现；精确字符串全局保留，避免命令被翻译。"
+        }
+      },
+      "reason": "同时覆盖独立与嵌入用例，故使用精确 text 作用域。",
+      "evidence_rows": [
+        1001,
+        2527
+      ],
+      "table": "non_translate",
+      "index": 71
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条为 quest 57 2 ; cond_special 9 复合运行时命令，整条保留。"
+        }
+      },
+      "reason": "补充明确作用域，避免默认全局禁翻。",
+      "evidence_rows": [
+        1002
+      ],
+      "table": "non_translate",
+      "index": 72
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条为 drop_item (Blue Goblin Key) 运行时掉落命令，括号内为命令参数/标识符，整条保留。"
+        }
+      },
+      "reason": "补充明确作用域，避免将命令参数误作显示名翻译。",
+      "evidence_rows": [
+        1004
+      ],
+      "table": "non_translate",
+      "index": 74
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条为资源目录路径 resources/packedgraphics/，整条保留。"
+        }
+      },
+      "reason": "补充明确作用域，避免默认全局禁翻。",
+      "evidence_rows": [
+        1151
+      ],
+      "table": "non_translate",
+      "index": 79
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条为内嵌字体路径 incbin::incbin/f1.ttf，整条保留。"
+        }
+      },
+      "reason": "补充明确作用域，避免默认全局禁翻。",
+      "evidence_rows": [
+        1153
+      ],
+      "table": "non_translate",
+      "index": 81
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条为内嵌字体路径 incbin::incbin/celtic.ttf，整条保留。"
+        }
+      },
+      "reason": "补充明确作用域，避免默认全局禁翻。",
+      "evidence_rows": [
+        1154
+      ],
+      "table": "non_translate",
+      "index": 82
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条为内嵌字体路径 incbin::incbin/kelt.ttf，整条保留。"
+        }
+      },
+      "reason": "补充明确作用域，避免默认全局禁翻。",
+      "evidence_rows": [
+        1155
+      ],
+      "table": "non_translate",
+      "index": 83
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:63",
+      "evidence_rows": [
+        993
+      ],
+      "source_excerpt": "kill_quest 61",
+      "reason": "确认 kill_quest 61 为独立运行时命令，补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 993 原文为 kill_quest 61，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目应保留原文；未生成译名，符合命令保护要求。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "kill_quest 61 是运行时任务击杀命令及编号，归入 non_translate 有实际依据。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同形命令按整条保留，不按普通词处理。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:67",
+      "evidence_rows": [
+        997
+      ],
+      "source_excerpt": "kill_quest 1",
+      "reason": "确认 kill_quest 1 为独立运行时命令，补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 997 原文为 kill_quest 1，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目应保留原文；未生成译名，符合命令保护要求。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "kill_quest 1 是运行时任务击杀命令及编号，归入 non_translate 有实际依据。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同形命令按整条保留，不按普通词处理。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:68",
+      "evidence_rows": [
+        998
+      ],
+      "source_excerpt": "kill_quest 4",
+      "reason": "确认 kill_quest 4 为独立运行时命令，补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 998 原文为 kill_quest 4，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目应保留原文；未生成译名，符合命令保护要求。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "kill_quest 4 是运行时任务击杀命令及编号，归入 non_translate 有实际依据。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同形命令按整条保留，不按普通词处理。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:69",
+      "evidence_rows": [
+        999
+      ],
+      "source_excerpt": "kill_quest 5",
+      "reason": "确认 kill_quest 5 为独立运行时命令，补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 999 原文为 kill_quest 5，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目应保留原文；未生成译名，符合命令保护要求。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "kill_quest 5 是运行时任务击杀命令及编号，归入 non_translate 有实际依据。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同形命令按整条保留，不按普通词处理。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:70",
+      "evidence_rows": [
+        1000
+      ],
+      "source_excerpt": "kill_quest 11",
+      "reason": "确认 kill_quest 11 为独立运行时命令，补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1000 原文为 kill_quest 11，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目应保留原文；未生成译名，符合命令保护要求。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "kill_quest 11 是运行时任务击杀命令及编号，归入 non_translate 有实际依据。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同形命令按整条保留，不按普通词处理。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:71",
+      "evidence_rows": [
+        1001,
+        2527
+      ],
+      "source_excerpt": "kill_quest 18",
+      "reason": "确认独立及嵌入用例，补 text 作用域覆盖完整命令串。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1001 原文为 kill_quest 18，且 ordinal 2527 复合命令行含同一完整命令串。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 保留原文；精确命令串不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "kill_quest 18 是运行时任务击杀命令，归入 non_translate 有依据。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立记录与复合命令行中的 kill_quest 18 均按同一完整命令串保护，覆盖两类用例。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:72",
+      "evidence_rows": [
+        1002
+      ],
+      "source_excerpt": "quest 57 2 ; cond_special 9",
+      "reason": "确认复合运行时命令，补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1002 原文为 quest 57 2 ; cond_special 9，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目整条保留，不拆译命令与参数。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "quest 与 cond_special 均为运行时任务/条件命令，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "复合命令按整条记录保护，不与普通 quest 文本混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:74",
+      "evidence_rows": [
+        1004
+      ],
+      "source_excerpt": "drop_item (Blue Goblin Key)",
+      "reason": "确认掉落命令含参数标识，补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1004 原文为 drop_item (Blue Goblin Key)，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 保留整条掉落命令；Blue Goblin Key 是命令参数/标识符，不单独翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "drop_item 为运行时掉落命令，括号内容为参数标识，归入 non_translate 有依据。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "整条命令与参数一起保留，避免将物品标识误作显示名翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:79",
+      "evidence_rows": [
+        1151
+      ],
+      "source_excerpt": "resources/packedgraphics/",
+      "reason": "确认资源目录路径，补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1151 原文为 resources/packedgraphics/，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 资源路径保留原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "resources/packedgraphics/ 是资源目录路径，归入 non_translate 有依据。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "路径按整条资源字符串保护，不与正文词组混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:81",
+      "evidence_rows": [
+        1153
+      ],
+      "source_excerpt": "incbin::incbin/f1.ttf",
+      "reason": "确认内嵌字体路径，补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1153 原文为 incbin::incbin/f1.ttf，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 内嵌字体路径保留原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "incbin::incbin/f1.ttf 是内嵌字体资源路径，归入 non_translate 有依据。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "字体路径按整条 incbin 指令保留，组件不另行翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:82",
+      "evidence_rows": [
+        1154
+      ],
+      "source_excerpt": "incbin::incbin/celtic.ttf",
+      "reason": "确认内嵌字体路径，补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1154 原文为 incbin::incbin/celtic.ttf，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 内嵌字体路径保留原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "incbin::incbin/celtic.ttf 是内嵌字体资源路径，归入 non_translate 有依据。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "字体路径按整条 incbin 指令保留，组件不另行翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:83",
+      "evidence_rows": [
+        1155
+      ],
+      "source_excerpt": "incbin::incbin/kelt.ttf",
+      "reason": "确认内嵌字体路径，补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1155 原文为 incbin::incbin/kelt.ttf，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 内嵌字体路径保留原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "incbin::incbin/kelt.ttf 是内嵌字体资源路径，归入 non_translate 有依据。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "字体路径按整条 incbin 指令保留，组件不另行翻译。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:63",
+    "non_translate:67",
+    "non_translate:68",
+    "non_translate:69",
+    "non_translate:70",
+    "non_translate:71",
+    "non_translate:72",
+    "non_translate:74",
+    "non_translate:79",
+    "non_translate:81",
+    "non_translate:82",
+    "non_translate:83"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

@@ -1,0 +1,410 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 12 个分配条目：underfolk 统一为已发布译名「地底之民」，archery 按 v1.5 改为「箭术」，Hide in Shadows 统一为「阴影潜藏」，Ring of the Shadow 修正为物品专名；隔离仅作描述性短语的 shadow hiding techniques。f1/f2/f4 的同译或单复数关系经语境确认合理，f3 已随 e8 改译消解。",
+  "acknowledged_findings": [
+    "F0266",
+    "F0267",
+    "F0268",
+    "F0291"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "地底之民",
+        "term_reason": "453/3635 中为 Orakur 的别称，指长期居住地下的种族；按已发布 v1.5 统一为「地底之民」。"
+      },
+      "reason": "统一已发布译名，避免 underfolk 别名译名并存。",
+      "evidence_rows": [
+        453,
+        3635
+      ],
+      "table": "terms",
+      "index": 54
+    },
+    {
+      "patch": {
+        "recommended_translation": "箭术",
+        "term_reason": "421/4153 中指教授与研习的弓箭技艺；按已发布 v1.5 统一为「箭术」。"
+      },
+      "reason": "按已发布 v1.5 译名统一 archery。",
+      "evidence_rows": [
+        421,
+        4153
+      ],
+      "table": "terms",
+      "index": 59
+    },
+    {
+      "patch": {
+        "recommended_translation": "阴影潜藏",
+        "term_reason": "1896 与 1050 为同一自动潜行技能 Hide in Shadows，仅控制符不同；统一为「阴影潜藏」。"
+      },
+      "reason": "与 e10 的 *Hide *in *Shadows 统一技能名。",
+      "evidence_rows": [
+        1896
+      ],
+      "table": "terms",
+      "index": 369
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "term_reason": "2689 为唯一命名戒指 Ring of the Shadow，绑定 SKILL_HIDE_SHADOWS，作物品专名处理。"
+      },
+      "reason": "唯一命名戒指应按 proper_name 处理，译名不变。",
+      "evidence_rows": [
+        2689
+      ],
+      "table": "terms",
+      "index": 448
+    }
+  ],
+  "quarantine": [
+    {
+      "reason": "422 的 shadow hiding techniques 只是书籍描述性短语，并非正式技能名；正式技能是 Hide in Shadows，保留会造成重复/误冻结。",
+      "evidence_rows": [
+        422
+      ],
+      "table": "terms",
+      "index": 60
+    }
+  ],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:53",
+      "evidence_rows": [
+        415,
+        3545,
+        4291
+      ],
+      "source_excerpt": "The Salamanders won't disturb the chests",
+      "reason": "原文将 Salamanders 描述为可守卫坑区/地下室的怪物，译名与分类成立；仅核对单复数与同族词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "415 与 3545 均以大写 Salamanders 指守卫宝箱的怪物；4291 要求清理地下室中的 Salamanders。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「火蜥蜴」作为奇幻怪物名可对应 Salamanders，并与尖牙变体共享核心词。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属游戏生物/种族词条，category_path=种族、enforcement=required 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单复数及与 Fanged Salamander 的同族关系不构成译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:452",
+      "evidence_rows": [
+        2807
+      ],
+      "source_excerpt": "Fanged Salamander",
+      "reason": "2807 为敌人/生物类型名；尖牙火蜥蜴对应准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2807 单独给出生物类型名 Fanged Salamander。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「尖牙火蜥蜴」准确对应 Fanged Salamander。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "生物类型词条，category_path=种族、required 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与复数 Fanged Salamanders 共用译名合理，单复数不另造译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:480",
+      "evidence_rows": [
+        3136
+      ],
+      "source_excerpt": "Salamander Pit...KEEP OUT!",
+      "reason": "3136 是警示牌地名，火蜥蜴坑为地点专名，保留坑区含义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3136 是地点名 Salamander Pit，附警示语。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「火蜥蜴坑」保留地点与坑区含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地点专名，category_path=地名、term_kind=proper_name、required 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与怪物名共享「火蜥蜴」，但本条为独立地名，不强行改译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:505",
+      "evidence_rows": [
+        3198
+      ],
+      "source_excerpt": "The casket was filled with Fanged Salamanders",
+      "reason": "3198 中箱内怪物为 Fanged Salamanders 复数；译名与 e2 单数一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3198 明确箱中充满 Fanged Salamanders。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "复数仍译「尖牙火蜥蜴」，与单数形式一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "生物类型词条，category_path=种族、required 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Fanged Salamander 为同一生物类型，共用译名合理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:54",
+      "evidence_rows": [
+        453,
+        3635
+      ],
+      "source_excerpt": "They are called underfolk",
+      "reason": "453/3635 说明 underfolk 是 Orakur 的别称、长期居于地下的种族；按已发布译名统一为「地底之民」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "453/3635 均说明 underfolk 是 Orakur 的别称，指永居地下的种族。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原「地下民」改为已发布 v1.5 的「地底之民」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族别称，category_path=种族、game_term/required 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一为「地底之民」，消除「地下民/地底民」并存的别名变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:57",
+      "evidence_rows": [
+        418,
+        4149
+      ],
+      "source_excerpt": "elements of swordsmanship",
+      "reason": "418/4149 将 swordsmanship 作为武器技艺/教学门类；「剑术」成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "418 讨论 swordsmanship 的武器术语、姿态与攻防；4149 Sonya 教授 Swordsmanship。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「剑术」准确表达剑类武器技艺与教学门类。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能门类，category_path=技能、required 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与剑类武器技能的「剑术」同译已核对；本条为 swordsmanship 技艺门类，语境可区分，保留。"
+        }
+      }
+    },
+    {
+      "ref": "terms:58",
+      "evidence_rows": [
+        419,
+        1020
+      ],
+      "source_excerpt": "lock picking theory",
+      "reason": "419/1020 将 lock picking 作为盗贼技能/理论；「开锁」与 Pick Locks 变体一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "419 讨论 lock picking theory；1020 称盗贼发展 lock picking 技能。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「开锁」准确表达用工具解锁，与 Pick Locks 技能名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能概念，category_path=技能、required 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 *Pick *Locks/Pick Locks 的「开锁」属同一技能变体，不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:59",
+      "evidence_rows": [
+        421,
+        4153
+      ],
+      "source_excerpt": "field of archery",
+      "reason": "421/4153 的 archery 指弓箭技艺/教学；按已发布 v1.5 统一为「箭术」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "421 讨论 archery 的精度与弓箭设计；4153 Aaron 教授 archery。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原「弓术」改为已发布 v1.5 的「箭术」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能/技艺门类，category_path=技能、required 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一为「箭术」，避免与弓类武器名称混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:60",
+      "evidence_rows": [
+        422
+      ],
+      "source_excerpt": "shadow hiding techniques",
+      "reason": "422 仅以 shadow hiding techniques 描述书籍内容，并非正式技能名；实际技能为 Hide in Shadows，拟隔离该独立词条。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "422 仅以 shadow hiding techniques 描述书籍内容，是描述性短语。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「阴影隐匿技巧」作为描述可理解，但不应固化为技能术语。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原按技能术语收录不妥；正式技能为 Hide in Shadows，本条应隔离。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与正式技能「阴影潜藏」不应并列冻结，隔离避免重复。"
+        }
+      }
+    },
+    {
+      "ref": "terms:276",
+      "evidence_rows": [
+        1050
+      ],
+      "source_excerpt": "*Hide *in *Shadows is the ability to utilize shadow and darkness to cover your movement.",
+      "reason": "1050 定义 *Hide *in *Shadows 为常驻自动潜行技能；译名「阴影潜藏」可作统一名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1050 定义 *Hide *in *Shadows 为利用阴影/黑暗掩护移动的常驻自动技能。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「阴影潜藏」简洁对应 Hide in Shadows，适合技能名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "自动潜行技能，category_path=技能、required 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 1896 的 ^Hide ^in ^Shadows 为同一技能，本条作为统一译名基准。"
+        }
+      }
+    },
+    {
+      "ref": "terms:369",
+      "evidence_rows": [
+        1896
+      ],
+      "source_excerpt": "To make ^Hide ^in ^Shadows more effective",
+      "reason": "1896 与 1050 为同一技能，仅控制符不同；原「隐匿阴影」改为统一的「阴影潜藏」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1896 使用 ^Hide ^in ^Shadows，与 1050 仅控制符不同。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原「隐匿阴影」改为与 1050 统一的「阴影潜藏」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "自动潜行技能，category_path=技能、required 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一为「阴影潜藏」，不再保留「隐匿阴影」变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:448",
+      "evidence_rows": [
+        2689
+      ],
+      "source_excerpt": "Ring of the Shadow",
+      "reason": "2689 为唯一戒指 IC_RING/Ring of the Shadow，带 SKILL_HIDE_SHADOWS 加成；译名与物品专名成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2689 的物品行给出 IC_RING 与 Ring of the Shadow，并绑定 SKILL_HIDE_SHADOWS。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「暗影之戒」符合戒指名，且不误译为技能。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "category_path=物品正确；term_kind 由 game_term 修正为 proper_name，因是唯一命名戒指。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与阴影潜藏技能共享 shadow 概念，但本条是独立物品专名，保留「暗影之戒」。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:53",
+    "terms:452",
+    "terms:480",
+    "terms:505",
+    "terms:54",
+    "terms:57",
+    "terms:58",
+    "terms:59",
+    "terms:60",
+    "terms:276",
+    "terms:369",
+    "terms:448"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

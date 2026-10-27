@@ -1,0 +1,242 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成7个角色条目的来源、译名、分类与一致性审校；修正2处term_reason中无原文依据的表述，并将Blackbarrow译名改为简体“黑冢”。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "417称他为Aridell村中可信任的受托人；3642称其为住在Bethel of the Green Moon附近、不喜访客的年长绅士。"
+      },
+      "reason": "3642原文未标明说话者为Eleanor，删除无据指认，按417与3642原文改写。",
+      "evidence_rows": [
+        417,
+        3642
+      ],
+      "table": "characters",
+      "index": 0
+    },
+    {
+      "patch": {
+        "term_reason": "408所载关于泰尔莫尔巨人奴役史的历史记述作者；原文未说明性别。"
+      },
+      "reason": "408未出现《Of Men and Giants》书名，删除无据书名并保留作者身份。",
+      "evidence_rows": [
+        408
+      ],
+      "table": "characters",
+      "index": 2
+    },
+    {
+      "patch": {
+        "recommended_translation": "黑冢的泰鲁斯"
+      },
+      "reason": "目标为简体中文，Blackbarrow按“barrow=冢”处理，“塚”为繁体异体，改为“黑冢”。",
+      "evidence_rows": [
+        421
+      ],
+      "table": "characters",
+      "index": 3
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:0",
+      "evidence_rows": [
+        417,
+        3642
+      ],
+      "source_excerpt": "Maddock is a simple man who has lived in this village most of his life and I knew he'd be a trustworthy caretaker of this parcel I left for you.",
+      "reason": "Maddock身份明确；仅修正term_reason中无原文依据的说话者指认。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "417原文称Maddock为可信任的受托人；3642仅称其为年长绅士，未标明说话者为Eleanor，已修正term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“马多克”音译对应Maddock，简繁与用字一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters表，proper_name，enforcement=required，符合人物专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同条目多处均作Maddock/马多克，未见别名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:1",
+      "evidence_rows": [
+        410,
+        411,
+        412
+      ],
+      "source_excerpt": "A guide to making simple elixirs and potions, by Senior Alchemist Uru Darkfrost.",
+      "reason": "三条教材署名一致，人物专名及身份明确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "410-412均署名Senior Alchemist Uru Darkfrost，身份为炼金术教材作者；原文未给性别。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“乌鲁·暗霜”对应Uru Darkfrost，保持姓名音译与姓氏意译的统一处理。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters表，proper_name，required，符合人物专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "三条教材署名一致，无其他译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:2",
+      "evidence_rows": [
+        408
+      ],
+      "source_excerpt": "A historical account of the enslavement of Giants in Thaermore, by Mars Birchun.",
+      "reason": "作者身份明确；修正term_reason中无原文依据的书名。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "408原文只说明Mars Birchun为泰尔莫尔巨人奴役史的作者，未出现《Of Men and Giants》书名，已修正term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“马尔斯·伯丘恩”音译对应Mars Birchun，专名用字稳定。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters表，proper_name，required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "条目仅此一处Mars Birchun，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:3",
+      "evidence_rows": [
+        421
+      ],
+      "source_excerpt": "This book is a historical account of a Ranger named Tyrus of Blackbarrow.",
+      "reason": "人物身份与性别明确；仅将译名用字改为简体规范。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "421原文称Tyrus of Blackbarrow为Ranger，并以his指代其弓术，性别与身份明确。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“黑塚”改为“黑冢”，符合简体中文用字；Blackbarrow保留地名意译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters表，proper_name，required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Tyrus of Blackbarrow作为人物名整体处理，无其他译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:4",
+      "evidence_rows": [
+        436
+      ],
+      "source_excerpt": "This book is about a dwarf named Biggins, purportedly the greatest lumberjack who ever lived.",
+      "reason": "人物专名、种族、身份及性别均与原文一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "436原文称Biggins为矮人、史上最伟大伐木工，并用he/his。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“比金斯”音译对应Biggins。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters表，proper_name，required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "条目内仅见Biggins，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:5",
+      "evidence_rows": [
+        438
+      ],
+      "source_excerpt": "Dwarven explorer Koru Keyhammer reaches the Eastern lands known as Thaermore",
+      "reason": "人物专名、种族与身份明确，原文未提供性别。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "438原文称Koru Keyhammer为发现东部土地的矮人探险者；原文未说明性别。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“科鲁·钥锤”对应Koru Keyhammer，名音译、姓氏意译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters表，proper_name，required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "条目内仅见Koru Keyhammer，无其他译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:6",
+      "evidence_rows": [
+        447
+      ],
+      "source_excerpt": "It was found in 425 by Lord Sam of Thorabur",
+      "reason": "Sam of Thorabur与Lord Sam同指，译名结构合理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "447原文称Lord Sam of Thorabur，438记载其发现Crux of Ages，身份与性别明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“索拉伯的萨姆”对应Sam of Thorabur，保留地名+人名结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters表，proper_name，required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "438与447同指Sam of Thorabur，译名可统一。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:0",
+    "characters:1",
+    "characters:2",
+    "characters:3",
+    "characters:4",
+    "characters:5",
+    "characters:6"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

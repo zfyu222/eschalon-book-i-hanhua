@@ -1,0 +1,315 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核 e1-e9：确认多数地名、生物、疾病与任务物品译名；修正 e4 Bloodsipper 的单复数术语分类和译名，并为 e8 非翻译指令标签补充 literal_context 适用范围。未发现需隔离或新增的条目。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "吸血虫",
+        "term_kind": "game_term",
+        "enforcement": "required",
+        "term_reason": "Bloodsipper 是 Bloodsippers 的单数形式，指同一类吸血虫敌人，应按游戏生物术语统一。"
+      },
+      "reason": "原按专名处理且译作“饮血者”，与 e3 的“吸血虫”不一致；该词为同一类敌人的单数形式，应统一为游戏术语“吸血虫”。",
+      "evidence_rows": [
+        2812
+      ],
+      "table": "terms",
+      "index": 453
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "\" ",
+          "suffix": "",
+          "reason": "原文对话结尾的 [Give ceramic crucible] 是交出物品的脚本指令标签。"
+        },
+        "term_reason": "对话数据末尾以方括号包裹的交出物品指令标签，供脚本解析，保留原样。"
+      },
+      "reason": "non_translate 条目缺少适用范围；该标签嵌在对话记录中，补 literal_context 限定到具体方括号指令，避免全局禁翻。",
+      "evidence_rows": [
+        640
+      ],
+      "table": "non_translate",
+      "index": 17
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:187",
+      "evidence_rows": [
+        563,
+        3245,
+        3757,
+        3758
+      ],
+      "source_excerpt": "Carniraptors- bipedal reptiles that can strip flesh from bone in seconds",
+      "reason": "确认生物名、译名及分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "563/3757 明确 Carniraptors 是双足食肉爬兽，3245 警告牌亦用该名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "食肉盗龙对应 Carniraptor，作为该类生物译名，复数不另译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "游戏内生物/种族名，归入种族，game_term，required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处均指同一类逃逸的食肉盗龙，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:188",
+      "evidence_rows": [
+        563,
+        618,
+        3758,
+        3811,
+        4688
+      ],
+      "source_excerpt": "on the shores of Bottomless Lake",
+      "reason": "确认地名、译名及分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "563/618/3758/3811 均指 Vela 旁湖泊，4688 地图标签同名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "无底湖为 Bottomless Lake 直译，地图标签简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名专名，proper_name，required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处统一指同一湖泊。"
+        }
+      }
+    },
+    {
+      "ref": "terms:192",
+      "evidence_rows": [
+        618,
+        3429,
+        3811
+      ],
+      "source_excerpt": "Salamanders and Bloodsippers",
+      "reason": "确认生物名、译名及分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "618/3811 称 Bloodsippers 为 Orakur 自地下送来的敌人，3429 为巢穴怪物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "吸血虫符合 Bloodsipper 的吸血生物义，复数统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "生物/种族名，game_term，归入种族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "三处均指同一类敌人，复数形式统一为吸血虫。"
+        }
+      }
+    },
+    {
+      "ref": "terms:453",
+      "evidence_rows": [
+        2812
+      ],
+      "source_excerpt": "Bloodsipper",
+      "reason": "修正单数形式的术语分类与译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2812 单独出现 Bloodsipper，为 Bloodsippers 的单数形式。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译饮血者与 e3 吸血虫不一致；该词指同一吸血虫类敌人，统一为吸血虫。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原 term_kind 为 proper_name 不当，实为生物类游戏术语 game_term，enforcement required。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e3 的复数形式统一译名，消除单复数冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:193",
+      "evidence_rows": [
+        637,
+        2894,
+        3834
+      ],
+      "source_excerpt": "It's a seven foot tall half-bull, half man abomination!",
+      "reason": "确认种族名、译名及分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "637/3834 说明 Taurax 是七英尺高半牛半人生物，2894 为敌人名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "陶拉克斯为音译，保持种族名统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族专名，proper_name，required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处均指同一 Taurax 种族/生物。"
+        }
+      }
+    },
+    {
+      "ref": "terms:195",
+      "evidence_rows": [
+        685,
+        1248,
+        1249,
+        3594,
+        3890
+      ],
+      "source_excerpt": "a disease called Fleshrot",
+      "reason": "确认疾病名、译名及分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "685/3890 称 Paul 感染 Fleshrot，1248/1249 为疾病名与感染提示，3594 为任务中疾病。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "腐肉病作为疾病名，语义明确且与各出处一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "疾病游戏术语，归其他，game_term，required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处统一为腐肉病，未采用腐肉症。"
+        }
+      }
+    },
+    {
+      "ref": "terms:198",
+      "evidence_rows": [
+        640,
+        1982,
+        4431
+      ],
+      "source_excerpt": "a ceramic crucible",
+      "reason": "确认任务物品名、译名及分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "640/1982/4431 均指要交给 Gunther 的陶瓷坩埚，1982 明确携带时不能快速旅行。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "陶瓷坩埚对应 ceramic crucible，物品名准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "任务物品名，game_term，物品，required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "大小写变体统一为陶瓷坩埚；e8 中为指令标签，不参与物品正文翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:17",
+      "evidence_rows": [
+        640
+      ],
+      "source_excerpt": "[Give ceramic crucible]",
+      "reason": "确认非翻译指令标签并补充适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "640 末尾为方括号包裹的 Give ceramic crucible，属于对话脚本动作标签。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 项不设译文；保留标签本身。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目未给 applicability；现补 literal_context，限定为该方括号标签，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅在 640 出现，作为交出物品指令，不与正文物品名混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:204",
+      "evidence_rows": [
+        706,
+        772,
+        1226,
+        3258,
+        3915,
+        3981,
+        4333,
+        4690
+      ],
+      "source_excerpt": "near Lake Atria",
+      "reason": "确认地名、译名及分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "706/772/1226/3258/3915/3981/4333 均指 Lilith 居所附近湖泊，4690 地图标签同名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "阿特里亚湖为 Lake Atria 音译加湖，符合地名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名专名，proper_name，required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处统一指同一湖泊。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:187",
+    "terms:188",
+    "terms:192",
+    "terms:453",
+    "terms:193",
+    "terms:195",
+    "terms:198",
+    "non_translate:17",
+    "terms:204"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

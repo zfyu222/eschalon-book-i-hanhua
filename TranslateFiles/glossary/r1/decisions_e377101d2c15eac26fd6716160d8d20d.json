@@ -1,0 +1,535 @@
+{
+  "review_complete": true,
+  "review_summary": "复核本批全部 12 条 non_translate：均为技能常量、音效键、资源/实体表路径、脚本调用或内部标识，应保持原文。已为每条补充可核对的 applicability：独立完整记录用 whole_record，e1/e10 因存在嵌入用例使用 text，e6 因大小写变体使用 whole_record 且 case_sensitive=false。未新增、隔离或删除条目。",
+  "acknowledged_findings": [
+    "F0039",
+    "F0040",
+    "F0056",
+    "F0067",
+    "F0069",
+    "F0082",
+    "F0083",
+    "F0084"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "SKILL_PICK_LOCKS 为大写下划线技能常量；1366 为独立记录，2593 的物品 CSV 字段中也作为完整字段值出现，两种用法均须保留原名。"
+        }
+      },
+      "reason": "补明确 applicability；该标识符同时有独立和嵌入用例，故使用大小写敏感的 text 范围覆盖全部原样出现。",
+      "evidence_rows": [
+        1366,
+        2593
+      ],
+      "table": "non_translate",
+      "index": 108
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "SKILL_UNARMED_COMBAT 是独立技能常量，仅完整标签整体保留。"
+        }
+      },
+      "reason": "补 whole_record 范围，避免默认全局禁翻。",
+      "evidence_rows": [
+        1370
+      ],
+      "table": "non_translate",
+      "index": 109
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sound/atmos_night.wav 是完整环境音资源路径，仅该完整记录整体保留。"
+        }
+      },
+      "reason": "补 whole_record 范围，路径记录不拆译。",
+      "evidence_rows": [
+        1378
+      ],
+      "table": "non_translate",
+      "index": 111
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "drop_item (Arrow) 是完整脚本调用与物品参数记录，仅该完整记录整体保留。"
+        }
+      },
+      "reason": "补 whole_record 范围，调用表达式不拆译。",
+      "evidence_rows": [
+        1535
+      ],
+      "table": "non_translate",
+      "index": 127
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "proj_arrow 是独立投射物内部标识，仅完整标签保留。"
+        }
+      },
+      "reason": "补 whole_record 范围，内部标识不按普通词翻译。",
+      "evidence_rows": [
+        1563
+      ],
+      "table": "non_translate",
+      "index": 130
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": false,
+          "reason": "SFX_Blast1 与 sfx_blast1 为同一音效键的大小写变体，且均作为完整独立记录出现；完整记录不区分大小写保留原文。"
+        }
+      },
+      "reason": "补 whole_record 并以 case_sensitive=false 覆盖两个独立大小写变体。",
+      "evidence_rows": [
+        1609,
+        1697
+      ],
+      "table": "non_translate",
+      "index": 145
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "SFX_Potion 是独立药水音效标识，仅完整标签保留。"
+        }
+      },
+      "reason": "补 whole_record 范围，音效键不译。",
+      "evidence_rows": [
+        1614
+      ],
+      "table": "non_translate",
+      "index": 147
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "incbin::incbin/entities.csv 是完整内部实体表路径，仅该完整记录整体保留。"
+        }
+      },
+      "reason": "补 whole_record 范围，路径整体保留。",
+      "evidence_rows": [
+        1656
+      ],
+      "table": "non_translate",
+      "index": 156
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "resources/incbin/entities.csv 是完整内部实体表路径，仅该完整记录整体保留。"
+        }
+      },
+      "reason": "补 whole_record 范围，路径整体保留。",
+      "evidence_rows": [
+        1657
+      ],
+      "table": "non_translate",
+      "index": 157
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": false,
+          "reason": "combat_miss/COMBAT_miss 为战斗未命中音效键，2829 为独立记录，2941 的实体表字段中也有嵌入用例；不区分大小写保留标识符。"
+        }
+      },
+      "reason": "补 text 范围并以 case_sensitive=false 覆盖独立及嵌入大小写变体。",
+      "evidence_rows": [
+        1683,
+        2829,
+        2941
+      ],
+      "table": "non_translate",
+      "index": 162
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "combat_hit1 是独立战斗命中音效标识，仅完整标签保留。"
+        }
+      },
+      "reason": "补 whole_record 范围，音效键不译。",
+      "evidence_rows": [
+        1690
+      ],
+      "table": "non_translate",
+      "index": 163
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "combat_arrow_hit 是独立战斗箭矢命中音效标识，仅完整标签保留。"
+        }
+      },
+      "reason": "补 whole_record 范围，音效键不译。",
+      "evidence_rows": [
+        1695
+      ],
+      "table": "non_translate",
+      "index": 164
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:108",
+      "evidence_rows": [
+        1366,
+        2593
+      ],
+      "source_excerpt": "SKILL_PICK_LOCKS",
+      "reason": "技能内部常量，独立记录与物品 CSV 字段均须原样保留；已补 text 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1366 的完整源字段为 SKILL_PICK_LOCKS；2593 的 CSV 字段值也逐字包含同一标识符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 项保持 SKILL_PICK_LOCKS 原文，不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；原缺 applicability，已补 text/case_sensitive=true 覆盖独立与嵌入用法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立记录和嵌入字段中的拼写一致，均按同一技能常量保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:109",
+      "evidence_rows": [
+        1370
+      ],
+      "source_excerpt": "SKILL_UNARMED_COMBAT",
+      "reason": "独立技能常量，按完整记录保留；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1370 的完整源字段与条目 SKILL_UNARMED_COMBAT 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 项保持技能常量原文，不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；已补 whole_record 限定到完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立技能常量无别名，按完整记录统一保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:111",
+      "evidence_rows": [
+        1378
+      ],
+      "source_excerpt": "sound/atmos_night.wav",
+      "reason": "环境音资源路径，按完整记录保留；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1378 的完整源字段与条目 sound/atmos_night.wav 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 项保持完整路径原文，不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；已补 whole_record 限定到完整路径记录。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "路径作为整体保留，不拆译 sound、atmos_night 或 wav。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:127",
+      "evidence_rows": [
+        1535
+      ],
+      "source_excerpt": "drop_item (Arrow)",
+      "reason": "脚本调用与物品参数表达式，按完整记录保留；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1535 的完整源字段为 drop_item (Arrow)，与条目一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 项保持脚本调用及参数整体原文，不拆译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；已补 whole_record 限定到完整调用记录。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "drop_item 与括号内参数作为同一调用表达式保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:130",
+      "evidence_rows": [
+        1563
+      ],
+      "source_excerpt": "proj_arrow",
+      "reason": "投射物内部标识，按完整记录保留；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1563 的完整源字段与条目 proj_arrow 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 项保持内部标识原文，不按普通词 arrow 翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；已补 whole_record 限定到完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该标识为内部投射物键，与普通词义区分，保留原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:145",
+      "evidence_rows": [
+        1609
+      ],
+      "source_excerpt": "SFX_Blast1",
+      "reason": "音效标识符，大小写变体按同一键保留；已补 whole_record/case_sensitive=false。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1609 的完整源字段与条目 SFX_Blast1 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 项保持 SFX_Blast1 原文，大小写变体同样不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；已补 whole_record/case_sensitive=false 覆盖两种独立拼写。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "SFX_Blast1/sfx_blast1 视为同一音效键，大小写差异不另译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:147",
+      "evidence_rows": [
+        1614
+      ],
+      "source_excerpt": "SFX_Potion",
+      "reason": "药水音效标识，按完整记录保留；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1614 的完整源字段与条目 SFX_Potion 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 项保持 SFX_Potion 原文，不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；已补 whole_record 限定到完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该标识为音效键，与普通词 Potion 的译名用法区分，保留原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:156",
+      "evidence_rows": [
+        1656
+      ],
+      "source_excerpt": "incbin::incbin/entities.csv",
+      "reason": "内部实体表路径，按完整记录保留；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1656 的完整源字段与条目 incbin::incbin/entities.csv 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 项保持完整路径原文，不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；已补 whole_record 限定到完整路径记录。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "路径作为整体保留，不拆译 incbin 或 csv。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:157",
+      "evidence_rows": [
+        1657
+      ],
+      "source_excerpt": "resources/incbin/entities.csv",
+      "reason": "内部实体表路径，按完整记录保留；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1657 的完整源字段与条目 resources/incbin/entities.csv 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 项保持完整路径原文，不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；已补 whole_record 限定到完整路径记录。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "路径作为整体保留，不拆译 resources、incbin 或 csv。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:162",
+      "evidence_rows": [
+        2829,
+        2941
+      ],
+      "source_excerpt": "COMBAT_miss",
+      "reason": "战斗未命中音效键，独立与嵌入用例均保留；已补不区分大小写范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2829 为独立记录 COMBAT_miss；2941 的实体表字段中也逐字包含 COMBAT_miss，与源字段 combat_miss 仅大小写不同。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 项保持 combat_miss/COMBAT_miss 原文，不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；原缺 applicability，已补 text/case_sensitive=false 覆盖独立和嵌入用法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "大小写变体统一视为同一战斗未命中音效键，不另译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:163",
+      "evidence_rows": [
+        1690
+      ],
+      "source_excerpt": "combat_hit1",
+      "reason": "战斗命中音效标识，按完整记录保留；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1690 的完整源字段与条目 combat_hit1 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 项保持 combat_hit1 原文，不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；已补 whole_record 限定到完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该标识为战斗命中音效键，保留原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:164",
+      "evidence_rows": [
+        1695
+      ],
+      "source_excerpt": "combat_arrow_hit",
+      "reason": "战斗箭矢命中音效标识，按完整记录保留；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1695 的完整源字段与条目 combat_arrow_hit 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 项保持 combat_arrow_hit 原文，不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；已补 whole_record 限定到完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该标识为战斗箭矢命中音效键，保留原文。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:108",
+    "non_translate:109",
+    "non_translate:111",
+    "non_translate:127",
+    "non_translate:130",
+    "non_translate:145",
+    "non_translate:147",
+    "non_translate:156",
+    "non_translate:157",
+    "non_translate:162",
+    "non_translate:163",
+    "non_translate:164"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

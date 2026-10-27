@@ -1,0 +1,534 @@
+{
+  "review_complete": true,
+  "review_summary": "已审阅本批 12 条 non_translate 记录：含 message 正文的记录已将保护范围缩小到嵌入命令；纯脚本、掉落和任务命令统一补全 whole_record 范围。已核对并处理 f1-f4。",
+  "acknowledged_findings": [
+    "F0018",
+    "F0019",
+    "F0020",
+    "F0021"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "source": "commit_crime",
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "message (\"You have threatened the Giant's Tribal Leader!) ; ",
+          "suffix": "",
+          "reason": "commit_crime 仅紧跟在 ordinal 860 的 message 调用后作为犯罪状态命令出现；消息文本不属于非译范围。"
+        }
+      },
+      "reason": "原记录含可翻译消息文本，non_translate 应仅覆盖其后的 commit_crime 命令，故缩小 source 并用 literal_context 限定该嵌入位置。",
+      "evidence_rows": [
+        860
+      ],
+      "table": "non_translate",
+      "index": 49
+    },
+    {
+      "patch": {
+        "source": "npc_disp_change 87 2",
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "message (Gramuk continues to talk but you are no longer listening to his words...) ; ",
+          "suffix": "",
+          "reason": "npc_disp_change 87 2 仅紧跟在 ordinal 886 的 message 调用后作为 NPC 显示状态命令出现；消息文本需翻译。"
+        }
+      },
+      "reason": "原记录含可翻译消息文本，non_translate 应仅覆盖其后的 npc_disp_change 87 2 命令，故缩小 source 并用 literal_context 限定该嵌入位置。",
+      "evidence_rows": [
+        886
+      ],
+      "table": "non_translate",
+      "index": 50
+    },
+    {
+      "patch": {
+        "source": "npc_disp_change 87 2",
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "message (Gramuk stands there with his hand extended. He is initially unaware of your intentions...) ; ",
+          "suffix": "",
+          "reason": "npc_disp_change 87 2 仅紧跟在 ordinal 892 的 message 调用后作为 NPC 显示状态命令出现；消息文本需翻译。"
+        }
+      },
+      "reason": "原记录含可翻译消息文本，non_translate 应仅覆盖其后的 npc_disp_change 87 2 命令，故缩小 source 并用 literal_context 限定该嵌入位置。",
+      "evidence_rows": [
+        892
+      ],
+      "table": "non_translate",
+      "index": 51
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录就是 screen_fade_out ; cond_special 8 脚本命令序列，无内嵌正文。"
+        }
+      },
+      "reason": "补全 whole_record applicability，限定整条脚本命令记录，避免全局禁翻。",
+      "evidence_rows": [
+        902
+      ],
+      "table": "non_translate",
+      "index": 53
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录为独立交易初始化命令 init_trade siam，仅参数 siam 随命令保留。"
+        }
+      },
+      "reason": "审计 f1 指出缺少范围；补 whole_record，限定完整记录 init_trade siam。",
+      "evidence_rows": [
+        932
+      ],
+      "table": "non_translate",
+      "index": 54
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录为独立任务步骤命令 quest_step 46，参数 46 随命令保留。"
+        }
+      },
+      "reason": "审计 f2 指出缺少范围；补 whole_record，限定完整记录 quest_step 46。",
+      "evidence_rows": [
+        985
+      ],
+      "table": "non_translate",
+      "index": 56
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录为 drop_item (Gold Goblin Key) 掉落命令，括号内为物品标识参数。"
+        }
+      },
+      "reason": "补全 whole_record applicability，限定完整掉落命令记录，避免全局保护普通片段。",
+      "evidence_rows": [
+        986
+      ],
+      "table": "non_translate",
+      "index": 57
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录为 drop_item、quest、kill_quest 组合脚本命令及参数。"
+        }
+      },
+      "reason": "补全 whole_record applicability，限定整条组合命令记录。",
+      "evidence_rows": [
+        987
+      ],
+      "table": "non_translate",
+      "index": 58
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录为独立任务步骤命令 quest_step 15，参数 15 随命令保留。"
+        }
+      },
+      "reason": "审计 f3 指出缺少范围；补 whole_record，限定完整记录 quest_step 15。",
+      "evidence_rows": [
+        988
+      ],
+      "table": "non_translate",
+      "index": 59
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录为 kill_quest 62 ; kill_quest 24 击杀任务命令序列。"
+        }
+      },
+      "reason": "补全 whole_record applicability，限定整条组合命令记录。",
+      "evidence_rows": [
+        989
+      ],
+      "table": "non_translate",
+      "index": 60
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录为独立击杀任务命令 kill_quest 58，参数 58 随命令保留。"
+        }
+      },
+      "reason": "审计 f4 指出缺少范围；补 whole_record，限定完整记录 kill_quest 58。",
+      "evidence_rows": [
+        991
+      ],
+      "table": "non_translate",
+      "index": 61
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录为 quest、drop_item、kill_quest 组合脚本命令及参数。"
+        }
+      },
+      "reason": "补全 whole_record applicability，限定整条组合命令记录。",
+      "evidence_rows": [
+        992
+      ],
+      "table": "non_translate",
+      "index": 62
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:49",
+      "evidence_rows": [
+        860
+      ],
+      "source_excerpt": "message (\"You have threatened the Giant's Tribal Leader!) ; commit_crime",
+      "reason": "含 message 正文与犯罪状态命令，需只保护嵌入命令。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "原行 860 为 message(...) 后接 commit_crime；source 已由整行缩小为 commit_crime，避免覆盖消息正文。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "消息文本 You have threatened the Giant's Tribal Leader! 应进入翻译流程；commit_crime 作为命令保持原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "commit_crime 是运行时犯罪状态命令，归入 non_translate 合理；本次仅修正保护范围。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "commit_crime 为独立命令标记，原样保留，符合同表命令保留策略。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:50",
+      "evidence_rows": [
+        886
+      ],
+      "source_excerpt": "message (Gramuk continues to talk but you are no longer listening to his words...) ; npc_disp_change 87 2",
+      "reason": "含人物对白正文与 NPC 显示状态命令，需只保护嵌入命令。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "原行 886 完整记录含 message 与命令；source 已缩小为 npc_disp_change 87 2。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "对白文本 Gramuk continues to talk but you are no longer listening to his words... 应翻译；npc_disp_change 87 2 原样保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "npc_disp_change 87 2 是运行时 NPC 显示状态命令，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "npc_disp_change 87 2 原样保留，同一命令保持相同写法。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:51",
+      "evidence_rows": [
+        892
+      ],
+      "source_excerpt": "message (Gramuk stands there with his hand extended. He is initially unaware of your intentions...) ; npc_disp_change 87 2",
+      "reason": "含人物动作对白正文与 NPC 显示状态命令，需只保护嵌入命令。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "原行 892 完整记录含 message 与命令；source 已缩小为 npc_disp_change 87 2。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "对白文本 Gramuk stands there with his hand extended. He is initially unaware of your intentions... 应翻译；npc_disp_change 87 2 原样保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "npc_disp_change 87 2 是运行时 NPC 显示状态命令，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "npc_disp_change 87 2 原样保留，同一命令保持相同写法。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:53",
+      "evidence_rows": [
+        902
+      ],
+      "source_excerpt": "screen_fade_out ; cond_special 8",
+      "reason": "纯脚本命令序列，需整条保护避免误译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原行 902 完整为 screen_fade_out ; cond_special 8 脚本命令序列，无正文。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "screen_fade_out 与 cond_special 8 均保持原文，无需翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "补全 whole_record applicability，限定整条脚本命令，非全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "screen_fade_out 与 cond_special 8 原样保留，格式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:54",
+      "evidence_rows": [
+        932
+      ],
+      "source_excerpt": "init_trade siam",
+      "reason": "独立交易初始化命令，需整条保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原行 932 完整为独立交易初始化命令 init_trade siam。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "init_trade 与参数 siam 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "审计 f1 指出缺少范围；补 whole_record，仅匹配完整记录 init_trade siam。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "init_trade 命令保留，符合 non_translate 一致策略。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:56",
+      "evidence_rows": [
+        985
+      ],
+      "source_excerpt": "quest_step 46",
+      "reason": "独立任务步骤命令，需整条保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原行 985 为独立任务步骤命令 quest_step 46。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "quest_step 与参数 46 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "审计 f2 指出缺少范围；补 whole_record，仅覆盖完整记录 quest_step 46。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "quest_step 命令原样保留，符合同表命令策略。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:57",
+      "evidence_rows": [
+        986
+      ],
+      "source_excerpt": "drop_item (Gold Goblin Key)",
+      "reason": "完整掉落命令，物品标识参数需随命令保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原行 986 为 drop_item (Gold Goblin Key) 完整掉落命令。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "drop_item 及括号内物品标识参数原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "补 whole_record，限定完整掉落命令记录，避免全局保护普通片段。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "drop_item 保留，符合其他 drop_item 记录处理。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:58",
+      "evidence_rows": [
+        987
+      ],
+      "source_excerpt": "drop_item (Amulet Passkey 15) ; quest 48 2 ; kill_quest 3",
+      "reason": "组合脚本命令，需整条保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原行 987 为 drop_item、quest、kill_quest 组合脚本。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "命令与数值参数均保持原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "补 whole_record，限定整条组合命令记录。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "drop_item、quest、kill_quest 原样保留，符合同表命令策略。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:59",
+      "evidence_rows": [
+        988
+      ],
+      "source_excerpt": "quest_step 15",
+      "reason": "独立任务步骤命令，需整条保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原行 988 为独立任务步骤命令 quest_step 15。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "quest_step 与参数 15 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "审计 f3 指出缺少范围；补 whole_record，限定完整记录 quest_step 15。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "quest_step 命令原样保留，格式与同表命令一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:60",
+      "evidence_rows": [
+        989
+      ],
+      "source_excerpt": "kill_quest 62 ; kill_quest 24",
+      "reason": "连续击杀任务命令，需整条保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原行 989 为 kill_quest 62 ; kill_quest 24 命令序列。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "kill_quest 及数值参数均原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "补 whole_record，限定完整组合命令记录。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "kill_quest 命令原样保留，符合同表命令策略。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:61",
+      "evidence_rows": [
+        991
+      ],
+      "source_excerpt": "kill_quest 58",
+      "reason": "独立击杀任务命令，需整条保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原行 991 为独立击杀任务命令 kill_quest 58。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "kill_quest 与参数 58 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "审计 f4 指出缺少范围；补 whole_record，限定完整记录 kill_quest 58。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "kill_quest 命令原样保留，与同表命令一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:62",
+      "evidence_rows": [
+        992
+      ],
+      "source_excerpt": "quest 54 2 ; drop_item (150 Gold Pieces) ; kill_quest 47",
+      "reason": "组合任务与掉落命令，需整条保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原行 992 为 quest、drop_item、kill_quest 组合脚本。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "命令、金币数值及括号参数均保持原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "补 whole_record，限定完整组合命令记录。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "quest、drop_item、kill_quest 命令原样保留，符合同表命令策略。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:49",
+    "non_translate:50",
+    "non_translate:51",
+    "non_translate:53",
+    "non_translate:54",
+    "non_translate:56",
+    "non_translate:57",
+    "non_translate:58",
+    "non_translate:59",
+    "non_translate:60",
+    "non_translate:61",
+    "non_translate:62"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

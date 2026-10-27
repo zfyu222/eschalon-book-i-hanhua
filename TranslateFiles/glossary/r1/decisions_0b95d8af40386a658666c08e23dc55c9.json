@@ -1,0 +1,346 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 11 条分配条目的来源、译名、分类与一致性审校。修正 e10 的性别与依据；为 e9 的非译地图标识补 whole_record 作用域；其余人名、地名与 Chancellor 头衔译名保持统一。",
+  "acknowledged_findings": [
+    "F0061"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "地图内部标识；1588 仅作为完整标签出现，不扩展到正文 basement。",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "1588 为完整地图内部标识 14_basement；本批仅见独立使用，无嵌入正文用例。"
+        }
+      },
+      "reason": "补齐运行标识的保留范围，避免把普通 basement 词误设为全局禁译。",
+      "evidence_rows": [
+        1588
+      ],
+      "table": "non_translate",
+      "index": 138
+    },
+    {
+      "patch": {
+        "gender": "男性",
+        "term_reason": "417 在 Adler Keldam 后紧接以 He 指代，1205 亦用 His casket，故为男性。"
+      },
+      "reason": "原文代词明确指向该贵族，原“其他/未说明性别”与依据不符。",
+      "evidence_rows": [
+        417,
+        1205
+      ],
+      "table": "characters",
+      "index": 15
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:8",
+      "evidence_rows": [
+        438
+      ],
+      "source_excerpt": "Chancellor Marr is elected as the first governor of Thaermore.",
+      "reason": "438 年表确认 Marr 为首任统治者，Marr II 称其父，男性成立；译名与 Chancellor 头衔统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "438 明载 Chancellor Marr 为 Thaermore 首任 governor，且 Marr II 的 father 指 Marr，男性有据。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“马尔议长”符合 Marr=马尔、Chancellor=议长，并与 e2-e6 一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，characters/proper_name/required 分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Marr 统一“马尔”，Chancellor 统一“议长”，无跨条冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:9",
+      "evidence_rows": [
+        438
+      ],
+      "source_excerpt": "Chancellor Marr II, later known as \"The Great One\", superseded his father as Chancellor.",
+      "reason": "438 明确 Marr II 继其父为 Chancellor，his father 指向 Marr II 之父，男性成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "438 载 Marr II 取代其父并称 The Great One，性别与世序均有据。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“马尔二世议长”保留世序并与 Marr=马尔、Chancellor=议长一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，characters/proper_name/required 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1 的 Marr=马尔、e6 的 Chancellor=议长一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:10",
+      "evidence_rows": [
+        438
+      ],
+      "source_excerpt": "Chancellor Torrus I supersedes Chancellor Marr II.",
+      "reason": "438 仅载 Torrus I 继任 Marr II，未给性别；保留“其他”并维持世序译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "438 只证明 Torrus I 继任 Marr II，未提供性别证据，保留“其他”合理。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“托鲁斯一世议长”音译与世序稳定，并与 Chancellor=议长一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，characters/proper_name/required 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1/e2/e6 的 Chancellor 头衔译法一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:11",
+      "evidence_rows": [
+        438
+      ],
+      "source_excerpt": "Chancellor Katerra I supersedes Chancellor Torrus I.",
+      "reason": "438 仅载 Katerra I 继任 Torrus I，未给性别；保留“其他”并维持世序译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "438 只证明 Katerra I 继任 Torrus I，未提供性别证据，保留“其他”合理。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“卡特拉一世议长”音译与世序稳定，并与 Chancellor=议长一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，characters/proper_name/required 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1-e3/e6 的 Chancellor 头衔译法一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:56",
+      "evidence_rows": [
+        900
+      ],
+      "source_excerpt": "I am Chancellor Malcolm.",
+      "reason": "900 自报 Chancellor Malcolm，2934 为独立角色名，4142 重复身份；译名统一为马尔科姆议长。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "900 与 4142 均自报 Chancellor Malcolm，2934 为独立名条，身份明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“马尔科姆议长”与 Malcolm=马尔科姆、Chancellor=议长一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，characters/proper_name/required 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e6 的 Chancellor=议长一致，且不与 Marr 家族混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:40",
+      "evidence_rows": [
+        438
+      ],
+      "source_excerpt": "It was decreed that a lifetime Chancellor would be elected to represent the will of people.",
+      "reason": "438 定义 Chancellor 为终身选举的最高统治者；各证据均指 Thaermore 统治者，统一“议长”，排除“大臣/宰相”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "438 定义 lifetime Chancellor 由选举产生并代表民意，属泰尔莫最高统治者头衔。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“议长”与 e1-e5 的人名条统一；宰相/大臣候选不符合其民选统治者身份。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "身份类 game_term，非普通称谓误收。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e1-e5 的 Chancellor 人名条均以“议长”收尾，e6 保持同一头衔译法。"
+        }
+      }
+    },
+    {
+      "ref": "characters:14",
+      "evidence_rows": [
+        648
+      ],
+      "source_excerpt": "My name is Leurik. I am the director of Eversleep Cemetery.",
+      "reason": "648 称 Leurik 为男性、Eversleep Cemetery 主管；417/4291 再证墓地钥匙与火蜥蜴委托，译名统一勒里克。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "648 先称 tall, thin man，后以 his 指代，并自报为 Eversleep Cemetery 主管。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“勒里克”为统一音译，与 e8 的 Leurik 对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，characters/proper_name/required 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8 Leurik's Basement 的“勒里克”一致，不另译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:482",
+      "evidence_rows": [
+        3165
+      ],
+      "source_excerpt": "Leurik's Basement",
+      "reason": "3165 为地点名；Leurik 统一“勒里克”，Basement 按地点名简译“地下室”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3165 原文即 Leurik's Basement，为独立地点名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“勒里克地下室”保留所有格关系，并与 e7 人名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名 proper_name/required 分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7 的 Leurik=勒里克一致；与 e9 的 14_basement 不是同一实体，不强行统一。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:138",
+      "evidence_rows": [
+        1588
+      ],
+      "source_excerpt": "14_basement",
+      "reason": "1588 是独立地图内部标识；补 whole_record 作用域，只保护完整 14_basement，不把 basement 设为全局禁译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1588 原文即 14_basement，属资源/地图内部标识而非正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不翻译；本次修正的是适用范围而非译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 whole_record 作用域，依据为独立完整标签且无嵌入用例。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8 的 Leurik's Basement 不是同一实体，不合并、不全局化 basement。"
+        }
+      }
+    },
+    {
+      "ref": "characters:15",
+      "evidence_rows": [
+        417,
+        1205
+      ],
+      "source_excerpt": "a recently deceased aristocrat named \"Adler Keldam\". He is interred in a vault at Eversleep Cemetery",
+      "reason": "417/1205 用 He/His 指 Adler Keldam，原“其他/未说明性别”不实；改为男性。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "417 在 Adler Keldam 后紧接 He is interred...，1205 亦写 His casket，男性明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“阿德勒·凯尔达姆”对应 Adler Keldam，译名稳定。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，characters/proper_name/required 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "性别修正后与原文代词一致；译名不涉及跨条冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:16",
+      "evidence_rows": [
+        451,
+        3627
+      ],
+      "source_excerpt": "Abygale pauses and takes a deep breath, aware that she has upset herself.",
+      "reason": "451 用 she，3627 自报店主，4237 用 her；女性成立，阿比盖尔译名统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "451 以 she 指 Abygale，3627 自报为 Grand Magicks Emporium 店主，女性有据。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“阿比盖尔”为 Abygale 的统一音译，与人物条一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，characters/proper_name/required；不把内部小写标识当显示名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e5/e6 等头衔译名无冲突；小写 abygale 标识候选不覆盖显示名 Abygale。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:8",
+    "characters:9",
+    "characters:10",
+    "characters:11",
+    "characters:56",
+    "terms:40",
+    "characters:14",
+    "terms:482",
+    "non_translate:138",
+    "characters:15",
+    "characters:16"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

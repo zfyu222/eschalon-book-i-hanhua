@@ -1,0 +1,543 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1–e12 的来源、分类与适用范围审校：这些条目均为运行时脚本命令、音效/地图标识或资源路径，统一保留原文。对 remove_item、teach_skill、trap_click 采用区分大小写的精确文本保护；对 spell、sound 等普通同形词仅按整条记录保护；其余标识与路径按整条记录保护。未新增、未隔离条目。",
+  "acknowledged_findings": [
+    "F0177",
+    "F0178",
+    "F0182",
+    "F0183",
+    "F0184",
+    "F0194",
+    "F0202",
+    "F0204",
+    "F0206",
+    "F0208",
+    "F0214",
+    "F0253"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "记录 2065 的 source 完整为 remove_item，记录 628 的 remove_item (Incriminating Letter) 显示它作为带下划线的命令标识独立或带参数出现；按精确文本保留命令本身。"
+        }
+      },
+      "reason": "补充精确文本范围，兼容独立命令与带物品参数的命令。",
+      "evidence_rows": [
+        2065,
+        628
+      ],
+      "table": "non_translate",
+      "index": 272
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 2066 的 source 完整等于 remove_npc，且没有嵌入用法；按整条记录保护，避免普通文本误匹配。"
+        }
+      },
+      "reason": "独立脚本命令，限定整条记录匹配。",
+      "evidence_rows": [
+        2066
+      ],
+      "table": "non_translate",
+      "index": 273
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 2072 的 source 完整等于 spell，是独立脚本关键字；记录 4720 的 Spell Journal 中的 Spell 不应被此条冻结，故只匹配整条记录。"
+        }
+      },
+      "reason": "spell 为多义普通词，需排除 Spell Journal 等文本中的同形用法。",
+      "evidence_rows": [
+        2072,
+        4720
+      ],
+      "table": "non_translate",
+      "index": 277
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 2073 的 source 完整等于 sound，应作为独立脚本项保留；sound 又是普通词且记录 1580 有 sound/ 路径，故仅匹配整条记录，不能全局禁翻。"
+        }
+      },
+      "reason": "同形普通词 sound 仅保护独立记录，避免冻结路径前缀和正文。",
+      "evidence_rows": [
+        2073,
+        1580
+      ],
+      "table": "non_translate",
+      "index": 278
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "记录 2075 的 source 完整为 teach_skill，记录 496 的 teach_skill (Garrett) 7 显示它作为带下划线的命令标识带参数使用；按精确文本保留命令本身。"
+        }
+      },
+      "reason": "补充精确文本范围，兼容独立命令与带角色参数的命令。",
+      "evidence_rows": [
+        2075,
+        496
+      ],
+      "table": "non_translate",
+      "index": 279
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 2168 的 source 完整等于 goblin_cit_l2，是地图内部标识，未见于自然语言句中；按整条记录保护。"
+        }
+      },
+      "reason": "地图内部标识按整条记录保留。",
+      "evidence_rows": [
+        2168
+      ],
+      "table": "non_translate",
+      "index": 289
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "记录 2277 的 source 完整等于 trap_click，记录 1767 的 sound/trap_click.wav 显示它作为音效文件名组成部分；该下划线标识按精确文本保留。"
+        }
+      },
+      "reason": "音效标识既独立出现也嵌入资源路径，使用精确文本保护。",
+      "evidence_rows": [
+        2277,
+        1767
+      ],
+      "table": "non_translate",
+      "index": 298
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 2287 的 source 完整等于 quest_step 60，是任务脚本命令及参数；按整条记录保护。"
+        }
+      },
+      "reason": "任务脚本命令与参数按整条记录保留。",
+      "evidence_rows": [
+        2287
+      ],
+      "table": "non_translate",
+      "index": 301
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 2306 的 source 完整等于 SFX_Weapon_EQP_POL，是独立音效标识；按整条记录保护。"
+        }
+      },
+      "reason": "独立音效标识按整条记录保留。",
+      "evidence_rows": [
+        2306
+      ],
+      "table": "non_translate",
+      "index": 304
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 2308 的 source 完整等于 SFX_Weapon_EQP_SWD，是独立音效标识；按整条记录保护。"
+        }
+      },
+      "reason": "独立音效标识按整条记录保留。",
+      "evidence_rows": [
+        2308
+      ],
+      "table": "non_translate",
+      "index": 306
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 2318 的 source 完整等于 SFX_Amulet，是独立音效标识；按整条记录保护，避免与物品名混同。"
+        }
+      },
+      "reason": "独立音效标识按整条记录保留。",
+      "evidence_rows": [
+        2318
+      ],
+      "table": "non_translate",
+      "index": 312
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 2321 的 source 完整等于 sound/ched_stat.wav，是完整音效资源路径；按整条记录保护。"
+        }
+      },
+      "reason": "完整资源路径按整条记录保留。",
+      "evidence_rows": [
+        2321
+      ],
+      "table": "non_translate",
+      "index": 315
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:272",
+      "evidence_rows": [
+        2065,
+        628
+      ],
+      "source_excerpt": "remove_item",
+      "reason": "确认 remove_item 是脚本命令标识；补为精确文本保护，兼容独立及带参数命令。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 2065 的 source 完整为 remove_item，记录 628 的 remove_item (Incriminating Letter) 表明它可带物品参数使用。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产出译文，命令本身按原文保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条未限定适用范围；已在 edits 中补为 case_sensitive 的 text 匹配，避免默认全局禁翻普通词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "remove_item 是完整下划线命令，不与 remove_gold 等共享可翻译词义；同类命令均保留原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:273",
+      "evidence_rows": [
+        2066
+      ],
+      "source_excerpt": "remove_npc",
+      "reason": "独立脚本命令，按整条记录保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 2066 的 source 完整等于 remove_npc，未出现带参数嵌入用法。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产出译文，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条缺少适用范围；已补为 whole_record，仅保护完整记录 remove_npc。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 remove_item、remove_gold 等命令仅共享动作前缀，不建立普通词语义关系。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:277",
+      "evidence_rows": [
+        2072,
+        4720
+      ],
+      "source_excerpt": "spell",
+      "reason": "spell 为脚本关键字，但与普通词同形，限定整条记录保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 2072 的 source 完整等于 spell，属于独立脚本关键字。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产出译文，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条未限定范围；已改为 whole_record，仅保护整条记录；记录 4720 的 Spell Journal 仍作为术语单独翻译。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Spell Journal 与 spell 命令区分，避免把 Spell 当作全局禁翻，不产生同形词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:278",
+      "evidence_rows": [
+        2073,
+        1580
+      ],
+      "source_excerpt": "sound",
+      "reason": "同形普通词 sound 仅保护独立脚本记录，避免全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 2073 的 source 完整等于 sound，作为独立脚本关键字；记录 1580 的 sound/ 是资源路径前缀，不是同一保护对象。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产出译文，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条将普通同形词 sound 无范围保护；已改为 whole_record，仅匹配整条记录 sound。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "不覆盖 sound/ 路径或普通文本，与音效资源路径分开处理。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:279",
+      "evidence_rows": [
+        2075,
+        496
+      ],
+      "source_excerpt": "teach_skill",
+      "reason": "带下划线的技能命令，精确文本保护并兼容带参数用法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 2075 的 source 完整等于 teach_skill，记录 496 的 teach_skill (Garrett) 7 显示可带角色与数值参数。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产出译文，命令本身按原文保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条缺少适用范围；已补为 case_sensitive 的 text 匹配，以覆盖独立及带参数命令。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Alchemy Skill 等技能术语区分，teach_skill 作为命令标识不参与技能名翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:289",
+      "evidence_rows": [
+        2168
+      ],
+      "source_excerpt": "goblin_cit_l2",
+      "reason": "地图内部标识，按整条记录保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 2168 的 source 完整等于 goblin_cit_l2，是地图内部标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产出译文，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条缺少适用范围；已补为 whole_record，仅保护完整地图标识。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Goblin Gruzz 等哥布林专名区分，不建立译名关系。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:298",
+      "evidence_rows": [
+        2277,
+        1767
+      ],
+      "source_excerpt": "trap_click",
+      "reason": "音效标识在独立记录和路径组成部分中出现，采用精确文本保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 2277 的 source 完整等于 trap_click；记录 1767 的 sound/trap_click.wav 表明它也是路径组成部分。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产出译文，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条缺少适用范围；已补为 case_sensitive 的 text 匹配，覆盖独立标识及路径组成部分。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 sound/ 前缀条目一致，路径中的 trap_click 原样保留，不译作普通动作词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:301",
+      "evidence_rows": [
+        2287
+      ],
+      "source_excerpt": "quest_step 60",
+      "reason": "任务脚本命令及参数，按整条记录保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 2287 的 source 完整等于 quest_step 60，为任务脚本命令及参数。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产出译文，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条缺少适用范围；已补为 whole_record，防止命令与参数被拆译。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Quest Journal 区分，quest_step 为命令而非日志标题。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:304",
+      "evidence_rows": [
+        2306
+      ],
+      "source_excerpt": "SFX_Weapon_EQP_POL",
+      "reason": "独立武器音效标识，按整条记录保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 2306 的 source 完整等于 SFX_Weapon_EQP_POL，是独立音效标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产出译文，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条缺少适用范围；已补为 whole_record，仅保护该完整音效 ID。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "SFX_Weapon_EQP_POL 是完整音效 ID，与 cleaving weapons 等武器术语不共享译名。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:306",
+      "evidence_rows": [
+        2308
+      ],
+      "source_excerpt": "SFX_Weapon_EQP_SWD",
+      "reason": "独立武器音效标识，按整条记录保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 2308 的 source 完整等于 SFX_Weapon_EQP_SWD，是独立音效标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产出译文，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条缺少适用范围；已补为 whole_record，仅保护该完整音效 ID。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "SFX_Weapon_EQP_SWD 是完整音效 ID，与 cleaving weapons 等武器术语不共享译名。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:312",
+      "evidence_rows": [
+        2318
+      ],
+      "source_excerpt": "SFX_Amulet",
+      "reason": "独立护符音效标识，按整条记录保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 2318 的 source 完整等于 SFX_Amulet，是独立音效标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产出译文，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条缺少适用范围；已补为 whole_record，仅保护该完整音效 ID。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "SFX_Amulet 是音效 ID，与 Strange Amulet 物品名区分，不建立译名关系。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:315",
+      "evidence_rows": [
+        2321
+      ],
+      "source_excerpt": "sound/ched_stat.wav",
+      "reason": "完整音效资源路径，按整条记录保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 2321 的 source 完整等于 sound/ched_stat.wav，是完整音效资源路径。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产出译文，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条缺少适用范围；已补为 whole_record，仅保护完整资源路径。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 sound 命令及 sound/ 前缀分开，完整资源路径保留原文，不拆译文件名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:272",
+    "non_translate:273",
+    "non_translate:277",
+    "non_translate:278",
+    "non_translate:279",
+    "non_translate:289",
+    "non_translate:298",
+    "non_translate:301",
+    "non_translate:304",
+    "non_translate:306",
+    "non_translate:312",
+    "non_translate:315"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

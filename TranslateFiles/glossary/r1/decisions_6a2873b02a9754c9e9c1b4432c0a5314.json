@@ -1,0 +1,557 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 12 个 non_translate 分配条目及其给出的原文证据。所有 source 均能在对应记录中确认；为运行关键字/标识符补充了明确 applicability：curse、delay、display 等同形普通词仅保护完整独立记录，det_keg、drop_item、drop_ent 等含参数命令行中的唯一标识符按 text 范围保护，并保留原字符串。未新增或隔离条目。",
+  "acknowledged_findings": [
+    "F0139",
+    "F0140",
+    "F0143",
+    "F0144",
+    "F0145",
+    "F0146",
+    "F0147",
+    "F0149",
+    "F0150",
+    "F0151",
+    "F0152",
+    "F0205"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "Ordinal 2026 is exactly 'convert'; no embedded occurrence supplied. Protect only as a standalone runtime command."
+        },
+        "term_reason": "独立记录 'convert' 为脚本转换命令关键字；仅保护完整记录，不在正文中全局禁翻。"
+      },
+      "reason": "补充非翻译范围并明确仅作为独立运行时关键字。",
+      "evidence_rows": [
+        2026
+      ],
+      "table": "non_translate",
+      "index": 234
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "Ordinal 2027 is exactly 'convert_tile'; no embedded occurrence supplied. Protect only as a standalone runtime command."
+        },
+        "term_reason": "独立记录 'convert_tile' 为脚本转换地块命令关键字；仅保护完整记录，不在正文中全局禁翻。"
+      },
+      "reason": "补充非翻译范围并明确仅作为独立运行时关键字。",
+      "evidence_rows": [
+        2027
+      ],
+      "table": "non_translate",
+      "index": 235
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "Ordinal 2030 is exactly 'curse' as a runtime keyword; ordinal 1551 contains ordinary prose 'A curse has been lifted off of you!', which must remain translatable. Therefore protect only the complete record."
+        },
+        "term_reason": "独立记录 'curse' 为脚本关键字；1551 中 'curse' 是普通名词‘诅咒’，不纳入本条保护。"
+      },
+      "reason": "补充 whole_record 范围，避免把 1551 中的普通名词也全局禁翻。",
+      "evidence_rows": [
+        2030,
+        1551
+      ],
+      "table": "non_translate",
+      "index": 238
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "Ordinal 2295 is exactly 'gob_curse', an internal curse-effect identifier; no embedded occurrence supplied. Protect only the complete record."
+        },
+        "term_reason": "内部诅咒效果标识 'gob_curse'；仅保护完整独立记录。"
+      },
+      "reason": "补充非翻译范围并明确其为独立内部效果标识。",
+      "evidence_rows": [
+        2295
+      ],
+      "table": "non_translate",
+      "index": 302
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "Ordinal 2031 is exactly 'delay' as runtime keyword; ordinal 4120 has ordinary verb 'delay' in dialogue, which is translatable. Protect only the complete record."
+        },
+        "term_reason": "独立记录 'delay' 为脚本延时关键字；4120 中 'delay' 为普通动词‘拖延’，不纳入本条保护。"
+      },
+      "reason": "补充 whole_record 范围，避免把 4120 中的普通动词也全局禁翻。",
+      "evidence_rows": [
+        2031,
+        4120
+      ],
+      "table": "non_translate",
+      "index": 239
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "Ordinal 2032 is exactly 'destroy_obj'; no embedded occurrence supplied. Protect only as a standalone runtime command."
+        },
+        "term_reason": "独立记录 'destroy_obj' 为脚本销毁对象命令；仅保护完整记录。"
+      },
+      "reason": "补充非翻译范围并明确仅作为独立运行时命令。",
+      "evidence_rows": [
+        2032
+      ],
+      "table": "non_translate",
+      "index": 240
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "Ordinal 2033 is exactly 'destroy_script'; no embedded occurrence supplied. Protect only as a standalone runtime command."
+        },
+        "term_reason": "独立记录 'destroy_script' 为脚本销毁脚本命令；仅保护完整记录。"
+      },
+      "reason": "补充非翻译范围并明确仅作为独立运行时命令。",
+      "evidence_rows": [
+        2033
+      ],
+      "table": "non_translate",
+      "index": 241
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "All supplied occurrences are command syntax: 2034 is exactly 'det_keg'; 3448 is 'det_keg 9380' where det_keg is the command token followed by numeric argument. No natural-language use; protect this unique identifier globally."
+        },
+        "term_reason": "酒桶检测运行时命令标识 'det_keg'；出现在独立记录和带数值参数的命令行中，按标识符保留。"
+      },
+      "reason": "补充 text 范围；两处证据均为命令语法，无普通正文用法。",
+      "evidence_rows": [
+        2034,
+        3448
+      ],
+      "table": "non_translate",
+      "index": 242
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "Ordinal 2036 is exactly 'display' as runtime keyword; ordinal 3462 has ordinary noun 'display rack' in prose, which must be translated. Protect only the complete record."
+        },
+        "term_reason": "独立记录 'display' 为脚本显示关键字；3462 中 'display' 为普通名词‘展示/陈列’，不纳入本条保护。"
+      },
+      "reason": "补充 whole_record 范围，避免把 3462 中的普通名词也全局禁翻。",
+      "evidence_rows": [
+        2036,
+        3462
+      ],
+      "table": "non_translate",
+      "index": 244
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "Ordinal 2037 is exactly 'drama'; no embedded occurrence supplied. Protect only as a standalone runtime keyword."
+        },
+        "term_reason": "独立记录 'drama' 为脚本关键字；无嵌入正文用例，仅保护完整记录。"
+      },
+      "reason": "补充非翻译范围并明确仅保护独立记录。",
+      "evidence_rows": [
+        2037
+      ],
+      "table": "non_translate",
+      "index": 245
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "All supplied occurrences are command syntax: 2038 is exactly 'drop_item'; 1535 is 'drop_item (Arrow)' where drop_item is the command token followed by an item argument. No natural-language use; protect this unique identifier globally."
+        },
+        "term_reason": "丢弃物品运行时命令标识 'drop_item'；在独立记录与带物品参数的命令行中出现，按标识符保留。"
+      },
+      "reason": "补充 text 范围；两处证据均为命令语法，无普通正文用法。",
+      "evidence_rows": [
+        2038,
+        1535
+      ],
+      "table": "non_translate",
+      "index": 246
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "All supplied occurrences are command syntax: 2039 is exactly 'drop_ent'; 995 is 'drop_ent 12 2429' where drop_ent is the command token followed by numeric arguments. No natural-language use; protect this unique identifier globally."
+        },
+        "term_reason": "丢弃实体运行时命令标识 'drop_ent'；在独立记录与带参数命令行中出现，按标识符保留。"
+      },
+      "reason": "补充 text 范围；两处证据均为命令语法，无普通正文用法。",
+      "evidence_rows": [
+        2039,
+        995
+      ],
+      "table": "non_translate",
+      "index": 247
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:234",
+      "evidence_rows": [
+        2026
+      ],
+      "source_excerpt": "convert",
+      "reason": "独立记录为运行时转换命令，补为 whole_record 保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 2026 原文为 'convert'，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 标识符无目标译文，保留原字符串。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原条目未限定非翻译范围；已补 applicability=whole_record，仅保护完整独立记录，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅有独立命令用例，无正文普通词冲突或同形译名问题。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:235",
+      "evidence_rows": [
+        2027
+      ],
+      "source_excerpt": "convert_tile",
+      "reason": "独立记录为运行时转换地块命令，补为 whole_record 保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 2027 原文为 'convert_tile'，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 标识符无目标译文，保留原字符串。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record，仅保护完整独立运行时命令，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅有独立命令用例，无正文普通词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:238",
+      "evidence_rows": [
+        2030,
+        1551
+      ],
+      "source_excerpt": "curse",
+      "reason": "独立记录为脚本关键字，普通文本中的 curse 不纳入保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2030 为完整 'curse'；1551 的 'A curse has been lifted off of you!' 含同形普通名词，但条目只对应独立记录。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译标识符无译文；1551 的普通名词仍需译作‘诅咒’之类，不受本条保护。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record，仅保护独立脚本关键字；1551 的散文用法不保护。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "term_reason 已区分独立关键字与普通名词用法，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:302",
+      "evidence_rows": [
+        2295
+      ],
+      "source_excerpt": "gob_curse",
+      "reason": "内部诅咒效果标识，仅保护独立记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 2295 原文为 'gob_curse'，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "内部效果标识无目标译文，保留原字符串。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record，仅保护完整内部效果标识，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅有独立内部标识用例，无同形普通词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:239",
+      "evidence_rows": [
+        2031,
+        4120
+      ],
+      "source_excerpt": "delay",
+      "reason": "独立记录为脚本延时关键字，对话中的普通动词 delay 不纳入保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2031 为完整 'delay'；4120 的 'Well then, let us not delay this confrontation...' 含同形普通动词，但条目只对应独立记录。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译标识符无译文；4120 的普通动词仍需译为‘拖延/延误’等，不受本条保护。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record，仅保护独立脚本关键字；4120 的对话动词不保护。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "term_reason 已区分独立关键字与普通动词用法，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:240",
+      "evidence_rows": [
+        2032
+      ],
+      "source_excerpt": "destroy_obj",
+      "reason": "独立记录为销毁对象命令，补为 whole_record 保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 2032 原文为 'destroy_obj'，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "运行时命令标识无目标译文，保留原字符串。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record，仅保护完整独立命令，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅有独立命令用例，无同形正文用法。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:241",
+      "evidence_rows": [
+        2033
+      ],
+      "source_excerpt": "destroy_script",
+      "reason": "独立记录为销毁脚本命令，补为 whole_record 保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 2033 原文为 'destroy_script'，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "运行时命令标识无目标译文，保留原字符串。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record，仅保护完整独立命令，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅有独立命令用例，无同形正文用法。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:242",
+      "evidence_rows": [
+        2034,
+        3448
+      ],
+      "source_excerpt": "det_keg",
+      "reason": "两处均为酒桶检测命令语法，按唯一标识符整体保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2034 为完整 'det_keg'；3448 为 'det_keg 9380'，其中 det_keg 是命令标识，后接数值参数。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "运行时标识符不翻译；3448 的参数保持原样。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=text：两处均为命令语法/标识符，无自然语言用法，故全局保护该唯一标识符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "term_reason 覆盖独立与带参数命令行，未与普通词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:244",
+      "evidence_rows": [
+        2036,
+        3462
+      ],
+      "source_excerpt": "display",
+      "reason": "独立记录为脚本显示关键字，普通文本 display rack 不纳入保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2036 为完整 'display'；3462 的 'a dedorative display rack.' 含同形普通名词，但条目只对应独立记录。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译标识符无译文；3462 的普通名词仍需译为‘展示架/陈列架’等，不受本条保护。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record，仅保护独立脚本关键字；3462 的普通名词不保护。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "term_reason 已区分独立关键字与普通名词用法，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:245",
+      "evidence_rows": [
+        2037
+      ],
+      "source_excerpt": "drama",
+      "reason": "独立记录为脚本关键字，无嵌入正文用例，仅保护完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 2037 原文为 'drama'，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "运行时关键字无目标译文，保留原字符串。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record，仅保护完整独立记录，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅有独立关键字用例，无同形正文冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:246",
+      "evidence_rows": [
+        2038,
+        1535
+      ],
+      "source_excerpt": "drop_item",
+      "reason": "两处均为丢弃物品命令语法，按唯一标识符整体保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2038 为完整 'drop_item'；1535 为 'drop_item (Arrow)'，其中 drop_item 是命令标识，后接物品参数。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "运行时标识符不翻译；1535 的参数 Arrow 按原文保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=text：两处均为命令语法/标识符，无自然语言用法，故全局保护该唯一标识符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "term_reason 覆盖独立与带参数命令行，未与普通词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:247",
+      "evidence_rows": [
+        2039,
+        995
+      ],
+      "source_excerpt": "drop_ent",
+      "reason": "两处均为丢弃实体命令语法，按唯一标识符整体保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2039 为完整 'drop_ent'；995 为 'drop_ent 12 2429'，其中 drop_ent 是命令标识，后接数值参数。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "运行时标识符不翻译；995 的参数保持原样。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=text：两处均为命令语法/标识符，无自然语言用法，故全局保护该唯一标识符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "term_reason 覆盖独立与带参数命令行，未与普通词冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:234",
+    "non_translate:235",
+    "non_translate:238",
+    "non_translate:302",
+    "non_translate:239",
+    "non_translate:240",
+    "non_translate:241",
+    "non_translate:242",
+    "non_translate:244",
+    "non_translate:245",
+    "non_translate:246",
+    "non_translate:247"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

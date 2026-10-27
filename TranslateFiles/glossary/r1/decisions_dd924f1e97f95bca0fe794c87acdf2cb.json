@@ -1,0 +1,524 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对全部12条：修正法术名专名分类与译名，隔离证据不足的普通动词Compress，并为SFX_Compress、SFX_Disease、cure_disease、disease补充限定保护范围；disease 1另立整条记录保护，避免普通疾病词被禁翻。",
+  "acknowledged_findings": [
+    "F0042",
+    "F0046",
+    "F0141",
+    "F0148"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "变色术",
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "term_reason": "法术名；1132独立记录，282/2701为Scroll of Chameleon卷轴名。"
+      },
+      "reason": "按法术专名处理，并用“变色术”避免与动物名混淆。",
+      "evidence_rows": [
+        282,
+        1132,
+        2701
+      ],
+      "table": "terms",
+      "index": 140
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "term_reason": "法术名；1088独立记录，283/2702为Scroll of Charm卷轴名。"
+      },
+      "reason": "法术名按专名处理；译名“魅惑”保留。",
+      "evidence_rows": [
+        283,
+        1088,
+        2702
+      ],
+      "table": "terms",
+      "index": 141
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "term_reason": "法术名；1124独立记录，284/2703为Scroll of Compress Atmosphere卷轴名。"
+      },
+      "reason": "法术名按专名处理；保留现译。",
+      "evidence_rows": [
+        284,
+        1124,
+        2703
+      ],
+      "table": "terms",
+      "index": 142
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "term_reason": "法术/效果名；285/2704为卷轴，1090独立记录，411为药剂配方。"
+      },
+      "reason": "卷轴/法术名按专名处理，配方中的同名效果保持一致。",
+      "evidence_rows": [
+        285,
+        411,
+        1090,
+        2704
+      ],
+      "table": "terms",
+      "index": 143
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": false,
+          "reason": "仅独立记录SFX_Compress/sfx_compress为音效标识符；无嵌入用例，避免保护普通compress。"
+        },
+        "term_reason": "音效事件标识符；独立大写及小写记录均保持原样。"
+      },
+      "reason": "补充标识符保护范围并覆盖大小写变体。",
+      "evidence_rows": [
+        1405,
+        2297
+      ],
+      "table": "non_translate",
+      "index": 119
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确字符串SFX_Disease在独立记录1384及Sound(...)调用2503/2627中均为音频事件标识符，句中同样保留。"
+        },
+        "term_reason": "音频事件标识符；独立记录及Sound(...)参数中均保持原样。"
+      },
+      "reason": "修复未限定保护范围；精确标识符可全局保护且不波及普通disease。",
+      "evidence_rows": [
+        1384,
+        2503,
+        2627
+      ],
+      "table": "non_translate",
+      "index": 115
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确小写cure_disease在独立记录2028及脚本语句2529中均为命令关键字，句中同样保留。"
+        },
+        "term_reason": "脚本命令关键字；独立记录及脚本语句中均保持原样。"
+      },
+      "reason": "修复未限定保护范围；下划线关键字唯一。",
+      "evidence_rows": [
+        2028,
+        2529
+      ],
+      "table": "non_translate",
+      "index": 236
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "仅完整记录disease作为运行时标记；叙事The disease与图片Disease不纳入保护。"
+        },
+        "term_reason": "裸disease运行时标记；普通文本中的疾病词仍翻译。"
+      },
+      "reason": "普通词不能全局禁翻，缩到完整记录并另补disease 1。",
+      "evidence_rows": [
+        2035,
+        3437,
+        1553,
+        4732
+      ],
+      "table": "non_translate",
+      "index": 243
+    }
+  ],
+  "quarantine": [
+    {
+      "reason": "仅2378独立Compress；1137描述的是Compress Atmosphere法术，未证明Compress为独立术语，按普通动词移出术语表。",
+      "evidence_rows": [
+        2378,
+        1137
+      ],
+      "table": "terms",
+      "index": 361
+    }
+  ],
+  "additions": [
+    {
+      "table": "non_translate",
+      "row": {
+        "source": "disease 1",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录disease 1为带参数的脚本命令，保持原样。"
+        },
+        "term_reason": "带参数的疾病脚本命令。"
+      },
+      "reason": "e12的3437是嵌入参数形式，需与裸disease分开保护。",
+      "evidence_rows": [
+        3437
+      ]
+    }
+  ],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:140",
+      "evidence_rows": [
+        282,
+        1132,
+        2701
+      ],
+      "source_excerpt": "Scroll of Chameleon",
+      "reason": "法术名按专名处理，译名改为“变色术”，避免动物名歧义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "282、2701为Scroll of Chameleon，1132为独立Chameleon，拼写一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“变色龙”改为“变色术”，更明确是法术名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "2701标注SKILL_ARCANE_ELEMENTAL，归技能/法术。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_kind改proper_name；卷轴名统一用“变色术”，不纳入普通动物词。"
+        }
+      }
+    },
+    {
+      "ref": "terms:141",
+      "evidence_rows": [
+        283,
+        1088,
+        2702
+      ],
+      "source_excerpt": "Scroll of Charm",
+      "reason": "法术名按专名处理；同形Charm在物品名中另作护符义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1088独立Charm，2702为Scroll of Charm，均指同一法术名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译“魅惑”简洁，保留为法术名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "2702标为SKILL_ARCANE_DIVINATION，归技能/法术。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_kind改proper_name；与Charmed状态“被魅惑”、护符Charm按语境区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:301",
+      "evidence_rows": [
+        1166,
+        2442,
+        2398
+      ],
+      "source_excerpt": "Charmed",
+      "reason": "状态义明确，保持现译和限定范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1166为状态标签Charmed；2442为currently charmed，2398为not charmed描述。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“被魅惑”适用于状态标签和句子谓语。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "状态效果标签，归其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与Charm法术“魅惑”同源，但状态保留被动形式；whole_record仅锁状态标签，不全局替换普通charmed。"
+        }
+      }
+    },
+    {
+      "ref": "terms:419",
+      "evidence_rows": [
+        2582
+      ],
+      "source_excerpt": "Bonesplitter's Charm",
+      "reason": "独特护符名按专名处理，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2582物品记录含IC_AMULET与Bonesplitter's Charm。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "碎骨者护符保留所有格命名与护符物品类型。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "IC_AMULET表明为护符物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "此处Charm为护符，不采用法术“魅惑”译名，语境区分正确。"
+        }
+      }
+    },
+    {
+      "ref": "terms:142",
+      "evidence_rows": [
+        284,
+        1124,
+        2703
+      ],
+      "source_excerpt": "Scroll of Compress Atmosphere",
+      "reason": "法术名按专名处理；保留现译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "284/2703为Scroll of Compress Atmosphere，1124为独立同名法术。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“压缩大气”四字对应原短语，未改译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "2703标为SKILL_ARCANE_ELEMENTAL，归技能/法术。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_kind改proper_name；与普通动词compress分开，不统一到e6已隔离条目。"
+        }
+      }
+    },
+    {
+      "ref": "terms:361",
+      "evidence_rows": [
+        2378,
+        1137
+      ],
+      "source_excerpt": "Compress",
+      "reason": "证据不足，按普通动词移出术语表。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "2378仅独立Compress；1137描述的是Compress Atmosphere，不能证明Compress是独立术语。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "已隔离，不提供译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "按普通动词处理，不应归技能/proper_name。"
+        },
+        "consistency": {
+          "status": "not_applicable",
+          "evidence": "不与其他Compress法术名强行统一。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:119",
+      "evidence_rows": [
+        1405,
+        2297
+      ],
+      "source_excerpt": "SFX_Compress",
+      "reason": "补充标识符保护范围并覆盖大小写变体。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1405为SFX_Compress，2297为sfx_compress，同一音效标识符的大小写形式。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate标识符不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "音效事件标识符，非普通词。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "applicability限定为whole_record且不区分大小写，仅保护独立记录，不冻结普通compress。"
+        }
+      }
+    },
+    {
+      "ref": "terms:143",
+      "evidence_rows": [
+        285,
+        411,
+        1090,
+        2704
+      ],
+      "source_excerpt": "Scroll of Cure Disease",
+      "reason": "法术/效果名按专名处理，译名保持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "285/2704为Scroll of Cure Disease，1090独立记录，411配方中也列Cure Disease。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "治愈疾病同时适用于卷轴名、法术名和配方效果。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "2704标为SKILL_ARCANE_DIVINATION，411为药剂配方效果。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_kind改proper_name；与e11脚本cure_disease原样保留区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:340",
+      "evidence_rows": [
+        1385
+      ],
+      "source_excerpt": "[Save vs Disease: SUCCESS!]",
+      "reason": "标签义明确，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1385完整显示[Save vs Disease: SUCCESS!]标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "疾病豁免是豁免检定标签的简洁译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "战斗/状态提示标签，归其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与Cure Disease等疾病词根一致用“疾病”，保留豁免术语。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:115",
+      "evidence_rows": [
+        1384,
+        2503,
+        2627
+      ],
+      "source_excerpt": "SFX_Disease",
+      "reason": "修复未限定保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1384独立SFX_Disease，2503/2627在Sound(...)参数中。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate标识符不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "音频事件标识符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "applicability设为text且区分大小写，精确保护SFX_Disease；不扩展到普通disease。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:236",
+      "evidence_rows": [
+        2028,
+        2529
+      ],
+      "source_excerpt": "cure_disease",
+      "reason": "修复未限定保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2028独立cure_disease，2529嵌入脚本语句。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate关键字不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "脚本命令关键字。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "applicability设为text且区分大小写，只保护完整小写cure_disease。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:243",
+      "evidence_rows": [
+        2035,
+        3437,
+        1553,
+        4732
+      ],
+      "source_excerpt": "disease",
+      "reason": "普通词不能全局禁翻，按完整记录拆分保护。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "2035为独立disease记录，3437为disease 1命令；1553/4732为普通叙事/图片词。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate运行时标记不翻译；普通词仍翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "仅完整disease记录作为运行时标记，普通The disease/Disease不纳入。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "applicability改whole_record；另加disease 1独立保护，排除叙事和图片词。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:140",
+    "terms:141",
+    "terms:301",
+    "terms:419",
+    "terms:142",
+    "terms:361",
+    "non_translate:119",
+    "terms:143",
+    "terms:340",
+    "non_translate:115",
+    "non_translate:236",
+    "non_translate:243"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

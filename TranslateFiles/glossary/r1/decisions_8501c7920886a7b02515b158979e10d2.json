@@ -1,0 +1,498 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1–e11 的原文、出现位置与分类：e1–e4 为动作内部常量，存在独立记录及怪物数据嵌入字段，按精确大小写全局保护；e5–e11 为音效标识符，仅见独立记录，按整条记录保护。未新增、隔离或豁免条目。",
+  "acknowledged_findings": [
+    "F0078",
+    "F0079",
+    "F0080",
+    "F0081",
+    "F0085",
+    "F0086",
+    "F0087",
+    "F0088",
+    "F0089",
+    "F0090",
+    "F0091"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "大写内部动作常量，独立记录为 ACTION_MELEE，怪物数据中以 ,\"ACTION_MELEE\", 字段出现；按精确大小写全局保留该标识符，避免运行时动作值被翻译。"
+        }
+      },
+      "reason": "补齐 e1 的适用范围，覆盖独立记录与嵌入怪物数据字段。",
+      "evidence_rows": [
+        1659,
+        2940
+      ],
+      "table": "non_translate",
+      "index": 158
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "大写内部动作常量，独立记录为 ACTION_RANGED，怪物数据中以 ,\"ACTION_RANGED\", 字段出现；按精确大小写全局保留该标识符，避免运行时动作值被翻译。"
+        }
+      },
+      "reason": "补齐 e2 的适用范围，覆盖独立记录与嵌入怪物数据字段。",
+      "evidence_rows": [
+        1660,
+        2941
+      ],
+      "table": "non_translate",
+      "index": 159
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "大写内部动作常量，独立记录为 ACTION_BOW，怪物数据中以 ,\"ACTION_BOW\", 字段出现；按精确大小写全局保留该标识符，避免运行时动作值被翻译。"
+        }
+      },
+      "reason": "补齐 e3 的适用范围，覆盖独立记录与嵌入怪物数据字段。",
+      "evidence_rows": [
+        1661,
+        2946
+      ],
+      "table": "non_translate",
+      "index": 160
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "大写内部动作常量，独立记录为 ACTION_CAST，怪物数据中以 ,\"ACTION_CAST\", 字段出现；按精确大小写全局保留该标识符，避免运行时动作值被翻译。"
+        }
+      },
+      "reason": "补齐 e4 的适用范围，覆盖独立记录与嵌入怪物数据字段。",
+      "evidence_rows": [
+        1662,
+        2950
+      ],
+      "table": "non_translate",
+      "index": 161
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "音效标识符仅以独立记录 sfx_bite 出现，无嵌入正文用例；限定整条记录精确匹配并保留原文。"
+        }
+      },
+      "reason": "补齐 e5 的精确匹配范围，避免无依据全局禁翻。",
+      "evidence_rows": [
+        1699
+      ],
+      "table": "non_translate",
+      "index": 165
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "音效标识符仅以独立记录 sfx_power 出现，无嵌入正文用例；限定整条记录精确匹配并保留原文。"
+        }
+      },
+      "reason": "补齐 e6 的精确匹配范围，避免无依据全局禁翻。",
+      "evidence_rows": [
+        1707
+      ],
+      "table": "non_translate",
+      "index": 166
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "音效标识符仅以独立记录 sfx_polthit 出现，无嵌入正文用例；限定整条记录精确匹配并保留原文。"
+        }
+      },
+      "reason": "补齐 e7 的精确匹配范围，避免无依据全局禁翻。",
+      "evidence_rows": [
+        1710
+      ],
+      "table": "non_translate",
+      "index": 167
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "音效标识符仅以独立记录 SFX_Port_Up 出现，无嵌入正文用例；限定整条记录精确匹配并保留原文。"
+        }
+      },
+      "reason": "补齐 e8 的精确匹配范围，避免无依据全局禁翻。",
+      "evidence_rows": [
+        1717
+      ],
+      "table": "non_translate",
+      "index": 168
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "音效标识符仅以独立记录 SFX_Door_Open 出现，无嵌入正文用例；限定整条记录精确匹配并保留原文。"
+        }
+      },
+      "reason": "补齐 e9 的精确匹配范围，避免无依据全局禁翻。",
+      "evidence_rows": [
+        1719
+      ],
+      "table": "non_translate",
+      "index": 169
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "音效标识符仅以独立记录 SFX_Lock_Open 出现，无嵌入正文用例；限定整条记录精确匹配并保留原文。"
+        }
+      },
+      "reason": "补齐 e10 的精确匹配范围，避免无依据全局禁翻。",
+      "evidence_rows": [
+        1721
+      ],
+      "table": "non_translate",
+      "index": 170
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "音效标识符仅以独立记录 SFX_Chest_Open 出现，无嵌入正文用例；限定整条记录精确匹配并保留原文。"
+        }
+      },
+      "reason": "补齐 e11 的精确匹配范围，避免无依据全局禁翻。",
+      "evidence_rows": [
+        1723
+      ],
+      "table": "non_translate",
+      "index": 171
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:158",
+      "evidence_rows": [
+        1659,
+        2940
+      ],
+      "source_excerpt": "ACTION_MELEE",
+      "reason": "核对独立记录 ACTION_MELEE 与怪物数据中的 ,\"ACTION_MELEE\", 字段，确认其为动作内部常量；补 text 精确大小写保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1659 原文为 ACTION_MELEE，ordinal 2940 同字符串位于怪物数据字段 ,\"ACTION_MELEE\",。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 运行标识符，无目标译名，应保留原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入 non_translate，依据为动作内部常量而非普通正文词。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；现补为 text/case_sensitive=true，并同时覆盖 ordinal 1659 独立值与 ordinal 2940 嵌入字段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:159",
+      "evidence_rows": [
+        1660,
+        2941
+      ],
+      "source_excerpt": "ACTION_RANGED",
+      "reason": "核对独立记录 ACTION_RANGED 与怪物数据中的 ,\"ACTION_RANGED\", 字段，确认其为动作内部常量；补 text 精确大小写保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1660 原文为 ACTION_RANGED，ordinal 2941 同字符串位于怪物数据字段 ,\"ACTION_RANGED\",。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 运行标识符，无目标译名，应保留原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入 non_translate，依据为动作内部常量而非普通正文词。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；现补为 text/case_sensitive=true，并同时覆盖 ordinal 1660 独立值与 ordinal 2941 嵌入字段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:160",
+      "evidence_rows": [
+        1661,
+        2946
+      ],
+      "source_excerpt": "ACTION_BOW",
+      "reason": "核对独立记录 ACTION_BOW 与怪物数据中的 ,\"ACTION_BOW\", 字段，确认其为动作内部常量；补 text 精确大小写保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1661 原文为 ACTION_BOW，ordinal 2946 同字符串位于怪物数据字段 ,\"ACTION_BOW\",。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 运行标识符，无目标译名，应保留原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入 non_translate，依据为动作内部常量而非普通正文词。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；现补为 text/case_sensitive=true，并同时覆盖 ordinal 1661 独立值与 ordinal 2946 嵌入字段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:161",
+      "evidence_rows": [
+        1662,
+        2950
+      ],
+      "source_excerpt": "ACTION_CAST",
+      "reason": "核对独立记录 ACTION_CAST 与怪物数据中的 ,\"ACTION_CAST\", 字段，确认其为动作内部常量；补 text 精确大小写保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1662 原文为 ACTION_CAST，ordinal 2950 同字符串位于怪物数据字段 ,\"ACTION_CAST\",。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 运行标识符，无目标译名，应保留原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入 non_translate，依据为动作内部常量而非普通正文词。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；现补为 text/case_sensitive=true，并同时覆盖 ordinal 1662 独立值与 ordinal 2950 嵌入字段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:165",
+      "evidence_rows": [
+        1699
+      ],
+      "source_excerpt": "sfx_bite",
+      "reason": "核对仅见独立记录 sfx_bite，确认其为音效标识符；补 whole_record 精确保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1699 原文为 sfx_bite，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 音效标识符，无目标译名，应保留原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入 non_translate，依据为音效资源标识符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；现补为 whole_record/case_sensitive=true，仅匹配独立记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:166",
+      "evidence_rows": [
+        1707
+      ],
+      "source_excerpt": "sfx_power",
+      "reason": "核对仅见独立记录 sfx_power，确认其为音效标识符；补 whole_record 精确保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1707 原文为 sfx_power，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 音效标识符，无目标译名，应保留原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入 non_translate，依据为音效资源标识符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；现补为 whole_record/case_sensitive=true，仅匹配独立记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:167",
+      "evidence_rows": [
+        1710
+      ],
+      "source_excerpt": "sfx_polthit",
+      "reason": "核对仅见独立记录 sfx_polthit，确认其为音效标识符；补 whole_record 精确保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1710 原文为 sfx_polthit，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 音效标识符，无目标译名，应保留原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入 non_translate，依据为音效资源标识符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；现补为 whole_record/case_sensitive=true，仅匹配独立记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:168",
+      "evidence_rows": [
+        1717
+      ],
+      "source_excerpt": "SFX_Port_Up",
+      "reason": "核对仅见独立记录 SFX_Port_Up，确认其为音效标识符；补 whole_record 精确保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1717 原文为 SFX_Port_Up，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 音效标识符，无目标译名，应保留原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入 non_translate，依据为音效资源标识符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；现补为 whole_record/case_sensitive=true，仅匹配独立记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:169",
+      "evidence_rows": [
+        1719
+      ],
+      "source_excerpt": "SFX_Door_Open",
+      "reason": "核对仅见独立记录 SFX_Door_Open，确认其为音效标识符；补 whole_record 精确保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1719 原文为 SFX_Door_Open，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 音效标识符，无目标译名，应保留原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入 non_translate，依据为音效资源标识符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；现补为 whole_record/case_sensitive=true，仅匹配独立记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:170",
+      "evidence_rows": [
+        1721
+      ],
+      "source_excerpt": "SFX_Lock_Open",
+      "reason": "核对仅见独立记录 SFX_Lock_Open，确认其为音效标识符；补 whole_record 精确保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1721 原文为 SFX_Lock_Open，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 音效标识符，无目标译名，应保留原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入 non_translate，依据为音效资源标识符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；现补为 whole_record/case_sensitive=true，仅匹配独立记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:171",
+      "evidence_rows": [
+        1723
+      ],
+      "source_excerpt": "SFX_Chest_Open",
+      "reason": "核对仅见独立记录 SFX_Chest_Open，确认其为音效标识符；补 whole_record 精确保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1723 原文为 SFX_Chest_Open，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 音效标识符，无目标译名，应保留原文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入 non_translate，依据为音效资源标识符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；现补为 whole_record/case_sensitive=true，仅匹配独立记录。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:158",
+    "non_translate:159",
+    "non_translate:160",
+    "non_translate:161",
+    "non_translate:165",
+    "non_translate:166",
+    "non_translate:167",
+    "non_translate:168",
+    "non_translate:169",
+    "non_translate:170",
+    "non_translate:171"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

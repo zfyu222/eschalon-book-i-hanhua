@@ -1,0 +1,412 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e12 的人物名、译名、分类与一致性依据：主要人物译名统一，Porter 与 Krista 的性别按原文代词及自述修正；Father Michael、Gamfari 的 term_reason 按本批可证原文修订。未发现需隔离或新增条目，audit.findings 为空。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "gender": "男性",
+        "term_reason": "Owl's Roost Tavern的店主，出售杂货与地图；462以He指代，为男性。"
+      },
+      "reason": "原文462用He指代Porter，修正性别并同步术语说明。",
+      "evidence_rows": [
+        462
+      ],
+      "table": "characters",
+      "index": 18
+    },
+    {
+      "patch": {
+        "term_reason": "阿里德尔绿月圣殿的神父，提供治疗；被指与哥布林有秘密通信。"
+      },
+      "reason": "term_reason中的466拼写说明不在本批证据，按468、694等可证原文修订。",
+      "evidence_rows": [
+        468,
+        694,
+        1217
+      ],
+      "table": "characters",
+      "index": 30
+    },
+    {
+      "patch": {
+        "gender": "女性",
+        "term_reason": "Bordertown临时酒馆的年轻女老板，委托取回其兄弟房中的吊坠盒。"
+      },
+      "reason": "原文701以A young woman指Krista，修正性别并补充身份说明。",
+      "evidence_rows": [
+        701,
+        1235
+      ],
+      "table": "characters",
+      "index": 39
+    },
+    {
+      "patch": {
+        "term_reason": "Bordertown的草药师与炼金术师，出售炼金材料并教授炼金术。"
+      },
+      "reason": "补充716、3927可证实的职业与地点，避免仅写列表条目。",
+      "evidence_rows": [
+        716,
+        3927
+      ],
+      "table": "characters",
+      "index": 40
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:7",
+      "evidence_rows": [
+        3560,
+        448
+      ],
+      "source_excerpt": "Three-fingered Sam's Guide to making Demon Oil",
+      "reason": "书名署名明确指向同一作者；译名、分类与候选一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3560题名明确署名为 Three-fingered Sam；448 同为制作 Demon Oil 指南。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Three-fingered Sam 译为三指萨姆，三指与萨姆对应准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "书名作者为人物专名，保留 characters/proper_name/required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "现有候选均作三指萨姆，未出现译名分叉。"
+        }
+      }
+    },
+    {
+      "ref": "characters:12",
+      "evidence_rows": [
+        434,
+        2933,
+        4051
+      ],
+      "source_excerpt": "Gramuk leads you to a large vault just off the main vestibule in his tower room.",
+      "reason": "Gramuk 为哥布林萨满兼NPC，男性代词与译名均有本批原文支持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "434叙述Gramuk带领进入塔室，4051称其为Goblin shaman Gramuk，身份明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Gramuk按人名音译统一为格拉穆克，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "哥布林萨满兼NPC为人物专名，proper_name/required成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处均同指该萨满，译名未分叉。"
+        }
+      }
+    },
+    {
+      "ref": "characters:13",
+      "evidence_rows": [
+        3733,
+        528,
+        4268
+      ],
+      "source_excerpt": "My name is Lilith.",
+      "reason": "Lilith 为湖畔小屋女子兼任务NPC，自报姓名与后续任务证据一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3733自报My name is Lilith，528、4268确认其住处与蜂后任务。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Lilith音译莉莉丝，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "NPC人物专名，proper_name/required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处同指湖畔女子，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:18",
+      "evidence_rows": [
+        462,
+        506,
+        2179
+      ],
+      "source_excerpt": "Porter, the owner of the Owl's Roost Tavern, sells miscellaneous supplies.",
+      "reason": "Porter 为酒馆店主专名；原文代词可确认男性，已修正性别并区分小写标识。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "462以He may have指代Porter，原文可确认男性，已修正gender。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Porter作人物名译波特，与店主身份相符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "大写Porter为人物专名；小写porter候选为内部标识，不应混作角色名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "人物名波特与小写标识用途不同，未混译。"
+        }
+      }
+    },
+    {
+      "ref": "characters:19",
+      "evidence_rows": [
+        914,
+        439,
+        4393
+      ],
+      "source_excerpt": "My name is Penelope.",
+      "reason": "Penelope 为黑水镇女子与信件收件人，自报姓名与任务链一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "914自报My name is Penelope，439称其为姐姐。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Penelope音译佩内洛普，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "NPC人物专名，proper_name/required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "信件收件人与黑水镇裁缝同指，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:25",
+      "evidence_rows": [
+        445,
+        3589
+      ],
+      "source_excerpt": "Michael, priest man of Aridell:",
+      "reason": "Michael 为阿里德尔神职人员，基础名与 Father Michael 称谓可统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "445署名信称Michael, priest man of Aridell，3589自称Father Michael，为男性神职人员。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Michael译迈克尔，与Father Michael组合为迈克尔神父。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，proper_name/required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "基础名迈克尔与神父称谓一致，未另译。"
+        }
+      }
+    },
+    {
+      "ref": "characters:30",
+      "evidence_rows": [
+        468,
+        694,
+        1217,
+        4303
+      ],
+      "source_excerpt": "You can visit Father Michael next door in the Bethel of the Green Moon",
+      "reason": "Father Michael 为阿里德尔绿月圣殿神父，译名与基础名统一；术语说明已去除无本批出处的拼写句。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "468、694、1217均以Father Michael指阿里德尔神父；原term_reason中的466拼写无本批出处，已修订说明。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Father Michael译为迈克尔神父，与Michael统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名及教职称谓，proper_name/required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与基础名迈克尔保持同一词根；各出处同指。"
+        }
+      }
+    },
+    {
+      "ref": "characters:31",
+      "evidence_rows": [
+        3695,
+        492,
+        4254
+      ],
+      "source_excerpt": "His name is Garrett.",
+      "reason": "Garrett 为沉船幸存的前航海者，姓名、技能训练与统一译名均有原文支持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3695明确His name is Garrett，492、4254说明其航海与训练身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Garrett取加勒特，较加雷特候选统一采用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，proper_name/required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处同一人物；选定译名加勒特，未混用加雷特。"
+        }
+      }
+    },
+    {
+      "ref": "characters:32",
+      "evidence_rows": [
+        570,
+        575,
+        2912
+      ],
+      "source_excerpt": "Oh human! No harm Gruzz! Me not make war, me be friend!",
+      "reason": "Gruzz 为躲避战争的哥布林NPC，自报姓名、男性代词与情报功能一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "570以he指代Gruzz并自报其名；575、577说明其躲战与提供格拉穆克情报。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Gruzz音译格鲁兹，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "哥布林NPC人物专名，proper_name/required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处同指该哥布林，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:35",
+      "evidence_rows": [
+        630,
+        613,
+        4289
+      ],
+      "source_excerpt": "My name is Gunther, owner of this here metal shop.",
+      "reason": "Gunther 为黑水镇铁匠，自报姓名、职业与男性身份均由本批原文支持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "630自报My name is Gunther，613、4289确认铁匠身份与男性。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Gunther音译冈瑟，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，proper_name/required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处同指黑水镇铁匠，译名统一；小写内部标识不混同。"
+        }
+      }
+    },
+    {
+      "ref": "characters:39",
+      "evidence_rows": [
+        701,
+        1235,
+        4307
+      ],
+      "source_excerpt": "I am Krista, owner of this make-shift tavern here in Bordertown.",
+      "reason": "Krista 为边境镇年轻女老板，原文明确女性；译名按候选多数统一为克里斯塔。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "701称A young woman greets you且自报I am Krista，原文可确认女性，已修正gender。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Krista取克里斯塔；与克丽丝塔候选相比按多数确定，不构成另名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，proper_name/required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处同指边境镇酒馆老板，选定译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:40",
+      "evidence_rows": [
+        716,
+        3927
+      ],
+      "source_excerpt": "My name is Gamfari.",
+      "reason": "Gamfari 为边境镇草药师与炼金术师，职业信息已补入术语说明；原文未明性别故保留其他。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "716自报My name is Gamfari，3927说明其为Bordertown草药师与炼金术师；term_reason已按此补足。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Gamfari取加姆法里，与甘法里候选相比按多数确定。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，proper_name/required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处同指该草药师，译名统一；原文未明性别，保留其他。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:7",
+    "characters:12",
+    "characters:13",
+    "characters:18",
+    "characters:19",
+    "characters:25",
+    "characters:30",
+    "characters:31",
+    "characters:32",
+    "characters:35",
+    "characters:39",
+    "characters:40"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

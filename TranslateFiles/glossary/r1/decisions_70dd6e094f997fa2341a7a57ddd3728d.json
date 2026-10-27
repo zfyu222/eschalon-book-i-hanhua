@@ -1,0 +1,511 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1–e11 共 11 条 non_translate 标识符的来源、分类与一致性复核；确认它们都是内部技能/动作/音效字段，并为缺少范围的条目补充了明确 applicability。",
+  "acknowledged_findings": [
+    "F0237",
+    "F0238",
+    "F0239",
+    "F0240",
+    "F0241",
+    "F0242",
+    "F0243",
+    "F0244",
+    "F0245",
+    "F0247"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "全大写下划线技能标识，在独立记录 ordinal 1374 与物品数据 ordinal 2743 的技能字段中同形出现；无普通英文同形用法，按精确文本保留。"
+        }
+      },
+      "reason": "为未限定范围的 non_translate 技能标识补充大小写敏感精确保护。",
+      "evidence_rows": [
+        1374,
+        2743
+      ],
+      "table": "non_translate",
+      "index": 351
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "全大写下划线护甲技能标识，在独立记录 ordinal 1356 与物品数据 ordinal 2748 的技能字段中同形出现；无普通英文同形用法，按精确文本保留。"
+        }
+      },
+      "reason": "为未限定范围的 non_translate 技能标识补充大小写敏感精确保护。",
+      "evidence_rows": [
+        1356,
+        2748
+      ],
+      "table": "non_translate",
+      "index": 352
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "全大写下划线武器技能标识，在独立记录 ordinal 1375 与物品数据 ordinal 2749 的技能字段中同形出现；无普通英文同形用法，按精确文本保留。"
+        }
+      },
+      "reason": "为未限定范围的 non_translate 技能标识补充大小写敏感精确保护。",
+      "evidence_rows": [
+        1375,
+        2749
+      ],
+      "table": "non_translate",
+      "index": 353
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "全大写下划线重甲技能标识，在独立记录 ordinal 1357 与物品数据 ordinal 2752 的技能字段中同形出现；无普通英文同形用法，按精确文本保留。"
+        }
+      },
+      "reason": "为未限定范围的 non_translate 技能标识补充大小写敏感精确保护。",
+      "evidence_rows": [
+        1357,
+        2752
+      ],
+      "table": "non_translate",
+      "index": 354
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "全大写下划线投掷武器技能标识，在独立记录 ordinal 1376 与物品数据 ordinal 2757 的技能字段中同形出现；无普通英文同形用法，按精确文本保留。"
+        }
+      },
+      "reason": "为未限定范围的 non_translate 技能标识补充大小写敏感精确保护。",
+      "evidence_rows": [
+        1376,
+        2757
+      ],
+      "table": "non_translate",
+      "index": 355
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "全大写下划线潜行技能标识，在独立记录 ordinal 1365 与物品数据 ordinal 2763 的技能字段中同形出现；无普通英文同形用法，按精确文本保留。"
+        }
+      },
+      "reason": "为未限定范围的 non_translate 技能标识补充大小写敏感精确保护。",
+      "evidence_rows": [
+        1365,
+        2763
+      ],
+      "table": "non_translate",
+      "index": 356
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "全大写下划线诡诈技能标识，在独立记录 ordinal 1367 与物品数据 ordinal 2767 的技能字段中同形出现；无普通英文同形用法，按精确文本保留。"
+        }
+      },
+      "reason": "为未限定范围的 non_translate 技能标识补充大小写敏感精确保护。",
+      "evidence_rows": [
+        1367,
+        2767
+      ],
+      "table": "non_translate",
+      "index": 357
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "全大写下划线劈砍武器技能标识，在独立记录 ordinal 1373 与物品数据 ordinal 2773 的技能字段中同形出现；无普通英文同形用法，按精确文本保留。"
+        }
+      },
+      "reason": "为未限定范围的 non_translate 技能标识补充大小写敏感精确保护。",
+      "evidence_rows": [
+        1373,
+        2773
+      ],
+      "table": "non_translate",
+      "index": 358
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "全大写下划线冥想技能标识，在独立记录 ordinal 1363 与物品数据 ordinal 2774 的技能字段中同形出现；无普通英文同形用法，按精确文本保留。"
+        }
+      },
+      "reason": "为未限定范围的 non_translate 技能标识补充大小写敏感精确保护。",
+      "evidence_rows": [
+        1363,
+        2774
+      ],
+      "table": "non_translate",
+      "index": 359
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "全大写下划线音频事件标识，在独立记录 ordinal 2865 与 Spire Guard 数据 ordinal 2954 的音效字段中同形出现；无普通英文同形用法，按精确文本保留。"
+        }
+      },
+      "reason": "为未限定范围的 non_translate 音效标识补充大小写敏感精确保护。",
+      "evidence_rows": [
+        2865,
+        2954
+      ],
+      "table": "non_translate",
+      "index": 361
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "\"",
+          "suffix": "\"",
+          "reason": "ordinal 2698 的 CSV 行末字段为 \"Learn ; Remove\"，位于前后双引号之间；仅在此动作字段内保护，避免普通 Learn/Remove 被全局禁翻。"
+        }
+      },
+      "reason": "补充 literal_context 范围，保护卷轴动作字段但不冻结普通动词。",
+      "evidence_rows": [
+        2698
+      ],
+      "table": "non_translate",
+      "index": 365
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:351",
+      "evidence_rows": [
+        1374,
+        2743
+      ],
+      "source_excerpt": "SKILL_WEAPON_SHORT_BLADE",
+      "reason": "该条是内部短刃武器技能标识，需原样保留；已补大小写敏感的精确文本保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1374 原文为 SKILL_WEAPON_SHORT_BLADE，ordinal 2743 的 CSV 技能字段也含同一字符串，来源一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，应原样保留标识符。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=text（case_sensitive=true）；它是内部技能标识而非可译正文词，独立与嵌入使用均保留原文。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 SKILL_* 内部标识一致，保留大写和下划线，未发现拆分或变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:352",
+      "evidence_rows": [
+        1356,
+        2748
+      ],
+      "source_excerpt": "SKILL_ARMOR_LIGHT",
+      "reason": "该条是内部轻甲技能标识，需原样保留；已补大小写敏感的精确文本保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1356 原文为 SKILL_ARMOR_LIGHT，ordinal 2748 的 CSV 技能字段也含同一字符串，来源一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，应原样保留标识符。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=text（case_sensitive=true）；它是内部护甲技能标识而非可译正文词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 SKILL_* 内部标识一致，保留大写和下划线，未发现拆分或变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:353",
+      "evidence_rows": [
+        1375,
+        2749
+      ],
+      "source_excerpt": "SKILL_WEAPON_SWORD",
+      "reason": "该条是内部剑类武器技能标识，需原样保留；已补大小写敏感的精确文本保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1375 原文为 SKILL_WEAPON_SWORD，ordinal 2749 的 CSV 技能字段也含同一字符串，来源一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，应原样保留标识符。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=text（case_sensitive=true）；它是内部技能标识而非可译正文词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 SKILL_* 内部标识一致，保留大写和下划线，未发现拆分或变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:354",
+      "evidence_rows": [
+        1357,
+        2752
+      ],
+      "source_excerpt": "SKILL_ARMOR_HEAVY",
+      "reason": "该条是内部重甲技能标识，需原样保留；已补大小写敏感的精确文本保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1357 原文为 SKILL_ARMOR_HEAVY，ordinal 2752 的 CSV 技能字段也含同一字符串，来源一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，应原样保留标识符。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=text（case_sensitive=true）；它是内部护甲技能标识而非可译正文词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 SKILL_* 内部标识一致，保留大写和下划线，未发现拆分或变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:355",
+      "evidence_rows": [
+        1376,
+        2757
+      ],
+      "source_excerpt": "SKILL_WEAPON_THROWN",
+      "reason": "该条是内部投掷武器技能标识，需原样保留；已补大小写敏感的精确文本保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1376 原文为 SKILL_WEAPON_THROWN，ordinal 2757 的 CSV 技能字段也含同一字符串，来源一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，应原样保留标识符。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=text（case_sensitive=true）；它是内部技能标识而非可译正文词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 SKILL_* 内部标识一致，保留大写和下划线，未发现拆分或变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:356",
+      "evidence_rows": [
+        1365,
+        2763
+      ],
+      "source_excerpt": "SKILL_MOVE_SILENT",
+      "reason": "该条是内部静步技能标识，需原样保留；已补大小写敏感的精确文本保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1365 原文为 SKILL_MOVE_SILENT，ordinal 2763 的 CSV 技能字段也含同一字符串，来源一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，应原样保留标识符。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=text（case_sensitive=true）；它是内部技能标识而非可译正文词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 SKILL_* 内部标识一致，保留大写和下划线，未发现拆分或变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:357",
+      "evidence_rows": [
+        1367,
+        2767
+      ],
+      "source_excerpt": "SKILL_SKULLDUGGERY",
+      "reason": "该条是内部诡诈技能标识，需原样保留；已补大小写敏感的精确文本保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1367 原文为 SKILL_SKULLDUGGERY，ordinal 2767 的 CSV 技能字段也含同一字符串，来源一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，应原样保留标识符。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=text（case_sensitive=true）；它是内部技能标识而非可译正文词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 SKILL_* 内部标识一致，保留大写和下划线，未发现拆分或变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:358",
+      "evidence_rows": [
+        1373,
+        2773
+      ],
+      "source_excerpt": "SKILL_WEAPON_CLEAVING",
+      "reason": "该条是内部劈砍武器技能标识，需原样保留；已补大小写敏感的精确文本保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1373 原文为 SKILL_WEAPON_CLEAVING，ordinal 2773 的 CSV 技能字段也含同一字符串，来源一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，应原样保留标识符。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=text（case_sensitive=true）；它是内部技能标识而非可译正文词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 SKILL_* 内部标识一致，保留大写和下划线，未发现拆分或变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:359",
+      "evidence_rows": [
+        1363,
+        2774
+      ],
+      "source_excerpt": "SKILL_MEDITATION",
+      "reason": "该条是内部冥想技能标识，需原样保留；已补大小写敏感的精确文本保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1363 原文为 SKILL_MEDITATION，ordinal 2774 的 CSV 技能字段也含同一字符串，来源一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，应原样保留标识符。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=text（case_sensitive=true）；它是内部技能标识而非可译正文词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 SKILL_* 内部标识一致，保留大写和下划线，未发现拆分或变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:361",
+      "evidence_rows": [
+        2865,
+        2954
+      ],
+      "source_excerpt": "SFX_MAN_ATTACK",
+      "reason": "该条是内部男性攻击音效标识，需原样保留；已补大小写敏感的精确文本保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2865 原文为 SFX_MAN_ATTACK，ordinal 2954 的 Spire Guard 数据音效字段也含同一字符串，来源一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，应原样保留音频事件标识。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=text（case_sensitive=true）；它是内部音效事件标识而非可译正文词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 SFX_* 音效标识一致，保留大写和下划线，未发现拆分或变体。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:365",
+      "evidence_rows": [
+        2698
+      ],
+      "source_excerpt": "Learn ; Remove",
+      "reason": "该条是卷轴动作字段，需在引号包裹的 CSV 字段内保留；已补 literal_context 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2698 原文末尾字段为 \"Learn ; Remove\"，与 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文；该字段是卷轴动作数据，不应翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补 applicability=literal_context，限定为前后双引号之间的 CSV 字段；避免普通 Learn/Remove 在正文中被全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "保留空格、分号及大小写，与同行动作字段写法一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:351",
+    "non_translate:352",
+    "non_translate:353",
+    "non_translate:354",
+    "non_translate:355",
+    "non_translate:356",
+    "non_translate:357",
+    "non_translate:358",
+    "non_translate:359",
+    "non_translate:361",
+    "non_translate:365"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

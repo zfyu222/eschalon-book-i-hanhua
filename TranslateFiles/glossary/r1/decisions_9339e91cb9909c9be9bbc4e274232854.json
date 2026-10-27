@@ -1,0 +1,324 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核 e1-e9 的出处、译名、分类与一致性；Salted/Salty Coast 及 Bethel 相关专名按已发布 v1.5 统一，其余条目维持现译。",
+  "acknowledged_findings": [
+    "F0260",
+    "F0263"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "咸海岸"
+      },
+      "reason": "Salted Coast 与 Salty Coast 同指泰尔莫南部海岸，按已发布 v1.5 同名统一为咸海岸。",
+      "evidence_rows": [
+        681,
+        3886
+      ],
+      "table": "terms",
+      "index": 27
+    },
+    {
+      "patch": {
+        "recommended_translation": "咸海岸",
+        "term_reason": "Salty Coast 为同一海岸的变体拼写；沿用已发布 v1.5 译名咸海岸。"
+      },
+      "reason": "确认 Salty Coast 是同一海岸的变体拼写，避免与 Salted Coast 分译。",
+      "evidence_rows": [
+        3695
+      ],
+      "table": "terms",
+      "index": 532
+    },
+    {
+      "patch": {
+        "recommended_translation": "咸海岸",
+        "term_reason": "地图地名，指泰尔莫南部同一海岸区域；沿用已发布 v1.5 译名咸海岸。"
+      },
+      "reason": "地图标签 The Salted Coast 与同一海岸地名一致，统一为咸海岸。",
+      "evidence_rows": [
+        4706,
+        3886
+      ],
+      "table": "terms",
+      "index": 568
+    },
+    {
+      "patch": {
+        "recommended_translation": "绿月贝瑟尔",
+        "term_reason": "Aridell 的宗教场所，由 Father Michael 主持；沿用已发布 v1.5 译名绿月贝瑟尔。"
+      },
+      "reason": "Bethel of the Green Moon 指 Aridell 的宗教场所，按 v1.5 采用已发布专名。",
+      "evidence_rows": [
+        466,
+        3589
+      ],
+      "table": "terms",
+      "index": 30
+    },
+    {
+      "patch": {
+        "recommended_translation": "贝瑟尔教堂",
+        "term_reason": "Michael 神父所在的 Bethel 简称；沿用已发布 v1.5 译名贝瑟尔教堂。"
+      },
+      "reason": "the Bethel 指 Michael 神父所在场所，按 v1.5 采用简称译名。",
+      "evidence_rows": [
+        3693
+      ],
+      "table": "terms",
+      "index": 531
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:27",
+      "evidence_rows": [
+        681
+      ],
+      "source_excerpt": "This area is called the Salted Coast because twice per year the tides rise extra high and floods most of the lowlands south of here.",
+      "reason": "确认该地名指泰尔莫南部低地海岸；按 v1.5 统一为咸海岸。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文明确称该区域为 the Salted Coast，并说明潮水淹没南部低地。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "暂定盐渍海岸已按同一地名 v1.5 译名改为咸海岸。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为沿海区域名称，归地名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Salty Coast/The Salted Coast 变体统一，不再分译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:532",
+      "evidence_rows": [
+        3695
+      ],
+      "source_excerpt": "He was found unconcious on a beach on Salty Coast.",
+      "reason": "Salty Coast 是同一海岸的变体拼写；按 v1.5 统一为咸海岸。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文以 Salty Coast 指 Garrett 被冲上岸的海岸。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "暂定盐渍海岸改为已发布 v1.5 的咸海岸。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "beach on Salty Coast 表明为海岸地名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Salted Coast 同指一地，统一为咸海岸。"
+        }
+      }
+    },
+    {
+      "ref": "terms:568",
+      "evidence_rows": [
+        4706
+      ],
+      "source_excerpt": "The Salted Coast",
+      "reason": "地图标签指同一海岸；按 v1.5 统一为咸海岸。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "贴图文字为地图地名 The Salted Coast。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "暂定盐渍海岸改为咸海岸，以与同一地名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地图标签，归地名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "带冠词形式与 Salted/Salty Coast 同指，统一译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:30",
+      "evidence_rows": [
+        3589
+      ],
+      "source_excerpt": "Welcome to the Bethel of the Green Moon, weary traveler! My name is Father Michael.",
+      "reason": "确认 Bethel of the Green Moon 为 Aridell 的宗教场所；按 v1.5 采用绿月贝瑟尔，归地名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文由 Father Michael 在 Bethel of the Green Moon 迎接来客。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "暂定绿月圣堂改为已发布 v1.5 的绿月贝瑟尔。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文是可进入、由神父主持的场所，不是组织。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与简称 Bethel 的译名体系保持一致，采用贝瑟尔词根。"
+        }
+      }
+    },
+    {
+      "ref": "terms:531",
+      "evidence_rows": [
+        3693
+      ],
+      "source_excerpt": "talk to Father Michael over at the Bethel",
+      "reason": "Bethel 指 Michael 神父所在场所；按 v1.5 采用贝瑟尔教堂。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文以 the Bethel 指 Michael 神父所在的地点。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "暂定贝瑟尔改为已发布 v1.5 的贝瑟尔教堂。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "over at the Bethel 表明为场所，归地名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与全称绿月贝瑟尔共享贝瑟尔词根，简称用贝瑟尔教堂。"
+        }
+      }
+    },
+    {
+      "ref": "terms:31",
+      "evidence_rows": [
+        3009
+      ],
+      "source_excerpt": "You are entering the town of Vela.",
+      "reason": "Vela 是湖边废弃城镇，译名维拉与多处文本一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文明确为 town of Vela。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "维拉为音译，和快速旅行/任务文本一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "城镇名，归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "多处 Vela 均指同一城镇。"
+        }
+      }
+    },
+    {
+      "ref": "terms:36",
+      "evidence_rows": [
+        436
+      ],
+      "source_excerpt": "serving in the Dwarven Legion of Defenders",
+      "reason": "Dwarven Legion of Defenders 是 Biggins 服役的矮人军团，译名准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文称 Biggins 在 Dwarven Legion of Defenders 服役。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "矮人防卫军团对应军团名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Legion 为军事组织，归组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Dwarven 与矮人种族译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:504",
+      "evidence_rows": [
+        3422
+      ],
+      "source_excerpt": "Dwarven engineer",
+      "reason": "Dwarven 是 dwarf 的形容词形式，指矮人工程师；作为种族词条保留 reference。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文以 Dwarven 修饰 engineer，说明 Mugg Orhammer 的矮人身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "矮人可作定语，符合 Dwarven engineer=矮人工程师。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "表示种族属性，归种族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 dwarf/Dwarven 同指矮人，共享译名矮人，不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:39",
+      "evidence_rows": [
+        438
+      ],
+      "source_excerpt": "later to be called The Plague Wars",
+      "reason": "The Plague Wars 是 Orakur 与定居者战争的历史名称，译名瘟疫战争。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文明确将 423 年后升级的战争称为 The Plague Wars。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "瘟疫战争对应战争名，简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "历史战争名称，归其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "专名唯一，无其他译名冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:27",
+    "terms:532",
+    "terms:568",
+    "terms:30",
+    "terms:531",
+    "terms:31",
+    "terms:36",
+    "terms:504",
+    "terms:39"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

@@ -1,0 +1,532 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对本批 12 条 non_translate 条目，均为音效/资源路径、脚本命令或内部标识；确认应保留原文，补全显式 applicability，并核对与相关专名的同形片段，未发现需改译或隔离的条目。",
+  "acknowledged_findings": [
+    "F0094",
+    "F0100",
+    "F0101",
+    "F0108",
+    "F0111",
+    "F0114",
+    "F0116"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": false,
+          "reason": "ordinal 1748 与 1776 均为完整的音效标识符记录，大小写不同但指向同一标识，故按完整记录大小写不敏感保护。"
+        }
+      },
+      "reason": "补全 non_translate 的完整记录范围，覆盖大小写变体。",
+      "evidence_rows": [
+        1748,
+        1776
+      ],
+      "table": "non_translate",
+      "index": 174
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条记录即音效资源路径，不是正文文本。"
+        }
+      },
+      "reason": "补全资源路径的整条记录保护范围。",
+      "evidence_rows": [
+        1767
+      ],
+      "table": "non_translate",
+      "index": 176
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条记录即音效资源路径，不是正文文本。"
+        }
+      },
+      "reason": "补全资源路径的整条记录保护范围。",
+      "evidence_rows": [
+        1774
+      ],
+      "table": "non_translate",
+      "index": 180
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条记录为任务脚本命令及参数，不是正文文本。"
+        }
+      },
+      "reason": "补全脚本命令及参数的整条记录保护范围。",
+      "evidence_rows": [
+        1780
+      ],
+      "table": "non_translate",
+      "index": 182
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条记录为地图内部标识，不是正文专名。"
+        }
+      },
+      "reason": "补全地图内部标识的整条记录保护范围。",
+      "evidence_rows": [
+        1783
+      ],
+      "table": "non_translate",
+      "index": 183
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条记录为叙事脚本命令及参数，不是正文文本。"
+        }
+      },
+      "reason": "补全脚本命令及参数的整条记录保护范围。",
+      "evidence_rows": [
+        1801
+      ],
+      "table": "non_translate",
+      "index": 190
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条记录为任务完成内部标识，不是正文专名。"
+        }
+      },
+      "reason": "补全内部标记的整条记录保护范围。",
+      "evidence_rows": [
+        1829
+      ],
+      "table": "non_translate",
+      "index": 193
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": false,
+          "reason": "该串仅作音效标识符，且作为文件名内嵌于 sound/sfx_scribble1.wav，无普通语义，故用大小写不敏感全文保护以覆盖独立与内嵌用例。"
+        }
+      },
+      "reason": "补全音效标识在独立标签及资源路径内嵌两种形态下的保护范围。",
+      "evidence_rows": [
+        1844,
+        2326
+      ],
+      "table": "non_translate",
+      "index": 198
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条记录为地图内部标识，不是正文专名。"
+        }
+      },
+      "reason": "补全地图内部标识的整条记录保护范围。",
+      "evidence_rows": [
+        1861
+      ],
+      "table": "non_translate",
+      "index": 202
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条记录为环境音资源路径，不是正文文本。"
+        }
+      },
+      "reason": "补全环境音路径的整条记录保护范围。",
+      "evidence_rows": [
+        1871
+      ],
+      "table": "non_translate",
+      "index": 204
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条记录为环境音资源路径，不是正文文本。"
+        }
+      },
+      "reason": "补全环境音路径的整条记录保护范围。",
+      "evidence_rows": [
+        1872
+      ],
+      "table": "non_translate",
+      "index": 205
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整条记录为环境音资源路径，不是正文文本。"
+        }
+      },
+      "reason": "补全环境音路径的整条记录保护范围。",
+      "evidence_rows": [
+        1874
+      ],
+      "table": "non_translate",
+      "index": 206
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:174",
+      "evidence_rows": [
+        1748,
+        1776
+      ],
+      "source_excerpt": "sfx_tumbler_fall",
+      "reason": "确认音效标识符应原样保留，并以大小写不敏感完整记录范围覆盖小写及大小写变体。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1748 为 sfx_tumbler_fall，与条目 source 完全一致；ordinal 1776 为同一标识的大小写变体。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "音效标识符无正文译名，应原样保留，不存在中文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原缺显式适用范围，已补 whole_record 且 case_sensitive=false。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与《锁孔与制栓》中的 Tumbler 仅为字面片段关系，本项是不翻译的音效标识，不产生译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:176",
+      "evidence_rows": [
+        1767
+      ],
+      "source_excerpt": "sound/trap_click.wav",
+      "reason": "确认是音效资源路径，应整条保留原文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1767 原文即 sound/trap_click.wav，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "资源路径不进入正文翻译，应保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；已补 whole_record 范围，避免路径被误译。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同族 sound/mo12_attack.wav、trap_click 均按资源路径保留；本条不译，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:180",
+      "evidence_rows": [
+        1774
+      ],
+      "source_excerpt": "sound/sfx_tumbler_jiggle.wav",
+      "reason": "确认是音效资源路径，应整条保留原文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1774 原文即 sound/sfx_tumbler_jiggle.wav，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "资源路径不进入正文翻译，应保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；已补 whole_record 范围。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1/e16 仅共享 tumbler 字面，本项是音频路径，不译作‘制栓’，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:182",
+      "evidence_rows": [
+        1780
+      ],
+      "source_excerpt": "quest 23 9",
+      "reason": "确认是任务脚本命令及参数，应整条保留原文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1780 原文为 quest 23 9，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "任务脚本命令及参数不进入正文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；已补 whole_record 范围。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Quest Journal 仅共享 quest 字面，本项是命令而非任务日志术语。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:183",
+      "evidence_rows": [
+        1783
+      ],
+      "source_excerpt": "goblin_cit_l1",
+      "reason": "确认是地图内部标识，应整条保留原文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1783 原文为 goblin_cit_l1，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "地图内部标识不进入正文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；已补 whole_record 范围。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Goblin Gruzz、Crypt Key 仅共享片段；goblin_cit_l1 是地图内部标识，不据此译作专名。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:190",
+      "evidence_rows": [
+        1801
+      ],
+      "source_excerpt": "narrative 52",
+      "reason": "确认是叙事脚本命令及参数，应整条保留原文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1801 原文为 narrative 52，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "叙事脚本命令及参数不进入正文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；已补 whole_record 范围。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 narrative 资源族相关，但本条是命令及参数，按非翻译标识保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:193",
+      "evidence_rows": [
+        1829
+      ],
+      "source_excerpt": "Quest_fin",
+      "reason": "确认是任务完成内部标识，应整条保留原文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1829 原文为 Quest_fin，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "内部完成标记不进入正文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；已补 whole_record 范围。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Quest Journal 仅共享 quest 字面，本项为任务完成内部标记，不译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:198",
+      "evidence_rows": [
+        1844,
+        2326
+      ],
+      "source_excerpt": "SFX_Scribble1",
+      "reason": "确认是音效标识符；独立标签与路径内嵌用例均需按同一音效标识保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1844 原文为 SFX_Scribble1，与条目 source 完全一致；ordinal 2326 显示其小写文件名内嵌于 sound/sfx_scribble1.wav。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "音效标识符及其路径文件名不翻译，保留原文形态。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；因存在独立标签与路径内嵌两种用例，已补 text 且 case_sensitive=false 的范围。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 sound/sfx_scribble1.wav 指向同一音效，按同一原文保护；不存在需统一的译文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:202",
+      "evidence_rows": [
+        1861
+      ],
+      "source_excerpt": "25_crypt",
+      "reason": "确认是地图内部标识，应整条保留原文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1861 原文为 25_crypt，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "地图内部标识不进入正文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；已补 whole_record 范围。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Crypt Key 仅共享 crypt 字面；25_crypt 为地图内部标识，不译作墓穴钥匙。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:204",
+      "evidence_rows": [
+        1871
+      ],
+      "source_excerpt": "sound/local_tavern.wav",
+      "reason": "确认是环境音资源路径，应整条保留原文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1871 原文为 sound/local_tavern.wav，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "环境音资源路径不进入正文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；已补 whole_record 范围。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Lonely Spirits Tavern 共享 tavern 字面，但本条是环境音资源路径，整条保留，不译作酒馆名。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:205",
+      "evidence_rows": [
+        1872
+      ],
+      "source_excerpt": "sound/local_temple.wav",
+      "reason": "确认是环境音资源路径，应整条保留原文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1872 原文为 sound/local_temple.wav，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "环境音资源路径不进入正文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；已补 whole_record 范围。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同族为 sound/local_* 环境音路径，均整条保留；本条不涉及地名翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:206",
+      "evidence_rows": [
+        1874
+      ],
+      "source_excerpt": "sound/local_river.wav",
+      "reason": "确认是环境音资源路径，应整条保留原文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1874 原文为 sound/local_river.wav，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "环境音资源路径不进入正文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；已补 whole_record 范围。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Nimmia River 共享 river 字面，但本条是环境音资源路径，不译作河名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:174",
+    "non_translate:176",
+    "non_translate:180",
+    "non_translate:182",
+    "non_translate:183",
+    "non_translate:190",
+    "non_translate:193",
+    "non_translate:198",
+    "non_translate:202",
+    "non_translate:204",
+    "non_translate:205",
+    "non_translate:206"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

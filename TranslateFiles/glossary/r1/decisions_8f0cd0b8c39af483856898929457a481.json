@@ -1,0 +1,340 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核全部 12 个条目：6 个戒指名、Dirachnid 怪物名、3 个场所/商铺名和 2 个钥匙名；现有译名、分类与 required 约束均无冲突，未发现需修改或隔离项。",
+  "acknowledged_findings": [],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:442",
+      "evidence_rows": [
+        2683
+      ],
+      "source_excerpt": "Ring of Magi",
+      "reason": "IC_RING 物品行给出该戒指名；维持“法师之戒”，分类与格式均无冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2683 的 IC_RING 行完整显示物品名 Ring of Magi，无截断或别名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Magi 在此为法师/术士群体义，译为“法师之戒”符合戒指名格式。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该行属于 IC_RING 装备数据，归“物品”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他“X之戒”译名格式一致，未见同名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:443",
+      "evidence_rows": [
+        2684
+      ],
+      "source_excerpt": "Ring of Sparks",
+      "reason": "火花主题戒指名；维持“火花之戒”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2684 的 IC_RING 行物品名为 Ring of Sparks。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Sparks 译“火花”直接保留戒指主题，中文搭配自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该行属于 IC_RING 装备数据，归“物品”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "采用“XX之戒”格式，与 e1、e3-e6 的戒指名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:446",
+      "evidence_rows": [
+        2687
+      ],
+      "source_excerpt": "Ring of the Harbinger",
+      "reason": "Harbinger 作戒指专名取“先驱者”义；维持“先驱者之戒”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2687 的 IC_RING 行完整显示 Ring of the Harbinger。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Harbinger 可指先行者/预兆；此处作为人物化戒指名取“先驱者”，未涉及具体剧情身份。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该行属于 IC_RING 装备数据，归“物品”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批戒指名统一采用“XX之戒”格式，无并行译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:447",
+      "evidence_rows": [
+        2688
+      ],
+      "source_excerpt": "Ring of the Hawk",
+      "reason": "Hawk 主题戒指名，行内带 SKILL_SPOT_HIDDEN；维持“猎鹰之戒”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2688 的 IC_RING 行显示 Ring of the Hawk，并带 SKILL_SPOT_HIDDEN 数值。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Hawk 译“猎鹰”可作奇幻戒指主题，且与提升隐藏发现能力的行内数据不冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该行属于 IC_RING 装备数据，归“物品”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "采用“XX之戒”格式，与同批戒指名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:449",
+      "evidence_rows": [
+        2690
+      ],
+      "source_excerpt": "Ring of the Wise",
+      "reason": "Wise 指智者；维持“智者之戒”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2690 的 IC_RING 行物品名为 Ring of the Wise。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Wise 译“智者”准确简洁，符合戒指名格式。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该行属于 IC_RING 装备数据，归“物品”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1-e4、e6 的“XX之戒”格式一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:450",
+      "evidence_rows": [
+        2691
+      ],
+      "source_excerpt": "Ring of Vigor",
+      "reason": "Vigor 指活力；维持“活力之戒”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2691 的 IC_RING 行物品名为 Ring of Vigor。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Vigor 译“活力”直接对应属性主题，中文物品名自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该行属于 IC_RING 装备数据，归“物品”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "采用“XX之戒”格式，与本批其他戒指名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:461",
+      "evidence_rows": [
+        2880,
+        3037
+      ],
+      "source_excerpt": "he transforms into a Dirachnid- a massive spider",
+      "reason": "3037 明确 Dirachnid 为 Gramuk 变形后的巨型蜘蛛；候选比较后统一为“迪拉克尼德”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3037 原文明确其为 Dirachnid- a massive spider；2880 同名条目为敌人数据。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "候选“迪拉克尼德”与“迪拉赫尼德”中，前者更贴合 Dirachnid 的 /k/ 音，取首次候选统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3037 说明是蜘蛛怪物种类，归“种族”可接受；不是普通人名或 NPC 称谓。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "跨候选统一为“迪拉克尼德”，未采用“迪拉赫尼德”，避免并行译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:473",
+      "evidence_rows": [
+        3059
+      ],
+      "source_excerpt": "The Thirsty Traveler",
+      "reason": "店铺/场所招牌专名；维持“口渴旅人酒馆”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3059 仅给出专名 The Thirsty Traveler，作为店铺/场所招牌处理。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“口渴旅人酒馆”保留专名主体并补出中文店招所需场所类别，符合简洁风格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该专名用于营业场所招牌，归“地名”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e9、e10 的场所名译法同为保留中文通名，无词族冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:475",
+      "evidence_rows": [
+        3102
+      ],
+      "source_excerpt": "Vela Smithworks Incorporated",
+      "reason": "完整招牌名；按店招简洁化保留 Vela 与 Smithworks 核心，分类无冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3102 为完整招牌名 Vela Smithworks Incorporated，Incorporated 表公司后缀。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“维拉铁匠工坊”保留 Vela 音译及 Smithworks 的工坊义，按店招简洁化省略公司后缀，未改变专名主体。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该名为营业场所/商铺招牌，归“地名”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8、e10 的场所名均采用中文通名收尾；无跨批同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:477",
+      "evidence_rows": [
+        3110
+      ],
+      "source_excerpt": "Hunter's Paradise Lodge",
+      "reason": "场所/旅舍专名；维持“猎人天堂旅舍”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3110 完整显示 Hunter's Paradise Lodge。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Hunter's Paradise Lodge 译“猎人天堂旅舍”，保留猎人、天堂与旅舍三层语义，中文店招自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该名为旅舍/场所招牌，归“地名”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8、e9 的场所名格式一致，无同名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:479",
+      "evidence_rows": [
+        3122
+      ],
+      "source_excerpt": "unlocked_with (Storage Key)",
+      "reason": "解锁条件中的钥匙物品名；维持“储物箱钥匙”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3122 的解锁条件写作 unlocked_with (Storage Key)，指向钥匙类物品。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Storage Key 译“储物箱钥匙”符合中文物品名习惯，明确钥匙用途。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该名为解锁所用钥匙物品，归“物品”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e12 同为“用途+钥匙”格式，无并行译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:484",
+      "evidence_rows": [
+        3170
+      ],
+      "source_excerpt": "unlocked_with (Security Key)",
+      "reason": "解锁条件中的钥匙物品名；维持“安保钥匙”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3170 的解锁条件写作 unlocked_with (Security Key)，指向钥匙类物品。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Security Key 译“安保钥匙”直接表达安全/安保用途，中文可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该名为解锁所用钥匙物品，归“物品”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e11 的钥匙名格式一致，无同名冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:442",
+    "terms:443",
+    "terms:446",
+    "terms:447",
+    "terms:449",
+    "terms:450",
+    "terms:461",
+    "terms:473",
+    "terms:475",
+    "terms:477",
+    "terms:479",
+    "terms:484"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

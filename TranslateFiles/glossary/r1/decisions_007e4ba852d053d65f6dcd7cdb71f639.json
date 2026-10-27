@@ -1,0 +1,398 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校全部 12 个分配条目：修正 e7 的非法分类“地点”为“地名”；按已发布 v1.5 将 e6 统一为“宝库”、e12 统一为“蛛类密室”；核对 f2-f4 为同一地名变体、同一技能控制符变体及同一称号单复数，保留共用译名。",
+  "acknowledged_findings": [
+    "F0000",
+    "F0257",
+    "F0287",
+    "F0292"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "宝库",
+        "term_reason": "Blackwater 中设有编号金库的储藏区域；采用已发布 v1.5 译名「宝库」，与该储藏区域语境协调。"
+      },
+      "reason": "按已发布 v1.5 与 4131/4297 的 the Repository 语境统一译名，去除暂定“宝库区”。",
+      "evidence_rows": [
+        4131,
+        4297,
+        3740,
+        548
+      ],
+      "table": "terms",
+      "index": 538
+    },
+    {
+      "patch": {
+        "category_path": "地名"
+      },
+      "reason": "修正非法分类值“地点”；4149 表明 House of Pain 为 Sonya 的武器训练场所。",
+      "evidence_rows": [
+        4149
+      ],
+      "table": "terms",
+      "index": 539
+    },
+    {
+      "patch": {
+        "recommended_translation": "蛛类密室",
+        "term_reason": "暗影秘院中饲养蛛形生物的特定房间；采用已发布 v1.5 译名「蛛类密室」。"
+      },
+      "reason": "按已发布 v1.5 统一房间名；4031/4344/4548 均指同一 Arachnid chamber。",
+      "evidence_rows": [
+        4344,
+        4548,
+        4031,
+        810
+      ],
+      "table": "terms",
+      "index": 547
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:527",
+      "evidence_rows": [
+        3557,
+        441
+      ],
+      "source_excerpt": "Goblin Clans of Thaermore",
+      "reason": "3557 为书籍/条目标题；441 正文重复该组织名，译名保留“泰尔莫”与“哥布林部族”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3557 原文标题为 Goblin Clans of Thaermore，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“泰尔莫哥布林部族”，涵盖 Thaermore 与 Goblin Clans，适合作组织标题。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3557 与 441 均为哥布林部族联盟标题，归组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "441 正文重复 Goblin Clans of Thaermore，术语核心与标题一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:528",
+      "evidence_rows": [
+        3654,
+        3665
+      ],
+      "source_excerpt": "spirit of Thaemore",
+      "reason": "3654 同一行同时出现 Thaermore/Thaemore，可证 Thaemore 为同一地区拼写变体；译名统一为“泰尔莫”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3654 出现 Thaemore，3665 亦作 Thaemore，属原文拼写变体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“泰尔莫”，与上下文 Thaermore 所指同一地区；拼写变体不改变译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3654/3665 均作地区或国度名使用，归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "3654 同一行可见 Thaermore 与 Thaemore，二者同指，共用“泰尔莫”合理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:530",
+      "evidence_rows": [
+        3655,
+        826,
+        557
+      ],
+      "source_excerpt": "Spire, our capital city",
+      "reason": "3655 明确 Spire 为首都；557/826 出现 Bastion Spire，均指同一首都核心。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3655 原文为 Spire, our capital city，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Spire 作首都简称，译“尖塔城”可读作城市名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3655 称其为 our capital city，归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "557/826 的 Bastion Spire 与 3655 的 Spire 均指首都，保留“尖塔”核心一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:535",
+      "evidence_rows": [
+        4059
+      ],
+      "source_excerpt": "four Goblin warlords",
+      "reason": "4059 明确为持有 Goblin Keys 的四名 warlords；作为职位/敌人称号译“哥布林军阀”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4059 原文为 four Goblin warlords，与 source 复数一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“哥布林军阀”对应 Goblin warlords，作为首领称号可保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "4059 表明其为首领/军阀角色，归身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条为复数 warlords；与单数 Goblin Warlord 共用“哥布林军阀”属同一称号单复数变化。"
+        }
+      }
+    },
+    {
+      "ref": "terms:537",
+      "evidence_rows": [
+        4103
+      ],
+      "source_excerpt": "Chieftain's skull",
+      "reason": "4103 为交还酋长头骨的任务对话；物品名直译保留所属关系。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4103 原文 your Chieftain's skull 与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“酋长头骨”直译，适合作任务物品名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "4103 是任务交付的头骨物品，归物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "4103 的 Chieftain's skull 为单一道具，不与其他术语冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:538",
+      "evidence_rows": [
+        4131,
+        4297,
+        3740,
+        548
+      ],
+      "source_excerpt": "opening the portcullis to the Repository",
+      "reason": "4131/4297 指 Blackwater 内可开启的 Repository 区域；按已发布 v1.5 统一为“宝库”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4131/4297 均以 the Repository 指可进入的储藏区域，4297 还有 portcullis 作证。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原暂定“宝库区”；按已发布 v1.5 与 548/3740 的 Underground Repository 关联，统一为“宝库”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "4131/4297 指 Blackwater 内可开启的区域/库房，归地名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "4131/4297 的 the Repository 与 548/3740 的 Underground Repository 相关，统一采用“宝库”避免旧译名并存。"
+        }
+      }
+    },
+    {
+      "ref": "terms:539",
+      "evidence_rows": [
+        4149
+      ],
+      "source_excerpt": "House of Pain",
+      "reason": "4149 是 Sonya 的武器训练场所名；分类由非法“地点”改为“地名”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4149 原文 my House of Pain 与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“痛苦之家”对应 House of Pain，保留场所名语气。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "4149 明说为 Sonya 的武器训练场所，应归地名；原“地点”不在枚举。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "4149 的 House of Pain 是单一场地名，“痛苦之家”不与其他条目冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:540",
+      "evidence_rows": [
+        4153,
+        1897,
+        1065
+      ],
+      "source_excerpt": "thrown weapons",
+      "reason": "4153 Aaron 教授 thrown weapons；1897/1065 带控制符说明其为技能名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4153 原文 archery or thrown weapons 与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“投掷武器”对应 thrown weapons，作为技能名简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "4153/1897/1065 均作可训练或计算伤害的技能类，归技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "1897/1065 的 *Thrown *Weapons 带控制符，词干仍译“投掷武器”，控制符不参与翻译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:542",
+      "evidence_rows": [
+        4176
+      ],
+      "source_excerpt": "Magick Guild of Blackwater",
+      "reason": "4176 为 Siam 自称所在的 Blackwater 魔法公会；组织名成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4176 原文 Welcome to the Magick Guild of Blackwater 与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黑水镇魔法公会”覆盖 Blackwater 与 Magick Guild，词序自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "4176 明说 guild，由 Guildmaster 管理，归组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "4176 的 Magick Guild of Blackwater 与 Blackwater、魔法公会核心一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:544",
+      "evidence_rows": [
+        4182
+      ],
+      "source_excerpt": "Mage Hall of the North",
+      "reason": "4182 以 Mage Hall of the North 称 Shadowmirk；作为建筑/地点别称译“北方法师大厅”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4182 原文 the great Mage Hall of the North 与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“北方法师大厅”对应 Mage Hall of the North，保留称号性质。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "4182 指 Shadowmirk 这一地点/建筑称号，归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "4182 同时给出 Shadowmirk，Mage Hall of the North 为别称，不改为本名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:545",
+      "evidence_rows": [
+        4184
+      ],
+      "source_excerpt": "Council Head of Blackwater",
+      "reason": "4184 为 William 的职位；译“黑水镇议长”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4184 原文 I am William, Council Head of Blackwater 与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黑水镇议长”对应 Council Head of Blackwater，简洁保留职位。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "4184 明说 William 的职位，归身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "4184 的 Council Head 与 Blackwater 组合固定，译名不与黑水镇地名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:547",
+      "evidence_rows": [
+        4344,
+        4548,
+        4031,
+        810
+      ],
+      "source_excerpt": "Arachnid chamber",
+      "reason": "4548 是 Shadowmirk 内特定房间标识；4031/4344 说明其用于收集蛛丝；采用已发布 v1.5“蛛类密室”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4344/4548 原文均作 Arachnid chamber，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原暂定“蛛形生物室”；按已发布 v1.5 统一为“蛛类密室”，4548 的房间名更紧凑。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "4548 为房间标识，4344/4031 指可在其中收集蛛丝，归地名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "4031/4344/4548 均指同一 Shadowmirk 房间；采用“蛛类密室”避免旧译名并存。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:527",
+    "terms:528",
+    "terms:530",
+    "terms:535",
+    "terms:537",
+    "terms:538",
+    "terms:539",
+    "terms:540",
+    "terms:542",
+    "terms:544",
+    "terms:545",
+    "terms:547"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

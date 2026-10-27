@@ -1,0 +1,496 @@
+{
+  "review_complete": true,
+  "review_summary": "本批 audit 无 finding；已核对全部 12 条。Magick、Attribute Points、Skill Points 三条界面术语译名与语境一致；其余嵌入正文的运行时命令及方括号动作标签维持 non_translate，并补充 literal_context 限定适用范围。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "prefix": "alive. ",
+          "suffix": "",
+          "case_sensitive": true,
+          "reason": "仅保护叙述末尾这段命令串，不把普通正文设为禁翻。"
+        }
+      },
+      "reason": "为嵌入叙述末尾的运行时命令补限定上下文，避免把普通正文设为禁翻。",
+      "evidence_rows": [
+        434
+      ],
+      "table": "non_translate",
+      "index": 6
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "prefix": "it?\" ",
+          "suffix": "",
+          "case_sensitive": true,
+          "reason": "该方括号动作标签仅嵌在台词497之后，补 literal_context 精确保护。"
+        }
+      },
+      "reason": "该方括号动作标签仅嵌在台词497之后，补 literal_context 精确保护。",
+      "evidence_rows": [
+        497
+      ],
+      "table": "non_translate",
+      "index": 8
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "prefix": "myself.\" ",
+          "suffix": "h",
+          "case_sensitive": true,
+          "reason": "该标签仅嵌在台词503之后且后接h，补 literal_context 精确保护。"
+        }
+      },
+      "reason": "该标签仅嵌在台词503之后且后接h，补 literal_context 精确保护。",
+      "evidence_rows": [
+        503
+      ],
+      "table": "non_translate",
+      "index": 9
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "prefix": "amulet.\" ",
+          "suffix": "",
+          "case_sensitive": true,
+          "reason": "该标签仅嵌在台词533之后，补 literal_context 精确保护。"
+        }
+      },
+      "reason": "该标签仅嵌在台词533之后，补 literal_context 精确保护。",
+      "evidence_rows": [
+        533
+      ],
+      "table": "non_translate",
+      "index": 10
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "prefix": "goblins!\" ",
+          "suffix": "",
+          "case_sensitive": true,
+          "reason": "该标签仅嵌在台词572之后，补 literal_context 精确保护。"
+        }
+      },
+      "reason": "该标签仅嵌在台词572之后，补 literal_context 精确保护。",
+      "evidence_rows": [
+        572
+      ],
+      "table": "non_translate",
+      "index": 12
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "prefix": "is. ",
+          "suffix": "\"",
+          "case_sensitive": true,
+          "reason": "该标签嵌在547引号内台词之后并以引号收尾，补 literal_context 精确保护。"
+        }
+      },
+      "reason": "该标签嵌在547引号内台词之后并以引号收尾，补 literal_context 精确保护。",
+      "evidence_rows": [
+        547
+      ],
+      "table": "non_translate",
+      "index": 13
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "prefix": "key.\" ",
+          "suffix": "",
+          "case_sensitive": true,
+          "reason": "该标签仅嵌在台词673之后，补 literal_context 精确保护。"
+        }
+      },
+      "reason": "该标签仅嵌在台词673之后，补 literal_context 精确保护。",
+      "evidence_rows": [
+        673
+      ],
+      "table": "non_translate",
+      "index": 14
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "prefix": "looking for?\" ",
+          "suffix": "",
+          "case_sensitive": true,
+          "reason": "该标签仅嵌在台词675之后，补 literal_context 精确保护。"
+        }
+      },
+      "reason": "该标签仅嵌在台词675之后，补 literal_context 精确保护。",
+      "evidence_rows": [
+        675
+      ],
+      "table": "non_translate",
+      "index": 15
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "prefix": "key.\" ",
+          "suffix": "",
+          "case_sensitive": true,
+          "reason": "该标签仅嵌在台词676之后，补 literal_context 精确保护。"
+        }
+      },
+      "reason": "该标签仅嵌在台词676之后，补 literal_context 精确保护。",
+      "evidence_rows": [
+        676
+      ],
+      "table": "non_translate",
+      "index": 16
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:569",
+      "evidence_rows": [
+        4629,
+        4731
+      ],
+      "source_excerpt": "Magick",
+      "reason": "保留“魔法”；古体拼写 Magick 在界面中作法术/法术日志标签，与元素魔法体系核心词一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文“Magick”在4731独立出现，并在4629“M  Magick Spell Journal Toggle”中作界面标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“魔法”符合古体 Magick 的语义，两字适合固定贴图宽度。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属游戏界面中的法术类别/菜单标签，game_term 归入“其他”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与已有“Elemental Magick/元素魔法”共享“魔法”核心译名，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:572",
+      "evidence_rows": [
+        4572
+      ],
+      "source_excerpt": "Attribute Points:",
+      "reason": "保留“属性点”；角色属性分配资源标签，界面译名简短明确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文“Attribute Points:”与4572界面贴图完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“属性点”为简洁常见的属性分配资源译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属角色属性分配界面的游戏资源标签，归入“其他”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与“Skill Points/技能点”等资源标签的“点”表述平行，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:573",
+      "evidence_rows": [
+        4576,
+        2344,
+        2346
+      ],
+      "source_excerpt": "Skill Points:",
+      "reason": "保留“技能点”；技能升级资源标签，原文与提示文本一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4576原文为“Skill Points:”，2344/2346也显示技能点不足/剩余语境。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“技能点”准确对应技能购买与剩余点数资源。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属技能升级资源标签，game_term 归入“其他”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与“Hit Points/生命值”等资源词均以“点”对应 Points，术语模式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:6",
+      "evidence_rows": [
+        434
+      ],
+      "source_excerpt": "|add_gold 83510 ; screen_fade_out ; map_port 52 ; move_player 7018 ; screen_fade_in ; areacheck|",
+      "reason": "保留运行时命令串；它嵌在叙述末尾，需按限定上下文原样保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "434末尾逐字包含该命令串，含add_gold、screen_fade_out、map_port、move_player、screen_fade_in、areacheck。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "运行时命令无目标译文，必须原样保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "由脚本命令和数字参数组成，属运行标记，放入 non_translate 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "已补 literal_context 限定在“alive. ”后至记录末尾，不全局禁翻叙述正文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:8",
+      "evidence_rows": [
+        497
+      ],
+      "source_excerpt": "[Show Antique Sextant to Garrett]",
+      "reason": "保留方括号动作标签；它是台词后的脚本控制标记，不属于正文翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "497原文逐字包含“[Show Antique Sextant to Garrett]”。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译保留项，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "方括号内容为展示物品的动作标记，不是台词正文。"
+        },
+        "consistency": {
+          "status": "not_applicable",
+          "evidence": "保留项不参与译名一致性；正文物品名另行按术语表处理。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:9",
+      "evidence_rows": [
+        503
+      ],
+      "source_excerpt": "[Keep sextant]",
+      "reason": "保留方括号动作标签；它是台词后的脚本控制标记，不属于正文翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "503原文逐字包含“[Keep sextant]”，其后紧跟h；标签本身需保留。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译保留项，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "方括号内容为保留六分仪的动作标记，不是台词正文。"
+        },
+        "consistency": {
+          "status": "not_applicable",
+          "evidence": "保留项不参与译名一致性；正文物品名另行按术语表处理。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:10",
+      "evidence_rows": [
+        533
+      ],
+      "source_excerpt": "[Show Lilith the amulet]",
+      "reason": "保留方括号动作标签；它是台词后的脚本控制标记，不属于正文翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "533原文逐字包含“[Show Lilith the amulet]”。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译保留项，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "方括号内容为向 Lilith 展示护符的动作标记，不是台词正文。"
+        },
+        "consistency": {
+          "status": "not_applicable",
+          "evidence": "保留项不参与译名一致性；正文人名与物品名另行按术语表处理。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:12",
+      "evidence_rows": [
+        572
+      ],
+      "source_excerpt": "[Attack]",
+      "reason": "保留方括号动作标签；它是台词后的脚本控制标记，不属于正文翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "572原文逐字包含“[Attack]”。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译保留项，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "方括号内容为触发攻击的动作标记，不是台词正文。"
+        },
+        "consistency": {
+          "status": "not_applicable",
+          "evidence": "保留项不参与译名一致性；正文中的战斗文本另行翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:13",
+      "evidence_rows": [
+        547
+      ],
+      "source_excerpt": "[Show the amulet to Lilith]",
+      "reason": "保留方括号动作标签；它嵌在引号内台词之后，属于脚本控制标记。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "547原文逐字包含“[Show the amulet to Lilith]”。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译保留项，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "方括号内容为向 Lilith 展示护符的动作标记，不应作为正文翻译。"
+        },
+        "consistency": {
+          "status": "not_applicable",
+          "evidence": "保留项不参与译名一致性；正文人名与物品名另行按术语表处理。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:14",
+      "evidence_rows": [
+        673
+      ],
+      "source_excerpt": "[Show him the Amulet Passkey 26]",
+      "reason": "保留方括号动作标签；它是台词后的脚本控制标记，不属于正文翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "673原文逐字包含“[Show him the Amulet Passkey 26]”。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译保留项，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "方括号内容为向对象展示护符钥匙的动作标记，不是台词正文。"
+        },
+        "consistency": {
+          "status": "not_applicable",
+          "evidence": "保留项不参与译名一致性；正文物品名另行按术语表处理。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:15",
+      "evidence_rows": [
+        675
+      ],
+      "source_excerpt": "[Show him the Strange Amulet]",
+      "reason": "保留方括号动作标签；它是台词后的脚本控制标记，不属于正文翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "675原文逐字包含“[Show him the Strange Amulet]”。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译保留项，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "方括号内容为展示奇异护符的动作标记，不是台词正文。"
+        },
+        "consistency": {
+          "status": "not_applicable",
+          "evidence": "保留项不参与译名一致性；正文物品名另行按术语表处理。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:16",
+      "evidence_rows": [
+        676
+      ],
+      "source_excerpt": "[Show him the Amulet Passkey 15]",
+      "reason": "保留方括号动作标签；它是台词后的脚本控制标记，不属于正文翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "676原文逐字包含“[Show him the Amulet Passkey 15]”。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译保留项，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "方括号内容为向对象展示护符钥匙的动作标记，不是台词正文。"
+        },
+        "consistency": {
+          "status": "not_applicable",
+          "evidence": "保留项不参与译名一致性；正文物品名另行按术语表处理。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:569",
+    "terms:572",
+    "terms:573",
+    "non_translate:6",
+    "non_translate:8",
+    "non_translate:9",
+    "non_translate:10",
+    "non_translate:12",
+    "non_translate:13",
+    "non_translate:14",
+    "non_translate:15",
+    "non_translate:16"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

@@ -1,0 +1,385 @@
+{
+  "review_complete": true,
+  "review_summary": "e1-e12 已逐条核对来源、译名、分类与一致性。Thaermore/Thaemore 为同一地名拼写变体，共用「泰尔莫」；Tangletree Forest 依已发布 v1.5 改为「缠树森林」，与 Tanglewood 系「缠木森林/缠木林」区分；Lonely Spirits Tavern 与 The Lonely Spirits Tavern 仅冠词差异，共用「孤魂酒馆」正确。",
+  "acknowledged_findings": [
+    "F0257",
+    "F0258",
+    "F0259"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "缠树森林"
+      },
+      "reason": "已发布 v1.5 译名为「缠树森林」；450 与 4691 均作 Tangletree Forest / Great Tangletree Forest，且需与 Tanglewood 的「缠木森林」区分。",
+      "evidence_rows": [
+        450,
+        4691
+      ],
+      "table": "terms",
+      "index": 8
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:43",
+      "evidence_rows": [
+        745,
+        2180,
+        2190,
+        4329
+      ],
+      "source_excerpt": "My name is Vekkar and I am the proprietor of this shop of magicks.",
+      "reason": "Vekkar 为魔法商店年长男性店主；2180 内部标识与 2190 显示名一致；译名维卡尔、男性、proper_name 均成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "745 中 Vekkar 自报姓名并称是本店店主；4329 描述其为倚杖的年长男性。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "维卡尔为 Vekkar 的常规音译，候选一致，无其他冲突译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "角色条目，gender 男性；745/4329 的店主与年长男性描述支持 proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "2180 的小写 vekkar 与 2190 的 Vekkar 指同一角色，译名统一为维卡尔。"
+        }
+      }
+    },
+    {
+      "ref": "characters:44",
+      "evidence_rows": [
+        766,
+        2920
+      ],
+      "source_excerpt": "teach_skill (Jonathon) 2",
+      "reason": "Jonathon 在 766 脚本与 2920 显示名中均指同一 NPC；译名乔纳森成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "766 的 teach_skill 标注 Jonathon，2920 为独立显示名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "乔纳森为 Jonathon 的标准音译，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "男性 NPC，proper_name 成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "766 与 2920 拼写一致，译名统一为乔纳森，未作普通词处理。"
+        }
+      }
+    },
+    {
+      "ref": "characters:57",
+      "evidence_rows": [
+        904,
+        2935,
+        3222,
+        3225,
+        4149
+      ],
+      "source_excerpt": "My name is Sonya and I am a certified Weapons Master.",
+      "reason": "Sonya 是 Blackwater 的认证武器大师，经营 Sonya's House of Pain；译名索尼娅、女性、proper_name 成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "904 自报姓名并称 certified Weapons Master；3225 称 Sonya of Blackwater。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "索尼娅为 Sonya 的常规音译，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "女性角色 proper_name；904 描述高挑健壮女性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "2935 显示名、3222 馆名、3225 头衔均指向同一人，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:61",
+      "evidence_rows": [
+        1212
+      ],
+      "source_excerpt": "the Goblin Gruzz",
+      "reason": "Goblin Gruzz 是透露奖品藏匿处的哥布林 NPC；原文未给性别，gender 其他；译名保留种族+专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1212 以 the Goblin Gruzz 指称该 NPC，并称其透露奖品位置。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "哥布林·格鲁兹保留 Goblin 与 Gruzz 的构成，格鲁兹对应专名部分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "唯一命名的哥布林 NPC，proper_name；无性别证据故为其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条内 Goblin Gruzz 为完整称谓，译名不把种族词误作普通形容词。"
+        }
+      }
+    },
+    {
+      "ref": "characters:100",
+      "evidence_rows": [
+        3975
+      ],
+      "source_excerpt": "My name is Father Jonathon.",
+      "reason": "Father Jonathon 是圣维莱拉大教堂的神父；Father 为宗教头衔，译作乔纳森神父，男性 proper_name。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3975 自报 Father Jonathon，并说明在 Basilica of Saint Velhera 提供治疗。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Father 译神父、Jonathon 译乔纳森，结构正确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "男性神职 NPC，proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "基础名 Jonathon 译乔纳森，加头衔后为乔纳森神父，未改变专名核心。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1",
+      "evidence_rows": [
+        438,
+        464,
+        470,
+        4051,
+        4115
+      ],
+      "source_excerpt": "Thaermore, eastern province of Eschalon.",
+      "reason": "Thaermore 是 Eschalon 东部省份/故事发生地；464/470/4051/4115 均指同一地区；译名泰尔莫与拼写变体 Thaemore 统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "438 明确定义 Thaermore 为 Eschalon 东部省份；4051/4115 以该地指称故事区域。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "泰尔莫为候选主流译名，并与拼写变体 Thaemore 的既定译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名合法；438 的 province 与 4051 的 Thaermore 均指地域。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Thaemore 是 Thaermore 的拼写变体，共用泰尔莫可确认；泰尔莫尔/塞尔莫尔不另立标准。"
+        }
+      }
+    },
+    {
+      "ref": "terms:3",
+      "evidence_rows": [
+        408,
+        835,
+        1224,
+        4356,
+        4698
+      ],
+      "source_excerpt": "Timberland Plains",
+      "reason": "Timberland Plains 是巨人居住的平原地区；408/835/1224/4356/4698 同指该地；译名林地平原成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "835/4356 称 Giants of the Timberland Plains；4698 为地图标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "林地平原对应 Timberland Plains，较林木平原更贴合 timberland 的“林地”义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名合法，指巨人居住区域。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "408/1224/4356/4698 拼写一致，译名统一为林地平原。"
+        }
+      }
+    },
+    {
+      "ref": "terms:4",
+      "evidence_rows": [
+        462,
+        1204,
+        1987,
+        2087
+      ],
+      "source_excerpt": "Find Maddock in the village of Aridell.",
+      "reason": "Aridell 是南教区沿海村庄，Maddock 与 Eleanor 所在；1204 明确为村庄，1987/2087 为快速旅行地名；译名阿里德尔成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1204 明说 village of Aridell；462 称其为 South Parish 的沿海村庄。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "阿里德尔为候选一致译名，无冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名合法，指村庄/快速旅行地点。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "1204/1987/2087 同用 Aridell，译名统一为阿里德尔。"
+        }
+      }
+    },
+    {
+      "ref": "terms:5",
+      "evidence_rows": [
+        462,
+        1205,
+        3127,
+        4243
+      ],
+      "source_excerpt": "North Parish",
+      "reason": "North Parish 是 Eversleep Cemetery 所在、Aridell 以北的区域；3127 为区域标题；译名北教区成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3127 直接标 North Parish；1205 将 Eversleep Cemetery 定位在该区域。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "北教区对应 North Parish，与南教区成对。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名合法，指区域。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "462/4243 与 1205/3127 同指阿里德尔以北区域，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:6",
+      "evidence_rows": [
+        462,
+        3275,
+        4243
+      ],
+      "source_excerpt": "South Parish",
+      "reason": "South Parish 是 Aridell 所在的东部 Thaermore 区域；3275 为区域标题；译名南教区成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3275 直接标 South Parish；462/4243 称 Aridell 位于 South Parish。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "南教区对应 South Parish，与北教区成对。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名合法，指区域。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "462/3275/4243 同指 Aridell 所在区域，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:8",
+      "evidence_rows": [
+        450,
+        1206,
+        462,
+        4691
+      ],
+      "source_excerpt": "Tangletree Forest",
+      "reason": "Tangletree Forest 是 Aridell 西侧、Lilith/Burley Oak 所在森林；450/1206/4691 同指该地；按已发布 v1.5 将暂定缠木森林修正为缠树森林。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "450 明确 Tangletree Forest 位于 Grimmhold 西侧；1206 说其在 Parish 区域以西；4691 作 Great Tangletree Forest。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原推荐缠木森林与 Tanglewood 译名相混；已发布 v1.5 为缠树森林，且 Tangletree 字面含 tree，故改为缠树森林。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名合法，指森林区域。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Tanglewood/Tanglewood Forest 另作缠木森林/缠木林；本条 Tangletree Forest 用缠树森林，保留原文差异并符合已发布 v1.5。"
+        }
+      }
+    },
+    {
+      "ref": "terms:9",
+      "evidence_rows": [
+        433,
+        1215,
+        1226
+      ],
+      "source_excerpt": "Lonely Spirits Tavern in Blackwater",
+      "reason": "Lonely Spirits Tavern 是 Blackwater 的酒馆，Eeru 经营；433/1215/1226 同指该地点；译名孤魂酒馆、地名分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "433 提到 Blackwater 的 Lonely Spirits Tavern；1215/1226 同指该酒馆。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "孤魂酒馆简洁对应 Lonely Spirits Tavern，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名合法；酒馆为可进入的命名地点。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "The Lonely Spirits Tavern 与本条仅差冠词，属同一酒馆，共用孤魂酒馆正确；不因冠词差异改译。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:43",
+    "characters:44",
+    "characters:57",
+    "characters:61",
+    "characters:100",
+    "terms:1",
+    "terms:3",
+    "terms:4",
+    "terms:5",
+    "terms:6",
+    "terms:8",
+    "terms:9"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

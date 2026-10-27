@@ -1,0 +1,233 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 8 个条目的来源、译名、分类与一致性核对；未发现需要修订或隔离的术语，现有译名与分类可保留。",
+  "acknowledged_findings": [],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:41",
+      "evidence_rows": [
+        410,
+        411,
+        412
+      ],
+      "source_excerpt": "by Senior Alchemist Uru Darkfrost.",
+      "reason": "署名为 Uru Darkfrost 的头衔，译名与身份分类一致，三处署名无变体。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "410、411、412 均以 by Senior Alchemist Uru Darkfrost 署名，确为头衔。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "高级炼金术师对应 Senior Alchemist，高级+职业名搭配自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物署名中的职衔，归入身份合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "410、411、412 三处署名一致，无变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:125",
+      "evidence_rows": [
+        374
+      ],
+      "source_excerpt": "The Alchemist's Cookbook I",
+      "reason": "374 为书名，译名保留书名号与卷号；物品分类正确，系列命名方式一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "374 原文为 The Alchemist's Cookbook I，是完整书名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《炼金术师食谱卷一》完整保留书名与卷号，译文简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "书籍/配方书属于物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "书名结构为 The Alchemist's Cookbook 加罗马数字，卷一译法保留卷号。"
+        }
+      }
+    },
+    {
+      "ref": "terms:126",
+      "evidence_rows": [
+        375
+      ],
+      "source_excerpt": "The Alchemist's Cookbook II",
+      "reason": "375 为书名，译名保留书名号与卷号；物品分类正确，系列命名方式一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "375 原文为 The Alchemist's Cookbook II，是完整书名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《炼金术师食谱卷二》完整保留书名与卷号，译文简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "书籍/配方书属于物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "书名结构为 The Alchemist's Cookbook 加罗马数字，卷二译法保留卷号。"
+        }
+      }
+    },
+    {
+      "ref": "terms:127",
+      "evidence_rows": [
+        376
+      ],
+      "source_excerpt": "The Alchemist's Cookbook III",
+      "reason": "376 为书名，译名保留书名号与卷号；物品分类正确，系列命名方式一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "376 原文为 The Alchemist's Cookbook III，是完整书名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《炼金术师食谱卷三》完整保留书名与卷号，译文简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "书籍/配方书属于物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "书名结构为 The Alchemist's Cookbook 加罗马数字，卷三译法保留卷号。"
+        }
+      }
+    },
+    {
+      "ref": "terms:407",
+      "evidence_rows": [
+        1496
+      ],
+      "source_excerpt": "Senior Artisan",
+      "reason": "独立等级标签，译名与身份分类一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1496 原文为独立标签 Senior Artisan。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "高级工匠对应 Senior Artisan，高级+工匠搭配自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "独立等级/职衔名归入身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Senior 译高级、Artisan 译工匠，构词关系稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:408",
+      "evidence_rows": [
+        1497
+      ],
+      "source_excerpt": "Artisan",
+      "reason": "独立等级标签，whole_record 限定合理，译名与身份分类一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1497 原文为独立标签 Artisan。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "工匠对应 Artisan，作为独立等级名不额外添加高级。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "独立等级/职衔名归入身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "whole_record 限定只匹配完整标签，可避免与普通词义混淆。"
+        }
+      }
+    },
+    {
+      "ref": "terms:410",
+      "evidence_rows": [
+        1500
+      ],
+      "source_excerpt": "Senior Apprentice",
+      "reason": "独立等级标签，译名与身份分类一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1500 原文为独立标签 Senior Apprentice。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "高级学徒对应 Senior Apprentice，保留高级与学徒的等级关系。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "独立等级/职衔名归入身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Senior 译高级、Apprentice 译学徒，构词关系稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:411",
+      "evidence_rows": [
+        1501
+      ],
+      "source_excerpt": "Apprentice",
+      "reason": "独立等级标签，whole_record 限定合理，译名与身份分类一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1501 原文为独立标签 Apprentice。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "学徒对应 Apprentice，作为独立等级名不额外添加高级。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "独立等级/职衔名归入身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "whole_record 限定只匹配完整标签，可避免与普通词义混淆。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:41",
+    "terms:125",
+    "terms:126",
+    "terms:127",
+    "terms:407",
+    "terms:408",
+    "terms:410",
+    "terms:411"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

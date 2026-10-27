@@ -1,0 +1,392 @@
+{
+  "review_complete": true,
+  "review_summary": "复核 12 条法术/陷阱名及 1 条运行标识；修正 Bubble 误译为护盾、Bixby's Noxious Cloud 的陷阱分类，并补齐 fire_burst 的适用范围；其余条目保留。",
+  "acknowledged_findings": [
+    "F0215"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "气泡术",
+        "term_reason": "Bubble 为法术列表中的独立名称；原文描述其以压缩空气气泡包住目标并造成伤害，不能译作护盾。"
+      },
+      "reason": "1125 明确是 crushing air 的伤害法术，现有“气泡护盾”虚构了防护义。",
+      "evidence_rows": [
+        1125,
+        1395
+      ],
+      "table": "terms",
+      "index": 344
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": false,
+          "reason": "内部效果标识，仅以完整字段出现（fire_burst / Fire_Burst）；大小写变体均保留原文，不参与句中翻译。"
+        },
+        "term_reason": "内部效果标识符，大小写变体均保留原文；仅在完整字段中匹配。"
+      },
+      "reason": "补齐 f1 指出的 non_translate 适用范围；两处均为独立完整字段，无嵌入正文用例。",
+      "evidence_rows": [
+        2319,
+        2377
+      ],
+      "table": "non_translate",
+      "index": 313
+    },
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "陷阱名称；出现在陷阱触发提示中，按陷阱类归入其他。"
+      },
+      "reason": "1805 的“A trap has been sprung!”表明该条是陷阱触发名，不应归为技能。",
+      "evidence_rows": [
+        1735,
+        1805
+      ],
+      "table": "terms",
+      "index": 354
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:344",
+      "evidence_rows": [
+        1125,
+        1395
+      ],
+      "source_excerpt": "This spell creates a bubble of crushing air around several targets, inflicting 6-9 points of damage per casting level.",
+      "reason": "核对法术名与机制描述，修正“护盾”误译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1395 为独立法术名 Bubble，1125 提供完整机制说明。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "1125 说明为压缩空气气泡造成伤害，非护盾；改为“气泡术”，保留 Bubble 本义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "法术名归入技能，category_path 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条无同形变体；译名不再添加“护盾”这一错误机制义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:345",
+      "evidence_rows": [
+        1399
+      ],
+      "source_excerpt": "Flare",
+      "reason": "独立法术名，译名简洁且符合原义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1399 为列表中独立法术名 Flare。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“闪光术”简洁，保留 flare 的闪光/发光义，符合界面长度。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单条无变体；作为 Flare 词根保留“闪光”核心译法。"
+        }
+      }
+    },
+    {
+      "ref": "terms:347",
+      "evidence_rows": [
+        1412
+      ],
+      "source_excerpt": "Flare Burst",
+      "reason": "复合法术名，保留 Flare 词根并适配界面。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1412 为独立法术名 Flare Burst。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“闪光爆”保留 Flare=闪光、Burst=爆发/爆裂，三字适配界面。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "复合名内部保留“闪光”词根，与词族候选核心译法一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:313",
+      "evidence_rows": [
+        2319,
+        2377
+      ],
+      "source_excerpt": "fire_burst",
+      "reason": "运行标识符，补齐适用范围并核对大小写变体。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2319 与 2377 分别给出 fire_burst / Fire_Burst，确认同一内部标识的大小写变体。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 运行标识保留原文，不进行译名核对。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "确认属于运行/效果标识而非普通词；补 whole_record、case_sensitive=false 以覆盖两种大小写，且无嵌入正文用例。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处均为完整字段，统一保留原文；大小写差异不拆成不同译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:350",
+      "evidence_rows": [
+        1641
+      ],
+      "source_excerpt": "Set Anchor",
+      "reason": "传送门法术界面动作名，译名简洁。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1641 为界面选项 Set Anchor。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“设置锚点”简洁，符合传送门法术界面动作。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单条无变体；动作名直译稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:352",
+      "evidence_rows": [
+        1651
+      ],
+      "source_excerpt": "MagSparks",
+      "reason": "法术/效果名，复合词核心译名稳定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1651 为法术/效果名 MagSparks。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“魔法火花”对应 Mag+Sparks，简洁且适合界面。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单条无变体；复合词核心译名稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:354",
+      "evidence_rows": [
+        1735,
+        1805
+      ],
+      "source_excerpt": "Bixby's Noxious Cloud",
+      "reason": "陷阱触发名，修正分类并保留专名音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1735 为名称，1805 为“A trap has been sprung!”触发提示。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“比克斯比毒云”保留 Bixby's 音译与 Noxious Cloud 词义，适合陷阱/法术名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "1805 证明该条作为陷阱触发；category_path 应由技能改为其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "译名保留“比克斯比”专名音译；分类修正见 category。"
+        }
+      }
+    },
+    {
+      "ref": "terms:356",
+      "evidence_rows": [
+        1737,
+        1807
+      ],
+      "source_excerpt": "Festering Stew",
+      "reason": "陷阱名，分类与译名保留字面意象。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1737 为名称，1807 为陷阱触发提示。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“溃烂浓汤”对应 Festering Stew，作为陷阱名可理解。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他分类符合陷阱名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单条无变体；保留“浓汤”意象。"
+        }
+      }
+    },
+    {
+      "ref": "terms:357",
+      "evidence_rows": [
+        1738,
+        1809
+      ],
+      "source_excerpt": "Naga Bite",
+      "reason": "陷阱名，Naga 音译与动作义均保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1738 为名称，1809 为陷阱触发提示。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“娜迦撕咬”保留 Naga 音译与 Bite 动作，适合陷阱名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他分类符合陷阱名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单条无变体；Naga 音译在本条固定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:358",
+      "evidence_rows": [
+        1739,
+        1810
+      ],
+      "source_excerpt": "Acid Bath",
+      "reason": "陷阱名，直译简洁。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1739 为名称，1810 为陷阱触发提示。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“酸浴”简洁对应 Acid Bath，符合陷阱名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他分类符合陷阱名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单条无变体；保留 acid/bath 字面意象。"
+        }
+      }
+    },
+    {
+      "ref": "terms:359",
+      "evidence_rows": [
+        1740
+      ],
+      "source_excerpt": "Hellfire",
+      "reason": "陷阱名，限定完整字段避免与普通词混淆。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1740 为独立陷阱名 Hellfire。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“地狱火”为 Hellfire 常用译法，简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他分类符合陷阱名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "whole_record 限定避免与普通词混淆；单条无变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:360",
+      "evidence_rows": [
+        1741,
+        1812
+      ],
+      "source_excerpt": "Plaguebath",
+      "reason": "陷阱名，直译保留 plague/bath 意象。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1741 为名称，1812 为陷阱触发提示。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“瘟疫浴”对应 Plaguebath，简洁且保留 plague/bath 意象。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他分类符合陷阱名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单条无变体；与同批陷阱名分类一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:344",
+    "terms:345",
+    "terms:347",
+    "non_translate:313",
+    "terms:350",
+    "terms:352",
+    "terms:354",
+    "terms:356",
+    "terms:357",
+    "terms:358",
+    "terms:359",
+    "terms:360"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

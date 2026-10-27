@@ -1,0 +1,489 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e11：统一各法术译名，修正 Leatherskin 为“皮甲术”、*Lore 保留颜色控制符；为音效标识符和常见词法术补全或收窄 applicability，并确认 Invisibility/Invisible、Lore/*Lore 共用中文的语境。",
+  "acknowledged_findings": [
+    "F0047",
+    "F0075",
+    "F0277",
+    "F0278"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "法术名；以神圣光使视野内活物皮肉起泡溃烂，卷轴与独立标签均用此名。"
+      },
+      "reason": "补齐原文 1103 给出的法术效果与使用范围。",
+      "evidence_rows": [
+        297,
+        1076,
+        1103,
+        2716
+      ],
+      "table": "terms",
+      "index": 155
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": false,
+          "mode": "whole_record",
+          "reason": "1653/1696 两条完整记录分别为 sfx_fleshboil 与 SFX_Fleshboil，均为音效标识符；仅匹配完整记录，不匹配正文。"
+        },
+        "term_reason": "音效标识符；1653/1696 完整记录为 sfx_fleshboil 与 SFX_Fleshboil。"
+      },
+      "reason": "原条目无 applicability；补 whole_record 并覆盖大小写变体。",
+      "evidence_rows": [
+        1653,
+        1696
+      ],
+      "table": "non_translate",
+      "index": 153
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "1094 整条记录为法术名 Haste；仅匹配独立法术标签，避免普通词全局误匹配。"
+        },
+        "term_reason": "法术/效果名；独立标签为 Haste，卷轴名与药剂配方按此译名组合。"
+      },
+      "reason": "将仅匹配 Scroll of 前缀的适用范围改为独立法术标签，避免 Haste 作为普通词被全局匹配。",
+      "evidence_rows": [
+        299,
+        1094,
+        411,
+        2533
+      ],
+      "table": "terms",
+      "index": 157
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "1413 整条记录为音效标识符 SFX_Haste；仅匹配完整记录。"
+        },
+        "term_reason": "音效标识符；1413 整条记录为 SFX_Haste。"
+      },
+      "reason": "原条目无 applicability；补 whole_record 以保护完整音效标识符。",
+      "evidence_rows": [
+        1413
+      ],
+      "table": "non_translate",
+      "index": 120
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "1140 整条记录为法术名 Invisibility；仅匹配独立法术标签，避免普通词全局误匹配。"
+        },
+        "term_reason": "法术/药水效果名；独立标签为 Invisibility，卷轴与药剂名按此译名组合。"
+      },
+      "reason": "将仅匹配 Scroll of 前缀的适用范围改为独立法术标签，并保留与状态词共用的中文“隐形”。",
+      "evidence_rows": [
+        300,
+        1140,
+        412,
+        2631
+      ],
+      "table": "terms",
+      "index": 158
+    },
+    {
+      "patch": {
+        "recommended_translation": "皮甲术",
+        "term_reason": "防御法术/效果名，字面为皮革般的皮肤；卷轴、药剂与状态提示均用此名。"
+      },
+      "reason": "原译“皮革皮肤”生硬；改为简洁且符合防御法术义的“皮甲术”。",
+      "evidence_rows": [
+        301,
+        1078,
+        1436,
+        2720
+      ],
+      "table": "terms",
+      "index": 159
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "1080 整条记录为法术名 Lore；仅匹配独立法术标签，避免普通词全局误匹配。"
+        },
+        "term_reason": "法术/卷轴名；核心词 Lore 与技能同名，中文统一用博识。"
+      },
+      "reason": "将仅匹配 Scroll of 前缀的适用范围改为独立法术标签，并记录与技能 Lore 的同形关系。",
+      "evidence_rows": [
+        303,
+        1080,
+        2722
+      ],
+      "table": "terms",
+      "index": 161
+    },
+    {
+      "patch": {
+        "recommended_translation": "*博识",
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "literal_context",
+          "prefix": "",
+          "suffix": " is the ability",
+          "reason": "1051 中 *Lore 位于句首并后接 is the ability；* 为颜色控制符，仅在此技能说明中匹配。"
+        },
+        "term_reason": "可见词为 Lore，句首 * 为颜色控制符；指鉴定旅途中发现陌生物品的能力，受智力与智慧加成。"
+      },
+      "reason": "补回 * 颜色控制符，并用 literal_context 限定技能说明中的实际位置。",
+      "evidence_rows": [
+        1051
+      ],
+      "table": "terms",
+      "index": 277
+    },
+    {
+      "patch": {
+        "term_reason": "法术名；卷轴名与独立技能标签均用此名。"
+      },
+      "reason": "补齐独立标签 1102 与卷轴 304/2723 的使用范围。",
+      "evidence_rows": [
+        304,
+        1102,
+        2723
+      ],
+      "table": "terms",
+      "index": 162
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "1084 整条记录为法术名 Nimbleness；仅匹配独立法术标签，避免普通词全局误匹配。"
+        },
+        "term_reason": "法术/效果名；独立标签为 Nimbleness，卷轴、药剂与效果名按此译名组合。"
+      },
+      "reason": "原条目无 applicability；补 whole_record 保护独立法术标签，避免 Nimbleness 作为普通词被全局匹配。",
+      "evidence_rows": [
+        305,
+        1084,
+        2537,
+        2675,
+        2724
+      ],
+      "table": "terms",
+      "index": 163
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:155",
+      "evidence_rows": [
+        1103
+      ],
+      "source_excerpt": "Much like the spell Fleshboil",
+      "reason": "核对卷轴、独立标签及 1103 法术说明；补 term_reason 记录效果与适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "297/1076/2716 均为 Fleshboil；1103 称其为 spell Fleshboil。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "血肉沸腾 对应 Fleshboil，符合皮肉起泡溃烂的法术效果。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "法术名归入 terms/技能，category_path=技能 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "卷轴、独立标签与法术说明统一；与音效标识符 sfx_fleshboil 不混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:153",
+      "evidence_rows": [
+        1653,
+        1696
+      ],
+      "source_excerpt": "sfx_fleshboil",
+      "reason": "核对 1653/1696 两条完整音效标识符；补 whole_record applicability，覆盖大小写变体。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1653 为 sfx_fleshboil，1696 为 SFX_Fleshboil，均为完整记录。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 无译文。"
+        },
+        "category": {
+          "status": "not_applicable",
+          "evidence": "non_translate 无 category_path。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目无 applicability；补 whole_record 且 case_sensitive=false，只匹配完整记录，不误伤正文。"
+        }
+      }
+    },
+    {
+      "ref": "terms:157",
+      "evidence_rows": [
+        1094
+      ],
+      "source_excerpt": "Haste",
+      "reason": "核对独立标签、卷轴与药剂配方；将 applicability 收窄到独立法术标签，译名维持加速。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1094 整条为 Haste；299/2718 为 Scroll of Haste，411 为配方 Haste。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "加速 与 Haste 的加速/额外行动效果相符，并与配方一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "法术/效果名归入技能类。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原 applicability 仅匹配 Scroll of 前缀；改为 whole_record 保护独立标签，避免普通词全局误匹配，卷轴/效果名按此译名组合。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:120",
+      "evidence_rows": [
+        1413
+      ],
+      "source_excerpt": "SFX_Haste",
+      "reason": "核对 1413 完整音效标识符；补 whole_record applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1413 整条为 SFX_Haste，仅音效标识符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 无译文。"
+        },
+        "category": {
+          "status": "not_applicable",
+          "evidence": "non_translate 无 category_path。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目无 applicability；补 whole_record/case_sensitive=true，仅匹配完整记录。"
+        }
+      }
+    },
+    {
+      "ref": "terms:158",
+      "evidence_rows": [
+        1140
+      ],
+      "source_excerpt": "Invisibility",
+      "reason": "核对独立标签、卷轴与药剂名；将 applicability 收窄到独立法术标签，并确认与状态词共用“隐形”的语境。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1140 整条为 Invisibility；300/2719 为卷轴名，2631/2632 为药剂名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "隐形 对应 Invisibility；与 Invisible 状态同中文，名词/形容词语境区分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "法术/药水效果名归入技能类。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原 applicability 仅 Scroll of；改为 whole_record 保护独立标签，避免普通词全局匹配；与状态词共用“隐形”经核对非误合并。"
+        }
+      }
+    },
+    {
+      "ref": "terms:159",
+      "evidence_rows": [
+        1436
+      ],
+      "source_excerpt": "Your Leatherskin effect has been neutralized.",
+      "reason": "核对卷轴、独立标签与效果提示；将生硬直译改为“皮甲术”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "301/2720 为 Scroll of Leatherskin，1436 为 Leatherskin effect，1078 为独立标签。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“皮革皮肤”生硬；改为“皮甲术”，符合防御法术名且 UI 简短。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "法术/效果名归入技能类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "卷轴、效果提示与药剂名统一用“皮甲术”，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:160",
+      "evidence_rows": [
+        1134
+      ],
+      "source_excerpt": "Lock Melt",
+      "reason": "核对卷轴与独立标签；译名“熔锁”简洁且符合加热锁具使其失效的效果。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "302/2721 为 Scroll of Lock Melt，1134 为独立标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "熔锁 对应 Lock Melt，简洁且符合加热锁具使其失效的效果。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "法术名归入技能类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "卷轴名与独立标签统一用熔锁。"
+        }
+      }
+    },
+    {
+      "ref": "terms:161",
+      "evidence_rows": [
+        1080
+      ],
+      "source_excerpt": "Lore",
+      "reason": "核对卷轴与独立标签；将 applicability 收窄到独立法术标签，并记录与技能 Lore 的同形关系。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "303/2722 为 Scroll of Lore，1080 为独立标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "博识 对应 Lore；与技能 Lore 同形，核心译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "法术/卷轴名归入技能类。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原 applicability 仅 Scroll of；改为 whole_record 保护独立标签，避免普通词全局匹配；与技能 Lore 的 *Lore 共用核心“博识”，星号另条保留。"
+        }
+      }
+    },
+    {
+      "ref": "terms:277",
+      "evidence_rows": [
+        1051
+      ],
+      "source_excerpt": "*Lore is the ability",
+      "reason": "核对 1051 技能说明；补回 * 控制符并用 literal_context 限定实际位置。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1051 句首为 *Lore，星号为颜色控制符，可见词为 Lore。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“博识”丢失 *；改为“*博识”，保留控制符并维持核心译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能名归入技能类。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 literal_context（前缀空、后缀 ' is the ability'），只匹配 1051 技能说明；与法术 Lore 核心译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:162",
+      "evidence_rows": [
+        1102
+      ],
+      "source_excerpt": "Mass Boil",
+      "reason": "核对卷轴与独立标签；补齐 term_reason 的使用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "304/2723 为 Scroll of Mass Boil，1102 为独立标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "群体沸腾 对应 Mass Boil，与 Fleshboil 的“血肉沸腾”同一构词，UI 简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "法术名归入技能类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "卷轴名与独立标签统一用群体沸腾。"
+        }
+      }
+    },
+    {
+      "ref": "terms:163",
+      "evidence_rows": [
+        1084
+      ],
+      "source_excerpt": "Nimbleness",
+      "reason": "核对卷轴、独立标签、效果名与药剂名；补 whole_record applicability，译名维持灵巧。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "305/2724 为 Scroll of Nimbleness，1084 为独立标签，2537 为 effect (Nimbleness)，2675 为药剂名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "灵巧 对应 Nimbleness；比“敏捷”更贴近词义，且避免与属性名混淆。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "法术/效果名归入技能类。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目无 applicability；补 whole_record 保护独立标签，避免普通词全局匹配，卷轴/药剂/效果名按此译名组合。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:155",
+    "non_translate:153",
+    "terms:157",
+    "non_translate:120",
+    "terms:158",
+    "terms:159",
+    "terms:160",
+    "terms:161",
+    "terms:277",
+    "terms:162",
+    "terms:163"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

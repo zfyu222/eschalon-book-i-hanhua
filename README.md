@@ -52,7 +52,8 @@ Eschalon_CN/
 |------|------|------|
 | 逆向分析 | IDA Pro + IDA MCP | - |
 | 字体替换 | 自研 Python 脚本 | - |
-| 翻译 | AiNiee / DeepSeek | - |
+| 翻译（v1.0–v1.5） | AiNiee / DeepSeek | - |
+| 翻译（2026-10-27 重译） | 自定义工作流 `translation_workflow.py` + `run_api_round.py`，API `deepseek-v4.1-flash` | - |
 | 回填 | 尝试多种方案（见下文） | - |
 
 ## 已提取的文本
@@ -586,3 +587,84 @@ BlitzMax 把字符串长度存在别处，字节扫描会把下一个字段的�
 - 翻译交接：`prepare-translation` 已建立 `TranslateFiles/image-text/` 隔离子工程和逐条图片上下文，不初始化/改写正文的旧数据库。**尚未选定本次正式翻译路线，尚未发起付费请求、生成正式图片译文或安装中文贴图。**旧正文曾使用 AINiee，归档 API 配置不视为本次付费执行授权；待用户选择现行 SubAgent/API 路线。
 - 排版边界：坐标是视觉确认区域，不等于清字蒙版；需逐类检查精灵切片、透明底、悬停高亮和相邻图案。保留标志、署名、数字/计数符号与网址的适用范围，不能见英文就替换。地图北部一处竖排地名未可靠转写，地图暂不进入安装名单；后续需单独解决该标签及密集地图排版，不猜写地名。
 - 回填预研：归档是 20 字节头、zlib 索引（225 项，每项 272 字节）及各自压缩的 PNG。`Analysis/inspect_image_archive.py` 验证现有索引，`Analysis/rebuild_image_archive.py` 仅生成全新输出文件、拒绝覆盖目标，更新压缩长度/偏移并逐项读回；空替换重建已验证 225/225 图片一致。测试文件仅在忽略目录 `ImagePatch/`，**不代表中文贴图构建、安装或实机通过**。对外发布不得直接携带完整游戏资源包。
+
+## 2026-10-27 统一语料全量重译（自定义 API 工作流）
+
+### 本次目标与范围
+
+用户要求「重新翻译，从术语提取开始，图片 OCR 等提取结果复用，术语提取基于图片文本和普通文本统一做，用 API 方式」。此前正文（AINiee，v1.5）与图片（隔离子工程 r2）各自维护术语表，重叠的 26 条专名中 9 条译法冲突（如 `Thaermore` 泰尔莫/泰尔摩尔、`Darkford` 达克福德/暗福德），且正文 158 个专名没有进入图片术语表。本次改为**单一翻译工程 + 单一术语表**。
+
+本次只产出译文，未修改游戏目录、未重建中文贴图、未发布新版补丁。
+
+### 统一语料
+
+| 项 | 值 |
+|---|---|
+| 统一源文 | `eschalonbook_unified_text.csv`（4743 行） |
+| 来源 | 正文 `eschalonbook_text.csv` 4563 行 + 图片独有 180 行 |
+| 去重 | 图片 231 行中 51 行与正文完全相同，不重复计入，拆分时复用正文译文 |
+| 索引 | `TranslateFiles/unified_corpus.json`（逐行记 origin/src_row/reuse_text_row） |
+| 上下文 | `TranslateFiles/unified_context.json`（group=text/image、resource=原文件或 `img_00NN`、text_type） |
+| 生成 | `Analysis/build_unified_corpus.py` |
+
+图片 OCR/视觉裁决沿用 `ImageText/` 既有结果，未重新跑 OCR。
+
+### 术语
+
+| 项 | 值 |
+|---|---|
+| 提取 | 12 批覆盖 4743 条（正文 11 批 + 图片 1 批），初筛 581 术语 / 105 人物 / 386 禁翻 |
+| 旧名追记 | `Analysis/annotate_legacy_terms.py` 把 v1.5 已发布译名写入同源条目的 `term_reason`，只作裁决证据，不覆盖新提取；对照结果见 `TranslateFiles/glossary/legacy_reference.json`（210 条旧名：101 条一致、51 条冲突、58 条统一语料未提取到） |
+| 审校 | 93 批，逐项语义核对，程序检查通过后才冻结 |
+| 冻结表 | `TranslateFiles/glossary/r1/freeze_0680ffd0/built/glossary_reviewed.json`，577 术语 / 105 人物 / 379 禁翻，hash `76cc99de…` |
+| 与 v1.5 对比 | 143 条同名专名中仅 11 条译名变化（如 `Goblins` 哥布林→地精、`Shadowmirk` 暗影沼泽→暗影堡、`Divination` 占卜术→预言术），其余追记后回归 v1.5 |
+
+### 翻译过程
+
+| 阶段 | 结果 |
+|---|---|
+| 试译 | 150 条随机样本；首轮发现方括号玩家标签被整体保护而漏译，关闭 `square_bracket` 保护后重跑通过 |
+| 全量 | 113 批，4743 条草稿，5 次连接失败重试 |
+| 草稿验收 | `draft-scan` clean，0 失败 |
+| 独立审校 | 318 批 + 4 轮定向修复，最终 clean |
+| 最终质量闭环 | 13 条遗留争议逐条裁决：12 条 pass/contextual（源文尾部残留 `q/Y/f` 分支字节、无上下文短片段），1 条 repair（`R0004356` 同条内 Goblins 译名不一致 + "coming for the key" 语义偏差），修复后复查 clean |
+
+### 配置与执行
+
+- 工作流：自定义（`workflow=custom`），执行器 `backend=api`，模型 `deepseek-v4.1-flash`（`Tools/localization/api.local.jsonc` 的 `default_api`）
+- 配置：`TranslateFiles/config/unified_workflow.json`
+- 关键调整：`placeholder_family_overrides.square_bracket = null`——本游戏方括号内容全部是玩家可见的选项/动作标签（151 条，如 `[Give him the Amulet Passkey 15]`、`[Save vs Disease: SUCCESS!]`），整体保护会导致漏译；`[P1]` 类占位符由程序另行生成，不受影响
+- 编排：`translation_workflow.py`（init → extract → glossary_review → freeze-glossary → pilot → translate → draft-scan → review → 质量闭环 → export）；批次执行 `run_api_round.py`
+- 导出：`eschalonbook_unified_text_translated.csv`（4743 行）
+
+### 交付文件
+
+| 文件 | 行数 | 说明 |
+|---|---|---|
+| `eschalonbook_text_translated.csv` | 4563 | 正文正式译文，与 `eschalonbook_text.csv` 逐行对应 |
+| `eschalonbook_images_text_translated.csv` | 231 | 图片正式译文（含 51 条复用正文译文），与 `eschalonbook_images_text.csv` 逐行对应 |
+| 拆分脚本 | — | `Analysis/split_unified_translation.py` |
+
+### 校验结果
+
+- 行数：正文 4563/4563、图片 231/231，空译文 0
+- 无汉字行：正文 617、图片 13，逐条核对为脚本命令（`init_trade`/`teach_skill`/`Sound(...)`）、资源路径、版权行、署名、罗马数字与 `0123456789`，属正确保留
+- 控制符：`*`/`&`/`#`/`$/` 数量核对通过；`^` 有 2 处（第 1891、1896 行）新版只保留 1 个标记整词，v1.5 为逐词各 1 个（`^移动 ^静默` / `^隐藏 ^在 ^阴影`）。新版可读性更好，`^` 为「标记其后一个词」的前缀式标记而非成对开关，故不构成渲染风险，列入实机确认项
+- 术语一致性：图片 UI 标签（力量/敏捷/耐力/护甲等级/生命值/法力值）与正文冻结表一致
+
+### 旧产物备份
+
+- v1.5 正文译表：`TranslateFiles/backups/20261027_rebuild/eschalonbook_text_translated.v1.5.csv`
+- 首版图片译表：`TranslateFiles/backups/20261027_rebuild/eschalonbook_images_text_translated.first.csv`
+- 旧正文术语表：`TranslateFiles/backups/20261027_rebuild/glossary_r1/`
+- 旧工程数据库：`TranslateFiles/state/archive/`（含 20261020 增量运行与 20261027 图片子工程 r2）
+
+### 待办与已知问题
+
+1. 中文贴图尚未构建：`ImagePatch/` 只有空替换往返验证；需按 `ImageText/mapping.json` 逐区清字、排版、回填，再重打包 `gfx.pak`。
+2. 地图北部一处竖排地名仍未可靠转写，地图不进入安装名单。
+3. 启动器 `display_hook_launcher.py` 当前读取的是旧译表路径与映射，接入新译文需重新生成运行时映射（正文 4743 条统一表）并复测。
+4. `no bars`（第 1254 行）译文「无栏」缺上下文，实机确认后再定。
+5. `help.html` 402 条仍未翻译（浏览器打开，不经引擎绘制）。
+6. 上一轮反馈的升级崩溃问题本次未处理。
+

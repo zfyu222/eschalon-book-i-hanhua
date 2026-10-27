@@ -1,0 +1,466 @@
+{
+  "review_complete": true,
+  "review_summary": "复核全部 12 条：统一 Crux/圣核、Burley Oak/大麦橡树及派生橡果、Mystics/秘法师团，修正 Secondary Water Gate 分类，并为 Step_Water1/2 补 whole_record 范围；无隔离或新增。",
+  "acknowledged_findings": [
+    "F0216",
+    "F0217"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "圣核",
+        "term_reason": "Crux of Ages 的简称，指同一件神器；按已发布 v1.5 统一为「圣核」。"
+      },
+      "reason": "4052/4053 与 731/733 均指同一 Crux of Ages 神器；采用已发布译名「圣核」，弃用暂定「圣枢」及候选「核心」。",
+      "evidence_rows": [
+        4052,
+        4053
+      ],
+      "table": "terms",
+      "index": 215
+    },
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "Grimmhold 维护层/地下的水门机关；开启后可释放闸门并恢复通行/强行开门。"
+      },
+      "reason": "1209 为 Grimmhold 维护层中需开启的闸门，3701 明确其为可激活的水门机关；不是地理地名，改为「其他」。",
+      "evidence_rows": [
+        1209,
+        3701
+      ],
+      "table": "terms",
+      "index": 249
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "2380 整条记录仅为音效/脚步标识 Step_Water1，作为完整资源标识符保留，不参与翻译。"
+        },
+        "term_reason": "音效/脚步标识；作为完整资源标识符 Step_Water1 保留，不翻译。"
+      },
+      "reason": "2380 为独立完整记录 Step_Water1，未发现嵌入用例；使用 whole_record 限定，避免全局禁翻裸词。",
+      "evidence_rows": [
+        2380
+      ],
+      "table": "non_translate",
+      "index": 325
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "2381 整条记录仅为音效/脚步标识 Step_Water2，作为完整资源标识符保留，不参与翻译。"
+        },
+        "term_reason": "音效/脚步标识；作为完整资源标识符 Step_Water2 保留，不翻译。"
+      },
+      "reason": "2381 为独立完整记录 Step_Water2，未发现嵌入用例；使用 whole_record 限定，避免全局禁翻裸词。",
+      "evidence_rows": [
+        2381
+      ],
+      "table": "non_translate",
+      "index": 326
+    },
+    {
+      "patch": {
+        "recommended_translation": "大麦橡树",
+        "term_reason": "Tangletree Forest 南部曾繁盛、因 Acid Grubbs 剥皮而濒危的橡树种类；按已发布 v1.5 统一为「大麦橡树」。"
+      },
+      "reason": "751/3966/3967 确认 Burley Oak 是特定橡树种类；采用已发布译名「大麦橡树」，弃用暂定「伯利橡树」。",
+      "evidence_rows": [
+        751,
+        1231,
+        3966,
+        3967
+      ],
+      "table": "terms",
+      "index": 219
+    },
+    {
+      "patch": {
+        "recommended_translation": "大麦橡果",
+        "term_kind": "game_term",
+        "term_reason": "Burley Oak 的橡果，交给 Vekkar 的任务物品；与树种名统一为「大麦橡果」。"
+      },
+      "reason": "4441 为交付任务动作，Burley Acorn 是树种产出的任务物品，非独立专名；改为 game_term 并统一树种译名。",
+      "evidence_rows": [
+        4441
+      ],
+      "table": "terms",
+      "index": 552
+    },
+    {
+      "patch": {
+        "category_path": "组织",
+        "enforcement": "required",
+        "recommended_translation": "秘法师团",
+        "term_kind": "proper_name",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "原文中大写 Mystics 指古代秘法师团；单数 Mystic 另作职业名。"
+        },
+        "term_reason": "古代观时者/秘法师团体，能观察过去与现在；3014 提及其水晶球。按已发布 v1.5 统一为「秘法师团」。"
+      },
+      "reason": "824/3014/4049 均指可观察过去与现在的古代群体，3014 的水晶球说明其为团体/组织；采用已发布译名「秘法师团」，并升为 required proper_name。",
+      "evidence_rows": [
+        824,
+        3014,
+        4049
+      ],
+      "table": "terms",
+      "index": 222
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:214",
+      "evidence_rows": [
+        806,
+        2868,
+        4026
+      ],
+      "source_excerpt": "the Dimensional Eye that guards the front gates",
+      "reason": "三处均指守卫 Shadowmirk 前门的次元守卫；保留 game_term/required 与「次元之眼」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "806、4026 的 the Dimensional Eye 与 2868 独立条目同指该守卫。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「次元之眼」直译 Dimensional Eye，无冲突候选。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他：作为特定次元守卫/敌人名保留，不误归可玩种族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "三处同类用法统一为「次元之眼」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:215",
+      "evidence_rows": [
+        731,
+        733,
+        4052,
+        4053
+      ],
+      "source_excerpt": "the Crux was removed from Bastion Spire",
+      "reason": "统一为已发布译名「圣核」；该词是 Crux of Ages 的专名简称，属于同一件神器。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "731/733/4052/4053 的 the Crux 均指同一件 Crux of Ages 神器，首字母大写专名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由暂定「圣枢」改为已发布 v1.5 的「圣核」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品：原文称其为被移除/寻回的神器，4053 亦与 Crux of Ages 同指。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一为「圣核」，不再使用候选「圣枢」「核心」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:216",
+      "evidence_rows": [
+        786,
+        791,
+        2679,
+        4002,
+        4443
+      ],
+      "source_excerpt": "Give Purest Water to Oolaseph",
+      "reason": "任务物品名统一为「至纯之水」；物品分类与 game_term/required 均合适。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "786 描述井水，2679 为物品数据，791/4443 为交付名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「至纯之水」与 Purest Water 及任务物品用法一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品：可装瓶交付的井水任务物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "统一为「至纯之水」，无候选冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:249",
+      "evidence_rows": [
+        1209,
+        3701
+      ],
+      "source_excerpt": "open the Secondary Water Gate in Grimmhold's Maintenance level",
+      "reason": "1209 与 3701 同指 Grimmhold 的水门机关；已由「地名」改为「其他」，译名保留「次级水门」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1209 的 the Secondary Water Gate 与 3701 的 secondary water gate 指同一水门机关。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「次级水门」与两处原文的水门/机关语义一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "由「地名」改为「其他」：它是 Grimmhold 维护层/地下的水门机关，并非地理地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一机制在大小写两处保持「次级水门」。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:325",
+      "evidence_rows": [
+        2380
+      ],
+      "source_excerpt": "Step_Water1",
+      "reason": "补充 whole_record 适用范围，确认其为完整音效/脚步资源标识符，不参与普通翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2380 原文整条仅为 Step_Water1，属于音效/脚步资源标识符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，保留原文标识符，不提供译名。"
+        },
+        "category": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无 category_path。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 whole_record 限定，避免作为普通文本或子串全局禁翻；无嵌入用例。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:326",
+      "evidence_rows": [
+        2381
+      ],
+      "source_excerpt": "Step_Water2",
+      "reason": "补充 whole_record 适用范围，确认其为完整音效/脚步资源标识符，不参与普通翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2381 原文整条仅为 Step_Water2，属于音效/脚步资源标识符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，保留原文标识符，不提供译名。"
+        },
+        "category": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无 category_path。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补充 whole_record 限定，避免作为普通文本或子串全局禁翻；无嵌入用例。"
+        }
+      }
+    },
+    {
+      "ref": "terms:219",
+      "evidence_rows": [
+        751,
+        1231,
+        3966,
+        3967
+      ],
+      "source_excerpt": "the disappearance of the Burley Oak tree from this region",
+      "reason": "Burley Oak 是特定橡树种类；采用已发布译名「大麦橡树」，弃用暂定「伯利橡树」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "751/3966/3967 说明 Burley Oak 是 Tangletree Forest 南部因 Acid Grubbs 剥皮而濒危的橡树种类；1231 为任务指称。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由「伯利橡树」改为已发布 v1.5 的「大麦橡树」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他：树种/任务对象，非组织、地名或人物。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一为「大麦橡树」，并与 e8 橡果名保持同源。"
+        }
+      }
+    },
+    {
+      "ref": "terms:552",
+      "evidence_rows": [
+        4441
+      ],
+      "source_excerpt": "Give Burley Acorn to Vekkar",
+      "reason": "改为与树种一致的「大麦橡果」，并将分类由 proper_name 调整为 game_term。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4441 为向 Vekkar 交出 Burley Acorn 的任务动作，指 Burley Oak 的橡果。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由「伯利橡果」改为与已发布树种译名一致的「大麦橡果」。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "物品：任务橡果；term_kind 由 proper_name 改为 game_term，因它是树种产物而非独立专名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e7「大麦橡树」同源为「大麦橡果」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:222",
+      "evidence_rows": [
+        824,
+        3014,
+        4049
+      ],
+      "source_excerpt": "an ancient tool of the Mystics",
+      "reason": "Mystics 指古代秘法师团体；采用已发布译名「秘法师团」，分类改为组织/proper_name/required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "824/4049 写 the ancient Mystics，3014 写 the Mystics；均指能观过去/现在并使用水晶球的古代群体。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由「秘术师」改为已发布 v1.5 的「秘法师团」。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "824/4049 的古代群体与 3014 的水晶球说明是团体/组织，不是单个身份。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一为「秘法师团」；单数职业 Mystic 另见 e10 作「秘法师」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:397",
+      "evidence_rows": [
+        1483
+      ],
+      "source_excerpt": "Mystic",
+      "reason": "1483 是独立职业名；保留「秘法师」、身份分类与 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1483 整条仅 Mystic，是角色职业列表中的独立职业名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「秘法师」与 e9 的「秘法师团」及 e11 的「秘法师之戒」保持词根一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "身份：职业名，不是组织或地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "whole_record 限定独立 Mystic；不把 Mystic's Ring 中的派生形式误并入。"
+        }
+      }
+    },
+    {
+      "ref": "terms:440",
+      "evidence_rows": [
+        2662
+      ],
+      "source_excerpt": "Mystic's Ring",
+      "reason": "2662 为独特戒指物品名；保留「秘法师之戒」与 game_term/required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2662 物品数据行名为 Mystic's Ring，是独特戒指名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「秘法师之戒」与 Mystic/秘法师一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品：装备/戒指。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e10「秘法师」词根一致，且不改变 Mystic's Ring 整体物品名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:225",
+      "evidence_rows": [
+        1013
+      ],
+      "source_excerpt": "south along the Cesani Ocean",
+      "reason": "Cesani Ocean 是海洋专名；保留「凯萨尼洋」与地名/proper_name/required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1013 说明 Kessians 沿海岸线分布，南至 Cesani Ocean 沿岸。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「凯萨尼洋」保留 Cesani 专名并符合海洋名格式；无冲突候选。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名：海洋名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "专名 required，大小写/单复数无变体冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:214",
+    "terms:215",
+    "terms:216",
+    "terms:249",
+    "non_translate:325",
+    "non_translate:326",
+    "terms:219",
+    "terms:552",
+    "terms:222",
+    "terms:397",
+    "terms:440",
+    "terms:225"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

@@ -1,0 +1,399 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 12 条术语的来源、译名、分类与一致性审校。f1、f2 均为同一组织或物品的单复数变体共用译名，不构成冲突。修正 e4 为「护符钥匙」并设为 required，e5 统一为「预言术」，e10 采用已发布「远程武器大师」，并校正 e6 的 term_reason。",
+  "acknowledged_findings": [
+    "F0261",
+    "F0284"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "护符钥匙",
+        "enforcement": "required",
+        "term_reason": "776 中莉莉丝的护符作为编号 15 的任务钥匙交付；Passkey 指门禁钥匙。"
+      },
+      "reason": "Passkey 是钥匙/通行密钥，不是通行证；776 显示其为可编号的任务护符钥匙，故统一为「护符钥匙」并固定为 required。",
+      "evidence_rows": [
+        776
+      ],
+      "table": "terms",
+      "index": 220
+    },
+    {
+      "patch": {
+        "recommended_translation": "预言术",
+        "term_reason": "765 为询问 Divination 的对话；3976 称其是对抗邪恶的有力技能，此处指预言/占卜类游戏技能。"
+      },
+      "reason": "结合技能语境及同词根 Divination magick 的「预言魔法」核心译名，统一为「预言术」，并移除无出处的 Jonathon 信息。",
+      "evidence_rows": [
+        765,
+        3976
+      ],
+      "table": "terms",
+      "index": 221
+    },
+    {
+      "patch": {
+        "term_reason": "893 中为存放 vault 15 等财物的特定设施，由 Vault Master 管理。"
+      },
+      "reason": "按 893 校正 term_reason：vault 15 位于 the Repository 内，而非与其并列。",
+      "evidence_rows": [
+        893
+      ],
+      "table": "terms",
+      "index": 223
+    },
+    {
+      "patch": {
+        "recommended_translation": "远程武器大师",
+        "term_reason": "910/4153 中 Aaron 的认证头衔，教授弓箭与投掷武器，强调远程攻击。"
+      },
+      "reason": "采用已发布 v1.5 译名「远程武器大师」，与 Weapons Master「武器大师」形成对应，并清除 term_reason 中的流程备注。",
+      "evidence_rows": [
+        910,
+        4153
+      ],
+      "table": "terms",
+      "index": 236
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:211",
+      "evidence_rows": [
+        832,
+        840
+      ],
+      "source_excerpt": "the Commonwealth Guards have been sent far away to fight the Orakur.",
+      "reason": "复数指称同一军队；译名与单数变体共用，不构成冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "832 的 Commonwealth Guard 与 840 的 Commonwealth Guards 指同一组织，复数仅为语法变化。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「联邦卫队」为既有组织译名，中文无需另加复数标记。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=组织，term_kind=proper_name，enforcement=required 与军队组织专名相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e13 单数 Commonwealth Guard 共译「联邦卫队」属同一组织单复数变体，审计 f1 非冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:217",
+      "evidence_rows": [
+        833
+      ],
+      "source_excerpt": "There are four Goblin Keys needed to enter the Citadel.",
+      "reason": "复数形式指进入 Citadel 所需的四把钥匙。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "833 明确四把 Goblin Keys 是进入 Citadel 所需。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「哥布林钥匙」直接对应 Goblin Keys，物品名简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品/game_term/required 与钥匙类任务物品相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e3 单数 Goblin key 同译，属同一套钥匙的单复数变体，审计 f2 非冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:218",
+      "evidence_rows": [
+        1224,
+        1227
+      ],
+      "source_excerpt": "Retrieve a Goblin Key from a giant named Omar in the Timberland Plains area.",
+      "reason": "单数形式指 Omar 持有并可交易的一把钥匙。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1224/1227 均指 Omar 处可取得的一把 Goblin key。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「哥布林钥匙」与单数 Goblin key 对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品/game_term/required 与任务钥匙相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2 复数 Goblin Keys 同译，属同一物品的单复数变体，审计 f2 非冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:220",
+      "evidence_rows": [
+        776
+      ],
+      "source_excerpt": "Amulet Passkey 15",
+      "reason": "Passkey 为任务钥匙而非通行证；按 776 与同族译名统一为「护符钥匙」并固定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "776 显示该物为莉莉丝的护符，并以 Amulet Passkey 15 作为任务交付物。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译「护符通行证」把 Passkey（钥匙/通行密钥）误作通行证；已改为「护符钥匙」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=物品、game_term 正确；该任务物品已改为 enforcement=required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Amulet Passkey 26 的「护符钥匙26」候选译名核心一致；编号变体不影响基础物品名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:221",
+      "evidence_rows": [
+        765,
+        3976
+      ],
+      "source_excerpt": "Divination is a powerful ally in the war against evil.",
+      "reason": "统一 Divination 技能名为「预言术」，并删除无出处的 Jonathon 说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "765 为询问 Divination 的对话，3976 说明它是可训练且用于对抗邪恶的技能。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原候选「占卜术」可用但未统一；结合技能语境及同词根 Divination magick 的「预言魔法」核心，改为「预言术」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=技能、game_term、required 与可训练技能相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "采用「预言术」使 Divination 的核心译名与同词根复合词一致；不同搭配可保留「预言魔法/预言术」的差异。"
+        }
+      }
+    },
+    {
+      "ref": "terms:223",
+      "evidence_rows": [
+        893
+      ],
+      "source_excerpt": "property down in the Repository that belonged to me.",
+      "reason": "按 893 修正 term_reason，明确 vault 15 位于 Repository 内。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "893 中 the Repository 是存放玩家取走财物及 vault 15 的特定设施。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「储藏库」可对应 Repository 的储藏/金库义；作为地点名保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=地名、proper_name、required 与特定设施名相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "term_reason 已按 893 修正为 Repository 内含 vault 15，避免把两者写成并列设施。"
+        }
+      }
+    },
+    {
+      "ref": "terms:226",
+      "evidence_rows": [
+        1011
+      ],
+      "source_excerpt": "Rifters hail from the Great Rift Zone of the Under-South",
+      "reason": "完整区域专名保留；South 词素不与其他专名强行统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1011 说明 Rifters 来自该地质活动频繁的区域。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「南底大裂谷区」保留 Great Rift Zone 与 Under-South 的地名要素，可作专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名/proper_name/required 与区域名相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "South 词素在不同专名中可按语境分别处理，本条保持完整专名，未见冲突变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:233",
+      "evidence_rows": [
+        936,
+        4182
+      ],
+      "source_excerpt": "The Magick Guild used to be headquartered in Shadowmirk",
+      "reason": "组织名统一；原总部与战后状态在 936/4182 中一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "936/4182 说明 Magick Guild 原总部在 Shadowmirk，战后成员离散。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「魔法公会」对应 Magick Guild，组织名自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "组织/proper_name/required 与公会组织名相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 4181/4182 的问答应为同一组织，译名统一；未发现冲突变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:235",
+      "evidence_rows": [
+        904,
+        3225
+      ],
+      "source_excerpt": "certified Weapons Master",
+      "reason": "认证头衔统一为「武器大师」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "904/3225 均称 Sonya 为 certified Weapons Master。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「武器大师」对应 Weapons Master 的认证头衔。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "身份/game_term/required 与认证头衔相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Range Master「远程武器大师」形成武器/远程武器大师的对应，不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:236",
+      "evidence_rows": [
+        910,
+        4153
+      ],
+      "source_excerpt": "I am a certified Range Master",
+      "reason": "采用已发布译名并统一 Range Master 头衔。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "910/4153 中 Aaron 自称 certified Range Master，教授弓箭与投掷武器。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原候选「射术大师」不够准确；按已发布 v1.5 统一为「远程武器大师」，与 Range（远程）及 Weapons Master 构词对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "身份/game_term/required 与认证头衔相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与「武器大师」保持「X武器大师」系列译名一致；射术/投掷均属远程武器。"
+        }
+      }
+    },
+    {
+      "ref": "terms:241",
+      "evidence_rows": [
+        986
+      ],
+      "source_excerpt": "drop_item (Gold Goblin Key)",
+      "reason": "颜色限定钥匙名与基础 Goblin Key 译名保持一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "986 为脚本掉落 Gold Goblin Key。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「黄金哥布林钥匙」对应 Gold Goblin Key，并与 Goblin Keys 的「哥布林钥匙」核心一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品/game_term/required 与钥匙类掉落物相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e12「蓝色哥布林钥匙」同为颜色/材质限定的哥布林钥匙，核心译名一致；Gold 作「黄金」可保留。"
+        }
+      }
+    },
+    {
+      "ref": "terms:242",
+      "evidence_rows": [
+        1004
+      ],
+      "source_excerpt": "drop_item (Blue Goblin Key)",
+      "reason": "颜色限定钥匙名与基础 Goblin Key 译名保持一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1004 为脚本掉落 Blue Goblin Key。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「蓝色哥布林钥匙」对应 Blue Goblin Key。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品/game_term/required 与钥匙类掉落物相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e11「黄金哥布林钥匙」及 e2/e3「哥布林钥匙」核心一致，颜色限定不改变基础名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:211",
+    "terms:217",
+    "terms:218",
+    "terms:220",
+    "terms:221",
+    "terms:223",
+    "terms:226",
+    "terms:233",
+    "terms:235",
+    "terms:236",
+    "terms:241",
+    "terms:242"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

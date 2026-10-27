@@ -1,0 +1,370 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e11：e1-e5 种族专名译名与出处一致；e6 按已发布 v1.5 将 Hive Larvae 统一为「巢穴幼虫」；e7/e8/e11 物品术语一致；e9/e10 补齐 non_translate 的显式适用范围；确认 f1。",
+  "acknowledged_findings": [
+    "F0186"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "巢穴幼虫",
+        "term_reason": "Hive Larvae 为 Hesham 任务所需 10 只幼虫材料；已发布 v1.5 统一译名为「巢穴幼虫」。"
+      },
+      "reason": "e6 原推荐「蜂巢幼虫」与已发布 v1.5 的「巢穴幼虫」不一致；据 964、2300、4219、4453 的任务物品用法统一。",
+      "evidence_rows": [
+        964,
+        2300,
+        4219,
+        4453
+      ],
+      "table": "terms",
+      "index": 237
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "966 整行 give_item (Flask of Incinerator Fuel) 为运行时发物命令，按完整记录保护，避免全局禁翻。"
+        }
+      },
+      "reason": "补齐 non_translate 保护范围；该行是完整脚本命令。",
+      "evidence_rows": [
+        966
+      ],
+      "table": "non_translate",
+      "index": 55
+    },
+    {
+      "patch": {
+        "term_reason": "运行时脚本命令词；2077 独立出现，2493/2529 位于分号串联命令中。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "2077 独立出现，2493/2529 在分号分隔的运行时命令序列中；均为带下划线的脚本命令词 to_flask，正文无普通词用法。"
+        }
+      },
+      "reason": "根据 f1 补齐显式范围；独立及嵌入用例均属运行时命令，故以大小写敏感 text 保护该标识符。",
+      "evidence_rows": [
+        2077,
+        2493,
+        2529
+      ],
+      "table": "non_translate",
+      "index": 281
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:228",
+      "evidence_rows": [
+        1009
+      ],
+      "source_excerpt": "Nor'landers hail from the Northland Expanse, an arctic area of permafrost and glaciers.",
+      "reason": "Nor'landers 为来自 Northland Expanse 的耐寒种族；「北境人」保留地名关联，分类与强制等级正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1009 原文说明其来自 Northland Expanse 的极寒地区，并获得耐力与专注加值。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「北境人」对应来自 Northland Expanse 的族群，未引入额外设定。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族，proper_name/required；1009 为种族介绍及属性加值。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此条 Nor'landers；译名与 Northland 的「北境」对应。"
+        }
+      }
+    },
+    {
+      "ref": "terms:229",
+      "evidence_rows": [
+        1010
+      ],
+      "source_excerpt": "Barreans hail from the vast Desolation of Barrea, far to the West.",
+      "reason": "Barreans 为来自 Desolation of Barrea 的种族；「巴瑞亚人」按地名音译，分类正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1010 原文说明其来自西方荒原 Desolation of Barrea，并获得速度与力量加值。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「巴瑞亚人」对应 Barreans，并与地名 Barrea 的译名相合。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族，proper_name/required；1010 为种族介绍及属性加值。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此条 Barreans；未与其他术语冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:230",
+      "evidence_rows": [
+        1011
+      ],
+      "source_excerpt": "Rifters hail from the Great Rift Zone of the Under-South",
+      "reason": "Rifters 为来自 Great Rift Zone 的种族；「裂隙人」对应 Rift 词义，分类正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1011 原文说明其来自 Under-South 的 Great Rift Zone，并获得感知与智慧加值。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「裂隙人」对应 Rifters 的裂隙/裂谷语义，可保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族，proper_name/required；1011 为种族介绍及属性加值。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此条 Rifters；译名内部一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:231",
+      "evidence_rows": [
+        1012
+      ],
+      "source_excerpt": "The Therish hail from rolling woodlands and plains of Thaermore.",
+      "reason": "Therish 为 Thaermore 的族群；「泰尔莫人」与地名 Thaermore 对应，分类正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1012 原文说明其来自 Thaermore 的林地与平原，并获得专注与敏捷加值。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「泰尔莫人」对应 Therish，并与 Thaermore 的地名音译相合。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族，proper_name/required；1012 为种族介绍及属性加值。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此条 Therish；未与其他术语冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:232",
+      "evidence_rows": [
+        1013
+      ],
+      "source_excerpt": "Kessians hail from the coastal region of the Northeast, from Mistfell south along the Cesani Ocean.",
+      "reason": "Kessians 为东北沿海航海族群；「凯西安人」音译可接受，分类正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1013 原文说明其来自东北沿海、Mistfell 至 Cesani Ocean 一带，并获得智慧与智力加值。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「凯西安人」对应 Kessians 的音译，未引入额外设定。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族，proper_name/required；1013 为种族介绍及属性加值。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此条 Kessians；译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:237",
+      "evidence_rows": [
+        964,
+        2300,
+        4219,
+        4453
+      ],
+      "source_excerpt": "I have found 10 Hive Larvae. Can you use these?",
+      "reason": "Hive Larvae 是 Hesham 任务所需 10 只幼虫；已发布 v1.5 作「巢穴幼虫」，将「蜂巢幼虫」统一为「巢穴幼虫」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "964、2300、4219、4453 均将 Hive Larvae 用作 Hesham 任务所需的 10 只幼虫材料。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "统一为已发布 v1.5 的「巢穴幼虫」，不再用「蜂巢幼虫」。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品，game_term/required；为任务交付物与材料物品。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "所有候选均指同一 Hive Larvae 物品；统一后与已发布术语一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:239",
+      "evidence_rows": [
+        960,
+        4213
+      ],
+      "source_excerpt": "flask of the finsihed Incineration Fuel",
+      "reason": "Incineration Fuel 是 Hesham 完成后所给燃料物品；「焚化燃料」符合物品义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "960 与 4213 均说明完成后给玩家一瓶 Incineration Fuel。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「焚化燃料」对应 Incineration Fuel 的物品名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品，game_term/required；为任务奖励燃料。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8 的「焚化燃料瓶」共享燃料词干，语境区分合理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:240",
+      "evidence_rows": [
+        966
+      ],
+      "source_excerpt": "give_item (Flask of Incinerator Fuel)",
+      "reason": "Flask of Incinerator Fuel 是脚本发放的具体燃料瓶物品，保留「焚化燃料瓶」并与 e7 燃料词干一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "966 为脚本发放 Flask of Incinerator Fuel 的完整发物记录。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「焚化燃料瓶」表达瓶装燃料，且与 e7「焚化燃料」词干一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品，game_term/required；脚本发放的具体物品名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7/e9 相关但用途不同；未强制统一 Incinerator 与 Incineration 的字面差异。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:55",
+      "evidence_rows": [
+        966
+      ],
+      "source_excerpt": "give_item (Flask of Incinerator Fuel)",
+      "reason": "give_item (Flask of Incinerator Fuel) 是整行脚本发物命令，需补 whole_record 保护，不应把内嵌物品名拆译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "966 整行即 give_item (Flask of Incinerator Fuel)，是运行时发物命令。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 整行保留；内嵌物品名不拆出翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "运行时命令，已补 whole_record 范围；仅保护该完整命令行。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 966 原文逐字一致，且不与 e8 的物品术语翻译冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:281",
+      "evidence_rows": [
+        2077,
+        2493,
+        2529
+      ],
+      "source_excerpt": "to_flask",
+      "reason": "to_flask 是脚本命令词，独立与分号串联中均出现；补 text 范围并说明均为运行时命令。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2077 为独立 to_flask；2493/2529 为分号串联命令中的 to_flask。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "运行时命令词不翻译，保留 to_flask。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "脚本命令/标识符，已补 text 范围并说明独立与嵌入用法均属运行时命令。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "三个出处均为同一命令词形，大小写和下划线一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:243",
+      "evidence_rows": [
+        1003,
+        3432
+      ],
+      "source_excerpt": "drop_item (Odd Key)",
+      "reason": "Odd Key 是脚本掉落与解锁条件中的钥匙物品名；「古怪钥匙」可保留为物品术语。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1003 为 drop_item (Odd Key)，3432 为 unlocked_with (Odd Key)，均指钥匙物品。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「古怪钥匙」对应 Odd Key 的物品名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品，game_term/required；脚本掉落与解锁条件中的钥匙。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处 Odd Key 同形同指，译名一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:228",
+    "terms:229",
+    "terms:230",
+    "terms:231",
+    "terms:232",
+    "terms:237",
+    "terms:239",
+    "terms:240",
+    "non_translate:55",
+    "non_translate:281",
+    "terms:243"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

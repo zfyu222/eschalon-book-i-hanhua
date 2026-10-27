@@ -1,0 +1,339 @@
+{
+  "review_complete": true,
+  "review_summary": "本批12个角色专名均出自墓碑、石棺刻名或贵族称谓，逐条核对原文、译名、专名分类及性别标记，未发现需要修改的条目。",
+  "acknowledged_findings": [],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:73",
+      "evidence_rows": [
+        3367
+      ],
+      "source_excerpt": "Count Vladimir",
+      "reason": "贵族头衔加人名，译名与男性身份相符。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3367 原文为“Count Vladimir”，是人物称谓。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Count”译“伯爵”，“Vladimir”译“弗拉基米尔”，构成“弗拉基米尔伯爵”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name 人物条目；Count 为男性贵族头衔。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与候选译名一致，无其他译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:74",
+      "evidence_rows": [
+        3368
+      ],
+      "source_excerpt": "Lord Radley",
+      "reason": "领主头衔加人名，译名与男性身份相符。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3368 原文为“Lord Radley”，是人物称谓。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Lord”译“领主”，“Radley”译“拉德利”，构成“拉德利领主”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name 人物条目；Lord 为男性贵族头衔。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与候选译名一致，无其他译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:75",
+      "evidence_rows": [
+        3141
+      ],
+      "source_excerpt": "Reubert Lamb",
+      "reason": "墓碑上的逝者姓名，音译完整。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3141 原文为“Reubert Lamb, d. 714”，条目取其中逝者姓名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Reubert Lamb”音译为“鲁伯特·兰姆”，姓名顺序和分隔符符合中文惯例。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name 人物条目；墓碑姓名，现有男性标记未见反证。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批墓碑人名音译体例一致，无其他候选。"
+        }
+      }
+    },
+    {
+      "ref": "characters:76",
+      "evidence_rows": [
+        3142
+      ],
+      "source_excerpt": "Grindstone Charlie",
+      "reason": "墓碑上的逝者绰号加名，译名保留原结构。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3142 原文为“Grindstone Charlie, died of poisoning”，条目取逝者绰号或姓名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Grindstone Charlie”译作“磨石查理”，保留绰号加名的结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name 人物条目；Charlie 按常见男性昵称保留男性标记。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与候选译名一致，无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:77",
+      "evidence_rows": [
+        3144
+      ],
+      "source_excerpt": "Mother Longstem",
+      "reason": "墓碑上的逝者称呼，女性称谓明确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3144 原文为“Mother Longstem, d. 688 Rest in peace.”，条目取逝者称呼。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Mother Longstem”译作“长茎母亲”，保留 Mother 的称谓义和 Longstem 别称。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name 人物条目；Mother 表明女性称谓。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与候选译名一致，无其他译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:79",
+      "evidence_rows": [
+        3152
+      ],
+      "source_excerpt": "Anabelle Brumbottom",
+      "reason": "墓碑上的女性逝者姓名，音译完整。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3152 原文为“Anabelle Brumbottom, beloved angel, b. 700 d. 722”，条目取逝者姓名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Anabelle Brumbottom”音译为“安娜贝尔·布伦巴顿”，符合姓名音译体例。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name 人物条目；Anabelle 为女性名，原文称 beloved angel。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与候选译名一致，无其他冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:80",
+      "evidence_rows": [
+        3153
+      ],
+      "source_excerpt": "Klauss",
+      "reason": "墓碑所记人名，原文有男性代词指代。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3153 原文为“Klauss the Ogre trainer. He found out too late that they couldn't be.”，条目取人名 Klauss。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Klauss”译作“克劳斯”，采用常见音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name 人物条目；原文用 He 指代，男性标记成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与候选译名一致，无其他冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:81",
+      "evidence_rows": [
+        3155
+      ],
+      "source_excerpt": "Meribeth Orn",
+      "reason": "墓碑上的女性逝者姓名，音译完整。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3155 原文为“Meribeth Orn, d. 661”，条目取逝者姓名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Meribeth Orn”音译为“梅里贝丝·奥恩”，姓名结构完整。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name 人物条目；Meribeth 为女性名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与候选译名一致，无其他冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:82",
+      "evidence_rows": [
+        3157
+      ],
+      "source_excerpt": "Lara",
+      "reason": "墓碑上的幼女名，女性指称明确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3157 原文为“Our little angel, Lara. Your death brings our ending.”，条目取人名 Lara。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Lara”译作“拉拉”，是常见音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name 人物条目；Lara 为女性名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与候选译名一致，无其他冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:83",
+      "evidence_rows": [
+        3173
+      ],
+      "source_excerpt": "Donadan Morse",
+      "reason": "石棺所刻逝者姓名，音译完整。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3173 原文为石棺刻名“Donadan Morse”，条目取该姓名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Donadan Morse”音译为“多纳丹·莫尔斯”，姓名结构完整。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name 人物条目；石棺刻名，现有男性标记未见性别反证。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与候选译名一致，无其他冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:84",
+      "evidence_rows": [
+        3175
+      ],
+      "source_excerpt": "Meneroth Hem",
+      "reason": "石棺所刻逝者姓名，原文未说明性别。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3175 原文为石棺刻名“Meneroth Hem”，条目取该姓名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Meneroth Hem”音译为“梅内罗斯·赫姆”，姓名结构完整。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name 人物条目；原文未说明性别，其他标记合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与候选译名一致，无其他冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:85",
+      "evidence_rows": [
+        3176
+      ],
+      "source_excerpt": "Gilruin Rendgorn",
+      "reason": "石棺所刻逝者姓名，原文未说明性别。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3176 原文为石棺刻名“Gilruin Rendgorn”，条目取该姓名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Gilruin Rendgorn”音译为“吉尔鲁因·伦德戈恩”，姓名结构完整。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name 人物条目；原文未说明性别，其他标记合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与候选译名一致，无其他冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:73",
+    "characters:74",
+    "characters:75",
+    "characters:76",
+    "characters:77",
+    "characters:79",
+    "characters:80",
+    "characters:81",
+    "characters:82",
+    "characters:83",
+    "characters:84",
+    "characters:85"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

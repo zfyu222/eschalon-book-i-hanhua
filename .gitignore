@@ -24,3 +24,15 @@ runtime_*.jsonl
 /TranslateFiles/image-text/TranslateFiles/logs/
 /TranslateFiles/image-text/TranslateFiles/tasks/
 /TranslateFiles/image-text/TranslateFiles/results/
+/TranslateFiles/state/
+/TranslateFiles/cache/
+/TranslateFiles/logs/
+/TranslateFiles/tasks/
+/TranslateFiles/results/
+/TranslateFiles/history/
+/TranslateFiles/backups/
+/TranslateFiles/source/
+/TranslateFiles/glossary/*/audit/glossary_contexts.json
+/TranslateFiles/*/analysis_input.json
+/TranslateFiles/glossary/*/analysis_input.json
+/TranslateFiles/glossary/*/glossary_original.json

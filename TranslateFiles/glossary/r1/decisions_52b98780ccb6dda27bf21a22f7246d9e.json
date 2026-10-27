@@ -1,0 +1,609 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核 e1-e12 全部 non_translate 条目：确认均为脚本命令/运行标识符而非普通正文；为每条补齐 applicability。唯一标识符按大小写敏感 text 保留；learn、remove 仅按整条记录保护，避免误保护 learn_book、remove_barrier、remove_gold 等子串及大写界面文本；narrative、quest 的独立命令用 whole_record，嵌入参数命令另以 literal_context 精确保护。未确认任何应隔离条目。",
+  "acknowledged_findings": [
+    "F0160",
+    "F0161",
+    "F0162",
+    "F0165",
+    "F0166",
+    "F0167",
+    "F0170",
+    "F0172",
+    "F0173",
+    "F0174",
+    "F0175",
+    "F0176"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "脚本命令标识符，用于击杀任务计数；保留原文。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "kill_quest 仅作为脚本命令标识符出现：ordinal 2047 独立命令，ordinal 997/2527 带参数嵌入；无普通英文语义，故按大小写敏感原文全文保留。"
+        }
+      },
+      "reason": "补齐 non_translate 的适用范围，说明其命令标识符性质及独立/嵌入用法。",
+      "evidence_rows": [
+        2047,
+        997,
+        2527
+      ],
+      "table": "non_translate",
+      "index": 255
+    },
+    {
+      "patch": {
+        "term_reason": "独立脚本命令 learn；仅整条记录为小写 learn 时保留，普通动词不全局禁翻。",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "小写 learn 仅在整条记录为独立脚本命令时保留（ordinal 2048）；ordinal 2544 的 'Learn ; Remove' 为大写界面/文本形式，不宜由本命令全局保护。"
+        }
+      },
+      "reason": "原条目未限定 learn 的适用语境；改为整条记录且区分大小写，避免误保护 learn_book 子串及普通词。",
+      "evidence_rows": [
+        2048,
+        2544
+      ],
+      "table": "non_translate",
+      "index": 256
+    },
+    {
+      "patch": {
+        "term_reason": "脚本命令标识符，用于学习书籍/技能；保留原文。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "learn_book 是完整脚本命令标识符，独立（ordinal 2049）及带编号嵌入（ordinal 2484/2491）均保留原文；该形式无普通英文语义。"
+        }
+      },
+      "reason": "补齐命令标识符的适用范围，覆盖独立和带参数嵌入用法。",
+      "evidence_rows": [
+        2049,
+        2484,
+        2491
+      ],
+      "table": "non_translate",
+      "index": 257
+    },
+    {
+      "patch": {
+        "term_reason": "脚本命令标识符，用于移动玩家；保留原文。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "move_player 是脚本命令标识符，独立（ordinal 2053）及嵌入（ordinal 605）均用于移动玩家，保留原文。"
+        }
+      },
+      "reason": "补齐命令标识符的适用范围，覆盖独立和嵌入用法。",
+      "evidence_rows": [
+        2053,
+        605
+      ],
+      "table": "non_translate",
+      "index": 260
+    },
+    {
+      "patch": {
+        "term_reason": "独立脚本命令 narrative；嵌入的 narrative 参数命令另按后接空格限定保护。",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "小写 narrative 作为独立脚本命令时保留（ordinal 2054）；普通叙述义不应全局禁翻，嵌入命令形态另见 additions。"
+        }
+      },
+      "reason": "原条目未限定 narrative 的语境；本条仅保护整条记录 'narrative'，避免普通叙述词被全局禁翻。",
+      "evidence_rows": [
+        2054,
+        1541
+      ],
+      "table": "non_translate",
+      "index": 261
+    },
+    {
+      "patch": {
+        "term_reason": "独立脚本命令 no_crime；保留原文。",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "no_crime 仅作为独立脚本命令出现于整条记录（ordinal 2055），无嵌入正文用法。"
+        }
+      },
+      "reason": "独立命令优先使用 whole_record，避免无依据全局禁翻。",
+      "evidence_rows": [
+        2055
+      ],
+      "table": "non_translate",
+      "index": 262
+    },
+    {
+      "patch": {
+        "term_reason": "脚本命令标识符，用于切换 NPC 显示；保留原文。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "npc_disp_change 是脚本命令标识符，独立（ordinal 2058）及嵌入（ordinal 886）均用于切换 NPC 显示，保留原文。"
+        }
+      },
+      "reason": "补齐命令标识符的适用范围，覆盖独立和嵌入用法。",
+      "evidence_rows": [
+        2058,
+        886
+      ],
+      "table": "non_translate",
+      "index": 265
+    },
+    {
+      "patch": {
+        "term_reason": "独立小写脚本命令 quest；大写 Quest 界面标签不在此列。",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "小写 quest 作为独立脚本命令时保留（ordinal 2060）；大写 Quest（ordinal 1825）是独立界面标签，不应被此命令保护；嵌入小写参数命令另见 additions。"
+        }
+      },
+      "reason": "原条目未区分小写命令与大写界面标签；改为 whole_record 且区分大小写。",
+      "evidence_rows": [
+        2060,
+        1780,
+        1825
+      ],
+      "table": "non_translate",
+      "index": 267
+    },
+    {
+      "patch": {
+        "term_reason": "脚本命令标识符，用于任务步骤；保留原文。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "quest_step 是脚本命令标识符，独立（ordinal 2061）及嵌入（ordinal 985）均带步骤编号，保留原文。"
+        }
+      },
+      "reason": "补齐命令标识符的适用范围，覆盖独立和嵌入用法。",
+      "evidence_rows": [
+        2061,
+        985
+      ],
+      "table": "non_translate",
+      "index": 268
+    },
+    {
+      "patch": {
+        "term_reason": "独立小写脚本命令 remove；普通动词及大写 Remove 界面文本不由此全局保护。",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "小写 remove 仅在整条记录为独立脚本命令时保留（ordinal 2062）；ordinal 2544 的 'Learn ; Remove' 为大写界面/文本形式，且 remove_barrier/remove_gold 有独立条目，不应由本条全局保护。"
+        }
+      },
+      "reason": "原条目未限定 remove 的适用语境；改为整条记录且区分大小写，避免误保护子串和普通词。",
+      "evidence_rows": [
+        2062,
+        2544
+      ],
+      "table": "non_translate",
+      "index": 269
+    },
+    {
+      "patch": {
+        "term_reason": "独立脚本命令 remove_barrier；保留原文。",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "remove_barrier 仅作为独立脚本命令出现于整条记录（ordinal 2063），无嵌入正文用法。"
+        }
+      },
+      "reason": "独立命令优先使用 whole_record，避免无依据全局禁翻。",
+      "evidence_rows": [
+        2063
+      ],
+      "table": "non_translate",
+      "index": 270
+    },
+    {
+      "patch": {
+        "term_reason": "脚本命令标识符，用于扣除金币；保留原文。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "remove_gold 是脚本命令标识符，独立（ordinal 2064）及嵌入（ordinal 595）均用于扣除金币，保留原文。"
+        }
+      },
+      "reason": "补齐命令标识符的适用范围，覆盖独立和嵌入用法。",
+      "evidence_rows": [
+        2064,
+        595
+      ],
+      "table": "non_translate",
+      "index": 271
+    }
+  ],
+  "quarantine": [],
+  "additions": [
+    {
+      "table": "non_translate",
+      "row": {
+        "source": "narrative",
+        "term_reason": "脚本命令，后接数字参数；保留原文。",
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "",
+          "suffix": " ",
+          "reason": "仅保护小写 narrative 后紧跟空格的命令形态（如 ordinal 1541 'narrative 76'），避免把普通叙述词全局禁翻。"
+        }
+      },
+      "reason": "e5 的独立命令已按 whole_record 保护；另需精确保护后接参数的嵌入命令形态。",
+      "evidence_rows": [
+        1541
+      ]
+    },
+    {
+      "table": "non_translate",
+      "row": {
+        "source": "quest",
+        "term_reason": "小写脚本命令，后接任务参数；保留原文。",
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "",
+          "suffix": " ",
+          "reason": "仅保护小写 quest 后紧跟空格的命令形态（如 ordinal 1780 'quest 23 9'、ordinal 595 '... ; quest 10 2 ...'），大写 Quest 界面标签不在此列。"
+        }
+      },
+      "reason": "e8 的独立小写命令已按 whole_record 保护；另需精确保护后接参数的嵌入命令形态。",
+      "evidence_rows": [
+        1780,
+        595
+      ]
+    }
+  ],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:255",
+      "evidence_rows": [
+        2047,
+        997,
+        2527
+      ],
+      "source_excerpt": "kill_quest",
+      "reason": "kill_quest 是击杀任务脚本命令，独立与带参数嵌入形式均保留；已补大小写敏感全文适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2047 原文为 'kill_quest'，ordinal 997 为 'kill_quest 1'，ordinal 2527 中为 '... ; kill_quest 18 ; ...'，均为脚本命令而非普通词。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保留原文 kill_quest，不译作中文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归类 non_translate 正确：是运行命令标识符，不是正文可译词。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已补为 case_sensitive=true 的 text，覆盖独立及带参数嵌入形式，因该标识符无普通英文语义。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:256",
+      "evidence_rows": [
+        2048,
+        2544
+      ],
+      "source_excerpt": "learn",
+      "reason": "learn 仅在整条记录为小写 learn 时作为脚本命令保留；已避免把 learn_book 子串或大写 Learn ; Remove 界面文本全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2048 原文为 'learn'，是独立命令；ordinal 2544 为 'Learn ; Remove'，大写形式不宜由小写命令行全局保护。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留原文 learn；普通动词 learn 及界面 Learn 不进入该非翻译项。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "non_translate 正确：独立脚本命令。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原无 scope；已改为 whole_record 且 case_sensitive=true，仅保护整条记录 'learn'，避免 learn_book 子串及普通/界面文本被误保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:257",
+      "evidence_rows": [
+        2049,
+        2484,
+        2491
+      ],
+      "source_excerpt": "learn_book",
+      "reason": "learn_book 是完整脚本命令标识符，独立及带编号嵌入均保留；已补大小写敏感全文范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2049 原文为 'learn_book'，ordinal 2484 为 '... ; learn_book 36'，ordinal 2491 为 '... ; learn_book 40'，均为命令标识符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保留原文 learn_book，不译作中文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归类 non_translate 正确：是完整脚本命令标识符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已补为 case_sensitive=true 的 text，覆盖独立及嵌入用法，并与 learn 条目区分。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:260",
+      "evidence_rows": [
+        2053,
+        605
+      ],
+      "source_excerpt": "move_player",
+      "reason": "move_player 是移动玩家脚本命令，独立及嵌入均保留；已补大小写敏感全文范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2053 原文为 'move_player'，ordinal 605 为 '... ; move_player 8357 ; ...'，均为脚本命令。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保留原文 move_player，不译作中文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归类 non_translate 正确：是脚本命令标识符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已补为 case_sensitive=true 的 text，覆盖独立及带参数嵌入形式。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:261",
+      "evidence_rows": [
+        2054,
+        1541
+      ],
+      "source_excerpt": "narrative",
+      "reason": "narrative 作为独立小写命令需保留；嵌入参数命令另以 literal_context 限定，普通叙述义不全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2054 原文为 'narrative'，ordinal 1541 为 'narrative 76'，均为脚本命令形态。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "独立命令保留原文 narrative；普通叙述词 narrative 不由此全局保护。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "non_translate 正确：脚本命令，非普通叙述词。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原无 scope；已将本条限定 whole_record case_sensitive=true，并在 additions 中以 literal_context 保护 'narrative ' 后接参数的嵌入命令形态。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:262",
+      "evidence_rows": [
+        2055
+      ],
+      "source_excerpt": "no_crime",
+      "reason": "no_crime 仅独立脚本命令出现；已限定整条记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2055 原文为 'no_crime'，是独立脚本命令。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保留原文 no_crime。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归类 non_translate 正确：是脚本命令标识符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已补为 whole_record case_sensitive=true，仅匹配整条记录 'no_crime'。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:265",
+      "evidence_rows": [
+        2058,
+        886
+      ],
+      "source_excerpt": "npc_disp_change",
+      "reason": "npc_disp_change 是 NPC 显示切换命令，独立及嵌入均保留；已补大小写敏感全文范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2058 原文为 'npc_disp_change'，ordinal 886 为 '... ; npc_disp_change 87 2'，均为脚本命令。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保留原文 npc_disp_change。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归类 non_translate 正确：是脚本命令标识符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已补为 case_sensitive=true 的 text，覆盖独立及带参数嵌入形式。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:267",
+      "evidence_rows": [
+        2060,
+        1780,
+        1825
+      ],
+      "source_excerpt": "quest",
+      "reason": "小写 quest 独立命令保留；大写 Quest 界面标签不由此保护，嵌入小写 quest 参数命令另以 literal_context 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2060 原文为 'quest'，ordinal 1780 为 'quest 23 9'，ordinal 1825 为 'Quest'；大小写和上下文不同。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "小写命令保留原文；大写 Quest 作为界面标签应可翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "non_translate 正确：小写 quest 为脚本命令；大写 Quest 是界面文本，不纳入此命令保护。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原无 scope；本条限定 whole_record case_sensitive=true，并在 additions 中以 literal_context 保护小写 'quest ' 后接参数的嵌入命令形态。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:268",
+      "evidence_rows": [
+        2061,
+        985
+      ],
+      "source_excerpt": "quest_step",
+      "reason": "quest_step 是任务步骤脚本命令，独立及嵌入均保留；已补大小写敏感全文范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2061 原文为 'quest_step'，ordinal 985 为 'quest_step 46'，均为脚本命令。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保留原文 quest_step。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归类 non_translate 正确：是脚本命令标识符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已补为 case_sensitive=true 的 text，覆盖独立及带参数嵌入形式。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:269",
+      "evidence_rows": [
+        2062,
+        2544
+      ],
+      "source_excerpt": "remove",
+      "reason": "remove 仅整条记录为小写 remove 时作为脚本命令保留；remove_barrier/remove_gold 及大写 Remove 界面文本不由本条全局保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2062 原文为 'remove'，是独立命令；ordinal 2544 为 'Learn ; Remove'，大写 Remove 不宜由小写命令行全局保护。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留原文 remove；普通动词及界面 Remove 不进入该非翻译项。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "non_translate 正确：独立脚本命令。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原无 scope；已改为 whole_record case_sensitive=true，仅保护整条记录 'remove'，避免 remove_barrier/remove_gold 子串及普通/界面文本被误保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:270",
+      "evidence_rows": [
+        2063
+      ],
+      "source_excerpt": "remove_barrier",
+      "reason": "remove_barrier 仅独立脚本命令出现；已限定整条记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2063 原文为 'remove_barrier'，是独立脚本命令。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保留原文 remove_barrier。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归类 non_translate 正确：是脚本命令标识符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已补为 whole_record case_sensitive=true，仅匹配整条记录 'remove_barrier'。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:271",
+      "evidence_rows": [
+        2064,
+        595
+      ],
+      "source_excerpt": "remove_gold",
+      "reason": "remove_gold 是扣除金币脚本命令，独立及嵌入均保留；已补大小写敏感全文范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2064 原文为 'remove_gold'，ordinal 595 为 '... ; remove_gold 100 ; ...'，均为脚本命令。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保留原文 remove_gold。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归类 non_translate 正确：是脚本命令标识符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已补为 case_sensitive=true 的 text，覆盖独立及带参数嵌入形式。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:255",
+    "non_translate:256",
+    "non_translate:257",
+    "non_translate:260",
+    "non_translate:261",
+    "non_translate:262",
+    "non_translate:265",
+    "non_translate:267",
+    "non_translate:268",
+    "non_translate:269",
+    "non_translate:270",
+    "non_translate:271"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

@@ -1,0 +1,540 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核 e1-e10 全部 non_translate 条目：音效标识符、脚本命令、法术系别缩写与资源路径均保留原文；为每条补 applicability，避免全局禁翻，并对带参数命令/嵌入路径补充整行保护。",
+  "acknowledged_findings": [
+    "F0064",
+    "F0065",
+    "F0070",
+    "F0071",
+    "F0072",
+    "F0073",
+    "F0074",
+    "F0076",
+    "F0125",
+    "F0126"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": false,
+          "reason": "ordinal 1594/2314 为同一音效标识符的大小写变体，按完整标签保护。"
+        }
+      },
+      "reason": "补完整记录级保护，覆盖大小写变体且不全局禁翻。",
+      "evidence_rows": [
+        1594,
+        2314
+      ],
+      "table": "non_translate",
+      "index": 142
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 2012 是完整裸脚本命令 close_door；带数字参数的 3300-3302 另作完整行保护。"
+        }
+      },
+      "reason": "将裸命令限定为完整记录匹配，避免把普通词或子串一并禁翻。",
+      "evidence_rows": [
+        2012,
+        3300,
+        3301,
+        3302
+      ],
+      "table": "non_translate",
+      "index": 220
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 2013 是完整裸脚本命令 close_port；带数字参数的 3188 另作完整行保护。"
+        }
+      },
+      "reason": "将裸命令限定为完整记录匹配，避免全局子串禁翻。",
+      "evidence_rows": [
+        2013,
+        3188
+      ],
+      "table": "non_translate",
+      "index": 221
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 1597 是完整音效标识符 SFX_OpenWin。"
+        }
+      },
+      "reason": "补完整记录级保护，仅匹配该音效标签。",
+      "evidence_rows": [
+        1597
+      ],
+      "table": "non_translate",
+      "index": 143
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": false,
+          "reason": "ordinal 1616 与 corpus 1403 为 sfx_positive 的大小写变体，按完整标签保护。"
+        }
+      },
+      "reason": "补完整记录级保护并覆盖大小写变体。",
+      "evidence_rows": [
+        1616,
+        1403
+      ],
+      "table": "non_translate",
+      "index": 148
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": false,
+          "reason": "ordinal 1624/1799 与 corpus 2392 为 SFX_SpellFail 的大小写变体，按完整标签保护。"
+        }
+      },
+      "reason": "补完整记录级保护并覆盖大小写变体。",
+      "evidence_rows": [
+        1624,
+        1799,
+        2392
+      ],
+      "table": "non_translate",
+      "index": 149
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 1630 是独立音效标签 SFX_Notice；1277 的完整资源路径另作整行保护。"
+        }
+      },
+      "reason": "将独立标签限定为完整记录，路径部分另补整行保护。",
+      "evidence_rows": [
+        1630,
+        1277
+      ],
+      "table": "non_translate",
+      "index": 150
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 1648 是完整法术系别缩写标签 DI，短标识符只应整条匹配。"
+        }
+      },
+      "reason": "避免 DI 作为子串误禁普通文本。",
+      "evidence_rows": [
+        1648
+      ],
+      "table": "non_translate",
+      "index": 151
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 1649 是完整法术系别缩写标签 EL，短标识符只应整条匹配。"
+        }
+      },
+      "reason": "避免 EL 作为子串误禁普通文本。",
+      "evidence_rows": [
+        1649
+      ],
+      "table": "non_translate",
+      "index": 152
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 1654 是完整音效标识符 SFX_Fire_Rush。"
+        }
+      },
+      "reason": "补完整记录级保护，仅匹配该音效标签。",
+      "evidence_rows": [
+        1654
+      ],
+      "table": "non_translate",
+      "index": 154
+    }
+  ],
+  "quarantine": [],
+  "additions": [
+    {
+      "table": "non_translate",
+      "row": {
+        "source": "close_door 5286",
+        "term_reason": "ordinal 3300 为带数字参数的关门运行时命令，整行不可译。",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "保护带参命令完整行。"
+        }
+      },
+      "reason": "裸命令 close_door 的 whole_record 不覆盖带参数整行，补充整行保护。",
+      "evidence_rows": [
+        3300
+      ]
+    },
+    {
+      "table": "non_translate",
+      "row": {
+        "source": "close_door 2091",
+        "term_reason": "ordinal 3301 为带数字参数的关门运行时命令，整行不可译。",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "保护带参命令完整行。"
+        }
+      },
+      "reason": "裸命令 close_door 的 whole_record 不覆盖带参数整行，补充整行保护。",
+      "evidence_rows": [
+        3301
+      ]
+    },
+    {
+      "table": "non_translate",
+      "row": {
+        "source": "close_door 8886",
+        "term_reason": "ordinal 3302 为带数字参数的关门运行时命令，整行不可译。",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "保护带参命令完整行。"
+        }
+      },
+      "reason": "裸命令 close_door 的 whole_record 不覆盖带参数整行，补充整行保护。",
+      "evidence_rows": [
+        3302
+      ]
+    },
+    {
+      "table": "non_translate",
+      "row": {
+        "source": "close_port 8359",
+        "term_reason": "ordinal 3188 为带数字参数的关闭传送门/端口运行时命令，整行不可译。",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "保护带参命令完整行。"
+        }
+      },
+      "reason": "裸命令 close_port 的 whole_record 不覆盖带参数整行，补充整行保护。",
+      "evidence_rows": [
+        3188
+      ]
+    },
+    {
+      "table": "non_translate",
+      "row": {
+        "source": "sound/SFX_Notice.wav",
+        "term_reason": "ordinal 1277 为音效资源路径，整行不可译。",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "保护完整资源路径。"
+        }
+      },
+      "reason": "SFX_Notice 的 whole_record 不覆盖嵌入路径，补充完整路径保护。",
+      "evidence_rows": [
+        1277
+      ]
+    }
+  ],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:142",
+      "evidence_rows": [
+        1594
+      ],
+      "source_excerpt": "SFX_Stats_Close",
+      "reason": "核对为音效标识符，补完整标签级大小写不敏感保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1594 原文为 SFX_Stats_Close，条目 source 与完整记录一致；2314 为大小写变体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为音效标识符不译，保留 SFX_Stats_Close 原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原分类 non_translate 成立；补 applicability=whole_record（case_sensitive:false）以覆盖完整音效标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "1594 与 2314 仅大小写不同，按同一音效标识符统一保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:220",
+      "evidence_rows": [
+        2012,
+        3302
+      ],
+      "source_excerpt": "close_door",
+      "reason": "核对为脚本命令，裸命令与带参整行分别限定保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2012 为 close_door；3300-3302 为 close_door 加数字参数的完整命令记录。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留脚本命令 close_door，不译；带参数完整行另作非翻译记录保护。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立；本条目限定为完整裸命令 whole_record，并为 3300-3302 的完整带参命令新增 whole_record 保护。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "close_door 在裸命令与带参命令中同为脚本关键字，保留同一原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:221",
+      "evidence_rows": [
+        2013,
+        3188
+      ],
+      "source_excerpt": "close_port",
+      "reason": "核对为脚本命令，裸命令与带参整行分别限定保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2013 为 close_port；3188 为 close_port 8359 完整带参命令。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留脚本命令 close_port，不译；带参数完整行另作非翻译记录保护。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立；本条目限定为完整裸命令 whole_record，并为 3188 完整带参命令新增 whole_record 保护。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "close_port 在裸命令与带参命令中同为脚本关键字，保留同一原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:143",
+      "evidence_rows": [
+        1597
+      ],
+      "source_excerpt": "SFX_OpenWin",
+      "reason": "核对为音效标识符，补完整标签级保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1597 原文为 SFX_OpenWin，条目 source 与完整记录一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为音效标识符不译，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立；补 applicability=whole_record，仅匹配完整音效标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅此一条音效标签，无变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:148",
+      "evidence_rows": [
+        1616
+      ],
+      "source_excerpt": "sfx_positive",
+      "reason": "核对为音效标识符，补完整标签级大小写不敏感保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1616 为 sfx_positive；corpus ordinal 1403 为大小写变体 SFX_Positive。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为音效标识符不译，保留 sfx_positive 原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立；补 whole_record 且 case_sensitive:false，只匹配完整标签并覆盖大小写变体。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "1616 与 1403 仅大小写不同，按同一音效标识符统一保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:149",
+      "evidence_rows": [
+        1624
+      ],
+      "source_excerpt": "SFX_SpellFail",
+      "reason": "核对为音效标识符，补完整标签级大小写不敏感保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1624 为 SFX_SpellFail；1799 为 SFX_spellfail；corpus 2392 为 SFX_Spellfail。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为音效标识符不译，保留大小写变体原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立；补 whole_record 且 case_sensitive:false，只匹配完整音效标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "三种写法仅大小写差异，按同一音效标识符统一保护，不产生不同译名。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:150",
+      "evidence_rows": [
+        1630,
+        1277
+      ],
+      "source_excerpt": "SFX_Notice",
+      "reason": "核对为独立音效标签及资源路径内标识符，分别限定保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1630 为独立 SFX_Notice；corpus 1277 为 sound/SFX_Notice.wav 中的嵌入路径。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留独立音效标识符及资源路径原文，不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立；本条目限定为完整标签 whole_record，并为 1277 的完整资源路径新增 whole_record 保护。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立标签与路径内标识符同名，均按 SFX_Notice 原文保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:151",
+      "evidence_rows": [
+        1648
+      ],
+      "source_excerpt": "DI",
+      "reason": "核对为法术系别缩写，短标识符仅整条匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1648 原文为 DI，条目 source 与完整记录一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为法术系别缩写/界面标识符不译，保留 DI。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立；DI 很短且可能撞普通词，补 whole_record、case_sensitive:true，只匹配完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅此一条 DI 标签，无同形术语冲突证据，按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:152",
+      "evidence_rows": [
+        1649
+      ],
+      "source_excerpt": "EL",
+      "reason": "核对为法术系别缩写，短标识符仅整条匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1649 原文为 EL，条目 source 与完整记录一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为法术系别缩写/界面标识符不译，保留 EL。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立；EL 很短且可能撞普通词，补 whole_record、case_sensitive:true，只匹配完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅此一条 EL 标签，无同形术语冲突证据，按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:154",
+      "evidence_rows": [
+        1654
+      ],
+      "source_excerpt": "SFX_Fire_Rush",
+      "reason": "核对为音效标识符，补完整标签级保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1654 原文为 SFX_Fire_Rush，条目 source 与完整记录一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为音效标识符不译，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立；补 whole_record，仅匹配完整音效标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅此一条音效标签，无变体冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:142",
+    "non_translate:220",
+    "non_translate:221",
+    "non_translate:143",
+    "non_translate:148",
+    "non_translate:149",
+    "non_translate:150",
+    "non_translate:151",
+    "non_translate:152",
+    "non_translate:154"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

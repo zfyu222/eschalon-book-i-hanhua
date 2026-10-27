@@ -1,0 +1,557 @@
+{
+  "review_complete": true,
+  "review_summary": "本批 12 项均为 non_translate 的引擎/CSV 资源键或音效键，不是正文术语。已逐项核对独立行与嵌入字段用例，并通过 edits 为每项补充精确大小写的 applicability，保留运行保护。",
+  "acknowledged_findings": [
+    "F0226",
+    "F0227",
+    "F0228",
+    "F0229",
+    "F0231",
+    "F0232",
+    "F0233",
+    "F0234",
+    "F0235",
+    "F0246",
+    "F0248",
+    "F0249"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "IC_MISC 是固定大小写的物品类别/资源键；1341 为独立行值，2738 的 CSV 首字段也使用同一串。"
+        }
+      },
+      "reason": "补齐非翻译标识的适用范围，覆盖独立行值与内嵌 CSV 字段。",
+      "evidence_rows": [
+        1341,
+        2738
+      ],
+      "table": "non_translate",
+      "index": 340
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "IC_REACTANT 是固定大小写的反应物类别/资源键；1350 为独立行值，2741 的 CSV 首字段也使用同一串。"
+        }
+      },
+      "reason": "补齐非翻译标识的适用范围，覆盖独立行值与内嵌 CSV 字段。",
+      "evidence_rows": [
+        1350,
+        2741
+      ],
+      "table": "non_translate",
+      "index": 341
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "IC_GEM 是固定大小写的宝石类别/资源键；1346 为独立行值，2744 的 CSV 首字段也使用同一串。"
+        }
+      },
+      "reason": "补齐非翻译标识的适用范围，覆盖独立行值与内嵌 CSV 字段。",
+      "evidence_rows": [
+        1346,
+        2744
+      ],
+      "table": "non_translate",
+      "index": 342
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "IC_GAUNTS 是固定大小写的护手类别/资源键；1334 为独立行值，2748 的 CSV 首字段也使用同一串。"
+        }
+      },
+      "reason": "补齐非翻译标识的适用范围，覆盖独立行值与内嵌 CSV 字段。",
+      "evidence_rows": [
+        1334,
+        2748
+      ],
+      "table": "non_translate",
+      "index": 343
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "IC_BOOTS 是固定大小写的靴子类别/资源键；1338 为独立行值，2763 的 CSV 首字段也使用同一串。"
+        }
+      },
+      "reason": "补齐非翻译标识的适用范围，覆盖独立行值与内嵌 CSV 字段。",
+      "evidence_rows": [
+        1338,
+        2763
+      ],
+      "table": "non_translate",
+      "index": 345
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "IC_RING 是固定大小写的戒指类别/资源键；1336 为独立行值，2765 的 CSV 首字段也使用同一串。"
+        }
+      },
+      "reason": "补齐非翻译标识的适用范围，覆盖独立行值与内嵌 CSV 字段。",
+      "evidence_rows": [
+        1336,
+        2765
+      ],
+      "table": "non_translate",
+      "index": 346
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "IC_TORSO 是固定大小写的躯干护甲类别/资源键；1331 为独立行值，2768 的 CSV 首字段也使用同一串。"
+        }
+      },
+      "reason": "补齐非翻译标识的适用范围，覆盖独立行值与内嵌 CSV 字段。",
+      "evidence_rows": [
+        1331,
+        2768
+      ],
+      "table": "non_translate",
+      "index": 347
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "IC_FOOD 是固定大小写的食物类别/资源键；1352 为独立行值，2769 的 CSV 首字段也使用同一串。"
+        }
+      },
+      "reason": "补齐非翻译标识的适用范围，覆盖独立行值与内嵌 CSV 字段。",
+      "evidence_rows": [
+        1352,
+        2769
+      ],
+      "table": "non_translate",
+      "index": 348
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "IC_REAGENT 是固定大小写的施法材料类别/资源键；1349 为独立行值，2772 的 CSV 首字段也使用同一串。"
+        }
+      },
+      "reason": "补齐非翻译标识的适用范围，覆盖独立行值与内嵌 CSV 字段。",
+      "evidence_rows": [
+        1349,
+        2772
+      ],
+      "table": "non_translate",
+      "index": 349
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "SFX_NPC_bow 是固定大小写的 NPC 弓箭音效资源键；2853 为独立行值，2946 的 CSV 音效字段也使用同一串。"
+        }
+      },
+      "reason": "补齐音效资源标识的适用范围，按精确大小写保留，避免与普通词或其他音效键混同。",
+      "evidence_rows": [
+        2853,
+        2946
+      ],
+      "table": "non_translate",
+      "index": 360
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "SFX_MAN_HURT 是固定大小写的人类受击音效资源键；2866 为独立行值，2954 的 CSV 音效字段也使用同一串。"
+        }
+      },
+      "reason": "补齐音效资源标识的适用范围，按精确大小写保留，避免与普通词或其他音效键混同。",
+      "evidence_rows": [
+        2866,
+        2954
+      ],
+      "table": "non_translate",
+      "index": 362
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "SFX_MAN_DIE 是固定大小写的人类死亡音效资源键；2867 为独立行值，2954 的 CSV 音效字段也使用同一串。"
+        }
+      },
+      "reason": "补齐音效资源标识的适用范围，按精确大小写保留，避免与普通词或其他音效键混同。",
+      "evidence_rows": [
+        2867,
+        2954
+      ],
+      "table": "non_translate",
+      "index": 363
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:340",
+      "evidence_rows": [
+        1341,
+        2738
+      ],
+      "source_excerpt": "IC_MISC",
+      "reason": "核对独立行 IC_MISC 与 CSV 首字段用法后，确认它是固定大小写的物品类别/资源键；补 applicability，不产生译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1341 为独立值，2738 的 CSV 首字段为同一串，拼写一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该项是 non_translate 运行标识，无正文译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "全大写下划线串属于物品类别/资源键，不是游戏世界专名或普通词。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text+case_sensitive 的 applicability，覆盖独立行与内嵌 CSV 字段，避免未限定禁用。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:341",
+      "evidence_rows": [
+        1350,
+        2741
+      ],
+      "source_excerpt": "IC_REACTANT",
+      "reason": "核对独立行 IC_REACTANT 与 CSV 首字段用法后，确认它是固定大小写的反应物类别/资源键。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1350 为独立值，2741 的 CSV 首字段为同一串，拼写一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该项是 non_translate 运行标识，无正文译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串是物品类别/资源键，放 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text+case_sensitive 的 applicability，覆盖独立行与内嵌 CSV 字段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:342",
+      "evidence_rows": [
+        1346,
+        2744
+      ],
+      "source_excerpt": "IC_GEM",
+      "reason": "核对独立行 IC_GEM 与 CSV 首字段用法后，确认它是固定大小写的宝石类别/资源键。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1346 为独立值，2744 的 CSV 首字段为同一串，拼写一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该项是 non_translate 运行标识，无正文译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串是物品类别/资源键，放 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text+case_sensitive 的 applicability，覆盖独立行与内嵌 CSV 字段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:343",
+      "evidence_rows": [
+        1334,
+        2748
+      ],
+      "source_excerpt": "IC_GAUNTS",
+      "reason": "核对独立行 IC_GAUNTS 与 CSV 首字段用法后，确认它是固定大小写的护手类别/资源键。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1334 为独立值，2748 的 CSV 首字段为同一串，拼写一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该项是 non_translate 运行标识，无正文译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串是物品类别/资源键，放 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text+case_sensitive 的 applicability，覆盖独立行与内嵌 CSV 字段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:345",
+      "evidence_rows": [
+        1338,
+        2763
+      ],
+      "source_excerpt": "IC_BOOTS",
+      "reason": "核对独立行 IC_BOOTS 与 CSV 首字段用法后，确认它是固定大小写的靴子类别/资源键。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1338 为独立值，2763 的 CSV 首字段为同一串，拼写一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该项是 non_translate 运行标识，无正文译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串是物品类别/资源键，放 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text+case_sensitive 的 applicability，覆盖独立行与内嵌 CSV 字段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:346",
+      "evidence_rows": [
+        1336,
+        2765
+      ],
+      "source_excerpt": "IC_RING",
+      "reason": "核对独立行 IC_RING 与 CSV 首字段用法后，确认它是固定大小写的戒指类别/资源键。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1336 为独立值，2765 的 CSV 首字段为同一串，拼写一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该项是 non_translate 运行标识，无正文译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串是物品类别/资源键，放 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text+case_sensitive 的 applicability，覆盖独立行与内嵌 CSV 字段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:347",
+      "evidence_rows": [
+        1331,
+        2768
+      ],
+      "source_excerpt": "IC_TORSO",
+      "reason": "核对独立行 IC_TORSO 与 CSV 首字段用法后，确认它是固定大小写的躯干护甲类别/资源键。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1331 为独立值，2768 的 CSV 首字段为同一串，拼写一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该项是 non_translate 运行标识，无正文译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串是物品类别/资源键，放 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text+case_sensitive 的 applicability，覆盖独立行与内嵌 CSV 字段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:348",
+      "evidence_rows": [
+        1352,
+        2769
+      ],
+      "source_excerpt": "IC_FOOD",
+      "reason": "核对独立行 IC_FOOD 与 CSV 首字段用法后，确认它是固定大小写的食物类别/资源键。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1352 为独立值，2769 的 CSV 首字段为同一串，拼写一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该项是 non_translate 运行标识，无正文译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串是物品类别/资源键，放 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text+case_sensitive 的 applicability，覆盖独立行与内嵌 CSV 字段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:349",
+      "evidence_rows": [
+        1349,
+        2772
+      ],
+      "source_excerpt": "IC_REAGENT",
+      "reason": "核对独立行 IC_REAGENT 与 CSV 首字段用法后，确认它是固定大小写的施法材料类别/资源键。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1349 为独立值，2772 的 CSV 首字段为同一串，拼写一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该项是 non_translate 运行标识，无正文译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串是物品类别/资源键，放 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text+case_sensitive 的 applicability，覆盖独立行与内嵌 CSV 字段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:360",
+      "evidence_rows": [
+        2853,
+        2946
+      ],
+      "source_excerpt": "SFX_NPC_bow",
+      "reason": "核对独立行与 NPC 弓箭手记录中的字段后，确认它是固定大小写的音效资源键。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2853 为独立值，2946 的 CSV 音效字段为同一串，拼写一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该项是 non_translate 音效标识，无正文译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串是引擎音效资源键，不是普通词或游戏世界专名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text+case_sensitive 的 applicability，按精确音效键保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:362",
+      "evidence_rows": [
+        2866,
+        2954
+      ],
+      "source_excerpt": "SFX_MAN_HURT",
+      "reason": "核对独立行与 Spire Guard 记录中的字段后，确认它是固定大小写的人类受击音效资源键。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2866 为独立值，2954 的 CSV 音效字段为同一串，拼写一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该项是 non_translate 音效标识，无正文译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串是引擎音效资源键，不是普通词或游戏世界专名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text+case_sensitive 的 applicability，按精确音效键保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:363",
+      "evidence_rows": [
+        2867,
+        2954
+      ],
+      "source_excerpt": "SFX_MAN_DIE",
+      "reason": "核对独立行与 Spire Guard 记录中的字段后，确认它是固定大小写的人类死亡音效资源键。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2867 为独立值，2954 的 CSV 音效字段为同一串，拼写一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该项是 non_translate 音效标识，无正文译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串是引擎音效资源键，不是普通词或游戏世界专名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text+case_sensitive 的 applicability，按精确音效键保留。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:340",
+    "non_translate:341",
+    "non_translate:342",
+    "non_translate:343",
+    "non_translate:345",
+    "non_translate:346",
+    "non_translate:347",
+    "non_translate:348",
+    "non_translate:349",
+    "non_translate:360",
+    "non_translate:362",
+    "non_translate:363"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

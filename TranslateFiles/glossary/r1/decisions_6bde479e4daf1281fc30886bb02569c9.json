@@ -1,0 +1,548 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核全部12条非翻译条目：e1-e3、e6-e12补全为完整记录或精确文本范围；e4 book、e5 condition 因存在同形普通词且缺少脚本命令语境，转隔离待查。未新增术语，未发现需合并的译名冲突。",
+  "acknowledged_findings": [
+    "F0118",
+    "F0120",
+    "F0121",
+    "F0123",
+    "F0128",
+    "F0129",
+    "F0130",
+    "F0131",
+    "F0132",
+    "F0133",
+    "F0137",
+    "F0138"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": false,
+          "reason": "2001 与 2301 均为只含音效标识的完整记录，存在 SFX_Narration/sfx_narration 大小写写法；无嵌入式用法证据。"
+        },
+        "term_reason": "音效资源标识符；完整记录存在大小写两种写法，运行时保留原样。"
+      },
+      "reason": "补全非翻译范围：仅在完整记录匹配，并按不区分大小写覆盖已见两种写法，避免影响其他文本。",
+      "evidence_rows": [
+        2001,
+        2301
+      ],
+      "table": "non_translate",
+      "index": 213
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "2006 为完整记录 add_gold；434 的脚本段含 |add_gold 83510，作为下划线命令关键字在句中同样需保留。"
+        },
+        "term_reason": "脚本命令关键字；后接数值参数增加金币，在完整记录和脚本文本中均保留原样。"
+      },
+      "reason": "补全精确大小写文本范围：add_gold 仅作下划线脚本命令，不会与普通英文 add gold 混淆。",
+      "evidence_rows": [
+        2006,
+        434
+      ],
+      "table": "non_translate",
+      "index": 215
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "仅见完整记录 alert_npcs，属于下划线脚本标识；无嵌入式证据，按完整记录保护即可。"
+        },
+        "term_reason": "脚本命令关键字；仅见完整标签 alert_npcs，保留原样。"
+      },
+      "reason": "补全为完整记录范围，避免对普通文本中的同形片段进行全局禁翻。",
+      "evidence_rows": [
+        2007
+      ],
+      "table": "non_translate",
+      "index": 216
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "仅见完整记录 cond_detected，下划线脚本条件标识；无嵌入式证据，按完整记录保护。"
+        },
+        "term_reason": "脚本条件关键字 cond_detected；仅见完整标签，保留原样。"
+      },
+      "reason": "补全为完整记录范围。",
+      "evidence_rows": [
+        2016
+      ],
+      "table": "non_translate",
+      "index": 224
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "2017 为完整记录 cond_gold；595 中 cond_gold 100 以命令形式出现在脚本段，需同时保护句中用法。"
+        },
+        "term_reason": "脚本条件关键字；后接数值阈值检查金币，完整记录和脚本段中均保留原样。"
+      },
+      "reason": "补全精确大小写文本范围，覆盖完整记录和脚本句中命令。",
+      "evidence_rows": [
+        2017,
+        595
+      ],
+      "table": "non_translate",
+      "index": 225
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "2018 为完整记录 cond_health；2498/2499 中 cond_health 位于脚本段开头并后接空格与 Message，需保护句中用法。"
+        },
+        "term_reason": "脚本条件关键字；检查生命值，完整记录和脚本段中均保留原样。"
+      },
+      "reason": "补全精确大小写文本范围，覆盖完整记录及嵌入式脚本条件。",
+      "evidence_rows": [
+        2018,
+        2498,
+        2499
+      ],
+      "table": "non_translate",
+      "index": 226
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "仅见完整记录 cond_item，下划线脚本条件标识；无嵌入式证据，按完整记录保护。"
+        },
+        "term_reason": "脚本条件关键字 cond_item；仅见完整标签，保留原样。"
+      },
+      "reason": "补全为完整记录范围。",
+      "evidence_rows": [
+        2019
+      ],
+      "table": "non_translate",
+      "index": 227
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "2020 为完整记录 cond_mana；2519/2520 中 cond_mana 位于脚本段开头并后接空格与 Message，需保护句中用法。"
+        },
+        "term_reason": "脚本条件关键字；检查法力值，完整记录和脚本段中均保留原样。"
+      },
+      "reason": "补全精确大小写文本范围，覆盖完整记录及嵌入式脚本条件。",
+      "evidence_rows": [
+        2020,
+        2519,
+        2520
+      ],
+      "table": "non_translate",
+      "index": 228
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "仅见完整记录 cond_spot，下划线脚本条件标识；无嵌入式证据，按完整记录保护。"
+        },
+        "term_reason": "脚本条件关键字 cond_spot；仅见完整标签，保留原样。"
+      },
+      "reason": "补全为完整记录范围。",
+      "evidence_rows": [
+        2024
+      ],
+      "table": "non_translate",
+      "index": 232
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "仅见完整记录 cond_state，下划线脚本条件标识；无嵌入式证据，按完整记录保护。"
+        },
+        "term_reason": "脚本条件关键字 cond_state；仅见完整标签，保留原样。"
+      },
+      "reason": "补全为完整记录范围。",
+      "evidence_rows": [
+        2025
+      ],
+      "table": "non_translate",
+      "index": 233
+    }
+  ],
+  "quarantine": [
+    {
+      "reason": "book 是普通词，1266 的标题 Eschalon: Book I 中 Book 为普通词，且另有大量嵌入式用例；现有证据不足以确认独立记录 book 是脚本命令，不能冻结为全局非翻译。",
+      "evidence_rows": [
+        2010,
+        1266
+      ],
+      "table": "non_translate",
+      "index": 218
+    },
+    {
+      "reason": "condition 是普通英文词，2171 的 Object condition: 中即普通名词用法；虽有完整记录 condition，但缺少脚本命令上下文，不能确认为运行标识符，转隔离。",
+      "evidence_rows": [
+        2015,
+        2171
+      ],
+      "table": "non_translate",
+      "index": 223
+    }
+  ],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:213",
+      "evidence_rows": [
+        2001,
+        2301
+      ],
+      "source_excerpt": "SFX_Narration",
+      "reason": "音效资源标识；已补全适用范围并保留原样。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2001 完整记录为 SFX_Narration；2301 为小写变体 sfx_narration，均属音效标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译标识，无目标译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "保留 non_translate，但原条目无适用范围；已限定为 whole_record 且不区分大小写。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "大小写变体同指一个音效标识，范围可同时覆盖，不与正文普通词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:215",
+      "evidence_rows": [
+        2006,
+        434
+      ],
+      "source_excerpt": "add_gold 83510",
+      "reason": "金币增加脚本命令；已限定精确大小写文本范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2006 完整记录为 add_gold；434 的脚本段含 |add_gold 83510，命令拼写一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译命令关键字，无目标译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立；原缺 applicability，已限定为 text 且 case_sensitive=true，因下划线命令只作脚本关键字。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "完整记录与脚本段中的 add_gold 拼写一致，均后接数值参数，无需区分译名。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:216",
+      "evidence_rows": [
+        2007
+      ],
+      "source_excerpt": "alert_npcs",
+      "reason": "脚本命令标签；已限定完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2007 完整记录为 alert_npcs，拼写与条目一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译脚本标签，无目标译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立；原无范围，已限定 whole_record，仅保护完整脚本标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅见该下划线拼写，无变体或同形普通词证据。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:218",
+      "evidence_rows": [
+        2010,
+        1266
+      ],
+      "source_excerpt": "book",
+      "reason": "book 兼具普通词与标题用法，现有证据不足，转隔离。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2010 完整记录为 book；1266 的标题 Eschalon: Book I 中 Book 为普通词，说明同一拼写有非脚本用途。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "原条目为禁翻候选且无确认译文；因证据不足转隔离，未生成译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原归 non_translate 证据不足：没有命令上下文，且 1266 显示普通词用法，不能冻结为运行标识。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "不能将同形普通词 Book 与所谓脚本 book 统一禁翻；需按上下文分开核查。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:223",
+      "evidence_rows": [
+        2015,
+        2171
+      ],
+      "source_excerpt": "Object condition:",
+      "reason": "condition 同形普通词用法明确，脚本义未证实，转隔离。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2015 完整记录为 condition；2171 的 Object condition: 中 condition 为普通名词，存在同形非脚本用法。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "原条目为禁翻候选且无译文；转隔离待确认是否应译作“状态/状况”。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原归 non_translate 证据不足：无命令上下文，2171 显示普通词或编辑器标签用法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "不能把普通词 condition 与脚本条件关键字无条件统一禁翻，需按上下文区分。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:224",
+      "evidence_rows": [
+        2016
+      ],
+      "source_excerpt": "cond_detected",
+      "reason": "脚本条件标签；已限定完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2016 完整记录为 cond_detected，拼写与条目一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译条件关键字，无目标译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立；原无范围，已限定 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅见该下划线拼写，无普通词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:225",
+      "evidence_rows": [
+        2017,
+        595
+      ],
+      "source_excerpt": "cond_gold 100",
+      "reason": "金币条件脚本关键字；已补全适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2017 完整记录为 cond_gold；595 的脚本段以 cond_gold 100 出现。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译条件关键字，无目标译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立；原缺范围，已限定 text/case_sensitive，覆盖完整记录和脚本句中命令。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处拼写一致，均作脚本条件关键字并带数值。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:226",
+      "evidence_rows": [
+        2018,
+        2498,
+        2499
+      ],
+      "source_excerpt": "cond_health ; Message(You feel the elixir course through your veins.)",
+      "reason": "生命值条件脚本关键字；已补全适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2018 完整记录为 cond_health；2498/2499 脚本段均以其开头并接 Message。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译条件关键字，无目标译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立；原缺范围，已限定 text/case_sensitive。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "三个候选都使用同一 cond_health 拼写；候选间仅 term_reason 措辞不同，无译名或变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:227",
+      "evidence_rows": [
+        2019
+      ],
+      "source_excerpt": "cond_item",
+      "reason": "物品条件脚本标签；已限定完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2019 完整记录为 cond_item，拼写与条目一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译条件关键字，无目标译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立；原无范围，已限定 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅见该拼写，无同形普通词证据。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:228",
+      "evidence_rows": [
+        2020,
+        2519,
+        2520
+      ],
+      "source_excerpt": "cond_mana ; Message(You feel a surge of power as the potion restores your arcane energies.)",
+      "reason": "法力条件脚本关键字；已补全适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2020 完整记录为 cond_mana；2519/2520 脚本段以 cond_mana 开头并接 Message。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译条件关键字，无目标译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立；原缺范围，已限定 text/case_sensitive。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一拼写；候选 term_reason 不同，但无译名或变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:232",
+      "evidence_rows": [
+        2024
+      ],
+      "source_excerpt": "cond_spot",
+      "reason": "脚本条件标签；已限定完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2024 完整记录为 cond_spot，拼写与条目一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译条件关键字，无目标译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立；原无范围，已限定 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅见该拼写，无同形普通词证据。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:233",
+      "evidence_rows": [
+        2025
+      ],
+      "source_excerpt": "cond_state",
+      "reason": "脚本条件标签；已限定完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2025 完整记录为 cond_state，拼写与条目一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译条件关键字，无目标译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 成立；原无范围，已限定 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅见该拼写，无同形普通词证据。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:213",
+    "non_translate:215",
+    "non_translate:216",
+    "non_translate:218",
+    "non_translate:223",
+    "non_translate:224",
+    "non_translate:225",
+    "non_translate:226",
+    "non_translate:227",
+    "non_translate:228",
+    "non_translate:232",
+    "non_translate:233"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

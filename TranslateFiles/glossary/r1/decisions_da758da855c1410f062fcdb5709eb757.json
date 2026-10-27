@@ -1,0 +1,364 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 的来源、推荐译名、分类与词族一致性；将 e7、e8 的推荐译名分别统一为“掘墓者护符”“督军铁护手”，其余条目保留原推荐译名。无隔离、新增或 allow_no_match 事项。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "掘墓者护符",
+        "term_reason": "Gravedigger's 指掘墓者，独特护符名"
+      },
+      "reason": "与候选词族中 Gravedigger's Flame 的“掘墓者”核心译名统一。",
+      "evidence_rows": [
+        2621
+      ],
+      "table": "terms",
+      "index": 435
+    },
+    {
+      "patch": {
+        "recommended_translation": "督军铁护手",
+        "term_reason": "Warlord 指督军，独特铁护手名"
+      },
+      "reason": "Warlord 在候选词族中统一为“督军”，原“军阀”不一致。",
+      "evidence_rows": [
+        2635
+      ],
+      "table": "terms",
+      "index": 436
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:425",
+      "evidence_rows": [
+        2566
+      ],
+      "source_excerpt": "Amulet of Accuracy",
+      "reason": "来源明确，推荐译名“精准护符”准确，类别为物品且护符译法一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2566 的原文包含 Amulet of Accuracy，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Accuracy 译作“精准”，Amulet 统一作“护符”，物品名语义完整。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "证据行标签 IC_AMULET 表明为护符物品，category_path=物品 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Amulet 统一译“护符”，与候选词族中的 Amulet 类条目核心一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:426",
+      "evidence_rows": [
+        2567
+      ],
+      "source_excerpt": "Amulet of Greater Protection",
+      "reason": "来源明确，“高等防护护符”与 Greater Protection 核心译法及 Amulet 词根一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2567 的原文包含 Amulet of Greater Protection，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Greater Protection 按“高等防护”处理，Amulet 作“护符”，语义完整。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "证据行标签 IC_AMULET 表明为护符物品，category_path=物品 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "“高等防护”与候选词族 Potion of Greater Protection 的高等防护核心一致，护符词根一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:427",
+      "evidence_rows": [
+        2568
+      ],
+      "source_excerpt": "Amulet of Protection",
+      "reason": "来源明确，“防护护符”准确，类别为物品，保护类词根与同族译名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2568 的原文包含 Amulet of Protection，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Protection 译作“防护”，Amulet 作“护符”，物品名简洁完整。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "证据行标签 IC_AMULET 表明为护符物品，category_path=物品 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "“防护”与候选词族 Protection 类译名核心一致，Amulet 作“护符”一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:428",
+      "evidence_rows": [
+        2569
+      ],
+      "source_excerpt": "Amulet of the Master Merchant",
+      "reason": "来源明确，推荐译名可表达大师级商人的护符，类别为物品且与商技能相关。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2569 的原文包含 Amulet of the Master Merchant，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Master Merchant 译作“大师商人”可表达大师级商人，Amulet 作“护符”；SKILL_MERCANTILE 对应商技能。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "证据行标签 IC_AMULET 表明为护符物品，category_path=物品 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "护符及商技能相关译法无直接冲突，未发现需统一的核心词。"
+        }
+      }
+    },
+    {
+      "ref": "terms:429",
+      "evidence_rows": [
+        2575
+      ],
+      "source_excerpt": "Bitter Naga Amulet",
+      "reason": "来源明确，推荐译名保留 Bitter 形容词与 Naga 音译，类别为物品。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2575 的原文包含 Bitter Naga Amulet，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Bitter Naga 译“苦涩娜迦”保留形容词和种族名，Amulet 作“护符”；无充分证据要求改译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "证据行标签 IC_AMULET 表明为护符物品，category_path=物品 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Naga 用“娜迦”音译，护符词根与同表一致；无词族冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:431",
+      "evidence_rows": [
+        2577
+      ],
+      "source_excerpt": "Bloodlust Amulet",
+      "reason": "来源明确，“嗜血护符”准确，类别为物品且护符译法一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2577 的原文包含 Bloodlust Amulet，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Bloodlust 译“嗜血”，Amulet 作“护符”，符合装备名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "证据行标签 IC_AMULET 表明为护符物品，category_path=物品 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "嗜血与护符译法无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:435",
+      "evidence_rows": [
+        2621
+      ],
+      "source_excerpt": "Gravedigger's Amulet",
+      "reason": "来源明确；Gravedigger's 与候选词族统一后推荐“掘墓者护符”，类别为物品。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2621 的原文包含 Gravedigger's Amulet，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "Gravedigger's 按候选词族统一为“掘墓者”，推荐译名改为“掘墓者护符”，原“掘墓人护符”虽同义但不一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "证据行标签 IC_AMULET 表明为护符物品，category_path=物品 合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与候选词族 Gravedigger's Flame 的“掘墓者”核心统一，修订推荐译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:436",
+      "evidence_rows": [
+        2635
+      ],
+      "source_excerpt": "Iron Gauntlets of the Warlord",
+      "reason": "来源明确；Warlord 与候选词族统一后推荐“督军铁护手”，类别为物品。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2635 的原文包含 Iron Gauntlets of the Warlord，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "Warlord 按候选词族统一为“督军”，推荐译名改为“督军铁护手”，原“军阀铁护手”不一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "证据行标签 IC_GAUNTS 表明为护手物品，category_path=物品 合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Warlord 核心词与候选词族“督军”统一，修订推荐译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:439",
+      "evidence_rows": [
+        2655
+      ],
+      "source_excerpt": "Mana Cache Amulet",
+      "reason": "来源明确，“法力蓄积护符”可表达增加法力的护符，类别为物品。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2655 的原文包含 Mana Cache Amulet，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Mana Cache 译“法力蓄积”，Amulet 作“护符”，能表达增加法力的护符名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "证据行标签 IC_AMULET 表明为护符物品，category_path=物品 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "法力与护符译法无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:445",
+      "evidence_rows": [
+        2686
+      ],
+      "source_excerpt": "Ring of the Fire Master",
+      "reason": "来源明确，“火焰大师之戒”准确，类别为物品且大师类译法无冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2686 的原文包含 Ring of the Fire Master，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Ring of the Fire Master 译“火焰大师之戒”，Ring 作“之戒”，语义完整。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "证据行标签 IC_RING 表明为戒指物品，category_path=物品 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Fire Master 用“火焰大师”，与候选词族中 Master 的“大师”类译法无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:451",
+      "evidence_rows": [
+        2697
+      ],
+      "source_excerpt": "Scholar's Ring",
+      "reason": "来源明确，“学者之戒”准确，类别为物品且学者词根一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2697 的原文包含 Scholar's Ring，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Scholar's Ring 译“学者之戒”，Scholar's 作“学者”，Ring 作“之戒”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "证据行标签 IC_RING 表明为戒指物品，category_path=物品 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Scholar's 与候选词族 Grand Scholars 的“学者”核心一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:456",
+      "evidence_rows": [
+        2840
+      ],
+      "source_excerpt": "Timberland Giant",
+      "reason": "来源明确，“林地巨人”准确，类别为种族，Timberland 与 Giant 词根均一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2840 的原文为 Timberland Giant，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Timberland 译“林地”，Giant 译“巨人”，组合“林地巨人”准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为巨人生物类型名，category_path=种族 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Timberland 与候选 Timberland Plains 的“林地”一致，Giant 与 Giants 的“巨人”一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:425",
+    "terms:426",
+    "terms:427",
+    "terms:428",
+    "terms:429",
+    "terms:431",
+    "terms:435",
+    "terms:436",
+    "terms:439",
+    "terms:445",
+    "terms:451",
+    "terms:456"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}

@@ -1,0 +1,549 @@
+{
+  "legacy_source": "TranslateFiles\\backups\\20261027_rebuild\\glossary_r1\\glossary_original.json",
+  "legacy_csv": "ainiee_glossary.csv",
+  "legacy_total": 210,
+  "same": 101,
+  "conflicts": [
+    {
+      "source": "Rai",
+      "table": "characters",
+      "v1_5": "莱",
+      "extracted": "拉伊"
+    },
+    {
+      "source": "Underground Repository",
+      "table": "terms",
+      "v1_5": "地下宝库",
+      "extracted": "地下仓库"
+    },
+    {
+      "source": "Willow Sap",
+      "table": "terms",
+      "v1_5": "柳树汁液",
+      "extracted": "柳树汁"
+    },
+    {
+      "source": "Eversleep Cemetery",
+      "table": "terms",
+      "v1_5": "长眠公墓",
+      "extracted": "永眠公墓"
+    },
+    {
+      "source": "Tangletree Forest",
+      "table": "terms",
+      "v1_5": "缠树森林",
+      "extracted": "缠木森林"
+    },
+    {
+      "source": "Crux of Ages",
+      "table": "terms",
+      "v1_5": "岁月圣枢",
+      "extracted": "岁月之核"
+    },
+    {
+      "source": "Demon Oil",
+      "table": "terms",
+      "v1_5": "恶魔之油",
+      "extracted": "恶魔油"
+    },
+    {
+      "source": "Bethel of the Green Moon",
+      "table": "terms",
+      "v1_5": "绿月贝瑟尔",
+      "extracted": "绿月圣堂"
+    },
+    {
+      "source": "Luna",
+      "table": "characters",
+      "v1_5": "月神",
+      "extracted": "露娜"
+    },
+    {
+      "source": "Absolute Restoration",
+      "table": "terms",
+      "v1_5": "绝对复原药水",
+      "extracted": "完全复原药水"
+    },
+    {
+      "source": "Secrets of Transference Circuits",
+      "table": "terms",
+      "v1_5": "《传送回路之秘》",
+      "extracted": "《传送回路之谜》"
+    },
+    {
+      "source": "Eastern Gap",
+      "table": "terms",
+      "v1_5": "东部裂谷",
+      "extracted": "东部隘口"
+    },
+    {
+      "source": "underfolk",
+      "table": "terms",
+      "v1_5": "地底之民",
+      "extracted": "地下民"
+    },
+    {
+      "source": "Owl's Roost Tavern",
+      "table": "terms",
+      "v1_5": "猫头鹰栖木酒馆",
+      "extracted": "枭栖酒馆"
+    },
+    {
+      "source": "Wayward Blacksmithe shop",
+      "table": "terms",
+      "v1_5": "任性铁匠铺",
+      "extracted": "迷途铁匠铺"
+    },
+    {
+      "source": "Temporal Linking",
+      "table": "terms",
+      "v1_5": "时空链接",
+      "extracted": "时间链接"
+    },
+    {
+      "source": "Deconstructing Portals and Gateways",
+      "table": "terms",
+      "v1_5": "传送门与通道的解构",
+      "extracted": "《解构传送门与通道》"
+    },
+    {
+      "source": "Bethel",
+      "table": "terms",
+      "v1_5": "贝瑟尔教堂",
+      "extracted": "贝瑟尔"
+    },
+    {
+      "source": "Salty Coast",
+      "table": "terms",
+      "v1_5": "咸海岸",
+      "extracted": "盐渍海岸"
+    },
+    {
+      "source": "Baron's Thicket",
+      "table": "terms",
+      "v1_5": "男爵灌木林",
+      "extracted": "男爵密林"
+    },
+    {
+      "source": "Goblin Citadel",
+      "table": "terms",
+      "v1_5": "哥布林要塞",
+      "extracted": "哥布林堡垒"
+    },
+    {
+      "source": "Azure pass",
+      "table": "terms",
+      "v1_5": "蔚蓝山口",
+      "extracted": "蔚蓝隘口"
+    },
+    {
+      "source": "Loneloft ruins",
+      "table": "terms",
+      "v1_5": "孤阁废墟",
+      "extracted": "隆洛夫特废墟"
+    },
+    {
+      "source": "Divine Ore",
+      "table": "terms",
+      "v1_5": "神域矿石",
+      "extracted": "神圣矿石"
+    },
+    {
+      "source": "Repository",
+      "table": "terms",
+      "v1_5": "宝库",
+      "extracted": "宝库区"
+    },
+    {
+      "source": "Shadowmirk",
+      "table": "terms",
+      "v1_5": "暗影沼泽",
+      "extracted": "影沼"
+    },
+    {
+      "source": "Darkwater",
+      "table": "terms",
+      "v1_5": "黑水镇",
+      "extracted": "暗水镇"
+    },
+    {
+      "source": "Crux",
+      "table": "terms",
+      "v1_5": "圣核",
+      "extracted": "圣枢"
+    },
+    {
+      "source": "Acid Grubbs",
+      "table": "terms",
+      "v1_5": "酸液幼虫",
+      "extracted": "酸液蛆虫"
+    },
+    {
+      "source": "Burley Oak",
+      "table": "terms",
+      "v1_5": "大麦橡树",
+      "extracted": "伯利橡树"
+    },
+    {
+      "source": "Basilica of Saint Velhera",
+      "table": "terms",
+      "v1_5": "圣维尔赫拉大教堂",
+      "extracted": "圣维赫拉大教堂"
+    },
+    {
+      "source": "Tanglewood",
+      "table": "terms",
+      "v1_5": "缠木林",
+      "extracted": "缠木森林"
+    },
+    {
+      "source": "Tangletree Ossuary",
+      "table": "terms",
+      "v1_5": "缠枝藏骨堂",
+      "extracted": "缠树藏骨堂"
+    },
+    {
+      "source": "Arachnid chamber",
+      "table": "terms",
+      "v1_5": "蛛类密室",
+      "extracted": "蛛形生物室"
+    },
+    {
+      "source": "Mystics",
+      "table": "terms",
+      "v1_5": "秘法师团",
+      "extracted": "秘术师"
+    },
+    {
+      "source": "archery",
+      "table": "terms",
+      "v1_5": "箭术",
+      "extracted": "弓术"
+    },
+    {
+      "source": "Fungal Slime",
+      "table": "terms",
+      "v1_5": "真菌软泥怪",
+      "extracted": "真菌史莱姆"
+    },
+    {
+      "source": "Vault Master",
+      "table": "terms",
+      "v1_5": "库房总管",
+      "extracted": "宝库总管"
+    },
+    {
+      "source": "Council Head",
+      "table": "terms",
+      "v1_5": "议长",
+      "extracted": "议会长"
+    },
+    {
+      "source": "Range Master",
+      "table": "terms",
+      "v1_5": "远程武器大师",
+      "extracted": "射术大师"
+    },
+    {
+      "source": "Barrea Mercenaries",
+      "table": "terms",
+      "v1_5": "巴雷亚佣兵",
+      "extracted": "巴瑞亚佣兵团"
+    },
+    {
+      "source": "Hive Larvae",
+      "table": "terms",
+      "v1_5": "巢穴幼虫",
+      "extracted": "蜂巢幼虫"
+    },
+    {
+      "source": "Lord Archable",
+      "table": "characters",
+      "v1_5": "阿查布尔勋爵",
+      "extracted": "阿奇博尔德领主"
+    },
+    {
+      "source": "Eleanor Mistlepine",
+      "table": "characters",
+      "v1_5": "埃莉诺·米斯特尔派恩",
+      "extracted": "埃莉诺·米斯尔派恩"
+    },
+    {
+      "source": "Lord Thorndike",
+      "table": "characters",
+      "v1_5": "桑代克领主",
+      "extracted": "索恩代克领主"
+    },
+    {
+      "source": "Erudor",
+      "table": "characters",
+      "v1_5": "埃鲁多",
+      "extracted": "埃鲁博"
+    },
+    {
+      "source": "Saint Velhera",
+      "table": "characters",
+      "v1_5": "圣维尔赫拉",
+      "extracted": "圣维赫拉"
+    },
+    {
+      "source": "Siam",
+      "table": "characters",
+      "v1_5": "赛厄姆",
+      "extracted": "西姆"
+    },
+    {
+      "source": "Goblin",
+      "table": "terms",
+      "v1_5": "地精",
+      "extracted": "哥布林"
+    },
+    {
+      "source": "Armor Rating",
+      "table": "terms",
+      "v1_5": "护甲等级",
+      "extracted": "护甲值"
+    },
+    {
+      "source": "ToHit",
+      "table": "terms",
+      "v1_5": "命中率",
+      "extracted": "命中"
+    }
+  ],
+  "missing_in_unified": [
+    {
+      "source": "Citadel",
+      "v1_5": "要塞"
+    },
+    {
+      "source": "Courier's Code",
+      "v1_5": "信使守则"
+    },
+    {
+      "source": "Parishes",
+      "v1_5": "教区"
+    },
+    {
+      "source": "Mithril",
+      "v1_5": "秘银"
+    },
+    {
+      "source": "Father Micahel",
+      "v1_5": "迈克尔神父"
+    },
+    {
+      "source": "Dwarves",
+      "v1_5": "矮人"
+    },
+    {
+      "source": "sextant",
+      "v1_5": "六分仪"
+    },
+    {
+      "source": "Tangletree",
+      "v1_5": "缠枝林"
+    },
+    {
+      "source": "Troll",
+      "v1_5": "巨魔"
+    },
+    {
+      "source": "Mages",
+      "v1_5": "法师"
+    },
+    {
+      "source": "amulet",
+      "v1_5": "护身符"
+    },
+    {
+      "source": "Goblin shaman",
+      "v1_5": "哥布林萨满"
+    },
+    {
+      "source": "Giant slayer",
+      "v1_5": "巨人杀手"
+    },
+    {
+      "source": "Chieftain",
+      "v1_5": "酋长"
+    },
+    {
+      "source": "acolytes",
+      "v1_5": "侍僧"
+    },
+    {
+      "source": "senior acolyte",
+      "v1_5": "高级侍僧"
+    },
+    {
+      "source": "initiate",
+      "v1_5": "入门学徒"
+    },
+    {
+      "source": "headmaster",
+      "v1_5": "院长"
+    },
+    {
+      "source": "grand mages",
+      "v1_5": "大法师"
+    },
+    {
+      "source": "mage",
+      "v1_5": "法师"
+    },
+    {
+      "source": "priest",
+      "v1_5": "牧师"
+    },
+    {
+      "source": "boatman",
+      "v1_5": "船夫"
+    },
+    {
+      "source": "adventurer",
+      "v1_5": "冒险者"
+    },
+    {
+      "source": "magick",
+      "v1_5": "魔法"
+    },
+    {
+      "source": "human",
+      "v1_5": "人类"
+    },
+    {
+      "source": "Slimes",
+      "v1_5": "软泥怪"
+    },
+    {
+      "source": "road tax",
+      "v1_5": "道路税"
+    },
+    {
+      "source": "Council",
+      "v1_5": "议会"
+    },
+    {
+      "source": "Swordsmanship",
+      "v1_5": "剑术"
+    },
+    {
+      "source": "Cleaving weapons",
+      "v1_5": "劈砍武器"
+    },
+    {
+      "source": "Bludgeoning weapons",
+      "v1_5": "钝击武器"
+    },
+    {
+      "source": "thrown weapons",
+      "v1_5": "投掷武器"
+    },
+    {
+      "source": "Elemental magick",
+      "v1_5": "元素魔法"
+    },
+    {
+      "source": "Mage Hall",
+      "v1_5": "法师大厅"
+    },
+    {
+      "source": "militia",
+      "v1_5": "民兵"
+    },
+    {
+      "source": "mercenary group",
+      "v1_5": "佣兵团"
+    },
+    {
+      "source": "inner crypt",
+      "v1_5": "内墓室"
+    },
+    {
+      "source": "crematorium",
+      "v1_5": "火化场"
+    },
+    {
+      "source": "giant larvae",
+      "v1_5": "巨型幼虫"
+    },
+    {
+      "source": "Captain",
+      "v1_5": "队长"
+    },
+    {
+      "source": "Malcolm",
+      "v1_5": "马尔科姆"
+    },
+    {
+      "source": "Book I",
+      "v1_5": "卷一"
+    },
+    {
+      "source": "Strength",
+      "v1_5": "力量"
+    },
+    {
+      "source": "Dexterity",
+      "v1_5": "敏捷"
+    },
+    {
+      "source": "Endurance",
+      "v1_5": "耐力"
+    },
+    {
+      "source": "Speed",
+      "v1_5": "速度"
+    },
+    {
+      "source": "Intelligence",
+      "v1_5": "智力"
+    },
+    {
+      "source": "Wisdom",
+      "v1_5": "智慧"
+    },
+    {
+      "source": "Perception",
+      "v1_5": "感知"
+    },
+    {
+      "source": "Concentration",
+      "v1_5": "专注"
+    },
+    {
+      "source": "Elemental",
+      "v1_5": "元素魔法"
+    },
+    {
+      "source": "Dodge",
+      "v1_5": "闪避"
+    },
+    {
+      "source": "Hide in Shadows",
+      "v1_5": "潜影"
+    },
+    {
+      "source": "Move Silently",
+      "v1_5": "潜行"
+    },
+    {
+      "source": "Skullduggery",
+      "v1_5": "机关术"
+    },
+    {
+      "source": "Light Armor",
+      "v1_5": "轻甲"
+    },
+    {
+      "source": "Heavy Armor",
+      "v1_5": "重甲"
+    },
+    {
+      "source": "Shield",
+      "v1_5": "盾牌"
+    }
+  ],
+  "note": "conflicts 只追记历史译名，不覆盖新提取结果；missing_in_unified 未强行新增条目。"
+}

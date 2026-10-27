@@ -1,0 +1,336 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对全部 11 条术语条目：地名、书名与游戏机制译名整体一致；保留「隆洛夫特」「埃尔德霍洛」「灌注」等现有标准；仅清理 e2 term_reason 中混入的版本备注与核对指令，无其他译名或分类改动。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "Blackwater 附近旧废墟，位于 Loneloft 旧址；据传有 Taurax 出没。"
+      },
+      "reason": "term_reason 混入非原文依据的 v1.5 备注与核对指令；按 637/3834 只保留旧 Loneloft 废墟及 Taurax 传闻的原文依据，译名仍与 Loneloft 基础名统一。",
+      "evidence_rows": [
+        637,
+        3834
+      ],
+      "table": "terms",
+      "index": 194
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:17",
+      "evidence_rows": [
+        438,
+        3251
+      ],
+      "source_excerpt": "Year 405 - The first permanent settlement called \"Loneloft\" is established in the mountains of western Thaermore; its founders are primarily miners and surveyors.",
+      "reason": "Loneloft 指泰尔莫尔西部山区的首个永久定居点，专名音译「隆洛夫特」；与 Loneloft ruins 的基础名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "438 明确定义首个永久定居点名为 Loneloft；3251 称其遗迹为首个定居点。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "隆洛夫特为稳定音译，未发现需改译的语义冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指具体定居点/遗迹地点，归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Loneloft ruins 共享基础名译法「隆洛夫特」。"
+        }
+      }
+    },
+    {
+      "ref": "terms:194",
+      "evidence_rows": [
+        637,
+        3834
+      ],
+      "source_excerpt": "They say that a few were spotted just a mile away at the site of the old Loneloft ruins!",
+      "reason": "Loneloft ruins 指 Blackwater 附近旧 Loneloft 废墟；保留「隆洛夫特废墟」以与基础名统一，term_reason 已清理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "637/3834 均以 old Loneloft ruins 指旧废墟，并提到 Taurax 传闻。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "「隆洛夫特废墟」保留 Loneloft 基础名并准确表达 ruins；未采用无原文依据的旧版备注改译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指具体废墟地点，地名合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Loneloft 的「隆洛夫特」基础名一致；term_reason 版本备注已另行移除。"
+        }
+      }
+    },
+    {
+      "ref": "terms:19",
+      "evidence_rows": [
+        446,
+        1013
+      ],
+      "source_excerpt": "To the north and west is the Province of Mistfell.",
+      "reason": "Mistfell 为 Eschalon 北部与西部的省份，人口最多；保留音译「米斯特费尔」，候选「雾落」为意译但无官方依据。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "446 明确 Province of Mistfell；1013 再次以 Mistfell 指沿海故乡所在区域。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "米斯特费尔为稳定音译；与同批省份名风格不冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指 Eschalon 的大省份，归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "原文单一名词 Mistfell，无词形变体冲突；「雾落」仅作候选，未发现必须改译证据。"
+        }
+      }
+    },
+    {
+      "ref": "terms:21",
+      "evidence_rows": [
+        446,
+        1009
+      ],
+      "source_excerpt": "The far northern region of Eschalon is called the Northland Expanse, an arctic Province of snowy tundra, frozen mountains, and glacial valleys.",
+      "reason": "Northland Expanse 为 Eschalon 最北的极地省份；译「北境荒原」符合原文地理描述。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "446 定义该省；1009 说明 Nor'landers 来自该永冻土/冰川区域。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "北境荒原对应 Northland + Expanse 的极地荒原义，简洁准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指极北省份，归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 1009 的 Northland Expanse 用例一致，无变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:22",
+      "evidence_rows": [
+        446
+      ],
+      "source_excerpt": "The southern Province of Eschalon is called the Rift Zone, a volcanic area of great fissures and rivers of magma.",
+      "reason": "Rift Zone 为 Eschalon 南部火山省份，以巨大裂隙与岩浆河为特征；译「裂谷区」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "446 明确其为南部省份并描述裂隙/岩浆。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "裂谷区准确表达 Rift Zone 的地理机制。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指火山省份区域，归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅 446 一处，无变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:23",
+      "evidence_rows": [
+        447
+      ],
+      "source_excerpt": "It was found in 425 by Lord Sam of Thorabur while splitting a massive granite bolder in Whispering Cave.",
+      "reason": "Whispering Cave 为发现 Crux of Ages 的洞穴专名；译「低语洞穴」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "447 以 in Whispering Cave 指明发现地点。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "低语洞穴直译 Whispering + Cave，作为洞穴名自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指具体洞穴地点，归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单处专名，无变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:26",
+      "evidence_rows": [
+        450,
+        462,
+        488,
+        681,
+        3258,
+        4183
+      ],
+      "source_excerpt": "It sounds like you just came from Elderhollow, a nearby village that was ruined a few years ago.",
+      "reason": "Elderhollow 为 Aridell 西南附近数年前被毁的村庄；译「埃尔德霍洛」，并作为复合店名/旅店地点的基础名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "462/488/681/3258 等多处均指遭战乱废弃的村庄；3258 路牌亦列其名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "埃尔德霍洛为稳定音译，适合地名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指具体村庄/城镇地点，归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Elderhollow Arms and Equipment、Elderhollow Inn Upstairs 均共享「埃尔德霍洛」基础名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:71",
+      "evidence_rows": [
+        437,
+        1042
+      ],
+      "source_excerpt": "Master Alchemists may also learn the process of applying these mixtures to weapons and armor, imbuing them with extra abilities.",
+      "reason": "Imbuing 指将炼金混合物直接施于武器/护甲以附加能力的游戏机制；译「灌注」。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "437 描述用 Ectoplasm 等直接灌注武器/护甲；1042 称其为 Alchemy 相关 process。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "灌注符合将材料/效果注入装备的动作义，且与书名「装备灌注」一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文称其为可学习的 art/process，归入技能作为游戏技艺类可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Imbuing Your Equipment 的「灌注」核心译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:109",
+      "evidence_rows": [
+        146,
+        437
+      ],
+      "source_excerpt": "Imbuing Your Equipment",
+      "reason": "Imbuing Your Equipment 是讲解灌注武器/护甲的书名；译《装备灌注》与 Imbuing 术语一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "146 为书名；437 内容讲用 Ectoplasm 等灌注装备。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《装备灌注》简洁表达书名，并与 Imbuing 译「灌注」一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "书是物品名，归物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Imbuing 的「灌注」共享核心译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:494",
+      "evidence_rows": [
+        3278
+      ],
+      "source_excerpt": "Elderhollow Arms and Equipment",
+      "reason": "Elderhollow Arms and Equipment 为 3278 店铺招牌名；译「埃尔德霍洛军备店」，保留 Elderhollow 基础名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3278 原文为店铺招牌/地点标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "埃尔德霍洛军备店简洁，Arms and Equipment 译军备可接受。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指店铺地点/招牌，归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Elderhollow 的「埃尔德霍洛」一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:521",
+      "evidence_rows": [
+        3340
+      ],
+      "source_excerpt": "Elderhollow Inn Upstairs",
+      "reason": "Elderhollow Inn Upstairs 为 3340 地点名，指埃尔德霍洛旅店楼上；保留 Elderhollow 基础名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3340 原文为地点标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "埃尔德霍洛旅店楼上准确表达 Inn Upstairs。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指旅店楼上区域，归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Elderhollow 的「埃尔德霍洛」一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:17",
+    "terms:194",
+    "terms:19",
+    "terms:21",
+    "terms:22",
+    "terms:23",
+    "terms:26",
+    "terms:71",
+    "terms:109",
+    "terms:494",
+    "terms:521"
+  ],
+  "snapshot_sha256": "099bb6980ab727e21af26a9f60919bbc218aec7cd7c67a5f8fa2e6b37a2b3a1f",
+  "source_sha256": "82a51f43a2eb1a327903ff1142956de1f184abdedbdcc269a9324d7d1982bd15"
+}
