@@ -1,0 +1,699 @@
+{
+  "records": [
+    {
+      "id": "1",
+      "status": "text",
+      "reason": "逐项查看清晰证据图，确认标签文字。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Begin a New Adventure",
+          "box": [
+            0,
+            0,
+            1000,
+            100
+          ]
+        },
+        {
+          "text": "Restore a Saved Adventure",
+          "box": [
+            0,
+            100,
+            1000,
+            200
+          ]
+        },
+        {
+          "text": "Credits",
+          "box": [
+            0,
+            200,
+            1000,
+            300
+          ]
+        },
+        {
+          "text": "Exit",
+          "box": [
+            0,
+            300,
+            1000,
+            400
+          ]
+        },
+        {
+          "text": "Purchase the Full Game",
+          "box": [
+            0,
+            400,
+            1000,
+            500
+          ]
+        },
+        {
+          "text": "Begin a New Adventure",
+          "box": [
+            0,
+            500,
+            1000,
+            600
+          ]
+        },
+        {
+          "text": "Restore a Saved Adventure",
+          "box": [
+            0,
+            600,
+            1000,
+            700
+          ]
+        },
+        {
+          "text": "Credits",
+          "box": [
+            0,
+            700,
+            1000,
+            800
+          ]
+        },
+        {
+          "text": "Exit",
+          "box": [
+            0,
+            800,
+            1000,
+            900
+          ]
+        },
+        {
+          "text": "Purchase the Full Game",
+          "box": [
+            0,
+            900,
+            1000,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "status": "text",
+      "reason": "逐项查看清晰证据图，确认标签文字。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Begin a New Adventure",
+          "box": [
+            0,
+            0,
+            1000,
+            100
+          ]
+        },
+        {
+          "text": "Restore a Saved Adventure",
+          "box": [
+            0,
+            100,
+            1000,
+            200
+          ]
+        },
+        {
+          "text": "Credits",
+          "box": [
+            0,
+            200,
+            1000,
+            300
+          ]
+        },
+        {
+          "text": "Exit",
+          "box": [
+            0,
+            300,
+            1000,
+            400
+          ]
+        },
+        {
+          "text": "Purchase the Full Game at www.basiliskgames.com",
+          "box": [
+            0,
+            400,
+            1000,
+            500
+          ]
+        },
+        {
+          "text": "Begin a New Adventure",
+          "box": [
+            0,
+            500,
+            1000,
+            600
+          ]
+        },
+        {
+          "text": "Restore a Saved Adventure",
+          "box": [
+            0,
+            600,
+            1000,
+            700
+          ]
+        },
+        {
+          "text": "Credits",
+          "box": [
+            0,
+            700,
+            1000,
+            800
+          ]
+        },
+        {
+          "text": "Exit",
+          "box": [
+            0,
+            800,
+            1000,
+            900
+          ]
+        },
+        {
+          "text": "Purchase the Full Game at www.basiliskgames.com",
+          "box": [
+            0,
+            900,
+            1000,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "status": "no_text",
+      "reason": "已查看图像，仅有角色/场景/图标像素，无可辨认文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "3",
+      "status": "no_text",
+      "reason": "已查看图像，仅有角色/场景/图标像素，无可辨认文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "5",
+      "status": "no_text",
+      "reason": "已查看图像，仅有角色/场景/图标像素，无可辨认文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "6",
+      "status": "no_text",
+      "reason": "已查看图像，仅有角色/场景/图标像素，无可辨认文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "8",
+      "status": "no_text",
+      "reason": "已查看图像，仅有角色/场景/图标像素，无可辨认文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "9",
+      "status": "no_text",
+      "reason": "已查看图像，仅有角色/场景/图标像素，无可辨认文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "10",
+      "status": "no_text",
+      "reason": "已查看图像，仅有角色/场景/图标像素，无可辨认文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "11",
+      "status": "no_text",
+      "reason": "已查看图像，仅有角色/场景/图标像素，无可辨认文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "15",
+      "status": "no_text",
+      "reason": "已查看图像，仅有角色/场景/图标像素，无可辨认文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "16",
+      "status": "no_text",
+      "reason": "已查看图像，仅有角色/场景/图标像素，无可辨认文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "17",
+      "status": "no_text",
+      "reason": "已查看图像，仅有角色/场景/图标像素，无可辨认文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "18",
+      "status": "no_text",
+      "reason": "已查看图像，仅有角色/场景/图标像素，无可辨认文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "19",
+      "status": "no_text",
+      "reason": "已查看图像，仅有角色/场景/图标像素，无可辨认文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "20",
+      "status": "no_text",
+      "reason": "已查看图像，仅有角色/场景/图标像素，无可辨认文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "7",
+      "status": "text",
+      "reason": "逐项查看清晰证据图，确认标签文字。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Quest Journal",
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "status": "text",
+      "reason": "逐项查看清晰证据图，确认标签文字。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Nor'lander",
+          "box": [
+            0,
+            0,
+            333,
+            200
+          ]
+        },
+        {
+          "text": "Barrean",
+          "box": [
+            0,
+            200,
+            333,
+            400
+          ]
+        },
+        {
+          "text": "Rifter",
+          "box": [
+            0,
+            400,
+            333,
+            600
+          ]
+        },
+        {
+          "text": "Therish",
+          "box": [
+            0,
+            600,
+            333,
+            800
+          ]
+        },
+        {
+          "text": "Kessian",
+          "box": [
+            0,
+            800,
+            333,
+            1000
+          ]
+        },
+        {
+          "text": "Atheistic",
+          "box": [
+            333,
+            0,
+            666,
+            200
+          ]
+        },
+        {
+          "text": "Druidic",
+          "box": [
+            333,
+            200,
+            666,
+            400
+          ]
+        },
+        {
+          "text": "Virtuous",
+          "box": [
+            333,
+            400,
+            666,
+            600
+          ]
+        },
+        {
+          "text": "Nefarious",
+          "box": [
+            333,
+            600,
+            666,
+            800
+          ]
+        },
+        {
+          "text": "Agnostic",
+          "box": [
+            333,
+            800,
+            666,
+            1000
+          ]
+        },
+        {
+          "text": "Fighter",
+          "box": [
+            666,
+            0,
+            999,
+            200
+          ]
+        },
+        {
+          "text": "Rogue",
+          "box": [
+            666,
+            200,
+            999,
+            400
+          ]
+        },
+        {
+          "text": "Magick User",
+          "box": [
+            666,
+            400,
+            999,
+            600
+          ]
+        },
+        {
+          "text": "Healer",
+          "box": [
+            666,
+            600,
+            999,
+            800
+          ]
+        },
+        {
+          "text": "Ranger",
+          "box": [
+            666,
+            800,
+            999,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "status": "text",
+      "reason": "逐项查看清晰证据图，确认标签文字。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "You Have Died.",
+          "box": [
+            300,
+            0,
+            700,
+            190
+          ]
+        },
+        {
+          "text": "As you fall to the ground, a tunnel of light fills your vision and you feel yourself",
+          "box": [
+            0,
+            220,
+            1000,
+            470
+          ]
+        },
+        {
+          "text": "racing forward towards your destiny. In the light you sense the presence of your god.",
+          "box": [
+            0,
+            480,
+            1000,
+            720
+          ]
+        },
+        {
+          "text": "You will soon stand in judgment of your life's merits and faults.",
+          "box": [
+            70,
+            730,
+            930,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "status": "text",
+      "reason": "逐项查看清晰证据图，确认标签文字。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Name:",
+          "box": [
+            20,
+            20,
+            130,
+            80
+          ]
+        },
+        {
+          "text": "Title:",
+          "box": [
+            640,
+            0,
+            740,
+            55
+          ]
+        },
+        {
+          "text": "Gender:",
+          "box": [
+            855,
+            0,
+            970,
+            55
+          ]
+        },
+        {
+          "text": "Male",
+          "box": [
+            875,
+            55,
+            960,
+            95
+          ]
+        },
+        {
+          "text": "Origin",
+          "box": [
+            35,
+            105,
+            170,
+            160
+          ]
+        },
+        {
+          "text": "Axiom",
+          "box": [
+            190,
+            105,
+            325,
+            160
+          ]
+        },
+        {
+          "text": "Class",
+          "box": [
+            345,
+            105,
+            480,
+            160
+          ]
+        },
+        {
+          "text": "Attribute Points:",
+          "box": [
+            630,
+            100,
+            890,
+            158
+          ]
+        },
+        {
+          "text": "Next",
+          "box": [
+            520,
+            280,
+            615,
+            330
+          ]
+        },
+        {
+          "text": "Known Skills",
+          "box": [
+            80,
+            375,
+            330,
+            430
+          ]
+        },
+        {
+          "text": "Available Skills",
+          "box": [
+            365,
+            375,
+            598,
+            430
+          ]
+        },
+        {
+          "text": "Skill Points:",
+          "box": [
+            620,
+            600,
+            805,
+            658
+          ]
+        },
+        {
+          "text": "Continue",
+          "box": [
+            835,
+            680,
+            980,
+            735
+          ]
+        },
+        {
+          "text": "Strength",
+          "box": [
+            785,
+            165,
+            967,
+            207
+          ]
+        },
+        {
+          "text": "Dexterity",
+          "box": [
+            785,
+            215,
+            967,
+            257
+          ]
+        },
+        {
+          "text": "Endurance",
+          "box": [
+            785,
+            265,
+            967,
+            307
+          ]
+        },
+        {
+          "text": "Speed",
+          "box": [
+            785,
+            315,
+            967,
+            357
+          ]
+        },
+        {
+          "text": "Intelligence",
+          "box": [
+            785,
+            365,
+            967,
+            407
+          ]
+        },
+        {
+          "text": "Wisdom",
+          "box": [
+            785,
+            415,
+            967,
+            457
+          ]
+        },
+        {
+          "text": "Perception",
+          "box": [
+            785,
+            465,
+            967,
+            507
+          ]
+        },
+        {
+          "text": "Concentration",
+          "box": [
+            785,
+            515,
+            967,
+            557
+          ]
+        }
+      ]
+    }
+  ]
+}

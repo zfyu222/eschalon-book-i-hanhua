@@ -1,0 +1,8 @@
+# Keep byte hashes and embedded CSV newlines stable across Windows checkouts.
+/eschalonbook_images_text.csv -text
+/eschalonbook_images_text.mapping.json -text
+/eschalonbook_images_text_translated.csv -text
+/TranslateFiles/image-text/eschalonbook_images_text.csv -text
+/TranslateFiles/image-text/eschalonbook_images_text_translated.csv -text
+/TranslateFiles/image-text/image_bridge.json -text
+/TranslateFiles/image-text/image_context.json -text

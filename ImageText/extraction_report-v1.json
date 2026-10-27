@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "date": "2026-10-27",
+  "stage": "image_source_prepared_awaiting_translation_route",
+  "archive": "gfx.pak",
+  "archive_sha256": "0ffbf360080320dd91b98034431a1644b703ff32ecabb306560dfd7da55825d9",
+  "inventory": {"files": 225, "unique_images": 225, "errors": 0},
+  "ocr": {"engine": "PP-OCRv6 medium", "mode": "local GPU pipeline", "images": 225, "regions": 10098, "errors": 0},
+  "local_review": {
+    "model": "qwen3-vl:8b-instruct-q4_K_M",
+    "planned_images": 126,
+    "completed_images": 101,
+    "failed_images": 1,
+    "not_requested_images": 24,
+    "failure": "Dense map response reached the fixed 2048 output-token limit. No limit increase or repeated model request. Failed/unprocessed images were reviewed directly by the conversation agent."
+  },
+  "conversation_agent_review": {
+    "packages": [3,20,40,19,25],
+    "images": 107,
+    "method": "Full contact-sheet inspection plus full-resolution evidence for dense text. Explicit JSON decisions imported with conversation_agent identity, not human approval."
+  },
+  "export": {
+    "csv": "eschalonbook_images_text.csv",
+    "unique_texts": 231,
+    "positions": 296,
+    "images_with_confirmed_text": 42,
+    "queue_unresolved_images": 0,
+    "scope": "visually_confirmed_subset",
+    "all_game_text_complete": false
+  },
+  "layout_constraints": [
+    "Preserve dimensions, sprite slicing, alpha, normal/highlight state correspondence and original artwork.",
+    "Logos, names, URLs, numeric/tally glyphs need explicit translation-or-preserve decisions; do not replace all Latin text indiscriminately.",
+    "Map resource 200 has a small vertical northern place label that was not reliably transcribed. Keep the original map out of installation until that label and dense map layout are resolved.",
+    "Coordinates are visual-review rectangles, not a guaranteed clean-text mask. Check glyph bounds and neighboring artwork before rendering."
+  ],
+  "archive_adapter": {
+    "script": "Analysis/rebuild_image_archive.py",
+    "format": "20-byte header; zlib directory of 225 272-byte entries; per-entry zlib PNG streams",
+    "roundtrip_images_verified": 225,
+    "translated_images_built": 0,
+    "installed": false
+  },
+  "translation": {
+    "workspace": "TranslateFiles/image-text",
+    "route": "awaiting_user_selection",
+    "paid_requests_this_task": 0,
+    "formal_translation_exported": false
+  },
+  "boundaries": "Original game archive, existing text translations, launcher and release ZIP were not modified. This image task does not diagnose or fix the separate reported level-up crash."
+}

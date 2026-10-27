@@ -1,0 +1,280 @@
+{
+  "script": "latin",
+  "negative_samples": 20,
+  "weak_samples": 10,
+  "ordinary_samples": 10,
+  "qwen_batch": 100,
+  "seed": 42,
+  "families": {},
+  "images": {
+    "img_0028_000fe0af.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0034_001755cb.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0035_001edf2f.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0037_001ffbdc.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0038_00204db1.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0039_0020591e.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0042_0021ce11.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0044_002455ac.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0045_00247d82.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0046_0024aaf6.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0047_0024d8a8.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0048_00250d56.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0049_00253e82.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0053_004689a3.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0054_0047fa5a.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0055_004959f5.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0056_004b0919.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0089_007868fc.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0090_007879f4.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0091_007edc04.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0093_00833ba4.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0094_008791de.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0096_0087c8e6.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0097_00893c14.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0102_009789c3.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0147_013041e8.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0176_01775eca.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0178_017b68aa.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0179_017ba251.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0186_018595eb.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0197_018663fa.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0198_01879f90.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0199_0188cc89.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0200_0189f7aa.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0203_019a5254.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0205_01a00e6d.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0206_01a2fdbf.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0207_01a553a9.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0208_01a572f3.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0212_01afc079.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0215_01c223d1.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0216_01c27e46.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0218_01c2a563.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    },
+    "img_0224_01ce018c.png": {
+      "known_text": true,
+      "risks": [
+        "art"
+      ]
+    }
+  },
+  "calibration": {
+    "reviewer": "conversation_agent",
+    "evidence": "contact_01.png through contact_12.png visually inspected; mixed gold art text, white body text, tiny map labels, sprite sheets and scenery. No ordinary-font fast path validated from thumbnails.",
+    "limitations": "Contact sheets establish text presence only. Exact wording and boxes require full-resolution visual adjudication."
+  }
+}

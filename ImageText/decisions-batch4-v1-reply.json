@@ -1,0 +1,1391 @@
+{
+  "records": [
+    {
+      "id": "1",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "The Commonwealth of Thaermore\nProvince of eastern Eschalon",
+          "box": [
+            19,
+            25,
+            250,
+            108
+          ]
+        },
+        {
+          "text": "Shadowmirk",
+          "box": [
+            719,
+            17,
+            838,
+            58
+          ]
+        },
+        {
+          "text": "Bordertown",
+          "box": [
+            681,
+            83,
+            794,
+            125
+          ]
+        },
+        {
+          "text": "Darkford",
+          "box": [
+            550,
+            92,
+            638,
+            133
+          ]
+        },
+        {
+          "text": "Marshes of Boradan",
+          "box": [
+            856,
+            83,
+            962,
+            142
+          ]
+        },
+        {
+          "text": "Bastion Spire",
+          "box": [
+            350,
+            142,
+            438,
+            192
+          ]
+        },
+        {
+          "text": "Barrier Range",
+          "box": [
+            469,
+            150,
+            638,
+            233
+          ]
+        },
+        {
+          "text": "Camp Thorndyke",
+          "box": [
+            500,
+            233,
+            581,
+            278
+          ]
+        },
+        {
+          "text": "Bottomless Lake",
+          "box": [
+            312,
+            230,
+            419,
+            287
+          ]
+        },
+        {
+          "text": "Western Thaermore",
+          "box": [
+            112,
+            272,
+            256,
+            342
+          ]
+        },
+        {
+          "text": "Baron's Thicket",
+          "box": [
+            454,
+            292,
+            538,
+            350
+          ]
+        },
+        {
+          "text": "Vela",
+          "box": [
+            418,
+            337,
+            446,
+            365
+          ]
+        },
+        {
+          "text": "Lake Atria",
+          "box": [
+            625,
+            317,
+            712,
+            355
+          ]
+        },
+        {
+          "text": "North Parish",
+          "box": [
+            780,
+            293,
+            915,
+            330
+          ]
+        },
+        {
+          "text": "Great Tangletree Forest",
+          "box": [
+            562,
+            413,
+            700,
+            520
+          ]
+        },
+        {
+          "text": "Grimmhold",
+          "box": [
+            748,
+            375,
+            844,
+            412
+          ]
+        },
+        {
+          "text": "Aridell",
+          "box": [
+            869,
+            392,
+            935,
+            425
+          ]
+        },
+        {
+          "text": "South Parish",
+          "box": [
+            805,
+            467,
+            934,
+            505
+          ]
+        },
+        {
+          "text": "Elderhollow",
+          "box": [
+            748,
+            505,
+            832,
+            535
+          ]
+        },
+        {
+          "text": "Eastern Rift",
+          "box": [
+            699,
+            370,
+            749,
+            553
+          ]
+        },
+        {
+          "text": "Whistling Cave",
+          "box": [
+            592,
+            555,
+            724,
+            590
+          ]
+        },
+        {
+          "text": "Blackwater",
+          "box": [
+            312,
+            525,
+            422,
+            560
+          ]
+        },
+        {
+          "text": "Numinia River",
+          "box": [
+            160,
+            500,
+            278,
+            603
+          ]
+        },
+        {
+          "text": "Crakamir Rift",
+          "box": [
+            319,
+            580,
+            448,
+            628
+          ]
+        },
+        {
+          "text": "Loneloft",
+          "box": [
+            470,
+            595,
+            542,
+            628
+          ]
+        },
+        {
+          "text": "Gloomful Oubliette",
+          "box": [
+            332,
+            630,
+            416,
+            677
+          ]
+        },
+        {
+          "text": "Southern Gate",
+          "box": [
+            436,
+            650,
+            515,
+            697
+          ]
+        },
+        {
+          "text": "Timberland Plains",
+          "box": [
+            181,
+            647,
+            298,
+            702
+          ]
+        },
+        {
+          "text": "Giant's Village",
+          "box": [
+            88,
+            723,
+            201,
+            757
+          ]
+        },
+        {
+          "text": "Rotwood Forest",
+          "box": [
+            228,
+            733,
+            306,
+            778
+          ]
+        },
+        {
+          "text": "Rami Oasis",
+          "box": [
+            384,
+            742,
+            475,
+            772
+          ]
+        },
+        {
+          "text": "Goblin Citadel",
+          "box": [
+            218,
+            788,
+            334,
+            822
+          ]
+        },
+        {
+          "text": "Goblin Lands",
+          "box": [
+            269,
+            840,
+            411,
+            877
+          ]
+        },
+        {
+          "text": "The Barrens of Crakamir",
+          "box": [
+            231,
+            900,
+            406,
+            967
+          ]
+        },
+        {
+          "text": "Tangletree Ossuary",
+          "box": [
+            598,
+            750,
+            680,
+            798
+          ]
+        },
+        {
+          "text": "Lost Bay Lighthouse",
+          "box": [
+            461,
+            863,
+            542,
+            912
+          ]
+        },
+        {
+          "text": "The Gulf of Madria",
+          "box": [
+            582,
+            880,
+            712,
+            945
+          ]
+        },
+        {
+          "text": "The Salted Coast",
+          "box": [
+            726,
+            655,
+            862,
+            752
+          ]
+        },
+        {
+          "text": "Ash Island",
+          "box": [
+            836,
+            857,
+            928,
+            893
+          ]
+        },
+        {
+          "text": "N",
+          "box": [
+            40,
+            803,
+            69,
+            850
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "I",
+          "box": [
+            0,
+            0,
+            167,
+            1000
+          ]
+        },
+        {
+          "text": "II",
+          "box": [
+            167,
+            0,
+            334,
+            1000
+          ]
+        },
+        {
+          "text": "III",
+          "box": [
+            334,
+            0,
+            500,
+            1000
+          ]
+        },
+        {
+          "text": "IIII",
+          "box": [
+            500,
+            0,
+            667,
+            1000
+          ]
+        },
+        {
+          "text": "IIIII",
+          "box": [
+            667,
+            0,
+            833,
+            1000
+          ]
+        },
+        {
+          "text": "IIIIII",
+          "box": [
+            833,
+            0,
+            1000,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "4",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "5",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "6",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "7",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "8",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Thank you for playing Eschalon: Book I.",
+          "box": [
+            40,
+            0,
+            960,
+            340
+          ]
+        },
+        {
+          "text": "Now visit www.basiliskgames.com to find information on how the story continues in Eschalon: Book II",
+          "box": [
+            40,
+            550,
+            960,
+            950
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "10",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Left-click to select",
+          "box": [
+            350,
+            0,
+            650,
+            40
+          ]
+        },
+        {
+          "text": "Load",
+          "box": [
+            20,
+            75,
+            280,
+            220
+          ]
+        },
+        {
+          "text": "ESC to Cancel",
+          "box": [
+            400,
+            450,
+            650,
+            500
+          ]
+        },
+        {
+          "text": "Left-click to select / Right-click to delete",
+          "box": [
+            180,
+            500,
+            870,
+            550
+          ]
+        },
+        {
+          "text": "Save",
+          "box": [
+            20,
+            550,
+            280,
+            650
+          ]
+        },
+        {
+          "text": "ESC to Cancel",
+          "box": [
+            380,
+            950,
+            650,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "presents",
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "13",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Quick Travel",
+          "box": [
+            0,
+            0,
+            1000,
+            110
+          ]
+        },
+        {
+          "text": "Aridell",
+          "box": [
+            0,
+            110,
+            1000,
+            220
+          ]
+        },
+        {
+          "text": "Bordertown",
+          "box": [
+            0,
+            220,
+            1000,
+            330
+          ]
+        },
+        {
+          "text": "Grimmhold East",
+          "box": [
+            0,
+            330,
+            1000,
+            440
+          ]
+        },
+        {
+          "text": "Grimmhold West",
+          "box": [
+            0,
+            440,
+            1000,
+            550
+          ]
+        },
+        {
+          "text": "Blackwater",
+          "box": [
+            0,
+            550,
+            1000,
+            660
+          ]
+        },
+        {
+          "text": "Vela",
+          "box": [
+            0,
+            660,
+            1000,
+            770
+          ]
+        },
+        {
+          "text": "Loneloft",
+          "box": [
+            0,
+            770,
+            1000,
+            880
+          ]
+        },
+        {
+          "text": "Tangletree Ossuary",
+          "box": [
+            0,
+            880,
+            1000,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Strength",
+          "box": [
+            80,
+            136,
+            352,
+            182
+          ]
+        },
+        {
+          "text": "Dexterity",
+          "box": [
+            60,
+            182,
+            352,
+            230
+          ]
+        },
+        {
+          "text": "Endurance",
+          "box": [
+            56,
+            232,
+            352,
+            280
+          ]
+        },
+        {
+          "text": "Speed",
+          "box": [
+            160,
+            280,
+            352,
+            327
+          ]
+        },
+        {
+          "text": "Intelligence",
+          "box": [
+            520,
+            136,
+            860,
+            182
+          ]
+        },
+        {
+          "text": "Wisdom",
+          "box": [
+            584,
+            182,
+            860,
+            230
+          ]
+        },
+        {
+          "text": "Perception",
+          "box": [
+            528,
+            232,
+            860,
+            280
+          ]
+        },
+        {
+          "text": "Concentration",
+          "box": [
+            468,
+            280,
+            860,
+            327
+          ]
+        },
+        {
+          "text": "Combat",
+          "box": [
+            100,
+            373,
+            444,
+            418
+          ]
+        },
+        {
+          "text": "Resistance",
+          "box": [
+            564,
+            373,
+            936,
+            418
+          ]
+        },
+        {
+          "text": "To Hit Ability",
+          "box": [
+            104,
+            420,
+            388,
+            466
+          ]
+        },
+        {
+          "text": "Max Damage",
+          "box": [
+            104,
+            466,
+            396,
+            511
+          ]
+        },
+        {
+          "text": "Armor Rating",
+          "box": [
+            92,
+            511,
+            396,
+            552
+          ]
+        },
+        {
+          "text": "Dmg Reduction",
+          "box": [
+            60,
+            555,
+            400,
+            598
+          ]
+        },
+        {
+          "text": "Elements",
+          "box": [
+            572,
+            420,
+            808,
+            466
+          ]
+        },
+        {
+          "text": "Toxins",
+          "box": [
+            612,
+            466,
+            808,
+            511
+          ]
+        },
+        {
+          "text": "Magick",
+          "box": [
+            612,
+            511,
+            808,
+            552
+          ]
+        },
+        {
+          "text": "Disease",
+          "box": [
+            612,
+            555,
+            816,
+            598
+          ]
+        },
+        {
+          "text": "Skills",
+          "box": [
+            404,
+            618,
+            572,
+            666
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "16",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "17",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "BUY",
+          "box": [
+            10,
+            10,
+            980,
+            150
+          ]
+        },
+        {
+          "text": "To purchase from a merchant's inventory, left-click on a selected item to see the merchant's price. Spell and Potion descriptions can be obtained by right-clicking on scroll or flask icons.",
+          "box": [
+            20,
+            150,
+            980,
+            420
+          ]
+        },
+        {
+          "text": "SELL",
+          "box": [
+            10,
+            450,
+            980,
+            540
+          ]
+        },
+        {
+          "text": "To sell an item from your inventory, left-click on it to receive an offer. Identify unknown items by right-clicking on them.",
+          "box": [
+            20,
+            550,
+            980,
+            730
+          ]
+        },
+        {
+          "text": "Inventory Toggle",
+          "box": [
+            100,
+            790,
+            900,
+            840
+          ]
+        },
+        {
+          "text": "EXIT",
+          "box": [
+            100,
+            960,
+            900,
+            995
+          ]
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Draw Tactical Grid",
+          "box": [
+            250,
+            190,
+            850,
+            290
+          ]
+        },
+        {
+          "text": "Music Volume",
+          "box": [
+            300,
+            310,
+            900,
+            400
+          ]
+        },
+        {
+          "text": "Atmosphere Volume",
+          "box": [
+            250,
+            450,
+            900,
+            540
+          ]
+        },
+        {
+          "text": "Footsteps Volume",
+          "box": [
+            250,
+            590,
+            900,
+            680
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "You are paralyzed! Press SPACE to advance round...",
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Aridell",
+          "box": [
+            0,
+            0,
+            1000,
+            125
+          ]
+        },
+        {
+          "text": "Bordertown",
+          "box": [
+            0,
+            125,
+            1000,
+            250
+          ]
+        },
+        {
+          "text": "Grimmhold East",
+          "box": [
+            0,
+            250,
+            1000,
+            375
+          ]
+        },
+        {
+          "text": "Grimmhold West",
+          "box": [
+            0,
+            375,
+            1000,
+            500
+          ]
+        },
+        {
+          "text": "Blackwater",
+          "box": [
+            0,
+            500,
+            1000,
+            625
+          ]
+        },
+        {
+          "text": "Vela",
+          "box": [
+            0,
+            625,
+            1000,
+            750
+          ]
+        },
+        {
+          "text": "Loneloft",
+          "box": [
+            0,
+            750,
+            1000,
+            875
+          ]
+        },
+        {
+          "text": "Tangletree Ossuary",
+          "box": [
+            0,
+            875,
+            1000,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Aridell",
+          "box": [
+            0,
+            0,
+            1000,
+            125
+          ]
+        },
+        {
+          "text": "Bordertown",
+          "box": [
+            0,
+            125,
+            1000,
+            250
+          ]
+        },
+        {
+          "text": "Grimmhold East",
+          "box": [
+            0,
+            250,
+            1000,
+            375
+          ]
+        },
+        {
+          "text": "Grimmhold West",
+          "box": [
+            0,
+            375,
+            1000,
+            500
+          ]
+        },
+        {
+          "text": "Blackwater",
+          "box": [
+            0,
+            500,
+            1000,
+            625
+          ]
+        },
+        {
+          "text": "Vela",
+          "box": [
+            0,
+            625,
+            1000,
+            750
+          ]
+        },
+        {
+          "text": "Loneloft",
+          "box": [
+            0,
+            750,
+            1000,
+            875
+          ]
+        },
+        {
+          "text": "Tangletree Ossuary",
+          "box": [
+            0,
+            875,
+            1000,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Hit Points",
+          "box": [
+            110,
+            820,
+            450,
+            860
+          ]
+        },
+        {
+          "text": "Mana Points",
+          "box": [
+            540,
+            820,
+            950,
+            860
+          ]
+        },
+        {
+          "text": "Encumbrance",
+          "box": [
+            20,
+            940,
+            480,
+            985
+          ]
+        },
+        {
+          "text": "Experience",
+          "box": [
+            530,
+            940,
+            960,
+            985
+          ]
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "24",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Quiver",
+          "box": [
+            136,
+            90,
+            345,
+            154
+          ]
+        },
+        {
+          "text": "Helm",
+          "box": [
+            391,
+            90,
+            577,
+            154
+          ]
+        },
+        {
+          "text": "Cloak",
+          "box": [
+            659,
+            144,
+            850,
+            202
+          ]
+        },
+        {
+          "text": "Amulet",
+          "box": [
+            155,
+            222,
+            341,
+            280
+          ]
+        },
+        {
+          "text": "Torso",
+          "box": [
+            400,
+            285,
+            586,
+            344
+          ]
+        },
+        {
+          "text": "Primary Weapon",
+          "box": [
+            105,
+            415,
+            318,
+            485
+          ]
+        },
+        {
+          "text": "Belt",
+          "box": [
+            400,
+            402,
+            577,
+            451
+          ]
+        },
+        {
+          "text": "Gauntlet",
+          "box": [
+            709,
+            415,
+            914,
+            478
+          ]
+        },
+        {
+          "text": "Legs",
+          "box": [
+            409,
+            498,
+            582,
+            551
+          ]
+        },
+        {
+          "text": "Ring",
+          "box": [
+            91,
+            593,
+            268,
+            641
+          ]
+        },
+        {
+          "text": "Ring",
+          "box": [
+            727,
+            593,
+            905,
+            641
+          ]
+        },
+        {
+          "text": "Alternate Weapon",
+          "box": [
+            91,
+            688,
+            273,
+            766
+          ]
+        },
+        {
+          "text": "Shield",
+          "box": [
+            727,
+            688,
+            905,
+            756
+          ]
+        },
+        {
+          "text": "Feet",
+          "box": [
+            391,
+            790,
+            568,
+            846
+          ]
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Spell Journal",
+          "box": [
+            160,
+            0,
+            840,
+            100
+          ]
+        },
+        {
+          "text": "Realm / Spell Name",
+          "box": [
+            25,
+            100,
+            460,
+            150
+          ]
+        },
+        {
+          "text": "Mana Cost",
+          "box": [
+            700,
+            100,
+            960,
+            150
+          ]
+        },
+        {
+          "text": "Right-click spell name for description",
+          "box": [
+            70,
+            640,
+            950,
+            690
+          ]
+        },
+        {
+          "text": "OK",
+          "box": [
+            390,
+            900,
+            620,
+            990
+          ]
+        }
+      ]
+    }
+  ]
+}

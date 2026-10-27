@@ -1,0 +1,1 @@
+{"records":[{"id":"1","status":"no_text","reason":"放大图是带白色高光的棕色细杆武器精灵，没有文字笔画。","unreadable":false,"regions":[]},{"id":"2","status":"text","reason":"放大后可逐个辨认白色像素数字0至9。","unreadable":false,"regions":[{"text":"0123456789","box":[0,0,1000,1000]}]},{"id":"3","status":"text","reason":"绿色像素字清楚拼成大写SAVE。","unreadable":false,"regions":[{"text":"SAVE","box":[0,0,1000,1000]}]}]}

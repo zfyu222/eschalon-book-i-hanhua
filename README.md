@@ -574,3 +574,15 @@ BlitzMax 把字符串长度存在别处，字节扫描会把下一个字段的�
 - `create_release_patch.py` 的自定义工作流门禁首先拦下了打包：`TranslateFiles/state/workflow.sqlite3` 记录了一次 686 条的增量运行，但全部记录停在 `source` 阶段，`glossary_review` 还有 5 个 `running` 任务，从未进入 pilot/final 验收。
 - 核对结果：该运行的 686 条原文已全部出现在 `eschalonbook_text.csv`（4563 行，命中 686/686），译文经 `Analysis/merge_increment_translation.py` 并入主译表，属于**已并表的遗留运行记录**，不是本次发布载荷的来源。
 - 处理：把 `workflow.sqlite3` 与 `config/workflow.json` 归档到 `TranslateFiles/state/archive/20261020_increment_run/`，本版按 v1.0–v1.4 的既有验证流程（实机冒烟 + 载荷哈希复核）发布。后续如再启动自定义工作流，应从当前译表重新 `init`，不要复用该归档库。
+
+## 图片文字汉化（2026-10-27，源文准备完成）
+
+- 用户明确启用图片流程，偏好保存在 `localization_project.json`。本分支独立于既有正文、启动器和 v1.5 发布文件；本次没有修改游戏目录，也没有处理此前反馈的升级崩溃。
+- 来源：当前 Steam 游戏 `gfx.pak`，SHA-256 `0ffbf360080320dd91b98034431a1644b703ff32ecabb306560dfd7da55825d9`。复用 `Analysis/pak_extract/` 的 225 张 PNG，逐张核对归档中的压缩流，225/225 匹配；来源索引为 `ImageText/provenance.json` 和 `ImageText/archive_index.json`。
+- 抽取：使用 `game-image-extract`；本地 PP-OCRv6 medium 全量扫描 225 张、10098 个候选区域，扫描错误为 0。动画图集存在大量伪文字候选，模型分数不当作正确率。
+- 本地复核：`qwen3-vl:8b-instruct-q4_K_M` 原计划 126 张，成功 101 张；地图一张达到固定 2048 输出 Token 上限，剩余 24 张未请求。不提高预算、不重复成功项，转由当前对话 Agent 直接查看。对话 Agent 共导入 107 张图的视觉裁决，包含模型争议、直接复核及抽查；并非人工确认。
+- 正式图片源文：根目录 `eschalonbook_images_text.csv`，231 条去重文本；`eschalonbook_images_text.mapping.json` 记录 42 张含字图片、296 处文字位置、原始贴图与审核证据。包括菜单、角色创建、教程、状态栏、快捷键、装备、炼金、旅行、死亡/结局等。所有 225 张图的联系表已查看，但筛选、抽查及队列未决为 0 不代表全游戏没有漏字。
+- 校准与报告：`ImageText/policy-v1.json`、`ImageText/extraction_report-v1.json`；没有将普通字体族标记为已验证快通道。快照、OCR/Qwen 缓存和证据大图保留在本地工作目录，不入库。
+- 翻译交接：`prepare-translation` 已建立 `TranslateFiles/image-text/` 隔离子工程和逐条图片上下文，不初始化/改写正文的旧数据库。**尚未选定本次正式翻译路线，尚未发起付费请求、生成正式图片译文或安装中文贴图。**旧正文曾使用 AINiee，归档 API 配置不视为本次付费执行授权；待用户选择现行 SubAgent/API 路线。
+- 排版边界：坐标是视觉确认区域，不等于清字蒙版；需逐类检查精灵切片、透明底、悬停高亮和相邻图案。保留标志、署名、数字/计数符号与网址的适用范围，不能见英文就替换。地图北部一处竖排地名未可靠转写，地图暂不进入安装名单；后续需单独解决该标签及密集地图排版，不猜写地名。
+- 回填预研：归档是 20 字节头、zlib 索引（225 项，每项 272 字节）及各自压缩的 PNG。`Analysis/inspect_image_archive.py` 验证现有索引，`Analysis/rebuild_image_archive.py` 仅生成全新输出文件、拒绝覆盖目标，更新压缩长度/偏移并逐项读回；空替换重建已验证 225/225 图片一致。测试文件仅在忽略目录 `ImagePatch/`，**不代表中文贴图构建、安装或实机通过**。对外发布不得直接携带完整游戏资源包。

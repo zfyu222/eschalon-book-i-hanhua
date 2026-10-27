@@ -1,0 +1,917 @@
+{
+  "records": [
+    {
+      "id": "1",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "You Have Died.",
+          "box": [
+            300,
+            0,
+            700,
+            160
+          ]
+        },
+        {
+          "text": "As you fall to the ground, you suddenly feel your very essence ripped from the shell of your body. In an instance you find yourself standing on the precipice of eternity, an incoherent wailing emanating from the abyss below. You smile as you tumble forward into the black chasm.",
+          "box": [
+            0,
+            190,
+            1000,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "3",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Your quest ends in the west where you are able to buy a farm overlooking the eastern mountains bordering Thaermore.",
+          "box": [
+            45,
+            0,
+            950,
+            155
+          ]
+        },
+        {
+          "text": "As the weeks pass, you watch the skies in the east turn dark. You hear talk in the local tavern that the Goblins continue to overtake the lands of Thaermore. The few humans who have escaped tell of the vicious Goblin raids that have brought down Blackwater and Bastion Spire. The Commonwealth Guards are powerless, the council has been disbanded and the Chancellor has disappeared.",
+          "box": [
+            45,
+            210,
+            950,
+            555
+          ]
+        },
+        {
+          "text": "No one suspects what role you played in Thaermore's downfall, yet everyday you wonder if someone has become suspicious of your past. For now, you try not to worry about it.",
+          "box": [
+            45,
+            610,
+            950,
+            815
+          ]
+        },
+        {
+          "text": "For now, life is good.",
+          "box": [
+            45,
+            875,
+            500,
+            960
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Eschalon: Book I",
+          "box": [
+            50,
+            20,
+            950,
+            265
+          ]
+        },
+        {
+          "text": "Click to change options",
+          "box": [
+            95,
+            270,
+            905,
+            325
+          ]
+        },
+        {
+          "text": "Press Start to launch game or Help for more information on options",
+          "box": [
+            80,
+            345,
+            920,
+            425
+          ]
+        },
+        {
+          "text": "Graphic Renderer",
+          "box": [
+            225,
+            445,
+            780,
+            500
+          ]
+        },
+        {
+          "text": "Color Depth",
+          "box": [
+            280,
+            580,
+            740,
+            635
+          ]
+        },
+        {
+          "text": "Screen Preference",
+          "box": [
+            210,
+            715,
+            810,
+            770
+          ]
+        },
+        {
+          "text": "START",
+          "box": [
+            120,
+            855,
+            510,
+            960
+          ]
+        },
+        {
+          "text": "HELP",
+          "box": [
+            625,
+            855,
+            880,
+            960
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "6",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "7",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Options",
+          "box": [
+            0,
+            0,
+            1000,
+            100
+          ]
+        },
+        {
+          "text": "Save",
+          "box": [
+            0,
+            100,
+            1000,
+            200
+          ]
+        },
+        {
+          "text": "Restore",
+          "box": [
+            0,
+            200,
+            1000,
+            300
+          ]
+        },
+        {
+          "text": "Exit",
+          "box": [
+            0,
+            300,
+            1000,
+            400
+          ]
+        },
+        {
+          "text": "Return",
+          "box": [
+            0,
+            400,
+            1000,
+            500
+          ]
+        },
+        {
+          "text": "Options",
+          "box": [
+            0,
+            500,
+            1000,
+            600
+          ]
+        },
+        {
+          "text": "Save",
+          "box": [
+            0,
+            600,
+            1000,
+            700
+          ]
+        },
+        {
+          "text": "Restore",
+          "box": [
+            0,
+            700,
+            1000,
+            800
+          ]
+        },
+        {
+          "text": "Exit",
+          "box": [
+            0,
+            800,
+            1000,
+            900
+          ]
+        },
+        {
+          "text": "Return",
+          "box": [
+            0,
+            900,
+            1000,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Vessel",
+          "box": [
+            370,
+            95,
+            650,
+            170
+          ]
+        },
+        {
+          "text": "Reagent",
+          "box": [
+            180,
+            650,
+            480,
+            720
+          ]
+        },
+        {
+          "text": "Reactant",
+          "box": [
+            500,
+            650,
+            850,
+            720
+          ]
+        },
+        {
+          "text": "Mix",
+          "box": [
+            330,
+            790,
+            660,
+            925
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "10",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "11",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Eschalon: Book I",
+          "box": [
+            50,
+            20,
+            950,
+            265
+          ]
+        },
+        {
+          "text": "Click to change options",
+          "box": [
+            95,
+            270,
+            905,
+            325
+          ]
+        },
+        {
+          "text": "Press Start to launch game or for help on game options, refer to the help.htm file in the install folder.",
+          "box": [
+            80,
+            325,
+            920,
+            435
+          ]
+        },
+        {
+          "text": "Graphic Renderer",
+          "box": [
+            225,
+            445,
+            780,
+            500
+          ]
+        },
+        {
+          "text": "Color Depth",
+          "box": [
+            280,
+            580,
+            740,
+            635
+          ]
+        },
+        {
+          "text": "Screen Preference",
+          "box": [
+            210,
+            715,
+            810,
+            770
+          ]
+        },
+        {
+          "text": "START",
+          "box": [
+            120,
+            855,
+            880,
+            960
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "13",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "14",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "15",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Basilisk Games",
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "You Have Died.",
+          "box": [
+            300,
+            0,
+            700,
+            180
+          ]
+        },
+        {
+          "text": "As you fall to the ground, the pain fades and you are enveloped in a dark and peaceful serenity. A sense of absolution sweeps over you. The concerns of this world are no longer yours.",
+          "box": [
+            0,
+            220,
+            1000,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "18",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Developed By",
+          "box": [
+            300,
+            35,
+            700,
+            75
+          ]
+        },
+        {
+          "text": "Thomas Riegsecker",
+          "box": [
+            300,
+            75,
+            700,
+            105
+          ]
+        },
+        {
+          "text": "Additional Design & Lead Testing",
+          "box": [
+            150,
+            115,
+            870,
+            150
+          ]
+        },
+        {
+          "text": "Darren Berkey    Jason Stapley",
+          "box": [
+            250,
+            150,
+            760,
+            180
+          ]
+        },
+        {
+          "text": "Executive Producer",
+          "box": [
+            265,
+            190,
+            745,
+            225
+          ]
+        },
+        {
+          "text": "Angela Niederhauser",
+          "box": [
+            310,
+            225,
+            700,
+            250
+          ]
+        },
+        {
+          "text": "Very Special Thanks to",
+          "box": [
+            230,
+            260,
+            800,
+            300
+          ]
+        },
+        {
+          "text": "Glorian & Victor Stoyanov - Title theme and select music\nMark Deaton - Additional music & game assets\nKevin MacLeod / incompetech.com - Additional music\nKrzysztof Wierzynkiewicz - Additional music\nSuzanne Fleischauer - Font Wizard\nAlexander Kaltsas - Mac Hardware Donation",
+          "box": [
+            110,
+            300,
+            900,
+            445
+          ]
+        },
+        {
+          "text": "Beta Testing",
+          "box": [
+            330,
+            455,
+            700,
+            495
+          ]
+        },
+        {
+          "text": "Tim Attquayefio - Baelthazar - Dave Blanchard\nRich Brenner - Michael Burton - Keith Dalluhn - John Dye\nMike \"mrmunkal\" Gillingham - Diane \"Dragonlady\" Hutton\nJason Innes - Alexander Kaltsas - Tim Miller\nKevin Neff - Grandy Peace - Michael \"Letham\" Phillips",
+          "box": [
+            65,
+            495,
+            920,
+            610
+          ]
+        },
+        {
+          "text": "Additional Thanks",
+          "box": [
+            260,
+            625,
+            760,
+            665
+          ]
+        },
+        {
+          "text": "Jason Compton / Planewalker Games\nEveryone in the Blitz Community\nNoah Patterson    RPGWatch\nBlitz Research Ltd.    Inside Mac Games\nReiner \"Tiles\" Prokein    GameBanshee\nRPGVault    Game Play Magazine\nRPGCodex    Mac Life Magazine",
+          "box": [
+            155,
+            665,
+            820,
+            835
+          ]
+        },
+        {
+          "text": "crucial TECHNOLOGY",
+          "box": [
+            320,
+            860,
+            680,
+            940
+          ]
+        },
+        {
+          "text": "Created on workstations using Crucial Memory",
+          "box": [
+            180,
+            940,
+            820,
+            980
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "20",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "21",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "22",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "23",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "24",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "25",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "26",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "27",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "28",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "29",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "N",
+          "box": [
+            0,
+            0,
+            125,
+            1000
+          ]
+        },
+        {
+          "text": "NE",
+          "box": [
+            125,
+            0,
+            250,
+            1000
+          ]
+        },
+        {
+          "text": "E",
+          "box": [
+            250,
+            0,
+            375,
+            1000
+          ]
+        },
+        {
+          "text": "SE",
+          "box": [
+            375,
+            0,
+            500,
+            1000
+          ]
+        },
+        {
+          "text": "S",
+          "box": [
+            500,
+            0,
+            625,
+            1000
+          ]
+        },
+        {
+          "text": "SW",
+          "box": [
+            625,
+            0,
+            750,
+            1000
+          ]
+        },
+        {
+          "text": "W",
+          "box": [
+            750,
+            0,
+            875,
+            1000
+          ]
+        },
+        {
+          "text": "NW",
+          "box": [
+            875,
+            0,
+            1000,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "31",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "You Have Died.",
+          "box": [
+            300,
+            0,
+            700,
+            180
+          ]
+        },
+        {
+          "text": "As you fall to the ground you feel your spirit pull away from its fleshy prison. You close your eyes but for a moment; upon opening them you see the whole spiritual world around you glowing with energy. You feel at home.",
+          "box": [
+            0,
+            240,
+            1000,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "32",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "33",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "34",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "35",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "36",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "37",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "6. Type the name of your character here.",
+          "box": [
+            230,
+            30,
+            515,
+            70
+          ]
+        },
+        {
+          "text": "2. Distribute your available Attribute points into the Attributes of your choice.",
+          "box": [
+            900,
+            45,
+            998,
+            210
+          ]
+        },
+        {
+          "text": "3. Choose your Origin, Axiom and Class, then pick a portrait for your character.",
+          "box": [
+            0,
+            180,
+            95,
+            355
+          ]
+        },
+        {
+          "text": "1. Reroll the Attribute Dice until you get a roll that you are pleased with.",
+          "box": [
+            900,
+            310,
+            998,
+            460
+          ]
+        },
+        {
+          "text": "4. From the Available Skills, choose the skills you want your character to receive.",
+          "box": [
+            0,
+            605,
+            110,
+            760
+          ]
+        },
+        {
+          "text": "7. Click this arrow when you are finished.",
+          "box": [
+            905,
+            645,
+            990,
+            760
+          ]
+        },
+        {
+          "text": "5. Each new Skill costs 3 skill points, or raise an existing skill to the next tier for 1 skill point.",
+          "box": [
+            760,
+            915,
+            998,
+            998
+          ]
+        }
+      ]
+    },
+    {
+      "id": "38",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "39",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "40",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    }
+  ]
+}

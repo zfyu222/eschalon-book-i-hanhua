@@ -1,0 +1,423 @@
+{
+  "records": [
+    {
+      "id": "1",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "2",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "3",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "4",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "5",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Eschalon: Book I",
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "7",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "KEYBOARD SHORTCUTS",
+          "box": [
+            85,
+            10,
+            930,
+            80
+          ]
+        },
+        {
+          "text": "I  Inventory Window Toggle",
+          "box": [
+            200,
+            85,
+            830,
+            120
+          ]
+        },
+        {
+          "text": "S  Stats Window Toggle",
+          "box": [
+            200,
+            125,
+            830,
+            160
+          ]
+        },
+        {
+          "text": "E  Equip (Paperdoll) Window Toggle",
+          "box": [
+            200,
+            165,
+            830,
+            200
+          ]
+        },
+        {
+          "text": "M  Magick Spell Journal Toggle",
+          "box": [
+            200,
+            205,
+            830,
+            240
+          ]
+        },
+        {
+          "text": "J  Quest Journal Toggle",
+          "box": [
+            200,
+            245,
+            830,
+            280
+          ]
+        },
+        {
+          "text": "C  Camp",
+          "box": [
+            200,
+            285,
+            830,
+            320
+          ]
+        },
+        {
+          "text": "ENTER  Swap Primary/Alternate Weapons",
+          "box": [
+            120,
+            325,
+            870,
+            360
+          ]
+        },
+        {
+          "text": "T  Torch On/Off",
+          "box": [
+            200,
+            365,
+            830,
+            400
+          ]
+        },
+        {
+          "text": "W  Walk Lock",
+          "box": [
+            200,
+            405,
+            830,
+            440
+          ]
+        },
+        {
+          "text": "Space  Passively wait one turn",
+          "box": [
+            125,
+            445,
+            875,
+            480
+          ]
+        },
+        {
+          "text": "TAB  Display tactical grid",
+          "box": [
+            180,
+            485,
+            830,
+            520
+          ]
+        },
+        {
+          "text": "Esc  Close all windows / Open Options window",
+          "box": [
+            180,
+            525,
+            930,
+            555
+          ]
+        },
+        {
+          "text": "Left Shift  Force Combat (Bash object, strike NPC) or split combined inventory objects",
+          "box": [
+            50,
+            555,
+            940,
+            615
+          ]
+        },
+        {
+          "text": "F1  Helpful playing tips",
+          "box": [
+            200,
+            620,
+            830,
+            655
+          ]
+        },
+        {
+          "text": "F2  Quick Save current game",
+          "box": [
+            200,
+            660,
+            830,
+            695
+          ]
+        },
+        {
+          "text": "F3  Keyboard Shortcut Help",
+          "box": [
+            200,
+            700,
+            830,
+            735
+          ]
+        },
+        {
+          "text": "MOUSE BUTTONS",
+          "box": [
+            320,
+            750,
+            720,
+            800
+          ]
+        },
+        {
+          "text": "Left  Walk / Use Highlighted Object",
+          "box": [
+            140,
+            800,
+            900,
+            835
+          ]
+        },
+        {
+          "text": "Right  Cast Readied Spell",
+          "box": [
+            140,
+            840,
+            900,
+            875
+          ]
+        },
+        {
+          "text": "Middle  Walk Lock",
+          "box": [
+            100,
+            880,
+            900,
+            910
+          ]
+        },
+        {
+          "text": "Left Ctrl  Macintosh users with one mouse button: Left Ctrl + Click = Right Mouse Button",
+          "box": [
+            50,
+            915,
+            950,
+            990
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "9",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "You Have Died.",
+          "box": [
+            300,
+            0,
+            700,
+            170
+          ]
+        },
+        {
+          "text": "As you fall to the ground you feel a rushing sensation as your essence is pulled from your body and joins the cosmos. Suddenly it's as if you are seeing the stars for the first time. You are in awe as you gaze at the breadth of eternity stretching before you.",
+          "box": [
+            0,
+            200,
+            1000,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "11",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "12",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "13",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "14",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "15",
+      "status": "no_text",
+      "reason": "对话Agent已查看，角色/场景/物件图像没有可辨文字。",
+      "unreadable": false,
+      "regions": []
+    },
+    {
+      "id": "16",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "DEMO VERSION",
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "You spend the next three days sequestered in Bastion Spire explaining your role in the recovery of the Crux of Ages. Although grateful for your actions, the Council stops short of publicly honoring you, expressing concerns over how the citizens of Thaermore would react to the truth of the events. Instead, you are given a modest reward and told not to speak of what you know. The official proclamation is that the Orakur were defeated and the Crux of Ages was recovered by the Commonwealth Guard.",
+          "box": [
+            20,
+            0,
+            990,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Law and order are slow to return to Thaermore, but the people have hope. You purchase a small bit of land in northeastern Tangletree Forest where you build a cottage. Keeping rabbits out of your garden is all the adventure you want now.",
+          "box": [
+            40,
+            0,
+            990,
+            300
+          ]
+        },
+        {
+          "text": "Although you seek a quiet life, in time you grow restless. For reasons unknown, you are compelled to have your equipment near you while you sleep. You begin to have dreams of whispers in the darkness and movement in the shadows.",
+          "box": [
+            40,
+            325,
+            990,
+            615
+          ]
+        },
+        {
+          "text": "In the light of day these nightmares fade and your thoughts turn to more pressing matters: the leaves on the trees are changing and firewood needs cut. There is a strange chill on the wind. Winter will be here soon.",
+          "box": [
+            40,
+            650,
+            990,
+            990
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "status": "text",
+      "reason": "对话Agent已查看证据图，逐项核对可见文字及区域。",
+      "unreadable": false,
+      "regions": [
+        {
+          "text": "Loading",
+          "box": [
+            0,
+            0,
+            1000,
+            1000
+          ]
+        }
+      ]
+    }
+  ]
+}

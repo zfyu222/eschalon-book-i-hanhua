@@ -16,3 +16,11 @@ runtime_*.jsonl
 /Analysis/live_out.txt
 /Analysis/live_err.txt
 /Analysis/shot_*.png
+/ImageText/work-v1/
+/ImageText/contact_*.png
+/ImagePatch/
+/TranslateFiles/image-text/TranslateFiles/state/
+/TranslateFiles/image-text/TranslateFiles/cache/
+/TranslateFiles/image-text/TranslateFiles/logs/
+/TranslateFiles/image-text/TranslateFiles/tasks/
+/TranslateFiles/image-text/TranslateFiles/results/

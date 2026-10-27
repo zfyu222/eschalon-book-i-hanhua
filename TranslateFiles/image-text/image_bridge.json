@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "source": "D:\\StaticHanHua\\Projects\\EschalonBook\\eschalonbook_images_text.csv",
+  "source_sha256": "18d5ef618f8f510d595a074a7b7e0b7aa3c21fe0ea1ab6cd09fa73a9875c252e",
+  "mapping_sha256": "a053a6af7bf16f5f3a8904c9f82a689080ae88ec26b68803ccee3ee996795001",
+  "workspace": "D:\\StaticHanHua\\Projects\\EschalonBook\\TranslateFiles\\image-text",
+  "translation": "D:\\StaticHanHua\\Projects\\EschalonBook\\TranslateFiles\\image-text\\eschalonbook_images_text_translated.csv",
+  "validation": "D:\\StaticHanHua\\Projects\\EschalonBook\\TranslateFiles\\image-text\\TranslateFiles\\reports\\final_validation.json"
+}
