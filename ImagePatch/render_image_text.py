@@ -160,6 +160,17 @@ def render(image_path, regions, sources, targets, out_path):
     height, width = bgr.shape[:2]
     # gfx.pak 中部分界面图是「alpha 遮罩」：RGB 恒为深灰，形状完全由 alpha 表达。
     alpha_layer = alpha is not None and int(alpha.min()) < 10 and float(alpha.mean()) < 200
+    mask_color = None
+    if alpha_layer:
+        opaque_all = alpha > 128
+        if opaque_all.any():
+            base = np.median(bgr[opaque_all].reshape(-1, 3), axis=0)[::-1].astype(float)
+        else:
+            base = np.array([235.0, 235.0, 235.0])
+        luminance = 0.114 * base[2] + 0.587 * base[1] + 0.299 * base[0]
+        if luminance < 170:
+            base = base * min(4.0, 235.0 / max(luminance, 12.0))
+        mask_color = tuple(int(min(245, v)) for v in base)
 
     work = bgr.copy()
     alpha_image = Image.fromarray(alpha, "L") if alpha_layer else None
@@ -203,12 +214,7 @@ def render(image_path, regions, sources, targets, out_path):
             continue
         x0, y0, x1, y1 = box
         if alpha_layer:
-            patch = bgr[y0:y1, x0:x1]
-            opaque = alpha[y0:y1, x0:x1] > 128
-            if opaque.any():
-                color = tuple(int(v) for v in np.median(patch[opaque], axis=0)[::-1])
-            else:
-                color = (235, 235, 235)
+            color = mask_color
         else:
             mask_info = text_mask(bgr, region["box"])
             if mask_info is None:
