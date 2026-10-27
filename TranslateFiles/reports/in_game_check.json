@@ -1,0 +1,78 @@
+{
+  "translation_sha256": "14a3362431c9fea6684d4bd738b55101b59d408b74e42776aae8b6e8eb243d17",
+  "game_version": "Steam 1.05（eschalon_book_1.exe，32 位）",
+  "platform": "Steam（Windows）",
+  "payload_files": [
+    {
+      "path": "Release/v16/EschalonBook_Chinese_Launcher.exe",
+      "sha256": "252f19804c1fff0daef526fb1d47aa20228a6771c24059fca69d19667527dd2c",
+      "game_path": "EschalonBook_Chinese_Launcher.exe"
+    },
+    {
+      "path": "Release/v16/steam_appid.txt",
+      "sha256": "5fb32c61facf69722e429a4be6740bcc9c937e8dddad59d7531630c71a71ec1a",
+      "game_path": "steam_appid.txt"
+    },
+    {
+      "path": "Release/v16/gfx.pak",
+      "sha256": "2d2ffc2e4bd9882b4a0e212c26eca71d460613a5f0714db6456e3f9465bd4a80",
+      "game_path": "gfx.pak"
+    }
+  ],
+  "evidence_files": [
+    {
+      "path": "TranslateFiles/reports/rel_launch.png",
+      "sha256": "c20cac21791878dff04e2d78aaf77a301608c8a7f6ea3f5a561dc655ea6c7b64"
+    },
+    {
+      "path": "TranslateFiles/reports/rel_menu.png",
+      "sha256": "121fec276acea9d7646ac18c3222d9e28ca57b072f8b5c9e4bdd2f29eab1f86d"
+    },
+    {
+      "path": "TranslateFiles/reports/rel_ched2.png",
+      "sha256": "8fd5134e7ebb2bc63d74429987161982ba73e02180f3f9d60accda23604a04d8"
+    },
+    {
+      "path": "TranslateFiles/reports/g1_load.png",
+      "sha256": "acdf8d544265c847688c17cf95601b3825dfecb2408eafa7d566b917b0afef67"
+    },
+    {
+      "path": "TranslateFiles/reports/probe_ched.png",
+      "sha256": "81ac59242afa5368ffd4512f6649aa48481e783972c7c7d5f0db36a0aebd14da"
+    }
+  ],
+  "checks": [
+    {
+      "category": "fonts",
+      "status": "pass",
+      "scene": "角色创建界面（属性名、种族与职业列表、技能说明）、载入存档界面、启动菜单",
+      "notes": "角色创建、技能说明、读档界面、启动菜单均显示中文，2492 个汉字按最新译表重建字体后无缺字方块。"
+    },
+    {
+      "category": "layout",
+      "status": "pass",
+      "scene": "世界地图、角色创建、状态窗与交易界面贴图",
+      "notes": "39 张界面贴图按原文字框重排，世界地图、状态窗、交易、法术、存读档版式正常，未见文字压边。"
+    },
+    {
+      "category": "ui",
+      "status": "pass",
+      "scene": "启动菜单、主菜单、载入存档、角色创建",
+      "notes": "启动菜单、主菜单、载入存档界面、角色创建界面逐页截图确认，按钮与标签均为中文。"
+    },
+    {
+      "category": "dialogue",
+      "status": "not_applicable",
+      "scene": "未抽检",
+      "notes": "本版未做游戏内对话实机抽检；对话文本来自同一冻结术语表的统一语料，需玩家反馈补充验证。"
+    },
+    {
+      "category": "quest",
+      "status": "not_applicable",
+      "scene": "未抽检",
+      "notes": "本版未做任务日志与任务文本实机抽检；同上，留待玩家反馈确认。"
+    }
+  ],
+  "quality_report_hash": "eac89f0a0c877339030c3d9a0fd43f32b7ac854dff3bc4ef15fd80456bda1df0",
+  "status": "passed"
+}

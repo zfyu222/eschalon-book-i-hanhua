@@ -585,7 +585,9 @@ BlitzMax 把字符串长度存在别处，字节扫描会把下一个字段的�
 - 未覆盖：对话与任务文本本版未做实机抽检，已在说明书「实机验证」与「已知问题」中如实标注。
 - 已知问题：启动界面（标题、选项标签、START 按钮）仍为英文原图；从角色创建返回主菜单后菜单项不显示，需退出重开（中文 Hook 副作用，详见上文「已知缺陷」）；地图北部竖排地名保持英文；菜单艺术字风格与中文黑体不一致。
 - 安装：三个文件放入游戏根目录（与 `eschalon_book_1.exe` 同级），覆盖 `gfx.pak` 前先备份，之后用 `EschalonBook_Chinese_Launcher.exe` 启动。
-- GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.6`
+- GitHub Release：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.6`（已发布，非草稿、非预发布）
+- 资产名义：`Eschalon.Book.I_.1.6.zip`（GitHub 剔除中文），85,529,274 字节，SHA-256 与本地 `Eschalon Book I_子非鱼汉化1.6.zip` 一致（`955989A6…`）
+- 下载：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/download/v1.6/Eschalon.Book.I_.1.6.zip`
 
 #### v1.5 打包过程说明（质量门禁）
 
