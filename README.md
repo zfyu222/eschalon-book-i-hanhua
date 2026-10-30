@@ -487,6 +487,9 @@ BlitzMax 把字符串长度存在别处，字节扫描会把下一个字段的�
 
 ## 对外发布
 
+- 汉化封面：`Dispatch/Artwork/title.png`，参考 [Steam 官方素材](https://store.steampowered.com/app/25600/)，使用内置图像工具制作并视觉检查；来源及提示词见 `Dispatch/Artwork/source.json`。封面不进入安装载荷。
+
+
 ### v1.0（2026-08-20）
 
 - 补丁：`Dispatch/Eschalon Book I_子非鱼汉化1.0.zip`
