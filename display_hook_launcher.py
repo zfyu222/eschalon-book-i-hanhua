@@ -448,7 +448,7 @@ function lookupParagraph(source) {{
         if (value === undefined) translated.push(key);
         else {{ translated.push(value); hits++; }}
     }}
-    return hits ? translated.join('\\n') : undefined;
+    return hits ? translated.join('*') : undefined;
 }}
 
 const phrases = Object.keys(translations)
@@ -525,6 +525,13 @@ function makeChineseBreakable(text) {{
     // break opportunities to long Han runs while keeping normal prose intact.
     return text.replace(/[\\u3400-\\u9fff]{{7,}}/g, run =>
         run.match(/.{{1,6}}/g).join(' '));
+}}
+
+function prepareNarrativeText(text) {{
+    // FUN_004c69ad commits the pending word only on ASCII space (or EOF).
+    // '*' advances two lines and clears that word WITHOUT committing it.
+    // Flush before every paragraph marker; keep the marker for native layout.
+    return makeChineseBreakable(text).replace(/([^ *])\\*/g, '$1 *');
 }}
 
 // Combat and service messages are assembled at runtime from names, verbs and
@@ -618,7 +625,7 @@ Interceptor.attach(ptr('0x{NARRATIVE_PREWRAP_VA:08X}'), function () {{
                 return;
             }}
             if (target === source) return;
-            target = makeChineseBreakable(target);
+            target = prepareNarrativeText(target);
             slot.writePointer(makeBlitzString(target));
             send({{kind: 'narrative_hit', source: source.slice(0, 100),
                   target: target.slice(0, 100)}});

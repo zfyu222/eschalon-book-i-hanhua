@@ -1,5 +1,12 @@
 # Eschalon: Book I 汉化项目
 
+## 2026-11-01 叙事段尾截字修复（实机待测）
+
+- 截图中的“闪电划”“最私密的信”并非译文残缺。复用 REA/Ghidra 反编译证据 `Analysis/rea_dec_narrative.c`：`FUN_004c69ad` 遇空格提交暂存词，遇 `*` 却先换段并清掉暂存词，只有全文末尾另行提交。旧中文分词恰好在两个分段符前留下“破。”“息：你的名字。”，与截图完全一致。
+- `display_hook_launcher.py` 新增叙事专用 `prepareNarrativeText`，在原有中文分词后、每个 `*` 前补一个 ASCII 空格，让排版器先提交段尾。段落兜底匹配也保留原生 `*`，不再合并成原生排版器不认识的 LF。原文/译文 CSV、字体、图片、物品内部键和存档均不修改；两处中间拦截继续使用 v1.7 修复后的指令探针。
+- `Analysis/test_narrative_tail.py` 以生产 JS 和有来源的段落提交模型精确复现旧开场两处丢字，修复后校验 4563 条译文及 5 个边界样本（共 4568 项），逐段非空白内容和分段符数量完整；真实生产叙事回调、分段兜底与既有 6 项显示契约测试通过。报告 `Analysis/narrative_tail_regression_20261101.json`。这不代替像素宽度、分页和实际弹窗视觉验证。
+- 独立测试启动器：`Release/narrative_tail_fix/EschalonBook_Chinese_Launcher.exe`，由现有 PyInstaller spec 构建。项目根目录 `Test_Narrative_Fix.bat` 明确指定完整 `Eschalon_CN` 资源目录；`Launch_Chinese.bat` 也会读取修复源码。尚未覆盖 v1.8 单入口包或安装版，未发布；开场弹窗/跨页叙事实机待测。
+
 ## 游戏信息
 - **原名**: Eschalon: Book I
 - **中文名**: 埃斯卡隆：卷一
