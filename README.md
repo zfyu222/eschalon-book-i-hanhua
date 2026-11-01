@@ -1,5 +1,14 @@
 # Eschalon: Book I 汉化项目
 
+## 对外发布 v1.9（2026-11-01）
+
+- 修复开场及同类叙事分段符前尾词被清空的问题，沿用 v1.7 升级崩溃修复、v1.8 单入口安装/游玩，以及原译表、字体和中文贴图。唯一入口为 `埃斯卡隆：卷一_中文版.exe`，内部启动器放在 `汉化工具/runtime/`。
+- 包：`Dispatch/Eschalon Book I_子非鱼汉化1.9.zip`，85,430,840 字节，SHA-256 `78ecb740a324d68bc83ac6c58fde1a7bcb57c67761ddb9f11849e640d2f1ddcb`。11 文件，仅从 `Dispatch/Files/` 构建；旧包保留，v1.8 暂存移到 `Dispatch/StagingArchive/v18_narrative_tail/`。封面复用 `Dispatch/Artwork/title.jpg`，不入安装载荷。
+- 之前的验收阻塞已查清：原文/译文/审校 `snapshot_hash` 不变，导出译文 SHA-256 仍为 `14a3362431c9fea6684d4bd738b55101b59d408b74e42776aae8b6e8eb243d17`。变化是 `sol_*` 改称 `standard_*`、说明文字及新增资源映射绑定。使用现有 `quality-report --kind final`，返回 remaining_checks=0 / carried_finding_records=0，再由 `standard-round-finish` 正常关闭无争议轮次，并重新 export 完成 4743 条结构与术语校验；未修改共用程序、手工批准哈希或重跑翻译/API。
+- 实机待测发布授权由 `record_release_acceptance` 绑定本次全部 8 个安装目标及其哈希、当前质量报告、译文与授权证据；`release-check` 通过，明确 `in_game_validation=pending`。保留历史实机证据，不把本次离线修复测试写成实机通过。
+- 验证：生产回调/4568 项段尾保留测试、6 项原显示契约通过；冻结代码与源码递归字节码和内嵌 CSV/字体一致。真实 ZIP 的 CRC、清单/校验和及全部授权安装路径一致。隔离回放单入口 9 项测试，另用实际 v1.8/v1.9 启动器载荷完成不启动游戏的升级、原件保留、重复安装不重写验证。报告 `TranslateFiles/reports/release_v19/`；新装/升级未操作真实游戏。
+- 发布脚本 `Analysis/release_v19.py`、`finalize_release_v19.py`；验证 `Analysis/verify_release_v19.py`。目标 GitHub `https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.9`，公开下载结果另存报告。百度网盘链接及腾讯反馈链接沿用本游戏配置，本轮未向网盘上传文件。
+
 ## 2026-11-01 叙事段尾截字修复（实机待测）
 
 - v1.9 发布准备被当前共用程序的最终质量门禁阻止：保存的 final approval report_hash 与当前重新生成的质量报告不一致；仅凭不一致不能断言译文有错，也不能静默更新批准哈希。`record_release_acceptance` 在写入授权前失败，独立 `release-check` 同样拒绝。未生成 v1.9 ZIP、未上传、未覆盖 v1.8 暂存或旧版；部分候选载荷保留在 `Release/v19/`，机器记录 `TranslateFiles/reports/release_v19/blocked.json`。后续须先核对验收兼容性或真实未闭环事项，不绕过门禁。

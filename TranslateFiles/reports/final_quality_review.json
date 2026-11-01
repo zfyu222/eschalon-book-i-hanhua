@@ -18,7 +18,7 @@
     "missing_context": 0,
     "risk_records": 3526,
     "ordinary_sample": 0,
-    "sol_records": 12
+    "standard_records": 12
   },
   "risk_detection": "Heuristic candidates plus reviewer findings; absence of flags is not proof of correctness.",
   "records_to_check": [],
@@ -174,9 +174,12 @@
     }
   },
   "required_decisions": [],
-  "sol_scope_policy": "disputes_only_v1",
+  "standard_scope_policy": "disputes_only_v1",
   "carried_findings": {},
-  "selection_explanation": "Only explicit unresolved reviewer issues need Sol adjudication. Risk flags, corrections, ordinary samples, duplicate-source groups and speaker groups do not trigger Sol. Known Sol repair findings are carried to standard repair without re-reading; exhausted or regressing repairs use the existing targeted Sol escalation route.",
-  "report_hash": "eac89f0a0c877339030c3d9a0fd43f32b7ac854dff3bc4ef15fd80456bda1df0",
+  "selection_explanation": "Only explicit unresolved reviewer issues need standard-tier adjudication. Risk flags, corrections, ordinary samples, duplicate-source groups and speaker groups do not trigger standard-tier review. Known standard-tier repair findings are carried to cheap-tier repair without re-reading; exhausted or regressing repairs use the existing targeted standard-tier escalation route.",
+  "resource_occurrence_binding": {
+    "eschalonbook_images_text.mapping.json": "a053a6af7bf16f5f3a8904c9f82a689080ae88ec26b68803ccee3ee996795001"
+  },
+  "report_hash": "13223435acc148d6f8c9e3d1da8b0521f5e38e843cf7e38a232b09a336dd54ac",
   "round_scope": []
 }

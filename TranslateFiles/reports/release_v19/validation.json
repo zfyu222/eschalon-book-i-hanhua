@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "crc_and_hashes": true,
+  "authorized_payload_paths_match": true,
+  "frozen_code_and_resources_match": true,
+  "v18_to_v19_actual_binary_no_launch_upgrade": true,
+  "repeat_install_no_rewrite": true,
+  "original_preserved": true,
+  "real_game_started": false,
+  "in_game_validation": "pending"
+}

@@ -1,12 +1,12 @@
 {
-  "archive": "Eschalon Book I_子非鱼汉化1.8.zip",
+  "archive": "Eschalon Book I_子非鱼汉化1.9.zip",
   "created": "2026-11-01",
   "files": [
     {
       "path": "汉化工具/runtime/EschalonBook_Chinese_Launcher.exe",
       "archive_path": "汉化文件/EschalonBook_Chinese_Launcher.exe",
-      "sha256": "1b83086eaa3219c85579141f83a3f288e7d8d7cafa1c7e11814b223beb0c5b36",
-      "size": 55567293
+      "sha256": "73bec266cfafa2af5ac9de59b49e4993611b1eeb141e6bfb231b4d0ba371ba50",
+      "size": 55567638
     },
     {
       "path": "steam_appid.txt",
@@ -49,6 +49,6 @@
     }
   ],
   "install_mode": "script",
-  "version": "1.8",
+  "version": "1.9",
   "launch_mode": "custom_launcher"
 }
