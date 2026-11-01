@@ -1,0 +1,11 @@
+{
+  "version": "1.9",
+  "status": "blocked_before_packaging",
+  "error": "Current final quality closure required before export; unresolved disputes/findings cannot be skipped",
+  "gate": "Workflow.require_final_approval: stored final approval report_hash differs from currently rebuilt quality report",
+  "authorization_recorded": false,
+  "archive_created": false,
+  "uploaded": false,
+  "existing_release_modified": false,
+  "note": "No conclusion that translation content is defective: mismatch requires investigation. Runtime-pending release permission does not waive final text quality closure. Partial prepared payload remains under Release/v19; Dispatch/Files remains v1.8."
+}
