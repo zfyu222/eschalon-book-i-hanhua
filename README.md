@@ -9,6 +9,7 @@
 - 验证：生产回调/4568 项段尾保留测试、6 项原显示契约通过；冻结代码与源码递归字节码和内嵌 CSV/字体一致。真实 ZIP 的 CRC、清单/校验和及全部授权安装路径一致。隔离回放单入口 9 项测试，另用实际 v1.8/v1.9 启动器载荷完成不启动游戏的升级、原件保留、重复安装不重写验证。报告 `TranslateFiles/reports/release_v19/`；新装/升级未操作真实游戏。
 - 发布脚本 `Analysis/release_v19.py`、`finalize_release_v19.py`；验证 `Analysis/verify_release_v19.py`。目标 GitHub `https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.9`，公开下载结果另存报告。百度网盘链接及腾讯反馈链接沿用本游戏配置，本轮未向网盘上传文件。
 - 已公开发布并设为最新稳定版：`https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v1.9`，ZIP 资产名 `Eschalon.Book.I_.1.9.zip`，发布页封面使用同一 Release 的 `title.jpg`。公开下载验证由 `Analysis/verify_release_v19_public.py` 执行；此前 `blocked.json` 作为历史失败记录保留，兼容性解决记录见 `quality_compatibility.json`。
+- 匿名公开下载验证通过：HTTP 200，完整下载 85,430,840 字节，SHA-256 与本地 ZIP 相同；latest 跳转 v1.9，发布正文与准备说明一致，封面下载字节一致。结果 `TranslateFiles/reports/release_v19/public_download.json`。
 
 ## 2026-11-01 叙事段尾截字修复（实机待测）
 
