@@ -1,0 +1,54 @@
+{
+  "archive": "Eschalon Book I_子非鱼汉化1.8.zip",
+  "created": "2026-11-01",
+  "files": [
+    {
+      "path": "汉化工具/runtime/EschalonBook_Chinese_Launcher.exe",
+      "archive_path": "汉化文件/EschalonBook_Chinese_Launcher.exe",
+      "sha256": "1b83086eaa3219c85579141f83a3f288e7d8d7cafa1c7e11814b223beb0c5b36",
+      "size": 55567293
+    },
+    {
+      "path": "steam_appid.txt",
+      "archive_path": "汉化文件/steam_appid.txt",
+      "sha256": "5fb32c61facf69722e429a4be6740bcc9c937e8dddad59d7531630c71a71ec1a",
+      "size": 6
+    },
+    {
+      "path": "gfx.pak",
+      "archive_path": "汉化文件/gfx.pak",
+      "sha256": "2d2ffc2e4bd9882b4a0e212c26eca71d460613a5f0714db6456e3f9465bd4a80",
+      "size": 30364756
+    }
+  ],
+  "auxiliary": [
+    {
+      "path": "卸载汉化.cmd",
+      "sha256": "2927c49786f2d97b7b95030c0f7c32e72d67e253e55b64e3ee0efc28e65ca9dc",
+      "size": 202
+    },
+    {
+      "path": "埃斯卡隆：卷一_中文版.exe",
+      "sha256": "4a5572041ea9912a78c565079e7ff1f79eb248cea9ee33445e4c9c0ebb842fcc",
+      "size": 5632
+    },
+    {
+      "path": "汉化工具/config.json",
+      "sha256": "b41f9c927d2ae6fe0821dbae5723d784b788bd67bd031dc367bdeea01417fe09",
+      "size": 1632
+    },
+    {
+      "path": "汉化工具/launch.ps1",
+      "sha256": "a566136624f160e3cf78070bc19976b38aa64f37029212d835add7a57673531d",
+      "size": 2267
+    },
+    {
+      "path": "汉化工具/patch.ps1",
+      "sha256": "7b3ac76dd73df9f52eb8b08c7ee042775b5c485e240bf5272d1a33b425d4e5f7",
+      "size": 7619
+    }
+  ],
+  "install_mode": "script",
+  "version": "1.8",
+  "launch_mode": "custom_launcher"
+}

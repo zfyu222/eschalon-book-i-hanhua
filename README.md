@@ -789,3 +789,12 @@ BlitzMax 把字符串长度存在别处，字节扫描会把下一个字段的�
 - 网盘入口：EschalonBook，`https://pan.baidu.com/s/5CzGvEaOYAUHbh8iBc-Jsww`；反馈：EschalonBook问题反馈，`https://docs.qq.com/sheet/DTnhoaFZweVRoV2t0?tab=BB08J2`。地址来自本游戏发布配置，未套用其他项目。
 - 百度网盘地址已写入 TXT/GitHub 正文；本次只上传 GitHub Release，没有向百度网盘传送文件，不把链接加入说明等同于网盘文件已更新。
 
+
+
+## 单入口安装与启动 v1.8（2026-11-01）
+
+- 本地补丁：`Dispatch/Eschalon Book I_子非鱼汉化1.8.zip`。唯一游玩入口为 `埃斯卡隆：卷一_中文版.exe`；首次运行自动安装并启动，后续核对版本及安装文件哈希后直接启动，缺失文件自动修复，异常拒绝启动。卸载仍运行 `卸载汉化.cmd`。
+- 沿用 v1.7 正式译表、字体、中文贴图和冻结 Hook 启动器字节；内部启动器移入 `汉化工具/runtime/`，通过原启动器已有的 `ESCHALON_RUNTIME` 环境变量定位游戏根目录，无需玩家另开安装程序。升级可迁移 v1.7 安装状态，保留原件，并删除已验证的旧根目录启动器。
+- 源码：`Release/single_entry/launch.ps1`、`patch.ps1`；通用 C# 入口由工作区 `build_chinese_launcher.ps1` 生成。修复生成脚本 UTF-8 BOM，兼容 Windows PowerShell 读取中文。发布配置 `launch_mode=custom_launcher`、`version=1.8` 已写入清单。
+- 隔离验证：`Analysis/verify_single_entry.py` 使用无害替身启动器完成9项真实脚本回放：新装启动、已安装免重写、缺失修复、升级保留原件、外部修改拒绝且不启动、损坏载荷拒绝、编译EXE中文空格路径、卸载、v1.7路径迁移。报告：`TranslateFiles/reports/single_entry/validation.json`。没有启动、终止或修改正在运行的真实游戏；本次没有新增游戏内视觉验证，原翻译与 Hook 实机证据沿用 v1.7。
+- ZIP仅由核对后的 `Dispatch/Files/` 生成，11个文件，CRC与全部哈希通过；报告 `TranslateFiles/reports/single_entry/package.json`。旧 `Files` 保留在 `Dispatch/StagingArchive/v17_single_entry/`，历史 ZIP 保留。本次仅生成本地包，未上传 GitHub 或网盘。

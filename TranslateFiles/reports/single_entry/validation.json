@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "cases": [
+    "fresh_install_and_launch",
+    "installed_launch_without_reinstall",
+    "missing_file_repaired",
+    "version_upgrade_preserves_original",
+    "changed_file_refused_without_launch",
+    "corrupt_payload_refused",
+    "compiled_exe_chinese_and_space_path",
+    "uninstall_restores_original",
+    "v17_layout_migration_and_uninstall"
+  ],
+  "real_game_started": false,
+  "real_game_modified": false
+}
