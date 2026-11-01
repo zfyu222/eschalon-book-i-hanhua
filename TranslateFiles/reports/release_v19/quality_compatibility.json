@@ -1,0 +1,16 @@
+{
+  "status": "resolved_via_existing_workflow_commands",
+  "old_report_hash": "eac89f0a0c877339030c3d9a0fd43f32b7ac854dff3bc4ef15fd80456bda1df0",
+  "new_report_hash": "13223435acc148d6f8c9e3d1da8b0521f5e38e843cf7e38a232b09a336dd54ac",
+  "source_translation_review_snapshot_equal": true,
+  "translation_sha256": "14a3362431c9fea6684d4bd738b55101b59d408b74e42776aae8b6e8eb243d17",
+  "changed_metadata": ["coverage.sol_records -> standard_records", "sol_scope_policy -> standard_scope_policy", "selection_explanation terminology", "resource_occurrence_binding added"],
+  "remaining_checks": 0,
+  "carried_finding_records": 0,
+  "commands": ["quality-report --kind final", "standard-round-finish", "export"],
+  "closure_reviewer": "workflow:no-disputes",
+  "export_records_validated": 4743,
+  "shared_program_modified": false,
+  "translation_api_requests": 0,
+  "manual_database_approval_changes": false
+}
