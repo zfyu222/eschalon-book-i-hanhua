@@ -7,6 +7,12 @@
 - 依据已确认映射更新制作人员、快捷键、启动界面屏幕设置和主菜单四张 Windows 贴图。用 LaMa 对快捷键的英文笔画及阴影做局部木纹修补，并按原生尺寸检查四张预览。gfx.pak 全部 225 个资源逐项读回一致，Windows 版共有 40 张中文贴图。
 - gfx.delta 支持原版 Steam 1.05 和旧版已知汉化资源包，从本地基础包读取 185 个原始压缩图像流。完整汉化归档在安装机上生成并验哈希。隔离验证单入口、全新安装、旧版升级、缺件修复、重复安装免重写、卸载及损坏载荷拒绝。已从 v1.9 同步本机安装，原件及存档文件验证通过。构建、安装和预览记录见 TranslateFiles/reports/release_v20/。
 
+## 对外发布 v2.0（2026-11-25）
+
+- 补丁文件 Dispatch/Eschalon Book I_子非鱼汉化2.0.zip，60,212,780 字节，SHA-256 80f73018c6da148dc4fd67131da5716d9104ee1947d81176209b469425df56d5。Steam 1.05 Windows 版。ZIP 从已核对的 Dispatch/Files/ 生成，11 个文件，CRC 和校验和通过。
+- 载荷含新版离线运行时、Steam App ID、贴图差分、安装与卸载脚本。入口继续使用「埃斯卡隆：卷一_中文版.exe」。封面复用 Dispatch/Artwork/title.jpg，作为发布页附件。
+- 说明、清单及校验和位于 Dispatch/。构建与校验见 Analysis/release_polish_v20.py 和 TranslateFiles/reports/release_v20/package.json。
+
 ## 对外发布 v1.9（2026-11-01）
 
 - 修复开场及同类叙事分段符前尾词被清空的问题，沿用 v1.7 升级崩溃修复、v1.8 单入口安装/游玩，以及原译表、字体和中文贴图。唯一入口为 `埃斯卡隆：卷一_中文版.exe`，内部启动器放在 `汉化工具/runtime/`。
