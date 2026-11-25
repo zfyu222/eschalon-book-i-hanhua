@@ -58,12 +58,12 @@ Darren Berkey    Jason Stapley
 Angela Niederhauser
 特别鸣谢
 "Glorian & Victor Stoyanov - 主题曲及部分配乐
-Mark Deaton - 附加音乐与游戏素材
-Kevin MacLeod / incompetech.com - 附加音乐
-Krzysztof Wierzynkiewicz - 附加音乐
-Suzanne Fleischauer - 字体巫师
+Mark Deaton - 额外音乐与游戏素材
+Kevin MacLeod / incompetech.com - 额外音乐
+Krzysztof Wierzynkiewicz - 额外音乐
+Suzanne Fleischauer - 字体设计
 Alexander Kaltsas - Mac 硬件捐赠"
-Beta 测试
+测试版
 "Tim Attquayefio - Baelthazar - Dave Blanchard
 Rich Brenner - Michael Burton - Keith Dalluhn - John Dye
 Mike “mrmunkal” Gillingham - Diane “Dragonlady” Hutton
@@ -102,16 +102,16 @@ crucial TECHNOLOGY
 I  物品栏窗口开关
 S  属性窗口开关
 E  装备（纸娃娃）窗口开关
-M  魔法法术日志开关
+M  切换魔法法术日志
 J  任务日志开关
 C  扎营
 ENTER  切换主/副武器
 T  火把开/关
 W  行走锁定
-空格  被动等待一回合
+空格  原地等待一回合
 TAB  显示战术网格
 Esc  关闭所有窗口 / 打开选项窗口
-左Shift  强制战斗（砸物、攻击NPC）或拆分物品堆叠
+左Shift  强制战斗（砸物体、攻击NPC）或拆分叠放物品
 F1  实用游戏提示
 F2  快速保存当前游戏
 F3  键盘快捷键帮助
@@ -124,13 +124,13 @@ F3  键盘快捷键帮助
 按“开始”启动游戏，或按“帮助”查看选项详情
 图形渲染器
 色深
-屏幕偏好
+屏幕设置
 开始
 帮助
 按“开始”启动游戏；如需游戏选项帮助，请参阅安装文件夹中的 help.htm 文件。
 加载中
 开始新冒险
-载入已保存冒险
+读取存档
 制作人员
 退出
 购买完整版

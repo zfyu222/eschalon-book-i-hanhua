@@ -8,7 +8,7 @@
     "path": "glossary\\r1\\freeze_0680ffd0\\built\\glossary_reviewed.json",
     "revision": 1
   },
-  "snapshot_hash": "e692825083e3dd597f5fb27bd3d6f9c6991a8854dce6c90b6d00b5692bdf837e",
+  "snapshot_hash": "f2ee015233e0b27d71094263244b06c284529a367c9b52dd8260fd5866239dd6",
   "coverage": {
     "records": 4743,
     "text_types": {
@@ -16,9 +16,9 @@
       "image_text": 180
     },
     "missing_context": 0,
-    "risk_records": 3526,
+    "risk_records": 3528,
     "ordinary_sample": 0,
-    "standard_records": 12
+    "standard_records": 11
   },
   "risk_detection": "Heuristic candidates plus reviewer findings; absence of flags is not proof of correctness.",
   "records_to_check": [],
@@ -34,7 +34,6 @@
     "R0001254_75c1ff8646": "8df08d89a4aa993757a9811503e15f227bfbb6de146f2e5dde9aaf55abd89a93",
     "R0001663_2da1328d30": "acfbd6b13e56f783f3faa8d3b6348195c755d76838ae4e328346b41902307c0e",
     "R0002003_28391d3bc6": "86a7709846add187cf913f8a4e400e71ba6fa6425c229ba49e6759d01a9426cf",
-    "R0002429_017785cd91": "2e46d06d0e5d448df1c8c343d9e6b7813c4b23b14e40d52120a272e92d444964",
     "R0003289_a14c27a0fa": "989b82fbcf120b1e4cb0bbfb2880b9db9f271468ad0ff1e05b8e0b81e2d14e4d",
     "R0003452_8fc9d029e4": "01ee7d13135ca49f63793ba40841e33d64138a28ebfe79cbac670bd2cf7608fd",
     "R0003701_b4da04c2bb": "e91fa3e51ffdd488be8c29e9dbcc7b6b8740f4f1bad29bfce1715117ef2ccb61"
@@ -128,17 +127,6 @@
       "report_hash": "f795213a775dec49066b98165b65fadeb1230502a86723a941cada5e50328950",
       "signature": "86a7709846add187cf913f8a4e400e71ba6fa6425c229ba49e6759d01a9426cf"
     },
-    "R0002429_017785cd91": {
-      "decision": {
-        "disposition": "pass",
-        "id": "R0002429_017785cd91",
-        "reason": "Casting this spell at level 为拼接句前半，译文“以该等级施放此法术”语义正确，后接等级数字可读。",
-        "reviewer": "main:conversation-agent",
-        "user_authorization": "用户 2026-10-27 指示按现有翻译流程用 API 方式重做本游戏：统一图片与正文语料、从术语提取开始、复用图片 OCR 结果。授权主代理完成质量闭环裁决。"
-      },
-      "report_hash": "f795213a775dec49066b98165b65fadeb1230502a86723a941cada5e50328950",
-      "signature": "2e46d06d0e5d448df1c8c343d9e6b7813c4b23b14e40d52120a272e92d444964"
-    },
     "R0003289_a14c27a0fa": {
       "decision": {
         "disposition": "pass",
@@ -180,6 +168,6 @@
   "resource_occurrence_binding": {
     "eschalonbook_images_text.mapping.json": "a053a6af7bf16f5f3a8904c9f82a689080ae88ec26b68803ccee3ee996795001"
   },
-  "report_hash": "13223435acc148d6f8c9e3d1da8b0521f5e38e843cf7e38a232b09a336dd54ac",
+  "report_hash": "f99ab74d43ff7372199176b4d3be64e477d57600ba1f3a319cad35cd9c752e8c",
   "round_scope": []
 }
