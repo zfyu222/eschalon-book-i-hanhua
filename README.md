@@ -12,6 +12,7 @@
 - 补丁文件 Dispatch/Eschalon Book I_子非鱼汉化2.0.zip，60,212,780 字节，SHA-256 80f73018c6da148dc4fd67131da5716d9104ee1947d81176209b469425df56d5。Steam 1.05 Windows 版。ZIP 从已核对的 Dispatch/Files/ 生成，11 个文件，CRC 和校验和通过。
 - 载荷含新版离线运行时、Steam App ID、贴图差分、安装与卸载脚本。入口继续使用「埃斯卡隆：卷一_中文版.exe」。封面复用 Dispatch/Artwork/title.jpg，作为发布页附件。
 - 说明、清单及校验和位于 Dispatch/。构建与校验见 Analysis/release_polish_v20.py 和 TranslateFiles/reports/release_v20/package.json。
+- v2.0 已在 GitHub 公开发布并设为最新稳定版。匿名完整下载、ZIP SHA-256、发布说明和封面均已核对。百度网盘继续保留既有入口，本轮只更新 GitHub。[GitHub Release](https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v2.0)
 
 ## 对外发布 v1.9（2026-11-01）
 

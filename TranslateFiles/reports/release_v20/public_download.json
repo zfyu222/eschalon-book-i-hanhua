@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "version": "v2.0",
+  "release": "https://github.com/zfyu222/eschalon-book-i-hanhua/releases/tag/v2.0",
+  "zip_download": "https://github.com/zfyu222/eschalon-book-i-hanhua/releases/download/v2.0/Eschalon.Book.I_.2.0.zip",
+  "sha256": "80f73018c6da148dc4fd67131da5716d9104ee1947d81176209b469425df56d5",
+  "size": 60212780,
+  "latest_stable": true,
+  "notes_match": true,
+  "cover_verified": true,
+  "archive_http_status": 200,
+  "baidu_file_uploaded": false
+}
