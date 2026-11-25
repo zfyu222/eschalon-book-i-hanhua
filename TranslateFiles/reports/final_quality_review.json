@@ -8,7 +8,7 @@
     "path": "glossary\\r1\\freeze_0680ffd0\\built\\glossary_reviewed.json",
     "revision": 1
   },
-  "snapshot_hash": "f2ee015233e0b27d71094263244b06c284529a367c9b52dd8260fd5866239dd6",
+  "snapshot_hash": "7929e9597668a4e736b00b318b4174a2eb2fc181731e05413f175b3088ff848b",
   "coverage": {
     "records": 4743,
     "text_types": {
@@ -16,7 +16,7 @@
       "image_text": 180
     },
     "missing_context": 0,
-    "risk_records": 3528,
+    "risk_records": 3529,
     "ordinary_sample": 0,
     "standard_records": 11
   },
@@ -168,6 +168,6 @@
   "resource_occurrence_binding": {
     "eschalonbook_images_text.mapping.json": "a053a6af7bf16f5f3a8904c9f82a689080ae88ec26b68803ccee3ee996795001"
   },
-  "report_hash": "f99ab74d43ff7372199176b4d3be64e477d57600ba1f3a319cad35cd9c752e8c",
+  "report_hash": "29edc30a96600b16e6677782479558028057e2338e5f072fbed3e0e85bd7013c",
   "round_scope": []
 }

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "version": "2.0",
+  "installed": [
+    "gfx.pak",
+    "steam_appid.txt",
+    "汉化工具/runtime/EschalonBook_Chinese_Launcher.exe"
+  ],
+  "version_before": "1.9",
+  "original_retained": true,
+  "saved_game_files_verified": 660,
+  "game_started": false,
+  "in_game_validation": "pending"
+}

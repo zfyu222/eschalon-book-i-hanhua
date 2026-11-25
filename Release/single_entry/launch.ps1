@@ -20,6 +20,7 @@ try {
   $state|ConvertTo-Json -Depth 12|Set-Content -LiteralPath $statePath -Encoding UTF8
  }
  $env:ESCHALON_RUNTIME=$root
+ $env:ESCHALON_WINDOWED='1'
  Start-Process -FilePath (Join-Path $PSScriptRoot 'runtime/EschalonBook_Chinese_Launcher.exe') -WorkingDirectory $root -WindowStyle Hidden
  exit 0
 }catch{Write-Error $_.Exception.Message;exit 1}

@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "review": "static_preview",
+  "images": {
+    "credits.png": {
+      "sha256": "509156f0d13108e546df664e9f257636143c571c423837096ff34f0668a728bf",
+      "observations": "在不透明背景上合成检查，确定测试人员标题清楚、旧英文未透出、名单及透明形状保留。"
+    },
+    "mainmenu.png": {
+      "sha256": "b1b8333d7fae7aa094f5711be32773f7e853d54c3e8ae8011d4764f5423ace9b",
+      "observations": "在不透明背景上检查两种按钮状态，确认读取存档完整居中、与其余按钮的字号和配色一致。"
+    },
+    "keyboard_shortcuts.png": {
+      "sha256": "603de472601175a62bdd7397d023499ec02d25a7865c3224f02f6f471d9892bc",
+      "observations": "比较原始木纹、清字底图和最终图。检查原文标题移除、长按键说明两行完整，木纹和细划痕多数保留；局部修补使笔画附近纹理略平。"
+    },
+    "launchscreen.png": {
+      "sha256": "658aeb438e4387f8183e686801a8d3513cdbfd6e3c43cdf096ab8483eac4092b",
+      "observations": "核对屏幕设置位于原标题间隙，描边清晰、边框左右保留。仅此标签局部汉化。"
+    }
+  },
+  "cover_sha256": "c500932d750365f15d34956caedd229324e5bac8108ec824d65e78d81e3fa256",
+  "cover": "reviewed_existing_artwork",
+  "in_game_validation": "pending"
+}

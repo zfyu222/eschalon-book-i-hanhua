@@ -1,0 +1,98 @@
+{
+  "translation_sha256": "e932ada7116247c7c63dce49b8ba3d951286d411bc78179529e2c85619a04688",
+  "images": {
+    "changed_rows": [
+      60,
+      61,
+      90,
+      96,
+      99,
+      112,
+      118
+    ],
+    "images": [
+      "credits.png",
+      "keyboard_shortcuts.png",
+      "launchscreen.png",
+      "mainmenu.png"
+    ],
+    "linux_variants_excluded": [
+      "linux_launch.png",
+      "mainmenu_linux.png"
+    ],
+    "source_sha256": "18d5ef618f8f510d595a074a7b7e0b7aa3c21fe0ea1ab6cd09fa73a9875c252e",
+    "images_translation_sha256": "58d9945c9581aa087e245afa6dcbcf57533007b85697f0b9f0c542ae79b75438"
+  },
+  "gfx": {
+    "changed": [
+      "credits.png",
+      "keyboard_shortcuts.png",
+      "launchscreen.png",
+      "mainmenu.png"
+    ],
+    "entries_verified": 225,
+    "source_sha256": "2d2ffc2e4bd9882b4a0e212c26eca71d460613a5f0714db6456e3f9465bd4a80",
+    "output_sha256": "54e1691e09d65512c643725a3eea87736f5fa58542a6601b926ca6564c449101"
+  },
+  "delta": {
+    "localized_streams": 40,
+    "original_streams_excluded": 185,
+    "delta_sha256": "db1cf37136f3e7f8059858d1a1bb7832d512e0b7563a186dc77f3c74e352605f",
+    "delta_size": 4975788,
+    "supported_base_hashes": [
+      "0ffbf360080320dd91b98034431a1644b703ff32ecabb306560dfd7da55825d9",
+      "2d2ffc2e4bd9882b4a0e212c26eca71d460613a5f0714db6456e3f9465bd4a80"
+    ]
+  },
+  "launcher": {
+    "size": 55589548,
+    "sha256": "7cc9eeebbb1ce92f59a5845b3f3775fe7f59fc85d573f27ef74d32561fe2e098",
+    "legacy_non_han_exclusions": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      23,
+      24,
+      25,
+      26,
+      27,
+      29,
+      30,
+      9825,
+      9829,
+      9834,
+      65533,
+      128102
+    ]
+  },
+  "status": "passed",
+  "player_entry_replayed": true,
+  "clean_install": true,
+  "repair_missing": true,
+  "no_rewrite": true,
+  "upgrade_v19": true,
+  "upgrade_legacy_no_original": true,
+  "uninstall": true,
+  "corrupt_input_rejected": true,
+  "unsupported_base_rejected": true,
+  "in_game_validation": "pending"
+}
